@@ -76,13 +76,15 @@ async def _mark_to_market_loop(portfolio: Portfolio) -> None:
             logger.error("mark_to_market_loop_error", error=str(exc))
 
 
-async def _daily_rescan_loop(scanner: WalletScanner) -> None:
-    """Re-score all tracked wallets every 24 hours."""
+async def _daily_rescan_loop(scanner: WalletScanner, db: "Database | None" = None) -> None:
+    """Re-score all tracked wallets every 24 hours and prune old snapshots."""
     while True:
         await asyncio.sleep(_DAILY_RESCAN_INTERVAL)
         try:
             logger.info("daily_rescan_started")
             await scanner.rescan_all()
+            if db is not None:
+                await db.prune_old_snapshots(keep_days=7)
         except Exception as exc:
             logger.error("daily_rescan_error", error=str(exc))
 
@@ -140,6 +142,12 @@ async def main() -> None:
     configure_logging()
     logger.info("copybot_starting", dry_run=settings.dry_run)
 
+    # Fail fast if critical config is missing
+    if not settings.private_key or settings.private_key == "0xYOUR_PRIVATE_KEY_HERE":
+        logger.critical("private_key_not_configured")
+        print("ERROR: PRIVATE_KEY not set in .env — copy .env.example to .env and configure it.")
+        sys.exit(1)
+
     # ------------------------------------------------------------------
     # Step 1-2: Database
     # ------------------------------------------------------------------
@@ -147,6 +155,10 @@ async def main() -> None:
     await db.open()
 
     notifier = Notifier()
+    tasks: list[asyncio.Task] = []
+    order_manager: OrderManager | None = None
+    pm_client: PolymarketClient | None = None
+    portfolio: Portfolio | None = None
 
     try:
         await db.log_event(SystemEvent(
@@ -240,7 +252,7 @@ async def main() -> None:
             asyncio.create_task(risk_manager.run(), name="risk_manager"),
             asyncio.create_task(order_manager.run_reconcile_loop(), name="reconcile"),
             asyncio.create_task(_mark_to_market_loop(portfolio), name="mark_to_market"),
-            asyncio.create_task(_daily_rescan_loop(scanner), name="daily_rescan"),
+            asyncio.create_task(_daily_rescan_loop(scanner, db), name="daily_rescan"),
             asyncio.create_task(_midnight_pnl_snapshot_loop(portfolio, notifier), name="midnight_snapshot"),
         ]
 
@@ -269,36 +281,43 @@ async def main() -> None:
         logger.info("shutdown_started")
 
         # Cancel all tasks
-        for task in tasks:
-            task.cancel()
-        await asyncio.gather(*tasks, return_exceptions=True)
+        if tasks:
+            for task in tasks:
+                task.cancel()
+            await asyncio.gather(*tasks, return_exceptions=True)
 
         # Cancel all open orders
-        try:
-            cancelled = await order_manager.cancel_all_open()
-            logger.info("shutdown_orders_cancelled", count=cancelled)
-        except Exception as exc:
-            logger.error("shutdown_cancel_error", error=str(exc))
+        if order_manager is not None:
+            try:
+                cancelled = await order_manager.cancel_all_open()
+                logger.info("shutdown_orders_cancelled", count=cancelled)
+            except Exception as exc:
+                logger.error("shutdown_cancel_error", error=str(exc))
 
         # Final P&L snapshot
-        try:
-            await portfolio.snapshot_daily_pnl()
-        except Exception as exc:
-            logger.error("shutdown_snapshot_error", error=str(exc))
+        if portfolio is not None:
+            try:
+                await portfolio.snapshot_daily_pnl()
+            except Exception as exc:
+                logger.error("shutdown_snapshot_error", error=str(exc))
 
         # Telegram notification
         await notifier.bot_stopped(reason="graceful shutdown")
 
         # Close HTTP client and DB
+        if pm_client is not None:
+            try:
+                await pm_client.__aexit__(None, None, None)
+            except Exception:
+                pass
         try:
-            await pm_client.__aexit__(None, None, None)
+            await db.log_event(SystemEvent(
+                id=None, event_type="BOT_STOP",
+                message="CopyBot stopped — graceful shutdown",
+                severity="INFO",
+            ))
         except Exception:
             pass
-        await db.log_event(SystemEvent(
-            id=None, event_type="BOT_STOP",
-            message="CopyBot stopped — graceful shutdown",
-            severity="INFO",
-        ))
         await db.close()
         logger.info("shutdown_complete")
 

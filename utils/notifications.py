@@ -56,6 +56,7 @@ class Notifier:
         self._token = bot_token or settings.telegram_bot_token
         self._chat_id = chat_id or settings.telegram_chat_id
         self._enabled = bool(self._token and self._chat_id)
+        self._http: httpx.AsyncClient | None = None
 
         if not self._enabled:
             logger.info("notifier_disabled", reason="TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set")
@@ -89,9 +90,10 @@ class Notifier:
         }
 
         try:
-            async with httpx.AsyncClient(timeout=10.0) as client:
-                resp = await client.post(url, json=payload)
-                resp.raise_for_status()
+            if self._http is None or self._http.is_closed:
+                self._http = httpx.AsyncClient(timeout=10.0)
+            resp = await self._http.post(url, json=payload)
+            resp.raise_for_status()
             logger.debug("telegram_sent", severity=severity, length=len(full_message))
             return True
         except httpx.HTTPStatusError as exc:

@@ -45,8 +45,30 @@ logger = get_logger(__name__)
 # ---------------------------------------------------------------------------
 
 def _run(coro):
-    """Run an async coroutine from a sync Dash callback."""
-    return asyncio.run(coro)
+    """Run an async coroutine from a sync Dash callback.
+
+    Uses a dedicated background event loop so that all callbacks share one
+    loop instead of creating (and tearing down) a new loop per invocation.
+    This avoids resource leaks and is safe to call from Dash's sync
+    callback threads.
+    """
+    return _BG_LOOP.run(coro)
+
+
+class _BackgroundLoop:
+    """Runs a single asyncio event loop on a background daemon thread."""
+
+    def __init__(self) -> None:
+        import threading
+        self._loop = asyncio.new_event_loop()
+        self._thread = threading.Thread(target=self._loop.run_forever, daemon=True, name="dash-async")
+        self._thread.start()
+
+    def run(self, coro):
+        return asyncio.run_coroutine_threadsafe(coro, self._loop).result(timeout=30)
+
+
+_BG_LOOP = _BackgroundLoop()
 
 
 async def _fetch_summary() -> dict[str, Any]:
@@ -272,7 +294,6 @@ def register_callbacks(app) -> None:
     )
     def refresh_wallets(n_intervals):
         df = _run(_fetch_wallets())
-        from dashboard.components.tables import _WALLET_COLUMNS as WC
         from dashboard.pages.wallets import _WALLET_COLUMNS
         return data_table(df, columns=_WALLET_COLUMNS, table_id="tbl-wallets", row_selectable="single")
 

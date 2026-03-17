@@ -3,7 +3,7 @@ data/models.py — Core dataclasses for all entities in the copy trading bot.
 """
 
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 @dataclass
@@ -85,7 +85,7 @@ class TradeSignal:
     action: str               # "OPEN", "INCREASE", "DECREASE", "CLOSE", "FLIP"
     whale_size_delta: float   # Absolute change in shares (always positive)
     current_price: float      # Current mid price for this token
-    detected_at: datetime = field(default_factory=datetime.utcnow)
+    detected_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
 
 
 @dataclass
@@ -94,4 +94,4 @@ class SystemEvent:
     event_type: str           # "BOT_START", "BOT_STOP", "RISK_BREACH", "ERROR", etc.
     message: str
     severity: str             # "INFO", "WARNING", "ERROR", "CRITICAL"
-    created_at: datetime = field(default_factory=datetime.utcnow)
+    created_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
