@@ -13,7 +13,7 @@ Tables:
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Any
 
 import aiosqlite
@@ -80,7 +80,8 @@ class Database:
 
     @property
     def _db(self) -> aiosqlite.Connection:
-        assert self._conn is not None, "Database not opened — call open() or use async with"
+        if self._conn is None:
+            raise RuntimeError("Database not opened — call open() or use async with")
         return self._conn
 
     # ------------------------------------------------------------------
@@ -359,6 +360,18 @@ class Database:
             current_price=row["current_price"],
             timestamp=datetime.fromisoformat(row["timestamp"]),
         )
+
+    async def prune_old_snapshots(self, keep_days: int = 7) -> int:
+        """Delete wallet_snapshots older than *keep_days* to prevent unbounded growth."""
+        cutoff = (datetime.now(timezone.utc) - timedelta(days=keep_days)).isoformat()
+        async with self._db.execute(
+            "DELETE FROM wallet_snapshots WHERE timestamp < ?", (cutoff,)
+        ) as cur:
+            deleted = cur.rowcount
+        await self._db.commit()
+        if deleted:
+            logger.info("snapshots_pruned", deleted=deleted, keep_days=keep_days)
+        return deleted
 
     # ------------------------------------------------------------------
     # copy_trades

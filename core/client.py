@@ -125,7 +125,8 @@ class PolymarketClient:
     async def _get(self, url: str, params: dict | None = None) -> Any:
         """Rate-limited GET with error logging."""
         await self._rate_limiter.acquire()
-        assert self._http is not None, "Client not started — use async with"
+        if self._http is None:
+            raise RuntimeError("Client not started — use async with")
         try:
             resp = await self._http.get(url, params=params)
             resp.raise_for_status()
