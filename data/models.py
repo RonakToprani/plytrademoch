@@ -76,6 +76,19 @@ class MarketCache:
 
 
 @dataclass
+class TradeSignal:
+    """Emitted by TradeDetector when a whale's position changes."""
+    wallet: str               # Whale wallet address
+    token_id: str             # CLOB token ID
+    market_slug: str          # Human-readable market name
+    side: str                 # "YES" or "NO" (the token side)
+    action: str               # "OPEN", "INCREASE", "DECREASE", "CLOSE", "FLIP"
+    whale_size_delta: float   # Absolute change in shares (always positive)
+    current_price: float      # Current mid price for this token
+    detected_at: datetime = field(default_factory=datetime.utcnow)
+
+
+@dataclass
 class SystemEvent:
     id: int | None            # Auto-assigned by DB
     event_type: str           # "BOT_START", "BOT_STOP", "RISK_BREACH", "ERROR", etc.
