@@ -35,6 +35,7 @@ _BAND_WIN_RATE = 0.27
 
 @dataclass
 class Opportunity:
+    condition_id: str
     slug: str
     question: str
     outcome: str
@@ -79,10 +80,10 @@ def scan(
             if stake < min_stake:
                 stake = min_stake
             opp = Opportunity(
-                slug=mk["slug"], question=mk["question"], outcome=outcome, token=token,
-                price=token_price, hours_to_resolve=hours, volume=mk["volume"],
-                est_win_rate=_BAND_WIN_RATE, kelly_fraction=round(f, 4),
-                suggested_stake=round(stake, 2),
+                condition_id=mk["condition_id"], slug=mk["slug"], question=mk["question"],
+                outcome=outcome, token=token, price=token_price, hours_to_resolve=hours,
+                volume=mk["volume"], est_win_rate=_BAND_WIN_RATE,
+                kelly_fraction=round(f, 4), suggested_stake=round(stake, 2),
             )
             # one bet per event — keep the higher-volume (more liquid) leg
             key = mk["event"] or mk["slug"]
