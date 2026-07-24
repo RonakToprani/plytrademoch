@@ -26,6 +26,7 @@ from backtest.bias import calibrate
 from backtest.datafeed import DataFeed
 from backtest.edge import build_entries, slippage_sweep
 from backtest.horizon import calibrate_at_horizon
+from backtest.live import scan as scan_live
 
 _BOT_DB = "polymarket_bot.db"
 
@@ -196,6 +197,33 @@ def cmd_horizon(args: argparse.Namespace) -> None:
         print("  verdict EDGE = ROI 95% CI entirely > 0 with n>=20; 'thin' = too few markets.")
 
 
+def cmd_live(args: argparse.Namespace) -> None:
+    with DataFeed() as feed:
+        print(f"scanning open markets for underdogs in [{args.band_lo:.2f}, "
+              f"{args.band_hi:.2f}] resolving >= {args.min_hours:.0f}h out, "
+              f"volume >= ${args.min_volume:,.0f} ...")
+        opps = scan_live(
+            feed, band_lo=args.band_lo, band_hi=args.band_hi,
+            min_hours=args.min_hours, max_hours=args.max_hours,
+            min_volume=args.min_volume, bankroll=args.bankroll,
+            kelly_multiple=args.kelly,
+        )
+        if not opps:
+            print("no opportunities right now.")
+            return
+        total = sum(o.suggested_stake for o in opps[: args.top])
+        print(f"\n{len(opps)} opportunities (one per event). Top {min(args.top, len(opps))} "
+              f"by liquidity — suggested book ${total:.0f} on ${args.bankroll:.0f} bankroll "
+              f"({args.kelly:.0%} Kelly):\n")
+        print(f"  {'price':>5} {'~win':>5} {'stake':>6} {'hrs':>5} {'vol':>10}  market")
+        for o in opps[: args.top]:
+            print(f"  {o.price:>5.2f} {o.est_win_rate:>5.0%} ${o.suggested_stake:>5.2f} "
+                  f"{o.hours_to_resolve:>5.0f} ${o.volume:>9,.0f}  "
+                  f"{(o.question or o.slug)[:52]}  [{o.outcome}]")
+        print("\n  DRY-RUN / informational only — no orders placed. Edge is at the band "
+              "level; size small and diversified (negative skew, ~27% win rate).")
+
+
 def main(argv: list[str] | None = None) -> None:
     p = argparse.ArgumentParser(prog="backtest.run", description="Polymarket edge harness")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -231,6 +259,18 @@ def main(argv: list[str] | None = None) -> None:
     ph.add_argument("--bucket-width", type=float, default=0.10)
     ph.add_argument("--refresh", action="store_true")
     ph.set_defaults(func=cmd_horizon)
+
+    pl = sub.add_parser("live", help="scan open markets for underdog opportunities (DRY-RUN)")
+    pl.add_argument("--band-lo", type=float, default=0.10)
+    pl.add_argument("--band-hi", type=float, default=0.20)
+    pl.add_argument("--min-hours", type=float, default=24.0)
+    pl.add_argument("--max-hours", type=float, default=168.0,
+                    help="only markets resolving within this many hours (validated window)")
+    pl.add_argument("--min-volume", type=float, default=30_000.0)
+    pl.add_argument("--bankroll", type=float, default=100.0)
+    pl.add_argument("--kelly", type=float, default=0.25, help="Kelly multiple (0.25 = quarter)")
+    pl.add_argument("--top", type=int, default=25)
+    pl.set_defaults(func=cmd_live)
 
     args = p.parse_args(argv)
     args.func(args)

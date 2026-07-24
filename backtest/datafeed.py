@@ -486,6 +486,73 @@ class DataFeed:
         self._db.commit()
 
     # ------------------------------------------------------------------
+    # Live open markets (for the underdog strategy scanner) — never cached
+    # ------------------------------------------------------------------
+
+    def fetch_open_markets(
+        self, min_volume: float = 30_000.0, max_markets: int = 3_000
+    ) -> list[dict[str, Any]]:
+        """
+        Return currently-open binary markets from Gamma, each as a dict with
+        parsed fields: condition_id, tokens [t0,t1], prices [p0,p1], end_date,
+        volume, slug, question, event. Live data — not cached.
+        """
+        out: list[dict[str, Any]] = []
+        offset = 0
+        while len(out) < max_markets:
+            try:
+                page = self._get(
+                    f"{GAMMA_API}/markets",
+                    {"closed": "false", "active": "true", "limit": 100,
+                     "offset": offset, "order": "volumeNum", "ascending": "false"},
+                )
+            except httpx.HTTPStatusError:
+                break
+            if not page:
+                break
+            for mk in page:
+                parsed = self._parse_open_market(mk, min_volume)
+                if parsed is not None:
+                    out.append(parsed)
+            offset += 100
+            if len(page) < 100:
+                break
+            time.sleep(_THROTTLE)
+        return out
+
+    @staticmethod
+    def _parse_open_market(mk: dict[str, Any], min_volume: float) -> "dict[str, Any] | None":
+        try:
+            volume = float(mk.get("volume", 0) or 0)
+        except (ValueError, TypeError):
+            volume = 0.0
+        if volume < min_volume:
+            return None
+        raw_tokens = mk.get("clobTokenIds")
+        raw_prices = mk.get("outcomePrices")
+        raw_outcomes = mk.get("outcomes")
+        tokens = json.loads(raw_tokens) if isinstance(raw_tokens, str) else (raw_tokens or [])
+        prices = json.loads(raw_prices) if isinstance(raw_prices, str) else (raw_prices or [])
+        outcomes = json.loads(raw_outcomes) if isinstance(raw_outcomes, str) else (raw_outcomes or [])
+        if len(tokens) != 2 or len(prices) != 2:
+            return None
+        try:
+            fp = [float(p) for p in prices]
+        except (ValueError, TypeError):
+            return None
+        return {
+            "condition_id": mk.get("conditionId", ""),
+            "tokens": [str(t) for t in tokens],
+            "prices": fp,
+            "outcomes": [str(o) for o in outcomes] if len(outcomes) == 2 else ["0", "1"],
+            "end_date": mk.get("endDate"),
+            "volume": volume,
+            "slug": mk.get("slug", "") or "",
+            "question": mk.get("question", "") or "",
+            "event": mk.get("eventSlug") or mk.get("slug", "") or "",
+        }
+
+    # ------------------------------------------------------------------
     # Neutral market trade prints (all counterparties)
     # ------------------------------------------------------------------
 

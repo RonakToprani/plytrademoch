@@ -56,21 +56,47 @@ Result (both tokens, ~750–900 markets/horizon, 24h/72h/168h all consistent):
 - The biased `/trades` "+22% favorites underpriced" was a timing artifact and is
   gone; favorites are calibrated-to-slightly-overpriced.
 
+- **Time split PASSED.** Splitting at 2026-04-09 into two independent periods,
+  the 0.10–0.20 underdog edge holds in both: EARLY (2023-05→2026-04) win 23.8%,
+  +54% ROI; LATE (2026-04→2026-07) win 28.8%, +73% ROI. Favorites overpriced in
+  both; midfield ≈ −(slippage) in both (a clean control). Not a regime artifact.
+
 ### Caveats still open before deploying capital
 - **Negative skew.** ~27% win rate → you lose 73% of bets outright; returns come
   from occasional ~5–8× payoffs. Needs many small, uncorrelated bets and
   fractional-Kelly sizing; expect long losing streaks.
 - **Liquidity/depth** at 0.10–0.20 is not modeled (flat slippage only). Must
   verify you can fill meaningful size without moving the price.
-- **Time robustness** not yet split — is the edge stable across periods, or a
-  recent-regime artifact? This is the next validation.
+- **Low throughput.** With the resolution window applied (below), only a handful
+  of qualifying markets exist at any moment — the book diversifies over weeks.
 
-Next: train/test time split; category breakdown; order-book depth check at the
-quoted price; then a paper harness that sizes via fractional Kelly.
+## 3. Strategy spec (from the validated edge) — `backtest.run live`
+
+- **Signal:** buy the outcome token priced in **[0.10, 0.20]**.
+- **Resolution window:** only markets resolving in **24h–168h** (the window the
+  edge was measured in). This is critical — a naive scan without the upper bound
+  surfaces 2028-election longshots 2 years out (correlated, capital-locking) that
+  the backtest never validated. With the window, the scan returns near-term,
+  diverse events (sports, geopolitics, crypto).
+- **Liquidity:** volume ≥ $30k. **Diversify:** one bet per event.
+- **Hold to resolution** (the edge is defined on resolution; no early exit).
+- **Sizing:** fractional (¼) Kelly using the band's calibrated win rate (~0.27),
+  NOT the market price — capped at 5% of bankroll, floored at $1.
+
+`python -m backtest.run live --bankroll 150` prints today's opportunities with
+suggested stakes. DRY-RUN / informational only.
+
+### Next steps toward (paper) trading
+1. Order-book depth check at the quoted price (can we fill the suggested size?).
+2. Paper-trading loop: persist scanned bets, mark to resolution, track realized
+   P&L vs the backtest expectation — reusing the existing DB / dashboard.
+3. Only then, and only with the risk-manager bugs fixed (VPN debounce, daily-loss
+   gate, DB pruning) + launchd supervision, consider small real capital.
 
 ## Reproduce
 ```bash
-python -m backtest.run edge                 # copy-thesis test
+python -m backtest.run edge                 # copy-thesis test (rejected)
 python -m backtest.run characterize         # wallet copyability (trade frequency)
-python -m backtest.run horizon --max-markets 2000 --min-volume 30000
+python -m backtest.run horizon --max-markets 2000 --min-volume 30000   # calibration
+python -m backtest.run live --bankroll 150  # today's underdog opportunities
 ```
