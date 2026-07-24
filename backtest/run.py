@@ -22,8 +22,10 @@ import sqlite3
 import statistics
 import sys
 
+from backtest.bias import calibrate
 from backtest.datafeed import DataFeed
 from backtest.edge import build_entries, slippage_sweep
+from backtest.horizon import calibrate_at_horizon
 
 _BOT_DB = "polymarket_bot.db"
 
@@ -116,6 +118,74 @@ def cmd_edge(args: argparse.Namespace) -> None:
                       f"  [{lo:>+6.1%}, {hi:>+6.1%}] {r.notional_roi:>12.1%} {verdict:>8}")
 
 
+# ---------------------------------------------------------------------------
+# bias — favorite/longshot calibration across a neutral market universe
+# ---------------------------------------------------------------------------
+
+def cmd_bias(args: argparse.Namespace) -> None:
+    with DataFeed() as feed:
+        print(f"fetching resolved-market universe (min_volume=${args.min_volume:,.0f}, "
+              f"max={args.max_markets}) ...")
+        universe = feed.fetch_resolved_universe(
+            max_markets=args.max_markets, min_volume=args.min_volume, refresh=args.refresh
+        )
+        print(f"universe: {len(universe)} resolved binary markets\n"
+              f"pooling neutral BUY prints (this is cached after first run) ...")
+        res = calibrate(
+            feed, universe,
+            slippage=args.slippage, bucket_width=args.bucket_width,
+            trades_per_market=args.trades_per_market, progress=True,
+        )
+        print(f"\n=== Calibration: {res.n_prints:,} BUY prints across "
+              f"{res.n_markets} markets | slippage {res.slippage:.3f} ===")
+        print(f"  {'price band':>12} {'n':>8} {'mean px':>8} {'win rate':>9} "
+              f"{'gap':>8} {'buy ROI':>9}  interpretation")
+        for b in res.buckets:
+            if b.n == 0:
+                continue
+            interp = ("underpriced" if b.gap > 0.02 else
+                      "overpriced" if b.gap < -0.02 else "calibrated")
+            print(f"  {b.lo:>5.2f}-{b.hi:<5.2f} {b.n:>8,} {b.mean_price:>8.3f} "
+                  f"{b.win_rate:>8.1%} {b.gap:>+7.1%} {b.mean_roi:>+8.1%}  {interp}")
+        print("\n  gap = realized win rate - mean price. "
+              "Positive = favorites cheap; negative = longshots dear.")
+        print("  buy ROI is net of slippage, held to resolution. "
+              "A tradeable edge needs buy ROI > 0 after slippage.")
+        print("  ⚠️  TIMING BIAS: /trades over-samples fills near resolution, which "
+              "OVERSTATES the favorite edge.\n     Use `horizon` for the honest, "
+              "fixed-lead-time measurement before trusting these numbers.")
+
+
+def cmd_horizon(args: argparse.Namespace) -> None:
+    with DataFeed() as feed:
+        print(f"fetching resolved-market universe (min_volume=${args.min_volume:,.0f}, "
+              f"max={args.max_markets}) ...")
+        universe = feed.fetch_resolved_universe(
+            max_markets=args.max_markets, min_volume=args.min_volume, refresh=args.refresh
+        )
+        print(f"universe: {len(universe)} resolved binary markets")
+        for hz in args.horizons:
+            print(f"\npricing each market {hz}h before resolution (cached after first run) ...")
+            res = calibrate_at_horizon(
+                feed, universe, horizon_hours=hz, slippage=args.slippage,
+                bucket_width=args.bucket_width, progress=True,
+            )
+            print(f"\n=== Ex-ante calibration @ {hz}h before resolution | "
+                  f"{res.n_markets} markets priced ({res.n_skipped} skipped) | "
+                  f"slippage {res.slippage:.3f} ===")
+            print(f"  {'price band':>12} {'n':>6} {'mean px':>8} {'win rate':>9} "
+                  f"{'gap':>8} {'buy ROI':>9}  interpretation")
+            for b in res.buckets:
+                if b.n == 0:
+                    continue
+                interp = ("underpriced" if b.gap > 0.03 else
+                          "overpriced" if b.gap < -0.03 else "calibrated")
+                print(f"  {b.lo:>5.2f}-{b.hi:<5.2f} {b.n:>6,} {b.mean_price:>8.3f} "
+                      f"{b.win_rate:>8.1%} {b.gap:>+7.1%} {b.mean_roi:>+8.1%}  {interp}")
+        print("\n  gap = realized win rate - mean price (ex-ante). "
+              "buy ROI is net of slippage, held to resolution.")
+
+
 def main(argv: list[str] | None = None) -> None:
     p = argparse.ArgumentParser(prog="backtest.run", description="Polymarket edge harness")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -132,6 +202,25 @@ def main(argv: list[str] | None = None) -> None:
     pe.add_argument("--min-price", type=float, default=0.08)
     pe.add_argument("--max-price", type=float, default=0.92)
     pe.set_defaults(func=cmd_edge)
+
+    pb = sub.add_parser("bias", help="favorite/longshot calibration (neutral universe)")
+    pb.add_argument("--max-markets", type=int, default=1_000)
+    pb.add_argument("--min-volume", type=float, default=5_000.0)
+    pb.add_argument("--trades-per-market", type=int, default=500)
+    pb.add_argument("--slippage", type=float, default=0.01)
+    pb.add_argument("--bucket-width", type=float, default=0.10)
+    pb.add_argument("--refresh", action="store_true")
+    pb.set_defaults(func=cmd_bias)
+
+    ph = sub.add_parser("horizon", help="honest ex-ante calibration at a fixed lead time")
+    ph.add_argument("--max-markets", type=int, default=1_000)
+    ph.add_argument("--min-volume", type=float, default=5_000.0)
+    ph.add_argument("--horizons", type=int, nargs="+", default=[24, 72, 168],
+                    help="hours before resolution to price at (default 24 72 168)")
+    ph.add_argument("--slippage", type=float, default=0.01)
+    ph.add_argument("--bucket-width", type=float, default=0.10)
+    ph.add_argument("--refresh", action="store_true")
+    ph.set_defaults(func=cmd_horizon)
 
     args = p.parse_args(argv)
     args.func(args)

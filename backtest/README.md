@@ -40,6 +40,28 @@ python -m backtest.run edge --wallets 0xabc...,0xdef... --max-rows 5000
 
 Wallets default to the tracked set in `polymarket_bot.db` (read-only).
 
+## Favorite / longshot calibration (strategy #2 candidate)
+
+Is the market's price itself mispriced — longshots overpriced, favorites cheap?
+Two commands, on a **neutral** universe of resolved markets (Gamma closed-markets
+listing), not whale-selected:
+
+```bash
+# Honest, ex-ante: price each market at a FIXED lead time before resolution
+# (CLOB price history), then bucket by price. This is the one to trust.
+python -m backtest.run horizon --min-volume 30000 --max-markets 1500 --horizons 24 72 168
+
+# Fast but BIASED first look: pools /trades fills, which cluster near resolution
+# and overstate the favorite edge. Kept only for contrast.
+python -m backtest.run bias --min-volume 20000 --max-markets 500
+```
+
+Read the `gap` column (realized win rate − mean price) and `buy ROI` (net of
+slippage, held to resolution). A tradeable edge needs `buy ROI > 0` after
+slippage in a bucket with enough markets to be significant. The published
+Polymarket favorite-longshot edge is small (~2–5%/contract), so treat any
+large number as a bias artifact until the sample is big and horizon-controlled.
+
 ## Known limits (read before trusting a number)
 
 - **Hold-to-resolution ignores whale exits.** If a whale's edge is in cutting

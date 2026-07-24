@@ -50,6 +50,27 @@ class Trade:
 
 
 @dataclass(frozen=True)
+class ResolvedMarket:
+    """A resolved market from the Gamma closed-markets universe."""
+
+    condition_id: str
+    winning_token_id: str | None   # clobTokenIds[argmax(outcomePrices)]
+    sample_token: str              # clobTokenIds[0] — the token we price & score
+    volume: float
+    end_date: str | None
+    slug: str
+
+
+@dataclass(frozen=True)
+class PricePrint:
+    """A neutral BUY-taker fill: this token was bought at this price."""
+
+    asset: str
+    price: float
+    size: float
+
+
+@dataclass(frozen=True)
 class Resolution:
     """
     Resolution status + outcome for a market (by condition_id).
@@ -114,6 +135,43 @@ class DataFeed:
                 winning_token_id TEXT,
                 end_date         TEXT,
                 fetched_at       INTEGER NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS resolved_market (
+                condition_id     TEXT PRIMARY KEY,
+                winning_token_id TEXT,
+                sample_token     TEXT NOT NULL DEFAULT '',
+                volume           REAL NOT NULL DEFAULT 0,
+                end_date         TEXT,
+                slug             TEXT NOT NULL DEFAULT ''
+            );
+
+            CREATE TABLE IF NOT EXISTS price_history (
+                token_id TEXT NOT NULL,
+                ts       INTEGER NOT NULL,
+                price    REAL NOT NULL,
+                PRIMARY KEY (token_id, ts)
+            );
+
+            CREATE TABLE IF NOT EXISTS price_history_fetch (
+                token_id   TEXT PRIMARY KEY,
+                points     INTEGER NOT NULL,
+                fetched_at INTEGER NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS market_trades (
+                id           INTEGER PRIMARY KEY AUTOINCREMENT,
+                condition_id TEXT NOT NULL,
+                asset        TEXT NOT NULL,
+                price        REAL NOT NULL,
+                size         REAL NOT NULL
+            );
+            CREATE INDEX IF NOT EXISTS idx_mtrades_cond ON market_trades(condition_id);
+
+            CREATE TABLE IF NOT EXISTS market_trades_fetch (
+                condition_id TEXT PRIMARY KEY,
+                rows         INTEGER NOT NULL,
+                fetched_at   INTEGER NOT NULL
             );
             """
         )
@@ -267,6 +325,217 @@ class DataFeed:
             end_date=mk.get("end_date_iso"),
             fetched_at=now,
         )
+
+    # ------------------------------------------------------------------
+    # Resolved-market universe (Gamma closed markets) — neutral, not whale-picked
+    # ------------------------------------------------------------------
+
+    def fetch_resolved_universe(
+        self,
+        max_markets: int = 1_000,
+        min_volume: float = 5_000.0,
+        refresh: bool = False,
+    ) -> list[ResolvedMarket]:
+        """
+        Return a broad set of resolved binary markets from the Gamma closed-markets
+        listing (most recently ended first), filtered to those with real volume.
+
+        The listing carries clobTokenIds + outcomePrices directly, so resolution
+        comes free — no per-market lookup. Cached; pass refresh=True to re-pull.
+        """
+        if not refresh and self._universe_size() >= max_markets:
+            return self._load_universe(max_markets)
+
+        out: list[ResolvedMarket] = []
+        offset = 0
+        while len(out) < max_markets:
+            page = self._get(
+                f"{GAMMA_API}/markets",
+                {"closed": "true", "limit": 100, "offset": offset,
+                 "order": "endDate", "ascending": "false"},
+            )
+            if not page:
+                break
+            for mk in page:
+                rm = self._parse_resolved_market(mk, min_volume)
+                if rm is not None:
+                    out.append(rm)
+            offset += 100
+            if len(page) < 100:
+                break
+            time.sleep(_THROTTLE)
+
+        self._store_universe(out)
+        return out[:max_markets]
+
+    @staticmethod
+    def _parse_resolved_market(mk: dict[str, Any], min_volume: float) -> "ResolvedMarket | None":
+        try:
+            volume = float(mk.get("volume", 0) or 0)
+        except (ValueError, TypeError):
+            volume = 0.0
+        if volume < min_volume:
+            return None
+        raw_tokens = mk.get("clobTokenIds")
+        raw_prices = mk.get("outcomePrices")
+        tokens = json.loads(raw_tokens) if isinstance(raw_tokens, str) else (raw_tokens or [])
+        prices = json.loads(raw_prices) if isinstance(raw_prices, str) else (raw_prices or [])
+        if len(tokens) != 2 or len(prices) != 2:
+            return None  # only binary markets
+        try:
+            fp = [float(p) for p in prices]
+        except (ValueError, TypeError):
+            return None
+        if max(fp) < 0.99:
+            return None  # not cleanly resolved
+        win_token = str(tokens[fp.index(max(fp))])
+        return ResolvedMarket(
+            condition_id=mk.get("conditionId", ""),
+            winning_token_id=win_token,
+            sample_token=str(tokens[0]),
+            volume=volume,
+            end_date=mk.get("endDate"),
+            slug=mk.get("slug", "") or "",
+        )
+
+    def _universe_size(self) -> int:
+        return self._db.execute("SELECT COUNT(*) FROM resolved_market").fetchone()[0]
+
+    def _load_universe(self, limit: int) -> list[ResolvedMarket]:
+        cur = self._db.execute(
+            "SELECT * FROM resolved_market ORDER BY end_date DESC LIMIT ?", (limit,)
+        )
+        return [
+            ResolvedMarket(r["condition_id"], r["winning_token_id"], r["sample_token"],
+                           r["volume"], r["end_date"], r["slug"])
+            for r in cur.fetchall()
+        ]
+
+    def _store_universe(self, markets: list[ResolvedMarket]) -> None:
+        self._db.executemany(
+            """INSERT OR REPLACE INTO resolved_market
+               (condition_id, winning_token_id, sample_token, volume, end_date, slug)
+               VALUES (?,?,?,?,?,?)""",
+            [(m.condition_id, m.winning_token_id, m.sample_token, m.volume,
+              m.end_date, m.slug) for m in markets],
+        )
+        self._db.commit()
+
+    # ------------------------------------------------------------------
+    # Price history (CLOB /prices-history) — for ex-ante horizon pricing
+    # ------------------------------------------------------------------
+
+    def fetch_price_history(
+        self, token_id: str, fidelity: int = 1440, refresh: bool = False
+    ) -> list[tuple[int, float]]:
+        """
+        Return a token's full price time-series as [(unix_ts, price), ...] ascending.
+        `fidelity` is the bar width in minutes (60 = hourly). Cached per token.
+        """
+        if not token_id:
+            return []
+        if not refresh and self._has_price_history(token_id):
+            return self._load_price_history(token_id)
+
+        data = self._get(
+            f"{CLOB_API}/prices-history",
+            {"market": token_id, "interval": "max", "fidelity": fidelity},
+        )
+        hist = data.get("history", []) if isinstance(data, dict) else (data or [])
+        points = sorted(
+            (int(p["t"]), float(p["p"]))
+            for p in hist if "t" in p and "p" in p
+        )
+        self._store_price_history(token_id, points)
+        return points
+
+    def _has_price_history(self, token_id: str) -> bool:
+        return self._db.execute(
+            "SELECT 1 FROM price_history_fetch WHERE token_id = ?", (token_id,)
+        ).fetchone() is not None
+
+    def _load_price_history(self, token_id: str) -> list[tuple[int, float]]:
+        cur = self._db.execute(
+            "SELECT ts, price FROM price_history WHERE token_id = ? ORDER BY ts", (token_id,)
+        )
+        return [(r["ts"], r["price"]) for r in cur.fetchall()]
+
+    def _store_price_history(self, token_id: str, points: list[tuple[int, float]]) -> None:
+        self._db.executemany(
+            "INSERT OR IGNORE INTO price_history (token_id, ts, price) VALUES (?,?,?)",
+            [(token_id, ts, px) for ts, px in points],
+        )
+        self._db.execute(
+            "INSERT OR REPLACE INTO price_history_fetch (token_id, points, fetched_at) VALUES (?,?,?)",
+            (token_id, len(points), int(time.time())),
+        )
+        self._db.commit()
+
+    # ------------------------------------------------------------------
+    # Neutral market trade prints (all counterparties)
+    # ------------------------------------------------------------------
+
+    def fetch_market_trades(
+        self,
+        condition_id: str,
+        max_rows: int = 500,
+        refresh: bool = False,
+    ) -> list[PricePrint]:
+        """
+        Return neutral BUY-taker fills on a market (all traders) via /trades.
+        Each print says: this token was bought at this price. Cached per market.
+        """
+        if not refresh and self._has_market_trades(condition_id):
+            return self._load_market_trades(condition_id)
+
+        rows: list[dict[str, Any]] = []
+        for offset in range(0, max_rows, _PAGE):
+            page = self._get(
+                f"{DATA_API}/trades",
+                {"market": condition_id, "limit": _PAGE, "offset": offset},
+            )
+            if not page:
+                break
+            rows.extend(page)
+            if len(page) < _PAGE:
+                break
+            time.sleep(_THROTTLE)
+
+        prints = [
+            PricePrint(asset=str(r.get("asset", "")),
+                       price=float(r.get("price", 0) or 0),
+                       size=float(r.get("size", 0) or 0))
+            for r in rows
+            if str(r.get("side", "")).upper() == "BUY" and r.get("asset")
+            and 0.0 < float(r.get("price", 0) or 0) < 1.0
+        ]
+        self._store_market_trades(condition_id, prints)
+        return prints
+
+    def _has_market_trades(self, condition_id: str) -> bool:
+        row = self._db.execute(
+            "SELECT rows FROM market_trades_fetch WHERE condition_id = ?", (condition_id,)
+        ).fetchone()
+        return row is not None
+
+    def _load_market_trades(self, condition_id: str) -> list[PricePrint]:
+        cur = self._db.execute(
+            "SELECT asset, price, size FROM market_trades WHERE condition_id = ?", (condition_id,)
+        )
+        return [PricePrint(r["asset"], r["price"], r["size"]) for r in cur.fetchall()]
+
+    def _store_market_trades(self, condition_id: str, prints: list[PricePrint]) -> None:
+        # Delete-then-insert keeps re-fetches idempotent without a dedup key.
+        self._db.execute("DELETE FROM market_trades WHERE condition_id = ?", (condition_id,))
+        self._db.executemany(
+            """INSERT INTO market_trades (condition_id, asset, price, size) VALUES (?,?,?,?)""",
+            [(condition_id, p.asset, p.price, p.size) for p in prints],
+        )
+        self._db.execute(
+            "INSERT OR REPLACE INTO market_trades_fetch (condition_id, rows, fetched_at) VALUES (?,?,?)",
+            (condition_id, len(prints), int(time.time())),
+        )
+        self._db.commit()
 
     # ------------------------------------------------------------------
     # HTTP
