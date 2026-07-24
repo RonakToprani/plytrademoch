@@ -66,6 +66,12 @@ def cmd_telegram_test(args: argparse.Namespace) -> None:
     print("sent ✓" if ok else "send failed — check token/chat id")
 
 
+def cmd_review(args: argparse.Namespace) -> None:
+    from paper.review import run_review
+    report = run_review(send=not args.no_telegram)
+    print(report)
+
+
 def cmd_dashboard(args: argparse.Namespace) -> None:
     from paper.dashboard import create_app
     app = create_app()
@@ -89,6 +95,10 @@ def main(argv: list[str] | None = None) -> None:
 
     pt = sub.add_parser("telegram-test", help="send a test Telegram message")
     pt.set_defaults(func=cmd_telegram_test)
+
+    pr = sub.add_parser("review", help="nightly strategy review + recommendations")
+    pr.add_argument("--no-telegram", action="store_true", help="don't send the summary")
+    pr.set_defaults(func=cmd_review)
 
     pd = sub.add_parser("dashboard", help="launch the one-page monitor")
     pd.add_argument("--port", type=int, default=8060)

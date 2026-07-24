@@ -7,6 +7,7 @@ config (absolute paths for this machine — adjust paths if the repo moves).
 |-------|------|----------|
 | `com.underdog.cycle` | `paper.run cycle` — settle resolved + record new bets | every 30 min + at load |
 | `com.underdog.dashboard` | `paper.run dashboard` — POLY TRADING monitor on :8060 | always up (KeepAlive) |
+| `com.underdog.review` | `paper.run review` — grade the book + edge-by-band + recommendations, to Telegram | daily 20:00 local |
 
 Dashboard: **http://<lan-ip>:8060** (e.g. http://10.0.0.79:8060).
 

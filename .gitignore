@@ -33,3 +33,6 @@ build/
 # Backtest cache
 backtest_cache.db
 backtest_cache.db-*
+
+# Nightly review reports
+reports/

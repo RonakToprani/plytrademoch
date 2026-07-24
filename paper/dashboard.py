@@ -55,11 +55,13 @@ def _cell(children, pad="1.1rem 1.3rem", grow=True):
         "flex": "1 1 0" if grow else "0 0 auto"})
 
 
-def _grid(cells, cols):
+def _grid(cells, cols, min_px=210):
+    # auto-fit + minmax = responsive: N-across on desktop, wraps/stacks on phone.
     return html.Div(cells, style={
-        "display": "grid", "gridTemplateColumns": f"repeat({cols}, 1fr)",
+        "display": "grid",
+        "gridTemplateColumns": f"repeat(auto-fit, minmax({min_px}px, 1fr))",
         "gap": "1px", "backgroundColor": LINE, "border": f"1px solid {LINE}",
-        "borderRadius": "12px", "overflow": "hidden", "marginBottom": "1px"})
+        "borderRadius": "12px", "overflow": "hidden", "marginBottom": "10px"})
 
 
 def _kv(label, value, vcolor=WHITE):
@@ -143,18 +145,38 @@ def _table(title, header, rows):
 
 
 def create_app() -> dash.Dash:
-    app = dash.Dash(__name__, title="POLY TRADING")
+    app = dash.Dash(__name__, title="POLY TRADING",
+                    meta_tags=[{"name": "viewport",
+                                "content": "width=device-width, initial-scale=1, "
+                                           "maximum-scale=1"}])
+    # Kill the default white body margin/background (the "white border") and make
+    # the whole page black edge-to-edge on every device.
+    app.index_string = """<!DOCTYPE html>
+<html>
+<head>{%metas%}<title>{%title%}</title>{%favicon%}{%css%}
+<style>
+  html, body { margin:0; padding:0; background:#000; }
+  * { box-sizing:border-box; }
+  ::-webkit-scrollbar { width:8px; height:8px; }
+  ::-webkit-scrollbar-thumb { background:#26262a; border-radius:4px; }
+  ::-webkit-scrollbar-track { background:#000; }
+</style>
+</head>
+<body>{%app_entry%}<footer>{%config%}{%scripts%}{%renderer%}</footer></body>
+</html>"""
     app.layout = html.Div([
         dcc.Interval(id="tick", interval=_REFRESH_MS, n_intervals=0),
         html.Div([
-            html.Span("POLY TRADING", style={"color": WHITE, "fontSize": "1.15rem",
+            html.Span("POLY TRADING", style={"color": WHITE, "fontSize": "1.1rem",
                      "fontWeight": 700, "letterSpacing": "0.28em"}),
-            html.Span(id="sub", style={"color": MUTED, "fontSize": "0.72rem",
-                     "letterSpacing": "0.1em", "float": "right", "marginTop": "0.35rem"}),
-        ], style={"padding": "0.4rem 0.2rem 1.1rem"}),
+            html.Span(id="sub", style={"color": MUTED, "fontSize": "0.68rem",
+                     "letterSpacing": "0.08em"}),
+        ], style={"display": "flex", "justifyContent": "space-between",
+                  "alignItems": "baseline", "flexWrap": "wrap", "gap": "0.4rem",
+                  "padding": "0.2rem 0.1rem 1rem"}),
         html.Div(id="content"),
     ], style={"backgroundColor": BLACK, "minHeight": "100vh", "fontFamily": MONO,
-              "padding": "1.4rem 1.8rem", "maxWidth": "1180px", "margin": "0 auto"})
+              "padding": "1rem 1.1rem", "maxWidth": "1120px", "margin": "0 auto"})
 
     @app.callback([Output("content", "children"), Output("sub", "children")],
                   Input("tick", "n_intervals"))
@@ -187,7 +209,7 @@ def create_app() -> dash.Dash:
                        html.Div(f"{impact*100:+.2f}%  ({'+' if realized>=0 else ''}${realized:.0f})",
                                 style={"color": _c(impact), "fontSize": "0.8rem",
                                        "marginTop": "0.3rem", "fontWeight": 700})]),
-            ], 3)
+            ], 3, min_px=240)
 
             band = html.Div(_cell([
                 html.Div([
@@ -203,7 +225,7 @@ def create_app() -> dash.Dash:
                 ], style={"display": "flex", "alignItems": "flex-start"}),
                 _progress(deployed),
             ]), style={"backgroundColor": BLACK, "border": f"1px solid {LINE}",
-                       "borderRadius": "12px", "marginBottom": "1px"})
+                       "borderRadius": "12px", "marginBottom": "10px"})
 
             mid = _grid([
                 _cell([_label("TOTAL BETS"), _value(str(s["total"]), size="1.6rem")]),
@@ -215,7 +237,7 @@ def create_app() -> dash.Dash:
                        html.Div("EXP ~27%", style={"color": MUTED, "fontSize": "0.66rem",
                                 "marginTop": "0.25rem", "letterSpacing": "0.1em"})]),
                 _cell([_label("STAKED"), _value(f"${total_staked:.0f}", size="1.6rem")]),
-            ], 4)
+            ], 4, min_px=150)
 
             panels = _grid([
                 _panel(GREEN, "REALIZED", "BOOKED AT RESOLUTION",
@@ -236,7 +258,7 @@ def create_app() -> dash.Dash:
                            _kv("HORIZON", "24–96H"),
                            _kv("SKEW", "NEGATIVE"),
                        ]),
-            ], 3)
+            ], 3, min_px=240)
 
             open_rows = [_bet_row([
                 ((b.question or b.slug)[:44], WHITE, {"flex": "5"}),
@@ -262,14 +284,14 @@ def create_app() -> dash.Dash:
                 _table("SETTLED",
                        [("MARKET", {"flex": "5"}), ("RESULT", {"flex": "2"}),
                         ("P&L", {"flex": "2", "align": "right"})], settled_rows),
-            ], 2)
+            ], 2, min_px=320)
 
             chart = html.Div(_cell([_label("CUMULATIVE REALIZED P&L"),
                                     dcc.Graph(figure=_pnl_figure(store),
                                               config={"displayModeBar": False})]),
                              style={"backgroundColor": BLACK, "border": f"1px solid {LINE}",
-                                    "borderRadius": "12px", "marginTop": "1px",
-                                    "marginBottom": "1px"})
+                                    "borderRadius": "12px", "marginTop": "10px",
+                                    "marginBottom": "10px"})
 
             sub = (f"UPDATED {datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC · "
                    f"DRY-RUN · ${BANKROLL:.0f} BANKROLL")
