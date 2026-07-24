@@ -54,29 +54,35 @@ def calibrate_at_horizon(
     n_markets = 0
     n_skipped = 0
     for i, mk in enumerate(universe):
-        if not mk.sample_token or mk.winning_token_id is None:
+        if mk.winning_token_id is None:
             n_skipped += 1
             continue
-        points = feed.fetch_price_history(mk.sample_token, fidelity=fidelity)
-        price = _price_at_horizon(points, horizon_hours)
-        if price is None or not (min_price <= price <= max_price):
-            n_skipped += 1
-            continue
-
-        won = mk.sample_token == mk.winning_token_id
-        entry_eff = min(0.99, price + slippage)
-        roi = (1.0 / entry_eff - 1.0) if won else -1.0
-
-        b = _find_bucket(buckets, price)
-        if b is None:
-            n_skipped += 1
-            continue
-        b.n += 1
-        b.win += int(won)
-        b.price_sum += price
-        b.roi_sum += roi
-        b._rois.append(roi)
-        n_markets += 1
+        # Score BOTH outcome tokens with their own real price histories. Scoring
+        # only token0 biases the curve because token0 is systematically the
+        # underdog side (it wins ~27% of the time); pricing both sides removes
+        # that side-selection.
+        used = False
+        for token in (mk.sample_token, mk.token1):
+            if not token:
+                continue
+            points = feed.fetch_price_history(token, fidelity=fidelity)
+            price = _price_at_horizon(points, horizon_hours)
+            if price is None or not (min_price <= price <= max_price):
+                continue
+            b = _find_bucket(buckets, price)
+            if b is None:
+                continue
+            won = token == mk.winning_token_id
+            entry_eff = min(0.99, price + slippage)
+            roi = (1.0 / entry_eff - 1.0) if won else -1.0
+            b.n += 1
+            b.win += int(won)
+            b.price_sum += price
+            b.roi_sum += roi
+            b._rois.append(roi)
+            used = True
+        n_markets += int(used)
+        n_skipped += int(not used)
         if progress and (i + 1) % 100 == 0:
             print(f"  ...{i + 1}/{len(universe)} markets, {n_markets} usable", flush=True)
 

@@ -55,7 +55,8 @@ class ResolvedMarket:
 
     condition_id: str
     winning_token_id: str | None   # clobTokenIds[argmax(outcomePrices)]
-    sample_token: str              # clobTokenIds[0] — the token we price & score
+    sample_token: str              # clobTokenIds[0] (kept for back-compat)
+    token1: str                    # clobTokenIds[1] — so we can score BOTH sides
     volume: float
     end_date: str | None
     slug: str
@@ -141,6 +142,7 @@ class DataFeed:
                 condition_id     TEXT PRIMARY KEY,
                 winning_token_id TEXT,
                 sample_token     TEXT NOT NULL DEFAULT '',
+                token1           TEXT NOT NULL DEFAULT '',
                 volume           REAL NOT NULL DEFAULT 0,
                 end_date         TEXT,
                 slug             TEXT NOT NULL DEFAULT ''
@@ -175,6 +177,11 @@ class DataFeed:
             );
             """
         )
+        # Idempotent migration: add token1 to caches created before both-side scoring.
+        try:
+            self._db.execute("ALTER TABLE resolved_market ADD COLUMN token1 TEXT NOT NULL DEFAULT ''")
+        except sqlite3.OperationalError:
+            pass  # column already exists
         self._db.commit()
 
     # ------------------------------------------------------------------
@@ -399,6 +406,7 @@ class DataFeed:
             condition_id=mk.get("conditionId", ""),
             winning_token_id=win_token,
             sample_token=str(tokens[0]),
+            token1=str(tokens[1]),
             volume=volume,
             end_date=mk.get("endDate"),
             slug=mk.get("slug", "") or "",
@@ -413,16 +421,16 @@ class DataFeed:
         )
         return [
             ResolvedMarket(r["condition_id"], r["winning_token_id"], r["sample_token"],
-                           r["volume"], r["end_date"], r["slug"])
+                           r["token1"], r["volume"], r["end_date"], r["slug"])
             for r in cur.fetchall()
         ]
 
     def _store_universe(self, markets: list[ResolvedMarket]) -> None:
         self._db.executemany(
             """INSERT OR REPLACE INTO resolved_market
-               (condition_id, winning_token_id, sample_token, volume, end_date, slug)
-               VALUES (?,?,?,?,?,?)""",
-            [(m.condition_id, m.winning_token_id, m.sample_token, m.volume,
+               (condition_id, winning_token_id, sample_token, token1, volume, end_date, slug)
+               VALUES (?,?,?,?,?,?,?)""",
+            [(m.condition_id, m.winning_token_id, m.sample_token, m.token1, m.volume,
               m.end_date, m.slug) for m in markets],
         )
         self._db.commit()
