@@ -35,5 +35,5 @@ backtest_cache.db
 backtest_cache.db-*
 
 # Nightly review reports (but track the state snapshot the cloud reviewer reads)
-reports/
+reports/*
 !reports/state.md
