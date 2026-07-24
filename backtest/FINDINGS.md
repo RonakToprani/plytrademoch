@@ -23,39 +23,50 @@ Tested by replaying each whale BUY, held to resolution, cost-adjusted
 Conclusion: whale edge lives in exit timing, bet sizing, and HFT — none copyable
 by a slow home-server bot. **Do not resume copy-trading these wallets.**
 
-## 2. Favorite / longshot calibration — IN PROGRESS
+## 2. Favorite / longshot calibration — CANDIDATE EDGE FOUND
 
 Question: is the market's own price mispriced enough to trade, no copying needed?
 
-Method (`python -m backtest.run horizon`): take a neutral, volume-ranked universe
-of resolved binary markets (Gamma closed-markets listing — real elections/sports/
-crypto, not auto-generated junk); price each market at a FIXED lead time before
-resolution (CLOB price history) to avoid the convergence bias that inflates a
-naive `/trades` pooling; bucket by price; measure realized win rate vs price and
-buy-ROI after slippage, with a per-bucket bootstrap CI.
+Method (`python -m backtest.run horizon`): neutral, volume-ranked universe of
+resolved binary markets (Gamma closed-markets listing — real elections/sports/
+crypto, not junk); price each market at a FIXED lead time before resolution (CLOB
+price history) to avoid the convergence bias that inflates a naive `/trades`
+pooling; score BOTH outcome tokens (scoring only token0 biases the curve — it's
+the underdog side ~73% of the time); bucket by price; report realized win rate vs
+price and buy-ROI after 1¢ slippage, with a per-bucket bootstrap CI.
 
-Status / current read (large sample, both outcome tokens scored):
-- **Favorites (price 0.5–1.0) are essentially calibrated** — no significant edge.
-  The "+22% favorites underpriced" from the biased `/trades` method was a timing
-  artifact and disappears under the honest horizon method.
-- **Signal concentrated in moderate longshots (~0.10–0.30):** they appear to win
-  somewhat more often than their price implies. Whether this survives as a
-  *tradeable* edge is not yet settled — see caveats.
+Result (both tokens, ~750–900 markets/horizon, 24h/72h/168h all consistent):
 
-### Open caveats before trusting the longshot signal
-- **Correlated multi-candidate events.** Volume-ranked universe is heavy on
-  election markets where many candidate sub-markets are mutually exclusive; the
-  bootstrap CI assumes independence and will overstate significance. Needs
-  event-level dedup or a cluster bootstrap.
-- **Negative skew / capital efficiency.** Literature puts the real favorite-
-  longshot edge at only ~2–5%/contract, with big drawdowns; a longshot strategy
-  wins rarely and large, which is hard to size.
-- **Liquidity/depth** at the quoted price is not modeled — only a flat slippage.
-- **Time robustness** (does the edge hold out-of-sample across periods?) not yet
-  split.
+| price band | win rate | mean price | buy ROI @1¢ | verdict |
+|-----------|----------|-----------|-------------|---------|
+| 0.10–0.20 | ~25–27%  | ~0.15     | **+48% to +66%, CI > 0** | **EDGE** |
+| 0.30–0.70 | ≈ price  | —         | ~0         | calibrated |
+| 0.80–0.90 | ~75%     | ~0.85     | −10% to −13%, CI < 0 | overpriced |
+| <0.10, >0.90 | —      | —         | ~0 to negative | no edge |
 
-Next: event-dedup, category split (sports vs politics vs crypto), and a
-train/test time split before any paper deployment.
+- **The edge: buy the underdog at ~0.10–0.20.** Those tokens win ~25–27% of the
+  time, not 15%. Its mirror — strong favorites (0.80–0.90) win only ~75%, not
+  85% — is the *same markets' other side*. One coherent phenomenon: **market
+  prices are too extreme; buy the underdog / fade the strong favorite.**
+- **Robustness checks passed:** holds at all three horizons; survives both-token
+  scoring (not a token0 artifact); the 0.10–0.20 bucket spans **104 distinct
+  events across 108 markets** (29 wins from 28 different events — World Cup, NBA,
+  geopolitics, crypto, esports), so it is **not** a correlated-election artifact;
+  cost-robust (still strongly positive at 1¢, degrades slowly).
+- The biased `/trades` "+22% favorites underpriced" was a timing artifact and is
+  gone; favorites are calibrated-to-slightly-overpriced.
+
+### Caveats still open before deploying capital
+- **Negative skew.** ~27% win rate → you lose 73% of bets outright; returns come
+  from occasional ~5–8× payoffs. Needs many small, uncorrelated bets and
+  fractional-Kelly sizing; expect long losing streaks.
+- **Liquidity/depth** at 0.10–0.20 is not modeled (flat slippage only). Must
+  verify you can fill meaningful size without moving the price.
+- **Time robustness** not yet split — is the edge stable across periods, or a
+  recent-regime artifact? This is the next validation.
+
+Next: train/test time split; category breakdown; order-book depth check at the
+quoted price; then a paper harness that sizes via fractional Kelly.
 
 ## Reproduce
 ```bash
