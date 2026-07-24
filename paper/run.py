@@ -72,6 +72,12 @@ def cmd_review(args: argparse.Namespace) -> None:
     print(report)
 
 
+def cmd_export(args: argparse.Namespace) -> None:
+    from paper.export import write_state
+    path = write_state(args.out)
+    print(f"wrote {path}")
+
+
 def cmd_dashboard(args: argparse.Namespace) -> None:
     from paper.dashboard import create_app
     app = create_app()
@@ -99,6 +105,10 @@ def main(argv: list[str] | None = None) -> None:
     pr = sub.add_parser("review", help="nightly strategy review + recommendations")
     pr.add_argument("--no-telegram", action="store_true", help="don't send the summary")
     pr.set_defaults(func=cmd_review)
+
+    px = sub.add_parser("export", help="write a state snapshot for the cloud reviewer")
+    px.add_argument("--out", default="reports/state.md")
+    px.set_defaults(func=cmd_export)
 
     pd = sub.add_parser("dashboard", help="launch the one-page monitor")
     pd.add_argument("--port", type=int, default=8060)
