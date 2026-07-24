@@ -29,3 +29,7 @@ build/
 
 # Logs
 *.log
+
+# Backtest cache
+backtest_cache.db
+backtest_cache.db-*
