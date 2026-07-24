@@ -38,6 +38,7 @@ class Opportunity:
     slug: str
     question: str
     outcome: str
+    token: str
     price: float
     hours_to_resolve: float
     volume: float
@@ -68,7 +69,7 @@ def scan(
         hours = _hours_until(mk.get("end_date"), now)
         if hours is None or not (min_hours <= hours <= max_hours):
             continue
-        for token_price, outcome in zip(mk["prices"], mk["outcomes"]):
+        for token_price, outcome, token in zip(mk["prices"], mk["outcomes"], mk["tokens"]):
             if not (band_lo <= token_price <= band_hi):
                 continue
             f = _kelly_fraction(token_price, _BAND_WIN_RATE) * kelly_multiple
@@ -78,7 +79,7 @@ def scan(
             if stake < min_stake:
                 stake = min_stake
             opp = Opportunity(
-                slug=mk["slug"], question=mk["question"], outcome=outcome,
+                slug=mk["slug"], question=mk["question"], outcome=outcome, token=token,
                 price=token_price, hours_to_resolve=hours, volume=mk["volume"],
                 est_win_rate=_BAND_WIN_RATE, kelly_fraction=round(f, 4),
                 suggested_stake=round(stake, 2),

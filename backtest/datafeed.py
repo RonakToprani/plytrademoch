@@ -485,6 +485,32 @@ class DataFeed:
         )
         self._db.commit()
 
+    def fetch_order_book(self, token_id: str) -> dict[str, list[tuple[float, float]]] | None:
+        """
+        Live CLOB order book for a token: {'bids': [(price,size)...],
+        'asks': [(price,size)...]} sorted best-first (bids high→low, asks low→high).
+        Not cached. Returns None on error/empty.
+        """
+        try:
+            b = self._get(f"{CLOB_API}/book", {"token_id": token_id})
+        except httpx.HTTPStatusError:
+            return None
+        if not b or not isinstance(b, dict):
+            return None
+
+        def _levels(rows: Any) -> list[tuple[float, float]]:
+            out = []
+            for r in rows or []:
+                try:
+                    out.append((float(r["price"]), float(r["size"])))
+                except (KeyError, ValueError, TypeError):
+                    continue
+            return out
+
+        bids = sorted(_levels(b.get("bids")), key=lambda x: x[0], reverse=True)  # best = highest
+        asks = sorted(_levels(b.get("asks")), key=lambda x: x[0])                # best = lowest
+        return {"bids": bids, "asks": asks}
+
     # ------------------------------------------------------------------
     # Live open markets (for the underdog strategy scanner) — never cached
     # ------------------------------------------------------------------

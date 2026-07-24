@@ -211,15 +211,47 @@ def cmd_live(args: argparse.Namespace) -> None:
         if not opps:
             print("no opportunities right now.")
             return
-        total = sum(o.suggested_stake for o in opps[: args.top])
-        print(f"\n{len(opps)} opportunities (one per event). Top {min(args.top, len(opps))} "
+        shown = opps[: args.top]
+        total = sum(o.suggested_stake for o in shown)
+        print(f"\n{len(opps)} opportunities (one per event). Top {len(shown)} "
               f"by liquidity — suggested book ${total:.0f} on ${args.bankroll:.0f} bankroll "
               f"({args.kelly:.0%} Kelly):\n")
-        print(f"  {'price':>5} {'~win':>5} {'stake':>6} {'hrs':>5} {'vol':>10}  market")
-        for o in opps[: args.top]:
-            print(f"  {o.price:>5.2f} {o.est_win_rate:>5.0%} ${o.suggested_stake:>5.2f} "
-                  f"{o.hours_to_resolve:>5.0f} ${o.volume:>9,.0f}  "
-                  f"{(o.question or o.slug)[:52]}  [{o.outcome}]")
+        if args.depth:
+            print("  checking live order-book depth for each ...\n")
+            from backtest.depth import analyze as analyze_depth
+            print(f"  {'mid':>4} {'ask':>4} {'fill':>5} {'stake':>6} {'cap@band':>9} "
+                  f"{'hrs':>4}  market")
+            tradeable = 0
+            # A real fill must land inside the edge band (with a small tolerance
+            # below), fill the stake, and not be a stale/dust book (ask ~0).
+            fill_floor = args.band_lo - 0.03
+            for o in shown:
+                fq = analyze_depth(feed.fetch_order_book(o.token), o.suggested_stake, args.band_hi)
+                ask = f"{fq.best_ask:.2f}" if fq.best_ask is not None else "  - "
+                fill = f"{fq.avg_fill_price:.3f}" if fq.avg_fill_price is not None else "  -  "
+                ok = (fq.avg_fill_price is not None and fq.filled_frac > 0.99
+                      and fill_floor <= fq.avg_fill_price <= args.band_hi)
+                if fq.best_ask is not None and fq.best_ask < fill_floor:
+                    flag = "  <-- stale/dust book (skip)"
+                elif fq.best_ask is not None and fq.best_ask > args.band_hi:
+                    flag = "  <-- ask out of band"
+                elif fq.filled_frac <= 0.99:
+                    flag = "  <-- too thin for stake"
+                else:
+                    flag = ""
+                tradeable += int(ok)
+                print(f"  {o.price:>4.2f} {ask:>4} {fill:>5} ${o.suggested_stake:>5.2f} "
+                      f"${fq.capacity_in_band:>8,.0f} {o.hours_to_resolve:>4.0f}  "
+                      f"{(o.question or o.slug)[:44]} [{o.outcome}]{flag}")
+            print(f"\n  {tradeable}/{len(shown)} genuinely fillable in-band at the suggested stake.")
+            print("  mid=Gamma price, ask=best executable buy, fill=VWAP for the stake, "
+                  "cap@band=$ available at asks <= band-hi.")
+        else:
+            print(f"  {'price':>5} {'~win':>5} {'stake':>6} {'hrs':>5} {'vol':>10}  market")
+            for o in shown:
+                print(f"  {o.price:>5.2f} {o.est_win_rate:>5.0%} ${o.suggested_stake:>5.2f} "
+                      f"{o.hours_to_resolve:>5.0f} ${o.volume:>9,.0f}  "
+                      f"{(o.question or o.slug)[:52]}  [{o.outcome}]")
         print("\n  DRY-RUN / informational only — no orders placed. Edge is at the band "
               "level; size small and diversified (negative skew, ~27% win rate).")
 
@@ -270,6 +302,8 @@ def main(argv: list[str] | None = None) -> None:
     pl.add_argument("--bankroll", type=float, default=100.0)
     pl.add_argument("--kelly", type=float, default=0.25, help="Kelly multiple (0.25 = quarter)")
     pl.add_argument("--top", type=int, default=25)
+    pl.add_argument("--depth", action="store_true",
+                    help="check live order-book depth / real fill price per opportunity")
     pl.set_defaults(func=cmd_live)
 
     args = p.parse_args(argv)
