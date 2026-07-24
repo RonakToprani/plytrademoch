@@ -1,50 +1,99 @@
 """
-paper/dashboard.py — One-page monitor for the underdog paper strategy.
+paper/dashboard.py — POLY TRADING, one-page monitor for the underdog strategy.
 
-Everything at a glance: running P&L vs the backtest expectation, the open book,
-and settled results. Reads paper_underdog.db live and auto-refreshes. Launch with
-`python -m paper.run dashboard` → http://localhost:8060.
+Terminal aesthetic: pure black, monospace, all-caps labels, big values, green with
+purple/amber accents. Reads paper_underdog.db live, auto-refreshes. Launch with
+`python -m paper.run dashboard` → http://<lan-ip>:8060.
 """
 
 from __future__ import annotations
 
+import os
 from datetime import datetime, timezone
 
 import dash
-from dash import Input, Output, dash_table, dcc, html
-import dash_bootstrap_components as dbc
+from dash import Input, Output, dcc, html
 import plotly.graph_objects as go
 
 from paper.store import PaperStore
 
-# palette
-_BG = "#0e1117"
-_CARD = "#161b22"
-_GREEN = "#3fb950"
-_RED = "#f85149"
-_MUTED = "#8b949e"
-_ACCENT = "#58a6ff"
+BANKROLL = float(os.environ.get("POLY_BANKROLL", "150"))
 _REFRESH_MS = 30_000
 
+# palette (from the reference aesthetic)
+BLACK = "#000000"
+PANEL = "#0b0b0c"
+LINE = "#1c1c1e"
+WHITE = "#f4f4f5"
+MUTED = "#6b6b70"
+GREEN = "#4ade80"
+RED = "#f87171"
+AMBER = "#fbbf24"
+PURPLE = "#c084fc"
+MONO = "ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace"
 
-def _fmt_dt(iso: str | None) -> str:
-    if not iso:
-        return "never"
-    try:
-        return datetime.fromisoformat(iso).strftime("%Y-%m-%d %H:%M UTC")
-    except ValueError:
-        return iso
+
+def _c(v: float, zero: str = WHITE) -> str:
+    return GREEN if v > 0 else RED if v < 0 else zero
 
 
-def _stat_card(title: str, value: str, sub: str = "", color: str = "#e6edf3") -> dbc.Col:
-    return dbc.Col(dbc.Card(dbc.CardBody([
-        html.Div(title, style={"color": _MUTED, "fontSize": "0.75rem",
-                               "textTransform": "uppercase", "letterSpacing": "0.05em"}),
-        html.Div(value, style={"color": color, "fontSize": "1.8rem", "fontWeight": 700,
-                               "lineHeight": "1.2"}),
-        html.Div(sub, style={"color": _MUTED, "fontSize": "0.75rem"}),
-    ]), style={"backgroundColor": _CARD, "border": "1px solid #30363d",
-               "borderRadius": "10px", "height": "100%"}), md=2, xs=6, className="mb-3")
+def _label(text: str, color: str = MUTED):
+    return html.Div(text, style={
+        "color": color, "fontSize": "0.68rem", "letterSpacing": "0.22em",
+        "textTransform": "uppercase", "fontWeight": 500, "marginBottom": "0.35rem"})
+
+
+def _value(text: str, color: str = WHITE, size: str = "1.9rem"):
+    return html.Div(text, style={
+        "color": color, "fontSize": size, "fontWeight": 700, "lineHeight": "1.1",
+        "letterSpacing": "-0.01em"})
+
+
+def _cell(children, pad="1.1rem 1.3rem", grow=True):
+    return html.Div(children, style={
+        "backgroundColor": BLACK, "padding": pad,
+        "flex": "1 1 0" if grow else "0 0 auto"})
+
+
+def _grid(cells, cols):
+    return html.Div(cells, style={
+        "display": "grid", "gridTemplateColumns": f"repeat({cols}, 1fr)",
+        "gap": "1px", "backgroundColor": LINE, "border": f"1px solid {LINE}",
+        "borderRadius": "12px", "overflow": "hidden", "marginBottom": "1px"})
+
+
+def _kv(label, value, vcolor=WHITE):
+    return html.Div([
+        html.Span(label, style={"color": MUTED, "fontSize": "0.72rem",
+                                "letterSpacing": "0.12em", "textTransform": "uppercase"}),
+        html.Span(value, style={"color": vcolor, "fontSize": "0.9rem", "fontWeight": 700,
+                                "float": "right"}),
+    ], style={"marginTop": "0.5rem", "overflow": "hidden"})
+
+
+def _progress(pct: float, color: str = GREEN):
+    pct = max(0.0, min(1.0, pct))
+    return html.Div(html.Div(style={
+        "width": f"{pct*100:.1f}%", "height": "8px", "backgroundColor": color,
+        "borderRadius": "6px"}), style={
+        "width": "100%", "height": "8px", "backgroundColor": "#161618",
+        "borderRadius": "6px", "marginTop": "0.9rem"})
+
+
+def _panel(dot, title, sub, big, big_color, rows):
+    return _cell([
+        html.Div([
+            html.Span("●", style={"color": dot, "fontSize": "0.7rem", "marginRight": "0.5rem"}),
+            html.Span(title, style={"color": WHITE, "fontSize": "0.72rem",
+                                    "letterSpacing": "0.18em", "textTransform": "uppercase",
+                                    "fontWeight": 600}),
+        ]),
+        html.Div(sub, style={"color": MUTED, "fontSize": "0.68rem",
+                             "letterSpacing": "0.12em", "textTransform": "uppercase",
+                             "margin": "0.25rem 0 0.7rem"}),
+        _value(big, big_color, "2.5rem"),
+        html.Div(rows, style={"marginTop": "0.8rem"}),
+    ], pad="1.2rem 1.3rem")
 
 
 def _pnl_figure(store: PaperStore) -> go.Figure:
@@ -54,109 +103,177 @@ def _pnl_figure(store: PaperStore) -> go.Figure:
     xs, ys, cum = [], [], 0.0
     for b in settled:
         cum += (b.pnl or 0.0)
-        xs.append(_fmt_dt(b.settled_at))
+        xs.append(b.settled_at)
         ys.append(round(cum, 2))
     fig = go.Figure()
     if xs:
-        line_color = _GREEN if ys[-1] >= 0 else _RED
-        fig.add_trace(go.Scatter(x=xs, y=ys, mode="lines+markers",
-                                 line={"color": line_color, "width": 2},
-                                 marker={"size": 5}, name="Cumulative P&L"))
-        fig.add_hline(y=0, line={"color": _MUTED, "width": 1, "dash": "dot"})
+        col = GREEN if ys[-1] >= 0 else RED
+        fig.add_trace(go.Scatter(x=xs, y=ys, mode="lines", line={"color": col, "width": 2},
+                                 fill="tozeroy", fillcolor="rgba(74,222,128,0.07)"))
+        fig.add_hline(y=0, line={"color": LINE, "width": 1})
     else:
-        fig.add_annotation(text="No settled bets yet — P&L appears as markets resolve",
-                           showarrow=False, font={"color": _MUTED, "size": 14})
+        fig.add_annotation(text="NO SETTLED BETS YET — P&L PLOTS AS MARKETS RESOLVE",
+                           showarrow=False, font={"color": MUTED, "size": 12, "family": MONO})
     fig.update_layout(
-        paper_bgcolor=_CARD, plot_bgcolor=_CARD, margin={"l": 40, "r": 20, "t": 10, "b": 40},
-        height=280, font={"color": "#e6edf3"}, showlegend=False,
-        xaxis={"gridcolor": "#21262d", "showgrid": False},
-        yaxis={"gridcolor": "#21262d", "title": "Cumulative realized P&L ($)"},
-    )
+        paper_bgcolor=BLACK, plot_bgcolor=BLACK, height=200,
+        margin={"l": 44, "r": 16, "t": 10, "b": 24}, showlegend=False,
+        font={"color": MUTED, "family": MONO, "size": 10},
+        xaxis={"showgrid": False, "showticklabels": False},
+        yaxis={"gridcolor": "#141416", "zeroline": False, "tickprefix": "$"})
     return fig
 
 
-def _table(rows: list[dict], columns: list[dict]) -> dash_table.DataTable:
-    return dash_table.DataTable(
-        data=rows, columns=columns, page_size=15,
-        style_as_list_view=True,
-        style_header={"backgroundColor": _CARD, "color": _MUTED, "border": "none",
-                      "fontWeight": 600, "textTransform": "uppercase", "fontSize": "0.7rem"},
-        style_cell={"backgroundColor": _BG, "color": "#e6edf3", "border": "none",
-                    "fontSize": "0.85rem", "padding": "8px 10px", "textAlign": "left",
-                    "fontFamily": "ui-monospace, monospace"},
-        style_data_conditional=[
-            {"if": {"filter_query": "{result} = WON"}, "color": _GREEN},
-            {"if": {"filter_query": "{result} = LOST"}, "color": _RED},
-        ],
-    )
+def _bet_row(cells):
+    return html.Div([
+        html.Span(t, style={"color": c, "fontSize": "0.8rem", "flex": f["flex"],
+                            "textAlign": f.get("align", "left"),
+                            "whiteSpace": "nowrap", "overflow": "hidden",
+                            "textOverflow": "ellipsis", "paddingRight": "0.6rem"})
+        for t, c, f in cells
+    ], style={"display": "flex", "padding": "0.4rem 0", "borderBottom": f"1px solid {LINE}"})
+
+
+def _table(title, header, rows):
+    return _cell([
+        _label(title),
+        _bet_row([(h, MUTED, f) for h, f in header]),
+        html.Div(rows if rows else [html.Div("—", style={"color": MUTED, "padding": "0.6rem 0",
+                                                         "fontSize": "0.8rem"})]),
+    ])
 
 
 def create_app() -> dash.Dash:
-    app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
-                    title="Underdog Paper Monitor")
-
-    app.layout = dbc.Container([
+    app = dash.Dash(__name__, title="POLY TRADING")
+    app.layout = html.Div([
         dcc.Interval(id="tick", interval=_REFRESH_MS, n_intervals=0),
         html.Div([
-            html.H3("🎯 Underdog Paper Trading",
-                    style={"color": "#e6edf3", "fontWeight": 700, "display": "inline-block"}),
-            html.Span(id="subtitle", style={"color": _MUTED, "marginLeft": "1rem"}),
-        ], className="my-3"),
-        dbc.Row(id="cards"),
-        dbc.Card(dbc.CardBody([
-            html.Div("Cumulative realized P&L", style={"color": _MUTED, "fontSize": "0.8rem"}),
-            dcc.Graph(id="pnl", config={"displayModeBar": False}),
-        ]), style={"backgroundColor": _CARD, "border": "1px solid #30363d",
-                   "borderRadius": "10px"}, className="mb-3"),
-        dbc.Row([
-            dbc.Col([html.H6("Open positions", style={"color": _MUTED}),
-                     html.Div(id="open-table")], md=6),
-            dbc.Col([html.H6("Recently settled", style={"color": _MUTED}),
-                     html.Div(id="settled-table")], md=6),
-        ]),
-    ], fluid=True, style={"backgroundColor": _BG, "minHeight": "100vh", "padding": "1rem 2rem"})
+            html.Span("POLY TRADING", style={"color": WHITE, "fontSize": "1.15rem",
+                     "fontWeight": 700, "letterSpacing": "0.28em"}),
+            html.Span(id="sub", style={"color": MUTED, "fontSize": "0.72rem",
+                     "letterSpacing": "0.1em", "float": "right", "marginTop": "0.35rem"}),
+        ], style={"padding": "0.4rem 0.2rem 1.1rem"}),
+        html.Div(id="content"),
+    ], style={"backgroundColor": BLACK, "minHeight": "100vh", "fontFamily": MONO,
+              "padding": "1.4rem 1.8rem", "maxWidth": "1180px", "margin": "0 auto"})
 
-    @app.callback(
-        [Output("cards", "children"), Output("pnl", "figure"),
-         Output("open-table", "children"), Output("settled-table", "children"),
-         Output("subtitle", "children")],
-        Input("tick", "n_intervals"),
-    )
+    @app.callback([Output("content", "children"), Output("sub", "children")],
+                  Input("tick", "n_intervals"))
     def _refresh(_n):
         store = PaperStore()
         try:
             s = store.stats()
-            pnl_color = _GREEN if s["realized_pnl"] >= 0 else _RED
-            wr_color = _GREEN if s["win_rate"] >= 0.20 else _RED if s["settled"] else "#e6edf3"
-            roi_color = _GREEN if s["roi"] > 0 else _RED if s["settled"] else "#e6edf3"
-            cards = [
-                _stat_card("Open bets", str(s["open"]), f"${s['open_stake']:.0f} exposure"),
-                _stat_card("Settled", str(s["settled"]), f"{s['won']}W / {s['lost']}L"),
-                _stat_card("Realized P&L", f"${s['realized_pnl']:.2f}",
-                           f"on ${s['settled_stake']:.0f} staked", pnl_color),
-                _stat_card("Win rate", f"{s['win_rate']*100:.0f}%", "exp ~27%", wr_color),
-                _stat_card("ROI", f"{s['roi']*100:+.0f}%", "exp +50–70%", roi_color),
-                _stat_card("Total bets", str(s["total"]), "all-time"),
-            ]
-            open_rows = [{
-                "market": (b.question or b.slug)[:46], "side": b.outcome,
-                "entry": f"{b.entry_price:.3f}", "stake": f"${b.stake_usd:.2f}",
-            } for b in store.open_bets()]
-            open_tbl = _table(open_rows, [
-                {"name": "Market", "id": "market"}, {"name": "Side", "id": "side"},
-                {"name": "Entry", "id": "entry"}, {"name": "Stake", "id": "stake"}])
-            settled = [b for b in store.all_bets(limit=200)
-                       if b.status in ("WON", "LOST", "VOID")]
-            settled_rows = [{
-                "market": (b.question or b.slug)[:40], "result": b.status,
-                "pnl": f"{'+' if (b.pnl or 0) >= 0 else ''}${b.pnl:.2f}",
-            } for b in settled]
-            settled_tbl = _table(settled_rows, [
-                {"name": "Market", "id": "market"}, {"name": "Result", "id": "result"},
-                {"name": "P&L", "id": "pnl"}])
-            subtitle = (f"updated {datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC  ·  "
-                        f"last scan {_fmt_dt(store.last_scan())}  ·  DRY-RUN")
-            return cards, _pnl_figure(store), open_tbl, settled_tbl, subtitle
+            opens = store.open_bets()
+            realized, roi = s["realized_pnl"], s["roi"]
+            equity = BANKROLL + realized
+            impact = realized / BANKROLL if BANKROLL else 0.0
+            deployed = s["open_stake"] / BANKROLL if BANKROLL else 0.0
+            potential = round(sum(b.shares - b.stake_usd for b in opens), 2)
+            avg_entry = (sum(b.entry_price for b in opens) / len(opens)) if opens else 0.0
+            total_staked = round(s["settled_stake"] + s["open_stake"], 2)
+
+            top = _grid([
+                _cell([_label("OPEN BOOK"),
+                       _value(f"{s['open']} · ${s['open_stake']:.0f}"),
+                       html.Div("POSITIONS · EXPOSURE", style={"color": MUTED,
+                                "fontSize": "0.68rem", "marginTop": "0.3rem",
+                                "letterSpacing": "0.1em"})]),
+                _cell([_label("REALIZED P&L"),
+                       _value(f"{'+' if realized>=0 else ''}${realized:.2f}", _c(realized)),
+                       html.Div(f"{roi*100:+.2f}% ROI", style={"color": _c(roi),
+                                "fontSize": "0.8rem", "marginTop": "0.3rem",
+                                "fontWeight": 700})]),
+                _cell([_label("PORTFOLIO"),
+                       _value(f"${equity:.2f}"),
+                       html.Div(f"{impact*100:+.2f}%  ({'+' if realized>=0 else ''}${realized:.0f})",
+                                style={"color": _c(impact), "fontSize": "0.8rem",
+                                       "marginTop": "0.3rem", "fontWeight": 700})]),
+            ], 3)
+
+            band = html.Div(_cell([
+                html.Div([
+                    html.Div([
+                        _label("CAPITAL DEPLOYED — UNDERDOG BOOK"),
+                        html.Div("BUY 0.10–0.20 · RESOLVES 24–96H · HOLD TO SETTLE",
+                                 style={"color": MUTED, "fontSize": "0.68rem",
+                                        "letterSpacing": "0.1em"}),
+                    ], style={"flex": "1"}),
+                    html.Div(f"{deployed*100:.1f}% deployed · ${s['open_stake']:.0f} of ${BANKROLL:.0f}",
+                             style={"color": GREEN, "fontSize": "0.82rem", "fontWeight": 700,
+                                    "textAlign": "right"}),
+                ], style={"display": "flex", "alignItems": "flex-start"}),
+                _progress(deployed),
+            ]), style={"backgroundColor": BLACK, "border": f"1px solid {LINE}",
+                       "borderRadius": "12px", "marginBottom": "1px"})
+
+            mid = _grid([
+                _cell([_label("TOTAL BETS"), _value(str(s["total"]), size="1.6rem")]),
+                _cell([_label("SETTLED"),
+                       _value(f"{s['won']}W · {s['lost']}L", size="1.6rem")]),
+                _cell([_label("WIN RATE"),
+                       _value(f"{s['win_rate']*100:.0f}%",
+                              _c(s['win_rate']-0.20) if s['settled'] else WHITE, "1.6rem"),
+                       html.Div("EXP ~27%", style={"color": MUTED, "fontSize": "0.66rem",
+                                "marginTop": "0.25rem", "letterSpacing": "0.1em"})]),
+                _cell([_label("STAKED"), _value(f"${total_staked:.0f}", size="1.6rem")]),
+            ], 4)
+
+            panels = _grid([
+                _panel(GREEN, "REALIZED", "BOOKED AT RESOLUTION",
+                       f"{'+' if realized>=0 else ''}${realized:.2f}", _c(realized), [
+                           _kv("WIN RATE", f"{s['win_rate']*100:.0f}%"),
+                           _kv("ROI", f"{roi*100:+.1f}%", _c(roi)),
+                           _kv("SETTLED", str(s["settled"])),
+                       ]),
+                _panel(AMBER, "OPEN RISK", "IF ALL OPEN RESOLVE",
+                       f"${s['open_stake']:.2f}", AMBER, [
+                           _kv("MAX LOSS", f"-${s['open_stake']:.2f}", RED),
+                           _kv("MAX GAIN", f"+${potential:.2f}", GREEN),
+                           _kv("AVG ENTRY", f"{avg_entry:.3f}"),
+                       ]),
+                _panel(PURPLE, "BACKTEST EDGE", "VALIDATED EXPECTATION",
+                       "+50–70%", PURPLE, [
+                           _kv("EXP WIN", "~27%"),
+                           _kv("HORIZON", "24–96H"),
+                           _kv("SKEW", "NEGATIVE"),
+                       ]),
+            ], 3)
+
+            open_rows = [_bet_row([
+                ((b.question or b.slug)[:44], WHITE, {"flex": "5"}),
+                (b.outcome[:10], MUTED, {"flex": "2"}),
+                (f"{b.entry_price:.3f}", WHITE, {"flex": "1", "align": "right"}),
+                (f"${b.stake_usd:.2f}", GREEN, {"flex": "1", "align": "right"}),
+            ]) for b in opens[:20]]
+            settled_bets = [b for b in store.all_bets(limit=200)
+                            if b.status in ("WON", "LOST", "VOID")]
+            settled_rows = [_bet_row([
+                ((b.question or b.slug)[:44], WHITE, {"flex": "5"}),
+                (b.status, GREEN if b.status == "WON" else RED if b.status == "LOST" else MUTED,
+                 {"flex": "2"}),
+                (f"{'+' if (b.pnl or 0)>=0 else ''}${b.pnl:.2f}", _c(b.pnl or 0),
+                 {"flex": "2", "align": "right"}),
+            ]) for b in settled_bets[:20]]
+
+            tables = _grid([
+                _table("OPEN POSITIONS",
+                       [("MARKET", {"flex": "5"}), ("SIDE", {"flex": "2"}),
+                        ("ENTRY", {"flex": "1", "align": "right"}),
+                        ("STAKE", {"flex": "1", "align": "right"})], open_rows),
+                _table("SETTLED",
+                       [("MARKET", {"flex": "5"}), ("RESULT", {"flex": "2"}),
+                        ("P&L", {"flex": "2", "align": "right"})], settled_rows),
+            ], 2)
+
+            chart = html.Div(_cell([_label("CUMULATIVE REALIZED P&L"),
+                                    dcc.Graph(figure=_pnl_figure(store),
+                                              config={"displayModeBar": False})]),
+                             style={"backgroundColor": BLACK, "border": f"1px solid {LINE}",
+                                    "borderRadius": "12px", "marginTop": "1px",
+                                    "marginBottom": "1px"})
+
+            sub = (f"UPDATED {datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC · "
+                   f"DRY-RUN · ${BANKROLL:.0f} BANKROLL")
+            return [top, band, mid, panels, chart, tables], sub
         finally:
             store.close()
 

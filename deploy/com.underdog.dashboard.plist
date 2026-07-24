@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.underdog.dashboard</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/ronaktoprani/Documents/plytrademoch/venv/bin/python</string>
+        <string>-m</string>
+        <string>paper.run</string>
+        <string>dashboard</string>
+        <string>--port</string>
+        <string>8060</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/ronaktoprani/Documents/plytrademoch</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/ronaktoprani/Documents/plytrademoch/logs/dashboard.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/ronaktoprani/Documents/plytrademoch/logs/dashboard.log</string>
+</dict>
+</plist>

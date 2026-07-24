@@ -42,7 +42,7 @@ class PaperTrader:
         band_lo: float = 0.10,
         band_hi: float = 0.20,
         min_hours: float = 24.0,
-        max_hours: float = 168.0,
+        max_hours: float = 96.0,   # 1-4 day holds: edge is as strong short + recycles capital faster
         min_volume: float = 30_000.0,
         kelly_multiple: float = 0.25,
         max_open_stake: float | None = None,     # cap on total open exposure ($)
