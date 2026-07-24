@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-24T23:38:11.218025+00:00
+# Poly underdog paper state — 2026-07-24T23:45:02.405511+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
