@@ -348,12 +348,18 @@ class DataFeed:
 
         out: list[ResolvedMarket] = []
         offset = 0
+        # Order by volume desc so the universe is the most *liquid* resolved
+        # markets (real elections/sports/crypto), not recent auto-generated junk.
+        # Gamma caps this listing at offset ~2000, so we stop there gracefully.
         while len(out) < max_markets:
-            page = self._get(
-                f"{GAMMA_API}/markets",
-                {"closed": "true", "limit": 100, "offset": offset,
-                 "order": "endDate", "ascending": "false"},
-            )
+            try:
+                page = self._get(
+                    f"{GAMMA_API}/markets",
+                    {"closed": "true", "limit": 100, "offset": offset,
+                     "order": "volumeNum", "ascending": "false"},
+                )
+            except httpx.HTTPStatusError:
+                break  # hit the offset ceiling
             if not page:
                 break
             for mk in page:

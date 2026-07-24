@@ -32,6 +32,7 @@ Gamma closed-markets listing. Nothing here is whale-selected.
 
 from __future__ import annotations
 
+import random
 from dataclasses import dataclass, field
 
 from backtest.datafeed import DataFeed, ResolvedMarket
@@ -63,6 +64,18 @@ class Bucket:
     @property
     def mean_roi(self) -> float:
         return self.roi_sum / self.n if self.n else 0.0
+
+    def roi_ci(self, iters: int = 2_000, alpha: float = 0.05) -> tuple[float, float]:
+        """Percentile bootstrap CI for this bucket's mean buy-ROI."""
+        vals = self._rois
+        if len(vals) < 5:
+            return (float("-inf"), float("inf"))
+        n = len(vals)
+        means = sorted(
+            sum(vals[random.randrange(n)] for _ in range(n)) / n
+            for _ in range(iters)
+        )
+        return (means[int((alpha / 2) * iters)], means[int((1 - alpha / 2) * iters) - 1])
 
 
 @dataclass
@@ -110,6 +123,7 @@ def calibrate(
             b.win += int(won)
             b.price_sum += pr.price
             b.roi_sum += roi
+            b._rois.append(roi)
             n_prints += 1
         if progress and (i + 1) % 50 == 0:
             print(f"  ...{i + 1}/{len(universe)} markets, {n_prints} prints", flush=True)

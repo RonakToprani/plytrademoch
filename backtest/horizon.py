@@ -75,6 +75,7 @@ def calibrate_at_horizon(
         b.win += int(won)
         b.price_sum += price
         b.roi_sum += roi
+        b._rois.append(roi)
         n_markets += 1
         if progress and (i + 1) % 100 == 0:
             print(f"  ...{i + 1}/{len(universe)} markets, {n_markets} usable", flush=True)

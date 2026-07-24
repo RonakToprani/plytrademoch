@@ -174,16 +174,26 @@ def cmd_horizon(args: argparse.Namespace) -> None:
                   f"{res.n_markets} markets priced ({res.n_skipped} skipped) | "
                   f"slippage {res.slippage:.3f} ===")
             print(f"  {'price band':>12} {'n':>6} {'mean px':>8} {'win rate':>9} "
-                  f"{'gap':>8} {'buy ROI':>9}  interpretation")
+                  f"{'gap':>8} {'buy ROI':>9} {'95% CI (ROI)':>20}  verdict")
             for b in res.buckets:
                 if b.n == 0:
                     continue
-                interp = ("underpriced" if b.gap > 0.03 else
-                          "overpriced" if b.gap < -0.03 else "calibrated")
+                lo, hi = b.roi_ci()
+                # A real edge = ROI CI entirely above 0 with a meaningful sample.
+                if b.n < 20:
+                    verdict = "thin"
+                elif lo > 0:
+                    verdict = "EDGE"
+                elif hi < 0:
+                    verdict = "lose"
+                else:
+                    verdict = "flat"
+                ci = "  n<5" if lo == float("-inf") else f"[{lo:>+6.1%},{hi:>+6.1%}]"
                 print(f"  {b.lo:>5.2f}-{b.hi:<5.2f} {b.n:>6,} {b.mean_price:>8.3f} "
-                      f"{b.win_rate:>8.1%} {b.gap:>+7.1%} {b.mean_roi:>+8.1%}  {interp}")
+                      f"{b.win_rate:>8.1%} {b.gap:>+7.1%} {b.mean_roi:>+8.1%} {ci:>20}  {verdict}")
         print("\n  gap = realized win rate - mean price (ex-ante). "
               "buy ROI is net of slippage, held to resolution.")
+        print("  verdict EDGE = ROI 95% CI entirely > 0 with n>=20; 'thin' = too few markets.")
 
 
 def main(argv: list[str] | None = None) -> None:
