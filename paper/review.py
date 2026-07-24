@@ -191,14 +191,14 @@ def run_review(send: bool = True) -> str:
 
     if send:
         n = PaperNotifier()
-        top = recs[0] if recs else "no recommendations"
+        # Headline first, then the full report details as monospace chunks.
         n.send(
             f"🌙 <b>Nightly review — {today}</b>\n"
             f"Settled {stats['settled']} ({stats['won']}W/{stats['lost']}L)  ·  "
             f"ROI {stats['roi']*100:+.0f}%  ·  win {stats['win_rate']*100:.0f}%\n"
-            f"Realized ${stats['realized_pnl']:.2f} on ${stats['open_stake']:.0f} open\n\n"
-            f"<b>Top rec:</b> {top}"
+            f"Realized ${stats['realized_pnl']:.2f} on ${stats['open_stake']:.0f} open"
         )
+        n.send_report(report)
     store.close()
     return report
 

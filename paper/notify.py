@@ -63,6 +63,25 @@ class PaperNotifier:
             f"{outcome}  •  P&L {sign}${pnl:.2f}"
         )
 
+    def send_report(self, text: str) -> None:
+        """Send a long report as monospace chunks under Telegram's 4096 limit."""
+        if not self._enabled:
+            return
+        import html as _html
+        limit = 3500
+        chunk, size = [], 0
+        chunks: list[str] = []
+        for line in text.splitlines():
+            if size + len(line) + 1 > limit and chunk:
+                chunks.append("\n".join(chunk))
+                chunk, size = [], 0
+            chunk.append(line)
+            size += len(line) + 1
+        if chunk:
+            chunks.append("\n".join(chunk))
+        for part in chunks:
+            self.send(f"<pre>{_html.escape(part)}</pre>")
+
     def cycle_summary(self, opened: int, settled: int, stats: dict) -> None:
         if opened == 0 and settled == 0:
             return  # nothing happened — stay quiet

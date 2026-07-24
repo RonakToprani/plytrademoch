@@ -167,8 +167,8 @@ def create_app() -> dash.Dash:
     app.layout = html.Div([
         dcc.Interval(id="tick", interval=_REFRESH_MS, n_intervals=0),
         html.Div([
-            html.Span("POLY TRADING", style={"color": WHITE, "fontSize": "1.1rem",
-                     "fontWeight": 700, "letterSpacing": "0.28em"}),
+            html.Span("POLY TRADING", style={"color": WHITE, "fontSize": "2.2rem",
+                     "fontWeight": 800, "letterSpacing": "0.3em"}),
             html.Span(id="sub", style={"color": MUTED, "fontSize": "0.68rem",
                      "letterSpacing": "0.08em"}),
         ], style={"display": "flex", "justifyContent": "space-between",
