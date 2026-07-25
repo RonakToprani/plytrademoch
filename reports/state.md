@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-25T11:45:56.672720+00:00
+# Poly underdog paper state — 2026-07-25T14:46:10.068478+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **10** ($58.29)  ·  settled **0** (0W / 0L)
+- open **11** ($61.91)  ·  settled **0** (0W / 0L)
 - realized P&L **$0.00**  ·  ROI **+0.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-25T11:32:07.250885+00:00
+- last scan: 2026-07-25T14:32:58.589498+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -23,6 +23,7 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will Elon Musk post 320-339 tweets from July 21 to J | Yes | 0.135 | $5.87 | 2026-07-28T16:00:07.281400+00:00 |
 | Will Elon Musk post 340-359 tweets from July 21 to J | Yes | 0.107 | $6.86 | 2026-07-28T16:00:07.925211+00:00 |
 | Will Elon Musk post 240-259 tweets from July 21 to J | Yes | 0.113 | $6.69 | 2026-07-28T16:00:07.398128+00:00 |
+| Will Elon Musk post 260-279 tweets from July 21 to J | Yes | 0.192 | $3.62 | 2026-07-28T16:00:06.748548+00:00 |
 
 ## Settled
 | market | result | P&L |
