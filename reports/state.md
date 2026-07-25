@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-25T05:45:27.974394+00:00
+# Poly underdog paper state — 2026-07-25T08:45:42.914537+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **8** ($44.74)  ·  settled **0** (0W / 0L)
+- open **9** ($51.60)  ·  settled **0** (0W / 0L)
 - realized P&L **$0.00**  ·  ROI **+0.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-25T05:30:25.680228+00:00
+- last scan: 2026-07-25T08:31:15.611038+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -21,6 +21,7 @@ on realized ROI over dozens of settled bets, not the first few.
 | Colorado Rockies vs. Milwaukee Brewers | Milwaukee Brewers | 0.180 | $5.48 | 2026-07-31T20:10:06.323245+00:00 |
 | Israel x Iran ceasefire continues through July 26? | No | 0.180 | $4.52 | 2026-07-26T23:59:07.608084+00:00 |
 | Will Elon Musk post 320-339 tweets from July 21 to J | Yes | 0.135 | $5.87 | 2026-07-28T16:00:07.281400+00:00 |
+| Will Elon Musk post 340-359 tweets from July 21 to J | Yes | 0.107 | $6.86 | 2026-07-28T16:00:07.925211+00:00 |
 
 ## Settled
 | market | result | P&L |
