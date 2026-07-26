@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-25T20:46:36.847374+00:00
+# Poly underdog paper state — 2026-07-26T20:53:04.224214+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **12** ($68.30)  ·  settled **0** (0W / 0L)
+- open **16** ($86.06)  ·  settled **0** (0W / 0L)
 - realized P&L **$0.00**  ·  ROI **+0.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-25T20:34:42.001700+00:00
+- last scan: 2026-07-26T20:41:54.378633+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -25,6 +25,10 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will Elon Musk post 240-259 tweets from July 21 to J | Yes | 0.113 | $6.69 | 2026-07-28T16:00:07.398128+00:00 |
 | Will Elon Musk post 260-279 tweets from July 21 to J | Yes | 0.192 | $3.62 | 2026-07-28T16:00:06.748548+00:00 |
 | Israel x Iran ceasefire continues through July 27? | No | 0.120 | $6.39 | 2026-07-27T23:59:07.918659+00:00 |
+| Will there be no change in Fed interest rates after  | No | 0.178 | $4.24 | 2026-07-29T00:00:05.892966+00:00 |
+| Will the Fed increase interest rates by 25 bps after | Yes | 0.170 | $4.54 | 2026-07-29T00:00:06.604482+00:00 |
+| Will the Fed Pause–Pause–Pause in the next three dec | No | 0.171 | $4.56 | 2026-07-29T00:00:07.264903+00:00 |
+| Will the Fed decide differently in the next three de | Yes | 0.173 | $4.42 | 2026-07-29T00:00:07.935679+00:00 |
 
 ## Settled
 | market | result | P&L |
