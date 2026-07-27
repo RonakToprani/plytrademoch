@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-27T20:55:01.437336+00:00
+# Poly underdog paper state — 2026-07-27T23:55:14.206233+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **18** ($99.47)  ·  settled **0** (0W / 0L)
-- realized P&L **$0.00**  ·  ROI **+0.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-27T20:48:39.307803+00:00
+- open **17** ($93.99)  ·  settled **1** (0W / 1L)
+- realized P&L **$-5.48**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
+- last scan: 2026-07-27T23:49:31.225164+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -18,7 +18,6 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will Moonshot have the best Chinese AI model at the  | Yes | 0.139 | $5.80 | 2026-07-31T00:00:05.987877+00:00 |
 | Iran full airspace closure by July 27? | Yes | 0.160 | $5.48 | 2026-07-27T23:59:06.646795+00:00 |
 | Will Elon Musk post 300-319 tweets from July 21 to J | Yes | 0.124 | $6.43 | 2026-07-28T16:00:07.305578+00:00 |
-| Colorado Rockies vs. Milwaukee Brewers | Milwaukee Brewers | 0.180 | $5.48 | 2026-07-31T20:10:06.323245+00:00 |
 | Israel x Iran ceasefire continues through July 26? | No | 0.180 | $4.52 | 2026-07-26T23:59:07.608084+00:00 |
 | Will Elon Musk post 320-339 tweets from July 21 to J | Yes | 0.135 | $5.87 | 2026-07-28T16:00:07.281400+00:00 |
 | Will Elon Musk post 340-359 tweets from July 21 to J | Yes | 0.107 | $6.86 | 2026-07-28T16:00:07.925211+00:00 |
@@ -35,6 +34,7 @@ on realized ROI over dozens of settled bets, not the first few.
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Colorado Rockies vs. Milwaukee Brewers | LOST | -5.48 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -47,3 +47,8 @@ on realized ROI over dozens of settled bets, not the first few.
 | 0.30–0.40 | 209 | 40% | 0.353 | +10% |
 | 0.80–0.90 | 122 | 79% | 0.851 | -9% |
 | 0.90–0.98 | 215 | 93% | 0.949 | -3% |
+
+## Paper results by entry price
+| bucket | n | win% | ROI |
+|---|---|---|---|
+| 0.17–0.20 | 1 | 0% | -100% |
