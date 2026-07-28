@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-28T02:55:29.967717+00:00
+# Poly underdog paper state — 2026-07-28T05:55:44.574545+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **18** ($99.47)  ·  settled **1** (0W / 1L)
+- open **23** ($128.02)  ·  settled **1** (0W / 1L)
 - realized P&L **$-5.48**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-28T02:50:22.443231+00:00
+- last scan: 2026-07-28T05:51:18.650009+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -31,6 +31,11 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will Russia enter Serhiivka by July 31? | Yes | 0.131 | $6.88 | 2026-07-31T00:00:07.899060+00:00 |
 | Will Russia capture Kostyantynivka by July 31? | Yes | 0.132 | $6.53 | 2026-07-31T12:00:08.424424+00:00 |
 | US announces end of Iranian blockade by July 31, 202 | Yes | 0.140 | $5.48 | 2026-07-31T23:59:07.779196+00:00 |
+| 0 ships transit Hormuz on any date by July 31? | Yes | 0.136 | $6.91 | 2026-07-31T23:59:07.361878+00:00 |
+| Will Bitcoin dip to $60,000 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:07.951372+00:00 |
+| Will WTI Crude Oil (WTI) hit (LOW) $75 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:08.666335+00:00 |
+| Will S&P 500 (SPY) hit (HIGH) $760 in July? | Yes | 0.110 | $6.91 | 2026-08-01T04:00:09.455954+00:00 |
+| Will Bitcoin reach $67,500 in July? | Yes | 0.110 | $6.91 | 2026-08-01T04:00:07.386758+00:00 |
 
 ## Settled
 | market | result | P&L |
