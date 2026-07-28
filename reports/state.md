@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-28T05:55:44.574545+00:00
+# Poly underdog paper state — 2026-07-28T08:55:57.586121+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **23** ($128.02)  ·  settled **1** (0W / 1L)
+- open **27** ($143.44)  ·  settled **1** (0W / 1L)
 - realized P&L **$-5.48**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-28T05:51:18.650009+00:00
+- last scan: 2026-07-28T08:52:15.466562+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -36,6 +36,10 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will WTI Crude Oil (WTI) hit (LOW) $75 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:08.666335+00:00 |
 | Will S&P 500 (SPY) hit (HIGH) $760 in July? | Yes | 0.110 | $6.91 | 2026-08-01T04:00:09.455954+00:00 |
 | Will Bitcoin reach $67,500 in July? | Yes | 0.110 | $6.91 | 2026-08-01T04:00:07.386758+00:00 |
+| Will NVIDIA be the largest company in the world by m | Yes | 0.200 | $3.49 | 2026-07-31T23:59:07.173968+00:00 |
+| Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | No | 0.190 | $4.32 | 2026-08-01T04:00:07.929883+00:00 |
+| Will Silver (XAGUSD) hit (LOW) $54 in July? | Yes | 0.200 | $4.12 | 2026-08-01T04:00:06.941014+00:00 |
+| Will MrBeast's next video get less than 40 million v | No | 0.200 | $3.49 | 2026-07-31T23:59:07.895477+00:00 |
 
 ## Settled
 | market | result | P&L |
