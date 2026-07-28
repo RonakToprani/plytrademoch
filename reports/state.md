@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-27T23:55:14.206233+00:00
+# Poly underdog paper state — 2026-07-28T02:55:29.967717+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **17** ($93.99)  ·  settled **1** (0W / 1L)
+- open **18** ($99.47)  ·  settled **1** (0W / 1L)
 - realized P&L **$-5.48**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-27T23:49:31.225164+00:00
+- last scan: 2026-07-28T02:50:22.443231+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -30,6 +30,7 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will the Fed decide differently in the next three de | Yes | 0.173 | $4.42 | 2026-07-29T00:00:07.935679+00:00 |
 | Will Russia enter Serhiivka by July 31? | Yes | 0.131 | $6.88 | 2026-07-31T00:00:07.899060+00:00 |
 | Will Russia capture Kostyantynivka by July 31? | Yes | 0.132 | $6.53 | 2026-07-31T12:00:08.424424+00:00 |
+| US announces end of Iranian blockade by July 31, 202 | Yes | 0.140 | $5.48 | 2026-07-31T23:59:07.779196+00:00 |
 
 ## Settled
 | market | result | P&L |
