@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-28T08:55:57.586121+00:00
+# Poly underdog paper state — 2026-07-28T11:56:09.749313+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **27** ($143.44)  ·  settled **1** (0W / 1L)
-- realized P&L **$-5.48**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-28T08:52:15.466562+00:00
+- open **28** ($146.72)  ·  settled **2** (0W / 2L)
+- realized P&L **$-12.17**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
+- last scan: 2026-07-28T11:53:09.923895+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -21,7 +21,6 @@ on realized ROI over dozens of settled bets, not the first few.
 | Israel x Iran ceasefire continues through July 26? | No | 0.180 | $4.52 | 2026-07-26T23:59:07.608084+00:00 |
 | Will Elon Musk post 320-339 tweets from July 21 to J | Yes | 0.135 | $5.87 | 2026-07-28T16:00:07.281400+00:00 |
 | Will Elon Musk post 340-359 tweets from July 21 to J | Yes | 0.107 | $6.86 | 2026-07-28T16:00:07.925211+00:00 |
-| Will Elon Musk post 240-259 tweets from July 21 to J | Yes | 0.113 | $6.69 | 2026-07-28T16:00:07.398128+00:00 |
 | Will Elon Musk post 260-279 tweets from July 21 to J | Yes | 0.192 | $3.62 | 2026-07-28T16:00:06.748548+00:00 |
 | Israel x Iran ceasefire continues through July 27? | No | 0.120 | $6.39 | 2026-07-27T23:59:07.918659+00:00 |
 | Will there be no change in Fed interest rates after  | No | 0.178 | $4.24 | 2026-07-29T00:00:05.892966+00:00 |
@@ -40,10 +39,13 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | No | 0.190 | $4.32 | 2026-08-01T04:00:07.929883+00:00 |
 | Will Silver (XAGUSD) hit (LOW) $54 in July? | Yes | 0.200 | $4.12 | 2026-08-01T04:00:06.941014+00:00 |
 | Will MrBeast's next video get less than 40 million v | No | 0.200 | $3.49 | 2026-07-31T23:59:07.895477+00:00 |
+| Will Apple be the second-largest company in the worl | Yes | 0.200 | $3.70 | 2026-07-31T23:59:07.518373+00:00 |
+| Will Gold (XAUUSD) hit (LOW) $3,900 in July? | Yes | 0.140 | $6.27 | 2026-08-01T04:00:07.213480+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Elon Musk post 240-259 tweets from July 21 to J | LOST | -6.69 |
 | Colorado Rockies vs. Milwaukee Brewers | LOST | -5.48 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
@@ -61,4 +63,5 @@ on realized ROI over dozens of settled bets, not the first few.
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
+| 0.10–0.13 | 1 | 0% | -100% |
 | 0.17–0.20 | 1 | 0% | -100% |
