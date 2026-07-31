@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-31T16:00:32.016431+00:00
+# Poly underdog paper state — 2026-07-31T17:57:53.566119+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,9 +6,9 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **26** ($138.85)  ·  settled **12** (0W / 12L)
+- open **27** ($142.76)  ·  settled **12** (0W / 12L)
 - realized P&L **$-63.90**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-31T15:45:33.482828+00:00
+- last scan: 2026-07-31T17:46:06.108785+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -39,6 +39,7 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will Bitcoin dip to $62,000 July 27-August 2? | Yes | 0.175 | $3.91 | 2026-08-03T04:00:07.937873+00:00 |
 | Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
 | Will Bitcoin reach $66,000 July 27-August 2? | Yes | 0.110 | $6.91 | 2026-08-03T04:00:07.432916+00:00 |
+| Will "Spider-Man: Brand New Day" Opening Weekend Box | No | 0.190 | $3.91 | 2026-08-02T23:59:06.069737+00:00 |
 
 ## Settled
 | market | result | P&L |
