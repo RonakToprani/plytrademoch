@@ -2,11 +2,11 @@
 backtest/live.py — Live opportunity scanner for the underdog edge.
 
 Turns the validated backtest finding into an actionable list: which currently-open
-markets have a token priced in the underdog band (~0.10–0.20) that the strategy
+markets have a token priced in the underdog band (~0.15–0.25) that the strategy
 would buy right now. Read-only; suggests sizes but places nothing.
 
 Strategy (from FINDINGS.md §2, validated across horizons + time split):
-  • Buy the outcome token priced in [band_lo, band_hi] (default 0.10–0.20).
+  • Buy the outcome token priced in [band_lo, band_hi] (default 0.15–0.25).
   • Resolution window: the edge was measured entering 24h–168h BEFORE resolution,
     so we only take markets resolving within [min_hours, max_hours] (default
     24h–168h). This deliberately excludes far-dated, highly correlated markets
@@ -17,7 +17,7 @@ Strategy (from FINDINGS.md §2, validated across horizons + time split):
   • Hold to resolution.
 
 Sizing: fractional Kelly using the band's empirically-calibrated win rate
-(~0.27 at ~0.15), which is where the edge comes from — NOT the market price.
+(0.245 in 0.15-0.25), which is where the edge comes from — NOT the market price.
 Negative skew means small, well-diversified stakes.
 """
 
@@ -30,13 +30,14 @@ from backtest.datafeed import DataFeed
 
 # Empirically-calibrated win rate inside the underdog band (backtest §2).
 # Used ONLY for sizing; the go/no-go is price-in-band.
-_BAND_WIN_RATE = 0.27
+_BAND_WIN_RATE = 0.245
 
 
 @dataclass
 class Opportunity:
     condition_id: str
     slug: str
+    event: str
     question: str
     outcome: str
     token: str
@@ -51,8 +52,8 @@ class Opportunity:
 def scan(
     feed: DataFeed,
     *,
-    band_lo: float = 0.10,
-    band_hi: float = 0.20,
+    band_lo: float = 0.15,
+    band_hi: float = 0.25,
     min_hours: float = 24.0,
     max_hours: float = 168.0,
     min_volume: float = 30_000.0,
@@ -80,7 +81,8 @@ def scan(
             if stake < min_stake:
                 stake = min_stake
             opp = Opportunity(
-                condition_id=mk["condition_id"], slug=mk["slug"], question=mk["question"],
+                condition_id=mk["condition_id"], slug=mk["slug"], event=mk["event"],
+                question=mk["question"],
                 outcome=outcome, token=token, price=token_price, hours_to_resolve=hours,
                 volume=mk["volume"], est_win_rate=_BAND_WIN_RATE,
                 kelly_fraction=round(f, 4), suggested_stake=round(stake, 2),

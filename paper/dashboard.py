@@ -9,9 +9,11 @@ purple/amber accents. Reads paper_underdog.db live, auto-refreshes. Launch with
 from __future__ import annotations
 
 import os
+import time
 from datetime import datetime, timezone
 
 import dash
+import httpx
 from dash import Input, Output, dcc, html
 import plotly.graph_objects as go
 
@@ -19,6 +21,41 @@ from paper.store import PaperStore
 
 BANKROLL = float(os.environ.get("POLY_BANKROLL", "150"))
 _REFRESH_MS = 30_000
+
+_CLOB = "https://clob.polymarket.com"
+_MARK_TTL = 25.0          # seconds — just under the refresh interval
+_mark_cache: dict[str, object] = {"ts": 0.0, "px": {}}
+
+
+def _marks(token_ids: list[str]) -> dict[str, float]:
+    """
+    Best bid ("SELL" side = what the position could be exited at) per token, via
+    one batched CLOB call. TTL-cached so a browser refresh storm can't hammer the
+    API. Returns {} on any failure — marks are a display nicety, never a reason
+    for the page to error out.
+    """
+    if not token_ids:
+        return {}
+    now = time.monotonic()
+    cached = _mark_cache["px"]
+    if isinstance(cached, dict) and now - float(_mark_cache["ts"]) < _MARK_TTL \
+            and all(t in cached for t in token_ids):
+        return cached  # type: ignore[return-value]
+    try:
+        r = httpx.post(f"{_CLOB}/prices",
+                       json=[{"token_id": t, "side": "SELL"} for t in token_ids],
+                       timeout=8.0)
+        r.raise_for_status()
+        px = {}
+        for tok, sides in (r.json() or {}).items():
+            try:
+                px[tok] = float(sides["SELL"])
+            except (KeyError, TypeError, ValueError):
+                continue
+    except (httpx.HTTPError, ValueError):
+        return cached if isinstance(cached, dict) else {}  # type: ignore[return-value]
+    _mark_cache["ts"], _mark_cache["px"] = now, px
+    return px
 
 # palette (from the reference aesthetic)
 BLACK = "#000000"
@@ -185,6 +222,15 @@ def create_app() -> dash.Dash:
         try:
             s = store.stats()
             opens = store.open_bets()
+
+            # Mark open positions to the live bid so a dead bet (trading at ~0)
+            # is visible immediately, instead of looking healthy until Polymarket
+            # finally resolves the market and the cycle books the loss.
+            marks = _marks([b.token_id for b in opens])
+            unreal = {b.id: (b.shares * marks[b.token_id] - b.stake_usd)
+                      for b in opens if b.token_id in marks}
+            unreal_total = round(sum(unreal.values()), 2)
+
             realized, roi = s["realized_pnl"], s["roi"]
             equity = BANKROLL + realized
             impact = realized / BANKROLL if BANKROLL else 0.0
@@ -205,9 +251,12 @@ def create_app() -> dash.Dash:
                                 "fontSize": "0.8rem", "marginTop": "0.3rem",
                                 "fontWeight": 700})]),
                 _cell([_label("PORTFOLIO"),
-                       _value(f"${equity:.2f}"),
-                       html.Div(f"{impact*100:+.2f}%  ({'+' if realized>=0 else ''}${realized:.0f})",
-                                style={"color": _c(impact), "fontSize": "0.8rem",
+                       _value(f"${equity + unreal_total:.2f}"),
+                       html.Div(f"{(impact + unreal_total/BANKROLL)*100:+.2f}%  "
+                                f"(REALIZED ${realized:.0f} · UNREAL "
+                                f"{'+' if unreal_total>=0 else ''}${unreal_total:.2f})",
+                                style={"color": _c(impact + unreal_total),
+                                       "fontSize": "0.8rem",
                                        "marginTop": "0.3rem", "fontWeight": 700})]),
             ], 3, min_px=240)
 
@@ -215,7 +264,7 @@ def create_app() -> dash.Dash:
                 html.Div([
                     html.Div([
                         _label("CAPITAL DEPLOYED — UNDERDOG BOOK"),
-                        html.Div("BUY 0.10–0.20 · RESOLVES 24–96H · HOLD TO SETTLE",
+                        html.Div("BUY 0.15–0.25 · RESOLVES 24–96H · HOLD TO SETTLE",
                                  style={"color": MUTED, "fontSize": "0.68rem",
                                         "letterSpacing": "0.1em"}),
                     ], style={"flex": "1"}),
@@ -234,7 +283,7 @@ def create_app() -> dash.Dash:
                 _cell([_label("WIN RATE"),
                        _value(f"{s['win_rate']*100:.0f}%",
                               _c(s['win_rate']-0.20) if s['settled'] else WHITE, "1.6rem"),
-                       html.Div("EXP ~27%", style={"color": MUTED, "fontSize": "0.66rem",
+                       html.Div("EXP ~24.5%", style={"color": MUTED, "fontSize": "0.66rem",
                                 "marginTop": "0.25rem", "letterSpacing": "0.1em"})]),
                 _cell([_label("STAKED"), _value(f"${total_staked:.0f}", size="1.6rem")]),
             ], 4, min_px=150)
@@ -246,25 +295,35 @@ def create_app() -> dash.Dash:
                            _kv("ROI", f"{roi*100:+.1f}%", _c(roi)),
                            _kv("SETTLED", str(s["settled"])),
                        ]),
-                _panel(AMBER, "OPEN RISK", "IF ALL OPEN RESOLVE",
+                _panel(AMBER, "OPEN RISK", "MARKED TO LIVE BID",
                        f"${s['open_stake']:.2f}", AMBER, [
+                           _kv("UNREALIZED",
+                               f"{'+' if unreal_total >= 0 else ''}${unreal_total:.2f}"
+                               if unreal else "—", _c(unreal_total)),
                            _kv("MAX LOSS", f"-${s['open_stake']:.2f}", RED),
                            _kv("MAX GAIN", f"+${potential:.2f}", GREEN),
                            _kv("AVG ENTRY", f"{avg_entry:.3f}"),
                        ]),
                 _panel(PURPLE, "BACKTEST EDGE", "VALIDATED EXPECTATION",
-                       "+50–70%", PURPLE, [
-                           _kv("EXP WIN", "~27%"),
+                       "+16.7%", PURPLE, [
+                           _kv("EXP WIN", "~24.5%"),
                            _kv("HORIZON", "24–96H"),
                            _kv("SKEW", "NEGATIVE"),
                        ]),
             ], 3, min_px=240)
 
             open_rows = [_bet_row([
-                ((b.question or b.slug)[:44], WHITE, {"flex": "5"}),
-                (b.outcome[:10], MUTED, {"flex": "2"}),
-                (f"{b.entry_price:.3f}", WHITE, {"flex": "1", "align": "right"}),
-                (f"${b.stake_usd:.2f}", GREEN, {"flex": "1", "align": "right"}),
+                ((b.question or b.slug)[:40], WHITE, {"flex": "5"}),
+                (b.outcome[:8], MUTED, {"flex": "2"}),
+                (f"{b.entry_price:.3f}", MUTED, {"flex": "1", "align": "right"}),
+                (f"{marks[b.token_id]:.3f}" if b.token_id in marks else "—",
+                 _c(marks[b.token_id] - b.entry_price) if b.token_id in marks else MUTED,
+                 {"flex": "1", "align": "right"}),
+                (f"${b.stake_usd:.2f}", MUTED, {"flex": "1", "align": "right"}),
+                (f"{'+' if unreal.get(b.id, 0) >= 0 else ''}${unreal[b.id]:.2f}"
+                 if b.id in unreal else "—",
+                 _c(unreal.get(b.id, 0)) if b.id in unreal else MUTED,
+                 {"flex": "2", "align": "right"}),
             ]) for b in opens[:20]]
             settled_bets = [b for b in store.all_bets(limit=200)
                             if b.status in ("WON", "LOST", "VOID")]
@@ -280,7 +339,9 @@ def create_app() -> dash.Dash:
                 _table("OPEN POSITIONS",
                        [("MARKET", {"flex": "5"}), ("SIDE", {"flex": "2"}),
                         ("ENTRY", {"flex": "1", "align": "right"}),
-                        ("STAKE", {"flex": "1", "align": "right"})], open_rows),
+                        ("MARK", {"flex": "1", "align": "right"}),
+                        ("STAKE", {"flex": "1", "align": "right"}),
+                        ("UNREAL", {"flex": "2", "align": "right"})], open_rows),
                 _table("SETTLED",
                        [("MARKET", {"flex": "5"}), ("RESULT", {"flex": "2"}),
                         ("P&L", {"flex": "2", "align": "right"})], settled_rows),

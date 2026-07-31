@@ -2,8 +2,8 @@
 paper/review.py — Nightly strategy review + recommendations.
 
 Runs every evening (launchd). Three things:
-  1. Grades the paper book against the backtest expectation (ROI vs +50–70%,
-     win rate vs ~27%) and breaks results down by entry-price and outcome side.
+  1. Grades the paper book against the backtest expectation (ROI vs ~+17%,
+     win rate vs ~24.5%) and breaks results down by entry-price and outcome side.
   2. Re-checks the edge on the cached resolved-market universe across a range of
      price bands — is 0.10–0.20 still the sweet spot, is it decaying, is an
      adjacent band better? (fast: all from cache, no network.)
@@ -27,12 +27,44 @@ from utils.logger import get_logger
 logger = get_logger(__name__)
 
 _REPORT_DIR = "reports"
-# Bands to scan for edge (both tokens, cached prices). Current live band is 0.10–0.20.
-_BANDS = [(0.02, 0.10), (0.10, 0.15), (0.15, 0.20), (0.10, 0.20),
+# Bands to scan for edge (both tokens, cached prices). Current live band is 0.15–0.25.
+_LIVE_BAND = (0.15, 0.25)   # keep in sync with PaperTrader band_lo/band_hi
+_BANDS = [(0.02, 0.10), (0.10, 0.15), (0.15, 0.20), (0.15, 0.25),
           (0.20, 0.30), (0.30, 0.40), (0.80, 0.90), (0.90, 0.98)]
 
 
 def _band_calibration(feed: DataFeed, horizon_hours: int = 48) -> dict[tuple, dict]:
+    """
+    Both-token win rate + buy-ROI per price band.
+
+    Reads the deep universe (resolved_deep + horizon_price, ~356k markets / 219k
+    events) rather than the old 2107-market cache. The small cache produced
+    wildly overstated per-band numbers — it reported 0.10-0.15 at +56% ROI on
+    n=64 when the large sample puts it at +5.9% and NOT significant, so the
+    nightly recommendation was pointing the opposite way to the evidence.
+
+    Falls back to the legacy cached path if the deep tables aren't built yet.
+    """
+    try:
+        from backtest.bigtest import collect
+        out: dict[tuple, dict] = {}
+        for lo, hi in _BANDS:
+            c = collect(lo, hi, horizon=horizon_hours, min_volume=30_000.0).get("all")
+            out[(lo, hi)] = {
+                "n": c.n if c else 0,
+                "events": len(c.events) if c else 0,
+                "win_rate": c.win_rate if c else 0.0,
+                "mean_price": c.mean_px if c else 0.0,
+                "buy_roi": c.roi if c else 0.0,
+            }
+        if any(v["n"] for v in out.values()):
+            return out
+    except (ImportError, Exception):  # noqa: B014 - fall back to the legacy path
+        pass
+    return _band_calibration_legacy(feed, horizon_hours)
+
+
+def _band_calibration_legacy(feed: DataFeed, horizon_hours: int = 48) -> dict[tuple, dict]:
     """Both-token win rate + buy-ROI per price band, from cached data only."""
     universe = feed.fetch_resolved_universe(max_markets=5000)   # cached
     acc = {b: {"n": 0, "win": 0, "psum": 0.0, "roi": 0.0} for b in _BANDS}
@@ -71,10 +103,12 @@ def _band_calibration(feed: DataFeed, horizon_hours: int = 48) -> dict[tuple, di
 def _paper_breakdown(store: PaperStore) -> dict:
     """Break settled paper bets down by entry-price bucket."""
     settled = [b for b in store.all_bets(limit=5000) if b.status in ("WON", "LOST")]
-    buckets: dict[str, list] = {"0.10–0.13": [], "0.13–0.17": [], "0.17–0.20": []}
+    # Buckets span the pre-change band too, so bets opened under 0.10–0.20 still
+    # land somewhere sensible while the book turns over.
+    buckets: dict[str, list] = {"<0.15": [], "0.15–0.20": [], "0.20–0.25": []}
     for b in settled:
-        key = ("0.10–0.13" if b.entry_price < 0.13 else
-               "0.13–0.17" if b.entry_price < 0.17 else "0.17–0.20")
+        key = ("<0.15" if b.entry_price < 0.15 else
+               "0.15–0.20" if b.entry_price < 0.20 else "0.20–0.25")
         buckets[key].append(b)
     rows = {}
     for k, bs in buckets.items():
@@ -94,39 +128,44 @@ def _recommendations(stats: dict, cal: dict, breakdown: dict) -> list[str]:
 
     if settled < 15:
         recs.append(f"SAMPLE: only {settled} settled bets — too few to act on yet. "
-                    "Keep the current 0.10–0.20 / 24–96h config running; revisit at 30+.")
+                    "Keep the current 0.15–0.25 / 24–96h config running; revisit at 30+.")
     else:
         roi, wr = stats["roi"], stats["win_rate"]
-        if roi >= 0.20:
-            recs.append(f"ON TRACK: realized ROI {roi*100:+.0f}% is in/above the backtest "
-                        "band — no change needed.")
+        if roi >= 0.17:
+            recs.append(f"ON TRACK: realized ROI {roi*100:+.0f}% is at/above the backtest "
+                        "expectation (~+17%) — no change needed.")
         elif roi >= 0:
             recs.append(f"MARGINAL: realized ROI {roi*100:+.0f}% is positive but below the "
-                        "+50–70% backtest expectation — could be variance (negative skew) "
+                        "~+17% backtest expectation — could be variance (negative skew) "
                         "or slippage; keep running, watch win rate.")
         else:
-            recs.append(f"UNDERPERFORMING: realized ROI {roi*100:+.0f}% vs +50–70% expected. "
-                        "Check the band table below — if 0.10–0.20 edge has decayed, tighten.")
+            recs.append(f"UNDERPERFORMING: realized ROI {roi*100:+.0f}% vs ~+17% expected. "
+                        "Check the band table below — if the 0.15–0.25 edge has decayed, tighten.")
         if wr < 0.15 and settled >= 20:
-            recs.append(f"WIN RATE low ({wr*100:.0f}% vs ~27%) — either variance or fills are "
+            recs.append(f"WIN RATE low ({wr*100:.0f}% vs ~24.5%) — either variance or fills are "
                         "landing too high in the band; consider capping entry at 0.17.")
 
-    # Which live sub-band looks best out-of-sample right now
-    subbands = {b: cal[b] for b in [(0.10, 0.15), (0.15, 0.20)] if cal[b]["n"] >= 20}
-    if subbands:
+    # Which live sub-band looks best out-of-sample right now. Compare against
+    # _LIVE_BAND rather than a hardcoded pair — the live band moved to 0.15-0.25
+    # and hardcoding (0.10, 0.20) made this KeyError once it left _BANDS.
+    subbands = {b: cal[b] for b in [(0.10, 0.15), (0.15, 0.20)]
+                if b in cal and cal[b]["n"] >= 20}
+    live = cal.get(_LIVE_BAND)
+    if subbands and live:
         best = max(subbands, key=lambda b: subbands[b]["buy_roi"])
         bd = cal[best]
         recs.append(f"BAND: {best[0]:.2f}–{best[1]:.2f} leads out-of-sample "
                     f"(win {bd['win_rate']*100:.0f}%, ROI {bd['buy_roi']*100:+.0f}%, n={bd['n']}). "
                     + ("Consider narrowing the live band to it."
-                       if best != (0.10, 0.20) and bd["buy_roi"] > cal[(0.10, 0.20)]["buy_roi"] + 0.05
-                       else "Current 0.10–0.20 band remains well-placed."))
+                       if best != _LIVE_BAND and bd["buy_roi"] > live["buy_roi"] + 0.05
+                       else f"Current {_LIVE_BAND[0]:.2f}–{_LIVE_BAND[1]:.2f} band "
+                            "remains well-placed."))
 
     # Adjacent-strategy signals
     c2 = cal[(0.20, 0.30)]
     if c2["n"] >= 20 and c2["buy_roi"] > 0.10:
         recs.append(f"ADJACENT: the 0.20–0.30 band also shows edge (ROI {c2['buy_roi']*100:+.0f}%, "
-                    f"n={c2['n']}) — worth testing widening the band to 0.10–0.30 for more flow.")
+                    f"n={c2['n']}) — worth testing widening the band to 0.15–0.30 for more flow.")
     fav = cal[(0.80, 0.90)]
     if fav["n"] >= 20 and fav["buy_roi"] < -0.05:
         recs.append(f"ADJACENT: strong favorites (0.80–0.90) buy-ROI {fav['buy_roi']*100:+.0f}% "
@@ -138,7 +177,7 @@ def _recommendations(stats: dict, cal: dict, breakdown: dict) -> list[str]:
         recs.append(f"ADJACENT: deep longshots (<0.10) are {verdict} "
                     f"(ROI {low['buy_roi']*100:+.0f}%, n={low['n']}) — "
                     + ("could extend the band down." if low["buy_roi"] > 0.10
-                       else "keep the 0.10 floor."))
+                       else "keep the 0.15 floor."))
 
     if breakdown:
         worst = min(breakdown, key=lambda k: breakdown[k]["roi"])
@@ -163,9 +202,9 @@ def run_review(send: bool = True) -> str:
         f"- open **{stats['open']}** (${stats['open_stake']:.0f})  ·  settled **{stats['settled']}** "
         f"({stats['won']}W / {stats['lost']}L)",
         f"- realized P&L **${stats['realized_pnl']:.2f}**  ·  ROI **{stats['roi']*100:+.1f}%** "
-        f"(exp +50–70%)  ·  win **{stats['win_rate']*100:.0f}%** (exp ~27%)",
+        f"(exp ~+17%)  ·  win **{stats['win_rate']*100:.0f}%** (exp ~24.5%)",
         "",
-        "## Edge by price band (out-of-sample, cached universe, 48h horizon)",
+        "## Edge by price band (out-of-sample, 356k-market universe, 48h horizon)",
         "| band | n | win% | mean px | buy ROI |",
         "|------|---|------|---------|---------|",
     ]

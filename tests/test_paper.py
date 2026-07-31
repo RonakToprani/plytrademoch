@@ -57,3 +57,45 @@ def test_settle_lost_and_mixed_winrate(tmp_path):
     assert st["won"] == 1 and st["lost"] == 1
     assert abs(st["win_rate"] - 0.5) < 1e-9
     assert st["realized_pnl"] == 23.0
+
+
+def _ev_bet(cond: str, event: str, resolves: str | None = None, stake: float = 5.0) -> Bet:
+    b = _bet(cond, "tok" + cond, stake=stake)
+    b.event = event
+    b.resolves_at = resolves
+    return b
+
+
+def test_has_open_event_blocks_correlated_legs(tmp_path):
+    """
+    The scanner dedupes events only inside one scan, so the store is what stops a
+    later cycle adding a second leg of an event we already hold — the bug that let
+    the book accumulate 6 Elon tweet-count buckets and 8 Iran legs.
+    """
+    s = _store(tmp_path)
+    assert s.record_bet(_ev_bet("c1", "neg:elon-tweets")) is not None
+    # different market (passes the condition_id index) but the SAME event
+    assert s.has_open_event("neg:elon-tweets") is True
+    # an unrelated event is still allowed
+    assert s.has_open_event("ev:fed-july") is False
+
+
+def test_has_open_event_ignores_empty_and_clears_on_settle(tmp_path):
+    s = _store(tmp_path)
+    # bets predating the event column must not all collide on ""
+    assert s.has_open_event("") is False
+    bid = s.record_bet(_ev_bet("c1", "ev:iran"))
+    assert s.has_open_event("ev:iran") is True
+    s.settle_bet(bid, "LOST", 0.0, -5.0)
+    # once settled the event is tradeable again
+    assert s.has_open_event("ev:iran") is False
+
+
+def test_open_stake_on_resolve_date(tmp_path):
+    s = _store(tmp_path)
+    s.record_bet(_ev_bet("c1", "ev:a", resolves="2026-07-31T23:59:00+00:00", stake=6.0))
+    s.record_bet(_ev_bet("c2", "ev:b", resolves="2026-07-31T04:00:00+00:00", stake=4.0))
+    s.record_bet(_ev_bet("c3", "ev:c", resolves="2026-08-02T04:00:00+00:00", stake=9.0))
+    assert s.open_stake_on("2026-07-31") == 10.0
+    assert s.open_stake_on("2026-08-02") == 9.0
+    assert s.open_stake_on("2026-09-01") == 0.0

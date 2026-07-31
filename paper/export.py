@@ -30,16 +30,16 @@ def write_state(path: str = "reports/state.md") -> str:
     L = [
         f"# Poly underdog paper state — {datetime.now(timezone.utc).isoformat()}",
         "",
-        "**Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid",
+        "**Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid",
         "Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-",
-        "Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge",
+        "Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~24.5% win rate) — judge",
         "on realized ROI over dozens of settled bets, not the first few.",
         "",
         "## Book",
         f"- open **{s['open']}** (${s['open_stake']:.2f})  ·  settled **{s['settled']}** "
         f"({s['won']}W / {s['lost']}L)",
         f"- realized P&L **${s['realized_pnl']:.2f}**  ·  ROI **{s['roi']*100:+.1f}%** "
-        f"(backtest exp +50–70%)  ·  win **{s['win_rate']*100:.0f}%** (exp ~27%)",
+        f"(backtest exp ~+17%)  ·  win **{s['win_rate']*100:.0f}%** (exp ~24.5%)",
         f"- last scan: {last_scan}",
         "",
         "## Open positions",

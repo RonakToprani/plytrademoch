@@ -32,6 +32,32 @@ _PAGE = 500
 _THROTTLE = 0.15
 
 
+def _event_key(mk: dict[str, Any]) -> str:
+    """
+    Stable identifier for the real-world event a market belongs to, so correlated
+    legs can be deduped.
+
+    Gamma's /markets rows have NO `eventSlug` field — the event lives at
+    `events[0].slug` ("next-prime-minister-of-ethiopia") while the market slug is
+    per-candidate ("will-adanech-abiebie-be-the-next-prime-minister-of-ethiopia").
+    Falling back to the market slug silently makes every leg its own event and
+    turns event dedupe into a no-op, which is how the book ended up holding 6 Elon
+    tweet-count buckets and 8 Iran legs.
+
+    negRiskMarketID is preferred where present: it is Polymarket's own id for a
+    mutually-exclusive outcome set, exactly the bucket case.
+    """
+    neg = mk.get("negRiskMarketID")
+    if neg:
+        return f"neg:{neg}"
+    events = mk.get("events") or []
+    if events and isinstance(events[0], dict):
+        slug = events[0].get("slug")
+        if slug:
+            return f"ev:{slug}"
+    return f"mk:{mk.get('slug', '') or ''}"
+
+
 @dataclass(frozen=True)
 class Trade:
     """One TRADE event from a wallet's activity feed."""
@@ -575,7 +601,7 @@ class DataFeed:
             "volume": volume,
             "slug": mk.get("slug", "") or "",
             "question": mk.get("question", "") or "",
-            "event": mk.get("eventSlug") or mk.get("slug", "") or "",
+            "event": _event_key(mk),
         }
 
     # ------------------------------------------------------------------

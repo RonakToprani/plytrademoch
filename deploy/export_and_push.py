@@ -13,7 +13,10 @@ import subprocess
 import sys
 
 REPO = "/Users/ronaktoprani/Documents/plytrademoch"
-WT = "/private/tmp/poly-main-wt"
+# NOT under /private/tmp — macOS purges files there after ~3 days, which deletes
+# the worktree while git still has `main` registered to the path, and every later
+# run then dies on "fatal: 'main' is already checked out at ...".
+WT = os.path.expanduser("~/Library/Caches/poly-main-wt")
 
 
 def git(*args, cwd=REPO, check=True):
@@ -30,6 +33,9 @@ def main() -> int:
         git("reset", "--hard", "origin/main", "--quiet", cwd=WT)
     else:
         shutil.rmtree(WT, ignore_errors=True)
+        # Drop any registration pointing at a worktree dir that no longer exists,
+        # otherwise `worktree add` fails with "main is already checked out".
+        git("worktree", "prune")
         git("worktree", "add", "-B", "main", WT, "origin/main", "--quiet")
 
     from paper.export import write_state

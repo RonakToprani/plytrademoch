@@ -32,6 +32,7 @@ class Bet:
     shares: float
     opened_at: str
     resolves_at: str | None
+    event: str = ""                # real-world event key, for correlated-leg dedupe
     status: str = "OPEN"           # OPEN / WON / LOST / VOID
     settle_price: float | None = None
     pnl: float | None = None
@@ -62,7 +63,8 @@ class PaperStore:
                 status        TEXT NOT NULL DEFAULT 'OPEN',
                 settle_price  REAL,
                 pnl           REAL,
-                settled_at    TEXT
+                settled_at    TEXT,
+                event         TEXT NOT NULL DEFAULT ''
             );
             CREATE INDEX IF NOT EXISTS idx_bets_status ON bets(status);
             CREATE UNIQUE INDEX IF NOT EXISTS idx_bets_open_condition
@@ -75,6 +77,13 @@ class PaperStore:
             );
             """
         )
+        # Migrate DBs created before the event column existed. Must run before the
+        # event index is created, hence not inside the CREATE TABLE script above.
+        cols = {r["name"] for r in self._db.execute("PRAGMA table_info(bets)")}
+        if "event" not in cols:
+            self._db.execute("ALTER TABLE bets ADD COLUMN event TEXT NOT NULL DEFAULT ''")
+        self._db.execute("CREATE INDEX IF NOT EXISTS idx_bets_open_event "
+                         "ON bets(event) WHERE status = 'OPEN'")
         self._db.commit()
 
     # ------------------------------------------------------------------
@@ -86,10 +95,11 @@ class PaperStore:
             cur = self._db.execute(
                 """INSERT INTO bets
                    (condition_id, token_id, slug, question, outcome, entry_price,
-                    stake_usd, shares, opened_at, resolves_at, status)
-                   VALUES (?,?,?,?,?,?,?,?,?,?, 'OPEN')""",
+                    stake_usd, shares, opened_at, resolves_at, event, status)
+                   VALUES (?,?,?,?,?,?,?,?,?,?,?, 'OPEN')""",
                 (bet.condition_id, bet.token_id, bet.slug, bet.question, bet.outcome,
-                 bet.entry_price, bet.stake_usd, bet.shares, bet.opened_at, bet.resolves_at),
+                 bet.entry_price, bet.stake_usd, bet.shares, bet.opened_at,
+                 bet.resolves_at, bet.event),
             )
             self._db.commit()
             return cur.lastrowid
@@ -115,6 +125,27 @@ class PaperStore:
         return self._db.execute(
             "SELECT 1 FROM bets WHERE condition_id=? AND status='OPEN'", (condition_id,)
         ).fetchone() is not None
+
+    def has_open_event(self, event: str) -> bool:
+        """
+        Already exposed to this real-world event? The scanner only dedupes within a
+        single scan, so without this check each 30-min cycle adds another leg of the
+        same event — which is how the book reached 8 Iran legs and 6 Elon buckets
+        while Kelly sizing still assumed 38 independent positions.
+        """
+        if not event:
+            return False
+        return self._db.execute(
+            "SELECT 1 FROM bets WHERE event=? AND status='OPEN'", (event,)
+        ).fetchone() is not None
+
+    def open_stake_on(self, resolve_date: str) -> float:
+        """Total open stake resolving on a given YYYY-MM-DD (expiry concentration)."""
+        row = self._db.execute(
+            "SELECT COALESCE(SUM(stake_usd),0) s FROM bets "
+            "WHERE status='OPEN' AND SUBSTR(resolves_at,1,10)=?", (resolve_date,)
+        ).fetchone()
+        return float(row["s"] or 0.0)
 
     def log_scan(self, opportunities: int, recorded: int) -> None:
         self._db.execute("INSERT INTO scans (ts, opportunities, recorded) VALUES (?,?,?)",
@@ -166,6 +197,7 @@ class PaperStore:
             entry_price=r["entry_price"], stake_usd=r["stake_usd"], shares=r["shares"],
             opened_at=r["opened_at"], resolves_at=r["resolves_at"], status=r["status"],
             settle_price=r["settle_price"], pnl=r["pnl"], settled_at=r["settled_at"],
+            event=r["event"] if "event" in r.keys() else "",
         )
 
     def close(self) -> None:
