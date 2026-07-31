@@ -34,9 +34,13 @@ def main() -> int:
     else:
         shutil.rmtree(WT, ignore_errors=True)
         # Drop any registration pointing at a worktree dir that no longer exists,
-        # otherwise `worktree add` fails with "main is already checked out".
+        # otherwise `worktree add` fails with "already checked out".
         git("worktree", "prune")
-        git("worktree", "add", "-B", "main", WT, "origin/main", "--quiet")
+        # --detach, NOT `-B main`: a worktree that holds the main branch makes it
+        # impossible to check main out in the primary repo ("fatal: 'main' is
+        # already checked out at ..."). Detached HEAD tracks the same commit
+        # without claiming the branch name.
+        git("worktree", "add", "--detach", WT, "origin/main", "--quiet")
 
     from paper.export import write_state
     write_state(os.path.join(WT, "reports", "state.md"))
@@ -47,7 +51,7 @@ def main() -> int:
         return 0
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     git("commit", "--quiet", "-m", f"chore: paper state snapshot {ts}", cwd=WT)
-    git("push", "--quiet", "origin", "main", cwd=WT)
+    git("push", "--quiet", "origin", "HEAD:main", cwd=WT)
     print("pushed state snapshot")
     return 0
 
