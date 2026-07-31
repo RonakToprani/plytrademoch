@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-07-29T02:57:24.211392+00:00
+# Poly underdog paper state — 2026-07-31T16:00:32.016431+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.10–0.20** on liquid
 Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
@@ -6,25 +6,16 @@ Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~27% win rate) — judge
 on realized ROI over dozens of settled bets, not the first few.
 
 ## Book
-- open **28** ($146.72)  ·  settled **2** (0W / 2L)
-- realized P&L **$-12.17**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
-- last scan: 2026-07-29T02:27:21.122100+00:00
+- open **26** ($138.85)  ·  settled **12** (0W / 12L)
+- realized P&L **$-63.90**  ·  ROI **-100.0%** (backtest exp +50–70%)  ·  win **0%** (exp ~27%)
+- last scan: 2026-07-31T15:45:33.482828+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Israel x Iran ceasefire continues through July 25? | No | 0.148 | $5.85 | 2026-07-25T23:59:04.689943+00:00 |
 | Will Alibaba have the best Chinese AI model at the e | No | 0.152 | $5.31 | 2026-07-31T00:00:05.340201+00:00 |
 | Will Moonshot have the best Chinese AI model at the  | Yes | 0.139 | $5.80 | 2026-07-31T00:00:05.987877+00:00 |
-| Iran full airspace closure by July 27? | Yes | 0.160 | $5.48 | 2026-07-27T23:59:06.646795+00:00 |
-| Will Elon Musk post 300-319 tweets from July 21 to J | Yes | 0.124 | $6.43 | 2026-07-28T16:00:07.305578+00:00 |
-| Israel x Iran ceasefire continues through July 26? | No | 0.180 | $4.52 | 2026-07-26T23:59:07.608084+00:00 |
-| Will Elon Musk post 320-339 tweets from July 21 to J | Yes | 0.135 | $5.87 | 2026-07-28T16:00:07.281400+00:00 |
-| Will Elon Musk post 340-359 tweets from July 21 to J | Yes | 0.107 | $6.86 | 2026-07-28T16:00:07.925211+00:00 |
-| Will Elon Musk post 260-279 tweets from July 21 to J | Yes | 0.192 | $3.62 | 2026-07-28T16:00:06.748548+00:00 |
 | Israel x Iran ceasefire continues through July 27? | No | 0.120 | $6.39 | 2026-07-27T23:59:07.918659+00:00 |
-| Will there be no change in Fed interest rates after  | No | 0.178 | $4.24 | 2026-07-29T00:00:05.892966+00:00 |
-| Will the Fed increase interest rates by 25 bps after | Yes | 0.170 | $4.54 | 2026-07-29T00:00:06.604482+00:00 |
 | Will the Fed Pause–Pause–Pause in the next three dec | No | 0.171 | $4.56 | 2026-07-29T00:00:07.264903+00:00 |
 | Will the Fed decide differently in the next three de | Yes | 0.173 | $4.42 | 2026-07-29T00:00:07.935679+00:00 |
 | Will Russia enter Serhiivka by July 31? | Yes | 0.131 | $6.88 | 2026-07-31T00:00:07.899060+00:00 |
@@ -36,17 +27,34 @@ on realized ROI over dozens of settled bets, not the first few.
 | Will S&P 500 (SPY) hit (HIGH) $760 in July? | Yes | 0.110 | $6.91 | 2026-08-01T04:00:09.455954+00:00 |
 | Will Bitcoin reach $67,500 in July? | Yes | 0.110 | $6.91 | 2026-08-01T04:00:07.386758+00:00 |
 | Will NVIDIA be the largest company in the world by m | Yes | 0.200 | $3.49 | 2026-07-31T23:59:07.173968+00:00 |
-| Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | No | 0.190 | $4.32 | 2026-08-01T04:00:07.929883+00:00 |
 | Will Silver (XAGUSD) hit (LOW) $54 in July? | Yes | 0.200 | $4.12 | 2026-08-01T04:00:06.941014+00:00 |
 | Will MrBeast's next video get less than 40 million v | No | 0.200 | $3.49 | 2026-07-31T23:59:07.895477+00:00 |
 | Will Apple be the second-largest company in the worl | Yes | 0.200 | $3.70 | 2026-07-31T23:59:07.518373+00:00 |
 | Will Gold (XAUUSD) hit (LOW) $3,900 in July? | Yes | 0.140 | $6.27 | 2026-08-01T04:00:07.213480+00:00 |
+| Israel x Iran ceasefire continues through July 31? | No | 0.120 | $6.57 | 2026-07-31T23:59:08.271100+00:00 |
+| Will Ethereum reach $2,000 in July? | Yes | 0.150 | $5.29 | 2026-08-01T04:00:09.774797+00:00 |
+| Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
+| Will Elon Musk post 880-919 tweets in July 2026? | Yes | 0.153 | $5.87 | 2026-08-01T04:00:08.266737+00:00 |
+| Will Donavan McKinney be the Democratic Nominee for  | No | 0.190 | $4.32 | 2026-08-04T00:00:07.524388+00:00 |
+| Will Bitcoin dip to $62,000 July 27-August 2? | Yes | 0.175 | $3.91 | 2026-08-03T04:00:07.937873+00:00 |
+| Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
+| Will Bitcoin reach $66,000 July 27-August 2? | Yes | 0.110 | $6.91 | 2026-08-03T04:00:07.432916+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | LOST | -4.32 |
+| Will the Fed increase interest rates by 25 bps after | LOST | -4.54 |
+| Will there be no change in Fed interest rates after  | LOST | -4.24 |
+| Will Elon Musk post 260-279 tweets from July 21 to J | LOST | -3.62 |
 | Will Elon Musk post 240-259 tweets from July 21 to J | LOST | -6.69 |
+| Will Elon Musk post 340-359 tweets from July 21 to J | LOST | -6.86 |
+| Will Elon Musk post 320-339 tweets from July 21 to J | LOST | -5.87 |
+| Israel x Iran ceasefire continues through July 26? | LOST | -4.52 |
 | Colorado Rockies vs. Milwaukee Brewers | LOST | -5.48 |
+| Will Elon Musk post 300-319 tweets from July 21 to J | LOST | -6.43 |
+| Iran full airspace closure by July 27? | LOST | -5.48 |
+| Israel x Iran ceasefire continues through July 25? | LOST | -5.85 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -55,13 +63,14 @@ on realized ROI over dozens of settled bets, not the first few.
 | 0.10–0.15 | 64 | 20% | 0.123 | +56% |
 | 0.15–0.20 | 62 | 29% | 0.175 | +54% |
 | 0.10–0.20 | 126 | 25% | 0.149 | +55% |
-| 0.20–0.30 | 126 | 28% | 0.252 | +7% |
-| 0.30–0.40 | 209 | 40% | 0.353 | +10% |
+| 0.20–0.30 | 127 | 27% | 0.252 | +3% |
+| 0.30–0.40 | 208 | 39% | 0.353 | +9% |
 | 0.80–0.90 | 122 | 79% | 0.851 | -9% |
 | 0.90–0.98 | 215 | 93% | 0.949 | -3% |
 
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
-| 0.10–0.13 | 1 | 0% | -100% |
-| 0.17–0.20 | 1 | 0% | -100% |
+| 0.10–0.13 | 3 | 0% | -100% |
+| 0.13–0.17 | 3 | 0% | -100% |
+| 0.17–0.20 | 6 | 0% | -100% |
