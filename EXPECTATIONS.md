@@ -11,7 +11,7 @@ reviewer, or a human looking at the dashboard — should use the numbers here.
 | Entry band | **0.15 – 0.25** | was 0.10–0.20 until 2026-07-31 |
 | Win rate | **~24.5%** | *not* 27% |
 | ROI per bet | **~+17%** | 95% CI [+12.6%, +20.8%] |
-| Hold window | **6 – 72h** | was 24–96h until 2026-08-01; ROI declines with time to resolution |
+| Hold window | **6 – 96h** | floor lowered from 24h on 2026-08-01, for FLOW — ROI is flat across the range |
 | Kelly input | 0.245 win rate, 0.25 multiple | sizing only; go/no-go is price-in-band |
 
 **The old "+50–70% ROI, ~27% win rate" figures are retired.** They came from a
@@ -67,14 +67,20 @@ knowable."
   edge actually exists in the markets we trade is unresolved.
 - **2024 is negative** for both bands on a thin sample (~500 obs). The edge may
   be a post-2024 phenomenon, or that sample may just be too small.
-- **Resolved 2026-08-01:** the hold window was tested directly. Entering a market
-  with H hours left and holding to resolution *is* an H-hour hold, so the horizon
-  sweep is a hold-period experiment. On a common subset (n≈2.5–5.6k per point,
-  event-clustered): 6h +21.0%, 24h +22.4%, 36h **+23.0%**, 72h +19.2%, 96h +13.9%,
-  168h +11.1%. ROI declines with time to resolution — the old 24h floor excluded
-  the strong short end and the 96h ceiling included a weak tail. Window is now
-  6–72h. An earlier reading that short horizons were *worse* came from a 19%
-  subset and was noise.
+- **Resolved 2026-08-01:** the hold window was tested directly on the full
+  universe. Entering a market with H hours left and holding to resolution *is* an
+  H-hour hold, so the horizon sweep is a hold-period experiment. Event-clustered,
+  n=8.9–11.1k observations per point:
+
+  | hours | 6 | 24 | 36 | 48 | 72 | 96 | 120 | 168 |
+  |---|---|---|---|---|---|---|---|---|
+  | ROI | +16.6% | +18.1% | +19.3% | +16.7% | +16.2% | +16.5% | +15.3% | +13.0% |
+
+  **ROI is flat from 6h to 120h** — all CIs overlap heavily; only 168h is clearly
+  lower. There is no ROI-optimal hold period to find inside that range, so the
+  window is set by FLOW, not edge. Two earlier readings on partial data were both
+  noise and are retracted: "short horizons are worse" (19% subset) and "96h is a
+  weak tail" (59% subset). Trust only the full-universe numbers above.
 
 ## Flow is a real constraint
 
@@ -82,7 +88,7 @@ Edge is worthless if the scanner finds nothing. Measured live at 24–96h: 2,100
 liquid markets → **30** in-window → 3 in-band → 2 events, both already held →
 **0 tradeable**. The bot opened zero bets for 10 hours. The time window, not the
 price band, is the dominant filter — widening the band 0.15→0.30 produced the
-identical 3 markets. At 6–72h the same scan yields 40 in-window and 2 new events.
+identical 3 markets. At 6–96h the same scan yields 46 in-window and surfaces sub-24h markets that the old floor excluded outright.
 
 Watch this alongside ROI: `grep paper_cycle_done logs/cycle.log | tail`. Sustained
 `opened=0` with a book below the exposure cap means the filters are too tight, not

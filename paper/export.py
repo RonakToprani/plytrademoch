@@ -31,7 +31,7 @@ def write_state(path: str = "reports/state.md") -> str:
         f"# Poly underdog paper state — {datetime.now(timezone.utc).isoformat()}",
         "",
         "**Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid",
-        "Polymarket markets resolving in **6–72h**; hold to resolution. Fractional-",
+        "Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-",
         "Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~24.5% win rate) — judge",
         "on realized ROI over dozens of settled EVENTS, not bets and not the first few.",
         "",

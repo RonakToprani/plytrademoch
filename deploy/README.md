@@ -57,7 +57,7 @@ launchctl bootout gui/$(id -u)/com.underdog.cycle        # stop the loop
 Do **not** treat a live dashboard or `launchctl list` as a liveness check — use
 `check_status.sh`, which compares the `logs/cycle.log` mtime against now.
 
-Timeframes (tuned for the edge): buy 0.15–0.25 underdogs resolving in **6–72h**,
+Timeframes (tuned for the edge): buy 0.15–0.25 underdogs resolving in **6–96h**,
 scan every **30 min**. Band set from a 356k-market / 219k-event calibration:
 0.15–0.25 returns +16.7% [+12.6, +20.8] vs +11.9% for the old 0.10–0.20, and the
 0.10–0.15 sub-band is not significant (+5.9%). ROI is nearly flat across 24/48/96h

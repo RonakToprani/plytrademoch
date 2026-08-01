@@ -41,14 +41,17 @@ class PaperTrader:
         bankroll: float = 150.0,
         band_lo: float = 0.15,   # 0.10-0.15 measured +5.9% n.s. — dead weight
         band_hi: float = 0.25,   # 0.15-0.25: +16.7% [+12.6,+20.8], n=10096/7718 events
-        # 6-72h. Large-sample hold curve (band 0.15-0.25, event-clustered):
-        #   6h +21.0%  24h +22.4%  36h +23.0%  72h +19.2%  96h +13.9%  168h +11.1%
-        # The old 24h floor excluded the strong short end and the 96h ceiling
-        # included the weak tail. Widening down also fixes flow: at 24-96h the
-        # scanner found 30 in-window markets and 0 tradeable events; 6-72h finds
-        # 40 and 2. Capital recycles faster too, which matters on a $150 book.
+        # 6-96h. Full-universe hold curve (band 0.15-0.25, event-clustered,
+        # n=8.9-11.1k per point) is FLAT across the range:
+        #   6h +16.6%  24h +18.1%  36h +19.3%  48h +16.7%  72h +16.2%  96h +16.5%
+        #   120h +15.3%  168h +13.0%   (all CIs overlap heavily)
+        # So the window is chosen for FLOW, not edge. The 24h floor was the real
+        # throttle: at 24-96h the scanner saw 30 in-window markets and 0 tradeable
+        # events; dropping to 6h finds 46 and surfaces sub-24h markets entirely.
+        # Keeping the 96h ceiling costs nothing measurable and adds candidates.
+        # (An earlier 59%-subset read showed 96h at +13.9% — that was noise.)
         min_hours: float = 6.0,
-        max_hours: float = 72.0,
+        max_hours: float = 96.0,
         min_volume: float = 30_000.0,
         kelly_multiple: float = 0.25,
         max_open_stake: float | None = None,     # cap on total open exposure ($)
