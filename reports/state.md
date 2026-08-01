@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-01T18:11:05.593992+00:00
+# Poly underdog paper state — 2026-08-01T21:13:04.029098+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,9 +21,9 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **31** ($143.28)  ·  settled **13** (0W / 13L)
+- open **32** ($144.28)  ·  settled **13** (0W / 13L)
 - realized P&L **$-70.29**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-01T17:52:42.022006+00:00
+- last scan: 2026-08-01T20:53:33.638657+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -59,6 +59,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Will Elon Musk post 280-299 tweets from July 28 to A | Yes | 0.182 | $2.91 | 2026-08-04T16:00:07.345902+00:00 |
 | UFC Fight Night: Oban Elliott vs. Michael Oliveira ( | Oban Elliott | 0.240 | $1.00 | 2026-08-02T04:00:07.574121+00:00 |
 | UFC Fight Night: Jan Blachowicz vs. Navajo Stirling  | Jan Blachowicz | 0.240 | $1.00 | 2026-08-02T04:00:07.752248+00:00 |
+| UFC Fight Night: Daniel Rodriguez vs. Uroš Medic (We | Daniel Rodriguez | 0.240 | $1.00 | 2026-08-02T04:00:07.431787+00:00 |
 
 ## Settled
 | market | result | P&L |
