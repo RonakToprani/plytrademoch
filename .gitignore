@@ -37,3 +37,6 @@ backtest_cache.db-*
 # Nightly review reports (but track the state snapshot the cloud reviewer reads)
 reports/*
 !reports/state.md
+
+# macOS
+.DS_Store
