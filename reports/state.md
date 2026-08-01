@@ -1,7 +1,7 @@
-# Poly underdog paper state — 2026-08-01T12:06:31.331243+00:00
+# Poly underdog paper state — 2026-08-01T15:09:00.321384+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
-Polymarket markets resolving in **6–72h**; hold to resolution. Fractional-
+Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
 Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~24.5% win rate) — judge
 on realized ROI over dozens of settled EVENTS, not bets and not the first few.
 
@@ -21,9 +21,9 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **27** ($137.37)  ·  settled **13** (0W / 13L)
+- open **28** ($138.37)  ·  settled **13** (0W / 13L)
 - realized P&L **$-70.29**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-01T11:51:01.765824+00:00
+- last scan: 2026-08-01T14:51:49.653355+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -55,6 +55,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Will Bitcoin reach $66,000 July 27-August 2? | Yes | 0.110 | $6.91 | 2026-08-03T04:00:07.432916+00:00 |
 | Will "Spider-Man: Brand New Day" Opening Weekend Box | No | 0.190 | $3.91 | 2026-08-02T23:59:06.069737+00:00 |
 | UFC Fight Night: Marcin Tybura vs. Aleksandar Rakic  | Marcin Tybura | 0.240 | $1.00 | 2026-08-02T04:00:06.666336+00:00 |
+| Will "Spider-Man: Brand New Day" score at least 90 o | No | 0.250 | $1.00 | 2026-08-03T00:00:07.788714+00:00 |
 
 ## Settled
 | market | result | P&L |
