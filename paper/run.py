@@ -78,6 +78,22 @@ def cmd_export(args: argparse.Namespace) -> None:
     print(f"wrote {path}")
 
 
+def cmd_inbox(args: argparse.Namespace) -> None:
+    from paper.inbox import poll, recent
+    if not args.list_only:
+        n = poll()
+        print(f"stored {n} new message(s)")
+    rows = recent(args.limit)
+    if not rows:
+        print("inbox empty — forward a Telegram message to the bot to archive it")
+        return
+    print(f"\n=== inbox (latest {len(rows)}) ===")
+    for r in rows:
+        head = r["text"].strip().splitlines()[0][:70]
+        src = f" (fwd from {r['origin']})" if r["origin"] else ""
+        print(f"  {r['ts'][:16]}  {r['sender']}{src}\n     {head}\n     -> {r['saved_path']}")
+
+
 def cmd_dashboard(args: argparse.Namespace) -> None:
     from paper.dashboard import create_app
     app = create_app()
@@ -109,6 +125,11 @@ def main(argv: list[str] | None = None) -> None:
     px = sub.add_parser("export", help="write a state snapshot for the cloud reviewer")
     px.add_argument("--out", default="reports/state.md")
     px.set_defaults(func=cmd_export)
+
+    pi = sub.add_parser("inbox", help="archive Telegram messages sent to the bot")
+    pi.add_argument("--list-only", action="store_true", help="don't poll, just show")
+    pi.add_argument("--limit", type=int, default=10)
+    pi.set_defaults(func=cmd_inbox)
 
     pd = sub.add_parser("dashboard", help="launch the one-page monitor")
     pd.add_argument("--port", type=int, default=8060)

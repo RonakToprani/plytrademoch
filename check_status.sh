@@ -52,7 +52,7 @@ say "========================================"
 # ---------------------------------------------------------------- launchd jobs
 say ""
 say "=== LAUNCHD JOBS ==="
-for job in cycle export review dashboard; do
+for job in cycle export review dashboard inbox; do
     if launchctl print "gui/$UID_NUM/com.underdog.$job" >/dev/null 2>&1; then
         ok "com.underdog.$job loaded"
     else
@@ -103,6 +103,13 @@ if AGE=$(age_of logs/export.log); then
     fi
 else
     warn "logs/export.log missing"
+fi
+
+INBOX_N=$(ls reports/inbox/*.md 2>/dev/null | wc -l | xargs)
+if [ "${INBOX_N:-0}" -gt 0 ]; then
+    ok "$INBOX_N archived Telegram message(s) — newest: $(basename "$(ls -t reports/inbox/*.md | head -1)")"
+else
+    say "  · inbox empty (forward a Telegram msg to the bot to archive it)"
 fi
 
 LATEST_REVIEW=$(ls -t reports/review-*.md 2>/dev/null | head -1)
