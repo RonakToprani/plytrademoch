@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-01T06:02:23.588435+00:00
+# Poly underdog paper state — 2026-08-01T09:04:21.095759+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–72h**; hold to resolution. Fractional-
@@ -21,9 +21,9 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **26** ($136.37)  ·  settled **13** (0W / 13L)
+- open **27** ($137.37)  ·  settled **13** (0W / 13L)
 - realized P&L **$-70.29**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-01T05:49:23.023215+00:00
+- last scan: 2026-08-01T08:50:13.282402+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -54,6 +54,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
 | Will Bitcoin reach $66,000 July 27-August 2? | Yes | 0.110 | $6.91 | 2026-08-03T04:00:07.432916+00:00 |
 | Will "Spider-Man: Brand New Day" Opening Weekend Box | No | 0.190 | $3.91 | 2026-08-02T23:59:06.069737+00:00 |
+| UFC Fight Night: Marcin Tybura vs. Aleksandar Rakic  | Marcin Tybura | 0.240 | $1.00 | 2026-08-02T04:00:06.666336+00:00 |
 
 ## Settled
 | market | result | P&L |
