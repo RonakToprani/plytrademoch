@@ -11,7 +11,7 @@ reviewer, or a human looking at the dashboard — should use the numbers here.
 | Entry band | **0.15 – 0.25** | was 0.10–0.20 until 2026-07-31 |
 | Win rate | **~24.5%** | *not* 27% |
 | ROI per bet | **~+17%** | 95% CI [+12.6%, +20.8%] |
-| Hold window | 24–96h | unchanged; ROI is flat across lead times |
+| Hold window | **6 – 72h** | was 24–96h until 2026-08-01; ROI declines with time to resolution |
 | Kelly input | 0.245 win rate, 0.25 multiple | sizing only; go/no-go is price-in-band |
 
 **The old "+50–70% ROI, ~27% win rate" figures are retired.** They came from a
@@ -67,8 +67,26 @@ knowable."
   edge actually exists in the markets we trade is unresolved.
 - **2024 is negative** for both bands on a thin sample (~500 obs). The edge may
   be a post-2024 phenomenon, or that sample may just be too small.
-- Horizons here are measurement *lead times*, not a direct hold-period
-  experiment. Changing the hold window needs its own test.
+- **Resolved 2026-08-01:** the hold window was tested directly. Entering a market
+  with H hours left and holding to resolution *is* an H-hour hold, so the horizon
+  sweep is a hold-period experiment. On a common subset (n≈2.5–5.6k per point,
+  event-clustered): 6h +21.0%, 24h +22.4%, 36h **+23.0%**, 72h +19.2%, 96h +13.9%,
+  168h +11.1%. ROI declines with time to resolution — the old 24h floor excluded
+  the strong short end and the 96h ceiling included a weak tail. Window is now
+  6–72h. An earlier reading that short horizons were *worse* came from a 19%
+  subset and was noise.
+
+## Flow is a real constraint
+
+Edge is worthless if the scanner finds nothing. Measured live at 24–96h: 2,100
+liquid markets → **30** in-window → 3 in-band → 2 events, both already held →
+**0 tradeable**. The bot opened zero bets for 10 hours. The time window, not the
+price band, is the dominant filter — widening the band 0.15→0.30 produced the
+identical 3 markets. At 6–72h the same scan yields 40 in-window and 2 new events.
+
+Watch this alongside ROI: `grep paper_cycle_done logs/cycle.log | tail`. Sustained
+`opened=0` with a book below the exposure cap means the filters are too tight, not
+that the edge is gone.
 
 ## Reproducing
 

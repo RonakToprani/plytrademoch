@@ -7,11 +7,11 @@ would buy right now. Read-only; suggests sizes but places nothing.
 
 Strategy (from FINDINGS.md §2, validated across horizons + time split):
   • Buy the outcome token priced in [band_lo, band_hi] (default 0.15–0.25).
-  • Resolution window: the edge was measured entering 24h–168h BEFORE resolution,
-    so we only take markets resolving within [min_hours, max_hours] (default
-    24h–168h). This deliberately excludes far-dated, highly correlated markets
-    (e.g. 2028-election longshots 2 years out), which the backtest never covered
-    and which lock capital for years.
+  • Resolution window: ROI declines with time to resolution (+23% at 36h, +19% at
+    72h, +14% at 96h, +11% at 168h), so we take markets resolving within
+    [min_hours, max_hours] (default 6h–72h). This also excludes far-dated,
+    highly correlated markets (e.g. 2028-election longshots 2 years out), which
+    lock capital for years.
   • Only liquid markets (volume >= min_volume).
   • One bet per event (avoid correlated mutually-exclusive legs).
   • Hold to resolution.
@@ -54,8 +54,8 @@ def scan(
     *,
     band_lo: float = 0.15,
     band_hi: float = 0.25,
-    min_hours: float = 24.0,
-    max_hours: float = 168.0,
+    min_hours: float = 6.0,
+    max_hours: float = 72.0,
     min_volume: float = 30_000.0,
     bankroll: float = 100.0,
     kelly_multiple: float = 0.25,

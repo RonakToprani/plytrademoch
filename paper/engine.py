@@ -41,9 +41,14 @@ class PaperTrader:
         bankroll: float = 150.0,
         band_lo: float = 0.15,   # 0.10-0.15 measured +5.9% n.s. — dead weight
         band_hi: float = 0.25,   # 0.15-0.25: +16.7% [+12.6,+20.8], n=10096/7718 events
-        min_hours: float = 24.0,
-        max_hours: float = 96.0,   # 1-4 day holds; large-sample ROI is nearly flat
-                                   # across 24/48/96h lead times (+18.1/+16.7/+16.5%)
+        # 6-72h. Large-sample hold curve (band 0.15-0.25, event-clustered):
+        #   6h +21.0%  24h +22.4%  36h +23.0%  72h +19.2%  96h +13.9%  168h +11.1%
+        # The old 24h floor excluded the strong short end and the 96h ceiling
+        # included the weak tail. Widening down also fixes flow: at 24-96h the
+        # scanner found 30 in-window markets and 0 tradeable events; 6-72h finds
+        # 40 and 2. Capital recycles faster too, which matters on a $150 book.
+        min_hours: float = 6.0,
+        max_hours: float = 72.0,
         min_volume: float = 30_000.0,
         kelly_multiple: float = 0.25,
         max_open_stake: float | None = None,     # cap on total open exposure ($)

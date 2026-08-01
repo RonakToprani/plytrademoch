@@ -128,7 +128,7 @@ def _recommendations(stats: dict, cal: dict, breakdown: dict) -> list[str]:
 
     if settled < 15:
         recs.append(f"SAMPLE: only {settled} settled bets — too few to act on yet. "
-                    "Keep the current 0.15–0.25 / 24–96h config running; revisit at 30+.")
+                    "Keep the current 0.15–0.25 / 6–72h config running; revisit at 30+.")
     else:
         roi, wr = stats["roi"], stats["win_rate"]
         if roi >= 0.17:

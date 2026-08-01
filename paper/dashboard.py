@@ -264,7 +264,7 @@ def create_app() -> dash.Dash:
                 html.Div([
                     html.Div([
                         _label("CAPITAL DEPLOYED — UNDERDOG BOOK"),
-                        html.Div("BUY 0.15–0.25 · RESOLVES 24–96H · HOLD TO SETTLE",
+                        html.Div("BUY 0.15–0.25 · RESOLVES 6–72H · HOLD TO SETTLE",
                                  style={"color": MUTED, "fontSize": "0.68rem",
                                         "letterSpacing": "0.1em"}),
                     ], style={"flex": "1"}),
@@ -307,7 +307,7 @@ def create_app() -> dash.Dash:
                 _panel(PURPLE, "BACKTEST EDGE", "VALIDATED EXPECTATION",
                        "+16.7%", PURPLE, [
                            _kv("EXP WIN", "~24.5%"),
-                           _kv("HORIZON", "24–96H"),
+                           _kv("HORIZON", "6–72H"),
                            _kv("SKEW", "NEGATIVE"),
                        ]),
             ], 3, min_px=240)
