@@ -1,7 +1,7 @@
-# Poly underdog paper state — 2026-08-01T03:00:35.051428+00:00
+# Poly underdog paper state — 2026-08-01T06:02:23.588435+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
-Polymarket markets resolving in **24–96h**; hold to resolution. Fractional-
+Polymarket markets resolving in **6–72h**; hold to resolution. Fractional-
 Kelly sizing on a $150 paper bankroll. NEGATIVE SKEW (~24.5% win rate) — judge
 on realized ROI over dozens of settled EVENTS, not bets and not the first few.
 
@@ -23,7 +23,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Book
 - open **26** ($136.37)  ·  settled **13** (0W / 13L)
 - realized P&L **$-70.29**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-01T02:48:33.744035+00:00
+- last scan: 2026-08-01T05:49:23.023215+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -75,14 +75,14 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
 |---|---|---|---|---|
-| 0.02–0.10 | 12441 | 7% | 0.051 | +4% |
+| 0.02–0.10 | 12442 | 7% | 0.051 | +4% |
 | 0.10–0.15 | 4747 | 14% | 0.123 | +6% |
 | 0.15–0.20 | 4772 | 22% | 0.173 | +18% |
 | 0.15–0.25 | 10096 | 25% | 0.200 | +17% |
-| 0.20–0.30 | 11311 | 29% | 0.250 | +14% |
+| 0.20–0.30 | 11312 | 29% | 0.250 | +14% |
 | 0.30–0.40 | 11535 | 37% | 0.349 | +3% |
-| 0.80–0.90 | 9497 | 81% | 0.848 | -5% |
-| 0.90–0.98 | 12628 | 93% | 0.947 | -3% |
+| 0.80–0.90 | 9498 | 81% | 0.848 | -5% |
+| 0.90–0.98 | 12630 | 93% | 0.947 | -3% |
 
 ## Paper results by entry price
 | bucket | n | win% | ROI |
