@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-02T15:24:00.231553+00:00
+# Poly underdog paper state — 2026-08-02T18:26:10.882642+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,9 +21,9 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **31** ($123.91)  ·  settled **18** (0W / 18L)
+- open **32** ($127.50)  ·  settled **18** (0W / 18L)
 - realized P&L **$-97.97**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-02T14:58:36.663768+00:00
+- last scan: 2026-08-02T17:59:27.148950+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -59,6 +59,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Bitcoin Up or Down on August 2? | Down | 0.180 | $2.55 | 2026-08-02T16:00:07.717001+00:00 |
 | LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK R | KT Rolster | 0.240 | $1.00 | 2026-08-02T16:00:07.022052+00:00 |
 | LoL: LNG Esports vs Invictus Gaming (BO3) - LPL Grou | LNG Esports | 0.200 | $2.33 | 2026-08-02T15:00:07.581305+00:00 |
+| Will Spider-Man: Brand New Day beat Avengers: Endgam | No | 0.180 | $3.59 | 2026-08-02T23:59:07.372138+00:00 |
 
 ## Settled
 | market | result | P&L |
