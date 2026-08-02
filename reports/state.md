@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-01T21:13:04.029098+00:00
+# Poly underdog paper state — 2026-08-02T00:14:38.753777+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,17 +21,15 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **32** ($144.28)  ·  settled **13** (0W / 13L)
-- realized P&L **$-70.29**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-01T20:53:33.638657+00:00
+- open **30** ($131.44)  ·  settled **16** (0W / 16L)
+- realized P&L **$-84.56**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
+- last scan: 2026-08-01T23:54:27.804931+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Alibaba have the best Chinese AI model at the e | No | 0.152 | $5.31 | 2026-07-31T00:00:05.340201+00:00 |
 | Will Moonshot have the best Chinese AI model at the  | Yes | 0.139 | $5.80 | 2026-07-31T00:00:05.987877+00:00 |
-| Will the Fed Pause–Pause–Pause in the next three dec | No | 0.171 | $4.56 | 2026-07-29T00:00:07.264903+00:00 |
-| Will the Fed decide differently in the next three de | Yes | 0.173 | $4.42 | 2026-07-29T00:00:07.935679+00:00 |
 | Will Russia enter Serhiivka by July 31? | Yes | 0.131 | $6.88 | 2026-07-31T00:00:07.899060+00:00 |
 | Will Russia capture Kostyantynivka by July 31? | Yes | 0.132 | $6.53 | 2026-07-31T12:00:08.424424+00:00 |
 | US announces end of Iranian blockade by July 31, 202 | Yes | 0.140 | $5.48 | 2026-07-31T23:59:07.779196+00:00 |
@@ -46,7 +44,6 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Will Apple be the second-largest company in the worl | Yes | 0.200 | $3.70 | 2026-07-31T23:59:07.518373+00:00 |
 | Will Gold (XAUUSD) hit (LOW) $3,900 in July? | Yes | 0.140 | $6.27 | 2026-08-01T04:00:07.213480+00:00 |
 | Israel x Iran ceasefire continues through July 31? | No | 0.120 | $6.57 | 2026-07-31T23:59:08.271100+00:00 |
-| Will Ethereum reach $2,000 in July? | Yes | 0.150 | $5.29 | 2026-08-01T04:00:09.774797+00:00 |
 | Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
 | Will Elon Musk post 880-919 tweets in July 2026? | Yes | 0.153 | $5.87 | 2026-08-01T04:00:08.266737+00:00 |
 | Will Donavan McKinney be the Democratic Nominee for  | No | 0.190 | $4.32 | 2026-08-04T00:00:07.524388+00:00 |
@@ -60,11 +57,15 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | UFC Fight Night: Oban Elliott vs. Michael Oliveira ( | Oban Elliott | 0.240 | $1.00 | 2026-08-02T04:00:07.574121+00:00 |
 | UFC Fight Night: Jan Blachowicz vs. Navajo Stirling  | Jan Blachowicz | 0.240 | $1.00 | 2026-08-02T04:00:07.752248+00:00 |
 | UFC Fight Night: Daniel Rodriguez vs. Uroš Medic (We | Daniel Rodriguez | 0.240 | $1.00 | 2026-08-02T04:00:07.431787+00:00 |
+| Counter-Strike: Spirit vs MOUZ (BO5) - BLAST Bounty  | MOUZ | 0.220 | $1.43 | 2026-08-02T16:30:07.115033+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Ethereum reach $2,000 in July? | LOST | -5.29 |
 | Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | LOST | -4.32 |
+| Will the Fed decide differently in the next three de | LOST | -4.42 |
+| Will the Fed Pause–Pause–Pause in the next three dec | LOST | -4.56 |
 | Will the Fed increase interest rates by 25 bps after | LOST | -4.54 |
 | Will there be no change in Fed interest rates after  | LOST | -4.24 |
 | Israel x Iran ceasefire continues through July 27? | LOST | -6.39 |
@@ -94,4 +95,4 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 6 | 0% | -100% |
-| 0.15–0.20 | 7 | 0% | -100% |
+| 0.15–0.20 | 10 | 0% | -100% |
