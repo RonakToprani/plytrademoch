@@ -40,3 +40,6 @@ reports/*
 
 # macOS
 .DS_Store
+
+# Local Claude Code settings (machine-specific)
+.claude/
