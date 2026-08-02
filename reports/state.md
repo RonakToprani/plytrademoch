@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-02T00:14:38.753777+00:00
+# Poly underdog paper state — 2026-08-02T03:15:28.971514+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,9 +21,9 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **30** ($131.44)  ·  settled **16** (0W / 16L)
+- open **31** ($133.99)  ·  settled **16** (0W / 16L)
 - realized P&L **$-84.56**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-01T23:54:27.804931+00:00
+- last scan: 2026-08-02T02:55:18.423852+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -58,6 +58,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | UFC Fight Night: Jan Blachowicz vs. Navajo Stirling  | Jan Blachowicz | 0.240 | $1.00 | 2026-08-02T04:00:07.752248+00:00 |
 | UFC Fight Night: Daniel Rodriguez vs. Uroš Medic (We | Daniel Rodriguez | 0.240 | $1.00 | 2026-08-02T04:00:07.431787+00:00 |
 | Counter-Strike: Spirit vs MOUZ (BO5) - BLAST Bounty  | MOUZ | 0.220 | $1.43 | 2026-08-02T16:30:07.115033+00:00 |
+| Bitcoin Up or Down on August 2? | Down | 0.180 | $2.55 | 2026-08-02T16:00:07.717001+00:00 |
 
 ## Settled
 | market | result | P&L |
