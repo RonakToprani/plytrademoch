@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-02T12:21:49.896025+00:00
+# Poly underdog paper state — 2026-08-02T15:24:00.231553+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,16 +21,15 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **32** ($130.44)  ·  settled **17** (0W / 17L)
-- realized P&L **$-91.44**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-02T11:57:47.851525+00:00
+- open **31** ($123.91)  ·  settled **18** (0W / 18L)
+- realized P&L **$-97.97**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
+- last scan: 2026-08-02T14:58:36.663768+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Alibaba have the best Chinese AI model at the e | No | 0.152 | $5.31 | 2026-07-31T00:00:05.340201+00:00 |
 | Will Moonshot have the best Chinese AI model at the  | Yes | 0.139 | $5.80 | 2026-07-31T00:00:05.987877+00:00 |
-| Will Russia capture Kostyantynivka by July 31? | Yes | 0.132 | $6.53 | 2026-07-31T12:00:08.424424+00:00 |
 | US announces end of Iranian blockade by July 31, 202 | Yes | 0.140 | $5.48 | 2026-07-31T23:59:07.779196+00:00 |
 | 0 ships transit Hormuz on any date by July 31? | Yes | 0.136 | $6.91 | 2026-07-31T23:59:07.361878+00:00 |
 | Will Bitcoin dip to $60,000 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:07.951372+00:00 |
@@ -66,6 +65,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 |---|---|---|
 | Will Ethereum reach $2,000 in July? | LOST | -5.29 |
 | Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | LOST | -4.32 |
+| Will Russia capture Kostyantynivka by July 31? | LOST | -6.53 |
 | Will Russia enter Serhiivka by July 31? | LOST | -6.88 |
 | Will the Fed decide differently in the next three de | LOST | -4.42 |
 | Will the Fed Pause–Pause–Pause in the next three dec | LOST | -4.56 |
@@ -97,5 +97,5 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
-| <0.15 | 7 | 0% | -100% |
+| <0.15 | 8 | 0% | -100% |
 | 0.15–0.20 | 10 | 0% | -100% |
