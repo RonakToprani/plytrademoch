@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-02T06:17:35.496329+00:00
+# Poly underdog paper state — 2026-08-02T09:19:38.574356+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,9 +21,9 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **31** ($128.11)  ·  settled **17** (0W / 17L)
+- open **32** ($130.44)  ·  settled **17** (0W / 17L)
 - realized P&L **$-91.44**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-02T05:56:08.521885+00:00
+- last scan: 2026-08-02T08:56:59.024656+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -59,6 +59,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Counter-Strike: Spirit vs MOUZ (BO5) - BLAST Bounty  | MOUZ | 0.220 | $1.43 | 2026-08-02T16:30:07.115033+00:00 |
 | Bitcoin Up or Down on August 2? | Down | 0.180 | $2.55 | 2026-08-02T16:00:07.717001+00:00 |
 | LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK R | KT Rolster | 0.240 | $1.00 | 2026-08-02T16:00:07.022052+00:00 |
+| LoL: LNG Esports vs Invictus Gaming (BO3) - LPL Grou | LNG Esports | 0.200 | $2.33 | 2026-08-02T15:00:07.581305+00:00 |
 
 ## Settled
 | market | result | P&L |
