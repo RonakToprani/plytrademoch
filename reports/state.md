@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-03T09:36:10.792899+00:00
+# Poly underdog paper state — 2026-08-03T12:38:18.228832+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,21 +21,18 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **22** ($74.27)  ·  settled **30** (2W / 28L)
-- realized P&L **$-101.19**  ·  ROI **-64.4%** (backtest exp ~+17%)  ·  win **7%** (exp ~24.5%)
-- last scan: 2026-08-03T09:33:49.023752+00:00
+- open **19** ($57.39)  ·  settled **33** (3W / 30L)
+- realized P&L **$-99.57**  ·  ROI **-57.2%** (backtest exp ~+17%)  ·  win **9%** (exp ~24.5%)
+- last scan: 2026-08-03T12:34:43.638412+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | 0 ships transit Hormuz on any date by July 31? | Yes | 0.136 | $6.91 | 2026-07-31T23:59:07.361878+00:00 |
-| Will Apple be the second-largest company in the worl | Yes | 0.200 | $3.70 | 2026-07-31T23:59:07.518373+00:00 |
-| Will Gold (XAUUSD) hit (LOW) $3,900 in July? | Yes | 0.140 | $6.27 | 2026-08-01T04:00:07.213480+00:00 |
 | Israel x Iran ceasefire continues through July 31? | No | 0.120 | $6.57 | 2026-07-31T23:59:08.271100+00:00 |
 | Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
 | Will Donavan McKinney be the Democratic Nominee for  | No | 0.190 | $4.32 | 2026-08-04T00:00:07.524388+00:00 |
 | Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
-| Will Bitcoin reach $66,000 July 27-August 2? | Yes | 0.110 | $6.91 | 2026-08-03T04:00:07.432916+00:00 |
 | Will "Spider-Man: Brand New Day" Opening Weekend Box | No | 0.190 | $3.91 | 2026-08-02T23:59:06.069737+00:00 |
 | UFC Fight Night: Marcin Tybura vs. Aleksandar Rakic  | Marcin Tybura | 0.240 | $1.00 | 2026-08-02T04:00:06.666336+00:00 |
 | Will "Spider-Man: Brand New Day" score at least 90 o | No | 0.250 | $1.00 | 2026-08-03T00:00:07.788714+00:00 |
@@ -54,9 +51,12 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Bitcoin reach $66,000 July 27-August 2? | LOST | -6.91 |
 | Will Bitcoin dip to $62,000 July 27-August 2? | LOST | -3.91 |
 | Will Elon Musk post 880-919 tweets in July 2026? | WON | +32.57 |
 | Will Ethereum reach $2,000 in July? | LOST | -5.29 |
+| Will Gold (XAUUSD) hit (LOW) $3,900 in July? | LOST | -6.27 |
+| Will Apple be the second-largest company in the worl | WON | +14.80 |
 | Will MrBeast's next video get less than 40 million v | LOST | -3.49 |
 | Will Silver (XAGUSD) hit (LOW) $54 in July? | LOST | -4.12 |
 | Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | LOST | -4.32 |
@@ -100,6 +100,6 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
-| <0.15 | 12 | 0% | -100% |
+| <0.15 | 14 | 0% | -100% |
 | 0.15–0.20 | 15 | 7% | -45% |
-| 0.20–0.25 | 3 | 33% | +57% |
+| 0.20–0.25 | 4 | 50% | +143% |
