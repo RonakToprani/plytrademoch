@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-03T03:31:57.279517+00:00
+# Poly underdog paper state — 2026-08-03T06:34:06.215346+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,17 +21,14 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **29** ($109.03)  ·  settled **22** (1W / 21L)
-- realized P&L **$-81.99**  ·  ROI **-68.1%** (backtest exp ~+17%)  ·  win **5%** (exp ~24.5%)
-- last scan: 2026-08-03T03:01:57.010178+00:00
+- open **25** ($90.39)  ·  settled **26** (1W / 25L)
+- realized P&L **$-100.63**  ·  ROI **-72.4%** (backtest exp ~+17%)  ·  win **4%** (exp ~24.5%)
+- last scan: 2026-08-03T06:02:48.086141+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | 0 ships transit Hormuz on any date by July 31? | Yes | 0.136 | $6.91 | 2026-07-31T23:59:07.361878+00:00 |
-| Will Bitcoin dip to $60,000 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:07.951372+00:00 |
-| Will WTI Crude Oil (WTI) hit (LOW) $75 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:08.666335+00:00 |
-| Will S&P 500 (SPY) hit (HIGH) $760 in July? | Yes | 0.110 | $6.91 | 2026-08-01T04:00:09.455954+00:00 |
 | Will Bitcoin reach $67,500 in July? | Yes | 0.110 | $6.91 | 2026-08-01T04:00:07.386758+00:00 |
 | Will NVIDIA be the largest company in the world by m | Yes | 0.200 | $3.49 | 2026-07-31T23:59:07.173968+00:00 |
 | Will Silver (XAGUSD) hit (LOW) $54 in July? | Yes | 0.200 | $4.12 | 2026-08-01T04:00:06.941014+00:00 |
@@ -41,7 +38,6 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Israel x Iran ceasefire continues through July 31? | No | 0.120 | $6.57 | 2026-07-31T23:59:08.271100+00:00 |
 | Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
 | Will Donavan McKinney be the Democratic Nominee for  | No | 0.190 | $4.32 | 2026-08-04T00:00:07.524388+00:00 |
-| Will Bitcoin dip to $62,000 July 27-August 2? | Yes | 0.175 | $3.91 | 2026-08-03T04:00:07.937873+00:00 |
 | Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
 | Will Bitcoin reach $66,000 July 27-August 2? | Yes | 0.110 | $6.91 | 2026-08-03T04:00:07.432916+00:00 |
 | Will "Spider-Man: Brand New Day" Opening Weekend Box | No | 0.190 | $3.91 | 2026-08-02T23:59:06.069737+00:00 |
@@ -61,9 +57,13 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Bitcoin dip to $62,000 July 27-August 2? | LOST | -3.91 |
 | Will Elon Musk post 880-919 tweets in July 2026? | WON | +32.57 |
 | Will Ethereum reach $2,000 in July? | LOST | -5.29 |
 | Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | LOST | -4.32 |
+| Will S&P 500 (SPY) hit (HIGH) $760 in July? | LOST | -6.91 |
+| Will WTI Crude Oil (WTI) hit (LOW) $75 in July? | LOST | -3.91 |
+| Will Bitcoin dip to $60,000 in July? | LOST | -3.91 |
 | US announces end of Iranian blockade by July 31, 202 | LOST | -5.48 |
 | Will Russia capture Kostyantynivka by July 31? | LOST | -6.53 |
 | Will Russia enter Serhiivka by July 31? | LOST | -6.88 |
@@ -99,5 +99,5 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
-| <0.15 | 10 | 0% | -100% |
-| 0.15–0.20 | 12 | 8% | -33% |
+| <0.15 | 11 | 0% | -100% |
+| 0.15–0.20 | 15 | 7% | -45% |
