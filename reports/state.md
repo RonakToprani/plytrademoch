@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-03T00:30:02.736367+00:00
+# Poly underdog paper state — 2026-08-03T03:31:57.279517+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,14 +21,13 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **29** ($110.52)  ·  settled **21** (1W / 20L)
-- realized P&L **$-76.51**  ·  ROI **-66.6%** (backtest exp ~+17%)  ·  win **5%** (exp ~24.5%)
-- last scan: 2026-08-03T00:01:06.832913+00:00
+- open **29** ($109.03)  ·  settled **22** (1W / 21L)
+- realized P&L **$-81.99**  ·  ROI **-68.1%** (backtest exp ~+17%)  ·  win **5%** (exp ~24.5%)
+- last scan: 2026-08-03T03:01:57.010178+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| US announces end of Iranian blockade by July 31, 202 | Yes | 0.140 | $5.48 | 2026-07-31T23:59:07.779196+00:00 |
 | 0 ships transit Hormuz on any date by July 31? | Yes | 0.136 | $6.91 | 2026-07-31T23:59:07.361878+00:00 |
 | Will Bitcoin dip to $60,000 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:07.951372+00:00 |
 | Will WTI Crude Oil (WTI) hit (LOW) $75 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:08.666335+00:00 |
@@ -57,6 +56,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK R | KT Rolster | 0.240 | $1.00 | 2026-08-02T16:00:07.022052+00:00 |
 | LoL: LNG Esports vs Invictus Gaming (BO3) - LPL Grou | LNG Esports | 0.200 | $2.33 | 2026-08-02T15:00:07.581305+00:00 |
 | Will Spider-Man: Brand New Day beat Avengers: Endgam | No | 0.180 | $3.59 | 2026-08-02T23:59:07.372138+00:00 |
+| Will the price of Bitcoin be above $62,000 on August | No | 0.190 | $3.99 | 2026-08-04T16:00:07.238505+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -64,6 +64,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Will Elon Musk post 880-919 tweets in July 2026? | WON | +32.57 |
 | Will Ethereum reach $2,000 in July? | LOST | -5.29 |
 | Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | LOST | -4.32 |
+| US announces end of Iranian blockade by July 31, 202 | LOST | -5.48 |
 | Will Russia capture Kostyantynivka by July 31? | LOST | -6.53 |
 | Will Russia enter Serhiivka by July 31? | LOST | -6.88 |
 | Will the Fed decide differently in the next three de | LOST | -4.42 |
@@ -98,5 +99,5 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
-| <0.15 | 9 | 0% | -100% |
+| <0.15 | 10 | 0% | -100% |
 | 0.15–0.20 | 12 | 8% | -33% |
