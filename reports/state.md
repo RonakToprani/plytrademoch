@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-02T21:28:10.085191+00:00
+# Poly underdog paper state — 2026-08-03T00:30:02.736367+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.25** on liquid
 Polymarket markets resolving in **6–96h**; hold to resolution. Fractional-
@@ -21,15 +21,13 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
   below ~30 the honest answer is 'not yet knowable'.
 
 ## Book
-- open **32** ($127.50)  ·  settled **18** (0W / 18L)
-- realized P&L **$-97.97**  ·  ROI **-100.0%** (backtest exp ~+17%)  ·  win **0%** (exp ~24.5%)
-- last scan: 2026-08-02T21:00:16.007443+00:00
+- open **29** ($110.52)  ·  settled **21** (1W / 20L)
+- realized P&L **$-76.51**  ·  ROI **-66.6%** (backtest exp ~+17%)  ·  win **5%** (exp ~24.5%)
+- last scan: 2026-08-03T00:01:06.832913+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Will Alibaba have the best Chinese AI model at the e | No | 0.152 | $5.31 | 2026-07-31T00:00:05.340201+00:00 |
-| Will Moonshot have the best Chinese AI model at the  | Yes | 0.139 | $5.80 | 2026-07-31T00:00:05.987877+00:00 |
 | US announces end of Iranian blockade by July 31, 202 | Yes | 0.140 | $5.48 | 2026-07-31T23:59:07.779196+00:00 |
 | 0 ships transit Hormuz on any date by July 31? | Yes | 0.136 | $6.91 | 2026-07-31T23:59:07.361878+00:00 |
 | Will Bitcoin dip to $60,000 in July? | Yes | 0.180 | $3.91 | 2026-08-01T04:00:07.951372+00:00 |
@@ -43,7 +41,6 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Will Gold (XAUUSD) hit (LOW) $3,900 in July? | Yes | 0.140 | $6.27 | 2026-08-01T04:00:07.213480+00:00 |
 | Israel x Iran ceasefire continues through July 31? | No | 0.120 | $6.57 | 2026-07-31T23:59:08.271100+00:00 |
 | Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
-| Will Elon Musk post 880-919 tweets in July 2026? | Yes | 0.153 | $5.87 | 2026-08-01T04:00:08.266737+00:00 |
 | Will Donavan McKinney be the Democratic Nominee for  | No | 0.190 | $4.32 | 2026-08-04T00:00:07.524388+00:00 |
 | Will Bitcoin dip to $62,000 July 27-August 2? | Yes | 0.175 | $3.91 | 2026-08-03T04:00:07.937873+00:00 |
 | Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
@@ -64,6 +61,7 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Elon Musk post 880-919 tweets in July 2026? | WON | +32.57 |
 | Will Ethereum reach $2,000 in July? | LOST | -5.29 |
 | Will WTI Crude Oil (WTI) hit (LOW) $80 in July? | LOST | -4.32 |
 | Will Russia capture Kostyantynivka by July 31? | LOST | -6.53 |
@@ -81,6 +79,8 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 | Colorado Rockies vs. Milwaukee Brewers | LOST | -5.48 |
 | Will Elon Musk post 300-319 tweets from July 21 to J | LOST | -6.43 |
 | Iran full airspace closure by July 27? | LOST | -5.48 |
+| Will Moonshot have the best Chinese AI model at the  | LOST | -5.80 |
+| Will Alibaba have the best Chinese AI model at the e | LOST | -5.31 |
 | Israel x Iran ceasefire continues through July 25? | LOST | -5.85 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
@@ -98,5 +98,5 @@ source of truth for what 'working' looks like, recalibrated 2026-07-31 on
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
-| <0.15 | 8 | 0% | -100% |
-| 0.15–0.20 | 10 | 0% | -100% |
+| <0.15 | 9 | 0% | -100% |
+| 0.15–0.20 | 12 | 8% | -33% |
