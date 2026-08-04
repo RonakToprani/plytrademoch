@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-04T03:47:26.760173+00:00
+# Poly underdog paper state — 2026-08-04T06:49:51.618629+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **17** ($181.81)  ·  settled **50** (8W / 42L)
-- realized P&L **$-45.81**  ·  ROI **-17.7%** (backtest exp ~+15.7%)  ·  win **16%** (exp ~27.4%)
-- last scan: 2026-08-04T03:25:43.780046+00:00
+- open **10** ($76.09)  ·  settled **58** (11W / 47L)
+- realized P&L **$25.69**  ·  ROI **+6.7%** (backtest exp ~+15.7%)  ·  win **19%** (exp ~27.4%)
+- last scan: 2026-08-04T06:26:47.832004+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,19 +44,20 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | US announces end of Iranian blockade by August 7, 20 | Yes | 0.213 | $1.75 | 2026-08-07T23:59:07.628570+00:00 |
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| Canadian Open: Kamil Majchrzak vs Gael Monfils | Gael Monfils | 0.250 | $15.54 | 2026-08-10T14:00:06.810722+00:00 |
-| Tampa Bay Rays vs. Colorado Rockies | Colorado Rockies | 0.250 | $14.83 | 2026-08-11T00:40:07.481952+00:00 |
-| Toronto Blue Jays vs. Houston Astros | Houston Astros | 0.240 | $14.95 | 2026-08-11T00:10:06.870630+00:00 |
-| Los Angeles Dodgers vs. Chicago Cubs | Los Angeles Dodgers | 0.240 | $14.40 | 2026-08-11T00:05:07.619546+00:00 |
-| National Bank Open: Aleksandar Vukic vs Daniel Altma | Daniel Altmaier | 0.180 | $16.50 | 2026-08-09T16:30:08.348389+00:00 |
-| National Bank Open: Tatjana Maria vs Caty McNally | Caty McNally | 0.300 | $12.27 | 2026-08-10T14:00:07.288502+00:00 |
-| Canadian Open: Camilo Ugo Carabelli vs Cameron Norri | Camilo Ugo Carabelli | 0.210 | $17.35 | 2026-08-10T14:00:07.488997+00:00 |
-| National Bank Open: Xinyu Wang vs Daria Kasatkina | Xinyu Wang | 0.229 | $17.39 | 2026-08-10T14:00:07.195657+00:00 |
+| Bitcoin Up or Down on August 4? | Down | 0.260 | $17.51 | 2026-08-04T16:00:07.441173+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| National Bank Open: Xinyu Wang vs Daria Kasatkina | LOST | -17.39 |
+| Canadian Open: Camilo Ugo Carabelli vs Cameron Norri | LOST | -17.35 |
+| National Bank Open: Tatjana Maria vs Caty McNally | WON | +28.63 |
 | St. Louis Cardinals vs. New York Yankees | WON | +44.19 |
+| National Bank Open: Aleksandar Vukic vs Daniel Altma | WON | +75.17 |
+| Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.40 |
+| Toronto Blue Jays vs. Houston Astros | LOST | -14.95 |
+| Tampa Bay Rays vs. Colorado Rockies | LOST | -14.83 |
+| Canadian Open: Kamil Majchrzak vs Gael Monfils | WON | +46.62 |
 | San Francisco Giants vs. Texas Rangers | LOST | -17.51 |
 | Pittsburgh Pirates vs. Milwaukee Brewers | LOST | -16.92 |
 | Washington Nationals vs. Philadelphia Phillies | WON | +52.60 |
@@ -125,6 +126,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 15 | 0% | -100% |
-| 0.15–0.20 | 20 | 10% | -13% |
-| 0.20–0.25 | 14 | 43% | +116% |
-| 0.25–0.30 | 1 | 0% | -100% |
+| 0.15–0.20 | 21 | 14% | +50% |
+| 0.20–0.25 | 18 | 33% | +1% |
+| 0.25–0.30 | 4 | 50% | +136% |
