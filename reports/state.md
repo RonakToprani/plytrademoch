@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-04T09:52:27.116464+00:00
+# Poly underdog paper state — 2026-08-04T12:54:48.647868+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **11** ($90.49)  ·  settled **58** (11W / 47L)
-- realized P&L **$25.69**  ·  ROI **+6.7%** (backtest exp ~+15.7%)  ·  win **19%** (exp ~27.4%)
-- last scan: 2026-08-04T09:27:43.461371+00:00
+- open **16** ($157.64)  ·  settled **59** (11W / 48L)
+- realized P&L **$11.29**  ·  ROI **+2.8%** (backtest exp ~+15.7%)  ·  win **19%** (exp ~27.4%)
+- last scan: 2026-08-04T12:28:48.620290+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,10 +46,16 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Bitcoin Up or Down on August 4? | Down | 0.260 | $17.51 | 2026-08-04T16:00:07.441173+00:00 |
 | Dota 2: BetBoom Team vs OG (BO3) - 1win Essence Play | OG | 0.300 | $14.40 | 2026-08-04T15:00:06.563645+00:00 |
+| Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse B | 9INE | 0.300 | $14.40 | 2026-08-04T20:00:07.168517+00:00 |
+| Warsaw: Marcelina Podlinska vs Vendula Valdmannova | Marcelina Podlinska | 0.160 | $11.40 | 2026-08-11T10:30:08.669849+00:00 |
+| Hagen: Thiago Monteiro vs Tom Gentzsch | Thiago Monteiro | 0.170 | $9.05 | 2026-08-11T09:30:09.372590+00:00 |
+| Warsaw: Linda Klimovicova vs Elizara Yaneva | Elizara Yaneva | 0.160 | $17.51 | 2026-08-10T08:00:08.323383+00:00 |
+| Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Warsaw: Elsa Jacquemot vs Carol Young Suh Lee | LOST | -14.40 |
 | National Bank Open: Xinyu Wang vs Daria Kasatkina | LOST | -17.39 |
 | Canadian Open: Camilo Ugo Carabelli vs Cameron Norri | LOST | -17.35 |
 | National Bank Open: Tatjana Maria vs Caty McNally | WON | +28.63 |
@@ -129,4 +135,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | <0.15 | 15 | 0% | -100% |
 | 0.15–0.20 | 21 | 14% | +50% |
 | 0.20–0.25 | 18 | 33% | +1% |
-| 0.25–0.30 | 4 | 50% | +136% |
+| 0.25–0.30 | 5 | 40% | +78% |
