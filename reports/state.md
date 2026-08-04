@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-04T15:57:16.012028+00:00
+# Poly underdog paper state — 2026-08-04T18:59:44.174107+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **12** ($105.28)  ·  settled **65** (12W / 53L)
-- realized P&L **$42.69**  ·  ROI **+9.0%** (backtest exp ~+15.7%)  ·  win **18%** (exp ~27.4%)
-- last scan: 2026-08-04T15:29:55.482258+00:00
+- open **11** ($113.26)  ·  settled **70** (12W / 58L)
+- realized P&L **$-11.04**  ·  ROI **-2.1%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
+- last scan: 2026-08-04T18:31:00.333141+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -39,25 +39,27 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
 | Will Donavan McKinney be the Democratic Nominee for  | No | 0.190 | $4.32 | 2026-08-04T00:00:07.524388+00:00 |
 | Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
-| Will Elon Musk post 280-299 tweets from July 28 to A | Yes | 0.182 | $2.91 | 2026-08-04T16:00:07.345902+00:00 |
-| Will the price of Bitcoin be above $62,000 on August | No | 0.190 | $3.99 | 2026-08-04T16:00:07.238505+00:00 |
 | US announces end of Iranian blockade by August 7, 20 | Yes | 0.213 | $1.75 | 2026-08-07T23:59:07.628570+00:00 |
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| Bitcoin Up or Down on August 4? | Down | 0.260 | $17.51 | 2026-08-04T16:00:07.441173+00:00 |
-| Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse B | 9INE | 0.300 | $14.40 | 2026-08-04T20:00:07.168517+00:00 |
 | Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
+| The Hundred, Women: Sunrisers Leeds vs London Spirit | London Spirit | 0.276 | $14.92 | 2026-08-11T10:00:07.025159+00:00 |
+| National Bank Open: Camila Osorio vs Ekaterina Alexa | Camila Osorio | 0.181 | $16.92 | 2026-08-11T16:30:06.951194+00:00 |
+| National Bank Open: Jacob Fearnley vs Adrian Mannari | Adrian Mannarino | 0.200 | $14.95 | 2026-08-10T14:00:07.080352+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| National Bank Open: Adam Walton vs Jenson Brooksby | LOST | -14.92 |
 | Plovdiv 2: Hernan Casanova vs Yannick Alexandrescou | LOST | -13.15 |
 | Grodzisk Mazowiecki: Alexander Donski vs Takuya Kuma | LOST | -12.53 |
 | Warsaw: Linda Klimovicova vs Elizara Yaneva | WON | +91.93 |
 | Hagen: Thiago Monteiro vs Tom Gentzsch | LOST | -9.05 |
 | Warsaw: Marcelina Podlinska vs Vendula Valdmannova | LOST | -11.40 |
 | Warsaw: Elsa Jacquemot vs Carol Young Suh Lee | LOST | -14.40 |
+| Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse B | LOST | -14.40 |
 | Dota 2: BetBoom Team vs OG (BO3) - 1win Essence Play | LOST | -14.40 |
+| Bitcoin Up or Down on August 4? | LOST | -17.51 |
 | National Bank Open: Xinyu Wang vs Daria Kasatkina | LOST | -17.39 |
 | Canadian Open: Camilo Ugo Carabelli vs Cameron Norri | LOST | -17.35 |
 | National Bank Open: Tatjana Maria vs Caty McNally | WON | +28.63 |
@@ -71,6 +73,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Pittsburgh Pirates vs. Milwaukee Brewers | LOST | -16.92 |
 | Washington Nationals vs. Philadelphia Phillies | WON | +52.60 |
 | Will Elon Musk post <40 tweets from August 1 to Augu | WON | +7.11 |
+| Will the price of Bitcoin be above $62,000 on August | LOST | -3.99 |
 | Will Spider-Man: Brand New Day beat Avengers: Endgam | LOST | -3.59 |
 | LoL: LNG Esports vs Invictus Gaming (BO3) - LPL Grou | LOST | -2.33 |
 | LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK R | WON | +3.17 |
@@ -79,6 +82,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | UFC Fight Night: Daniel Rodriguez vs. Uroš Medic (We | LOST | -1.00 |
 | UFC Fight Night: Jan Blachowicz vs. Navajo Stirling  | LOST | -1.00 |
 | UFC Fight Night: Oban Elliott vs. Michael Oliveira ( | LOST | -1.00 |
+| Will Elon Musk post 280-299 tweets from July 28 to A | LOST | -2.91 |
 | Will "Spider-Man: Brand New Day" score at least 90 o | LOST | -1.00 |
 | UFC Fight Night: Marcin Tybura vs. Aleksandar Rakic  | LOST | -1.00 |
 | Will "Spider-Man: Brand New Day" Opening Weekend Box | LOST | -3.91 |
@@ -106,11 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will there be no change in Fed interest rates after  | LOST | -4.24 |
 | Israel x Iran ceasefire continues through July 27? | LOST | -6.39 |
 | Will Elon Musk post 260-279 tweets from July 21 to J | LOST | -3.62 |
-| Will Elon Musk post 240-259 tweets from July 21 to J | LOST | -6.69 |
-| Will Elon Musk post 340-359 tweets from July 21 to J | LOST | -6.86 |
-| Will Elon Musk post 320-339 tweets from July 21 to J | LOST | -5.87 |
-| Israel x Iran ceasefire continues through July 26? | LOST | -4.52 |
-| Colorado Rockies vs. Milwaukee Brewers | LOST | -5.48 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,6 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 15 | 0% | -100% |
-| 0.15–0.20 | 25 | 16% | +70% |
-| 0.20–0.25 | 19 | 32% | -9% |
-| 0.25–0.30 | 6 | 33% | +42% |
+| 0.15–0.20 | 27 | 15% | +63% |
+| 0.20–0.25 | 20 | 30% | -18% |
+| 0.25–0.30 | 8 | 25% | -1% |
