@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-04T01:09:12.358228+00:00
+# Poly underdog paper state — 2026-08-04T03:47:26.760173+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **16** ($144.03)  ·  settled **44** (6W / 38L)
-- realized P&L **$-100.67**  ·  ROI **-51.7%** (backtest exp ~+15.7%)  ·  win **14%** (exp ~27.4%)
-- last scan: 2026-08-04T00:54:46.315842+00:00
+- open **17** ($181.81)  ·  settled **50** (8W / 42L)
+- realized P&L **$-45.81**  ·  ROI **-17.7%** (backtest exp ~+15.7%)  ·  win **16%** (exp ~27.4%)
+- last scan: 2026-08-04T03:25:43.780046+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -39,23 +39,29 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
 | Will Donavan McKinney be the Democratic Nominee for  | No | 0.190 | $4.32 | 2026-08-04T00:00:07.524388+00:00 |
 | Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
-| Will "Spider-Man: Brand New Day" Opening Weekend Box | No | 0.190 | $3.91 | 2026-08-02T23:59:06.069737+00:00 |
 | Will Elon Musk post 280-299 tweets from July 28 to A | Yes | 0.182 | $2.91 | 2026-08-04T16:00:07.345902+00:00 |
-| Will Spider-Man: Brand New Day beat Avengers: Endgam | No | 0.180 | $3.59 | 2026-08-02T23:59:07.372138+00:00 |
 | Will the price of Bitcoin be above $62,000 on August | No | 0.190 | $3.99 | 2026-08-04T16:00:07.238505+00:00 |
 | US announces end of Iranian blockade by August 7, 20 | Yes | 0.213 | $1.75 | 2026-08-07T23:59:07.628570+00:00 |
-| Washington Nationals vs. Philadelphia Phillies | Philadelphia Phillies | 0.200 | $13.15 | 2026-08-10T22:40:04.615183+00:00 |
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| Pittsburgh Pirates vs. Milwaukee Brewers | Milwaukee Brewers | 0.190 | $16.92 | 2026-08-10T23:40:06.835216+00:00 |
-| San Francisco Giants vs. Texas Rangers | Texas Rangers | 0.240 | $17.51 | 2026-08-11T00:05:06.092441+00:00 |
 | Canadian Open: Kamil Majchrzak vs Gael Monfils | Gael Monfils | 0.250 | $15.54 | 2026-08-10T14:00:06.810722+00:00 |
 | Tampa Bay Rays vs. Colorado Rockies | Colorado Rockies | 0.250 | $14.83 | 2026-08-11T00:40:07.481952+00:00 |
+| Toronto Blue Jays vs. Houston Astros | Houston Astros | 0.240 | $14.95 | 2026-08-11T00:10:06.870630+00:00 |
+| Los Angeles Dodgers vs. Chicago Cubs | Los Angeles Dodgers | 0.240 | $14.40 | 2026-08-11T00:05:07.619546+00:00 |
+| National Bank Open: Aleksandar Vukic vs Daniel Altma | Daniel Altmaier | 0.180 | $16.50 | 2026-08-09T16:30:08.348389+00:00 |
+| National Bank Open: Tatjana Maria vs Caty McNally | Caty McNally | 0.300 | $12.27 | 2026-08-10T14:00:07.288502+00:00 |
+| Canadian Open: Camilo Ugo Carabelli vs Cameron Norri | Camilo Ugo Carabelli | 0.210 | $17.35 | 2026-08-10T14:00:07.488997+00:00 |
+| National Bank Open: Xinyu Wang vs Daria Kasatkina | Xinyu Wang | 0.229 | $17.39 | 2026-08-10T14:00:07.195657+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| St. Louis Cardinals vs. New York Yankees | WON | +44.19 |
+| San Francisco Giants vs. Texas Rangers | LOST | -17.51 |
+| Pittsburgh Pirates vs. Milwaukee Brewers | LOST | -16.92 |
+| Washington Nationals vs. Philadelphia Phillies | WON | +52.60 |
 | Will Elon Musk post <40 tweets from August 1 to Augu | WON | +7.11 |
+| Will Spider-Man: Brand New Day beat Avengers: Endgam | LOST | -3.59 |
 | LoL: LNG Esports vs Invictus Gaming (BO3) - LPL Grou | LOST | -2.33 |
 | LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK R | WON | +3.17 |
 | Bitcoin Up or Down on August 2? | LOST | -2.55 |
@@ -65,6 +71,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | UFC Fight Night: Oban Elliott vs. Michael Oliveira ( | LOST | -1.00 |
 | Will "Spider-Man: Brand New Day" score at least 90 o | LOST | -1.00 |
 | UFC Fight Night: Marcin Tybura vs. Aleksandar Rakic  | LOST | -1.00 |
+| Will "Spider-Man: Brand New Day" Opening Weekend Box | LOST | -3.91 |
 | Will Bitcoin reach $66,000 July 27-August 2? | LOST | -6.91 |
 | Will Bitcoin dip to $62,000 July 27-August 2? | LOST | -3.91 |
 | Will Elon Musk post 880-919 tweets in July 2026? | WON | +32.57 |
@@ -118,6 +125,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 15 | 0% | -100% |
-| 0.15–0.20 | 16 | 6% | -47% |
-| 0.20–0.25 | 12 | 42% | +119% |
+| 0.15–0.20 | 20 | 10% | -13% |
+| 0.20–0.25 | 14 | 43% | +116% |
 | 0.25–0.30 | 1 | 0% | -100% |
