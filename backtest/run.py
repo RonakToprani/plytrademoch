@@ -224,7 +224,10 @@ def cmd_live(args: argparse.Namespace) -> None:
             tradeable = 0
             # A real fill must land inside the edge band (with a small tolerance
             # below), fill the stake, and not be a stale/dust book (ask ~0).
-            fill_floor = args.band_lo - 0.03
+            # Must equal band_lo. A tolerance here used to admit fills 0.03 BELOW
+            # the floor, into a slice measured at +2.3% (not significant) — that
+            # leak produced nearly all of the paper book's realised losses.
+            fill_floor = args.band_lo
             for o in shown:
                 fq = analyze_depth(feed.fetch_order_book(o.token), o.suggested_stake, args.band_hi)
                 ask = f"{fq.best_ask:.2f}" if fq.best_ask is not None else "  - "
@@ -293,13 +296,13 @@ def main(argv: list[str] | None = None) -> None:
     ph.set_defaults(func=cmd_horizon)
 
     pl = sub.add_parser("live", help="scan open markets for underdog opportunities (DRY-RUN)")
-    pl.add_argument("--band-lo", type=float, default=0.10)
-    pl.add_argument("--band-hi", type=float, default=0.20)
-    pl.add_argument("--min-hours", type=float, default=24.0)
+    pl.add_argument("--band-lo", type=float, default=0.15)
+    pl.add_argument("--band-hi", type=float, default=0.30)
+    pl.add_argument("--min-hours", type=float, default=6.0)
     pl.add_argument("--max-hours", type=float, default=168.0,
                     help="only markets resolving within this many hours (validated window)")
     pl.add_argument("--min-volume", type=float, default=30_000.0)
-    pl.add_argument("--bankroll", type=float, default=100.0)
+    pl.add_argument("--bankroll", type=float, default=1_000.0)
     pl.add_argument("--kelly", type=float, default=0.25, help="Kelly multiple (0.25 = quarter)")
     pl.add_argument("--top", type=int, default=25)
     pl.add_argument("--depth", action="store_true",

@@ -3,6 +3,32 @@
 Living record of what the `backtest/` harness has actually proven. Every number
 here is reproducible from the CLI on read-only public data (no VPN/auth).
 
+> ### ⚠️ §2 and §3 are SUPERSEDED — read `EXPECTATIONS.md` for live numbers
+>
+> Sections 2 and 3 below record the **original n≈126-observation** calibration
+> from July 2026. Its headline — *"buy 0.10–0.20, +48% to +66% ROI, ~27% win"* —
+> **did not survive a larger sample** and is retired. It was never precise enough
+> to distinguish +12% from +55%.
+>
+> Re-measured on **355,896 resolved markets / 218,734 events** with the bootstrap
+> **clustered by event**, the same edge is real but roughly 4× smaller, and it is
+> a *curve* rather than a flat band:
+>
+> | | old (n≈126) | current (n=15,407 / 11,133 events) |
+> |---|---|---|
+> | band | 0.10–0.20 | **0.15–0.30** (0.12–0.15 is +2.3%, not significant) |
+> | ROI | +48% to +66% | **+15.7%** [+12.5%, +18.9%] |
+> | win rate | ~27% | **~27.4%** (coincidentally similar; the ROI was the error) |
+> | window | 24–168h | **6–168h**, set for flow — every horizon is positive |
+> | sizing | flat ~0.27 win rate | **price-calibrated** `calibrated_win_rate(p)` |
+> | segments | all | `mention-count` + `fed-macro` **excluded** (no edge) |
+>
+> **Anything grading this strategy must use `EXPECTATIONS.md`, not this file.**
+> Grading against the old figures marks an on-spec strategy "UNDERPERFORMING" —
+> that mistake has already been made once.
+>
+> §1 (copy-trading rejected) still stands and is unaffected.
+
 ## 1. Copy-trading thesis — REJECTED
 
 The original plan: follow wallets with $100k+ lifetime P&L and >65% win rate,
@@ -24,6 +50,10 @@ Conclusion: whale edge lives in exit timing, bet sizing, and HFT — none copyab
 by a slow home-server bot. **Do not resume copy-trading these wallets.**
 
 ## 2. Favorite / longshot calibration — CANDIDATE EDGE FOUND
+
+> **SUPERSEDED (n≈126).** The *direction* held up on 356k markets — underdogs
+> underpriced, favourites overpriced — but the magnitudes below did not. See the
+> banner at the top and `EXPECTATIONS.md`. Kept for provenance.
 
 Question: is the market's own price mispriced enough to trade, no copying needed?
 
@@ -72,6 +102,11 @@ Result (both tokens, ~750–900 markets/horizon, 24h/72h/168h all consistent):
 
 ## 3. Strategy spec (from the validated edge) — `backtest.run live`
 
+> **SUPERSEDED.** The live spec is now: band **0.15–0.30**, window **6–168h**,
+> volume >= $30k, one bet per event, segments `mention-count`/`fed-macro`
+> excluded, ¼-Kelly against a **price-calibrated** win rate (not a flat ~0.27),
+> $1,000 paper bankroll. Authoritative copy: `EXPECTATIONS.md`.
+
 - **Signal:** buy the outcome token priced in **[0.10, 0.20]**.
 - **Resolution window:** only markets resolving in **24h–168h** (the window the
   edge was measured in). This is critical — a naive scan without the upper bound
@@ -83,7 +118,7 @@ Result (both tokens, ~750–900 markets/horizon, 24h/72h/168h all consistent):
 - **Sizing:** fractional (¼) Kelly using the band's calibrated win rate (~0.27),
   NOT the market price — capped at 5% of bankroll, floored at $1.
 
-`python -m backtest.run live --bankroll 150` prints today's opportunities with
+`python -m backtest.run live --bankroll 1000` prints today's opportunities with
 suggested stakes. DRY-RUN / informational only.
 
 ### Next steps toward (paper) trading
@@ -98,5 +133,5 @@ suggested stakes. DRY-RUN / informational only.
 python -m backtest.run edge                 # copy-thesis test (rejected)
 python -m backtest.run characterize         # wallet copyability (trade frequency)
 python -m backtest.run horizon --max-markets 2000 --min-volume 30000   # calibration
-python -m backtest.run live --bankroll 150  # today's underdog opportunities
+python -m backtest.run live --bankroll 1000 # today's underdog opportunities
 ```

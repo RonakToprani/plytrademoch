@@ -57,12 +57,18 @@ launchctl bootout gui/$(id -u)/com.underdog.cycle        # stop the loop
 Do **not** treat a live dashboard or `launchctl list` as a liveness check — use
 `check_status.sh`, which compares the `logs/cycle.log` mtime against now.
 
-Timeframes (tuned for the edge): buy 0.15–0.25 underdogs resolving in **6–96h**,
-scan every **30 min**. Band set from a 356k-market / 219k-event calibration:
-0.15–0.25 returns +16.7% [+12.6, +20.8] vs +11.9% for the old 0.10–0.20, and the
-0.10–0.15 sub-band is not significant (+5.9%). ROI is nearly flat across 24/48/96h
-lead times, so the hold window is unchanged.
-Set `POLY_BANKROLL` env to change the bankroll the dashboard displays.
+Timeframes (tuned for the edge): buy **0.15–0.30** underdogs resolving in
+**6–168h**, scan every **30 min**, $1,000 paper bankroll. Set from a 356k-market
+/ 219k-event event-clustered calibration: 0.15–0.30 returns **+15.7%**
+[+12.5, +18.9] with the `mention-count` and `fed-macro` segments excluded.
+Both the band ceiling (0.25 -> 0.30) and the window ceiling (96h -> 168h) were
+widened for **flow**, not ROI — the scan was finding only 2 tradeable events and
+the book sat on 4% of its capital. Every price slice to 0.30 and every horizon to
+168h is significantly positive; 0.33+ is dead.
+
+Bankroll lives in THREE places and they must agree: `--bankroll` in
+`com.underdog.cycle.plist`, `PaperTrader(bankroll=...)`, and `POLY_BANKROLL`
+(or the default in `paper/dashboard.py`) for the dashboard's "% deployed" gauge.
 
 ## Telegram inbox (getting Claude recs onto this machine)
 

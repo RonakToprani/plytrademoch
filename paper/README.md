@@ -1,7 +1,9 @@
 # Underdog paper trading
 
-Paper-trades the validated underdog edge (buy 0.10–0.20, resolving 24–168h out;
-see `../backtest/FINDINGS.md`). DRY-RUN — records the bets it *would* place at the
+Paper-trades the validated underdog edge (buy **0.15–0.30**, resolving **6–168h**
+out, excluding the `mention-count` and `fed-macro` segments; see
+`../EXPECTATIONS.md` — that file, not `../backtest/FINDINGS.md`, is the source of
+truth for what 'working' looks like). DRY-RUN — records the bets it *would* place at the
 real order-book fill price, settles them at resolution, tracks P&L vs the backtest
 expectation. Places no orders. Own DB (`paper_underdog.db`); never touches the old
 copy-trading DB.
@@ -38,6 +40,12 @@ summary. It never polls, so it can't spam the way the old VPN check did.
 
 ## Watch for
 
-The strategy is **negative-skew**: ~27% win rate, returns from occasional 5–8×
-payoffs. Expect long losing streaks; judge it on realized ROI over many settled
-bets (dozens+), not the first handful.
+The strategy is **negative-skew**: ~27.4% win rate, ~+15.7% ROI, returns from
+occasional 4–6× payoffs. Expect long losing streaks — 10 in a row has probability
+~4.3%.
+
+Judge it on realized ROI over many settled **EVENTS**, not bets and not the first
+handful: correlated legs of one event are one observation, and a verdict needs
+~100 events. And **check that settlement is running before reading any P&L** — a
+stale resolution cache once held 16 resolved bets open and reported the book as
+0W/17L while 3 of them had already won.

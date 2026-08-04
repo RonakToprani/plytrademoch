@@ -19,7 +19,9 @@ import plotly.graph_objects as go
 
 from paper.store import PaperStore
 
-BANKROLL = float(os.environ.get("POLY_BANKROLL", "150"))
+# Keep in sync with PaperTrader(bankroll=...) and the --bankroll in
+# deploy/com.underdog.cycle.plist, or the "% deployed" gauge lies.
+BANKROLL = float(os.environ.get("POLY_BANKROLL", "1000"))
 _REFRESH_MS = 30_000
 
 _CLOB = "https://clob.polymarket.com"

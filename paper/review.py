@@ -5,8 +5,8 @@ Runs every evening (launchd). Three things:
   1. Grades the paper book against the backtest expectation (ROI vs ~+15.7%,
      win rate vs ~27.4%) and breaks results down by entry-price and outcome side.
   2. Re-checks the edge on the cached resolved-market universe across a range of
-     price bands — is 0.10–0.20 still the sweet spot, is it decaying, is an
-     adjacent band better? (fast: all from cache, no network.)
+     price bands — is the live 0.15–0.30 band still the sweet spot, is it
+     decaying, is an adjacent slice better? (fast: all from cache, no network.)
   3. Emits concrete, rule-based recommendations + adjacent strategies to test.
 
 Writes a dated markdown report to reports/ and sends a Telegram summary. Read-only

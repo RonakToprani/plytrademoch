@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-04T00:53:24.705604+00:00
+# Poly underdog paper state — 2026-08-04T01:09:12.358228+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **13** ($96.15)  ·  settled **44** (6W / 38L)
+- open **16** ($144.03)  ·  settled **44** (6W / 38L)
 - realized P&L **$-100.67**  ·  ROI **-51.7%** (backtest exp ~+15.7%)  ·  win **14%** (exp ~27.4%)
-- last scan: 2026-08-04T00:39:08.581594+00:00
+- last scan: 2026-08-04T00:54:46.315842+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,6 +48,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Pittsburgh Pirates vs. Milwaukee Brewers | Milwaukee Brewers | 0.190 | $16.92 | 2026-08-10T23:40:06.835216+00:00 |
+| San Francisco Giants vs. Texas Rangers | Texas Rangers | 0.240 | $17.51 | 2026-08-11T00:05:06.092441+00:00 |
+| Canadian Open: Kamil Majchrzak vs Gael Monfils | Gael Monfils | 0.250 | $15.54 | 2026-08-10T14:00:06.810722+00:00 |
+| Tampa Bay Rays vs. Colorado Rockies | Colorado Rockies | 0.250 | $14.83 | 2026-08-11T00:40:07.481952+00:00 |
 
 ## Settled
 | market | result | P&L |

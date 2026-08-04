@@ -146,9 +146,9 @@ class PaperTrader:
             # next cycle from adding another leg of an event we already hold.
             if store.has_open_event(o.event):
                 continue
-            # Don't pile the book onto a single resolution date. The 24-96h window
-            # at month end otherwise scoops up the whole monthly-expiry cohort, so
-            # every position settles together and the drawdown is one step.
+            # Don't pile the book onto a single resolution date. At month end the
+            # window otherwise scoops up the whole monthly-expiry cohort, so every
+            # position settles together and the drawdown arrives in one step.
             day = _resolves_at(o.hours_to_resolve)[:10]
             if store.open_stake_on(day) + o.suggested_stake > max_day_stake:
                 continue
