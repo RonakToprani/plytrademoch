@@ -99,3 +99,56 @@ def test_open_stake_on_resolve_date(tmp_path):
     assert s.open_stake_on("2026-07-31") == 10.0
     assert s.open_stake_on("2026-08-02") == 9.0
     assert s.open_stake_on("2026-09-01") == 0.0
+
+
+# --- settlement freshness -------------------------------------------------
+# Regression for the bug that froze 16 resolved bets: DataFeed cached "still
+# open" for 3 days, and the strategy only ever holds markets 6-96h, so a bet's
+# market was always inside the TTL window when the settle loop asked about it.
+
+
+def test_is_due_forces_refresh_only_past_resolution():
+    from paper.engine import _is_due
+
+    now = datetime(2026, 8, 2, 12, 0, tzinfo=timezone.utc)
+    assert _is_due("2026-08-02T11:59:00+00:00", now) is True   # past → refresh
+    assert _is_due("2026-08-02T12:00:00+00:00", now) is True   # exactly due
+    assert _is_due("2026-08-02T12:01:00+00:00", now) is False  # not yet → cache ok
+    assert _is_due(None, now) is True                          # unknown → refresh
+    assert _is_due("not-a-date", now) is True                  # unparseable → refresh
+
+
+def test_settle_bypasses_stale_cache_for_due_bets(tmp_path):
+    """A market that has resolved must settle even if the cache says it is open."""
+    from paper.engine import PaperTrader
+    from backtest.datafeed import Resolution
+
+    class StaleFeed:
+        """Returns a stale 'still open' unless the caller forces a refresh."""
+
+        def __init__(self) -> None:
+            self.refresh_calls = 0
+
+        def get_resolution(self, condition_id, refresh=False):
+            if not refresh:
+                return Resolution(condition_id, closed=False, winning_token_id=None,
+                                  end_date=None, fetched_at=0)
+            self.refresh_calls += 1
+            return Resolution(condition_id, closed=True, winning_token_id="tokA",
+                              end_date=None, fetched_at=1)
+
+    class NullNotifier:
+        def bet_settled(self, *a, **k): pass
+
+    s = _store(tmp_path)
+    past = datetime(2020, 1, 1, tzinfo=timezone.utc).isoformat()
+    bet = _bet("c1", "tokA", price=0.20, stake=10.0)
+    bet.resolves_at = past
+    s.record_bet(bet)
+
+    feed = StaleFeed()
+    settled = PaperTrader()._settle(feed, s, NullNotifier())
+
+    assert settled == 1 and feed.refresh_calls == 1
+    st = s.stats()
+    assert st["won"] == 1 and st["open"] == 0

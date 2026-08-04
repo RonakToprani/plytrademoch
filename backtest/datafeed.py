@@ -118,11 +118,18 @@ class Resolution:
 class DataFeed:
     """Cached accessor for whale activity and market resolutions."""
 
-    def __init__(self, cache_path: str = _CACHE_PATH, resolution_ttl_days: int = 3) -> None:
+    def __init__(self, cache_path: str = _CACHE_PATH, resolution_ttl_hours: float = 1.0) -> None:
         self._db = sqlite3.connect(cache_path)
         self._db.row_factory = sqlite3.Row
-        # Unresolved markets may resolve later, so cache them with a TTL.
-        self._resolution_ttl = resolution_ttl_days * 86_400
+        # Unresolved markets may resolve later, so cache them with a TTL. Resolved
+        # rows are cached forever (see get_resolution), so this TTL only ever
+        # delays learning that an OPEN market has closed — which is pure downside.
+        # It was 3 DAYS, which silently broke paper settlement: the strategy holds
+        # markets resolving in 6-96h, so a bet's market was always inside the TTL
+        # window and the cache kept answering closed=0 long after it had resolved.
+        # 16 bets sat unsettled for days, freezing their stake and their event slot
+        # and hiding 3 wins behind a reported "0W / 17L".
+        self._resolution_ttl = resolution_ttl_hours * 3_600
         self._http = httpx.Client(timeout=30.0)
         self._init_schema()
 

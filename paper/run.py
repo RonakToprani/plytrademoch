@@ -43,9 +43,9 @@ def cmd_stats(args: argparse.Namespace) -> None:
     print(f"=== Paper book ({s['total']} bets) ===")
     print(f"  open:     {s['open']}  (${s['open_stake']:.2f} exposure)")
     print(f"  settled:  {s['settled']}  (won {s['won']}, lost {s['lost']})")
-    print(f"  win rate: {s['win_rate']*100:.1f}%  (backtest expectation ~24.5%)")
+    print(f"  win rate: {s['win_rate']*100:.1f}%  (backtest expectation ~27.4%)")
     print(f"  realized: ${s['realized_pnl']:.2f} on ${s['settled_stake']:.2f} staked  "
-          f"→ ROI {s['roi']*100:+.1f}%  (backtest expectation ~+17%)")
+          f"→ ROI {s['roi']*100:+.1f}%  (backtest expectation ~+15.7%)")
     print(f"  last scan: {store.last_scan() or 'never'}")
     open_bets = store.open_bets()
     if open_bets:
@@ -106,7 +106,7 @@ def main(argv: list[str] | None = None) -> None:
     sub = p.add_subparsers(dest="cmd", required=True)
 
     pc = sub.add_parser("cycle", help="settle + record one pass")
-    pc.add_argument("--bankroll", type=float, default=150.0)
+    pc.add_argument("--bankroll", type=float, default=1_000.0)
     pc.add_argument("--kelly", type=float, default=0.25)
     pc.add_argument("--min-volume", type=float, default=30_000.0)
     pc.add_argument("--max-new", type=int, default=10)

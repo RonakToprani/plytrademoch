@@ -11,7 +11,7 @@
         <string>paper.run</string>
         <string>cycle</string>
         <string>--bankroll</string>
-        <string>150</string>
+        <string>1000</string>
     </array>
     <key>WorkingDirectory</key>
     <string>/Users/ronaktoprani/Documents/plytrademoch</string>

@@ -38,20 +38,31 @@ class PaperTrader:
     def __init__(
         self,
         *,
-        bankroll: float = 150.0,
-        band_lo: float = 0.15,   # 0.10-0.15 measured +5.9% n.s. — dead weight
-        band_hi: float = 0.25,   # 0.15-0.25: +16.7% [+12.6,+20.8], n=10096/7718 events
-        # 6-96h. Full-universe hold curve (band 0.15-0.25, event-clustered,
-        # n=8.9-11.1k per point) is FLAT across the range:
-        #   6h +16.6%  24h +18.1%  36h +19.3%  48h +16.7%  72h +16.2%  96h +16.5%
-        #   120h +15.3%  168h +13.0%   (all CIs overlap heavily)
-        # So the window is chosen for FLOW, not edge. The 24h floor was the real
-        # throttle: at 24-96h the scanner saw 30 in-window markets and 0 tradeable
-        # events; dropping to 6h finds 46 and surfaces sub-24h markets entirely.
-        # Keeping the 96h ceiling costs nothing measurable and adds candidates.
-        # (An earlier 59%-subset read showed 96h at +13.9% — that was noise.)
+        bankroll: float = 1_000.0,
+        band_lo: float = 0.15,   # 0.12-0.15 measured +2.3% [-7.5,+11.5] n.s. — dead weight
+        # 0.15-0.30 (no-edge segments excluded): +15.7% [+12.5,+18.9], n=15407 over
+        # 11133 events. Widened from 0.25 on 2026-08-03. Every 0.03 slice from 0.15
+        # to 0.30 carries a significant positive edge (lower CI >= +6.3%); 0.30-0.33
+        # is significant but thin (+8.2% [+2.8,+13.0]) and 0.33+ is dead (+2.5% n.s.),
+        # so 0.30 is the ceiling with a margin of safety. The narrower 0.15-0.25 band
+        # scores a higher +17.9% but on 49% FEWER events, and flow — not ROI — is what
+        # this book is starving for. Per-price Kelly sizes the weaker top of the band
+        # down on its own, so widening does not mean betting it like the sweet spot.
+        band_hi: float = 0.30,
+        # Floor lowered 24h -> 6h on 2026-08-01: the 24h floor was the real throttle,
+        # excluding same-day markets outright for no measured gain.
         min_hours: float = 6.0,
-        max_hours: float = 96.0,
+        # Ceiling raised 96h -> 168h on 2026-08-03, again for FLOW. Horizon sweep at
+        # band 0.15-0.30 with no-edge segments excluded (event-clustered, n=7.5-17.5k
+        # per point) — every point is a significant EDGE:
+        #   6h +14.7%  24h +16.5%  48h +15.7%  72h +15.7%  96h +15.6%
+        #   120h +13.9%  168h +12.5%
+        # ROI is flat to 96h and gives up ~2-3 points out to 168h. That is a cheap
+        # price for the flow: the same live scan yields 38 in-window markets and 2
+        # tradeable events at 6-96h, versus 65 and 6 at 6-168h. The book was opening
+        # roughly one bet a day and sitting on 4% of its capital; starving the sample
+        # costs far more than 3 points of ROI on the marginal bet.
+        max_hours: float = 168.0,
         min_volume: float = 30_000.0,
         kelly_multiple: float = 0.25,
         max_open_stake: float | None = None,     # cap on total open exposure ($)
@@ -84,8 +95,14 @@ class PaperTrader:
 
     def _settle(self, feed: DataFeed, store: PaperStore, notifier: PaperNotifier) -> int:
         settled = 0
+        now = datetime.now(timezone.utc)
         for bet in store.open_bets():
-            res = feed.get_resolution(bet.condition_id)
+            # Past its expected resolution? Go to the API, never the cache. The TTL
+            # is a politeness optimisation for markets that cannot have resolved
+            # yet; once the clock is past `resolves_at` a stale "still open" answer
+            # is the one thing we must not accept, because it locks the stake and
+            # the event slot until the entry expires.
+            res = feed.get_resolution(bet.condition_id, refresh=_is_due(bet.resolves_at, now))
             if res is None or not res.closed:
                 continue
             if res.winning_token_id is None:
@@ -113,7 +130,11 @@ class PaperTrader:
             kelly_multiple=self.kelly_multiple,
         )
         open_stake = store.stats()["open_stake"]
-        fill_floor = self.band_lo - 0.03
+        # Was band_lo - 0.03, which let fills land in 0.12-0.15 — a slice measured at
+        # +2.3% [-7.5,+11.5], i.e. no edge at all. A fill well under the quoted price
+        # is not a bargain here: it means the Gamma quote was stale and the real price
+        # (and so the real probability) is lower, putting the bet outside the edge.
+        fill_floor = self.band_lo
         opened = 0
         max_day_stake = self.max_day_stake_frac * self.bankroll
         for o in opps:
@@ -160,3 +181,14 @@ class PaperTrader:
 def _resolves_at(hours: float) -> str:
     from datetime import timedelta
     return (datetime.now(timezone.utc) + timedelta(hours=hours)).isoformat()
+
+
+def _is_due(resolves_at: str | None, now: datetime) -> bool:
+    """Is this bet at or past its expected resolution time? Unknown/unparseable
+    dates count as due — a forced refresh is cheap, a stuck position is not."""
+    if not resolves_at:
+        return True
+    try:
+        return datetime.fromisoformat(resolves_at.replace("Z", "+00:00")) <= now
+    except ValueError:
+        return True
