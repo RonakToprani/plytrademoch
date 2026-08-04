@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-04T18:59:44.174107+00:00
+# Poly underdog paper state — 2026-08-04T22:02:18.216449+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,14 +28,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **11** ($113.26)  ·  settled **70** (12W / 58L)
-- realized P&L **$-11.04**  ·  ROI **-2.1%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
-- last scan: 2026-08-04T18:31:00.333141+00:00
+- open **11** ($119.11)  ·  settled **76** (13W / 63L)
+- realized P&L **$-43.77**  ·  ROI **-7.2%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
+- last scan: 2026-08-04T21:32:06.007156+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| 0 ships transit Hormuz on any date by July 31? | Yes | 0.136 | $6.91 | 2026-07-31T23:59:07.361878+00:00 |
 | Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
 | Will Donavan McKinney be the Democratic Nominee for  | No | 0.190 | $4.32 | 2026-08-04T00:00:07.524388+00:00 |
 | Will Shri Thanedar be the Democratic Nominee for MI- | Yes | 0.190 | $3.91 | 2026-08-04T00:00:07.374051+00:00 |
@@ -43,13 +42,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
-| The Hundred, Women: Sunrisers Leeds vs London Spirit | London Spirit | 0.276 | $14.92 | 2026-08-11T10:00:07.025159+00:00 |
-| National Bank Open: Camila Osorio vs Ekaterina Alexa | Camila Osorio | 0.181 | $16.92 | 2026-08-11T16:30:06.951194+00:00 |
-| National Bank Open: Jacob Fearnley vs Adrian Mannari | Adrian Mannarino | 0.200 | $14.95 | 2026-08-10T14:00:07.080352+00:00 |
+| Exact Score: CF Villarreal C 0 - 0 Levante UD? | Yes | 0.206 | $13.95 | 2026-08-05T08:00:08.199589+00:00 |
+| National Bank Open: Juncheng Shang vs Andrey Rublev | Juncheng Shang | 0.240 | $16.54 | 2026-08-11T18:00:08.896006+00:00 |
+| Canadian Open: Giovanni Mpetshi Perricard vs Botic v | Giovanni Mpetshi Perricard | 0.280 | $14.92 | 2026-08-10T14:00:07.187321+00:00 |
+| Canadian Open: Lorenzo Sonego vs Tallon Griekspoor | Lorenzo Sonego | 0.270 | $14.14 | 2026-08-10T14:00:07.480788+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| National Bank Open: Rebecca Sramkova vs Diana Shnaid | LOST | -14.92 |
+| Canadian Open: Pablo Carreno Busta vs Valentin Royer | LOST | -14.92 |
+| National Bank Open: Jacob Fearnley vs Adrian Mannari | LOST | -14.95 |
+| National Bank Open: Camila Osorio vs Ekaterina Alexa | LOST | -16.92 |
+| The Hundred, Women: Sunrisers Leeds vs London Spirit | LOST | -14.92 |
 | National Bank Open: Adam Walton vs Jenson Brooksby | LOST | -14.92 |
 | Plovdiv 2: Hernan Casanova vs Yannick Alexandrescou | LOST | -13.15 |
 | Grodzisk Mazowiecki: Alexander Donski vs Takuya Kuma | LOST | -12.53 |
@@ -101,15 +106,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will S&P 500 (SPY) hit (HIGH) $760 in July? | LOST | -6.91 |
 | Will WTI Crude Oil (WTI) hit (LOW) $75 in July? | LOST | -3.91 |
 | Will Bitcoin dip to $60,000 in July? | LOST | -3.91 |
+| 0 ships transit Hormuz on any date by July 31? | WON | +43.90 |
 | US announces end of Iranian blockade by July 31, 202 | LOST | -5.48 |
 | Will Russia capture Kostyantynivka by July 31? | LOST | -6.53 |
 | Will Russia enter Serhiivka by July 31? | LOST | -6.88 |
-| Will the Fed decide differently in the next three de | LOST | -4.42 |
-| Will the Fed Pause–Pause–Pause in the next three dec | LOST | -4.56 |
-| Will the Fed increase interest rates by 25 bps after | LOST | -4.54 |
-| Will there be no change in Fed interest rates after  | LOST | -4.24 |
-| Israel x Iran ceasefire continues through July 27? | LOST | -6.39 |
-| Will Elon Musk post 260-279 tweets from July 21 to J | LOST | -3.62 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,7 +128,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
-| <0.15 | 15 | 0% | -100% |
-| 0.15–0.20 | 27 | 15% | +63% |
-| 0.20–0.25 | 20 | 30% | -18% |
-| 0.25–0.30 | 8 | 25% | -1% |
+| <0.15 | 16 | 6% | -51% |
+| 0.15–0.20 | 28 | 14% | +49% |
+| 0.20–0.25 | 22 | 27% | -32% |
+| 0.25–0.30 | 10 | 20% | -23% |
