@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-04T06:49:51.618629+00:00
+# Poly underdog paper state — 2026-08-04T09:52:27.116464+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **10** ($76.09)  ·  settled **58** (11W / 47L)
+- open **11** ($90.49)  ·  settled **58** (11W / 47L)
 - realized P&L **$25.69**  ·  ROI **+6.7%** (backtest exp ~+15.7%)  ·  win **19%** (exp ~27.4%)
-- last scan: 2026-08-04T06:26:47.832004+00:00
+- last scan: 2026-08-04T09:27:43.461371+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Bitcoin Up or Down on August 4? | Down | 0.260 | $17.51 | 2026-08-04T16:00:07.441173+00:00 |
+| Dota 2: BetBoom Team vs OG (BO3) - 1win Essence Play | OG | 0.300 | $14.40 | 2026-08-04T15:00:06.563645+00:00 |
 
 ## Settled
 | market | result | P&L |
