@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-05T19:19:25.075102+00:00
+# Poly underdog paper state — 2026-08-05T22:22:01.241030+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **13** ($150.83)  ·  settled **100** (18W / 82L)
-- realized P&L **$-94.51**  ·  ROI **-10.1%** (backtest exp ~+15.7%)  ·  win **18%** (exp ~27.4%)
-- last scan: 2026-08-05T19:09:54.465602+00:00
+- open **11** ($136.16)  ·  settled **106** (18W / 88L)
+- realized P&L **$-168.64**  ·  ROI **-16.7%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
+- last scan: 2026-08-05T22:11:01.036329+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,18 +42,22 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
 | Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Sto | ALKA | 0.200 | $14.04 | 2026-08-06T02:00:07.834728+00:00 |
-| Counter-Strike: Nuclear TigeRES vs CYBERSHOKE Prospe | CYBERSHOKE Prospects | 0.270 | $14.83 | 2026-08-05T20:00:07.915865+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
-| Plovdiv 2: Petr Nesterov vs Sebastian Sorger | Sebastian Sorger | 0.280 | $9.05 | 2026-08-12T13:30:08.160253+00:00 |
-| T20 Lanka Premier League: Colombo Kaps vs Kandy Roya | Kandy Royals | 0.230 | $9.05 | 2026-08-12T10:00:07.461774+00:00 |
-| National Bank Open: Ignacio Buse vs Cameron Norrie | Ignacio Buse | 0.180 | $11.40 | 2026-08-12T15:00:07.384917+00:00 |
 | Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | Ilbirs eSports | 0.270 | $14.83 | 2026-08-07T00:00:08.073620+00:00 |
+| Tampa Bay Rays vs. Colorado Rockies | Colorado Rockies | 0.263 | $14.83 | 2026-08-12T19:10:08.497510+00:00 |
+| National Bank Open: Learner Tien vs Gael Monfils | Gael Monfils | 0.270 | $14.83 | 2026-08-12T15:00:07.901703+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| National Bank Open: Alina Korneeva vs Emma Navarro | LOST | -14.90 |
+| Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.90 |
+| National Bank Open: Ignacio Buse vs Cameron Norrie | LOST | -11.40 |
+| T20 Lanka Premier League: Colombo Kaps vs Kandy Roya | LOST | -9.05 |
+| Plovdiv 2: Petr Nesterov vs Sebastian Sorger | LOST | -9.05 |
 | Warsaw: Weronika Falkowska vs Noma Noha Akugue | WON | +42.51 |
 | The Hundred, Women: Trent Rockets vs Birmingham Phoe | LOST | -13.15 |
+| Counter-Strike: Nuclear TigeRES vs CYBERSHOKE Prospe | LOST | -14.83 |
 | Hagen: Maxim Mrva vs Guy Den Ouden | LOST | -17.02 |
 | Grodzisk Mazowiecki: Amit Vales vs Daniil Glinka | LOST | -14.92 |
 | Warsaw: Katarzyna Kawa vs Justina Mikulskyte | WON | +34.77 |
@@ -106,12 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Spider-Man: Brand New Day beat Avengers: Endgam | LOST | -3.59 |
 | LoL: LNG Esports vs Invictus Gaming (BO3) - LPL Grou | LOST | -2.33 |
 | LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK R | WON | +3.17 |
-| Bitcoin Up or Down on August 2? | LOST | -2.55 |
-| Counter-Strike: Spirit vs MOUZ (BO5) - BLAST Bounty  | WON | +5.07 |
-| UFC Fight Night: Daniel Rodriguez vs. Uroš Medic (We | LOST | -1.00 |
-| UFC Fight Night: Jan Blachowicz vs. Navajo Stirling  | LOST | -1.00 |
-| UFC Fight Night: Oban Elliott vs. Michael Oliveira ( | LOST | -1.00 |
-| Will Elon Musk post 280-299 tweets from July 28 to A | LOST | -2.91 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,6 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 16 | 6% | -51% |
-| 0.15–0.20 | 36 | 11% | +5% |
-| 0.20–0.25 | 29 | 28% | -18% |
-| 0.25–0.30 | 19 | 26% | -1% |
+| 0.15–0.20 | 38 | 11% | -4% |
+| 0.20–0.25 | 30 | 27% | -21% |
+| 0.25–0.30 | 22 | 23% | -14% |
