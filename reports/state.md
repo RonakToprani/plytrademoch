@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-05T04:06:53.195207+00:00
+# Poly underdog paper state — 2026-08-05T07:09:16.022497+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **11** ($111.05)  ·  settled **87** (15W / 72L)
-- realized P&L **$-97.12**  ·  ROI **-12.6%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
-- last scan: 2026-08-05T03:34:34.376515+00:00
+- open **10** ($99.65)  ·  settled **89** (15W / 74L)
+- realized P&L **$-123.26**  ·  ROI **-15.4%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
+- last scan: 2026-08-05T07:05:46.142536+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,13 +43,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
 | Exact Score: CF Villarreal C 0 - 0 Levante UD? | Yes | 0.206 | $13.95 | 2026-08-05T08:00:08.199589+00:00 |
-| San Diego Padres vs. Arizona Diamondbacks | Arizona Diamondbacks | 0.230 | $14.74 | 2026-08-12T01:40:08.280855+00:00 |
-| Detroit Tigers vs. Seattle Mariners | Seattle Mariners | 0.172 | $11.40 | 2026-08-12T01:40:07.681369+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
+| LoL: JD Gaming vs LGD Gaming (BO3) - LPL Group Ascen | LGD Gaming | 0.260 | $14.74 | 2026-08-05T15:00:07.917128+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Detroit Tigers vs. Seattle Mariners | LOST | -11.40 |
+| San Diego Padres vs. Arizona Diamondbacks | LOST | -14.74 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -9.05 |
 | San Francisco Giants vs. Texas Rangers | LOST | -16.50 |
 | St. Louis Cardinals vs. New York Yankees | LOST | -17.51 |
@@ -108,8 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Ethereum reach $2,000 in July? | LOST | -5.29 |
 | Israel x Iran ceasefire continues through July 31? | LOST | -6.57 |
 | Will Gold (XAUUSD) hit (LOW) $3,900 in July? | LOST | -6.27 |
-| Will Apple be the second-largest company in the worl | WON | +14.80 |
-| Will MrBeast's next video get less than 40 million v | LOST | -3.49 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,6 +128,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 16 | 6% | -51% |
-| 0.15–0.20 | 30 | 13% | +33% |
-| 0.20–0.25 | 26 | 31% | -3% |
+| 0.15–0.20 | 31 | 13% | +26% |
+| 0.20–0.25 | 27 | 30% | -9% |
 | 0.25–0.30 | 15 | 13% | -51% |
