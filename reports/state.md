@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-05T07:09:16.022497+00:00
+# Poly underdog paper state — 2026-08-05T10:11:37.240637+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **10** ($99.65)  ·  settled **89** (15W / 74L)
+- open **12** ($125.24)  ·  settled **89** (15W / 74L)
 - realized P&L **$-123.26**  ·  ROI **-15.4%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
-- last scan: 2026-08-05T07:05:46.142536+00:00
+- last scan: 2026-08-05T10:06:43.945170+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Exact Score: CF Villarreal C 0 - 0 Levante UD? | Yes | 0.206 | $13.95 | 2026-08-05T08:00:08.199589+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
 | LoL: JD Gaming vs LGD Gaming (BO3) - LPL Group Ascen | LGD Gaming | 0.260 | $14.74 | 2026-08-05T15:00:07.917128+00:00 |
+| LoL: EDward Gaming vs Top Esports (BO3) - LPL Group  | EDward Gaming | 0.160 | $9.05 | 2026-08-05T17:00:07.532798+00:00 |
+| Warsaw: Carol Young Suh Lee vs Aliona Falei | Carol Young Suh Lee | 0.280 | $16.54 | 2026-08-12T09:00:07.763686+00:00 |
 
 ## Settled
 | market | result | P&L |
