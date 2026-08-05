@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-05T10:11:37.240637+00:00
+# Poly underdog paper state — 2026-08-05T13:13:59.683750+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **12** ($125.24)  ·  settled **89** (15W / 74L)
-- realized P&L **$-123.26**  ·  ROI **-15.4%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
-- last scan: 2026-08-05T10:06:43.945170+00:00
+- open **12** ($123.62)  ·  settled **94** (17W / 77L)
+- realized P&L **$-91.85**  ·  ROI **-10.5%** (backtest exp ~+15.7%)  ·  win **18%** (exp ~27.4%)
+- last scan: 2026-08-05T13:07:50.687866+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,15 +42,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
-| Exact Score: CF Villarreal C 0 - 0 Levante UD? | Yes | 0.206 | $13.95 | 2026-08-05T08:00:08.199589+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
 | LoL: JD Gaming vs LGD Gaming (BO3) - LPL Group Ascen | LGD Gaming | 0.260 | $14.74 | 2026-08-05T15:00:07.917128+00:00 |
 | LoL: EDward Gaming vs Top Esports (BO3) - LPL Group  | EDward Gaming | 0.160 | $9.05 | 2026-08-05T17:00:07.532798+00:00 |
-| Warsaw: Carol Young Suh Lee vs Aliona Falei | Carol Young Suh Lee | 0.280 | $16.54 | 2026-08-12T09:00:07.763686+00:00 |
+| Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Sto | ALKA | 0.200 | $14.04 | 2026-08-06T02:00:07.834728+00:00 |
+| Counter-Strike: Nuclear TigeRES vs CYBERSHOKE Prospe | CYBERSHOKE Prospects | 0.270 | $14.83 | 2026-08-05T20:00:07.915865+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Hagen: Maxim Mrva vs Guy Den Ouden | LOST | -17.02 |
+| Grodzisk Mazowiecki: Amit Vales vs Daniil Glinka | LOST | -14.92 |
+| Warsaw: Katarzyna Kawa vs Justina Mikulskyte | WON | +34.77 |
+| Warsaw: Carol Young Suh Lee vs Aliona Falei | WON | +42.53 |
 | Detroit Tigers vs. Seattle Mariners | LOST | -11.40 |
 | San Diego Padres vs. Arizona Diamondbacks | LOST | -14.74 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -9.05 |
@@ -65,6 +69,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Canadian Open: Giovanni Mpetshi Perricard vs Botic v | LOST | -14.92 |
 | National Bank Open: Rebecca Sramkova vs Diana Shnaid | LOST | -14.92 |
 | National Bank Open: Juncheng Shang vs Andrey Rublev | WON | +52.38 |
+| Exact Score: CF Villarreal C 0 - 0 Levante UD? | LOST | -13.95 |
 | Canadian Open: Pablo Carreno Busta vs Valentin Royer | LOST | -14.92 |
 | National Bank Open: Jacob Fearnley vs Adrian Mannari | LOST | -14.95 |
 | National Bank Open: Camila Osorio vs Ekaterina Alexa | LOST | -16.92 |
@@ -106,11 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | UFC Fight Night: Marcin Tybura vs. Aleksandar Rakic  | LOST | -1.00 |
 | Will "Spider-Man: Brand New Day" Opening Weekend Box | LOST | -3.91 |
 | Will Bitcoin reach $66,000 July 27-August 2? | LOST | -6.91 |
-| Will Bitcoin dip to $62,000 July 27-August 2? | LOST | -3.91 |
-| Will Elon Musk post 880-919 tweets in July 2026? | WON | +32.57 |
-| Will Ethereum reach $2,000 in July? | LOST | -5.29 |
-| Israel x Iran ceasefire continues through July 31? | LOST | -6.57 |
-| Will Gold (XAUUSD) hit (LOW) $3,900 in July? | LOST | -6.27 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,6 +130,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 16 | 6% | -51% |
-| 0.15–0.20 | 31 | 13% | +26% |
-| 0.20–0.25 | 27 | 30% | -9% |
-| 0.25–0.30 | 15 | 13% | -51% |
+| 0.15–0.20 | 32 | 12% | +18% |
+| 0.20–0.25 | 29 | 28% | -18% |
+| 0.25–0.30 | 17 | 24% | -13% |
