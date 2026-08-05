@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-05T13:13:59.683750+00:00
+# Poly underdog paper state — 2026-08-05T16:16:44.080307+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -28,9 +28,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
   open, so the book reported 0W/17L while 3 of those bets had already won.
 
 ## Book
-- open **12** ($123.62)  ·  settled **94** (17W / 77L)
-- realized P&L **$-91.85**  ·  ROI **-10.5%** (backtest exp ~+15.7%)  ·  win **18%** (exp ~27.4%)
-- last scan: 2026-08-05T13:07:50.687866+00:00
+- open **15** ($160.76)  ·  settled **95** (17W / 78L)
+- realized P&L **$-106.59**  ·  ROI **-12.0%** (backtest exp ~+15.7%)  ·  win **18%** (exp ~27.4%)
+- last scan: 2026-08-05T16:08:51.065308+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,10 +43,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
-| LoL: JD Gaming vs LGD Gaming (BO3) - LPL Group Ascen | LGD Gaming | 0.260 | $14.74 | 2026-08-05T15:00:07.917128+00:00 |
 | LoL: EDward Gaming vs Top Esports (BO3) - LPL Group  | EDward Gaming | 0.160 | $9.05 | 2026-08-05T17:00:07.532798+00:00 |
 | Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Sto | ALKA | 0.200 | $14.04 | 2026-08-06T02:00:07.834728+00:00 |
 | Counter-Strike: Nuclear TigeRES vs CYBERSHOKE Prospe | CYBERSHOKE Prospects | 0.270 | $14.83 | 2026-08-05T20:00:07.915865+00:00 |
+| The Hundred, Women: Trent Rockets vs Birmingham Phoe | Birmingham Phoenix | 0.173 | $13.15 | 2026-08-12T10:00:07.789896+00:00 |
+| Warsaw: Weronika Falkowska vs Noma Noha Akugue | Weronika Falkowska | 0.258 | $14.78 | 2026-08-12T08:00:07.468757+00:00 |
+| Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
+| Plovdiv 2: Petr Nesterov vs Sebastian Sorger | Sebastian Sorger | 0.280 | $9.05 | 2026-08-12T13:30:08.160253+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -55,6 +58,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Grodzisk Mazowiecki: Amit Vales vs Daniil Glinka | LOST | -14.92 |
 | Warsaw: Katarzyna Kawa vs Justina Mikulskyte | WON | +34.77 |
 | Warsaw: Carol Young Suh Lee vs Aliona Falei | WON | +42.53 |
+| LoL: JD Gaming vs LGD Gaming (BO3) - LPL Group Ascen | LOST | -14.74 |
 | Detroit Tigers vs. Seattle Mariners | LOST | -11.40 |
 | San Diego Padres vs. Arizona Diamondbacks | LOST | -14.74 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -9.05 |
@@ -110,7 +114,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will "Spider-Man: Brand New Day" score at least 90 o | LOST | -1.00 |
 | UFC Fight Night: Marcin Tybura vs. Aleksandar Rakic  | LOST | -1.00 |
 | Will "Spider-Man: Brand New Day" Opening Weekend Box | LOST | -3.91 |
-| Will Bitcoin reach $66,000 July 27-August 2? | LOST | -6.91 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,4 +135,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | <0.15 | 16 | 6% | -51% |
 | 0.15–0.20 | 32 | 12% | +18% |
 | 0.20–0.25 | 29 | 28% | -18% |
-| 0.25–0.30 | 17 | 24% | -13% |
+| 0.25–0.30 | 18 | 22% | -18% |
