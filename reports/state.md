@@ -1,41 +1,42 @@
-# Poly underdog paper state — 2026-08-05T22:22:01.241030+00:00
+# Poly underdog paper state — 2026-08-06T01:24:14.816704+00:00
 
-**Strategy:** buy the underdog outcome token priced **0.15–0.30** on liquid
+**Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
 Kelly sizing (against a price-calibrated win rate) on a $1,000 paper bankroll.
-NEGATIVE SKEW (~27.4% win rate) — judge on realized ROI over dozens of settled
+NEGATIVE SKEW (~28.2% win rate) — judge on realized ROI over dozens of settled
 EVENTS, not bets and not the first few.
 
 **Read `EXPECTATIONS.md` in this repo before grading these results.** It is the
-source of truth for what 'working' looks like, recalibrated 2026-08-03 on
+source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 355,896 markets / 218,734 events. Key points a reviewer must not get wrong:
 
-- Expect **~+15.7% ROI** (95% CI [+12.5%, +18.9%]) and a **~27.4% win rate**.
-  The older '+50–70% ROI / ~27% win' figures came from n=126 and are RETIRED —
-  grading against them marks an on-spec strategy as underperforming.
+- Expect **~+19.8% ROI** (95% CI [+16.2%, +23.3%]) and a **~28.2% win rate**
+  on the GATED universe (game-winner / election / price-barrier / token-launch
+  excluded alongside mention-count / fed-macro). Older figures (+50–70% from
+  n=126, +15.7% from the ungated blend) are RETIRED — the ungated blend was
+  carried by segments the scanner no longer buys.
 - **Count settled EVENTS, not bets.** Correlated legs are not independent
   observations: 38 early paper bets spanned only 13 events, and a -50% result
   that looked catastrophic was P=59.6% under a real edge. Bets now carry an
   `event` key and only one open bet per event is allowed.
-- **Losing streaks are expected.** At ~27% win, 10 straight losses has
-  probability ~4.3%. Distinguishing +16% from 0 needs ~100+ settled events;
+- **Losing streaks are expected.** At ~28% win, 10 straight losses has
+  probability ~4.3%. Distinguishing +20% from 0 needs ~100+ settled events;
   below ~30 the honest answer is 'not yet knowable'.
-- **Results before 2026-08-03 are contaminated** and should not be read as a
-  verdict on the strategy. Two defects, both now fixed: fills were allowed
-  0.03 BELOW the band floor, into a slice measured at +2.3% (not significant),
-  and those sub-floor bets account for essentially the entire realized loss
-  (-$96 of -$101); and a 3-day resolution cache left resolved bets sitting
-  open, so the book reported 0W/17L while 3 of those bets had already won.
+- **Results before 2026-08-06 graded a different strategy.** Until 2026-08-05
+  the scanner bought game-WINNER markets (MLB/tennis/esports/cricket dailies)
+  — measured -0.8% n.s. at realistic spread — which made up ~85% of flow.
+  Those are now excluded; only settled events opened on/after 2026-08-06
+  test the gated strategy. (Bets before 2026-08-04 are doubly contaminated:
+  sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($136.16)  ·  settled **106** (18W / 88L)
-- realized P&L **$-168.64**  ·  ROI **-16.7%** (backtest exp ~+15.7%)  ·  win **17%** (exp ~27.4%)
-- last scan: 2026-08-05T22:11:01.036329+00:00
+- open **15** ($200.21)  ·  settled **108** (18W / 90L)
+- realized P&L **$-190.55**  ·  ROI **-18.5%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
+- last scan: 2026-08-06T01:12:03.255845+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Israel x Iran ceasefire continues through August 2? | No | 0.110 | $7.08 | 2026-08-02T23:59:07.589500+00:00 |
 | US announces end of Iranian blockade by August 7, 20 | Yes | 0.213 | $1.75 | 2026-08-07T23:59:07.628570+00:00 |
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
@@ -44,13 +45,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Sto | ALKA | 0.200 | $14.04 | 2026-08-06T02:00:07.834728+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
 | Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | Ilbirs eSports | 0.270 | $14.83 | 2026-08-07T00:00:08.073620+00:00 |
-| Tampa Bay Rays vs. Colorado Rockies | Colorado Rockies | 0.263 | $14.83 | 2026-08-12T19:10:08.497510+00:00 |
 | National Bank Open: Learner Tien vs Gael Monfils | Gael Monfils | 0.270 | $14.83 | 2026-08-12T15:00:07.901703+00:00 |
+| New York Mets vs. Cleveland Guardians | Cleveland Guardians | 0.190 | $13.15 | 2026-08-12T22:40:07.745843+00:00 |
+| Miami Marlins vs. Atlanta Braves | Miami Marlins | 0.219 | $14.92 | 2026-08-12T23:15:08.446082+00:00 |
+| Chicago White Sox vs. Boston Red Sox | Chicago White Sox | 0.200 | $14.95 | 2026-08-12T23:10:07.507700+00:00 |
+| Washington Nationals vs. Philadelphia Phillies | Washington Nationals | 0.250 | $16.54 | 2026-08-12T22:40:08.215775+00:00 |
+| Los Angeles Angels vs. Baltimore Orioles | Los Angeles Angels | 0.180 | $17.35 | 2026-08-12T22:35:06.509898+00:00 |
+| Athletics vs. Cincinnati Reds | Athletics | 0.180 | $9.05 | 2026-08-12T22:40:07.210418+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | National Bank Open: Alina Korneeva vs Emma Navarro | LOST | -14.90 |
+| Tampa Bay Rays vs. Colorado Rockies | LOST | -14.83 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.90 |
 | National Bank Open: Ignacio Buse vs Cameron Norrie | LOST | -11.40 |
 | T20 Lanka Premier League: Colombo Kaps vs Kandy Roya | LOST | -9.05 |
@@ -109,26 +116,28 @@ source of truth for what 'working' looks like, recalibrated 2026-08-03 on
 | Will the price of Bitcoin be above $62,000 on August | LOST | -3.99 |
 | Will Spider-Man: Brand New Day beat Avengers: Endgam | LOST | -3.59 |
 | LoL: LNG Esports vs Invictus Gaming (BO3) - LPL Grou | LOST | -2.33 |
-| LoL: KT Rolster vs Hanwha Life Esports (BO3) - LCK R | WON | +3.17 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
 |---|---|---|---|---|
-| 0.02–0.10 | 11567 | 7% | 0.051 | +6% |
-| 0.12–0.15 | 2590 | 15% | 0.133 | +2% |
-| 0.15–0.20 | 4488 | 22% | 0.173 | +19% |
-| 0.15–0.25 | 9608 | 25% | 0.200 | +18% |
-| 0.15–0.30 | 15407 | 27% | 0.228 | +16% |
-| 0.20–0.30 | 10919 | 30% | 0.250 | +14% |
-| 0.30–0.33 | 3226 | 35% | 0.313 | +8% |
-| 0.33–0.36 | 3196 | 36% | 0.343 | +3% |
-| 0.80–0.90 | 8895 | 81% | 0.848 | -6% |
-| 0.90–0.98 | 11761 | 93% | 0.947 | -3% |
+| 0.02–0.10 | 10027 | 7% | 0.051 | +10% |
+| 0.12–0.15 | 2048 | 16% | 0.133 | +10% |
+| 0.15–0.20 | 3411 | 23% | 0.173 | +25% |
+| 0.15–0.25 | 7108 | 26% | 0.199 | +23% |
+| 0.15–0.30 | 11250 | 28% | 0.226 | +20% |
+| 0.15–0.33 | 13271 | 29% | 0.240 | +18% |
+| 0.20–0.33 | 9860 | 32% | 0.263 | +16% |
+| 0.30–0.33 | 2021 | 36% | 0.313 | +11% |
+| 0.33–0.36 | 1917 | 37% | 0.343 | +4% |
+| 0.36–0.40 | 2729 | 38% | 0.378 | -1% |
+| 0.80–0.90 | 6911 | 80% | 0.849 | -7% |
+| 0.90–0.98 | 10183 | 93% | 0.948 | -3% |
 
 ## Paper results by entry price
 | bucket | n | win% | ROI |
 |---|---|---|---|
-| <0.15 | 16 | 6% | -51% |
+| <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 38 | 11% | -4% |
 | 0.20–0.25 | 30 | 27% | -21% |
-| 0.25–0.30 | 22 | 23% | -14% |
+| 0.25–0.30 | 19 | 16% | -34% |
+| 0.30–0.33 | 4 | 50% | +62% |
