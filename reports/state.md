@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-06T16:51:46.367384+00:00
+# Poly underdog paper state — 2026-08-06T19:59:08.361869+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($123.28)  ·  settled **116** (19W / 97L)
-- realized P&L **$-239.22**  ·  ROI **-20.9%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-06T16:16:33.428665+00:00
+- open **8** ($103.85)  ·  settled **117** (19W / 98L)
+- realized P&L **$-258.65**  ·  ROI **-22.2%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
+- last scan: 2026-08-06T19:47:38.076965+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,12 +44,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
 | Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | Ilbirs eSports | 0.270 | $14.83 | 2026-08-07T00:00:08.073620+00:00 |
-| Bitcoin Up or Down on August 6? | Down | 0.246 | $19.43 | 2026-08-06T16:00:07.360358+00:00 |
 | Will Ethereum reach $2,000 August 3-9? | Yes | 0.210 | $18.47 | 2026-08-10T04:00:07.800936+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 6? | LOST | -19.43 |
 | Athletics vs. Cincinnati Reds | LOST | -9.05 |
 | Los Angeles Angels vs. Baltimore Orioles | LOST | -17.35 |
 | Washington Nationals vs. Philadelphia Phillies | WON | +49.62 |
@@ -109,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Aleksandar Vukic vs Daniel Altma | WON | +75.17 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.40 |
 | Toronto Blue Jays vs. Houston Astros | LOST | -14.95 |
-| Tampa Bay Rays vs. Colorado Rockies | LOST | -14.83 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,6 +131,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
-| 0.20–0.25 | 33 | 24% | -31% |
+| 0.20–0.25 | 34 | 24% | -35% |
 | 0.25–0.30 | 21 | 19% | -19% |
 | 0.30–0.33 | 4 | 50% | +62% |
