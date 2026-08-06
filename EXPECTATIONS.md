@@ -112,13 +112,21 @@ games, one-off questions and geopolitics arrive on news. Watch
 book below the exposure cap now means the flow levers below need pulling, not
 that the edge is gone.
 
-Flow levers, in order of expected value:
-1. **The $10k–30k volume tier** — 141k resolved markets, being priced now
-   (started 2026-08-05, `logs/bigtest_fetch_10k.log`). If the gated edge holds
-   there, drop `min_volume` and the flow multiplies.
-2. **Longer windows for non-game segments** — one-off questions and geopolitics
-   don't have the capital-lock problem at 168–336h that game markets do; needs
-   a >168h horizon fetch before it can be measured.
+Flow levers, measured 2026-08-06:
+1. **The $10k–30k volume tier is DEAD — measured, closed.** Priced all 141k
+   markets and the gated edge does not exist there: −5.9% [−9.0, −2.7] @48h
+   slip 0.01, −13.0% at slip 0.03, negative even for `other` (−8.6%). The
+   volume gradient is monotone: 10–30k dead → 30–60k +13.1% EDGE → 60–100k
+   +19.7% → ≥100k +22.5%. **Edge RISES with volume** — the bias needs real
+   retail flow, and thin markets' mid prices aren't fillable anyway. min_volume
+   stays $30k; for future capital scaling this is good news (the edge
+   concentrates where the capacity is).
+2. **The 168–336h window — being measured** (240h/336h horizon fetch started
+   2026-08-06, `logs/bigtest_fetch_336h.log`). A live census found 2 gated
+   opportunities at 168–336h vs 0 at 6–168h that day. One-off questions don't
+   have the capital-lock problem at 2 weeks that motivated the original cap.
+   Extend the window only if the fetch shows the edge survives out there
+   (at 168h it is +15.4% [+10.5, +20.5]; the 96→168h trend loses ~3 pts).
 3. **Prop coverage** — the game-prop class currently keys off slug suffixes
    (draw / exact-score / total-Npt5 / spread / btts / handicap); new prop slug
    shapes should be added as Polymarket adds markets.
@@ -127,7 +135,8 @@ Flow levers, in order of expected value:
 
 - **Cricket props/winners and esports props are thin or unmeasured** at ≥$30k;
   esports *winners* measured +8.7% n.s. at slip 0.03 and are excluded with the
-  rest of game-winner. The 10k–30k fetch may give these segments real samples.
+  rest of game-winner. The 10k–30k tier turned out to be dead across the board,
+  so no rescue for these segments from below the volume floor.
 - **Soccer props carry the biggest measured edge** (+22.3% at slip 0.03) but
   draws/exact-scores are exactly where a stale-mid artifact would look best;
   the paper book (live depth-checked fills) is the arbiter. Watch the game-prop
