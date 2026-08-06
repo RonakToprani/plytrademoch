@@ -88,6 +88,27 @@ def test_scan_drops_no_edge_segments():
                      "will-russia-capture-kostyantynivka-by-august-31"}
 
 
+def test_scan_drops_season_futures():
+    """sports-season futures are -54.5% [-87.7,-11.0] when they enter the window
+    (the final week of "win the World Series" is exactly when they appear)."""
+    assert "sports-season" in _NO_EDGE_SEGMENTS
+    feed = FakeFeed([
+        _market("will-the-yankees-win-the-2026-world-series", 0.20, hours=100.0),
+    ])
+    assert scan(feed, bankroll=1_000.0) == []
+
+
+def test_geopolitics_gets_the_extended_window():
+    """Geopolitics is the one segment still an EDGE at 240h at both slippages
+    (+29.5% [+6.9,+55.3] at slip 0.03); everything else stays capped at 168h."""
+    feed = FakeFeed([
+        _market("russia-x-ukraine-ceasefire-by-september", 0.20, hours=230.0),
+        _market("will-something-odd-happen-by-september", 0.20, hours=230.0),
+    ])
+    slugs = {o.slug for o in scan(feed, bankroll=1_000.0)}
+    assert slugs == {"russia-x-ukraine-ceasefire-by-september"}
+
+
 def test_scan_respects_band_and_window():
     feed = FakeFeed([
         _market("in-band", 0.20),

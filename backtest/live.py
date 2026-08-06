@@ -56,7 +56,24 @@ from backtest.datafeed import DataFeed
 _NO_EDGE_SEGMENTS = frozenset({
     "game-winner", "mention-count", "fed-macro", "election",
     "price-barrier", "token-launch",
+    # Season/tournament futures ("win the 2026 World Series"). Too thin to
+    # measure at short horizons, but decisively NEGATIVE whenever they do enter
+    # the window: -54.5% [-87.7,-11.0] @168h, -71.2% [-93.1,-46.0] @336h
+    # (2026-08-06). The final week of a season future is exactly when it shows
+    # up in-window, and that is when it is worst.
+    "sports-season",
 })
+
+# Per-segment hold-window ceilings (hours), measured 2026-08-06. The blended
+# edge decays past 168h (+13.2% @168h -> +10.0% @240h -> +0.8% n.s. @336h), so
+# 168h stays the default. Geopolitics is the measured exception — it is the one
+# segment still an EDGE at 240h at BOTH slippages (+41.1% [+16.3,+69.3] @0.01,
+# +29.5% [+6.9,+55.3] @0.03, n=182 events): war/ceasefire one-offs stay
+# mispriced further out. 336h fails the slip-0.03 gate (+20.3% n.s.) and is NOT
+# extended to. Capital lock at 10 days is immaterial for this book.
+_SEGMENT_MAX_HOURS: dict[str, float] = {
+    "geopolitics": 240.0,
+}
 
 
 @dataclass
@@ -96,11 +113,12 @@ def scan(
 
     best_by_event: dict[str, Opportunity] = {}
     for mk in markets:
-        hours = _hours_until(mk.get("end_date"), now)
-        if hours is None or not (min_hours <= hours <= max_hours):
-            continue
         segment = segment_of(mk["slug"])
         if segment in exclude_segments:
+            continue
+        hours = _hours_until(mk.get("end_date"), now)
+        seg_max = _SEGMENT_MAX_HOURS.get(segment, max_hours)
+        if hours is None or not (min_hours <= hours <= seg_max):
             continue
         for token_price, outcome, token in zip(mk["prices"], mk["outcomes"], mk["tokens"]):
             if not (band_lo <= token_price <= band_hi):

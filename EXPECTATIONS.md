@@ -9,11 +9,11 @@ reviewer, or a human looking at the dashboard — should use the numbers here.
 | Quantity | Expect | Notes |
 |---|---|---|
 | Entry band | **0.15 – 0.33** | ceiling raised from 0.30 on 08-05: on the gated flow 0.30–0.33 is +10.7% [+4.5, +17.5] |
-| Segments | **include** other, game-prop, geopolitics, crypto-price; **exclude** game-winner, mention-count, fed-macro, election, price-barrier, token-launch | the 08-05 recalibration; see below |
+| Segments | **include** other, game-prop, geopolitics, crypto-price; **exclude** game-winner, mention-count, fed-macro, election, price-barrier, token-launch, sports-season | the 08-05/08-06 recalibration; see below |
 | Win rate | **~28.2%** | in-band, gated universe |
 | ROI per bet | **~+19.8%** | 95% CI [+16.2%, +23.3%], n=11,250 / 8,300 events @48h |
 | Cost robustness | **+10.1% [+6.9, +13.3] at slippage 0.03** | the old ungated blend went ~0 at 0.03 — this one survives |
-| Hold window | **6 – 168h** | ROI flat to 96h (+18.5–21.2%), −3–4 pts at 168h; window set by FLOW |
+| Hold window | **6 – 168h** (geopolitics: **6 – 240h**) | decay measured 08-06: +13.2% @168h → +10.0% @240h → +0.8% n.s. @336h; geopolitics alone is EDGE at 240h at both slippages |
 | Kelly input | **calibrated q(price)**, 0.25 multiple | refit 08-05 on the gated universe; sizing only, go/no-go is price-in-band |
 | Paper bankroll | **$1,000** | unchanged |
 | Strategy epoch | **2026-08-06** | only bets opened on/after this date test this strategy |
@@ -121,15 +121,19 @@ Flow levers, measured 2026-08-06:
    retail flow, and thin markets' mid prices aren't fillable anyway. min_volume
    stays $30k; for future capital scaling this is good news (the edge
    concentrates where the capacity is).
-2. **The 168–336h window — being measured** (240h/336h horizon fetch started
-   2026-08-06, `logs/bigtest_fetch_336h.log`). A live census found 2 gated
-   opportunities at 168–336h vs 0 at 6–168h that day. One-off questions don't
-   have the capital-lock problem at 2 weeks that motivated the original cap.
-   Extend the window only if the fetch shows the edge survives out there
-   (at 168h it is +15.4% [+10.5, +20.5]; the 96→168h trend loses ~3 pts).
+2. **The 168–336h window — measured, mostly closed.** The gated blend decays
+   +13.2% [+8.8, +17.6] @168h → +10.0% [+5.2, +15.1] @240h → +0.8% n.s. @336h,
+   and only 168h survives slip 0.03. Per segment: `other` and `game-prop` are
+   done past 168h. **Geopolitics is the exception and got a per-segment 240h
+   window** (`_SEGMENT_MAX_HOURS`): +41.1% [+16.3, +69.3] @240h slip 0.01 and
+   still +29.5% [+6.9, +55.3] at slip 0.03 (n=182 events). 336h fails the
+   stress gate (+20.3% n.s.) and was not extended to.
+   Bonus finding from the sweep: **sports-season futures are toxic in-window**
+   (−54.5% [−87.7, −11.0] @168h) and joined the excluded segments.
 3. **Prop coverage** — the game-prop class currently keys off slug suffixes
    (draw / exact-score / total-Npt5 / spread / btts / handicap); new prop slug
-   shapes should be added as Polymarket adds markets.
+   shapes should be added as Polymarket adds markets. This is now the main
+   remaining flow lever.
 
 ## Known open questions
 
