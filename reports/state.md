@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-06T04:25:07.186781+00:00
+# Poly underdog paper state — 2026-08-06T07:30:05.942876+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($85.38)  ·  settled **116** (19W / 97L)
+- open **8** ($104.81)  ·  settled **116** (19W / 97L)
 - realized P&L **$-239.22**  ·  ROI **-20.9%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-06T04:13:01.806385+00:00
+- last scan: 2026-08-06T07:13:56.778792+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,6 +44,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
 | Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | Ilbirs eSports | 0.270 | $14.83 | 2026-08-07T00:00:08.073620+00:00 |
+| Bitcoin Up or Down on August 6? | Down | 0.246 | $19.43 | 2026-08-06T16:00:07.360358+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -112,18 +113,18 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
 |---|---|---|---|---|
-| 0.02–0.10 | 10027 | 7% | 0.051 | +10% |
-| 0.12–0.15 | 2048 | 16% | 0.133 | +10% |
-| 0.15–0.20 | 3411 | 23% | 0.173 | +25% |
-| 0.15–0.25 | 7108 | 26% | 0.199 | +23% |
-| 0.15–0.30 | 11250 | 28% | 0.226 | +20% |
-| 0.15–0.33 | 13271 | 29% | 0.240 | +18% |
-| 0.20–0.33 | 9860 | 32% | 0.263 | +16% |
-| 0.30–0.33 | 2021 | 36% | 0.313 | +11% |
-| 0.33–0.36 | 1917 | 37% | 0.343 | +4% |
-| 0.36–0.40 | 2729 | 38% | 0.378 | -1% |
-| 0.80–0.90 | 6911 | 80% | 0.849 | -7% |
-| 0.90–0.98 | 10183 | 93% | 0.948 | -3% |
+| 0.02–0.10 | 9946 | 7% | 0.051 | +11% |
+| 0.12–0.15 | 2038 | 16% | 0.133 | +10% |
+| 0.15–0.20 | 3399 | 23% | 0.173 | +25% |
+| 0.15–0.25 | 7088 | 26% | 0.199 | +23% |
+| 0.15–0.30 | 11221 | 28% | 0.226 | +20% |
+| 0.15–0.33 | 13238 | 29% | 0.240 | +19% |
+| 0.20–0.33 | 9839 | 32% | 0.263 | +16% |
+| 0.30–0.33 | 2017 | 36% | 0.313 | +11% |
+| 0.33–0.36 | 1915 | 37% | 0.343 | +4% |
+| 0.36–0.40 | 2726 | 38% | 0.378 | -1% |
+| 0.80–0.90 | 6885 | 80% | 0.849 | -7% |
+| 0.90–0.98 | 10105 | 93% | 0.947 | -3% |
 
 ## Paper results by entry price
 | bucket | n | win% | ROI |
