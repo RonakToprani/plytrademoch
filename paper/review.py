@@ -2,10 +2,10 @@
 paper/review.py — Nightly strategy review + recommendations.
 
 Runs every evening (launchd). Three things:
-  1. Grades the paper book against the backtest expectation (ROI vs ~+15.7%,
-     win rate vs ~27.4%) and breaks results down by entry-price and outcome side.
+  1. Grades the paper book against the backtest expectation (ROI vs ~+19.8%,
+     win rate vs ~28.2%) and breaks results down by entry-price and outcome side.
   2. Re-checks the edge on the cached resolved-market universe across a range of
-     price bands — is the live 0.15–0.30 band still the sweet spot, is it
+     price bands — is the live 0.15–0.33 band still the sweet spot, is it
      decaying, is an adjacent slice better? (fast: all from cache, no network.)
   3. Emits concrete, rule-based recommendations + adjacent strategies to test.
 
@@ -28,14 +28,23 @@ logger = get_logger(__name__)
 
 _REPORT_DIR = "reports"
 # Bands to scan for edge (both tokens, cached prices).
-_LIVE_BAND = (0.15, 0.30)   # keep in sync with PaperTrader band_lo/band_hi
+_LIVE_BAND = (0.15, 0.33)   # keep in sync with PaperTrader band_lo/band_hi
 _BANDS = [(0.02, 0.10), (0.12, 0.15), (0.15, 0.20), (0.15, 0.25), (0.15, 0.30),
-          (0.20, 0.30), (0.30, 0.33), (0.33, 0.36), (0.80, 0.90), (0.90, 0.98)]
+          (0.15, 0.33), (0.20, 0.33), (0.30, 0.33), (0.33, 0.36), (0.36, 0.40),
+          (0.80, 0.90), (0.90, 0.98)]
 
 # What the live config is graded against — the same universe, band and segment
-# filter the bot actually trades. See EXPECTATIONS.md.
-_EXP_ROI = 0.157
-_EXP_WIN = 0.274
+# filter the bot actually trades (2026-08-05 recalibration on the gated
+# universe: game-winner/election/price-barrier/token-launch excluded alongside
+# mention-count/fed-macro). See EXPECTATIONS.md.
+_EXP_ROI = 0.198
+_EXP_WIN = 0.282
+
+# Bets opened before this date were placed by a DIFFERENT strategy (game-winner
+# flow made up ~85% of the old book) and must not grade the current one. The
+# grading gate and ROI verdicts below only count bets opened on/after the epoch;
+# the all-time book is still shown for continuity.
+_STRATEGY_EPOCH = "2026-08-06"
 
 
 def _band_calibration(feed: DataFeed, horizon_hours: int = 48) -> dict[tuple, dict]:
@@ -131,6 +140,25 @@ def _settled_events(store: PaperStore) -> int:
     return len({b.event or f"mk:{b.slug}" for b in settled})
 
 
+def _epoch_stats(store: PaperStore) -> dict:
+    """Settled results for bets opened on/after _STRATEGY_EPOCH — the only
+    sample that tests the currently-configured strategy."""
+    settled = [b for b in store.all_bets(limit=5000)
+               if b.status in ("WON", "LOST") and b.opened_at >= _STRATEGY_EPOCH]
+    stake = sum(b.stake_usd for b in settled)
+    pnl = sum(b.pnl or 0.0 for b in settled)
+    wins = sum(1 for b in settled if b.status == "WON")
+    return {
+        "settled": len(settled),
+        "events": len({b.event or f"mk:{b.slug}" for b in settled}),
+        "won": wins,
+        "lost": len(settled) - wins,
+        "roi": (pnl / stake) if stake else 0.0,
+        "win_rate": (wins / len(settled)) if settled else 0.0,
+        "realized_pnl": pnl,
+    }
+
+
 def _paper_breakdown(store: PaperStore) -> dict:
     """Break settled paper bets down by entry-price bucket."""
     settled = [b for b in store.all_bets(limit=5000) if b.status in ("WON", "LOST")]
@@ -138,11 +166,12 @@ def _paper_breakdown(store: PaperStore) -> dict:
     # taken through the old fill_floor leak, which is where nearly all the early
     # losses came from. It should stop growing now that the leak is closed.
     buckets: dict[str, list] = {"<0.15": [], "0.15–0.20": [], "0.20–0.25": [],
-                                "0.25–0.30": []}
+                                "0.25–0.30": [], "0.30–0.33": []}
     for b in settled:
         key = ("<0.15" if b.entry_price < 0.15 else
                "0.15–0.20" if b.entry_price < 0.20 else
-               "0.20–0.25" if b.entry_price < 0.25 else "0.25–0.30")
+               "0.20–0.25" if b.entry_price < 0.25 else
+               "0.25–0.30" if b.entry_price < 0.30 else "0.30–0.33")
         buckets[key].append(b)
     rows = {}
     for k, bs in buckets.items():
@@ -156,19 +185,22 @@ def _paper_breakdown(store: PaperStore) -> dict:
     return rows
 
 
-def _recommendations(stats: dict, cal: dict, breakdown: dict, events: int) -> list[str]:
+def _recommendations(ep: dict, cal: dict, breakdown: dict) -> list[str]:
     recs: list[str] = []
-    settled = stats["settled"]
+    # Grade ONLY the post-epoch sample — earlier bets were placed by a strategy
+    # (game-winner flow) the scanner no longer runs.
+    events, settled = ep["events"], ep["settled"]
 
-    # Gate on EVENTS, not bets. EXPECTATIONS.md: distinguishing +16% from 0 at this
+    # Gate on EVENTS, not bets. EXPECTATIONS.md: distinguishing +20% from 0 at this
     # variance takes ~100+ settled events; below ~30 the honest answer is
     # "not yet knowable", and grading anyway is how a live edge gets switched off.
     if events < 30:
-        recs.append(f"SAMPLE: {events} settled EVENTS ({settled} bets) — too few to grade. "
+        recs.append(f"SAMPLE: {events} settled EVENTS ({settled} bets) since the "
+                    f"{_STRATEGY_EPOCH} strategy epoch — too few to grade. "
                     f"Keep the {_LIVE_BAND[0]:.2f}–{_LIVE_BAND[1]:.2f} / 6–168h config "
                     "running; a verdict needs ~100 events.")
     else:
-        roi, wr = stats["roi"], stats["win_rate"]
+        roi, wr = ep["roi"], ep["win_rate"]
         if roi >= _EXP_ROI:
             recs.append(f"ON TRACK: realized ROI {roi*100:+.0f}% is at/above the backtest "
                         f"expectation (~{_EXP_ROI*100:+.0f}%) — no change needed.")
@@ -196,7 +228,8 @@ def _recommendations(stats: dict, cal: dict, breakdown: dict, events: int) -> li
     # Which live sub-band looks best out-of-sample right now. Compare against
     # _LIVE_BAND rather than a hardcoded pair — the live band moved to 0.15-0.30
     # and hardcoding (0.10, 0.20) made this KeyError once it left _BANDS.
-    subbands = {b: cal[b] for b in [(0.15, 0.20), (0.15, 0.25), (0.20, 0.30)]
+    subbands = {b: cal[b] for b in [(0.15, 0.20), (0.15, 0.25), (0.15, 0.30),
+                                    (0.20, 0.33)]
                 if b in cal and cal[b]["n"] >= 20}
     live = cal.get(_LIVE_BAND)
     if subbands and live:
@@ -210,9 +243,9 @@ def _recommendations(stats: dict, cal: dict, breakdown: dict, events: int) -> li
                             "remains well-placed."))
 
     # Adjacent-strategy signals. The ceiling question: is there edge left just
-    # above the band? 0.30-0.33 measured +8.2% [+2.8,+13.0] and 0.33-0.36 +2.5% n.s.,
-    # so the answer today is "thin, then gone" — this watches for that changing.
-    for hi_band in ((0.30, 0.33), (0.33, 0.36)):
+    # above the band? On the gated universe 0.30-0.33 is in the band (+10.7%
+    # [+4.5,+17.5]); 0.33-0.36 is dead (+3.7% n.s.) — this watches for change.
+    for hi_band in ((0.33, 0.36), (0.36, 0.40)):
         c2 = cal.get(hi_band)
         if c2 and c2["n"] >= 20:
             verdict = ("still carries edge — consider raising the ceiling"
@@ -246,9 +279,10 @@ def run_review(send: bool = True) -> str:
     stats = store.stats()
     breakdown = _paper_breakdown(store)
     events = _settled_events(store)
+    ep = _epoch_stats(store)
     with DataFeed() as feed:
         cal = _band_calibration(feed)
-    recs = _recommendations(stats, cal, breakdown, events)
+    recs = _recommendations(ep, cal, breakdown)
 
     lines = [f"# Nightly review — {today}", ""]
     lines += [
@@ -258,7 +292,11 @@ def run_review(send: bool = True) -> str:
         f"- realized P&L **${stats['realized_pnl']:.2f}**  ·  ROI **{stats['roi']*100:+.1f}%** "
         f"(exp ~{_EXP_ROI*100:+.0f}%)  ·  win **{stats['win_rate']*100:.0f}%** "
         f"(exp ~{_EXP_WIN*100:.0f}%)",
-        f"- grading gate: **{events}/100** settled events",
+        f"- since strategy epoch {_STRATEGY_EPOCH}: settled **{ep['settled']}** bets / "
+        f"**{ep['events']}** events ({ep['won']}W / {ep['lost']}L)  ·  "
+        f"P&L **${ep['realized_pnl']:.2f}**  ·  ROI **{ep['roi']*100:+.1f}%**",
+        f"- grading gate: **{ep['events']}/100** settled events since epoch "
+        f"(all-time: {events})",
         "",
         "## Edge by price band (356k-market universe, 48h, no-edge segments excluded)",
         "| band | n | events | win% | mean px | buy ROI |",

@@ -2,11 +2,12 @@
 backtest/live.py — Live opportunity scanner for the underdog edge.
 
 Turns the validated backtest finding into an actionable list: which currently-open
-markets have a token priced in the underdog band (~0.15–0.30) that the strategy
+markets have a token priced in the underdog band (~0.15–0.33) that the strategy
 would buy right now. Read-only; suggests sizes but places nothing.
 
-Strategy (from FINDINGS.md §2, validated across horizons + time split):
-  • Buy the outcome token priced in [band_lo, band_hi] (default 0.15–0.30).
+Strategy (recalibrated 2026-08-05 — see EXPECTATIONS.md):
+  • Buy the outcome token priced in [band_lo, band_hi] (default 0.15–0.33; the
+    0.30–0.33 slice is +10.7% [+4.5,+17.5] on the gated universe).
   • Resolution window: every horizon from 6h to 168h is significantly positive
     (+14.7% at 6h, +16.5% at 24h, +15.6% at 96h, +12.5% at 168h), so the window is
     set for FLOW: [min_hours, max_hours] default 6h–168h. It still excludes
@@ -30,18 +31,32 @@ from datetime import datetime, timezone
 from backtest.bigtest import segment_of
 from backtest.datafeed import DataFeed
 
-# Segments with no measured edge in the underdog band. Both are markets on a
-# MECHANICAL, publicly-tracked quantity — a running tweet count, a rate decision
-# priced off fed-funds futures — so the "distribution" is already well calibrated
-# and there is no favourite-longshot bias to harvest. Measured at 0.15-0.30, 48h,
-# event-clustered: mention-count -3.7% (n=634/264ev), fed-macro -17.3% (n=43/30ev),
-# and mention-count is negative at EVERY horizon (24h -1%, 48h -4%, 96h -5%) and in
-# both 2024 (-19%) and 2025 (-6%). Dropping the two lifts band ROI +16.7% -> +17.9%.
+# Segments with no measured edge in the underdog band, 2026-08-05 recalibration
+# (fine-grained classes, event-clustered, ≥$30k volume — see EXPECTATIONS.md):
 #
-# This is not a fishing expedition over segment labels: these were the two the live
-# book was most concentrated in (6 Elon tweet-count buckets, 4 legs of one Fed
-# decision) and the two EXPECTATIONS.md already flagged as unproven.
-_NO_EDGE_SEGMENTS = frozenset({"mention-count", "fed-macro"})
+#   game-winner    who-wins markets, ALL sports incl. esports/cricket/tennis/UFC:
+#                  +7.6% @6h at slip 0.01, -0.8% n.s. at slip 0.03. Anchored by
+#                  sharp sportsbook odds; the edge does not survive the spread.
+#                  This was ~85% of the live book's post-fix flow, realized ~flat.
+#   mention-count  -3.7%; fed-macro -17.3% — mechanical, publicly-tracked
+#                  quantities (tweet counters, fed-funds futures): well calibrated,
+#                  no bias to harvest.
+#   election       +9.1% n.s. @48h, -8.5% @6h slip 0.03 — poll/model-anchored,
+#                  same "external anchor" logic as fed-macro; unproven, not cheap.
+#   price-barrier  +0.1% n.s. — barrier-hit markets price off realized vol; dead.
+#   token-launch   unstable sign across horizons on n=50-61 events; unmeasurable.
+#
+# What REMAINS is where the edge is (0.15-0.30 @48h, slip 0.01):
+#   other +24.0% [+19.0,+29.2] · game-prop (draws/exact-score/totals) +18.3%
+#   [+10.3,+26.3] · geopolitics +35.2% [+5.2,+63.7] · crypto-price +11.5%
+#   [+4.3,+19.0]. The gated blend is +19.8% [+16.2,+23.3] and — unlike the old
+#   blend — still +10.1% EDGE at slip 0.03. Common thread: no external anchor
+#   (no sportsbook line, no futures curve, no poll model) → the favorite-longshot
+#   bias survives.
+_NO_EDGE_SEGMENTS = frozenset({
+    "game-winner", "mention-count", "fed-macro", "election",
+    "price-barrier", "token-launch",
+})
 
 
 @dataclass
@@ -65,7 +80,7 @@ def scan(
     feed: DataFeed,
     *,
     band_lo: float = 0.15,
-    band_hi: float = 0.30,
+    band_hi: float = 0.33,
     min_hours: float = 6.0,
     max_hours: float = 168.0,
     min_volume: float = 30_000.0,
@@ -129,31 +144,35 @@ def _hours_until(end_date: str | None, now: datetime) -> float | None:
 # Measured (mean price -> realised win rate) inside the band, 48h horizon,
 # volume >= $30k, no-edge segments excluded, event-clustered. These are the
 # empirical calibration curve: what fraction of tokens priced HERE actually win.
+# Refit 2026-08-05 on the GATED universe (game-winner/election/price-barrier/
+# token-launch now excluded alongside mention-count/fed-macro):
 #
 #   slice        n     events   win%    mean px   ROI      95% CI
-#   0.12-0.15   2590    2264    14.6%   0.133    +2.3%  [-7.5,+11.5] n.s. <- below floor
-#   0.15-0.18   2655    2424    20.0%   0.163   +15.5%  [+7.4,+24.1] EDGE
-#   0.18-0.21   2766    2539    24.6%   0.193   +21.3%  [+12.9,+29.4] EDGE
-#   0.21-0.24   3087    2835    27.8%   0.223   +19.0%  [+11.9,+26.1] EDGE
-#   0.24-0.27   3391    3128    29.7%   0.253   +12.9%  [+7.3,+19.2] EDGE
-#   0.27-0.30   3508    3242    32.6%   0.283   +11.2%  [+6.3,+16.7] EDGE
-#   0.30-0.33   3226    2969    35.0%   0.313    +8.2%  [+2.8,+13.0] EDGE <- thin
-#   0.33-0.36   3196    2953    36.2%   0.343    +2.5%  [-2.3,+6.9]  n.s. <- dead
+#   0.12-0.15   2048    1780    15.6%   0.133    +9.5%  [-1.4,+20.6] n.s. <- below floor
+#   0.15-0.18   2048    1879    21.1%   0.163   +22.2%  [+11.5,+32.5] EDGE
+#   0.18-0.21   2013    1854    25.2%   0.193   +24.4%  [+15.0,+33.7] EDGE
+#   0.21-0.24   2253    2105    28.9%   0.223   +23.5%  [+15.5,+31.4] EDGE
+#   0.24-0.27   2476    2330    30.9%   0.253   +17.5%  [+10.5,+24.4] EDGE
+#   0.27-0.30   2460    2310    33.0%   0.282   +12.7%  [+6.6,+19.2] EDGE
+#   0.30-0.33   2021    1882    35.8%   0.313   +10.7%  [+4.5,+17.5] EDGE <- in band since 08-05
+#   0.33-0.36   1917    1788    36.6%   0.343    +3.7%  [-2.2,+9.9]  n.s. <- dead
 #
 # The old code used a FLAT 0.245 win rate at every price. That is not a harmless
 # simplification — it inverts the sizing. With q fixed, Kelly f = q - (1-q)p/(1-p)
 # falls as p rises and turns NEGATIVE above p = 0.245, so the strategy staked most
-# at 0.15 (where measured edge is weakest, +15.5%) and refused to trade 0.245-0.25
-# at all. Against the measured curve, full-Kelly instead runs 0.044 -> 0.066 ->
-# 0.071 -> 0.059 across those slices, peaking near 0.22 where the edge really is.
+# at 0.15 (where measured edge is weakest) and refused the top of the band
+# entirely. Against the measured curve, full-Kelly runs 0.044 -> 0.080 -> 0.079
+# -> 0.066 -> 0.056 across 0.15 -> 0.21 -> 0.24 -> 0.30 -> 0.33, peaking where
+# the edge really is.
 _WIN_RATE_CURVE: tuple[tuple[float, float], ...] = (
-    (0.133, 0.146),
-    (0.163, 0.200),
-    (0.193, 0.246),
-    (0.223, 0.278),
-    (0.253, 0.297),
-    (0.283, 0.326),
-    (0.313, 0.350),   # past the band ceiling; anchors the interpolation at 0.30
+    (0.133, 0.156),
+    (0.163, 0.211),
+    (0.193, 0.252),
+    (0.223, 0.289),
+    (0.253, 0.309),
+    (0.282, 0.330),
+    (0.313, 0.358),
+    (0.343, 0.366),   # past the band ceiling; anchors the interpolation at 0.33
 )
 
 

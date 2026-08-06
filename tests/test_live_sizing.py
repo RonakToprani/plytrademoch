@@ -41,7 +41,7 @@ def test_win_rate_rises_with_price_and_beats_it():
     """Every in-band price must imply a win rate above the price — that gap IS
     the edge. A flat constant cannot satisfy this across the whole band."""
     prev = 0.0
-    for p in (0.15, 0.18, 0.21, 0.24, 0.27, 0.30):
+    for p in (0.15, 0.18, 0.21, 0.24, 0.27, 0.30, 0.33):
         q = calibrated_win_rate(p)
         assert q > p, f"no edge implied at {p}"
         assert q > prev, "win rate must be monotone in price"
@@ -50,13 +50,13 @@ def test_win_rate_rises_with_price_and_beats_it():
 
 def test_kelly_peaks_in_the_measured_sweet_spot_not_at_the_floor():
     f = {p: _kelly_fraction(p, calibrated_win_rate(p))
-         for p in (0.15, 0.18, 0.21, 0.24, 0.27, 0.30)}
+         for p in (0.15, 0.18, 0.21, 0.24, 0.27, 0.30, 0.33)}
     assert all(v > 0 for v in f.values()), "whole band must be tradeable"
     # the old bug: biggest stake at the floor, negative (skipped) above 0.245
     assert f[0.15] < f[0.21], "must not stake most at the weakest-edge price"
     assert max(f, key=f.get) in (0.21, 0.24), f"peak in the wrong place: {f}"
     # and the top of the band is emphatically still tradeable
-    assert f[0.30] > f[0.15]
+    assert f[0.33] > f[0.15]
 
 
 def test_old_flat_win_rate_would_have_refused_the_top_of_the_band():
@@ -68,20 +68,31 @@ def test_old_flat_win_rate_would_have_refused_the_top_of_the_band():
 # --- scan filtering -------------------------------------------------------
 
 def test_scan_drops_no_edge_segments():
+    # 2026-08-05 recalibration: game-WINNER markets (sportsbook-anchored, no edge
+    # at realistic spread) are out; game PROPS (draws/exact scores/totals), plain
+    # "other" questions and geopolitics stay in.
     assert "mention-count" in _NO_EDGE_SEGMENTS
+    assert "game-winner" in _NO_EDGE_SEGMENTS
     feed = FakeFeed([
         _market("will-elon-musk-post-280-299-tweets-in-august", 0.20),
-        _market("nba-lal-bos-2026-08-02", 0.20),
+        _market("nba-lal-bos-2026-08-02", 0.20),          # winner: dropped
+        _market("atp-tien-monfils-2026-08-05", 0.20),     # winner: dropped
+        _market("cs2-tl1-9ine-2026-08-04", 0.20),         # esports winner: dropped
+        _market("epl-ars-ips-2026-12-27-draw", 0.20),     # prop: kept
+        _market("fifwc-kor-civ-2026-06-25-exact-score-0-3", 0.20),  # prop: kept
+        _market("will-russia-capture-kostyantynivka-by-august-31", 0.20),  # kept
     ])
     slugs = {o.slug for o in scan(feed, bankroll=1_000.0)}
-    assert slugs == {"nba-lal-bos-2026-08-02"}
+    assert slugs == {"epl-ars-ips-2026-12-27-draw",
+                     "fifwc-kor-civ-2026-06-25-exact-score-0-3",
+                     "will-russia-capture-kostyantynivka-by-august-31"}
 
 
 def test_scan_respects_band_and_window():
     feed = FakeFeed([
         _market("in-band", 0.20),
         _market("too-cheap", 0.13),
-        _market("too-rich", 0.35),
+        _market("too-rich", 0.40),
         _market("too-soon", 0.20, hours=2.0),
         _market("too-far", 0.20, hours=500.0),
         _market("too-thin", 0.20, volume=1_000.0),

@@ -43,9 +43,9 @@ def cmd_stats(args: argparse.Namespace) -> None:
     print(f"=== Paper book ({s['total']} bets) ===")
     print(f"  open:     {s['open']}  (${s['open_stake']:.2f} exposure)")
     print(f"  settled:  {s['settled']}  (won {s['won']}, lost {s['lost']})")
-    print(f"  win rate: {s['win_rate']*100:.1f}%  (backtest expectation ~27.4%)")
+    print(f"  win rate: {s['win_rate']*100:.1f}%  (backtest expectation ~28.2%)")
     print(f"  realized: ${s['realized_pnl']:.2f} on ${s['settled_stake']:.2f} staked  "
-          f"→ ROI {s['roi']*100:+.1f}%  (backtest expectation ~+15.7%)")
+          f"→ ROI {s['roi']*100:+.1f}%  (backtest expectation ~+19.8%)")
     print(f"  last scan: {store.last_scan() or 'never'}")
     open_bets = store.open_bets()
     if open_bets:

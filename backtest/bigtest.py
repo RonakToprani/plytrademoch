@@ -121,9 +121,25 @@ def fetch_horizon_prices(horizons: tuple[int, ...] = (24, 48, 96),
 # Gamma's own `category` is null on virtually every modern market and `tags`
 # returns only "All", so segments are derived from the slug. Ordered — first
 # match wins, so put the specific patterns before the general ones.
+#
+# 2026-08-05 recalibration: the old single "sports-game" class hid the split that
+# actually matters, and its prefix list missed esports/cricket/UFC entirely (they
+# fell through to "other", polluting that segment's +22.5% with game flow). The
+# real cut is market STRUCTURE, not sport:
+#   game-prop   (draw / exact-score / totals / spread / btts / handicap):
+#               +18.2% [+10.7,+25.7] @6h slip 0.01 — still +8.9% EDGE at slip 0.03
+#   game-winner (who wins the game/match/series):
+#               +7.6% [+2.5,+13.0] @6h slip 0.01 — -0.8% n.s. at slip 0.03
+# Winner markets are anchored by sharp sportsbook odds and are efficient once you
+# pay the spread; props and score-structure markets have no such anchor and keep
+# the favorite-longshot bias. Stable across 6/24/48h horizons.
 _SEGMENTS: tuple[tuple[str, str], ...] = (
-    ("sports-game",   r"^(nba|nfl|mlb|nhl|ncaab|ncaaf|epl|ucl|uel|fifwc|lal|atp|wta)-|"
-                      r"-vs-|\bvs\.\b"),
+    ("game-prop",     r"-draw(-|$)|exact-score|-total-\d+pt\d+|"
+                      r"-(spread|btts|handicap)(-|$)"),
+    ("game-winner",   r"^(nba|nfl|mlb|nhl|ncaab|ncaaf|wnba|epl|ucl|uel|elc|mls|"
+                      r"laliga|seriea|bundesliga|ligue1|fifwc|fifa|uefa|copa|lal|"
+                      r"atp|wta|tennis|cs2|csgo|lol|dota2?|val|cod|rl|kings|"
+                      r"cric\w*|t20\w*|ufc|boxing|mma)-|-vs-|\bvs\.\b"),
     ("sports-season", r"win-the-(20\d\d|202\d\d\d).*(world-cup|champions-league|super-bowl|"
                       r"premier-league|nba-finals|stanley-cup|world-series)|"
                       r"(super-bowl|world-cup|champions-league)-(winner|champion)"),

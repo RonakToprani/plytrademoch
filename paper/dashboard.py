@@ -266,7 +266,7 @@ def create_app() -> dash.Dash:
                 html.Div([
                     html.Div([
                         _label("CAPITAL DEPLOYED — UNDERDOG BOOK"),
-                        html.Div("BUY 0.15–0.30 · RESOLVES 6–168H · HOLD TO SETTLE",
+                        html.Div("BUY 0.15–0.33 · RESOLVES 6–168H · HOLD TO SETTLE",
                                  style={"color": MUTED, "fontSize": "0.68rem",
                                         "letterSpacing": "0.1em"}),
                     ], style={"flex": "1"}),
@@ -285,7 +285,7 @@ def create_app() -> dash.Dash:
                 _cell([_label("WIN RATE"),
                        _value(f"{s['win_rate']*100:.0f}%",
                               _c(s['win_rate']-0.20) if s['settled'] else WHITE, "1.6rem"),
-                       html.Div("EXP ~27.4%", style={"color": MUTED, "fontSize": "0.66rem",
+                       html.Div("EXP ~28.2%", style={"color": MUTED, "fontSize": "0.66rem",
                                 "marginTop": "0.25rem", "letterSpacing": "0.1em"})]),
                 _cell([_label("STAKED"), _value(f"${total_staked:.0f}", size="1.6rem")]),
             ], 4, min_px=150)
@@ -307,8 +307,8 @@ def create_app() -> dash.Dash:
                            _kv("AVG ENTRY", f"{avg_entry:.3f}"),
                        ]),
                 _panel(PURPLE, "BACKTEST EDGE", "VALIDATED EXPECTATION",
-                       "+16.7%", PURPLE, [
-                           _kv("EXP WIN", "~27.4%"),
+                       "+19.8%", PURPLE, [
+                           _kv("EXP WIN", "~28.2%"),
                            _kv("HORIZON", "6–168H"),
                            _kv("SKEW", "NEGATIVE"),
                        ]),
