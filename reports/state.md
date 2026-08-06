@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-06T01:50:31.500045+00:00
+# Poly underdog paper state — 2026-08-06T04:25:07.186781+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **15** ($200.21)  ·  settled **108** (18W / 90L)
-- realized P&L **$-190.55**  ·  ROI **-18.5%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
-- last scan: 2026-08-06T01:44:11.906901+00:00
+- open **7** ($85.38)  ·  settled **116** (19W / 97L)
+- realized P&L **$-239.22**  ·  ROI **-20.9%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
+- last scan: 2026-08-06T04:13:01.806385+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,20 +42,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
-| Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Sto | ALKA | 0.200 | $14.04 | 2026-08-06T02:00:07.834728+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
 | Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | Ilbirs eSports | 0.270 | $14.83 | 2026-08-07T00:00:08.073620+00:00 |
-| National Bank Open: Learner Tien vs Gael Monfils | Gael Monfils | 0.270 | $14.83 | 2026-08-12T15:00:07.901703+00:00 |
-| New York Mets vs. Cleveland Guardians | Cleveland Guardians | 0.190 | $13.15 | 2026-08-12T22:40:07.745843+00:00 |
-| Miami Marlins vs. Atlanta Braves | Miami Marlins | 0.219 | $14.92 | 2026-08-12T23:15:08.446082+00:00 |
-| Chicago White Sox vs. Boston Red Sox | Chicago White Sox | 0.200 | $14.95 | 2026-08-12T23:10:07.507700+00:00 |
-| Washington Nationals vs. Philadelphia Phillies | Washington Nationals | 0.250 | $16.54 | 2026-08-12T22:40:08.215775+00:00 |
-| Los Angeles Angels vs. Baltimore Orioles | Los Angeles Angels | 0.180 | $17.35 | 2026-08-12T22:35:06.509898+00:00 |
-| Athletics vs. Cincinnati Reds | Athletics | 0.180 | $9.05 | 2026-08-12T22:40:07.210418+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Athletics vs. Cincinnati Reds | LOST | -9.05 |
+| Los Angeles Angels vs. Baltimore Orioles | LOST | -17.35 |
+| Washington Nationals vs. Philadelphia Phillies | WON | +49.62 |
+| Chicago White Sox vs. Boston Red Sox | LOST | -14.95 |
+| Miami Marlins vs. Atlanta Braves | LOST | -14.92 |
+| New York Mets vs. Cleveland Guardians | LOST | -13.15 |
+| National Bank Open: Learner Tien vs Gael Monfils | LOST | -14.83 |
 | National Bank Open: Alina Korneeva vs Emma Navarro | LOST | -14.90 |
 | Tampa Bay Rays vs. Colorado Rockies | LOST | -14.83 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.90 |
@@ -67,6 +66,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Counter-Strike: Nuclear TigeRES vs CYBERSHOKE Prospe | LOST | -14.83 |
 | Hagen: Maxim Mrva vs Guy Den Ouden | LOST | -17.02 |
 | Grodzisk Mazowiecki: Amit Vales vs Daniil Glinka | LOST | -14.92 |
+| Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Sto | LOST | -14.04 |
 | Warsaw: Katarzyna Kawa vs Justina Mikulskyte | WON | +34.77 |
 | Warsaw: Carol Young Suh Lee vs Aliona Falei | WON | +42.53 |
 | LoL: EDward Gaming vs Top Esports (BO3) - LPL Group  | LOST | -9.05 |
@@ -108,14 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.40 |
 | Toronto Blue Jays vs. Houston Astros | LOST | -14.95 |
 | Tampa Bay Rays vs. Colorado Rockies | LOST | -14.83 |
-| Canadian Open: Kamil Majchrzak vs Gael Monfils | WON | +46.62 |
-| San Francisco Giants vs. Texas Rangers | LOST | -17.51 |
-| Pittsburgh Pirates vs. Milwaukee Brewers | LOST | -16.92 |
-| Washington Nationals vs. Philadelphia Phillies | WON | +52.60 |
-| Will Elon Musk post <40 tweets from August 1 to Augu | WON | +7.11 |
-| Will the price of Bitcoin be above $62,000 on August | LOST | -3.99 |
-| Will Spider-Man: Brand New Day beat Avengers: Endgam | LOST | -3.59 |
-| LoL: LNG Esports vs Invictus Gaming (BO3) - LPL Grou | LOST | -2.33 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,7 +129,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 38 | 11% | -4% |
-| 0.20–0.25 | 30 | 27% | -21% |
-| 0.25–0.30 | 19 | 16% | -34% |
+| 0.15–0.20 | 41 | 10% | -15% |
+| 0.20–0.25 | 33 | 24% | -31% |
+| 0.25–0.30 | 21 | 19% | -19% |
 | 0.30–0.33 | 4 | 50% | +62% |
