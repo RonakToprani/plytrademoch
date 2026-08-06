@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-06T13:44:19.316532+00:00
+# Poly underdog paper state — 2026-08-06T16:51:46.367384+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($104.81)  ·  settled **116** (19W / 97L)
+- open **9** ($123.28)  ·  settled **116** (19W / 97L)
 - realized P&L **$-239.22**  ·  ROI **-20.9%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-06T13:15:40.312363+00:00
+- last scan: 2026-08-06T16:16:33.428665+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
 | Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | Ilbirs eSports | 0.270 | $14.83 | 2026-08-07T00:00:08.073620+00:00 |
 | Bitcoin Up or Down on August 6? | Down | 0.246 | $19.43 | 2026-08-06T16:00:07.360358+00:00 |
+| Will Ethereum reach $2,000 August 3-9? | Yes | 0.210 | $18.47 | 2026-08-10T04:00:07.800936+00:00 |
 
 ## Settled
 | market | result | P&L |
