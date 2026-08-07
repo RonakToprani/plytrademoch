@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-07T14:38:30.074581+00:00
+# Poly underdog paper state — 2026-08-07T17:48:03.505636+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($141.82)  ·  settled **118** (19W / 99L)
-- realized P&L **$-273.48**  ·  ROI **-23.2%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-07T14:23:07.173527+00:00
+- open **8** ($108.02)  ·  settled **120** (20W / 100L)
+- realized P&L **$-255.47**  ·  ROI **-21.0%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
+- last scan: 2026-08-07T17:24:03.514807+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,12 +45,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
 | Will Ethereum reach $2,000 August 3-9? | Yes | 0.210 | $18.47 | 2026-08-10T04:00:07.800936+00:00 |
 | Will Bitcoin reach $66,000 August 3-9? | Yes | 0.270 | $19.00 | 2026-08-10T04:00:07.855537+00:00 |
-| Bitcoin Up or Down on August 7? | Up | 0.320 | $16.58 | 2026-08-07T16:00:06.619414+00:00 |
-| Will the price of Bitcoin be above $64,000 on August | No | 0.280 | $17.22 | 2026-08-07T16:00:07.634785+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $64,000 on August | LOST | -17.22 |
+| Bitcoin Up or Down on August 7? | WON | +35.23 |
 | Bitcoin Up or Down on August 6? | LOST | -19.43 |
 | Athletics vs. Cincinnati Reds | LOST | -9.05 |
 | Los Angeles Angels vs. Baltimore Orioles | LOST | -17.35 |
@@ -109,8 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Canadian Open: Camilo Ugo Carabelli vs Cameron Norri | LOST | -17.35 |
 | National Bank Open: Tatjana Maria vs Caty McNally | WON | +28.63 |
 | St. Louis Cardinals vs. New York Yankees | WON | +44.19 |
-| National Bank Open: Aleksandar Vukic vs Daniel Altma | WON | +75.17 |
-| Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.40 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,5 +132,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
 | 0.20–0.25 | 34 | 24% | -35% |
-| 0.25–0.30 | 22 | 18% | -23% |
-| 0.30–0.33 | 4 | 50% | +62% |
+| 0.25–0.30 | 23 | 17% | -27% |
+| 0.30–0.33 | 5 | 60% | +96% |
