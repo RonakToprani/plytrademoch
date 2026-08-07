@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-06T23:07:05.686602+00:00
+# Poly underdog paper state — 2026-08-07T02:13:46.517770+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($122.85)  ·  settled **117** (19W / 98L)
-- realized P&L **$-258.65**  ·  ROI **-22.2%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-06T22:48:30.449038+00:00
+- open **9** ($124.60)  ·  settled **118** (19W / 99L)
+- realized P&L **$-273.48**  ·  ROI **-23.2%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
+- last scan: 2026-08-07T01:49:22.888927+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,9 +43,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
-| Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | Ilbirs eSports | 0.270 | $14.83 | 2026-08-07T00:00:08.073620+00:00 |
 | Will Ethereum reach $2,000 August 3-9? | Yes | 0.210 | $18.47 | 2026-08-10T04:00:07.800936+00:00 |
 | Will Bitcoin reach $66,000 August 3-9? | Yes | 0.270 | $19.00 | 2026-08-10T04:00:07.855537+00:00 |
+| Bitcoin Up or Down on August 7? | Up | 0.320 | $16.58 | 2026-08-07T16:00:06.619414+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -61,6 +61,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Alina Korneeva vs Emma Navarro | LOST | -14.90 |
 | Tampa Bay Rays vs. Colorado Rockies | LOST | -14.83 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.90 |
+| Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | LOST | -14.83 |
 | National Bank Open: Ignacio Buse vs Cameron Norrie | LOST | -11.40 |
 | T20 Lanka Premier League: Colombo Kaps vs Kandy Roya | LOST | -9.05 |
 | Plovdiv 2: Petr Nesterov vs Sebastian Sorger | LOST | -9.05 |
@@ -109,7 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | St. Louis Cardinals vs. New York Yankees | WON | +44.19 |
 | National Bank Open: Aleksandar Vukic vs Daniel Altma | WON | +75.17 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -14.40 |
-| Toronto Blue Jays vs. Houston Astros | LOST | -14.95 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,5 +133,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
 | 0.20–0.25 | 34 | 24% | -35% |
-| 0.25–0.30 | 21 | 19% | -19% |
+| 0.25–0.30 | 22 | 18% | -23% |
 | 0.30–0.33 | 4 | 50% | +62% |
