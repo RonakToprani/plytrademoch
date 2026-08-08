@@ -32,6 +32,10 @@ _LIVE_BAND = (0.15, 0.33)   # keep in sync with PaperTrader band_lo/band_hi
 _BANDS = [(0.02, 0.10), (0.12, 0.15), (0.15, 0.20), (0.15, 0.25), (0.15, 0.30),
           (0.15, 0.33), (0.20, 0.33), (0.30, 0.33), (0.33, 0.36), (0.36, 0.40),
           (0.80, 0.90), (0.90, 0.98)]
+# Bands whose recommendations are gated on significance — only these get the
+# (expensive) event-clustered bootstrap: the floor probe, the live band
+# headline, and the two ceiling probes.
+_CI_BANDS = {(0.12, 0.15), (0.15, 0.33), (0.33, 0.36), (0.36, 0.40)}
 
 # What the live config is graded against — the same universe, band and segment
 # filter the bot actually trades (2026-08-05 recalibration on the gated
@@ -60,7 +64,7 @@ def _band_calibration(feed: DataFeed, horizon_hours: int = 48) -> dict[tuple, di
     Falls back to the legacy cached path if the deep tables aren't built yet.
     """
     try:
-        from backtest.bigtest import Cell, collect
+        from backtest.bigtest import Cell, bootstrap_ci, collect
         from backtest.live import _NO_EDGE_SEGMENTS
 
         out: dict[tuple, dict] = {}
@@ -79,12 +83,25 @@ def _band_calibration(feed: DataFeed, horizon_hours: int = 48) -> dict[tuple, di
                 c.roi_sum += cell.roi_sum
                 c.px_sum += cell.px_sum
                 c.events |= cell.events
+                c.obs += cell.obs
+            # Event-clustered CI, so the recommendations below can distinguish
+            # "measured edge" from "positive-looking noise". Recommending a band
+            # change off a point estimate whose CI includes zero is how unproven
+            # flow gets bought (the FLOOR rec did exactly that on 2026-08-07/08).
+            # Bootstrapped only where a rec is gated on it — the big reference
+            # bands (0.02-0.10, 0.80+) would triple the nightly runtime for a
+            # CI nothing consumes.
+            ci_lo, ci_hi = (bootstrap_ci(c.obs)
+                            if (lo, hi) in _CI_BANDS and len(c.events) >= 2
+                            else (None, None))
             out[(lo, hi)] = {
                 "n": c.n,
                 "events": len(c.events),
                 "win_rate": c.win_rate,
                 "mean_price": c.mean_px,
                 "buy_roi": c.roi,
+                "ci_lo": ci_lo,
+                "ci_hi": ci_hi,
             }
         if any(v["n"] for v in out.values()):
             return out
@@ -122,9 +139,12 @@ def _band_calibration_legacy(feed: DataFeed, horizon_hours: int = 48) -> dict[tu
         n = a["n"]
         out[b] = {
             "n": n,
+            "events": n,        # legacy path has no event keys; bets ≈ events
             "win_rate": (a["win"] / n) if n else 0.0,
             "mean_price": (a["psum"] / n) if n else 0.0,
             "buy_roi": (a["roi"] / n) if n else 0.0,
+            "ci_lo": None,      # no cluster bootstrap on the legacy path —
+            "ci_hi": None,      # significance-gated recs stay silent
         }
     return out
 
@@ -225,9 +245,12 @@ def _recommendations(ep: dict, cal: dict, breakdown: dict) -> list[str]:
                     f"${sub['pnl']:+.2f}). fill_floor now equals band_lo, so this "
                     "bucket must not grow — if it does, the depth check regressed.")
 
-    # Which live sub-band looks best out-of-sample right now. Compare against
-    # _LIVE_BAND rather than a hardcoded pair — the live band moved to 0.15-0.30
-    # and hardcoding (0.10, 0.20) made this KeyError once it left _BANDS.
+    # Which live sub-band looks best out-of-sample right now. FLOW-ADJUSTED:
+    # total profit is ROI x independent events, and flow is this book's binding
+    # constraint — the wide band was chosen precisely because 0.15-0.20's higher
+    # per-bet ROI rides on half the events. A narrowing rec must clear the bar
+    # on expected TOTAL profit (roi x events), not per-bet ROI, or it just
+    # re-litigates the flow-vs-ROI decision every night.
     subbands = {b: cal[b] for b in [(0.15, 0.20), (0.15, 0.25), (0.15, 0.30),
                                     (0.20, 0.33)]
                 if b in cal and cal[b]["n"] >= 20}
@@ -235,23 +258,32 @@ def _recommendations(ep: dict, cal: dict, breakdown: dict) -> list[str]:
     if subbands and live:
         best = max(subbands, key=lambda b: subbands[b]["buy_roi"])
         bd = cal[best]
-        recs.append(f"BAND: {best[0]:.2f}–{best[1]:.2f} leads out-of-sample "
-                    f"(win {bd['win_rate']*100:.0f}%, ROI {bd['buy_roi']*100:+.0f}%, n={bd['n']}). "
-                    + ("Consider narrowing the live band to it."
-                       if best != _LIVE_BAND and bd["buy_roi"] > live["buy_roi"] + 0.05
-                       else f"Current {_LIVE_BAND[0]:.2f}–{_LIVE_BAND[1]:.2f} band "
-                            "remains well-placed."))
+        flow_frac = bd["events"] / max(live["events"], 1)
+        beats_total = bd["buy_roi"] * bd["events"] > live["buy_roi"] * live["events"]
+        recs.append(f"BAND: {best[0]:.2f}–{best[1]:.2f} leads per-bet out-of-sample "
+                    f"(win {bd['win_rate']*100:.0f}%, ROI {bd['buy_roi']*100:+.0f}%, "
+                    f"n={bd['n']}) on {flow_frac*100:.0f}% of the live band's events. "
+                    + ("Flow-adjusted it beats the live band — consider narrowing."
+                       if best != _LIVE_BAND and beats_total
+                       else f"Flow-adjusted, the {_LIVE_BAND[0]:.2f}–{_LIVE_BAND[1]:.2f} "
+                            "band still wins on total expected profit — keep it."))
 
     # Adjacent-strategy signals. The ceiling question: is there edge left just
     # above the band? On the gated universe 0.30-0.33 is in the band (+10.7%
     # [+4.5,+17.5]); 0.33-0.36 is dead (+3.7% n.s.) — this watches for change.
+    # A raise needs a SIGNIFICANT slice (event-clustered CI floor above +3%),
+    # not a hopeful point estimate.
     for hi_band in ((0.33, 0.36), (0.36, 0.40)):
         c2 = cal.get(hi_band)
         if c2 and c2["n"] >= 20:
-            verdict = ("still carries edge — consider raising the ceiling"
-                       if c2["buy_roi"] > 0.10 else "too thin to add — keep the ceiling")
+            sig = c2.get("ci_lo") is not None and c2["ci_lo"] > 0.03
+            verdict = ("carries a SIGNIFICANT edge — consider raising the ceiling"
+                       if sig and c2["buy_roi"] > 0.10
+                       else "no significant edge — keep the ceiling")
+            ci = (f", CI [{c2['ci_lo']*100:+.0f}%, {c2['ci_hi']*100:+.0f}%]"
+                  if c2.get("ci_lo") is not None else "")
             recs.append(f"CEILING: {hi_band[0]:.2f}–{hi_band[1]:.2f} {verdict} "
-                        f"(ROI {c2['buy_roi']*100:+.0f}%, n={c2['n']}).")
+                        f"(ROI {c2['buy_roi']*100:+.0f}%{ci}, n={c2['n']}).")
     fav = cal[(0.80, 0.90)]
     if fav["n"] >= 20 and fav["buy_roi"] < -0.05:
         recs.append(f"ADJACENT: strong favorites (0.80–0.90) buy-ROI {fav['buy_roi']*100:+.0f}% "
@@ -259,11 +291,18 @@ def _recommendations(ep: dict, cal: dict, breakdown: dict) -> list[str]:
                     "variant is the same edge from the other end; already captured.")
     low = cal.get((0.12, 0.15))
     if low and low["n"] >= 20:
-        verdict = "also underpriced" if low["buy_roi"] > 0.10 else "NOT an edge (efficient/negative)"
-        recs.append(f"FLOOR: 0.12–0.15 is {verdict} "
-                    f"(ROI {low['buy_roi']*100:+.0f}%, n={low['n']}) — "
-                    + ("could extend the band down." if low["buy_roi"] > 0.10
-                       else f"keep the {_LIVE_BAND[0]:.2f} floor."))
+        # Same significance gate. On 2026-08-07/08 this rec said "could extend
+        # the band down" off +10% whose CI was [-1.4, +20.6] — i.e. noise. A
+        # floor extension needs the CI floor above +3%, same bar as the ceiling.
+        sig = low.get("ci_lo") is not None and low["ci_lo"] > 0.03
+        ci = (f", CI [{low['ci_lo']*100:+.0f}%, {low['ci_hi']*100:+.0f}%]"
+              if low.get("ci_lo") is not None else "")
+        recs.append(f"FLOOR: 0.12–0.15 "
+                    + (f"carries a SIGNIFICANT edge (ROI {low['buy_roi']*100:+.0f}%{ci}, "
+                       f"n={low['n']}) — could extend the band down."
+                       if sig and low["buy_roi"] > 0.10
+                       else f"has no significant edge (ROI {low['buy_roi']*100:+.0f}%{ci}, "
+                            f"n={low['n']}) — keep the {_LIVE_BAND[0]:.2f} floor."))
 
     if breakdown:
         worst = min(breakdown, key=lambda k: breakdown[k]["roi"])
@@ -299,16 +338,18 @@ def run_review(send: bool = True) -> str:
         f"(all-time: {events})",
         "",
         "## Edge by price band (356k-market universe, 48h, no-edge segments excluded)",
-        "| band | n | events | win% | mean px | buy ROI |",
-        "|------|---|--------|------|---------|---------|",
+        "| band | n | events | win% | mean px | buy ROI | 95% CI (event-clustered) |",
+        "|------|---|--------|------|---------|---------|--------------------------|",
     ]
     for b in _BANDS:
         d = cal[b]
         if d["n"]:
             live = " **(live)**" if b == _LIVE_BAND else ""
+            ci = (f"[{d['ci_lo']*100:+.0f}%, {d['ci_hi']*100:+.0f}%]"
+                  if d.get("ci_lo") is not None else "—")
             lines.append(f"| {b[0]:.2f}–{b[1]:.2f}{live} | {d['n']} | {d['events']} | "
                          f"{d['win_rate']*100:.0f}% | {d['mean_price']:.3f} | "
-                         f"{d['buy_roi']*100:+.0f}% |")
+                         f"{d['buy_roi']*100:+.0f}% | {ci} |")
     if breakdown:
         lines += ["", "## Paper results by entry price",
                   "| bucket | n | win% | ROI |", "|--------|---|------|-----|"]
