@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-08T06:15:16.171987+00:00
+# Poly underdog paper state — 2026-08-08T09:22:20.177658+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,22 +30,20 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($127.02)  ·  settled **120** (20W / 100L)
-- realized P&L **$-255.47**  ·  ROI **-21.0%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
-- last scan: 2026-08-08T05:57:47.809957+00:00
+- open **7** ($116.00)  ·  settled **123** (20W / 103L)
+- realized P&L **$-286.91**  ·  ROI **-23.0%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
+- last scan: 2026-08-08T08:58:43.529217+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| US announces end of Iranian blockade by August 7, 20 | Yes | 0.213 | $1.75 | 2026-08-07T23:59:07.628570+00:00 |
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| Israel agrees to Board of Peace Gaza plan by August  | Yes | 0.264 | $14.79 | 2026-08-07T23:59:09.111374+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
-| Will the next Google Gemini Pro model be released by | Yes | 0.256 | $14.90 | 2026-08-07T16:00:07.416769+00:00 |
 | Will Ethereum reach $2,000 August 3-9? | Yes | 0.210 | $18.47 | 2026-08-10T04:00:07.800936+00:00 |
 | Will Bitcoin reach $66,000 August 3-9? | Yes | 0.270 | $19.00 | 2026-08-10T04:00:07.855537+00:00 |
 | Will Marcelo attend Cristiano Ronaldo's wedding? | Yes | 0.260 | $19.00 | 2026-08-08T23:59:07.245625+00:00 |
+| US announces end of Iranian blockade by August 9, 20 | Yes | 0.220 | $20.42 | 2026-08-09T23:59:07.933753+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -67,6 +65,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Ignacio Buse vs Cameron Norrie | LOST | -11.40 |
 | T20 Lanka Premier League: Colombo Kaps vs Kandy Roya | LOST | -9.05 |
 | Plovdiv 2: Petr Nesterov vs Sebastian Sorger | LOST | -9.05 |
+| Will the next Google Gemini Pro model be released by | LOST | -14.90 |
 | Warsaw: Weronika Falkowska vs Noma Noha Akugue | WON | +42.51 |
 | The Hundred, Women: Trent Rockets vs Birmingham Phoe | LOST | -13.15 |
 | Counter-Strike: Nuclear TigeRES vs CYBERSHOKE Prospe | LOST | -14.83 |
@@ -99,6 +98,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Adam Walton vs Jenson Brooksby | LOST | -14.92 |
 | Plovdiv 2: Hernan Casanova vs Yannick Alexandrescou | LOST | -13.15 |
 | Grodzisk Mazowiecki: Alexander Donski vs Takuya Kuma | LOST | -12.53 |
+| Israel agrees to Board of Peace Gaza plan by August  | LOST | -14.79 |
 | Warsaw: Linda Klimovicova vs Elizara Yaneva | WON | +91.93 |
 | Hagen: Thiago Monteiro vs Tom Gentzsch | LOST | -9.05 |
 | Warsaw: Marcelina Podlinska vs Vendula Valdmannova | LOST | -11.40 |
@@ -108,8 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 4? | LOST | -17.51 |
 | National Bank Open: Xinyu Wang vs Daria Kasatkina | LOST | -17.39 |
 | Canadian Open: Camilo Ugo Carabelli vs Cameron Norri | LOST | -17.35 |
-| National Bank Open: Tatjana Maria vs Caty McNally | WON | +28.63 |
-| St. Louis Cardinals vs. New York Yankees | WON | +44.19 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,6 +130,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
-| 0.20–0.25 | 34 | 24% | -35% |
-| 0.25–0.30 | 23 | 17% | -27% |
+| 0.20–0.25 | 35 | 23% | -36% |
+| 0.25–0.30 | 25 | 16% | -33% |
 | 0.30–0.33 | 5 | 60% | +96% |
