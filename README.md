@@ -23,16 +23,6 @@ assumptions (0.03), significant at every hold horizon 6–168h. The edge *rises*
 with market volume (dead below $30k, +22.5% above $100k) and decays past 168h
 for everything except geopolitics (extended to 240h, measured).
 
-## Project timeline
-
-| period | what happened |
-|---|---|
-| 2026-03 | Initial build: whale copy-trading bot (scanner, risk engine, dashboard) |
-| 2026-07 | Backtest killed the copy-trading thesis (no edge). Pivot to structural edges; underdog band identified and validated; paper-trading system launched on launchd |
-| 2026-08-01→03 | First live audits: settlement-cache bug, Kelly sizing inversion, sub-floor fill leak — found and fixed; big-sample recalibration (356k markets, event-clustered bootstrap) |
-| 2026-08-05→06 | Structural recalibration: game-winner flow measured dead and gated out, band 0.15→0.33, $10k–30k volume tier measured dead, per-segment 240h window for geopolitics |
-| 2026-08-08 | Recommendation engine made significance- and flow-aware; repo cleaned of the retired copy-trading system |
-
 ## Layout
 
 ```
