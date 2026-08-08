@@ -9,11 +9,9 @@ purple/amber accents. Reads paper_underdog.db live, auto-refreshes. Launch with
 from __future__ import annotations
 
 import os
-import time
 from datetime import datetime, timezone
 
 import dash
-import httpx
 from dash import Input, Output, dcc, html
 import plotly.graph_objects as go
 
@@ -24,40 +22,7 @@ from paper.store import PaperStore
 BANKROLL = float(os.environ.get("POLY_BANKROLL", "1000"))
 _REFRESH_MS = 30_000
 
-_CLOB = "https://clob.polymarket.com"
-_MARK_TTL = 25.0          # seconds — just under the refresh interval
-_mark_cache: dict[str, object] = {"ts": 0.0, "px": {}}
-
-
-def _marks(token_ids: list[str]) -> dict[str, float]:
-    """
-    Best bid ("SELL" side = what the position could be exited at) per token, via
-    one batched CLOB call. TTL-cached so a browser refresh storm can't hammer the
-    API. Returns {} on any failure — marks are a display nicety, never a reason
-    for the page to error out.
-    """
-    if not token_ids:
-        return {}
-    now = time.monotonic()
-    cached = _mark_cache["px"]
-    if isinstance(cached, dict) and now - float(_mark_cache["ts"]) < _MARK_TTL \
-            and all(t in cached for t in token_ids):
-        return cached  # type: ignore[return-value]
-    try:
-        r = httpx.post(f"{_CLOB}/prices",
-                       json=[{"token_id": t, "side": "SELL"} for t in token_ids],
-                       timeout=8.0)
-        r.raise_for_status()
-        px = {}
-        for tok, sides in (r.json() or {}).items():
-            try:
-                px[tok] = float(sides["SELL"])
-            except (KeyError, TypeError, ValueError):
-                continue
-    except (httpx.HTTPError, ValueError):
-        return cached if isinstance(cached, dict) else {}  # type: ignore[return-value]
-    _mark_cache["ts"], _mark_cache["px"] = now, px
-    return px
+from paper.marks import marks as _marks  # shared with the Telegram `pnl` reply
 
 # palette (from the reference aesthetic)
 BLACK = "#000000"

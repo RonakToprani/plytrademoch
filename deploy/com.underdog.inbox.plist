@@ -16,7 +16,7 @@
     <!-- Telegram drops un-acknowledged updates after ~24h, so poll often enough
          that a forwarded rec is never lost even across a long idle stretch. -->
     <key>StartInterval</key>
-    <integer>600</integer>
+    <integer>60</integer>
     <key>RunAtLoad</key>
     <true/>
     <key>StandardOutPath</key>

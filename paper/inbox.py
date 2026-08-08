@@ -97,8 +97,92 @@ def _extract(update: dict) -> dict | None:
     }
 
 
+# ---------------------------------------------------------------- commands
+#
+# Anything in _COMMANDS sent to the bot (by the configured chat only) gets a
+# live book card back instead of being archived as a note. Poll cadence is the
+# reply latency — the launchd interval is 60s for this reason.
+_COMMANDS = frozenset({"pnl", "book", "detail", "details", "status", "stats"})
+
+
+def _is_command(text: str) -> bool:
+    return text.strip().lstrip("/").lower() in _COMMANDS
+
+
+def _fmt_usd(x: float, sign: bool = True) -> str:
+    s = "+" if sign and x >= 0 else ""
+    return f"{s}${x:,.2f}" if x >= 0 or not sign else f"-${abs(x):,.2f}"
+
+
+def _book_card(db_path: str = _DB_PATH) -> str:
+    """The dashboard's headline panels as one monospace Telegram message."""
+    from paper.marks import marks
+    from paper.review import _EXP_ROI, _EXP_WIN, _STRATEGY_EPOCH, _epoch_stats
+    from paper.store import PaperStore
+
+    bankroll = float(os.environ.get("POLY_BANKROLL", "1000"))
+    store = PaperStore(db_path)
+    try:
+        s = store.stats()
+        opens = store.open_bets()
+        ep = _epoch_stats(store)
+    finally:
+        store.close()
+
+    px = marks([b.token_id for b in opens])
+    unreal = {b.id: b.shares * px[b.token_id] - b.stake_usd
+              for b in opens if b.token_id in px}
+    unreal_total = sum(unreal.values())
+    realized = s["realized_pnl"]
+    portfolio = bankroll + realized + unreal_total
+    deployed = s["open_stake"] / bankroll if bankroll else 0.0
+    now = datetime.now(timezone.utc).strftime("%H:%M:%S")
+
+    lines = [
+        "POLY TRADING · DRY-RUN",
+        f"updated {now} UTC · ${bankroll:,.0f} bankroll",
+        "",
+        f"OPEN BOOK   {s['open']} pos · ${s['open_stake']:,.2f} "
+        f"({deployed*100:.1f}% deployed)",
+        f"REALIZED    {_fmt_usd(realized)} · ROI {s['roi']*100:+.1f}%",
+        f"UNREALIZED  {_fmt_usd(unreal_total)} (marked to live bid)"
+        if unreal else "UNREALIZED  — (no marks)",
+        f"PORTFOLIO   ${portfolio:,.2f} "
+        f"({(realized + unreal_total)/bankroll*100:+.1f}%)",
+        "",
+        f"SETTLED     {s['won']}W · {s['lost']}L · win {s['win_rate']*100:.0f}% "
+        f"(exp ~{_EXP_WIN*100:.0f}%)",
+        f"SINCE {_STRATEGY_EPOCH}  {ep['won']}W · {ep['lost']}L over "
+        f"{ep['events']} events · {_fmt_usd(ep['realized_pnl'])} "
+        f"({ep['roi']*100:+.1f}%)",
+        f"EXPECTATION {_EXP_ROI*100:+.1f}%/bet · gate {ep['events']}/100 events",
+    ]
+    if opens:
+        lines += ["", "OPEN POSITIONS"]
+        for b in sorted(opens, key=lambda b: b.resolves_at or ""):
+            mark = (f" → {_fmt_usd(unreal[b.id])}" if b.id in unreal else "")
+            q = (b.question or b.slug)[:34]
+            lines.append(f"· {q}  @{b.entry_price:.2f} ${b.stake_usd:.0f}{mark}")
+    return "\n".join(lines)
+
+
+def _reply(token: str, chat_id: str, text: str) -> bool:
+    import html as _html
+    try:
+        r = httpx.post(_API.format(token=token, method="sendMessage"),
+                       json={"chat_id": chat_id, "parse_mode": "HTML",
+                             "text": f"<pre>{_html.escape(text)}</pre>"},
+                       timeout=15)
+        r.raise_for_status()
+        return True
+    except httpx.HTTPError as exc:
+        logger.warning("inbox_reply_failed", error=str(exc))
+        return False
+
+
 def poll(limit: int = 100, timeout: int = 0, db_path: str = _DB_PATH) -> int:
-    """Fetch new updates, archive them, acknowledge. Returns count stored."""
+    """Fetch new updates, archive them (or answer commands), acknowledge.
+    Returns count stored."""
     token = settings.telegram_bot_token
     if not token:
         logger.info("inbox_disabled", reason="no telegram token")
@@ -122,12 +206,25 @@ def poll(limit: int = 100, timeout: int = 0, db_path: str = _DB_PATH) -> int:
 
     os.makedirs(_INBOX_DIR, exist_ok=True)
     stored = 0
+    my_chat = str(settings.telegram_chat_id or "")
     for up in updates:
         rec = _extract(up)
         if rec is None:
             continue
         if db.execute("SELECT 1 FROM inbox WHERE update_id=?",
                       (rec["update_id"],)).fetchone():
+            continue
+        # Commands get a live book card back instead of an archive note. The
+        # row is still inserted (saved_path='') so the offset advances past
+        # them; only the configured chat is answered.
+        if _is_command(rec["text"]) and rec["chat_id"] == my_chat:
+            _reply(token, rec["chat_id"], _book_card(db_path))
+            db.execute(
+                "INSERT INTO inbox (update_id, ts, chat_id, sender, origin, text, saved_path)"
+                " VALUES (?,?,?,?,?,?,?)",
+                (rec["update_id"], rec["ts"], rec["chat_id"], rec["sender"],
+                 rec["origin"], rec["text"], ""))
+            logger.info("inbox_command", cmd=rec["text"].strip().lower())
             continue
         day = rec["ts"][:10]
         name = f"{day}-{rec['update_id']}-{_slug(rec['text'].splitlines()[0])}.md"
