@@ -59,6 +59,22 @@ python -m backtest.bigtest report# calibration: band curve, segments, years
 pytest                           # test suite
 ```
 
+### Telegram bot
+
+Send the bot `pnl`, `book`, `detail`, `status` or `stats` and it replies with a
+live screenshot of the dashboard plus a headline caption (falls back to a text
+card if the screenshot can't be produced). Replies are served by the inbox
+poller, so the launchd `StartInterval` (60s) is the reply latency — and note
+that changing it needs `launchctl bootout` + `bootstrap`, since `kickstart`
+does not re-read a plist. Anything else sent to the bot is archived to
+`reports/inbox/` for an agent to read.
+
+Screenshots need the Playwright browser binary, installed once per machine:
+
+```bash
+pip install -r requirements.txt && playwright install chromium
+```
+
 Operations notes: the Mac must stay awake (sleep silently stalls launchd
 timers — check `logs/cycle.log` timestamps, not the dashboard). A nightly
 cloud reviewer (Claude routine) reads `EXPECTATIONS.md` + `reports/state.md`

@@ -180,6 +180,40 @@ def _reply(token: str, chat_id: str, text: str) -> bool:
         return False
 
 
+def _reply_photo(token: str, chat_id: str, png: str, caption: str) -> bool:
+    """Send the dashboard screenshot. Caption is capped at Telegram's 1024."""
+    import html as _html
+    try:
+        with open(png, "rb") as fh:
+            r = httpx.post(
+                _API.format(token=token, method="sendPhoto"),
+                data={"chat_id": chat_id, "parse_mode": "HTML",
+                      "caption": f"<pre>{_html.escape(caption[:900])}</pre>"},
+                files={"photo": ("dashboard.png", fh, "image/png")},
+                timeout=60)
+        r.raise_for_status()
+        return True
+    except (httpx.HTTPError, OSError) as exc:
+        logger.warning("inbox_photo_failed", error=str(exc))
+        return False
+
+
+def _answer(token: str, chat_id: str) -> None:
+    """Answer a command: dashboard screenshot + headline caption, falling back
+    to the text card whenever the screenshot can't be produced."""
+    card = _book_card()
+    headline = "\n".join(card.split("\n\n")[:2])   # title block + book summary
+    png = None
+    try:
+        from paper.snapshot import capture
+        png = capture(os.path.join(_INBOX_DIR, ".dashboard.png"))
+    except Exception as exc:                        # noqa: BLE001
+        logger.warning("snapshot_error", error=str(exc))
+    if png and _reply_photo(token, chat_id, png, headline):
+        return
+    _reply(token, chat_id, card)
+
+
 def poll(limit: int = 100, timeout: int = 0, db_path: str = _DB_PATH) -> int:
     """Fetch new updates, archive them (or answer commands), acknowledge.
     Returns count stored."""
@@ -218,7 +252,7 @@ def poll(limit: int = 100, timeout: int = 0, db_path: str = _DB_PATH) -> int:
         # row is still inserted (saved_path='') so the offset advances past
         # them; only the configured chat is answered.
         if _is_command(rec["text"]) and rec["chat_id"] == my_chat:
-            _reply(token, rec["chat_id"], _book_card(db_path))
+            _answer(token, rec["chat_id"])
             db.execute(
                 "INSERT INTO inbox (update_id, ts, chat_id, sender, origin, text, saved_path)"
                 " VALUES (?,?,?,?,?,?,?)",

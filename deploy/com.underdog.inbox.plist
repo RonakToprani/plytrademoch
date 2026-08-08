@@ -13,8 +13,10 @@
     </array>
     <key>WorkingDirectory</key>
     <string>/Users/ronaktoprani/Documents/plytrademoch</string>
-    <!-- Telegram drops un-acknowledged updates after ~24h, so poll often enough
-         that a forwarded rec is never lost even across a long idle stretch. -->
+    <!-- 60s: this poll interval IS the reply latency for the bot's
+         pnl/detail commands, and Telegram drops un-acknowledged updates after
+         ~24h. NOTE: changing StartInterval needs bootout+bootstrap to take
+         effect — `launchctl kickstart` does NOT re-read the plist. -->
     <key>StartInterval</key>
     <integer>60</integer>
     <key>RunAtLoad</key>
