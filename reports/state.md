@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-08T09:22:20.177658+00:00
+# Poly underdog paper state — 2026-08-08T12:29:41.785753+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($116.00)  ·  settled **123** (20W / 103L)
+- open **8** ($129.41)  ·  settled **123** (20W / 103L)
 - realized P&L **$-286.91**  ·  ROI **-23.0%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-08T08:58:43.529217+00:00
+- last scan: 2026-08-08T11:59:37.184293+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,6 +44,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $66,000 August 3-9? | Yes | 0.270 | $19.00 | 2026-08-10T04:00:07.855537+00:00 |
 | Will Marcelo attend Cristiano Ronaldo's wedding? | Yes | 0.260 | $19.00 | 2026-08-08T23:59:07.245625+00:00 |
 | US announces end of Iranian blockade by August 9, 20 | Yes | 0.220 | $20.42 | 2026-08-09T23:59:07.933753+00:00 |
+| Bitcoin Up or Down on August 8? | Down | 0.320 | $13.41 | 2026-08-08T16:00:07.750849+00:00 |
 
 ## Settled
 | market | result | P&L |
