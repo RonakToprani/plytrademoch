@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-08T15:36:56.096934+00:00
+# Poly underdog paper state — 2026-08-08T18:42:42.674083+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($129.41)  ·  settled **123** (20W / 103L)
-- realized P&L **$-286.91**  ·  ROI **-23.0%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-08T15:00:33.183801+00:00
+- open **7** ($116.00)  ·  settled **124** (20W / 104L)
+- realized P&L **$-300.32**  ·  ROI **-23.9%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
+- last scan: 2026-08-08T18:31:45.426801+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,11 +44,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $66,000 August 3-9? | Yes | 0.270 | $19.00 | 2026-08-10T04:00:07.855537+00:00 |
 | Will Marcelo attend Cristiano Ronaldo's wedding? | Yes | 0.260 | $19.00 | 2026-08-08T23:59:07.245625+00:00 |
 | US announces end of Iranian blockade by August 9, 20 | Yes | 0.220 | $20.42 | 2026-08-09T23:59:07.933753+00:00 |
-| Bitcoin Up or Down on August 8? | Down | 0.320 | $13.41 | 2026-08-08T16:00:07.750849+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 8? | LOST | -13.41 |
 | Will the price of Bitcoin be above $64,000 on August | LOST | -17.22 |
 | Bitcoin Up or Down on August 7? | WON | +35.23 |
 | Bitcoin Up or Down on August 6? | LOST | -19.43 |
@@ -108,7 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Dota 2: BetBoom Team vs OG (BO3) - 1win Essence Play | LOST | -14.40 |
 | Bitcoin Up or Down on August 4? | LOST | -17.51 |
 | National Bank Open: Xinyu Wang vs Daria Kasatkina | LOST | -17.39 |
-| Canadian Open: Camilo Ugo Carabelli vs Cameron Norri | LOST | -17.35 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,4 +132,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 41 | 10% | -15% |
 | 0.20–0.25 | 35 | 23% | -36% |
 | 0.25–0.30 | 25 | 16% | -33% |
-| 0.30–0.33 | 5 | 60% | +96% |
+| 0.30–0.33 | 6 | 50% | +66% |
