@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-09T19:44:18.113148+00:00
+# Poly underdog paper state — 2026-08-09T22:50:35.130567+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($182.81)  ·  settled **126** (21W / 105L)
-- realized P&L **$-246.66**  ·  ROI **-19.0%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
-- last scan: 2026-08-09T19:09:07.768478+00:00
+- open **10** ($166.13)  ·  settled **127** (21W / 106L)
+- realized P&L **$-263.34**  ·  ROI **-20.0%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
+- last scan: 2026-08-09T22:40:18.556264+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,11 +47,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
-| Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | Team Heretics | 0.290 | $16.68 | 2026-08-09T21:00:06.956285+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
 | Bitcoin Up or Down on August 9? | WON | +73.09 |
 | Will Independiente Santa Fe win on 2026-08-09? | LOST | -19.43 |
 | Bitcoin Up or Down on August 8? | LOST | -13.41 |
@@ -111,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Warsaw: Marcelina Podlinska vs Vendula Valdmannova | LOST | -11.40 |
 | Warsaw: Elsa Jacquemot vs Carol Young Suh Lee | LOST | -14.40 |
 | Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse B | LOST | -14.40 |
-| Dota 2: BetBoom Team vs OG (BO3) - 1win Essence Play | LOST | -14.40 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -135,5 +134,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
 | 0.20–0.25 | 36 | 25% | -14% |
-| 0.25–0.30 | 26 | 15% | -36% |
+| 0.25–0.30 | 27 | 15% | -39% |
 | 0.30–0.33 | 6 | 50% | +66% |
