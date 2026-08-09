@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-09T16:38:13.352121+00:00
+# Poly underdog paper state — 2026-08-09T19:44:18.113148+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($202.24)  ·  settled **125** (20W / 105L)
-- realized P&L **$-319.75**  ·  ROI **-25.0%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-09T16:08:12.010327+00:00
+- open **11** ($182.81)  ·  settled **126** (21W / 105L)
+- realized P&L **$-246.66**  ·  ROI **-19.0%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
+- last scan: 2026-08-09T19:09:07.768478+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,13 +46,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US announces end of Iranian blockade by August 9, 20 | Yes | 0.220 | $20.42 | 2026-08-09T23:59:07.933753+00:00 |
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
-| Bitcoin Up or Down on August 9? | Up | 0.210 | $19.43 | 2026-08-09T16:00:07.676660+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | Team Heretics | 0.290 | $16.68 | 2026-08-09T21:00:06.956285+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 9? | WON | +73.09 |
 | Will Independiente Santa Fe win on 2026-08-09? | LOST | -19.43 |
 | Bitcoin Up or Down on August 8? | LOST | -13.41 |
 | Will the price of Bitcoin be above $64,000 on August | LOST | -17.22 |
@@ -112,7 +112,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Warsaw: Elsa Jacquemot vs Carol Young Suh Lee | LOST | -14.40 |
 | Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse B | LOST | -14.40 |
 | Dota 2: BetBoom Team vs OG (BO3) - 1win Essence Play | LOST | -14.40 |
-| Bitcoin Up or Down on August 4? | LOST | -17.51 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -135,6 +134,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
-| 0.20–0.25 | 35 | 23% | -36% |
+| 0.20–0.25 | 36 | 25% | -14% |
 | 0.25–0.30 | 26 | 15% | -36% |
 | 0.30–0.33 | 6 | 50% | +66% |
