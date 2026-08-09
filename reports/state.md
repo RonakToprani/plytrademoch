@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-09T04:05:15.252164+00:00
+# Poly underdog paper state — 2026-08-09T07:12:24.298393+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($153.90)  ·  settled **125** (20W / 105L)
+- open **10** ($173.33)  ·  settled **125** (20W / 105L)
 - realized P&L **$-319.75**  ·  ROI **-25.0%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-09T03:34:25.891374+00:00
+- last scan: 2026-08-09T06:35:22.711683+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,6 +46,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US announces end of Iranian blockade by August 9, 20 | Yes | 0.220 | $20.42 | 2026-08-09T23:59:07.933753+00:00 |
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
+| Bitcoin Up or Down on August 9? | Up | 0.210 | $19.43 | 2026-08-09T16:00:07.676660+00:00 |
 
 ## Settled
 | market | result | P&L |
