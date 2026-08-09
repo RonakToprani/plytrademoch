@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-08T21:49:32.979964+00:00
+# Poly underdog paper state — 2026-08-09T00:57:04.907639+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($135.43)  ·  settled **124** (20W / 104L)
-- realized P&L **$-300.32**  ·  ROI **-23.9%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-08T21:32:37.460282+00:00
+- open **9** ($153.90)  ·  settled **125** (20W / 105L)
+- realized P&L **$-319.75**  ·  ROI **-25.0%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
+- last scan: 2026-08-09T00:33:33.726208+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,11 +44,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $66,000 August 3-9? | Yes | 0.270 | $19.00 | 2026-08-10T04:00:07.855537+00:00 |
 | Will Marcelo attend Cristiano Ronaldo's wedding? | Yes | 0.260 | $19.00 | 2026-08-08T23:59:07.245625+00:00 |
 | US announces end of Iranian blockade by August 9, 20 | Yes | 0.220 | $20.42 | 2026-08-09T23:59:07.933753+00:00 |
-| Will Independiente Santa Fe win on 2026-08-09? | No | 0.250 | $19.43 | 2026-08-09T19:00:07.216256+00:00 |
+| US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
+| Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Independiente Santa Fe win on 2026-08-09? | LOST | -19.43 |
 | Bitcoin Up or Down on August 8? | LOST | -13.41 |
 | Will the price of Bitcoin be above $64,000 on August | LOST | -17.22 |
 | Bitcoin Up or Down on August 7? | WON | +35.23 |
@@ -108,7 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse B | LOST | -14.40 |
 | Dota 2: BetBoom Team vs OG (BO3) - 1win Essence Play | LOST | -14.40 |
 | Bitcoin Up or Down on August 4? | LOST | -17.51 |
-| National Bank Open: Xinyu Wang vs Daria Kasatkina | LOST | -17.39 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,5 +133,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
 | 0.20–0.25 | 35 | 23% | -36% |
-| 0.25–0.30 | 25 | 16% | -33% |
+| 0.25–0.30 | 26 | 15% | -36% |
 | 0.30–0.33 | 6 | 50% | +66% |
