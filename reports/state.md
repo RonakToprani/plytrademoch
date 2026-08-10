@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-10T17:30:38.576277+00:00
+# Poly underdog paper state — 2026-08-10T20:38:16.824066+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($124.13)  ·  settled **131** (21W / 110L)
+- open **9** ($140.71)  ·  settled **131** (21W / 110L)
 - realized P&L **$-334.64**  ·  ROI **-24.1%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-10T17:15:54.813913+00:00
+- last scan: 2026-08-10T20:16:49.688620+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
 | Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | Leviatan Esports | 0.330 | $15.89 | 2026-08-11T03:00:07.611888+00:00 |
+| Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 
 ## Settled
 | market | result | P&L |
