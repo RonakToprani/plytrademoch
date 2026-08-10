@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-10T14:23:30.889151+00:00
+# Poly underdog paper state — 2026-08-10T17:30:38.576277+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($121.65)  ·  settled **130** (21W / 109L)
-- realized P&L **$-321.23**  ·  ROI **-23.4%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-10T14:14:59.947760+00:00
+- open **8** ($124.13)  ·  settled **131** (21W / 110L)
+- realized P&L **$-334.64**  ·  ROI **-24.1%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
+- last scan: 2026-08-10T17:15:54.813913+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,11 +44,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
-| Bitcoin Up or Down on August 10? | Up | 0.329 | $13.41 | 2026-08-10T16:00:07.853654+00:00 |
+| Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | Leviatan Esports | 0.330 | $15.89 | 2026-08-11T03:00:07.611888+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 10? | LOST | -13.41 |
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
 | Bitcoin Up or Down on August 9? | WON | +73.09 |
 | Will Independiente Santa Fe win on 2026-08-09? | LOST | -19.43 |
@@ -108,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Grodzisk Mazowiecki: Alexander Donski vs Takuya Kuma | LOST | -12.53 |
 | Israel agrees to Board of Peace Gaza plan by August  | LOST | -14.79 |
 | Warsaw: Linda Klimovicova vs Elizara Yaneva | WON | +91.93 |
-| Hagen: Thiago Monteiro vs Tom Gentzsch | LOST | -9.05 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,4 +133,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 41 | 10% | -15% |
 | 0.20–0.25 | 38 | 24% | -22% |
 | 0.25–0.30 | 28 | 14% | -42% |
-| 0.30–0.33 | 6 | 50% | +66% |
+| 0.30–0.33 | 7 | 43% | +43% |
