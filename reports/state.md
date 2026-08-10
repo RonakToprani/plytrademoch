@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-09T22:50:35.130567+00:00
+# Poly underdog paper state — 2026-08-10T01:55:54.758553+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($166.13)  ·  settled **127** (21W / 106L)
+- open **11** ($179.54)  ·  settled **127** (21W / 106L)
 - realized P&L **$-263.34**  ·  ROI **-20.0%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
-- last scan: 2026-08-09T22:40:18.556264+00:00
+- last scan: 2026-08-10T01:41:12.792969+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,6 +47,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
+| Bitcoin Up or Down on August 10? | Up | 0.329 | $13.41 | 2026-08-10T16:00:07.853654+00:00 |
 
 ## Settled
 | market | result | P&L |
