@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-10T01:55:54.758553+00:00
+# Poly underdog paper state — 2026-08-10T05:02:24.228873+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($179.54)  ·  settled **127** (21W / 106L)
-- realized P&L **$-263.34**  ·  ROI **-20.0%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
-- last scan: 2026-08-10T01:41:12.792969+00:00
+- open **10** ($161.07)  ·  settled **128** (21W / 107L)
+- realized P&L **$-281.81**  ·  ROI **-21.1%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
+- last scan: 2026-08-10T04:42:07.900584+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,7 +40,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
-| Will Ethereum reach $2,000 August 3-9? | Yes | 0.210 | $18.47 | 2026-08-10T04:00:07.800936+00:00 |
 | Will Bitcoin reach $66,000 August 3-9? | Yes | 0.270 | $19.00 | 2026-08-10T04:00:07.855537+00:00 |
 | Will Marcelo attend Cristiano Ronaldo's wedding? | Yes | 0.260 | $19.00 | 2026-08-08T23:59:07.245625+00:00 |
 | US announces end of Iranian blockade by August 9, 20 | Yes | 0.220 | $20.42 | 2026-08-09T23:59:07.933753+00:00 |
@@ -58,6 +57,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 8? | LOST | -13.41 |
 | Will the price of Bitcoin be above $64,000 on August | LOST | -17.22 |
 | Bitcoin Up or Down on August 7? | WON | +35.23 |
+| Will Ethereum reach $2,000 August 3-9? | LOST | -18.47 |
 | Bitcoin Up or Down on August 6? | LOST | -19.43 |
 | Athletics vs. Cincinnati Reds | LOST | -9.05 |
 | Los Angeles Angels vs. Baltimore Orioles | LOST | -17.35 |
@@ -111,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Hagen: Thiago Monteiro vs Tom Gentzsch | LOST | -9.05 |
 | Warsaw: Marcelina Podlinska vs Vendula Valdmannova | LOST | -11.40 |
 | Warsaw: Elsa Jacquemot vs Carol Young Suh Lee | LOST | -14.40 |
-| Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse B | LOST | -14.40 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,6 +133,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
-| 0.20–0.25 | 36 | 25% | -14% |
+| 0.20–0.25 | 37 | 24% | -18% |
 | 0.25–0.30 | 27 | 15% | -39% |
 | 0.30–0.33 | 6 | 50% | +66% |
