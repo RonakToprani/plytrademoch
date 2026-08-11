@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-11T02:56:20.438968+00:00
+# Poly underdog paper state — 2026-08-11T06:02:50.385222+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($152.94)  ·  settled **131** (21W / 110L)
-- realized P&L **$-334.64**  ·  ROI **-24.1%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-11T02:18:39.325553+00:00
+- open **9** ($137.05)  ·  settled **132** (22W / 110L)
+- realized P&L **$-302.38**  ·  ROI **-21.6%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
+- last scan: 2026-08-11T05:49:44.221649+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,13 +44,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
-| Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | Leviatan Esports | 0.330 | $15.89 | 2026-08-11T03:00:07.611888+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | Will Kai and Speed beat the Minecraft challenge by A | Yes | 0.170 | $12.23 | 2026-08-17T23:59:07.707608+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | WON | +32.26 |
 | Bitcoin Up or Down on August 10? | LOST | -13.41 |
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
 | Bitcoin Up or Down on August 9? | WON | +73.09 |
@@ -110,7 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Plovdiv 2: Hernan Casanova vs Yannick Alexandrescou | LOST | -13.15 |
 | Grodzisk Mazowiecki: Alexander Donski vs Takuya Kuma | LOST | -12.53 |
 | Israel agrees to Board of Peace Gaza plan by August  | LOST | -14.79 |
-| Warsaw: Linda Klimovicova vs Elizara Yaneva | WON | +91.93 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -135,4 +134,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 41 | 10% | -15% |
 | 0.20–0.25 | 38 | 24% | -22% |
 | 0.25–0.30 | 28 | 14% | -42% |
-| 0.30–0.33 | 7 | 43% | +43% |
+| 0.30–0.33 | 8 | 50% | +65% |
