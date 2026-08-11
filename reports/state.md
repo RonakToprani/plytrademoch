@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-11T09:08:45.694731+00:00
+# Poly underdog paper state — 2026-08-11T12:16:00.444114+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($137.05)  ·  settled **132** (22W / 110L)
+- open **11** ($172.24)  ·  settled **132** (22W / 110L)
 - realized P&L **$-302.38**  ·  ROI **-21.6%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
-- last scan: 2026-08-11T08:50:37.573007+00:00
+- last scan: 2026-08-11T11:51:34.165669+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,6 +46,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | Will Kai and Speed beat the Minecraft challenge by A | Yes | 0.170 | $12.23 | 2026-08-17T23:59:07.707608+00:00 |
+| Will the price of Bitcoin be above $64,000 on August | No | 0.260 | $18.61 | 2026-08-11T16:00:07.589688+00:00 |
+| Will FC Cincinnati win on 2026-08-11? | No | 0.300 | $16.58 | 2026-08-12T00:00:07.952460+00:00 |
 
 ## Settled
 | market | result | P&L |
