@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-11T12:16:00.444114+00:00
+# Poly underdog paper state — 2026-08-11T15:23:58.386631+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($172.24)  ·  settled **132** (22W / 110L)
+- open **13** ($200.24)  ·  settled **132** (22W / 110L)
 - realized P&L **$-302.38**  ·  ROI **-21.6%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
-- last scan: 2026-08-11T11:51:34.165669+00:00
+- last scan: 2026-08-11T14:52:31.829051+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,6 +48,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Kai and Speed beat the Minecraft challenge by A | Yes | 0.170 | $12.23 | 2026-08-17T23:59:07.707608+00:00 |
 | Will the price of Bitcoin be above $64,000 on August | No | 0.260 | $18.61 | 2026-08-11T16:00:07.589688+00:00 |
 | Will FC Cincinnati win on 2026-08-11? | No | 0.300 | $16.58 | 2026-08-12T00:00:07.952460+00:00 |
+| US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
+| Will Deportivo Toluca FC win on 2026-08-12? | No | 0.330 | $13.41 | 2026-08-13T02:00:07.619000+00:00 |
 
 ## Settled
 | market | result | P&L |
