@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-10T23:48:03.910663+00:00
+# Poly underdog paper state — 2026-08-11T02:56:20.438968+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($140.71)  ·  settled **131** (21W / 110L)
+- open **10** ($152.94)  ·  settled **131** (21W / 110L)
 - realized P&L **$-334.64**  ·  ROI **-24.1%** (backtest exp ~+19.8%)  ·  win **16%** (exp ~28.2%)
-- last scan: 2026-08-10T23:17:41.794370+00:00
+- last scan: 2026-08-11T02:18:39.325553+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,6 +46,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
 | Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | Leviatan Esports | 0.330 | $15.89 | 2026-08-11T03:00:07.611888+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
+| Will Kai and Speed beat the Minecraft challenge by A | Yes | 0.170 | $12.23 | 2026-08-17T23:59:07.707608+00:00 |
 
 ## Settled
 | market | result | P&L |
