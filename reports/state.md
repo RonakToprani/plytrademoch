@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-11T15:23:58.386631+00:00
+# Poly underdog paper state — 2026-08-11T18:31:11.189392+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($200.24)  ·  settled **132** (22W / 110L)
-- realized P&L **$-302.38**  ·  ROI **-21.6%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
-- last scan: 2026-08-11T14:52:31.829051+00:00
+- open **12** ($181.63)  ·  settled **133** (23W / 110L)
+- realized P&L **$-249.41**  ·  ROI **-17.6%** (backtest exp ~+19.8%)  ·  win **17%** (exp ~28.2%)
+- last scan: 2026-08-11T18:23:38.633941+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,7 +46,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | Will Kai and Speed beat the Minecraft challenge by A | Yes | 0.170 | $12.23 | 2026-08-17T23:59:07.707608+00:00 |
-| Will the price of Bitcoin be above $64,000 on August | No | 0.260 | $18.61 | 2026-08-11T16:00:07.589688+00:00 |
 | Will FC Cincinnati win on 2026-08-11? | No | 0.300 | $16.58 | 2026-08-12T00:00:07.952460+00:00 |
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will Deportivo Toluca FC win on 2026-08-12? | No | 0.330 | $13.41 | 2026-08-13T02:00:07.619000+00:00 |
@@ -54,6 +53,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $64,000 on August | WON | +52.97 |
 | Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | WON | +32.26 |
 | Bitcoin Up or Down on August 10? | LOST | -13.41 |
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
@@ -113,7 +113,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Adam Walton vs Jenson Brooksby | LOST | -14.92 |
 | Plovdiv 2: Hernan Casanova vs Yannick Alexandrescou | LOST | -13.15 |
 | Grodzisk Mazowiecki: Alexander Donski vs Takuya Kuma | LOST | -12.53 |
-| Israel agrees to Board of Peace Gaza plan by August  | LOST | -14.79 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,5 +136,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 41 | 10% | -15% |
 | 0.20–0.25 | 38 | 24% | -22% |
-| 0.25–0.30 | 28 | 14% | -42% |
+| 0.25–0.30 | 29 | 17% | -28% |
 | 0.30–0.33 | 8 | 50% | +65% |
