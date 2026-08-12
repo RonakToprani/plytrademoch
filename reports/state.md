@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-12T19:24:34.176053+00:00
+# Poly underdog paper state — 2026-08-12T22:30:19.583480+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,16 +30,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($184.93)  ·  settled **136** (25W / 111L)
-- realized P&L **$-201.36**  ·  ROI **-13.7%** (backtest exp ~+19.8%)  ·  win **18%** (exp ~28.2%)
-- last scan: 2026-08-12T19:01:33.242911+00:00
+- open **11** ($173.53)  ·  settled **137** (26W / 111L)
+- realized P&L **$-148.64**  ·  ROI **-10.0%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
+- last scan: 2026-08-12T22:02:29.970435+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| Will Francesca Hong win the 2026 Wisconsin Governor  | No | 0.178 | $11.40 | 2026-08-11T00:00:07.230552+00:00 |
 | Will Marcelo attend Cristiano Ronaldo's wedding? | Yes | 0.260 | $19.00 | 2026-08-08T23:59:07.245625+00:00 |
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
@@ -94,6 +93,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Warsaw: Carol Young Suh Lee vs Aliona Falei | WON | +42.53 |
 | LoL: EDward Gaming vs Top Esports (BO3) - LPL Group  | LOST | -9.05 |
 | LoL: JD Gaming vs LGD Gaming (BO3) - LPL Group Ascen | LOST | -14.74 |
+| Will Francesca Hong win the 2026 Wisconsin Governor  | WON | +52.72 |
 | Detroit Tigers vs. Seattle Mariners | LOST | -11.40 |
 | San Diego Padres vs. Arizona Diamondbacks | LOST | -14.74 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -9.05 |
@@ -112,7 +112,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Canadian Open: Pablo Carreno Busta vs Valentin Royer | LOST | -14.92 |
 | National Bank Open: Jacob Fearnley vs Adrian Mannari | LOST | -14.95 |
 | National Bank Open: Camila Osorio vs Ekaterina Alexa | LOST | -16.92 |
-| The Hundred, Women: Sunrisers Leeds vs London Spirit | LOST | -14.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,7 +133,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 42 | 10% | -19% |
+| 0.15–0.20 | 43 | 12% | -5% |
 | 0.20–0.25 | 38 | 24% | -22% |
 | 0.25–0.30 | 29 | 17% | -28% |
 | 0.30–0.33 | 10 | 60% | +97% |
