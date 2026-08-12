@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-12T06:57:20.086647+00:00
+# Poly underdog paper state — 2026-08-12T10:03:28.328384+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($178.46)  ·  settled **134** (24W / 110L)
+- open **13** ($196.33)  ·  settled **134** (24W / 110L)
 - realized P&L **$-210.72**  ·  ROI **-14.7%** (backtest exp ~+19.8%)  ·  win **18%** (exp ~28.2%)
-- last scan: 2026-08-12T06:27:20.667478+00:00
+- last scan: 2026-08-12T09:28:27.181250+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -49,6 +49,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will Deportivo Toluca FC win on 2026-08-12? | No | 0.330 | $13.41 | 2026-08-13T02:00:07.619000+00:00 |
 | Bitcoin Up or Down on August 12? | Down | 0.330 | $13.41 | 2026-08-12T16:00:08.231529+00:00 |
+| ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | Gabriele Pennaforti | 0.180 | $17.87 | 2026-08-19T07:30:08.197459+00:00 |
 
 ## Settled
 | market | result | P&L |
