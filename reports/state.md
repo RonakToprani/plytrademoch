@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-12T10:03:28.328384+00:00
+# Poly underdog paper state — 2026-08-12T13:10:08.367523+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($196.33)  ·  settled **134** (24W / 110L)
-- realized P&L **$-210.72**  ·  ROI **-14.7%** (backtest exp ~+19.8%)  ·  win **18%** (exp ~28.2%)
-- last scan: 2026-08-12T09:28:27.181250+00:00
+- open **13** ($198.34)  ·  settled **135** (24W / 111L)
+- realized P&L **$-228.59**  ·  ROI **-15.7%** (backtest exp ~+19.8%)  ·  win **18%** (exp ~28.2%)
+- last scan: 2026-08-12T12:59:48.639682+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -49,11 +49,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will Deportivo Toluca FC win on 2026-08-12? | No | 0.330 | $13.41 | 2026-08-13T02:00:07.619000+00:00 |
 | Bitcoin Up or Down on August 12? | Down | 0.330 | $13.41 | 2026-08-12T16:00:08.231529+00:00 |
-| ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | Gabriele Pennaforti | 0.180 | $17.87 | 2026-08-19T07:30:08.197459+00:00 |
+| Will MrBeast's next video get between 80 and 90 mill | Yes | 0.232 | $19.88 | 2026-08-15T23:59:08.020816+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | LOST | -17.87 |
 | Will FC Cincinnati win on 2026-08-11? | WON | +38.69 |
 | Will the price of Bitcoin be above $64,000 on August | WON | +52.97 |
 | Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | WON | +32.26 |
@@ -113,7 +114,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Camila Osorio vs Ekaterina Alexa | LOST | -16.92 |
 | The Hundred, Women: Sunrisers Leeds vs London Spirit | LOST | -14.92 |
 | National Bank Open: Adam Walton vs Jenson Brooksby | LOST | -14.92 |
-| Plovdiv 2: Hernan Casanova vs Yannick Alexandrescou | LOST | -13.15 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -135,7 +135,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 41 | 10% | -15% |
+| 0.15–0.20 | 42 | 10% | -19% |
 | 0.20–0.25 | 38 | 24% | -22% |
 | 0.25–0.30 | 29 | 17% | -28% |
 | 0.30–0.33 | 9 | 56% | +86% |
