@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-12T16:18:14.966604+00:00
+# Poly underdog paper state — 2026-08-12T19:24:34.176053+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($198.34)  ·  settled **135** (24W / 111L)
-- realized P&L **$-228.59**  ·  ROI **-15.7%** (backtest exp ~+19.8%)  ·  win **18%** (exp ~28.2%)
-- last scan: 2026-08-12T16:00:37.205335+00:00
+- open **12** ($184.93)  ·  settled **136** (25W / 111L)
+- realized P&L **$-201.36**  ·  ROI **-13.7%** (backtest exp ~+19.8%)  ·  win **18%** (exp ~28.2%)
+- last scan: 2026-08-12T19:01:33.242911+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,13 +48,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Kai and Speed beat the Minecraft challenge by A | Yes | 0.170 | $12.23 | 2026-08-17T23:59:07.707608+00:00 |
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will Deportivo Toluca FC win on 2026-08-12? | No | 0.330 | $13.41 | 2026-08-13T02:00:07.619000+00:00 |
-| Bitcoin Up or Down on August 12? | Down | 0.330 | $13.41 | 2026-08-12T16:00:08.231529+00:00 |
 | Will MrBeast's next video get between 80 and 90 mill | Yes | 0.232 | $19.88 | 2026-08-15T23:59:08.020816+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | LOST | -17.87 |
+| Bitcoin Up or Down on August 12? | WON | +27.23 |
 | Will FC Cincinnati win on 2026-08-11? | WON | +38.69 |
 | Will the price of Bitcoin be above $64,000 on August | WON | +52.97 |
 | Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | WON | +32.26 |
@@ -113,7 +113,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Jacob Fearnley vs Adrian Mannari | LOST | -14.95 |
 | National Bank Open: Camila Osorio vs Ekaterina Alexa | LOST | -16.92 |
 | The Hundred, Women: Sunrisers Leeds vs London Spirit | LOST | -14.92 |
-| National Bank Open: Adam Walton vs Jenson Brooksby | LOST | -14.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -138,4 +137,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 42 | 10% | -19% |
 | 0.20–0.25 | 38 | 24% | -22% |
 | 0.25–0.30 | 29 | 17% | -28% |
-| 0.30–0.33 | 9 | 56% | +86% |
+| 0.30–0.33 | 10 | 60% | +97% |
