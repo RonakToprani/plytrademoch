@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-13T04:46:08.049740+00:00
+# Poly underdog paper state — 2026-08-13T07:52:20.990225+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($161.30)  ·  settled **138** (27W / 111L)
-- realized P&L **$-88.93**  ·  ROI **-6.0%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
-- last scan: 2026-08-13T04:34:34.775630+00:00
+- open **10** ($168.15)  ·  settled **139** (27W / 112L)
+- realized P&L **$-102.34**  ·  ROI **-6.8%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
+- last scan: 2026-08-13T07:35:32.401973+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,14 +45,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
-| Will Deportivo Toluca FC win on 2026-08-12? | No | 0.330 | $13.41 | 2026-08-13T02:00:07.619000+00:00 |
 | Will MrBeast's next video get between 80 and 90 mill | Yes | 0.232 | $19.88 | 2026-08-15T23:59:08.020816+00:00 |
+| Bitcoin Up or Down on August 13? | Down | 0.263 | $20.26 | 2026-08-13T16:00:07.605782+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | LOST | -17.87 |
 | Bitcoin Up or Down on August 12? | WON | +27.23 |
+| Will Deportivo Toluca FC win on 2026-08-12? | LOST | -13.41 |
 | Will FC Cincinnati win on 2026-08-11? | WON | +38.69 |
 | Will the price of Bitcoin be above $64,000 on August | WON | +52.97 |
 | Will Kai and Speed beat the Minecraft challenge by A | WON | +59.71 |
@@ -110,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Juncheng Shang vs Andrey Rublev | WON | +52.38 |
 | Exact Score: CF Villarreal C 0 - 0 Levante UD? | LOST | -13.95 |
 | Canadian Open: Pablo Carreno Busta vs Valentin Royer | LOST | -14.92 |
-| National Bank Open: Jacob Fearnley vs Adrian Mannari | LOST | -14.95 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -135,4 +135,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 44 | 14% | +11% |
 | 0.20–0.25 | 38 | 24% | -22% |
 | 0.25–0.30 | 29 | 17% | -28% |
-| 0.30–0.33 | 10 | 60% | +97% |
+| 0.30–0.33 | 11 | 55% | +81% |
