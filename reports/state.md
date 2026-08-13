@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-13T17:13:26.503625+00:00
+# Poly underdog paper state — 2026-08-13T20:22:32.562288+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($170.61)  ·  settled **140** (28W / 112L)
-- realized P&L **$-60.39**  ·  ROI **-4.0%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
-- last scan: 2026-08-13T16:38:10.052628+00:00
+- open **9** ($150.35)  ·  settled **141** (29W / 112L)
+- realized P&L **$-3.67**  ·  ROI **-0.2%** (backtest exp ~+19.8%)  ·  win **21%** (exp ~28.2%)
+- last scan: 2026-08-13T20:09:15.228528+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,12 +45,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will MrBeast's next video get between 80 and 90 mill | Yes | 0.232 | $19.88 | 2026-08-15T23:59:08.020816+00:00 |
-| Bitcoin Up or Down on August 13? | Down | 0.263 | $20.26 | 2026-08-13T16:00:07.605782+00:00 |
 | Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 13? | WON | +56.72 |
 | ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | LOST | -17.87 |
 | Bitcoin Up or Down on August 12? | WON | +27.23 |
 | Will Deportivo Toluca FC win on 2026-08-12? | LOST | -13.41 |
@@ -110,7 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Rebecca Sramkova vs Diana Shnaid | LOST | -14.92 |
 | National Bank Open: Juncheng Shang vs Andrey Rublev | WON | +52.38 |
 | Exact Score: CF Villarreal C 0 - 0 Levante UD? | LOST | -13.95 |
-| Canadian Open: Pablo Carreno Busta vs Valentin Royer | LOST | -14.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,5 +133,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 44 | 14% | +11% |
 | 0.20–0.25 | 38 | 24% | -22% |
-| 0.25–0.30 | 30 | 20% | -18% |
+| 0.25–0.30 | 31 | 23% | -5% |
 | 0.30–0.33 | 11 | 55% | +81% |
