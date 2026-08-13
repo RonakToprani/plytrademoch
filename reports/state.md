@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-12T22:30:19.583480+00:00
+# Poly underdog paper state — 2026-08-13T01:38:05.724544+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($173.53)  ·  settled **137** (26W / 111L)
-- realized P&L **$-148.64**  ·  ROI **-10.0%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
-- last scan: 2026-08-12T22:02:29.970435+00:00
+- open **10** ($161.30)  ·  settled **138** (27W / 111L)
+- realized P&L **$-88.93**  ·  ROI **-6.0%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
+- last scan: 2026-08-13T01:03:29.539584+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,7 +44,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
-| Will Kai and Speed beat the Minecraft challenge by A | Yes | 0.170 | $12.23 | 2026-08-17T23:59:07.707608+00:00 |
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will Deportivo Toluca FC win on 2026-08-12? | No | 0.330 | $13.41 | 2026-08-13T02:00:07.619000+00:00 |
 | Will MrBeast's next video get between 80 and 90 mill | Yes | 0.232 | $19.88 | 2026-08-15T23:59:08.020816+00:00 |
@@ -56,6 +55,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 12? | WON | +27.23 |
 | Will FC Cincinnati win on 2026-08-11? | WON | +38.69 |
 | Will the price of Bitcoin be above $64,000 on August | WON | +52.97 |
+| Will Kai and Speed beat the Minecraft challenge by A | WON | +59.71 |
 | Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | WON | +32.26 |
 | Bitcoin Up or Down on August 10? | LOST | -13.41 |
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
@@ -111,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Exact Score: CF Villarreal C 0 - 0 Levante UD? | LOST | -13.95 |
 | Canadian Open: Pablo Carreno Busta vs Valentin Royer | LOST | -14.92 |
 | National Bank Open: Jacob Fearnley vs Adrian Mannari | LOST | -14.95 |
-| National Bank Open: Camila Osorio vs Ekaterina Alexa | LOST | -16.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,7 +132,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 43 | 12% | -5% |
+| 0.15–0.20 | 44 | 14% | +11% |
 | 0.20–0.25 | 38 | 24% | -22% |
 | 0.25–0.30 | 29 | 17% | -28% |
 | 0.30–0.33 | 10 | 60% | +97% |
