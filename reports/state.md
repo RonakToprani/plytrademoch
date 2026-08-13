@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-13T07:52:20.990225+00:00
+# Poly underdog paper state — 2026-08-13T10:59:19.652371+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,14 +30,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($168.15)  ·  settled **139** (27W / 112L)
-- realized P&L **$-102.34**  ·  ROI **-6.8%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
-- last scan: 2026-08-13T07:35:32.401973+00:00
+- open **10** ($170.61)  ·  settled **140** (28W / 112L)
+- realized P&L **$-60.39**  ·  ROI **-4.0%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
+- last scan: 2026-08-13T10:36:27.575731+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Will Mike Lindell win the 2026 Minnesota Governor Re | No | 0.260 | $14.74 | 2026-08-11T00:00:05.318766+00:00 |
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Will Marcelo attend Cristiano Ronaldo's wedding? | Yes | 0.260 | $19.00 | 2026-08-08T23:59:07.245625+00:00 |
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
@@ -47,6 +46,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will MrBeast's next video get between 80 and 90 mill | Yes | 0.232 | $19.88 | 2026-08-15T23:59:08.020816+00:00 |
 | Bitcoin Up or Down on August 13? | Down | 0.263 | $20.26 | 2026-08-13T16:00:07.605782+00:00 |
+| Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -134,5 +134,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 44 | 14% | +11% |
 | 0.20–0.25 | 38 | 24% | -22% |
-| 0.25–0.30 | 29 | 17% | -28% |
+| 0.25–0.30 | 30 | 20% | -18% |
 | 0.30–0.33 | 11 | 55% | +81% |
