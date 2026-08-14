@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-14T18:18:50.026231+00:00
+# Poly underdog paper state — 2026-08-14T21:26:08.517110+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($185.67)  ·  settled **142** (29W / 113L)
-- realized P&L **$-21.94**  ·  ROI **-1.4%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
-- last scan: 2026-08-14T17:45:45.332369+00:00
+- open **10** ($166.67)  ·  settled **143** (29W / 114L)
+- realized P&L **$-40.94**  ·  ROI **-2.6%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
+- last scan: 2026-08-14T21:16:56.312764+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| Will Marcelo attend Cristiano Ronaldo's wedding? | Yes | 0.260 | $19.00 | 2026-08-08T23:59:07.245625+00:00 |
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
@@ -67,6 +66,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Independiente Santa Fe win on 2026-08-09? | LOST | -19.43 |
 | Bitcoin Up or Down on August 8? | LOST | -13.41 |
 | US announces end of Iranian blockade by August 9, 20 | LOST | -20.42 |
+| Will Marcelo attend Cristiano Ronaldo's wedding? | LOST | -19.00 |
 | Will the price of Bitcoin be above $64,000 on August | LOST | -17.22 |
 | Bitcoin Up or Down on August 7? | WON | +35.23 |
 | Will Bitcoin reach $66,000 August 3-9? | LOST | -19.00 |
@@ -111,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Canadian Open: Lorenzo Sonego vs Tallon Griekspoor | LOST | -14.14 |
 | Canadian Open: Giovanni Mpetshi Perricard vs Botic v | LOST | -14.92 |
 | National Bank Open: Rebecca Sramkova vs Diana Shnaid | LOST | -14.92 |
-| National Bank Open: Juncheng Shang vs Andrey Rublev | WON | +52.38 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -135,5 +134,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 44 | 14% | +11% |
 | 0.20–0.25 | 38 | 24% | -22% |
-| 0.25–0.30 | 32 | 22% | -8% |
+| 0.25–0.30 | 33 | 21% | -12% |
 | 0.30–0.33 | 11 | 55% | +81% |
