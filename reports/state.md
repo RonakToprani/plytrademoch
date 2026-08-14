@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-14T15:08:38.842885+00:00
+# Poly underdog paper state — 2026-08-14T18:18:50.026231+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($203.94)  ·  settled **141** (29W / 112L)
-- realized P&L **$-3.67**  ·  ROI **-0.2%** (backtest exp ~+19.8%)  ·  win **21%** (exp ~28.2%)
-- last scan: 2026-08-14T14:44:47.839972+00:00
+- open **11** ($185.67)  ·  settled **142** (29W / 113L)
+- realized P&L **$-21.94**  ·  ROI **-1.4%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
+- last scan: 2026-08-14T17:45:45.332369+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,11 +48,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
 | Will Australia win? | Yes | 0.330 | $15.89 | 2026-08-19T20:30:07.935672+00:00 |
-| Bitcoin Up or Down on August 14? | Up | 0.280 | $18.27 | 2026-08-14T16:00:07.813522+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 14? | LOST | -18.27 |
 | Bitcoin Up or Down on August 13? | WON | +56.72 |
 | ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | LOST | -17.87 |
 | Bitcoin Up or Down on August 12? | WON | +27.23 |
@@ -112,7 +112,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Canadian Open: Giovanni Mpetshi Perricard vs Botic v | LOST | -14.92 |
 | National Bank Open: Rebecca Sramkova vs Diana Shnaid | LOST | -14.92 |
 | National Bank Open: Juncheng Shang vs Andrey Rublev | WON | +52.38 |
-| Exact Score: CF Villarreal C 0 - 0 Levante UD? | LOST | -13.95 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,5 +135,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 44 | 14% | +11% |
 | 0.20–0.25 | 38 | 24% | -22% |
-| 0.25–0.30 | 31 | 23% | -5% |
+| 0.25–0.30 | 32 | 22% | -8% |
 | 0.30–0.33 | 11 | 55% | +81% |
