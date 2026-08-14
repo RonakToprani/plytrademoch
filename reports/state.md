@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-13T23:30:39.782621+00:00
+# Poly underdog paper state — 2026-08-14T02:38:01.001591+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($150.35)  ·  settled **141** (29W / 112L)
+- open **10** ($169.78)  ·  settled **141** (29W / 112L)
 - realized P&L **$-3.67**  ·  ROI **-0.2%** (backtest exp ~+19.8%)  ·  win **21%** (exp ~28.2%)
-- last scan: 2026-08-13T23:10:05.503859+00:00
+- last scan: 2026-08-14T02:10:56.467299+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,6 +46,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will MrBeast's next video get between 80 and 90 mill | Yes | 0.232 | $19.88 | 2026-08-15T23:59:08.020816+00:00 |
 | Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
+| US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
 
 ## Settled
 | market | result | P&L |
