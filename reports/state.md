@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-15T09:57:36.222752+00:00
+# Poly underdog paper state — 2026-08-15T13:06:15.192687+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($174.70)  ·  settled **144** (29W / 115L)
+- open **11** ($194.55)  ·  settled **144** (29W / 115L)
 - realized P&L **$-53.17**  ·  ROI **-3.3%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
-- last scan: 2026-08-15T09:20:36.335780+00:00
+- last scan: 2026-08-15T12:51:40.931953+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,6 +47,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
 | Will Australia win? | Yes | 0.330 | $15.89 | 2026-08-19T20:30:07.935672+00:00 |
 | Bitcoin Up or Down on August 15? | Down | 0.250 | $20.26 | 2026-08-15T16:00:07.667875+00:00 |
+| Afghanistan Tour of Ireland ODIs: Ireland vs Afghani | Ireland | 0.250 | $19.85 | 2026-08-22T05:45:07.484465+00:00 |
 
 ## Settled
 | market | result | P&L |
