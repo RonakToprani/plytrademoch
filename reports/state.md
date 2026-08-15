@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-15T00:33:13.973462+00:00
+# Poly underdog paper state — 2026-08-15T03:41:53.729711+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($166.67)  ·  settled **143** (29W / 114L)
+- open **11** ($186.93)  ·  settled **143** (29W / 114L)
 - realized P&L **$-40.94**  ·  ROI **-2.6%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
-- last scan: 2026-08-15T00:17:50.111595+00:00
+- last scan: 2026-08-15T03:18:45.200697+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,6 +47,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
 | Will Australia win? | Yes | 0.330 | $15.89 | 2026-08-19T20:30:07.935672+00:00 |
+| Bitcoin Up or Down on August 15? | Down | 0.250 | $20.26 | 2026-08-15T16:00:07.667875+00:00 |
 
 ## Settled
 | market | result | P&L |
