@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-15T03:41:53.729711+00:00
+# Poly underdog paper state — 2026-08-15T06:50:26.531313+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($186.93)  ·  settled **143** (29W / 114L)
-- realized P&L **$-40.94**  ·  ROI **-2.6%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
-- last scan: 2026-08-15T03:18:45.200697+00:00
+- open **10** ($174.70)  ·  settled **144** (29W / 115L)
+- realized P&L **$-53.17**  ·  ROI **-3.3%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
+- last scan: 2026-08-15T06:19:38.952728+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,7 +40,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
-| Will the next Google Gemini Pro model be released by | Yes | 0.170 | $12.23 | 2026-08-14T16:00:07.471417+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | US announces end of Iranian blockade by August 15, 2 | Yes | 0.170 | $14.59 | 2026-08-15T23:59:08.110477+00:00 |
 | Will MrBeast's next video get between 80 and 90 mill | Yes | 0.232 | $19.88 | 2026-08-15T23:59:08.020816+00:00 |
@@ -63,6 +62,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | WON | +32.26 |
 | Bitcoin Up or Down on August 10? | LOST | -13.41 |
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
+| Will the next Google Gemini Pro model be released by | LOST | -12.23 |
 | Bitcoin Up or Down on August 9? | WON | +73.09 |
 | Will Independiente Santa Fe win on 2026-08-09? | LOST | -19.43 |
 | Bitcoin Up or Down on August 8? | LOST | -13.41 |
@@ -111,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Kamilla Rakhimova vs Katerina Si | WON | +28.66 |
 | Canadian Open: Lorenzo Sonego vs Tallon Griekspoor | LOST | -14.14 |
 | Canadian Open: Giovanni Mpetshi Perricard vs Botic v | LOST | -14.92 |
-| National Bank Open: Rebecca Sramkova vs Diana Shnaid | LOST | -14.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,7 +132,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 44 | 14% | +11% |
+| 0.15–0.20 | 45 | 13% | +8% |
 | 0.20–0.25 | 38 | 24% | -22% |
 | 0.25–0.30 | 33 | 21% | -12% |
 | 0.30–0.33 | 11 | 55% | +81% |
