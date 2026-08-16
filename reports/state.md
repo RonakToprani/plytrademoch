@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-16T20:00:53.011325+00:00
+# Poly underdog paper state — 2026-08-16T23:10:45.615139+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($102.47)  ·  settled **151** (29W / 122L)
-- realized P&L **$-177.34**  ·  ROI **-10.3%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
-- last scan: 2026-08-16T19:30:59.484852+00:00
+- open **5** ($85.61)  ·  settled **152** (29W / 123L)
+- realized P&L **$-194.20**  ·  ROI **-11.2%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
+- last scan: 2026-08-16T22:31:52.938406+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,11 +42,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
-| Will Real Madrid win on 2026-08-16? | No | 0.290 | $16.86 | 2026-08-16T15:00:07.830989+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Real Madrid win on 2026-08-16? | LOST | -16.86 |
 | Will TSG Hoffenheim win on 2026-08-16? | LOST | -15.23 |
 | Afghanistan Tour of Ireland ODIs: Ireland vs Afghani | LOST | -19.85 |
 | Bitcoin Up or Down on August 15? | LOST | -20.26 |
@@ -106,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | San Diego Padres vs. Arizona Diamondbacks | LOST | -14.74 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -9.05 |
 | San Francisco Giants vs. Texas Rangers | LOST | -16.50 |
-| St. Louis Cardinals vs. New York Yankees | LOST | -17.51 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,5 +129,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 46 | 13% | +4% |
 | 0.20–0.25 | 41 | 22% | -31% |
-| 0.25–0.30 | 35 | 20% | -18% |
+| 0.25–0.30 | 36 | 19% | -21% |
 | 0.30–0.33 | 12 | 50% | +64% |
