@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-16T07:28:21.943846+00:00
+# Poly underdog paper state — 2026-08-16T10:36:34.721278+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,21 +30,20 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($135.20)  ·  settled **148** (29W / 119L)
-- realized P&L **$-127.75**  ·  ROI **-7.7%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
-- last scan: 2026-08-16T06:57:09.638090+00:00
+- open **7** ($117.70)  ·  settled **150** (29W / 121L)
+- realized P&L **$-162.11**  ·  ROI **-9.5%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
+- last scan: 2026-08-16T10:28:23.691111+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| US-Iran Hormuz Agreement by August 15? | Yes | 0.200 | $18.47 | 2026-08-15T23:59:07.291817+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
-| Will Australia win? | Yes | 0.330 | $15.89 | 2026-08-19T20:30:07.935672+00:00 |
 | Will TSG Hoffenheim win on 2026-08-16? | Yes | 0.240 | $15.23 | 2026-08-16T12:00:07.536265+00:00 |
+| Will Real Madrid win on 2026-08-16? | No | 0.290 | $16.86 | 2026-08-16T15:00:07.830989+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -52,6 +51,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Afghanistan Tour of Ireland ODIs: Ireland vs Afghani | LOST | -19.85 |
 | Bitcoin Up or Down on August 15? | LOST | -20.26 |
 | Bitcoin Up or Down on August 14? | LOST | -18.27 |
+| Will Australia win? | LOST | -15.89 |
 | Bitcoin Up or Down on August 13? | WON | +56.72 |
 | Will MrBeast's next video get between 80 and 90 mill | LOST | -19.88 |
 | ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | LOST | -17.87 |
@@ -66,6 +66,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
 | Will the next Google Gemini Pro model be released by | LOST | -12.23 |
 | Bitcoin Up or Down on August 9? | WON | +73.09 |
+| US-Iran Hormuz Agreement by August 15? | LOST | -18.47 |
 | Will Independiente Santa Fe win on 2026-08-09? | LOST | -19.43 |
 | Bitcoin Up or Down on August 8? | LOST | -13.41 |
 | US announces end of Iranian blockade by August 9, 20 | LOST | -20.42 |
@@ -107,8 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | San Francisco Giants vs. Texas Rangers | LOST | -16.50 |
 | St. Louis Cardinals vs. New York Yankees | LOST | -17.51 |
 | National Bank Open: Anna Kalinskaya vs McCartney Kes | LOST | -16.54 |
-| New York Mets vs. Cleveland Guardians | LOST | -14.92 |
-| Los Angeles Angels vs. Baltimore Orioles | LOST | -14.95 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,6 +130,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 46 | 13% | +4% |
-| 0.20–0.25 | 39 | 23% | -26% |
+| 0.20–0.25 | 40 | 22% | -29% |
 | 0.25–0.30 | 35 | 20% | -18% |
-| 0.30–0.33 | 11 | 55% | +81% |
+| 0.30–0.33 | 12 | 50% | +64% |
