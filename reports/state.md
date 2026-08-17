@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-17T14:55:08.791797+00:00
+# Poly underdog paper state — 2026-08-17T18:03:55.858647+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($100.24)  ·  settled **153** (29W / 124L)
-- realized P&L **$-211.40**  ·  ROI **-12.1%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
-- last scan: 2026-08-17T14:37:14.517684+00:00
+- open **5** ($85.27)  ·  settled **155** (31W / 124L)
+- realized P&L **$-94.10**  ·  ROI **-5.3%** (backtest exp ~+19.8%)  ·  win **20%** (exp ~28.2%)
+- last scan: 2026-08-17T17:38:11.973454+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,12 +41,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
-| Bitcoin Up or Down on August 17? | Up | 0.310 | $16.47 | 2026-08-17T16:00:07.739588+00:00 |
-| Will the price of Bitcoin be above $64,000 on August | Yes | 0.160 | $15.36 | 2026-08-17T16:00:07.622231+00:00 |
+| Game Handicap: KC (-1.5) vs GIANTX (+1.5) | GIANTX | 0.287 | $16.86 | 2026-08-17T23:15:08.068258+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $64,000 on August | WON | +80.64 |
+| Bitcoin Up or Down on August 17? | WON | +36.66 |
 | Will Real Madrid win on 2026-08-16? | LOST | -16.86 |
 | Will TSG Hoffenheim win on 2026-08-16? | LOST | -15.23 |
 | Afghanistan Tour of Ireland ODIs: Ireland vs Afghani | LOST | -19.85 |
@@ -105,8 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | LoL: JD Gaming vs LGD Gaming (BO3) - LPL Group Ascen | LOST | -14.74 |
 | Will Francesca Hong win the 2026 Wisconsin Governor  | WON | +52.72 |
 | Detroit Tigers vs. Seattle Mariners | LOST | -11.40 |
-| San Diego Padres vs. Arizona Diamondbacks | LOST | -14.74 |
-| Los Angeles Dodgers vs. Chicago Cubs | LOST | -9.05 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,7 +127,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 47 | 13% | -0% |
+| 0.15–0.20 | 48 | 15% | +18% |
 | 0.20–0.25 | 41 | 22% | -31% |
 | 0.25–0.30 | 36 | 19% | -21% |
-| 0.30–0.33 | 12 | 50% | +64% |
+| 0.30–0.33 | 13 | 54% | +78% |
