@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-16T23:10:45.615139+00:00
+# Poly underdog paper state — 2026-08-17T02:19:57.778833+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($85.61)  ·  settled **152** (29W / 123L)
+- open **6** ($102.08)  ·  settled **152** (29W / 123L)
 - realized P&L **$-194.20**  ·  ROI **-11.2%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
-- last scan: 2026-08-16T22:31:52.938406+00:00
+- last scan: 2026-08-17T02:03:12.868183+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
 | Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
+| Bitcoin Up or Down on August 17? | Up | 0.310 | $16.47 | 2026-08-17T16:00:07.739588+00:00 |
 
 ## Settled
 | market | result | P&L |
