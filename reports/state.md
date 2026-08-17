@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-17T02:19:57.778833+00:00
+# Poly underdog paper state — 2026-08-17T05:28:54.778993+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($102.08)  ·  settled **152** (29W / 123L)
-- realized P&L **$-194.20**  ·  ROI **-11.2%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
-- last scan: 2026-08-17T02:03:12.868183+00:00
+- open **6** ($100.24)  ·  settled **153** (29W / 124L)
+- realized P&L **$-211.40**  ·  ROI **-12.1%** (backtest exp ~+19.8%)  ·  win **19%** (exp ~28.2%)
+- last scan: 2026-08-17T05:04:18.066431+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,9 +40,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | Iran-Oman Hormuz Agreement by August 15? | No | 0.290 | $19.43 | 2026-08-15T23:59:07.952463+00:00 |
 | Spread: St. Louis Cardinals (-1.5) | St. Louis Cardinals | 0.300 | $16.58 | 2026-08-17T17:40:07.602359+00:00 |
-| Will Bitcoin reach $66,000 August 10-16? | Yes | 0.190 | $17.20 | 2026-08-17T04:00:07.763667+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
 | Bitcoin Up or Down on August 17? | Up | 0.310 | $16.47 | 2026-08-17T16:00:07.739588+00:00 |
+| Will the price of Bitcoin be above $64,000 on August | Yes | 0.160 | $15.36 | 2026-08-17T16:00:07.622231+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -53,6 +53,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 15? | LOST | -20.26 |
 | Bitcoin Up or Down on August 14? | LOST | -18.27 |
 | Will Australia win? | LOST | -15.89 |
+| Will Bitcoin reach $66,000 August 10-16? | LOST | -17.20 |
 | Bitcoin Up or Down on August 13? | WON | +56.72 |
 | Will MrBeast's next video get between 80 and 90 mill | LOST | -19.88 |
 | ITF M25 Kursumlijska Banja 3 Men: George Lazarov vs  | LOST | -17.87 |
@@ -106,7 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Detroit Tigers vs. Seattle Mariners | LOST | -11.40 |
 | San Diego Padres vs. Arizona Diamondbacks | LOST | -14.74 |
 | Los Angeles Dodgers vs. Chicago Cubs | LOST | -9.05 |
-| San Francisco Giants vs. Texas Rangers | LOST | -16.50 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,7 +128,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 46 | 13% | +4% |
+| 0.15–0.20 | 47 | 13% | -0% |
 | 0.20–0.25 | 41 | 22% | -31% |
 | 0.25–0.30 | 36 | 19% | -21% |
 | 0.30–0.33 | 12 | 50% | +64% |
