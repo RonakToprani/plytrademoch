@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-18T15:43:50.126322+00:00
+# Poly underdog paper state — 2026-08-18T18:49:32.458816+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,20 +30,20 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **3** ($50.32)  ·  settled **158** (32W / 126L)
-- realized P&L **$-79.90**  ·  ROI **-4.4%** (backtest exp ~+20.3%)  ·  win **20%** (exp ~29.6%)
-- last scan: 2026-08-18T15:14:58.171391+00:00
+- open **2** ($32.40)  ·  settled **159** (32W / 127L)
+- realized P&L **$-97.82**  ·  ROI **-5.3%** (backtest exp ~+20.3%)  ·  win **20%** (exp ~29.6%)
+- last scan: 2026-08-18T18:15:49.520405+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
-| Bitcoin Up or Down on August 18? | Down | 0.287 | $17.92 | 2026-08-18T16:00:07.849528+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 18? | LOST | -17.92 |
 | Game Handicap: KC (-1.5) vs GIANTX (+1.5) | LOST | -16.86 |
 | Will the price of Bitcoin be above $64,000 on August | WON | +80.64 |
 | Bitcoin Up or Down on August 17? | WON | +36.66 |
@@ -103,7 +103,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Sto | LOST | -14.04 |
 | Warsaw: Katarzyna Kawa vs Justina Mikulskyte | WON | +34.77 |
 | Warsaw: Carol Young Suh Lee vs Aliona Falei | WON | +42.53 |
-| LoL: EDward Gaming vs Top Esports (BO3) - LPL Group  | LOST | -9.05 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -127,5 +126,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 48 | 15% | +18% |
 | 0.20–0.25 | 41 | 22% | -31% |
-| 0.25–0.30 | 38 | 21% | -14% |
+| 0.25–0.30 | 39 | 21% | -17% |
 | 0.30–0.33 | 14 | 50% | +64% |
