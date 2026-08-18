@@ -41,8 +41,10 @@ class Bet:
 
 class PaperStore:
     def __init__(self, path: str = _DB_PATH) -> None:
-        self._db = sqlite3.connect(path)
+        from backtest.datafeed import _SQLITE_TIMEOUT, _tune_sqlite
+        self._db = sqlite3.connect(path, timeout=_SQLITE_TIMEOUT)
         self._db.row_factory = sqlite3.Row
+        _tune_sqlite(self._db)
         self._init()
 
     def _init(self) -> None:

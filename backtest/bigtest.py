@@ -136,26 +136,66 @@ def fetch_horizon_prices(horizons: tuple[int, ...] = (24, 48, 96),
 _SEGMENTS: tuple[tuple[str, str], ...] = (
     ("game-prop",     r"-draw(-|$)|exact-score|-total-\d+pt\d+|"
                       r"-(spread|btts|handicap)(-|$)"),
+    # The league PREFIX list can never be complete — Polymarket adds leagues
+    # continuously, and every one it misses lands in `other`, which is buyable.
+    # Audited 2026-08-17: the whitelist was missing cbb, cfb, sea, bun, fl1, fif,
+    # bra, crint, spl, tur, uef, ere, arg, por, mex, col, es2, chi, aus, bl2, lib,
+    # bkcba, sud, j1100, acn, nor, kor, efa, scop, itsb, itf, ... — 10,577 slugs /
+    # 2,841 in-band rows of match flow sitting in `other`. Measured, that slice is
+    # +12.3% [+5.7,+19.1] at slip 0.01 but +3.8% [-2.2,+10.1] n.s. at slip 0.03 —
+    # the game-winner signature exactly, and it fails the same slip-0.03 stress
+    # gate the 08-05 recalibration used to exclude the class.
+    # So match the SHAPE instead of the league: `league-team-team-YYYY-MM-DD`.
+    # game-prop is tested first, so `...-2026-05-09-draw` is still a prop.
     ("game-winner",   r"^(nba|nfl|mlb|nhl|ncaab|ncaaf|wnba|epl|ucl|uel|elc|mls|"
                       r"laliga|seriea|bundesliga|ligue1|fifwc|fifa|uefa|copa|lal|"
                       r"atp|wta|tennis|cs2|csgo|lol|dota2?|val|cod|rl|kings|"
-                      r"cric\w*|t20\w*|ufc|boxing|mma)-|-vs-|\bvs\.\b"),
+                      r"cric\w*|t20\w*|ufc|boxing|mma)-|-vs-|\bvs\.\b|"
+                      r"^[a-z0-9]{2,9}-[a-z0-9]{2,7}-[a-z0-9]{2,7}-(?:19|20)\d\d-\d\d-\d\d(?:-|$)"),
+    # Season/tournament futures. The 08-06 list only knew the four US majors;
+    # everything else (F1 titles, LCK/LPL playoffs, CS2 EWC, conference finals,
+    # *-of-the-year awards, "champion on <date>") fell through to `other`. Same
+    # structure, same toxicity: -54.5% [-87.7,-11.0] @168h as a class.
     ("sports-season", r"win-the-(20\d\d|202\d\d\d).*(world-cup|champions-league|super-bowl|"
                       r"premier-league|nba-finals|stanley-cup|world-series)|"
-                      r"(super-bowl|world-cup|champions-league)-(winner|champion)"),
+                      r"(super-bowl|world-cup|champions-league)-(winner|champion)|"
+                      r"(drivers|constructors)-champion|-season-(playoffs|finals)|"
+                      r"conference-finals|win-the-(lck|lpl|lec|lcs|ewc)|ewc-20\d\d|"
+                      r"(defender|player|rookie|goalkeeper|coach|mvp)-of-the-year|"
+                      r"be-the-(\w+-)*champion-on-|highest-abs-success-rate|"
+                      r"win-(the-)?(20\d\d-)?(mls|nba|nfl|mlb|nhl|f1|ufc)\b"),
     ("token-launch",  r"fdv|one-day-after-launch|launch-a-token|market-cap-.*after-launch"),
     ("crypto-price",  r"(bitcoin|ethereum|solana|xrp|dogecoin|btc|eth)-.*"
                       r"(hit|reach|dip|above|below|price|\$?\d{4,})|"
                       r"what-price-will-(bitcoin|ethereum)"),
     ("price-barrier", r"(hit|reach|dip-to|dips-to|above|below)-(high-|low-)?\$?\d|"
                       r"what-price-will|all-time-high|-close-(above|below)"),
+    # "...-race-in-2026" / "win the Maine senate race" / "win the most seats" never
+    # contain the word "election", so seven live midterm markets were classifying
+    # as `other` and were buyable. They are poll/model-anchored like the rest of
+    # the class, and they all resolve on the SAME November date — left alone they
+    # would take the whole per-resolution-date budget into one excluded segment.
     ("election",      r"election|nominee|presidential|mayoral|primary|"
-                      r"be-the-next-(president|prime-minister|pope|chair)|win-the-\d{4}"),
+                      r"be-the-next-(president|prime-minister|pope|chair)|win-the-\d{4}|"
+                      r"(senate|governor|gubernatorial|house|congressional|mayoral|"
+                      r"parliament\w*)-race|-race-in-20\d\d|win-an-absolute-majority|"
+                      r"win-the-most-seats|win-the-(\w+-)*(senate|governor|house|district|seat)"),
     ("geopolitics",   r"ceasefire|invade|blockade|airspace|strike|war|nuclear|"
                       r"troops|capture|annex|sanction|hostage|nato"),
     ("mention-count", r"tweets|mentions|say-|number-of-times|posts-"),
+    # Central-bank RATE DECISIONS only — the exclusion argument is the futures/OIS
+    # anchor, so it must catch the ECB/BoJ/BoE meetings and the fed-funds-target
+    # markets the `^fed-` prefix missed. Deliberately NOT personnel questions
+    # ("Powell out as chair"): those have no futures curve behind them and belong
+    # in `other`, which an earlier draft of this pattern got wrong by matching
+    # bare "powell" — it also swallowed "lucy-powell-next-culture-secretary".
     ("fed-macro",     r"^fed-|fed-(increase|decrease|pause|cut|hike)|interest-rates|"
-                      r"recession|cpi|inflation|jobs-report|gdp"),
+                      r"recession|cpi|inflation|jobs-report|gdp|"
+                      r"federal-funds-rate|target-rate|"
+                      r"(ecb|boj|bank-of-japan|bank-of-england|fed)-(rate|decision)|"
+                      r"(ecb|boj|bank-of-japan|bank-of-england|fed|fomc)\b[\w-]*announce"
+                      r"[\w-]*(bps|no-change|increase|decrease)|"
+                      r"announce-a-\d+-bps|rate-(hike|cut)-in-20\d\d"),
     ("other",         r"."),
 )
 

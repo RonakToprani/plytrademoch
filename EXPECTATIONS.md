@@ -1,27 +1,92 @@
 # Strategy expectations — what "working" looks like
 
-Last recalibrated **2026-08-05** on 355,896 resolved markets / 218,734 events.
-Anything grading this strategy — the nightly review, the scheduled cloud
-reviewer, or a human looking at the dashboard — should use the numbers here.
+Last recalibrated **2026-08-05**, classifier re-audited **2026-08-17**, on
+355,896 resolved markets / 218,734 events. Anything grading this strategy — the
+nightly review, the scheduled cloud reviewer, or a human looking at the
+dashboard — should use the numbers here.
 
 ## The numbers
 
 | Quantity | Expect | Notes |
 |---|---|---|
-| Entry band | **0.15 – 0.33** | ceiling raised from 0.30 on 08-05: on the gated flow 0.30–0.33 is +10.7% [+4.5, +17.5] |
-| Segments | **include** other, game-prop, geopolitics, crypto-price; **exclude** game-winner, mention-count, fed-macro, election, price-barrier, token-launch, sports-season | the 08-05/08-06 recalibration; see below |
-| Win rate | **~28.2%** | in-band, gated universe |
-| ROI per bet | **~+19.8%** | 95% CI [+16.2%, +23.3%], n=11,250 / 8,300 events @48h |
-| Cost robustness | **+10.1% [+6.9, +13.3] at slippage 0.03** | the old ungated blend went ~0 at 0.03 — this one survives |
+| Entry band | **0.15 – 0.33** | the only slice surviving the slip-0.03 stress gate; floor and ceiling re-confirmed 08-17 (below) |
+| Segments | **include** other, game-prop, geopolitics, crypto-price; **exclude** game-winner, mention-count, fed-macro, election, price-barrier, token-launch, sports-season | the 08-05/08-06 recalibration, with the 08-17 leak fixes; see below |
+| Win rate | **~29.6%** | in-band, gated universe |
+| ROI per bet | **~+20.3%** | 95% CI [+16.8%, +24.0%], n=10,371 / 7,304 events @48h |
+| Cost robustness | **+10.9% [+7.7, +14.4] at slippage 0.03** | the old ungated blend went ~0 at 0.03 — this one survives |
 | Hold window | **6 – 168h** (geopolitics: **6 – 240h**) | decay measured 08-06: +13.2% @168h → +10.0% @240h → +0.8% n.s. @336h; geopolitics alone is EDGE at 240h at both slippages |
 | Kelly input | **calibrated q(price)**, 0.25 multiple | refit 08-05 on the gated universe; sizing only, go/no-go is price-in-band |
 | Paper bankroll | **$1,000** | unchanged |
 | Strategy epoch | **2026-08-06** | only bets opened on/after this date test this strategy |
 
-Retired figures: "+50–70% ROI" (n=126, 2026-07) and "+15.7% [+12.5, +18.9]"
-(2026-08-03, ungated blend). The ungated blend was real but unreachable: its
-average was carried by segments the live filters almost never surfaced, while
-~85% of actual flow came from segments with no edge at all (see below).
+Retired figures: "+50–70% ROI" (n=126, 2026-07), "+15.7% [+12.5, +18.9]"
+(2026-08-03, ungated blend) and "+19.8% [+16.2, +23.3]" (2026-08-05 — the right
+gate, but leakily implemented; see the 08-17 audit). The ungated blend was real
+but unreachable: its average was carried by segments the live filters almost
+never surfaced, while ~85% of actual flow came from segments with no edge at
+all (see below).
+
+## The 2026-08-17 finding: the gate was right, the classifier leaked
+
+The 08-05 segment gate is only as good as the slug patterns implementing it, and
+an audit of what actually reached the buyable `other` bucket found four leaks.
+All four were markets the gate *intends* to exclude that simply did not match
+their segment's regex:
+
+| leak | scale | measured, band 0.15–0.33 @48h |
+|---|---|---|
+| **match-shaped game-winner** — the league whitelist enumerated ~30 prefixes and missed cbb, cfb, sea, bun, fl1, fif, bra, crint, spl, tur, uef, ere, arg, por, mex, col, es2, aus, bl2, lib, bkcba, j1100, itf, … | 10,577 slugs / 2,841 in-band rows — **48% of the `other` bucket** | +12.3% [+5.7, +19.1] @0.01 but **+3.8% [−2.2, +10.1] n.s. @0.03** — the game-winner signature, failing the same stress gate that excluded the class |
+| **season/tournament futures** beyond the four US majors: F1 titles, LCK/LPL playoffs, CS2 EWC, NBA conference finals, `*-of-the-year` awards, "champion on \<date\>" | 266 slugs (20 live in-band) | −12.3% @0.01, −19.2% @0.03 on the leaked slice; class measured −54.5% [−87.7, −11.0] @168h |
+| **elections that never say "election"** — "win the Maine **senate race**", "…-race-in-2026", "win an absolute majority", "win the most seats" | 7 live in-band midterm markets | class excluded on the poll/model-anchor argument; +9.1% n.s. at best, −8.5% @0.03 |
+| **central-bank rate decisions** the `^fed-` prefix missed — fed-funds-target levels, ECB/BoJ/BoE meeting outcomes | 80 slugs (10 live in-band) | class measured −17.3% |
+
+Fixing them **raises** the gated blend, because every leak was diluting it:
+
+| | slip 0.01 | slip 0.02 | slip 0.03 |
+|---|---|---|---|
+| gated blend, leaky classifier | +18.6% [+15.5, +21.9] | — | +9.4% [+6.6, +12.4] |
+| gated blend, fixed classifier | **+20.3% [+16.8, +24.0]** | +15.4% [+12.0, +19.0] | **+10.9% [+7.7, +14.4]** |
+
+The forward risk mattered more than the 1.7-point uplift. None of the leaked
+markets were in-window on 08-17 (all resolve past 168h), so the fix cost **zero**
+current flow — but European football and college seasons restart within weeks,
+and the seven midterm markets all resolve on the *same November date*, where the
+≤25%-of-bankroll-per-resolution-date cap would have pushed a quarter of the book
+into one excluded segment in a single week. Left alone this would have quietly
+reproduced the pre-epoch failure mode (85% of flow in game-winner markets).
+
+**The live book confirms it.** Splitting the 40 post-epoch settled bets with the
+fixed classifier: 8 of them were match-shaped game-winner markets the old
+whitelist missed (`col1-`, `lec-`, `itf-`, `crint-`, `clf-` — Colombian and
+Mexican league, ITF tennis, cricket internationals, Bundesliga), and they went
+1W/7L for **−$79.85 on $135.12 staked**. The remaining book ran **+37.1%**
+against the traded figure of +17.7%. Treat the *size* of that gap as noise —
+n=8, and the backtest says this class is worth ~0, not −59% — but the leak
+itself was real, live, and taking ~20% of post-epoch flow.
+
+The classifier now matches the match **shape** (`league-team-team-YYYY-MM-DD`)
+rather than a league whitelist that can never be complete, and all four leaks are
+pinned by `tests/test_segments.py`. Note the deliberate non-fix: central-bank
+*personnel* markets ("Powell out as Fed chair") stay tradeable — the exclusion
+argument is the futures curve, and there isn't one behind a resignation.
+
+**The Kelly curve did not need refitting.** Re-measured on the cleaned universe,
+`calibrated_win_rate(p)` is within ~1 point of realised win% at every slice
+(0.163 → 21.1% model vs 21.2% actual; 0.253 → 30.9% vs 31.1%; 0.313 → 35.8% vs
+36.7%), so sizing is unchanged.
+
+**Band floor and ceiling re-confirmed** on the cleaned universe — 0.15–0.33 is
+the only slice that survives the slip-0.03 stress gate:
+
+| slice | slip 0.01 | slip 0.02 | slip 0.03 |
+|---|---|---|---|
+| 0.12–0.15 | +13.3% [+1.4, +25.7] EDGE | +5.9% n.s. | **−0.6% n.s.** → floor stays |
+| **0.15–0.33** | **+20.3% EDGE** | **+15.4% EDGE** | **+10.9% EDGE** |
+| 0.33–0.36 | +6.5% n.s. | +3.6% n.s. | +0.8% n.s. → ceiling stays |
+
+Note the trap in row one: on the cleaned universe 0.12–0.15 *does* turn
+significant at slip 0.01 (it was n.s. before). It still dies by 0.03, and the
+live book's own sub-floor fills realised −54% over n=17, so the floor holds.
 
 ## The 2026-08-05 finding: structure, not sport — and not the blend
 
@@ -130,10 +195,27 @@ Flow levers, measured 2026-08-06:
    stress gate (+20.3% n.s.) and was not extended to.
    Bonus finding from the sweep: **sports-season futures are toxic in-window**
    (−54.5% [−87.7, −11.0] @168h) and joined the excluded segments.
-3. **Prop coverage** — the game-prop class currently keys off slug suffixes
-   (draw / exact-score / total-Npt5 / spread / btts / handicap); new prop slug
-   shapes should be added as Polymarket adds markets. This is now the main
-   remaining flow lever.
+3. **Prop coverage — measured 2026-08-17, and CLOSED.** This was the last named
+   flow lever, so it was worth doing properly: every prop-shaped suffix sitting
+   inside the excluded game-winner class was enumerated and priced. None of them
+   is a game-prop economically. Against the `game-prop` baseline of +29.4%
+   [+23.9, +34.8] @0.01 / +19.6% [+14.6, +24.6] @0.03:
+
+   | family | n | ROI @0.01 | ROI @0.03 |
+   |---|---|---|---|
+   | `team-total-{home,away}-Npt5` | 202 | −17.4% [−37.7, +4.7] n.s. | **−23.7% [−42.4, −3.5] NEGATIVE** |
+   | `halftime-result-{home,away}` | 77 | +1.6% n.s. | −6.9% n.s. |
+   | `first-to-score-{home,away,neither}` | 36 | +7.6% n.s. | −1.3% n.s. |
+   | `total-games-Npt5`, `set-totals`, `totals-Npt5`, `kill-over`, `team-to-advance` | 1–16 each | too thin to price | too thin to price |
+
+   The read: a *team* total is a sportsbook line like any other — anchored, and
+   negative once you pay the spread. Only the score-STRUCTURE props already in
+   the class (draws, exact scores, match totals) carry the bias. Do not add
+   these families; adding `team-total` would have been actively costly.
+
+   With the volume floor, the hold window and prop coverage all now measured and
+   closed, **there is no known unexploited flow left**. ~2–3 entries a day at
+   ≥$30k volume is the edge's actual capacity, not a symptom of a broken filter.
 
 ## Known open questions
 

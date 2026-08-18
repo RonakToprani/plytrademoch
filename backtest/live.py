@@ -46,13 +46,22 @@ from backtest.datafeed import DataFeed
 #   price-barrier  +0.1% n.s. — barrier-hit markets price off realized vol; dead.
 #   token-launch   unstable sign across horizons on n=50-61 events; unmeasurable.
 #
-# What REMAINS is where the edge is (0.15-0.30 @48h, slip 0.01):
-#   other +24.0% [+19.0,+29.2] · game-prop (draws/exact-score/totals) +18.3%
-#   [+10.3,+26.3] · geopolitics +35.2% [+5.2,+63.7] · crypto-price +11.5%
-#   [+4.3,+19.0]. The gated blend is +19.8% [+16.2,+23.3] and — unlike the old
-#   blend — still +10.1% EDGE at slip 0.03. Common thread: no external anchor
-#   (no sportsbook line, no futures curve, no poll model) → the favorite-longshot
-#   bias survives.
+# What REMAINS is where the edge is — re-measured 2026-08-17 on the live band
+# (0.15-0.33 @48h, slip 0.01, after the classifier leak fixes below):
+#   game-prop (draws/exact-score/match totals) +29.4% [+23.9,+34.8] n=4514 ·
+#   geopolitics +34.5% [+6.3,+62.2] n=273 · crypto-price +12.4% [+5.7,+18.7]
+#   n=2559 · other +12.3% [+5.6,+19.7] n=3025. The gated blend is +20.3%
+#   [+16.8,+24.0] and — unlike the old blend — still +10.9% [+7.7,+14.4] EDGE at
+#   slip 0.03. Common thread: no external anchor (no sportsbook line, no futures
+#   curve, no poll model) → the favorite-longshot bias survives.
+#
+# 2026-08-17 leak audit: these exclusions are only as good as the regexes in
+# `bigtest._SEGMENTS`, and four classes were escaping into the buyable `other`
+# bucket — match-shaped slugs from ~30 unlisted leagues (48% of `other`!),
+# season/tournament futures, "…-senate-race-in-2026" elections, and ECB/BoJ/
+# fed-funds-target decisions. Fixing them RAISED the blend (+18.6% -> +20.3% at
+# slip 0.01) and cost zero current flow. See EXPECTATIONS.md; pinned by
+# tests/test_segments.py. If you add a segment here, add its slug shapes there.
 _NO_EDGE_SEGMENTS = frozenset({
     "game-winner", "mention-count", "fed-macro", "election",
     "price-barrier", "token-launch",

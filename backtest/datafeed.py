@@ -31,6 +31,28 @@ _PAGE = 500
 # Politeness delay between paged requests (seconds).
 _THROTTLE = 0.15
 
+# Four processes share these SQLite files: the 30-min cycle, the 3-hourly export,
+# the nightly review and the always-on dashboard. On the stock rollback journal a
+# writer takes an exclusive lock over the whole 1.7GB file, so an export landing
+# mid-cycle raised `sqlite3.OperationalError: database is locked` — and because
+# that fired inside _settle(), it killed the ENTIRE cycle, scan included. That cost
+# ~1-2 scans a day (25 crashes in logs/cycle.log between 08-04 and 08-16), i.e.
+# real missed entries. WAL lets the readers run while one writer commits, and the
+# busy timeout makes a genuine write collision wait instead of raising.
+_SQLITE_TIMEOUT = 30.0
+
+
+def _tune_sqlite(db: "sqlite3.Connection") -> None:
+    """WAL + busy timeout, so concurrent jobs queue instead of crashing."""
+    try:
+        db.execute("PRAGMA journal_mode=WAL")
+        db.execute("PRAGMA busy_timeout=30000")
+        db.execute("PRAGMA synchronous=NORMAL")
+    except sqlite3.DatabaseError:
+        # A read-only mount or an exotic filesystem can refuse WAL. Losing the
+        # optimisation is survivable; refusing to open the feed is not.
+        pass
+
 
 def _event_key(mk: dict[str, Any]) -> str:
     """
@@ -56,6 +78,26 @@ def _event_key(mk: dict[str, Any]) -> str:
         if slug:
             return f"ev:{slug}"
     return f"mk:{mk.get('slug', '') or ''}"
+
+
+def _end_date_of(mk: dict[str, Any]) -> str | None:
+    """
+    Resolution date for a market, falling back to its parent event.
+
+    64 open markets over $30k carry NO `endDate` on the /markets row (OpenAI IPO,
+    the 2026 midterm seat-count series, ...). The scanner treats an unknown date
+    as "skip", so those were invisible forever rather than merely out-of-window.
+    The event row does carry the date; a market cannot outlive its event, so this
+    is the right fallback. Markets with neither are still skipped — an unknown
+    horizon is not something to guess at.
+    """
+    end = mk.get("endDate")
+    if end:
+        return end
+    events = mk.get("events") or []
+    if events and isinstance(events[0], dict):
+        return events[0].get("endDate") or None
+    return None
 
 
 @dataclass(frozen=True)
@@ -119,8 +161,9 @@ class DataFeed:
     """Cached accessor for whale activity and market resolutions."""
 
     def __init__(self, cache_path: str = _CACHE_PATH, resolution_ttl_hours: float = 1.0) -> None:
-        self._db = sqlite3.connect(cache_path)
+        self._db = sqlite3.connect(cache_path, timeout=_SQLITE_TIMEOUT)
         self._db.row_factory = sqlite3.Row
+        _tune_sqlite(self._db)
         # Unresolved markets may resolve later, so cache them with a TTL. Resolved
         # rows are cached forever (see get_resolution), so this TTL only ever
         # delays learning that an OPEN market has closed — which is pure downside.
@@ -604,7 +647,7 @@ class DataFeed:
             "tokens": [str(t) for t in tokens],
             "prices": fp,
             "outcomes": [str(o) for o in outcomes] if len(outcomes) == 2 else ["0", "1"],
-            "end_date": mk.get("endDate"),
+            "end_date": _end_date_of(mk),
             "volume": volume,
             "slug": mk.get("slug", "") or "",
             "question": mk.get("question", "") or "",

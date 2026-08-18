@@ -98,7 +98,18 @@ class PaperTrader:
             # yet; once the clock is past `resolves_at` a stale "still open" answer
             # is the one thing we must not accept, because it locks the stake and
             # the event slot until the entry expires.
-            res = feed.get_resolution(bet.condition_id, refresh=_is_due(bet.resolves_at, now))
+            #
+            # Settling is best-effort PER BET: a network blip or a locked cache on
+            # one position used to propagate out of run_cycle and take the scan
+            # down with it, so a settlement problem silently became a missed-entry
+            # problem. An unsettled bet is retried in 30 minutes and costs nothing;
+            # a skipped scan is an opportunity that does not come back.
+            try:
+                res = feed.get_resolution(bet.condition_id, refresh=_is_due(bet.resolves_at, now))
+            except Exception as exc:   # noqa: BLE001 — deliberately broad, see above
+                logger.warning("paper_settle_failed", bet_id=bet.id, slug=bet.slug,
+                               error=str(exc))
+                continue
             if res is None or not res.closed:
                 continue
             if res.winning_token_id is None:

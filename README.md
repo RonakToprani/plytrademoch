@@ -7,7 +7,8 @@ No real orders are ever placed (DRY-RUN throughout).
 
 **[`EXPECTATIONS.md`](EXPECTATIONS.md) is the source of truth** for what
 "working" looks like — every number the strategy is graded against lives there,
-recalibrated 2026-08-05/06 on 355,896 resolved markets / 218,734 events.
+recalibrated 2026-08-05/06 on 355,896 resolved markets / 218,734 events, with
+the segment classifier re-audited 2026-08-17.
 
 ## The edge, in one paragraph
 
@@ -17,8 +18,8 @@ public anchor. Markets tethered to an external reference — sportsbook odds
 counters (tweet counts) — are efficiently priced, and any residue dies to the
 spread. Unanchored markets — one-off questions, game props (draws / exact
 scores / totals), geopolitics — keep the bias: underdogs priced 0.15–0.33 win
-more than their price implies. Gated blend: **+19.8% ROI per bet
-[+16.2%, +23.3]**, ~28.2% win rate, still **+10.1%** under punitive slippage
+more than their price implies. Gated blend: **+20.3% ROI per bet
+[+16.8%, +24.0]**, ~29.6% win rate, still **+10.9%** under punitive slippage
 assumptions (0.03), significant at every hold horizon 6–168h. The edge *rises*
 with market volume (dead below $30k, +22.5% above $100k) and decays past 168h
 for everything except geopolitics (extended to 240h, measured).

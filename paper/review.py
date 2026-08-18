@@ -2,8 +2,8 @@
 paper/review.py — Nightly strategy review + recommendations.
 
 Runs every evening (launchd). Three things:
-  1. Grades the paper book against the backtest expectation (ROI vs ~+19.8%,
-     win rate vs ~28.2%) and breaks results down by entry-price and outcome side.
+  1. Grades the paper book against the backtest expectation (ROI vs ~+20.3%,
+     win rate vs ~29.6%) and breaks results down by entry-price and outcome side.
   2. Re-checks the edge on the cached resolved-market universe across a range of
      price bands — is the live 0.15–0.33 band still the sweet spot, is it
      decaying, is an adjacent slice better? (fast: all from cache, no network.)
@@ -40,9 +40,13 @@ _CI_BANDS = {(0.12, 0.15), (0.15, 0.33), (0.33, 0.36), (0.36, 0.40)}
 # What the live config is graded against — the same universe, band and segment
 # filter the bot actually trades (2026-08-05 recalibration on the gated
 # universe: game-winner/election/price-barrier/token-launch excluded alongside
-# mention-count/fed-macro). See EXPECTATIONS.md.
-_EXP_ROI = 0.198
-_EXP_WIN = 0.282
+# mention-count/fed-macro; 2026-08-17 classifier leak fixes). See EXPECTATIONS.md.
+# Re-measured 08-17 on 10,371 in-band rows / 7,304 events @48h, slip 0.01:
+# +20.3% [+16.8, +24.0], 29.6% win. Both moved UP because the leaks they removed
+# (match-shaped game-winner slugs, season futures, unnamed elections, ECB/BoJ
+# decisions) were diluting the blend, not adding to it.
+_EXP_ROI = 0.203
+_EXP_WIN = 0.296
 
 # Bets opened before this date were placed by a DIFFERENT strategy (game-winner
 # flow made up ~85% of the old book) and must not grade the current one. The
@@ -108,6 +112,82 @@ def _band_calibration(feed: DataFeed, horizon_hours: int = 48) -> dict[tuple, di
     except (ImportError, Exception):  # noqa: B014 - fall back to the legacy path
         pass
     return _band_calibration_legacy(feed, horizon_hours)
+
+
+def _stress_roi(band: tuple[float, float], *, horizon_hours: int = 48,
+                slippage: float = 0.03) -> dict | None:
+    """
+    Gated ROI + event-clustered CI for one band at a punitive slippage.
+
+    The 08-05 recalibration's decision rule was never "is it positive at slip
+    0.01" — it was "does it still stand up when you pay a realistic spread".
+    Band-change recommendations have to apply the same bar, so they need one
+    extra collect at the stress slippage. Returns None if the deep universe
+    isn't available (legacy cache path), in which case callers stay silent.
+    """
+    try:
+        from backtest.bigtest import Cell, bootstrap_ci, collect
+        from backtest.live import _NO_EDGE_SEGMENTS
+
+        cells = collect(band[0], band[1], horizon=horizon_hours, slippage=slippage,
+                        min_volume=30_000.0, by="segment")
+        c = Cell()
+        for seg, cell in cells.items():
+            if seg in _NO_EDGE_SEGMENTS:
+                continue
+            c.n += cell.n
+            c.wins += cell.wins
+            c.roi_sum += cell.roi_sum
+            c.events |= cell.events
+            c.obs += cell.obs
+        if c.n < 20 or len(c.events) < 2:
+            return None
+        ci_lo, ci_hi = bootstrap_ci(c.obs)
+        return {"n": c.n, "buy_roi": c.roi, "ci_lo": ci_lo, "ci_hi": ci_hi}
+    except Exception:   # noqa: BLE001 — a recommendation must never break the review
+        return None
+
+
+def _ci_text(c: dict) -> str:
+    ci = (f", CI [{c['ci_lo']*100:+.0f}%, {c['ci_hi']*100:+.0f}%]"
+          if c.get("ci_lo") is not None else "")
+    return f"(ROI {c['buy_roi']*100:+.0f}%{ci}, n={c['n']})"
+
+
+def _band_change_verdict(c: dict, band: tuple[float, float]) -> tuple[bool, str]:
+    """
+    Should the live band be widened to include `band`? Returns (clears_bar, why).
+
+    Three states, and keeping them distinct is the whole point — the old wording
+    collapsed the middle one into "no significant edge" and so printed that
+    phrase next to a CI of [+2%, +25%], which is a contradiction that makes every
+    other recommendation harder to trust:
+
+      1. CI includes zero            -> no significant edge.
+      2. CI excludes zero but the    -> significant, yet too weak to trade: a band
+         lower bound is under +3%       change bought on a +1% lower bound is how
+         or ROI is under +10%           unproven flow gets into the book.
+      3. clears (2) but dies at      -> the 08-05 decision rule. Deep longshots and
+         slippage 0.03                  the top of the band are exactly where a
+                                        penny of spread eats the whole edge, so
+                                        slip 0.01 alone never justifies a change.
+    Only a slice that clears all three is worth widening into.
+    """
+    lo = c.get("ci_lo")
+    if lo is None:
+        return False, "has no significance estimate"
+    if lo <= 0:
+        return False, "has no significant edge"
+    if lo <= 0.03 or c["buy_roi"] <= 0.10:
+        return False, "is significant but below the bar for a band change (CI floor >+3%, ROI >+10%)"
+    stress = _stress_roi(band, horizon_hours=48, slippage=0.03)
+    if stress is None:
+        return False, "clears the bar at slip 0.01 but could not be stress-tested at 0.03"
+    if stress["ci_lo"] is None or stress["ci_lo"] <= 0:
+        return False, ("clears the bar at slip 0.01 but does NOT survive the slip-0.03 "
+                       f"stress test ({stress['buy_roi']*100:+.0f}%)")
+    return True, ("clears the bar AND survives slip 0.03 "
+                  f"({stress['buy_roi']*100:+.0f}%)")
 
 
 def _band_calibration_legacy(feed: DataFeed, horizon_hours: int = 48) -> dict[tuple, dict]:
@@ -276,14 +356,10 @@ def _recommendations(ep: dict, cal: dict, breakdown: dict) -> list[str]:
     for hi_band in ((0.33, 0.36), (0.36, 0.40)):
         c2 = cal.get(hi_band)
         if c2 and c2["n"] >= 20:
-            sig = c2.get("ci_lo") is not None and c2["ci_lo"] > 0.03
-            verdict = ("carries a SIGNIFICANT edge — consider raising the ceiling"
-                       if sig and c2["buy_roi"] > 0.10
-                       else "no significant edge — keep the ceiling")
-            ci = (f", CI [{c2['ci_lo']*100:+.0f}%, {c2['ci_hi']*100:+.0f}%]"
-                  if c2.get("ci_lo") is not None else "")
-            recs.append(f"CEILING: {hi_band[0]:.2f}–{hi_band[1]:.2f} {verdict} "
-                        f"(ROI {c2['buy_roi']*100:+.0f}%{ci}, n={c2['n']}).")
+            clears, why = _band_change_verdict(c2, hi_band)
+            action = "consider raising the ceiling" if clears else "keep the ceiling"
+            recs.append(f"CEILING: {hi_band[0]:.2f}–{hi_band[1]:.2f} {_ci_text(c2)} "
+                        f"{why} — {action}.")
     fav = cal[(0.80, 0.90)]
     if fav["n"] >= 20 and fav["buy_roi"] < -0.05:
         recs.append(f"ADJACENT: strong favorites (0.80–0.90) buy-ROI {fav['buy_roi']*100:+.0f}% "
@@ -291,18 +367,21 @@ def _recommendations(ep: dict, cal: dict, breakdown: dict) -> list[str]:
                     "variant is the same edge from the other end; already captured.")
     low = cal.get((0.12, 0.15))
     if low and low["n"] >= 20:
-        # Same significance gate. On 2026-08-07/08 this rec said "could extend
-        # the band down" off +10% whose CI was [-1.4, +20.6] — i.e. noise. A
-        # floor extension needs the CI floor above +3%, same bar as the ceiling.
-        sig = low.get("ci_lo") is not None and low["ci_lo"] > 0.03
-        ci = (f", CI [{low['ci_lo']*100:+.0f}%, {low['ci_hi']*100:+.0f}%]"
-              if low.get("ci_lo") is not None else "")
-        recs.append(f"FLOOR: 0.12–0.15 "
-                    + (f"carries a SIGNIFICANT edge (ROI {low['buy_roi']*100:+.0f}%{ci}, "
-                       f"n={low['n']}) — could extend the band down."
-                       if sig and low["buy_roi"] > 0.10
-                       else f"has no significant edge (ROI {low['buy_roi']*100:+.0f}%{ci}, "
-                            f"n={low['n']}) — keep the {_LIVE_BAND[0]:.2f} floor."))
+        # On 2026-08-07/08 this rec said "could extend the band down" off +10%
+        # whose CI was [-1.4, +20.6] — i.e. noise. A floor extension needs the
+        # CI floor above +3%, same bar as the ceiling.
+        #
+        # It also needs to SURVIVE THE SPREAD, and that is the check this rec was
+        # missing. After the 08-17 classifier fixes the slice turned significant
+        # at slip 0.01 (+13.3% [+1.4, +25.7]) while still dying at slip 0.03
+        # (-0.6% n.s.) — and the old wording printed "has no significant edge"
+        # next to a CI that excluded zero, contradicting itself. Deep longshots
+        # are exactly where a penny of spread costs the most, so the 0.03 stress
+        # test is the decision rule; slip 0.01 alone is not.
+        clears, why = _band_change_verdict(low, (0.12, 0.15))
+        action = ("consider extending the band down" if clears
+                  else f"keep the {_LIVE_BAND[0]:.2f} floor")
+        recs.append(f"FLOOR: 0.12–0.15 {_ci_text(low)} {why} — {action}.")
 
     if breakdown:
         worst = min(breakdown, key=lambda k: breakdown[k]["roi"])
