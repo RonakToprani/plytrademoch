@@ -70,3 +70,25 @@ def test_slug_is_filesystem_safe():
     assert _slug("BAND: keep 0.15-0.25!!") == "band-keep-0-15-0-25"
     assert _slug("") == "note"
     assert len(_slug("x" * 200)) <= 40
+
+
+def test_commands_and_their_near_misses_are_recognised():
+    """reports/inbox/ holds three archived '/pml' notes — the n/m transposition
+    of pnl — that each got silence instead of a book card. Aliases fix that."""
+    from paper.inbox import _is_command
+
+    for text in ("pnl", "/pnl", " PNL ", "book", "detail", "details",
+                 "status", "stats"):
+        assert _is_command(text), text
+    for typo in ("/pml", "pml", "p&l", "pl", "pandl", "positions", "open"):
+        assert _is_command(typo), typo
+
+
+def test_prose_is_still_archived_not_answered():
+    """The archive path is the point of the inbox — only exact commands and
+    their aliases may be swallowed as replies."""
+    from paper.inbox import _is_command
+
+    for text in ("what is the pnl doing", "book a flight", "pnl please",
+                 "should I open more positions?", ""):
+        assert not _is_command(text), text
