@@ -102,22 +102,11 @@ def _extract(update: dict) -> dict | None:
 # Anything in _COMMANDS sent to the bot (by the configured chat only) gets a
 # live book card back instead of being archived as a note. Poll cadence is the
 # reply latency — the launchd interval is 60s for this reason.
-# `pml` is not a typo here: it is THE typo. reports/inbox/ has three archived
-# notes (08-11, 08-12, 08-15) that are just "/pml" — the n/m transposition of
-# pnl — each of which got silence instead of a book card. Aliasing the near
-# misses costs nothing and beats making someone re-type the command.
 _COMMANDS = frozenset({"pnl", "book", "detail", "details", "status", "stats"})
-_ALIASES = {"pml": "pnl", "pnl?": "pnl", "p&l": "pnl", "pandl": "pnl",
-            "pl": "pnl", "positions": "book", "open": "book"}
-
-
-def _canonical_command(text: str) -> str:
-    return _ALIASES.get(
-        (raw := text.strip().lstrip("/").lower()), raw)
 
 
 def _is_command(text: str) -> bool:
-    return _canonical_command(text) in _COMMANDS
+    return text.strip().lstrip("/").lower() in _COMMANDS
 
 
 def _fmt_usd(x: float, sign: bool = True) -> str:
