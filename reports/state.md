@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-19T13:34:31.392556+00:00
+# Poly underdog paper state — 2026-08-19T16:43:12.375250+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,22 +30,25 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($77.82)  ·  settled **159** (32W / 127L)
-- realized P&L **$-97.82**  ·  ROI **-5.3%** (backtest exp ~+20.3%)  ·  win **20%** (exp ~29.6%)
-- last scan: 2026-08-19T13:21:17.554067+00:00
+- open **5** ($76.26)  ·  settled **162** (33W / 129L)
+- realized P&L **$-105.52**  ·  ROI **-5.5%** (backtest exp ~+20.3%)  ·  win **20%** (exp ~29.6%)
+- last scan: 2026-08-19T16:22:26.180216+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
-| Bitcoin Up or Down on August 19? | Up | 0.310 | $13.41 | 2026-08-19T16:00:07.842469+00:00 |
-| Will the price of Bitcoin be above $64,000 on August | No | 0.240 | $21.08 | 2026-08-19T16:00:07.943282+00:00 |
 | Iran-Oman Hormuz Agreement by August 22? | Yes | 0.189 | $10.93 | 2026-08-22T23:59:08.084173+00:00 |
+| Will Bitcoin reach $72,000 August 17-23? | Yes | 0.220 | $19.78 | 2026-08-24T04:00:07.490913+00:00 |
+| Will the price of Bitcoin be above $70,000 on August | Yes | 0.180 | $13.15 | 2026-08-20T16:00:07.939218+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Bitcoin reach $66,000 August 17-23? | LOST | -16.47 |
+| Will the price of Bitcoin be above $64,000 on August | LOST | -21.08 |
+| Bitcoin Up or Down on August 19? | WON | +29.85 |
 | Bitcoin Up or Down on August 18? | LOST | -17.92 |
 | Game Handicap: KC (-1.5) vs GIANTX (+1.5) | LOST | -16.86 |
 | Will the price of Bitcoin be above $64,000 on August | WON | +80.64 |
@@ -103,9 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Counter-Strike: Nuclear TigeRES vs CYBERSHOKE Prospe | LOST | -14.83 |
 | Hagen: Maxim Mrva vs Guy Den Ouden | LOST | -17.02 |
 | Grodzisk Mazowiecki: Amit Vales vs Daniil Glinka | LOST | -14.92 |
-| Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Sto | LOST | -14.04 |
-| Warsaw: Katarzyna Kawa vs Justina Mikulskyte | WON | +34.77 |
-| Warsaw: Carol Young Suh Lee vs Aliona Falei | WON | +42.53 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,6 +128,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 48 | 15% | +18% |
-| 0.20–0.25 | 41 | 22% | -31% |
+| 0.20–0.25 | 42 | 21% | -34% |
 | 0.25–0.30 | 39 | 21% | -17% |
-| 0.30–0.33 | 14 | 50% | +64% |
+| 0.30–0.33 | 16 | 50% | +61% |
