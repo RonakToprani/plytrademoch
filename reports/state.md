@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-18T21:57:01.690584+00:00
+# Poly underdog paper state — 2026-08-19T01:02:47.579035+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,16 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **2** ($32.40)  ·  settled **159** (32W / 127L)
+- open **3** ($45.81)  ·  settled **159** (32W / 127L)
 - realized P&L **$-97.82**  ·  ROI **-5.3%** (backtest exp ~+20.3%)  ·  win **20%** (exp ~29.6%)
-- last scan: 2026-08-18T21:46:47.332505+00:00
+- last scan: 2026-08-19T00:47:38.162367+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
+| Bitcoin Up or Down on August 19? | Up | 0.310 | $13.41 | 2026-08-19T16:00:07.842469+00:00 |
 
 ## Settled
 | market | result | P&L |
