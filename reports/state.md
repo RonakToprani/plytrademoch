@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-20T20:48:12.053941+00:00
+# Poly underdog paper state — 2026-08-20T23:54:15.849287+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($114.98)  ·  settled **166** (36W / 130L)
+- open **8** ($133.26)  ·  settled **166** (36W / 130L)
 - realized P&L **$39.03**  ·  ROI **+2.0%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-08-20T20:30:53.846200+00:00
+- last scan: 2026-08-20T23:31:49.272026+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,6 +44,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
 | Will Bitcoin reach $76,000 August 17-23? | Yes | 0.236 | $20.32 | 2026-08-24T04:00:07.641199+00:00 |
 | Will the price of Bitcoin be above $72,000 on August | No | 0.303 | $16.62 | 2026-08-21T16:00:07.948388+00:00 |
+| Will the price of XRP be above $1.20 on August 21? | No | 0.323 | $18.28 | 2026-08-21T16:00:08.595099+00:00 |
 
 ## Settled
 | market | result | P&L |
