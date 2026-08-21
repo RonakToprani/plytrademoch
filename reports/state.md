@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-21T18:39:05.252453+00:00
+# Poly underdog paper state — 2026-08-21T21:45:44.093643+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($74.69)  ·  settled **173** (37W / 136L)
+- open **6** ($94.12)  ·  settled **173** (37W / 136L)
 - realized P&L **$3.95**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **21%** (exp ~29.6%)
-- last scan: 2026-08-21T18:07:39.460130+00:00
+- last scan: 2026-08-21T21:38:38.940323+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
 | Will Newcastle United FC vs. Liverpool FC end in a d | Yes | 0.260 | $18.61 | 2026-08-23T15:30:07.904881+00:00 |
 | Will Ethereum reach $2,500 August 17-23? | Yes | 0.274 | $13.91 | 2026-08-24T04:00:07.488376+00:00 |
+| Bitcoin Up or Down on August 22? | Down | 0.280 | $19.43 | 2026-08-22T16:00:07.509834+00:00 |
 
 ## Settled
 | market | result | P&L |
