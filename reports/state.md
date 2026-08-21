@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-21T06:08:32.726722+00:00
+# Poly underdog paper state — 2026-08-21T09:16:41.193384+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,19 +30,17 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($181.96)  ·  settled **166** (36W / 130L)
-- realized P&L **$39.03**  ·  ROI **+2.0%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-08-21T05:33:44.055694+00:00
+- open **9** ($142.21)  ·  settled **168** (37W / 131L)
+- realized P&L **$85.38**  ·  ROI **+4.3%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-08-21T09:04:48.787684+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| US-Iran 60 day negotiation period extended? | Yes | 0.250 | $19.43 | 2026-08-20T23:59:07.069534+00:00 |
 | Iran-Oman Hormuz Agreement by August 22? | Yes | 0.189 | $10.93 | 2026-08-22T23:59:08.084173+00:00 |
 | Will the price of Ethereum be above $2,200 on August | No | 0.304 | $16.44 | 2026-08-21T16:00:07.405719+00:00 |
 | Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
-| Will Bitcoin reach $76,000 August 17-23? | Yes | 0.236 | $20.32 | 2026-08-24T04:00:07.641199+00:00 |
 | Will the price of Bitcoin be above $72,000 on August | No | 0.303 | $16.62 | 2026-08-21T16:00:07.948388+00:00 |
 | Will the price of XRP be above $1.20 on August 21? | No | 0.323 | $18.28 | 2026-08-21T16:00:08.595099+00:00 |
 | Bitcoin Up or Down on August 21? | Down | 0.310 | $13.41 | 2026-08-21T16:00:07.684079+00:00 |
@@ -52,6 +50,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Bitcoin reach $76,000 August 17-23? | WON | +65.78 |
 | Will the price of Ethereum be above $2,200 on August | LOST | -14.07 |
 | Bitcoin Up or Down on August 20? | WON | +28.50 |
 | Will the price of Bitcoin be above $70,000 on August | WON | +59.99 |
@@ -69,6 +68,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 15? | LOST | -20.26 |
 | Bitcoin Up or Down on August 14? | LOST | -18.27 |
 | Will Australia win? | LOST | -15.89 |
+| US-Iran 60 day negotiation period extended? | LOST | -19.43 |
 | Will Bitcoin reach $66,000 August 10-16? | LOST | -17.20 |
 | Bitcoin Up or Down on August 13? | WON | +56.72 |
 | Will MrBeast's next video get between 80 and 90 mill | LOST | -19.88 |
@@ -110,8 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | National Bank Open: Ignacio Buse vs Cameron Norrie | LOST | -11.40 |
 | T20 Lanka Premier League: Colombo Kaps vs Kandy Roya | LOST | -9.05 |
 | Plovdiv 2: Petr Nesterov vs Sebastian Sorger | LOST | -9.05 |
-| Will the next Google Gemini Pro model be released by | LOST | -14.90 |
-| Warsaw: Weronika Falkowska vs Noma Noha Akugue | WON | +42.51 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,6 +132,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 50 | 16% | +26% |
-| 0.20–0.25 | 43 | 23% | -19% |
-| 0.25–0.30 | 39 | 21% | -17% |
+| 0.20–0.25 | 44 | 25% | -6% |
+| 0.25–0.30 | 40 | 20% | -19% |
 | 0.30–0.33 | 17 | 53% | +69% |
