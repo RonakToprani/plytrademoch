@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-21T09:16:41.193384+00:00
+# Poly underdog paper state — 2026-08-21T12:24:22.111227+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($142.21)  ·  settled **168** (37W / 131L)
-- realized P&L **$85.38**  ·  ROI **+4.3%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-08-21T09:04:48.787684+00:00
+- open **9** ($139.44)  ·  settled **169** (37W / 132L)
+- realized P&L **$68.70**  ·  ROI **+3.4%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-08-21T12:05:54.623134+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,12 +44,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $72,000 on August | No | 0.303 | $16.62 | 2026-08-21T16:00:07.948388+00:00 |
 | Will the price of XRP be above $1.20 on August 21? | No | 0.323 | $18.28 | 2026-08-21T16:00:08.595099+00:00 |
 | Bitcoin Up or Down on August 21? | Down | 0.310 | $13.41 | 2026-08-21T16:00:07.684079+00:00 |
-| Will Ethereum reach $2,400 August 17-23? | No | 0.326 | $16.68 | 2026-08-24T04:00:08.247663+00:00 |
 | Will Newcastle United FC vs. Liverpool FC end in a d | Yes | 0.260 | $18.61 | 2026-08-23T15:30:07.904881+00:00 |
+| Will Ethereum reach $2,500 August 17-23? | Yes | 0.274 | $13.91 | 2026-08-24T04:00:07.488376+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Ethereum reach $2,400 August 17-23? | LOST | -16.68 |
 | Will Bitcoin reach $76,000 August 17-23? | WON | +65.78 |
 | Will the price of Ethereum be above $2,200 on August | LOST | -14.07 |
 | Bitcoin Up or Down on August 20? | WON | +28.50 |
@@ -109,7 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Dota 2: Ilbirs eSports vs Power Rangers (BO3) - EPL  | LOST | -14.83 |
 | National Bank Open: Ignacio Buse vs Cameron Norrie | LOST | -11.40 |
 | T20 Lanka Premier League: Colombo Kaps vs Kandy Roya | LOST | -9.05 |
-| Plovdiv 2: Petr Nesterov vs Sebastian Sorger | LOST | -9.05 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,4 +134,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 50 | 16% | +26% |
 | 0.20–0.25 | 44 | 25% | -6% |
 | 0.25–0.30 | 40 | 20% | -19% |
-| 0.30–0.33 | 17 | 53% | +69% |
+| 0.30–0.33 | 18 | 50% | +59% |
