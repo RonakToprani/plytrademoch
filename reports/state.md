@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-21T21:45:44.093643+00:00
+# Poly underdog paper state — 2026-08-22T00:50:31.035798+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($94.12)  ·  settled **173** (37W / 136L)
-- realized P&L **$3.95**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **21%** (exp ~29.6%)
-- last scan: 2026-08-21T21:38:38.940323+00:00
+- open **5** ($80.21)  ·  settled **174** (38W / 136L)
+- realized P&L **$40.77**  ·  ROI **+1.9%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-08-22T00:39:31.672715+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,12 +41,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by August 22? | Yes | 0.189 | $10.93 | 2026-08-22T23:59:08.084173+00:00 |
 | Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
 | Will Newcastle United FC vs. Liverpool FC end in a d | Yes | 0.260 | $18.61 | 2026-08-23T15:30:07.904881+00:00 |
-| Will Ethereum reach $2,500 August 17-23? | Yes | 0.274 | $13.91 | 2026-08-24T04:00:07.488376+00:00 |
 | Bitcoin Up or Down on August 22? | Down | 0.280 | $19.43 | 2026-08-22T16:00:07.509834+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Ethereum reach $2,500 August 17-23? | WON | +36.82 |
 | Will Ethereum reach $2,400 August 17-23? | LOST | -16.68 |
 | Bitcoin Up or Down on August 21? | LOST | -13.41 |
 | Will the price of XRP be above $1.20 on August 21? | LOST | -18.28 |
@@ -106,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | New York Mets vs. Cleveland Guardians | LOST | -13.15 |
 | National Bank Open: Learner Tien vs Gael Monfils | LOST | -14.83 |
 | National Bank Open: Alina Korneeva vs Emma Navarro | LOST | -14.90 |
-| Tampa Bay Rays vs. Colorado Rockies | LOST | -14.83 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,5 +129,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 50 | 16% | +26% |
 | 0.20–0.25 | 44 | 25% | -6% |
-| 0.25–0.30 | 40 | 20% | -19% |
+| 0.25–0.30 | 41 | 22% | -13% |
 | 0.30–0.33 | 22 | 41% | +28% |
