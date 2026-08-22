@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-22T16:24:02.093568+00:00
+# Poly underdog paper state — 2026-08-22T19:30:29.014545+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($129.71)  ·  settled **174** (38W / 136L)
-- realized P&L **$40.77**  ·  ROI **+1.9%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-08-22T16:13:57.964595+00:00
+- open **6** ($91.02)  ·  settled **176** (39W / 137L)
+- realized P&L **$71.47**  ·  ROI **+3.3%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-08-22T19:14:51.325018+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,14 +41,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by August 22? | Yes | 0.189 | $10.93 | 2026-08-22T23:59:08.084173+00:00 |
 | Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
 | Will Newcastle United FC vs. Liverpool FC end in a d | Yes | 0.260 | $18.61 | 2026-08-23T15:30:07.904881+00:00 |
-| Bitcoin Up or Down on August 22? | Down | 0.280 | $19.43 | 2026-08-22T16:00:07.509834+00:00 |
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Ethereum reach $2,600 August 17-23? | Yes | 0.194 | $18.01 | 2026-08-24T04:00:07.669091+00:00 |
-| Ethereum Up or Down on August 22? | Down | 0.318 | $19.26 | 2026-08-22T16:00:08.479603+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Ethereum Up or Down on August 22? | LOST | -19.26 |
+| Bitcoin Up or Down on August 22? | WON | +49.96 |
 | Will Ethereum reach $2,500 August 17-23? | WON | +36.82 |
 | Will Ethereum reach $2,400 August 17-23? | LOST | -16.68 |
 | Bitcoin Up or Down on August 21? | LOST | -13.41 |
@@ -107,8 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Chicago White Sox vs. Boston Red Sox | LOST | -14.95 |
 | Miami Marlins vs. Atlanta Braves | LOST | -14.92 |
 | New York Mets vs. Cleveland Guardians | LOST | -13.15 |
-| National Bank Open: Learner Tien vs Gael Monfils | LOST | -14.83 |
-| National Bank Open: Alina Korneeva vs Emma Navarro | LOST | -14.90 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,5 +130,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 50 | 16% | +26% |
 | 0.20–0.25 | 44 | 25% | -6% |
-| 0.25–0.30 | 41 | 22% | -13% |
-| 0.30–0.33 | 22 | 41% | +28% |
+| 0.25–0.30 | 42 | 24% | -5% |
+| 0.30–0.33 | 23 | 39% | +21% |
