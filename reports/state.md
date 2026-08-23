@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-23T17:20:02.069293+00:00
+# Poly underdog paper state — 2026-08-23T20:25:18.660454+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,17 +30,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($107.65)  ·  settled **177** (40W / 137L)
-- realized P&L **$146.44**  ·  ROI **+6.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-23T16:51:06.409545+00:00
+- open **5** ($78.11)  ·  settled **179** (41W / 138L)
+- realized P&L **$188.48**  ·  ROI **+8.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-23T19:52:01.159288+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| Iran-Oman Hormuz Agreement by August 22? | Yes | 0.189 | $10.93 | 2026-08-22T23:59:08.084173+00:00 |
 | Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
-| Will Newcastle United FC vs. Liverpool FC end in a d | Yes | 0.260 | $18.61 | 2026-08-23T15:30:07.904881+00:00 |
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Ethereum reach $2,600 August 17-23? | Yes | 0.194 | $18.01 | 2026-08-24T04:00:07.669091+00:00 |
 | Will Lando Norris win the 2026 F1 Dutch Grand Prix? | Yes | 0.196 | $16.63 | 2026-08-30T13:00:07.780873+00:00 |
@@ -52,6 +50,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Ethereum Up or Down on August 22? | LOST | -19.26 |
 | Bitcoin Up or Down on August 22? | WON | +49.96 |
 | Will Ethereum reach $2,500 August 17-23? | WON | +36.82 |
+| Will Newcastle United FC vs. Liverpool FC end in a d | WON | +52.97 |
 | Will Ethereum reach $2,400 August 17-23? | LOST | -16.68 |
 | Bitcoin Up or Down on August 21? | LOST | -13.41 |
 | Will the price of XRP be above $1.20 on August 21? | LOST | -18.28 |
@@ -63,6 +62,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $70,000 on August | WON | +59.99 |
 | Will Bitcoin reach $72,000 August 17-23? | WON | +70.13 |
 | Will Bitcoin reach $66,000 August 17-23? | LOST | -16.47 |
+| Iran-Oman Hormuz Agreement by August 22? | LOST | -10.93 |
 | Will the price of Bitcoin be above $64,000 on August | LOST | -21.08 |
 | Bitcoin Up or Down on August 19? | WON | +29.85 |
 | Bitcoin Up or Down on August 18? | LOST | -17.92 |
@@ -106,8 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Athletics vs. Cincinnati Reds | LOST | -9.05 |
 | Los Angeles Angels vs. Baltimore Orioles | LOST | -17.35 |
 | Washington Nationals vs. Philadelphia Phillies | WON | +49.62 |
-| Chicago White Sox vs. Boston Red Sox | LOST | -14.95 |
-| Miami Marlins vs. Atlanta Braves | LOST | -14.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,7 +127,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 50 | 16% | +26% |
+| 0.15–0.20 | 51 | 16% | +24% |
 | 0.20–0.25 | 45 | 27% | +8% |
-| 0.25–0.30 | 42 | 24% | -5% |
+| 0.25–0.30 | 43 | 26% | +2% |
 | 0.30–0.33 | 23 | 39% | +21% |
