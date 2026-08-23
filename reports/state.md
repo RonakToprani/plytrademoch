@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-23T14:14:39.711799+00:00
+# Poly underdog paper state — 2026-08-23T17:20:02.069293+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($110.95)  ·  settled **176** (39W / 137L)
-- realized P&L **$71.47**  ·  ROI **+3.3%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-08-23T13:50:09.817896+00:00
+- open **7** ($107.65)  ·  settled **177** (40W / 137L)
+- realized P&L **$146.44**  ·  ROI **+6.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-23T16:51:06.409545+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,11 +43,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Newcastle United FC vs. Liverpool FC end in a d | Yes | 0.260 | $18.61 | 2026-08-23T15:30:07.904881+00:00 |
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Ethereum reach $2,600 August 17-23? | Yes | 0.194 | $18.01 | 2026-08-24T04:00:07.669091+00:00 |
-| Bitcoin Up or Down on August 23? | Up | 0.210 | $19.93 | 2026-08-23T16:00:07.496256+00:00 |
+| Will Lando Norris win the 2026 F1 Dutch Grand Prix? | Yes | 0.196 | $16.63 | 2026-08-30T13:00:07.780873+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 23? | WON | +74.97 |
 | Ethereum Up or Down on August 22? | LOST | -19.26 |
 | Bitcoin Up or Down on August 22? | WON | +49.96 |
 | Will Ethereum reach $2,500 August 17-23? | WON | +36.82 |
@@ -107,7 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Washington Nationals vs. Philadelphia Phillies | WON | +49.62 |
 | Chicago White Sox vs. Boston Red Sox | LOST | -14.95 |
 | Miami Marlins vs. Atlanta Braves | LOST | -14.92 |
-| New York Mets vs. Cleveland Guardians | LOST | -13.15 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,6 +130,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 50 | 16% | +26% |
-| 0.20–0.25 | 44 | 25% | -6% |
+| 0.20–0.25 | 45 | 27% | +8% |
 | 0.25–0.30 | 42 | 24% | -5% |
 | 0.30–0.33 | 23 | 39% | +21% |
