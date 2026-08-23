@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-23T20:25:18.660454+00:00
+# Poly underdog paper state — 2026-08-23T23:30:15.096585+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($78.11)  ·  settled **179** (41W / 138L)
+- open **6** ($93.47)  ·  settled **179** (41W / 138L)
 - realized P&L **$188.48**  ·  ROI **+8.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-23T19:52:01.159288+00:00
+- last scan: 2026-08-23T23:23:09.280600+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Ethereum reach $2,600 August 17-23? | Yes | 0.194 | $18.01 | 2026-08-24T04:00:07.669091+00:00 |
 | Will Lando Norris win the 2026 F1 Dutch Grand Prix? | Yes | 0.196 | $16.63 | 2026-08-30T13:00:07.780873+00:00 |
+| Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
 
 ## Settled
 | market | result | P&L |
