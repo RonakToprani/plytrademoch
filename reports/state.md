@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-23T23:30:15.096585+00:00
+# Poly underdog paper state — 2026-08-24T02:35:31.038714+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($93.47)  ·  settled **179** (41W / 138L)
-- realized P&L **$188.48**  ·  ROI **+8.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-23T23:23:09.280600+00:00
+- open **5** ($76.84)  ·  settled **180** (42W / 138L)
+- realized P&L **$256.74**  ·  ROI **+11.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-24T02:23:59.738701+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,12 +41,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Ethereum reach $2,600 August 17-23? | Yes | 0.194 | $18.01 | 2026-08-24T04:00:07.669091+00:00 |
-| Will Lando Norris win the 2026 F1 Dutch Grand Prix? | Yes | 0.196 | $16.63 | 2026-08-30T13:00:07.780873+00:00 |
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Lando Norris win the 2026 F1 Dutch Grand Prix? | WON | +68.26 |
 | Bitcoin Up or Down on August 23? | WON | +74.97 |
 | Ethereum Up or Down on August 22? | LOST | -19.26 |
 | Bitcoin Up or Down on August 22? | WON | +49.96 |
@@ -106,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 6? | LOST | -19.43 |
 | Athletics vs. Cincinnati Reds | LOST | -9.05 |
 | Los Angeles Angels vs. Baltimore Orioles | LOST | -17.35 |
-| Washington Nationals vs. Philadelphia Phillies | WON | +49.62 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,7 +127,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 51 | 16% | +24% |
+| 0.15–0.20 | 52 | 17% | +36% |
 | 0.20–0.25 | 45 | 27% | +8% |
 | 0.25–0.30 | 43 | 26% | +2% |
 | 0.30–0.33 | 23 | 39% | +21% |
