@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-24T15:02:44.709933+00:00
+# Poly underdog paper state — 2026-08-24T18:10:14.345153+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($77.44)  ·  settled **181** (42W / 139L)
-- realized P&L **$238.73**  ·  ROI **+10.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-24T14:27:19.000263+00:00
+- open **4** ($59.17)  ·  settled **182** (42W / 140L)
+- realized P&L **$220.46**  ·  ROI **+9.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-24T17:58:19.542939+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
-| Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
 | Will Fulham FC vs. Chelsea FC end in a draw? | Yes | 0.260 | $18.61 | 2026-08-24T19:00:07.506744+00:00 |
@@ -58,6 +57,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of XRP be above $1.20 on August 21? | LOST | -18.28 |
 | Will the price of Bitcoin be above $72,000 on August | LOST | -16.62 |
 | Will Bitcoin reach $76,000 August 17-23? | WON | +65.78 |
+| Will the price of Bitcoin be above $68,000 on August | LOST | -18.27 |
 | Will the price of Ethereum be above $2,200 on August | LOST | -14.07 |
 | Will the price of Ethereum be above $2,200 on August | LOST | -16.44 |
 | Bitcoin Up or Down on August 20? | WON | +28.50 |
@@ -105,7 +105,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $66,000 August 3-9? | LOST | -19.00 |
 | Will Ethereum reach $2,000 August 3-9? | LOST | -18.47 |
 | Bitcoin Up or Down on August 6? | LOST | -19.43 |
-| Athletics vs. Cincinnati Reds | LOST | -9.05 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,5 +128,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 53 | 17% | +32% |
 | 0.20–0.25 | 45 | 27% | +8% |
-| 0.25–0.30 | 43 | 26% | +2% |
+| 0.25–0.30 | 44 | 25% | -0% |
 | 0.30–0.33 | 23 | 39% | +21% |
