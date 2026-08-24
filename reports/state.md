@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-24T08:49:34.578880+00:00
+# Poly underdog paper state — 2026-08-24T11:56:37.397961+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($58.83)  ·  settled **181** (42W / 139L)
+- open **5** ($77.44)  ·  settled **181** (42W / 139L)
 - realized P&L **$238.73**  ·  ROI **+10.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-24T08:25:37.272521+00:00
+- last scan: 2026-08-24T11:26:27.527857+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,6 +41,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $68,000 on August | No | 0.278 | $18.27 | 2026-08-24T16:00:07.577291+00:00 |
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
+| Will Fulham FC vs. Chelsea FC end in a draw? | Yes | 0.260 | $18.61 | 2026-08-24T19:00:07.506744+00:00 |
 
 ## Settled
 | market | result | P&L |
