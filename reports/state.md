@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-25T06:37:45.333767+00:00
+# Poly underdog paper state — 2026-08-25T09:43:07.713755+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($178.85)  ·  settled **183** (42W / 141L)
+- open **13** ($211.46)  ·  settled **183** (42W / 141L)
 - realized P&L **$201.85**  ·  ROI **+8.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-25T06:02:12.894188+00:00
+- last scan: 2026-08-25T09:33:29.124541+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,6 +48,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will XRP reach $1.80 in August? | Yes | 0.209 | $17.87 | 2026-09-01T04:00:08.797578+00:00 |
 | Will Ethereum reach $2,800 in August? | Yes | 0.224 | $19.34 | 2026-09-01T04:00:19.673291+00:00 |
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
+| Will the price of Bitcoin be above $78,000 on August | No | 0.235 | $20.38 | 2026-08-26T16:00:07.928469+00:00 |
+| Iran-Oman Hormuz Agreement by August 31? | Yes | 0.180 | $12.23 | 2026-09-01T03:59:07.880224+00:00 |
 
 ## Settled
 | market | result | P&L |
