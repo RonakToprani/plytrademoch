@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-24T21:16:40.165952+00:00
+# Poly underdog paper state — 2026-08-25T00:23:18.110363+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($59.17)  ·  settled **182** (42W / 140L)
-- realized P&L **$220.46**  ·  ROI **+9.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-24T20:59:09.751806+00:00
+- open **5** ($72.91)  ·  settled **183** (42W / 141L)
+- realized P&L **$201.85**  ·  ROI **+8.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-25T00:00:12.305072+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,11 +40,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
-| Will Fulham FC vs. Chelsea FC end in a draw? | Yes | 0.260 | $18.61 | 2026-08-24T19:00:07.506744+00:00 |
+| Will the total domestic gross for Spider-Man: Brand  | Yes | 0.156 | $11.32 | 2026-08-31T23:59:07.538558+00:00 |
+| Will the total domestic gross for The Odyssey be at  | Yes | 0.248 | $21.03 | 2026-08-31T23:59:08.248942+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Fulham FC vs. Chelsea FC end in a draw? | LOST | -18.61 |
 | Will Lando Norris win the 2026 F1 Dutch Grand Prix? | WON | +68.26 |
 | Bitcoin Up or Down on August 23? | WON | +74.97 |
 | Ethereum Up or Down on August 22? | LOST | -19.26 |
@@ -104,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 7? | WON | +35.23 |
 | Will Bitcoin reach $66,000 August 3-9? | LOST | -19.00 |
 | Will Ethereum reach $2,000 August 3-9? | LOST | -18.47 |
-| Bitcoin Up or Down on August 6? | LOST | -19.43 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,5 +129,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 53 | 17% | +32% |
 | 0.20–0.25 | 45 | 27% | +8% |
-| 0.25–0.30 | 44 | 25% | -0% |
+| 0.25–0.30 | 45 | 24% | -3% |
 | 0.30–0.33 | 23 | 39% | +21% |
