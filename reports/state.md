@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-25T09:43:07.713755+00:00
+# Poly underdog paper state — 2026-08-25T12:47:40.950594+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($211.46)  ·  settled **183** (42W / 141L)
+- open **14** ($228.68)  ·  settled **183** (42W / 141L)
 - realized P&L **$201.85**  ·  ROI **+8.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-25T09:33:29.124541+00:00
+- last scan: 2026-08-25T12:34:24.687946+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,6 +50,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
 | Will the price of Bitcoin be above $78,000 on August | No | 0.235 | $20.38 | 2026-08-26T16:00:07.928469+00:00 |
 | Iran-Oman Hormuz Agreement by August 31? | Yes | 0.180 | $12.23 | 2026-09-01T03:59:07.880224+00:00 |
+| Next Mythos-Class Model released by August 31, 2026? | Yes | 0.306 | $17.22 | 2026-08-31T03:59:07.155659+00:00 |
 
 ## Settled
 | market | result | P&L |
