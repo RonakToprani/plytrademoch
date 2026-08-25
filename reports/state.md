@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-25T15:52:42.354176+00:00
+# Poly underdog paper state — 2026-08-25T18:57:01.593058+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($228.68)  ·  settled **183** (42W / 141L)
-- realized P&L **$201.85**  ·  ROI **+8.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-25T15:35:21.985790+00:00
+- open **13** ($214.09)  ·  settled **184** (42W / 142L)
+- realized P&L **$187.26**  ·  ROI **+8.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-25T18:36:18.854894+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,7 +42,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
 | Will the total domestic gross for Spider-Man: Brand  | Yes | 0.156 | $11.32 | 2026-08-31T23:59:07.538558+00:00 |
 | Will the total domestic gross for The Odyssey be at  | Yes | 0.248 | $21.03 | 2026-08-31T23:59:08.248942+00:00 |
-| Bitcoin Up or Down on August 25? | Down | 0.160 | $14.59 | 2026-08-25T16:00:07.681116+00:00 |
 | Will Bitcoin reach $82,500 in August? | No | 0.305 | $16.58 | 2026-09-01T04:00:07.369956+00:00 |
 | Will Solana reach $120 in August? | Yes | 0.194 | $19.04 | 2026-09-01T04:00:08.100223+00:00 |
 | Will XRP reach $1.80 in August? | Yes | 0.209 | $17.87 | 2026-09-01T04:00:08.797578+00:00 |
@@ -55,6 +54,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 25? | LOST | -14.59 |
 | Will Fulham FC vs. Chelsea FC end in a draw? | LOST | -18.61 |
 | Will Lando Norris win the 2026 F1 Dutch Grand Prix? | WON | +68.26 |
 | Bitcoin Up or Down on August 23? | WON | +74.97 |
@@ -114,7 +114,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $64,000 on August | LOST | -17.22 |
 | Bitcoin Up or Down on August 7? | WON | +35.23 |
 | Will Bitcoin reach $66,000 August 3-9? | LOST | -19.00 |
-| Will Ethereum reach $2,000 August 3-9? | LOST | -18.47 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,7 +135,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 53 | 17% | +32% |
+| 0.15–0.20 | 54 | 17% | +28% |
 | 0.20–0.25 | 45 | 27% | +8% |
 | 0.25–0.30 | 45 | 24% | -3% |
 | 0.30–0.33 | 23 | 39% | +21% |
