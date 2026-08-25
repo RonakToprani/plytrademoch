@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-25T00:23:18.110363+00:00
+# Poly underdog paper state — 2026-08-25T03:30:46.069973+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($72.91)  ·  settled **183** (42W / 141L)
+- open **6** ($87.50)  ·  settled **183** (42W / 141L)
 - realized P&L **$201.85**  ·  ROI **+8.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-25T00:00:12.305072+00:00
+- last scan: 2026-08-25T03:01:06.032767+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
 | Will the total domestic gross for Spider-Man: Brand  | Yes | 0.156 | $11.32 | 2026-08-31T23:59:07.538558+00:00 |
 | Will the total domestic gross for The Odyssey be at  | Yes | 0.248 | $21.03 | 2026-08-31T23:59:08.248942+00:00 |
+| Bitcoin Up or Down on August 25? | Down | 0.160 | $14.59 | 2026-08-25T16:00:07.681116+00:00 |
 
 ## Settled
 | market | result | P&L |
