@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-26T07:25:10.779934+00:00
+# Poly underdog paper state — 2026-08-26T10:32:39.746562+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($235.02)  ·  settled **185** (42W / 143L)
+- open **16** ($269.04)  ·  settled **185** (42W / 143L)
 - realized P&L **$174.29**  ·  ROI **+7.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-26T07:10:14.286204+00:00
+- last scan: 2026-08-26T10:11:09.570085+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -51,6 +51,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Next Mythos-Class Model released by August 31, 2026? | Yes | 0.306 | $17.22 | 2026-08-31T03:59:07.155659+00:00 |
 | Will Maxx Crosby play for Dallas Cowboys next? | Yes | 0.318 | $17.33 | 2026-09-01T00:00:07.271758+00:00 |
 | Will Julian Alvarez stay at Atletico Madrid? | No | 0.300 | $16.57 | 2026-09-02T03:59:07.651956+00:00 |
+| Bitcoin Up or Down on August 26? | Up | 0.240 | $19.43 | 2026-08-26T16:00:07.448944+00:00 |
+| Will Enzo Fernandez stay at Chelsea? | Yes | 0.191 | $14.59 | 2026-09-02T03:59:07.611511+00:00 |
 
 ## Settled
 | market | result | P&L |
