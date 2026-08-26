@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-25T22:03:47.674704+00:00
+# Poly underdog paper state — 2026-08-26T01:09:48.511902+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($214.09)  ·  settled **184** (42W / 142L)
+- open **14** ($231.42)  ·  settled **184** (42W / 142L)
 - realized P&L **$187.26**  ·  ROI **+8.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-25T21:37:15.156656+00:00
+- last scan: 2026-08-26T00:38:09.554909+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,6 +50,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $78,000 on August | No | 0.235 | $20.38 | 2026-08-26T16:00:07.928469+00:00 |
 | Iran-Oman Hormuz Agreement by August 31? | Yes | 0.180 | $12.23 | 2026-09-01T03:59:07.880224+00:00 |
 | Next Mythos-Class Model released by August 31, 2026? | Yes | 0.306 | $17.22 | 2026-08-31T03:59:07.155659+00:00 |
+| Will Maxx Crosby play for Dallas Cowboys next? | Yes | 0.318 | $17.33 | 2026-09-01T00:00:07.271758+00:00 |
 
 ## Settled
 | market | result | P&L |
