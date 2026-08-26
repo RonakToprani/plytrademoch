@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-26T01:09:48.511902+00:00
+# Poly underdog paper state — 2026-08-26T04:19:02.095680+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,14 +30,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($231.42)  ·  settled **184** (42W / 142L)
-- realized P&L **$187.26**  ·  ROI **+8.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-26T00:38:09.554909+00:00
+- open **14** ($235.02)  ·  settled **185** (42W / 143L)
+- realized P&L **$174.29**  ·  ROI **+7.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-26T04:09:22.592376+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Will Russell Fry be the new Republican nominee for S | Yes | 0.179 | $12.97 | 2026-08-11T00:00:06.077527+00:00 |
 | US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
 | Will the total domestic gross for Spider-Man: Brand  | Yes | 0.156 | $11.32 | 2026-08-31T23:59:07.538558+00:00 |
@@ -51,6 +50,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by August 31? | Yes | 0.180 | $12.23 | 2026-09-01T03:59:07.880224+00:00 |
 | Next Mythos-Class Model released by August 31, 2026? | Yes | 0.306 | $17.22 | 2026-08-31T03:59:07.155659+00:00 |
 | Will Maxx Crosby play for Dallas Cowboys next? | Yes | 0.318 | $17.33 | 2026-09-01T00:00:07.271758+00:00 |
+| Will Julian Alvarez stay at Atletico Madrid? | No | 0.300 | $16.57 | 2026-09-02T03:59:07.651956+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -136,7 +136,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 54 | 17% | +28% |
+| 0.15–0.20 | 55 | 16% | +25% |
 | 0.20–0.25 | 45 | 27% | +8% |
 | 0.25–0.30 | 45 | 24% | -3% |
 | 0.30–0.33 | 23 | 39% | +21% |
