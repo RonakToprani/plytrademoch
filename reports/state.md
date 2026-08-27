@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-27T17:38:19.492233+00:00
+# Poly underdog paper state — 2026-08-27T20:47:34.490192+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($258.53)  ·  settled **187** (42W / 145L)
+- open **17** ($275.86)  ·  settled **187** (42W / 145L)
 - realized P&L **$134.48**  ·  ROI **+5.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-08-27T17:20:48.476092+00:00
+- last scan: 2026-08-27T20:21:47.142285+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -53,6 +53,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Enzo Fernandez stay at Chelsea? | Yes | 0.191 | $14.59 | 2026-09-02T03:59:07.611511+00:00 |
 | Another GTA VI trailer released by August 31? | Yes | 0.330 | $15.89 | 2026-09-01T03:59:08.102803+00:00 |
 | Map Handicap: FAL (-1.5) vs Lynn Vision (+1.5) | Lynn Vision | 0.330 | $13.41 | 2026-08-27T23:10:08.841422+00:00 |
+| Israel x Lebanon diplomatic meeting by August 31, 20 | Yes | 0.232 | $17.33 | 2026-09-01T03:59:08.317618+00:00 |
 
 ## Settled
 | market | result | P&L |
