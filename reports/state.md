@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-27T14:32:44.699864+00:00
+# Poly underdog paper state — 2026-08-27T17:38:19.492233+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($229.23)  ·  settled **187** (42W / 145L)
+- open **16** ($258.53)  ·  settled **187** (42W / 145L)
 - realized P&L **$134.48**  ·  ROI **+5.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-08-27T14:19:50.659732+00:00
+- last scan: 2026-08-27T17:20:48.476092+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -51,6 +51,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Maxx Crosby play for Dallas Cowboys next? | Yes | 0.318 | $17.33 | 2026-09-01T00:00:07.271758+00:00 |
 | Will Julian Alvarez stay at Atletico Madrid? | No | 0.300 | $16.57 | 2026-09-02T03:59:07.651956+00:00 |
 | Will Enzo Fernandez stay at Chelsea? | Yes | 0.191 | $14.59 | 2026-09-02T03:59:07.611511+00:00 |
+| Another GTA VI trailer released by August 31? | Yes | 0.330 | $15.89 | 2026-09-01T03:59:08.102803+00:00 |
+| Map Handicap: FAL (-1.5) vs Lynn Vision (+1.5) | Lynn Vision | 0.330 | $13.41 | 2026-08-27T23:10:08.841422+00:00 |
 
 ## Settled
 | market | result | P&L |
