@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-29T15:35:55.246252+00:00
+# Poly underdog paper state — 2026-08-29T18:42:39.876353+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **20** ($329.04)  ·  settled **190** (43W / 147L)
-- realized P&L **$127.22**  ·  ROI **+5.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-29T15:05:07.885810+00:00
+- open **19** ($308.20)  ·  settled **192** (43W / 149L)
+- realized P&L **$90.49**  ·  ROI **+3.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-08-29T18:06:05.218384+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -54,13 +54,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Another GTA VI trailer released by August 31? | Yes | 0.330 | $15.89 | 2026-09-01T03:59:08.102803+00:00 |
 | Israel x Lebanon diplomatic meeting by August 31, 20 | Yes | 0.232 | $17.33 | 2026-09-01T03:59:08.317618+00:00 |
 | Will Bitcoin reach $82,000 August 24-30? | Yes | 0.330 | $16.58 | 2026-08-31T04:00:07.396019+00:00 |
-| Spread: Coventry City FC (-1.5) | Coventry City FC | 0.310 | $16.47 | 2026-08-29T14:00:07.870074+00:00 |
-| Will the price of Bitcoin be above $78,000 on August | Yes | 0.240 | $20.26 | 2026-08-29T16:00:07.745332+00:00 |
 | Google Maps renames Lake Ontario to "Lake America" b | Yes | 0.330 | $13.28 | 2026-08-31T23:59:07.836852+00:00 |
+| Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $78,000 on August | LOST | -20.26 |
+| Spread: Coventry City FC (-1.5) | LOST | -16.47 |
 | Bitcoin Up or Down on August 28? | LOST | -13.41 |
 | Will the price of Bitcoin be above $82,000 on August | LOST | -21.08 |
 | Map Handicap: FAL (-1.5) vs Lynn Vision (+1.5) | WON | +27.23 |
@@ -119,8 +120,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 9? | WON | +73.09 |
 | Iran-Oman Hormuz Agreement by August 15? | WON | +47.64 |
 | US-Iran Hormuz Agreement by August 15? | LOST | -18.47 |
-| Will Independiente Santa Fe win on 2026-08-09? | LOST | -19.43 |
-| Bitcoin Up or Down on August 8? | LOST | -13.41 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -143,6 +142,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 55 | 16% | +25% |
-| 0.20–0.25 | 47 | 26% | +1% |
+| 0.20–0.25 | 48 | 25% | -3% |
 | 0.25–0.30 | 46 | 24% | -6% |
-| 0.30–0.33 | 25 | 40% | +23% |
+| 0.30–0.33 | 26 | 38% | +18% |
