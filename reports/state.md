@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-29T03:07:38.572078+00:00
+# Poly underdog paper state — 2026-08-29T06:15:22.716412+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **19** ($315.76)  ·  settled **190** (43W / 147L)
+- open **20** ($329.04)  ·  settled **190** (43W / 147L)
 - realized P&L **$127.22**  ·  ROI **+5.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-29T03:01:17.631207+00:00
+- last scan: 2026-08-29T06:02:17.057371+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -56,6 +56,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $82,000 August 24-30? | Yes | 0.330 | $16.58 | 2026-08-31T04:00:07.396019+00:00 |
 | Spread: Coventry City FC (-1.5) | Coventry City FC | 0.310 | $16.47 | 2026-08-29T14:00:07.870074+00:00 |
 | Will the price of Bitcoin be above $78,000 on August | Yes | 0.240 | $20.26 | 2026-08-29T16:00:07.745332+00:00 |
+| Google Maps renames Lake Ontario to "Lake America" b | Yes | 0.330 | $13.28 | 2026-08-31T23:59:07.836852+00:00 |
 
 ## Settled
 | market | result | P&L |
