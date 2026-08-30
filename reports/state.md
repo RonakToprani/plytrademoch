@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-30T16:28:25.685161+00:00
+# Poly underdog paper state — 2026-08-30T19:36:36.058704+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **19** ($310.81)  ·  settled **193** (44W / 149L)
-- realized P&L **$117.45**  ·  ROI **+4.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-30T16:12:51.818388+00:00
+- open **18** ($294.92)  ·  settled **194** (44W / 150L)
+- realized P&L **$101.56**  ·  ROI **+4.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-30T19:14:00.373974+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -55,11 +55,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel x Lebanon diplomatic meeting by August 31, 20 | Yes | 0.232 | $17.33 | 2026-09-01T03:59:08.317618+00:00 |
 | Will Bitcoin reach $82,000 August 24-30? | Yes | 0.330 | $16.58 | 2026-08-31T04:00:07.396019+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
-| Bitcoin Up or Down on August 30? | Down | 0.310 | $15.89 | 2026-08-30T16:00:07.651826+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on August 30? | LOST | -15.89 |
 | Google Maps renames Lake Ontario to "Lake America" b | WON | +26.96 |
 | Will the price of Bitcoin be above $78,000 on August | LOST | -20.26 |
 | Spread: Coventry City FC (-1.5) | LOST | -16.47 |
@@ -119,7 +119,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
 | Will the next Google Gemini Pro model be released by | LOST | -12.23 |
 | Bitcoin Up or Down on August 9? | WON | +73.09 |
-| Iran-Oman Hormuz Agreement by August 15? | WON | +47.64 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -144,4 +143,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 55 | 16% | +25% |
 | 0.20–0.25 | 48 | 25% | -3% |
 | 0.25–0.30 | 46 | 24% | -6% |
-| 0.30–0.33 | 27 | 41% | +24% |
+| 0.30–0.33 | 28 | 39% | +19% |
