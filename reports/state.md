@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-30T19:36:36.058704+00:00
+# Poly underdog paper state — 2026-08-30T22:42:14.664964+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **18** ($294.92)  ·  settled **194** (44W / 150L)
+- open **19** ($311.50)  ·  settled **194** (44W / 150L)
 - realized P&L **$101.56**  ·  ROI **+4.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-30T19:14:00.373974+00:00
+- last scan: 2026-08-30T22:15:01.381522+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -55,6 +55,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel x Lebanon diplomatic meeting by August 31, 20 | Yes | 0.232 | $17.33 | 2026-09-01T03:59:08.317618+00:00 |
 | Will Bitcoin reach $82,000 August 24-30? | Yes | 0.330 | $16.58 | 2026-08-31T04:00:07.396019+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
+| Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 
 ## Settled
 | market | result | P&L |
