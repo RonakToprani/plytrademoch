@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-30T22:42:14.664964+00:00
+# Poly underdog paper state — 2026-08-31T01:48:31.825764+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,14 +30,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **19** ($311.50)  ·  settled **194** (44W / 150L)
-- realized P&L **$101.56**  ·  ROI **+4.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-30T22:15:01.381522+00:00
+- open **19** ($311.50)  ·  settled **195** (45W / 150L)
+- realized P&L **$165.77**  ·  ROI **+6.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-31T01:15:59.094088+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| US ceasefire against Iran continues through August 3 | No | 0.160 | $12.23 | 2026-08-31T23:59:07.722673+00:00 |
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
 | Will the total domestic gross for Spider-Man: Brand  | Yes | 0.156 | $11.32 | 2026-08-31T23:59:07.538558+00:00 |
 | Will the total domestic gross for The Odyssey be at  | Yes | 0.248 | $21.03 | 2026-08-31T23:59:08.248942+00:00 |
@@ -56,6 +55,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $82,000 August 24-30? | Yes | 0.330 | $16.58 | 2026-08-31T04:00:07.396019+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
+| Will the price of Bitcoin be above $76,000 on August | No | 0.181 | $12.23 | 2026-08-31T16:00:07.252396+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -75,6 +75,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 23? | WON | +74.97 |
 | Ethereum Up or Down on August 22? | LOST | -19.26 |
 | Will Ethereum reach $2,600 August 17-23? | LOST | -18.01 |
+| US ceasefire against Iran continues through August 3 | WON | +64.21 |
 | Bitcoin Up or Down on August 22? | WON | +49.96 |
 | Will Ethereum reach $2,500 August 17-23? | WON | +36.82 |
 | Will Newcastle United FC vs. Liverpool FC end in a d | WON | +52.97 |
@@ -119,7 +120,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 10? | LOST | -13.41 |
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
 | Will the next Google Gemini Pro model be released by | LOST | -12.23 |
-| Bitcoin Up or Down on August 9? | WON | +73.09 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -141,7 +141,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 55 | 16% | +25% |
+| 0.15–0.20 | 56 | 18% | +36% |
 | 0.20–0.25 | 48 | 25% | -3% |
 | 0.25–0.30 | 46 | 24% | -6% |
 | 0.30–0.33 | 28 | 39% | +19% |
