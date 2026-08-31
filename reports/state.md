@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-31T14:16:32.964639+00:00
+# Poly underdog paper state — 2026-08-31T17:23:34.389630+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **20** ($331.54)  ·  settled **196** (45W / 151L)
+- open **21** ($348.76)  ·  settled **196** (45W / 151L)
 - realized P&L **$149.19**  ·  ROI **+6.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-31T13:49:56.837083+00:00
+- last scan: 2026-08-31T16:50:56.307588+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -57,6 +57,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $76,000 on August | No | 0.181 | $12.23 | 2026-08-31T16:00:07.252396+00:00 |
 | Bitcoin Up or Down on August 31? | Up | 0.240 | $19.93 | 2026-08-31T16:00:07.439376+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
+| Map Handicap: FAL (-1.5) vs MOUZ (+1.5) | Team Falcons | 0.280 | $17.22 | 2026-08-31T22:00:07.780764+00:00 |
 
 ## Settled
 | market | result | P&L |
