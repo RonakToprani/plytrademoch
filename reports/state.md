@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-31T17:23:34.389630+00:00
+# Poly underdog paper state — 2026-08-31T20:32:48.013157+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **21** ($348.76)  ·  settled **196** (45W / 151L)
-- realized P&L **$149.19**  ·  ROI **+6.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-31T16:50:56.307588+00:00
+- open **18** ($299.38)  ·  settled **199** (45W / 154L)
+- realized P&L **$99.81**  ·  ROI **+4.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-31T20:22:06.767911+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -54,14 +54,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel x Lebanon diplomatic meeting by August 31, 20 | Yes | 0.232 | $17.33 | 2026-09-01T03:59:08.317618+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
-| Will the price of Bitcoin be above $76,000 on August | No | 0.181 | $12.23 | 2026-08-31T16:00:07.252396+00:00 |
-| Bitcoin Up or Down on August 31? | Up | 0.240 | $19.93 | 2026-08-31T16:00:07.439376+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
-| Map Handicap: FAL (-1.5) vs MOUZ (+1.5) | Team Falcons | 0.280 | $17.22 | 2026-08-31T22:00:07.780764+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: FAL (-1.5) vs MOUZ (+1.5) | LOST | -17.22 |
+| Bitcoin Up or Down on August 31? | LOST | -19.93 |
+| Will the price of Bitcoin be above $76,000 on August | LOST | -12.23 |
 | Bitcoin Up or Down on August 30? | LOST | -15.89 |
 | Google Maps renames Lake Ontario to "Lake America" b | WON | +26.96 |
 | Will the price of Bitcoin be above $78,000 on August | LOST | -20.26 |
@@ -119,9 +119,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $64,000 on August | WON | +52.97 |
 | Will Kai and Speed beat the Minecraft challenge by A | WON | +59.71 |
 | Spread: St. Louis Cardinals (-1.5) | LOST | -16.58 |
-| Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | WON | +32.26 |
-| Bitcoin Up or Down on August 10? | LOST | -13.41 |
-| Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -143,7 +140,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 56 | 18% | +36% |
-| 0.20–0.25 | 48 | 25% | -3% |
-| 0.25–0.30 | 46 | 24% | -6% |
+| 0.15–0.20 | 57 | 18% | +33% |
+| 0.20–0.25 | 49 | 24% | -6% |
+| 0.25–0.30 | 47 | 23% | -8% |
 | 0.30–0.33 | 29 | 38% | +15% |
