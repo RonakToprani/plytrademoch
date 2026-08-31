@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-31T01:48:31.825764+00:00
+# Poly underdog paper state — 2026-08-31T04:55:22.391581+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **19** ($311.50)  ·  settled **195** (45W / 150L)
-- realized P&L **$165.77**  ·  ROI **+6.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-31T01:15:59.094088+00:00
+- open **18** ($294.92)  ·  settled **196** (45W / 151L)
+- realized P&L **$149.19**  ·  ROI **+6.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-08-31T04:47:03.902333+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -52,7 +52,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Enzo Fernandez stay at Chelsea? | Yes | 0.191 | $14.59 | 2026-09-02T03:59:07.611511+00:00 |
 | Another GTA VI trailer released by August 31? | Yes | 0.330 | $15.89 | 2026-09-01T03:59:08.102803+00:00 |
 | Israel x Lebanon diplomatic meeting by August 31, 20 | Yes | 0.232 | $17.33 | 2026-09-01T03:59:08.317618+00:00 |
-| Will Bitcoin reach $82,000 August 24-30? | Yes | 0.330 | $16.58 | 2026-08-31T04:00:07.396019+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 | Will the price of Bitcoin be above $76,000 on August | No | 0.181 | $12.23 | 2026-08-31T16:00:07.252396+00:00 |
@@ -64,6 +63,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Google Maps renames Lake Ontario to "Lake America" b | WON | +26.96 |
 | Will the price of Bitcoin be above $78,000 on August | LOST | -20.26 |
 | Spread: Coventry City FC (-1.5) | LOST | -16.47 |
+| Will Bitcoin reach $82,000 August 24-30? | LOST | -16.58 |
 | Bitcoin Up or Down on August 28? | LOST | -13.41 |
 | Will the price of Bitcoin be above $82,000 on August | LOST | -21.08 |
 | Map Handicap: FAL (-1.5) vs Lynn Vision (+1.5) | WON | +27.23 |
@@ -119,7 +119,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: RED (-1.5) vs Leviatan Esports (+1.5) | WON | +32.26 |
 | Bitcoin Up or Down on August 10? | LOST | -13.41 |
 | Game Handicap: G2 (-1.5) vs Team Heretics (+1.5) | LOST | -16.68 |
-| Will the next Google Gemini Pro model be released by | LOST | -12.23 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -144,4 +143,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 56 | 18% | +36% |
 | 0.20–0.25 | 48 | 25% | -3% |
 | 0.25–0.30 | 46 | 24% | -6% |
-| 0.30–0.33 | 28 | 39% | +19% |
+| 0.30–0.33 | 29 | 38% | +15% |
