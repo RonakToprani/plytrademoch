@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-08-31T20:32:48.013157+00:00
+# Poly underdog paper state — 2026-08-31T23:38:24.885762+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **18** ($299.38)  ·  settled **199** (45W / 154L)
+- open **19** ($315.85)  ·  settled **199** (45W / 154L)
 - realized P&L **$99.81**  ·  ROI **+4.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-08-31T20:22:06.767911+00:00
+- last scan: 2026-08-31T23:23:04.833723+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -55,6 +55,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
+| Game Handicap: GEN (-1.5) vs KT Rolster (+1.5) | KT Rolster | 0.310 | $16.47 | 2026-09-01T14:00:07.332939+00:00 |
 
 ## Settled
 | market | result | P&L |
