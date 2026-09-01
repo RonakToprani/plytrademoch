@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-01T02:45:52.644854+00:00
+# Poly underdog paper state — 2026-09-01T05:54:16.327033+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **19** ($315.85)  ·  settled **199** (45W / 154L)
-- realized P&L **$99.81**  ·  ROI **+4.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-01T02:24:02.479076+00:00
+- open **16** ($263.69)  ·  settled **203** (46W / 157L)
+- realized P&L **$81.27**  ·  ROI **+3.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-01T05:25:06.221367+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,10 +40,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia capture Kucheriv Yar by August 31? | Yes | 0.193 | $15.36 | 2026-09-01T03:59:06.961406+00:00 |
 | Will the total domestic gross for Spider-Man: Brand  | Yes | 0.156 | $11.32 | 2026-08-31T23:59:07.538558+00:00 |
 | Will the total domestic gross for The Odyssey be at  | Yes | 0.248 | $21.03 | 2026-08-31T23:59:08.248942+00:00 |
-| Will Bitcoin reach $82,500 in August? | No | 0.305 | $16.58 | 2026-09-01T04:00:07.369956+00:00 |
-| Will Solana reach $120 in August? | Yes | 0.194 | $19.04 | 2026-09-01T04:00:08.100223+00:00 |
-| Will XRP reach $1.80 in August? | Yes | 0.209 | $17.87 | 2026-09-01T04:00:08.797578+00:00 |
-| Will Ethereum reach $2,800 in August? | Yes | 0.224 | $19.34 | 2026-09-01T04:00:19.673291+00:00 |
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
 | Iran-Oman Hormuz Agreement by August 31? | Yes | 0.180 | $12.23 | 2026-09-01T03:59:07.880224+00:00 |
 | Next Mythos-Class Model released by August 31, 2026? | Yes | 0.306 | $17.22 | 2026-08-31T03:59:07.155659+00:00 |
@@ -56,6 +52,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
 | Game Handicap: GEN (-1.5) vs KT Rolster (+1.5) | KT Rolster | 0.310 | $16.47 | 2026-09-01T14:00:07.332939+00:00 |
+| Will the price of Bitcoin be above $78,000 on Septem | No | 0.230 | $20.67 | 2026-09-01T16:00:07.651768+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -73,6 +70,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: FAL (-1.5) vs Lynn Vision (+1.5) | WON | +27.23 |
 | Bitcoin Up or Down on August 26? | LOST | -19.43 |
 | Will the price of Bitcoin be above $78,000 on August | LOST | -20.38 |
+| Will Ethereum reach $2,800 in August? | LOST | -19.34 |
+| Will XRP reach $1.80 in August? | LOST | -17.87 |
+| Will Solana reach $120 in August? | LOST | -19.04 |
+| Will Bitcoin reach $82,500 in August? | WON | +37.71 |
 | Bitcoin Up or Down on August 25? | LOST | -14.59 |
 | Will Fulham FC vs. Chelsea FC end in a draw? | LOST | -18.61 |
 | Will Lando Norris win the 2026 F1 Dutch Grand Prix? | WON | +68.26 |
@@ -116,10 +117,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 12? | WON | +27.23 |
 | Will Deportivo Toluca FC win on 2026-08-12? | LOST | -13.41 |
 | US announces end of Iranian blockade by August 15, 2 | LOST | -14.59 |
-| Will FC Cincinnati win on 2026-08-11? | WON | +38.69 |
-| Will the price of Bitcoin be above $64,000 on August | WON | +52.97 |
-| Will Kai and Speed beat the Minecraft challenge by A | WON | +59.71 |
-| Spread: St. Louis Cardinals (-1.5) | LOST | -16.58 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -141,7 +138,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 57 | 18% | +33% |
-| 0.20–0.25 | 49 | 24% | -6% |
+| 0.15–0.20 | 58 | 17% | +29% |
+| 0.20–0.25 | 51 | 24% | -11% |
 | 0.25–0.30 | 47 | 23% | -8% |
-| 0.30–0.33 | 29 | 38% | +15% |
+| 0.30–0.33 | 30 | 40% | +22% |
