@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-01T18:23:28.903895+00:00
+# Poly underdog paper state — 2026-09-01T21:31:09.128284+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($164.07)  ·  settled **212** (48W / 164L)
-- realized P&L **$79.48**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-01T17:59:33.382165+00:00
+- open **10** ($164.80)  ·  settled **213** (49W / 164L)
+- realized P&L **$112.93**  ·  ROI **+4.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-01T21:00:40.917680+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,11 +46,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
 | Seattle Mariners vs. Boston Red Sox: O/U 8.5 | Over | 0.328 | $16.41 | 2026-09-01T22:45:07.290235+00:00 |
-| Next Mythos-Class Model released by September 1, 202 | Yes | 0.330 | $16.47 | 2026-09-01T23:59:08.180186+00:00 |
+| Will the price of Bitcoin be above $76,000 on Septem | No | 0.230 | $17.20 | 2026-09-02T16:00:07.531231+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Next Mythos-Class Model released by September 1, 202 | WON | +33.45 |
 | Bitcoin Up or Down on September 1? | WON | +40.84 |
 | Will the price of Bitcoin be above $78,000 on Septem | WON | +69.20 |
 | Game Handicap: GEN (-1.5) vs KT Rolster (+1.5) | LOST | -16.47 |
@@ -110,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will TSG Hoffenheim win on 2026-08-16? | LOST | -15.23 |
 | Afghanistan Tour of Ireland ODIs: Ireland vs Afghani | LOST | -19.85 |
 | Bitcoin Up or Down on August 15? | LOST | -20.26 |
-| Bitcoin Up or Down on August 14? | LOST | -18.27 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -135,4 +135,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 60 | 17% | +23% |
 | 0.20–0.25 | 53 | 25% | -3% |
 | 0.25–0.30 | 48 | 25% | -2% |
-| 0.30–0.33 | 34 | 35% | +7% |
+| 0.30–0.33 | 35 | 37% | +13% |
