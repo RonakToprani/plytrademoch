@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-01T12:08:22.837247+00:00
+# Poly underdog paper state — 2026-09-01T15:15:01.837287+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($185.01)  ·  settled **209** (46W / 163L)
-- realized P&L **$-14.09**  ·  ROI **-0.5%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-01T11:57:25.143653+00:00
+- open **12** ($201.42)  ·  settled **210** (46W / 164L)
+- realized P&L **$-30.56**  ·  ROI **-1.1%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-01T14:58:27.143294+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,13 +45,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
-| Game Handicap: GEN (-1.5) vs KT Rolster (+1.5) | KT Rolster | 0.310 | $16.47 | 2026-09-01T14:00:07.332939+00:00 |
 | Will the price of Bitcoin be above $78,000 on Septem | No | 0.230 | $20.67 | 2026-09-01T16:00:07.651768+00:00 |
 | Bitcoin Up or Down on September 1? | Down | 0.290 | $16.68 | 2026-09-01T16:00:08.470800+00:00 |
+| Seattle Mariners vs. Boston Red Sox: O/U 8.5 | Over | 0.328 | $16.41 | 2026-09-01T22:45:07.290235+00:00 |
+| Next Mythos-Class Model released by September 1, 202 | Yes | 0.330 | $16.47 | 2026-09-01T23:59:08.180186+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Game Handicap: GEN (-1.5) vs KT Rolster (+1.5) | LOST | -16.47 |
 | Map Handicap: FAL (-1.5) vs MOUZ (+1.5) | LOST | -17.22 |
 | Bitcoin Up or Down on August 31? | LOST | -19.93 |
 | Will the price of Bitcoin be above $76,000 on August | LOST | -12.23 |
@@ -111,7 +113,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 14? | LOST | -18.27 |
 | Will Australia win? | LOST | -15.89 |
 | US-Iran 60 day negotiation period extended? | LOST | -19.43 |
-| Will Bitcoin reach $66,000 August 10-16? | LOST | -17.20 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,4 +137,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 60 | 17% | +23% |
 | 0.20–0.25 | 52 | 23% | -13% |
 | 0.25–0.30 | 47 | 23% | -8% |
-| 0.30–0.33 | 33 | 36% | +10% |
+| 0.30–0.33 | 34 | 35% | +7% |
