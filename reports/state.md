@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-02T06:53:26.149237+00:00
+# Poly underdog paper state — 2026-09-02T10:00:14.943332+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,19 +30,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($101.45)  ·  settled **217** (50W / 167L)
-- realized P&L **$99.58**  ·  ROI **+3.5%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-02T06:33:49.939786+00:00
+- open **6** ($101.35)  ·  settled **218** (50W / 168L)
+- realized P&L **$83.01**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-02T09:34:53.242639+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
-| Will Julian Alvarez stay at Atletico Madrid? | No | 0.300 | $16.57 | 2026-09-02T03:59:07.651956+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
 | Will the price of Bitcoin be above $76,000 on Septem | No | 0.230 | $17.20 | 2026-09-02T16:00:07.531231+00:00 |
+| Bitcoin Up or Down on September 2? | Up | 0.280 | $16.47 | 2026-09-02T16:00:07.529812+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -67,6 +67,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Another GTA VI trailer released by August 31? | LOST | -15.89 |
 | Will Enzo Fernandez stay at Chelsea? | LOST | -14.59 |
 | Bitcoin Up or Down on August 26? | LOST | -19.43 |
+| Will Julian Alvarez stay at Atletico Madrid? | LOST | -16.57 |
 | Will Maxx Crosby play for Dallas Cowboys next? | LOST | -17.33 |
 | Next Mythos-Class Model released by August 31, 2026? | LOST | -17.22 |
 | Iran-Oman Hormuz Agreement by August 31? | LOST | -12.23 |
@@ -106,7 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 18? | LOST | -17.92 |
 | Game Handicap: KC (-1.5) vs GIANTX (+1.5) | LOST | -16.86 |
 | Will the price of Bitcoin be above $64,000 on August | WON | +80.64 |
-| Bitcoin Up or Down on August 17? | WON | +36.66 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,4 +131,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 62 | 16% | +18% |
 | 0.20–0.25 | 54 | 24% | -6% |
 | 0.25–0.30 | 48 | 25% | -2% |
-| 0.30–0.33 | 36 | 39% | +18% |
+| 0.30–0.33 | 37 | 38% | +15% |
