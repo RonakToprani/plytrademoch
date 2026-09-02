@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-01T21:31:09.128284+00:00
+# Poly underdog paper state — 2026-09-02T00:38:44.916127+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($164.80)  ·  settled **213** (49W / 164L)
-- realized P&L **$112.93**  ·  ROI **+4.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-01T21:00:40.917680+00:00
+- open **8** ($132.45)  ·  settled **215** (49W / 166L)
+- realized P&L **$80.58**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-02T00:01:46.723893+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Will the total domestic gross for Spider-Man: Brand  | Yes | 0.156 | $11.32 | 2026-08-31T23:59:07.538558+00:00 |
-| Will the total domestic gross for The Odyssey be at  | Yes | 0.248 | $21.03 | 2026-08-31T23:59:08.248942+00:00 |
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
 | Will Julian Alvarez stay at Atletico Madrid? | No | 0.300 | $16.57 | 2026-09-02T03:59:07.651956+00:00 |
 | Will Enzo Fernandez stay at Chelsea? | Yes | 0.191 | $14.59 | 2026-09-02T03:59:07.611511+00:00 |
@@ -78,6 +76,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Solana reach $120 in August? | LOST | -19.04 |
 | Will Bitcoin reach $82,500 in August? | WON | +37.71 |
 | Bitcoin Up or Down on August 25? | LOST | -14.59 |
+| Will the total domestic gross for The Odyssey be at  | LOST | -21.03 |
+| Will the total domestic gross for Spider-Man: Brand  | LOST | -11.32 |
 | Will Fulham FC vs. Chelsea FC end in a draw? | LOST | -18.61 |
 | Will Russia capture Kucheriv Yar by August 31? | LOST | -15.36 |
 | Will Lando Norris win the 2026 F1 Dutch Grand Prix? | WON | +68.26 |
@@ -109,8 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 17? | WON | +36.66 |
 | Will Real Madrid win on 2026-08-16? | LOST | -16.86 |
 | Will TSG Hoffenheim win on 2026-08-16? | LOST | -15.23 |
-| Afghanistan Tour of Ireland ODIs: Ireland vs Afghani | LOST | -19.85 |
-| Bitcoin Up or Down on August 15? | LOST | -20.26 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,7 +130,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 60 | 17% | +23% |
-| 0.20–0.25 | 53 | 25% | -3% |
+| 0.15–0.20 | 61 | 16% | +21% |
+| 0.20–0.25 | 54 | 24% | -6% |
 | 0.25–0.30 | 48 | 25% | -2% |
 | 0.30–0.33 | 35 | 37% | +13% |
