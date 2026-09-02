@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-02T16:11:58.276771+00:00
+# Poly underdog paper state — 2026-09-02T19:19:25.020606+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($117.24)  ·  settled **218** (50W / 168L)
-- realized P&L **$83.01**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-02T15:36:53.704200+00:00
+- open **6** ($95.80)  ·  settled **220** (50W / 170L)
+- realized P&L **$49.34**  ·  ROI **+1.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-02T19:07:57.738970+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,13 +41,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
-| Will the price of Bitcoin be above $76,000 on Septem | No | 0.230 | $17.20 | 2026-09-02T16:00:07.531231+00:00 |
-| Bitcoin Up or Down on September 2? | Up | 0.280 | $16.47 | 2026-09-02T16:00:07.529812+00:00 |
 | Will Bitcoin dip to $74,000 August 31-September 6? | Yes | 0.290 | $15.89 | 2026-09-07T04:00:07.523710+00:00 |
+| Will the price of Bitcoin be above $76,000 on Septem | No | 0.159 | $12.23 | 2026-09-03T16:00:07.430436+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on September 2? | LOST | -16.47 |
+| Will the price of Bitcoin be above $76,000 on Septem | LOST | -17.20 |
 | Next Mythos-Class Model released by September 1, 202 | WON | +33.45 |
 | Seattle Mariners vs. Boston Red Sox: O/U 8.5 | WON | +33.59 |
 | Bitcoin Up or Down on September 1? | WON | +40.84 |
@@ -106,8 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $64,000 on August | LOST | -21.08 |
 | Bitcoin Up or Down on August 19? | WON | +29.85 |
 | Bitcoin Up or Down on August 18? | LOST | -17.92 |
-| Game Handicap: KC (-1.5) vs GIANTX (+1.5) | LOST | -16.86 |
-| Will the price of Bitcoin be above $64,000 on August | WON | +80.64 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,6 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 62 | 16% | +18% |
-| 0.20–0.25 | 54 | 24% | -6% |
-| 0.25–0.30 | 48 | 25% | -2% |
+| 0.20–0.25 | 55 | 24% | -8% |
+| 0.25–0.30 | 49 | 24% | -4% |
 | 0.30–0.33 | 37 | 38% | +15% |
