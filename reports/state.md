@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-03T20:19:45.785706+00:00
+# Poly underdog paper state — 2026-09-03T23:28:27.542961+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($158.49)  ·  settled **221** (50W / 171L)
-- realized P&L **$37.11**  ·  ROI **+1.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-03T19:45:26.640877+00:00
+- open **7** ($121.42)  ·  settled **223** (50W / 173L)
+- realized P&L **$0.04**  ·  ROI **+0.0%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-03T23:16:33.798132+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,14 +42,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Grand Theft Auto VI Extended Look get less than | No | 0.310 | $16.58 | 2026-09-03T23:59:07.385933+00:00 |
 | Will Iran target Qatar by August 31, 2026? | Yes | 0.289 | $16.69 | 2026-08-31T20:59:07.657102+00:00 |
 | Will Bitcoin dip to $74,000 August 31-September 6? | Yes | 0.290 | $15.89 | 2026-09-07T04:00:07.523710+00:00 |
-| 1st Half Spread: Real Sociedad de Fútbol (-1.5) | Real Sociedad de Fútbol | 0.260 | $19.85 | 2026-09-03T19:00:07.987475+00:00 |
-| 1st Half Spread: Lille OSC (-1.5) | Lille OSC | 0.312 | $17.22 | 2026-09-03T18:45:08.737166+00:00 |
 | Will OpenAI’s Astra model be released by September 3 | No | 0.220 | $19.93 | 2026-09-03T23:59:07.585946+00:00 |
 | Will the price of Bitcoin be above $80,000 on Septem | Yes | 0.287 | $17.92 | 2026-09-04T16:00:07.869460+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| 1st Half Spread: Lille OSC (-1.5) | LOST | -17.22 |
+| 1st Half Spread: Real Sociedad de Fútbol (-1.5) | LOST | -19.85 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -12.23 |
 | Bitcoin Up or Down on September 2? | LOST | -16.47 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -17.20 |
@@ -108,8 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $72,000 August 17-23? | WON | +70.13 |
 | Will Bitcoin reach $66,000 August 17-23? | LOST | -16.47 |
 | Iran-Oman Hormuz Agreement by August 22? | LOST | -10.93 |
-| Will the price of Bitcoin be above $64,000 on August | LOST | -21.08 |
-| Bitcoin Up or Down on August 19? | WON | +29.85 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,5 +131,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 63 | 16% | +16% |
 | 0.20–0.25 | 55 | 24% | -8% |
-| 0.25–0.30 | 49 | 24% | -4% |
-| 0.30–0.33 | 37 | 38% | +15% |
+| 0.25–0.30 | 50 | 24% | -7% |
+| 0.30–0.33 | 38 | 37% | +12% |
