@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-02T22:27:28.038757+00:00
+# Poly underdog paper state — 2026-09-03T01:34:55.003588+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($132.87)  ·  settled **220** (50W / 170L)
+- open **9** ($152.80)  ·  settled **220** (50W / 170L)
 - realized P&L **$49.34**  ·  ROI **+1.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-02T22:08:54.145233+00:00
+- last scan: 2026-09-03T01:09:48.732387+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $76,000 on Septem | No | 0.159 | $12.23 | 2026-09-03T16:00:07.430436+00:00 |
 | 1st Half Spread: Real Sociedad de Fútbol (-1.5) | Real Sociedad de Fútbol | 0.260 | $19.85 | 2026-09-03T19:00:07.987475+00:00 |
 | 1st Half Spread: Lille OSC (-1.5) | Lille OSC | 0.312 | $17.22 | 2026-09-03T18:45:08.737166+00:00 |
+| Will OpenAI’s Astra model be released by September 3 | No | 0.220 | $19.93 | 2026-09-03T23:59:07.585946+00:00 |
 
 ## Settled
 | market | result | P&L |
