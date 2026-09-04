@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-04T05:43:45.226822+00:00
+# Poly underdog paper state — 2026-09-04T08:51:08.278704+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($88.15)  ·  settled **225** (51W / 174L)
-- realized P&L **$20.25**  ·  ROI **+0.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-04T05:18:22.621335+00:00
+- open **6** ($103.69)  ·  settled **226** (52W / 174L)
+- realized P&L **$90.91**  ·  ROI **+3.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-04T08:19:25.905690+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,12 +40,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Bitcoin dip to $74,000 August 31-September 6? | Yes | 0.290 | $15.89 | 2026-09-07T04:00:07.523710+00:00 |
-| Will OpenAI’s Astra model be released by September 3 | No | 0.220 | $19.93 | 2026-09-03T23:59:07.585946+00:00 |
 | Will the price of Bitcoin be above $80,000 on Septem | Yes | 0.287 | $17.92 | 2026-09-04T16:00:07.869460+00:00 |
+| Will OpenAI’s Astra model be released by September 4 | Yes | 0.219 | $19.58 | 2026-09-04T23:59:07.629496+00:00 |
+| Map Handicap: FAL (-1.5) vs G2 (+1.5) | Team Falcons | 0.320 | $15.89 | 2026-09-04T20:00:07.526471+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will OpenAI’s Astra model be released by September 3 | WON | +70.66 |
 | 1st Half Spread: Lille OSC (-1.5) | LOST | -17.22 |
 | 1st Half Spread: Real Sociedad de Fútbol (-1.5) | LOST | -19.85 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -12.23 |
@@ -105,7 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Ethereum be above $2,200 on August | LOST | -16.44 |
 | Bitcoin Up or Down on August 20? | WON | +28.50 |
 | Will the price of Bitcoin be above $70,000 on August | WON | +59.99 |
-| Will Bitcoin reach $72,000 August 17-23? | WON | +70.13 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,6 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 63 | 16% | +16% |
-| 0.20–0.25 | 55 | 24% | -8% |
+| 0.20–0.25 | 56 | 25% | +2% |
 | 0.25–0.30 | 51 | 24% | -8% |
 | 0.30–0.33 | 39 | 38% | +17% |
