@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-05T03:31:27.676706+00:00
+# Poly underdog paper state — 2026-09-05T06:39:00.587157+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($70.56)  ·  settled **229** (54W / 175L)
+- open **5** ($83.97)  ·  settled **229** (54W / 175L)
 - realized P&L **$176.59**  ·  ROI **+5.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-05T02:55:24.995481+00:00
+- last scan: 2026-09-05T06:26:23.307994+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,6 +41,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Bitcoin dip to $74,000 August 31-September 6? | Yes | 0.290 | $15.89 | 2026-09-07T04:00:07.523710+00:00 |
 | Will the price of Bitcoin be above $80,000 on Septem | Yes | 0.240 | $20.26 | 2026-09-05T16:00:07.682432+00:00 |
+| Bitcoin Up or Down on September 5? | Down | 0.320 | $13.41 | 2026-09-05T16:00:07.361201+00:00 |
 
 ## Settled
 | market | result | P&L |
