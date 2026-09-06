@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-06T13:53:30.120799+00:00
+# Poly underdog paper state — 2026-09-06T16:59:41.170042+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($85.14)  ·  settled **231** (54W / 177L)
-- realized P&L **$142.92**  ·  ROI **+4.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-06T13:35:08.913802+00:00
+- open **5** ($85.72)  ·  settled **232** (54W / 178L)
+- realized P&L **$127.03**  ·  ROI **+4.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-06T16:36:02.655023+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,12 +40,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Will Bitcoin dip to $74,000 August 31-September 6? | Yes | 0.290 | $15.89 | 2026-09-07T04:00:07.523710+00:00 |
-| Will the price of Bitcoin be above $80,000 on Septem | Yes | 0.320 | $15.89 | 2026-09-06T16:00:07.054373+00:00 |
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
+| Will Kimi Antonelli win the 2026 F1 Italian Grand Pr | No | 0.170 | $16.47 | 2026-09-13T13:00:07.186187+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $80,000 on Septem | LOST | -15.89 |
 | Bitcoin Up or Down on September 5? | LOST | -13.41 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.26 |
 | Map Handicap: FAL (-1.5) vs G2 (+1.5) | WON | +33.77 |
@@ -105,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 21? | LOST | -13.41 |
 | Will the price of XRP be above $1.20 on August 21? | LOST | -18.28 |
 | Will the price of Bitcoin be above $72,000 on August | LOST | -16.62 |
-| Will Bitcoin reach $76,000 August 17-23? | WON | +65.78 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,4 +130,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 63 | 16% | +16% |
 | 0.20–0.25 | 58 | 26% | +8% |
 | 0.25–0.30 | 52 | 23% | -10% |
-| 0.30–0.33 | 41 | 39% | +20% |
+| 0.30–0.33 | 42 | 38% | +17% |
