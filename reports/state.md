@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-06T16:59:41.170042+00:00
+# Poly underdog paper state — 2026-09-06T20:05:23.537083+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($85.72)  ·  settled **232** (54W / 178L)
+- open **6** ($106.80)  ·  settled **232** (54W / 178L)
 - realized P&L **$127.03**  ·  ROI **+4.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-06T16:36:02.655023+00:00
+- last scan: 2026-09-06T19:36:56.586410+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $74,000 August 31-September 6? | Yes | 0.290 | $15.89 | 2026-09-07T04:00:07.523710+00:00 |
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
 | Will Kimi Antonelli win the 2026 F1 Italian Grand Pr | No | 0.170 | $16.47 | 2026-09-13T13:00:07.186187+00:00 |
+| Will AfD win between 42% and 45% of all valid second | No | 0.223 | $21.08 | 2026-09-06T23:59:07.126373+00:00 |
 
 ## Settled
 | market | result | P&L |
