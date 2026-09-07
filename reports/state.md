@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-07T14:51:20.117937+00:00
+# Poly underdog paper state — 2026-09-07T17:57:59.254005+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($127.59)  ·  settled **234** (54W / 180L)
-- realized P&L **$94.67**  ·  ROI **+3.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-07T14:42:29.858393+00:00
+- open **4** ($69.77)  ·  settled **237** (54W / 183L)
+- realized P&L **$36.85**  ·  ROI **+1.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-07T17:43:23.814331+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,14 +40,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
-| Will AfD win between 42% and 45% of all valid second | No | 0.223 | $21.08 | 2026-09-06T23:59:07.126373+00:00 |
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
-| Will the price of Bitcoin be above $80,000 on Septem | Yes | 0.210 | $18.47 | 2026-09-07T16:00:07.074300+00:00 |
-| Bitcoin Up or Down on September 7? | Up | 0.300 | $18.27 | 2026-09-07T16:00:07.475422+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on September 7? | LOST | -18.27 |
+| Will the price of Bitcoin be above $80,000 on Septem | LOST | -18.47 |
+| Will AfD win between 42% and 45% of all valid second | LOST | -21.08 |
 | Will Kimi Antonelli win the 2026 F1 Italian Grand Pr | LOST | -16.47 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -15.89 |
 | Bitcoin Up or Down on September 5? | LOST | -13.41 |
@@ -105,9 +105,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US ceasefire against Iran continues through August 3 | WON | +64.21 |
 | Bitcoin Up or Down on August 22? | WON | +49.96 |
 | Will Ethereum reach $2,500 August 17-23? | WON | +36.82 |
-| Will Newcastle United FC vs. Liverpool FC end in a d | WON | +52.97 |
-| Will Ethereum reach $2,400 August 17-23? | LOST | -16.68 |
-| Bitcoin Up or Down on August 21? | LOST | -13.41 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,6 +127,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 64 | 16% | +13% |
-| 0.20–0.25 | 58 | 26% | +8% |
+| 0.20–0.25 | 60 | 25% | +3% |
 | 0.25–0.30 | 53 | 23% | -12% |
-| 0.30–0.33 | 42 | 38% | +17% |
+| 0.30–0.33 | 43 | 37% | +14% |
