@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-07T05:29:21.973849+00:00
+# Poly underdog paper state — 2026-09-07T08:38:07.488637+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($90.85)  ·  settled **234** (54W / 180L)
+- open **6** ($109.32)  ·  settled **234** (54W / 180L)
 - realized P&L **$94.67**  ·  ROI **+3.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-07T05:09:44.900983+00:00
+- last scan: 2026-09-07T08:10:36.684668+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
 | Will AfD win between 42% and 45% of all valid second | No | 0.223 | $21.08 | 2026-09-06T23:59:07.126373+00:00 |
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
+| Will the price of Bitcoin be above $80,000 on Septem | Yes | 0.210 | $18.47 | 2026-09-07T16:00:07.074300+00:00 |
 
 ## Settled
 | market | result | P&L |
