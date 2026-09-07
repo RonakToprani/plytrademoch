@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-07T02:22:24.350639+00:00
+# Poly underdog paper state — 2026-09-07T05:29:21.973849+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,18 +30,18 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($90.33)  ·  settled **233** (54W / 179L)
-- realized P&L **$110.56**  ·  ROI **+3.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-07T02:08:51.940193+00:00
+- open **5** ($90.85)  ·  settled **234** (54W / 180L)
+- realized P&L **$94.67**  ·  ROI **+3.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-07T05:09:44.900983+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
-| Will Bitcoin dip to $74,000 August 31-September 6? | Yes | 0.290 | $15.89 | 2026-09-07T04:00:07.523710+00:00 |
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
 | Will AfD win between 42% and 45% of all valid second | No | 0.223 | $21.08 | 2026-09-06T23:59:07.126373+00:00 |
+| Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -57,6 +57,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 1st Half Spread: Lille OSC (-1.5) | LOST | -17.22 |
 | 1st Half Spread: Real Sociedad de Fútbol (-1.5) | LOST | -19.85 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -12.23 |
+| Will Bitcoin dip to $74,000 August 31-September 6? | LOST | -15.89 |
 | Bitcoin Up or Down on September 2? | LOST | -16.47 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -17.20 |
 | Next Mythos-Class Model released by September 1, 202 | WON | +33.45 |
@@ -105,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Newcastle United FC vs. Liverpool FC end in a d | WON | +52.97 |
 | Will Ethereum reach $2,400 August 17-23? | LOST | -16.68 |
 | Bitcoin Up or Down on August 21? | LOST | -13.41 |
-| Will the price of XRP be above $1.20 on August 21? | LOST | -18.28 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,5 +129,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 64 | 16% | +13% |
 | 0.20–0.25 | 58 | 26% | +8% |
-| 0.25–0.30 | 52 | 23% | -10% |
+| 0.25–0.30 | 53 | 23% | -12% |
 | 0.30–0.33 | 42 | 38% | +17% |
