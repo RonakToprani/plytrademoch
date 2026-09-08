@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-08T15:39:34.920769+00:00
+# Poly underdog paper state — 2026-09-08T18:47:11.482420+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($84.36)  ·  settled **239** (54W / 185L)
-- realized P&L **$0.32**  ·  ROI **+0.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-08T15:19:56.818464+00:00
+- open **5** ($90.85)  ·  settled **240** (54W / 186L)
+- realized P&L **$-14.27**  ·  ROI **-0.4%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-08T18:20:52.687024+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,11 +41,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
-| Will the price of Bitcoin be above $78,000 on Septem | No | 0.180 | $14.59 | 2026-09-08T16:00:07.819840+00:00 |
+| Map Handicap: G2.A (-1.5) vs Azuolas (+1.5) | Azuolas | 0.330 | $21.08 | 2026-09-08T23:00:07.996615+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $78,000 on Septem | LOST | -14.59 |
 | Map Handicap: MGLZ (-1.5) vs MIBR (+1.5) | LOST | -17.92 |
 | Map Handicap: 9z (-1.5) vs 5star (+1.5) | LOST | -18.61 |
 | Bitcoin Up or Down on September 7? | LOST | -18.27 |
@@ -105,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 23? | WON | +74.97 |
 | Ethereum Up or Down on August 22? | LOST | -19.26 |
 | Will Ethereum reach $2,600 August 17-23? | LOST | -18.01 |
-| US ceasefire against Iran continues through August 3 | WON | +64.21 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -127,7 +127,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 64 | 16% | +13% |
+| 0.15–0.20 | 65 | 15% | +11% |
 | 0.20–0.25 | 60 | 25% | +3% |
 | 0.25–0.30 | 55 | 22% | -16% |
 | 0.30–0.33 | 43 | 37% | +14% |
