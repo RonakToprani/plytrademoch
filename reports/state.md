@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-09T16:38:22.742351+00:00
+# Poly underdog paper state — 2026-09-09T19:45:48.011995+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,18 +30,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($84.36)  ·  settled **243** (54W / 189L)
-- realized P&L **$-69.74**  ·  ROI **-2.1%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-09T16:27:21.854771+00:00
+- open **6** ($93.45)  ·  settled **244** (54W / 190L)
+- realized P&L **$-88.26**  ·  ROI **-2.7%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-09T19:28:18.217863+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| 0 ships transit Hormuz on any date by August 31? | Yes | 0.213 | $18.52 | 2026-09-01T03:59:20.367108+00:00 |
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
 | Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
+| Map Handicap: TYLOO (-1.5) vs Alliance (+1.5) | TYLOO | 0.290 | $16.68 | 2026-09-10T09:00:08.064029+00:00 |
+| Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -96,6 +97,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Next Mythos-Class Model released by August 31, 2026? | LOST | -17.22 |
 | Iran-Oman Hormuz Agreement by August 31? | LOST | -12.23 |
 | Will the price of Bitcoin be above $78,000 on August | LOST | -20.38 |
+| 0 ships transit Hormuz on any date by August 31? | LOST | -18.52 |
 | Will Ethereum reach $2,800 in August? | LOST | -19.34 |
 | Will XRP reach $1.80 in August? | LOST | -17.87 |
 | Will Solana reach $120 in August? | LOST | -19.04 |
@@ -105,7 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the total domestic gross for Spider-Man: Brand  | LOST | -11.32 |
 | Will Fulham FC vs. Chelsea FC end in a draw? | LOST | -18.61 |
 | Will Russia capture Kucheriv Yar by August 31? | LOST | -15.36 |
-| Will Lando Norris win the 2026 F1 Dutch Grand Prix? | WON | +68.26 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,6 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 65 | 15% | +11% |
-| 0.20–0.25 | 60 | 25% | +3% |
+| 0.20–0.25 | 61 | 25% | +0% |
 | 0.25–0.30 | 56 | 21% | -17% |
 | 0.30–0.33 | 45 | 36% | +8% |
