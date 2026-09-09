@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-09T01:02:03.000246+00:00
+# Poly underdog paper state — 2026-09-09T04:07:54.512475+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($69.77)  ·  settled **241** (54W / 187L)
+- open **5** ($86.24)  ·  settled **241** (54W / 187L)
 - realized P&L **$-35.35**  ·  ROI **-1.1%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-09T00:52:47.612571+00:00
+- last scan: 2026-09-09T03:53:40.093544+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,6 +41,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
+| Map Handicap: 9z (-1.5) vs MIBR (+1.5) | 9z | 0.310 | $16.47 | 2026-09-09T12:00:07.554583+00:00 |
 
 ## Settled
 | market | result | P&L |
