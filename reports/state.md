@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-09T07:15:23.461674+00:00
+# Poly underdog paper state — 2026-09-09T10:24:07.607901+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($86.24)  ·  settled **241** (54W / 187L)
-- realized P&L **$-35.35**  ·  ROI **-1.1%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-09T06:54:30.706784+00:00
+- open **6** ($102.28)  ·  settled **242** (54W / 188L)
+- realized P&L **$-51.82**  ·  ROI **-1.6%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-09T09:55:26.349671+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,11 +41,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
-| Map Handicap: 9z (-1.5) vs MIBR (+1.5) | 9z | 0.310 | $16.47 | 2026-09-09T12:00:07.554583+00:00 |
+| Will the price of Bitcoin be above $80,000 on Septem | Yes | 0.270 | $17.92 | 2026-09-09T16:00:07.670125+00:00 |
+| Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: 9z (-1.5) vs MIBR (+1.5) | LOST | -16.47 |
 | Map Handicap: G2.A (-1.5) vs Azuolas (+1.5) | LOST | -21.08 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -14.59 |
 | Map Handicap: MGLZ (-1.5) vs MIBR (+1.5) | LOST | -17.92 |
@@ -105,7 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia capture Kucheriv Yar by August 31? | LOST | -15.36 |
 | Will Lando Norris win the 2026 F1 Dutch Grand Prix? | WON | +68.26 |
 | Bitcoin Up or Down on August 23? | WON | +74.97 |
-| Ethereum Up or Down on August 22? | LOST | -19.26 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,4 +131,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 65 | 15% | +11% |
 | 0.20–0.25 | 60 | 25% | +3% |
 | 0.25–0.30 | 55 | 22% | -16% |
-| 0.30–0.33 | 44 | 36% | +10% |
+| 0.30–0.33 | 45 | 36% | +8% |
