@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-10T14:24:12.085467+00:00
+# Poly underdog paper state — 2026-09-10T17:29:53.713266+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($125.42)  ·  settled **246** (55W / 191L)
-- realized P&L **$-58.86**  ·  ROI **-1.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-10T14:04:07.647613+00:00
+- open **8** ($129.16)  ·  settled **247** (55W / 192L)
+- realized P&L **$-75.54**  ·  ROI **-2.3%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-10T17:05:08.532993+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,13 +42,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
 | Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
-| Bitcoin Up or Down on September 10? | Up | 0.290 | $16.68 | 2026-09-10T16:00:08.097877+00:00 |
 | US x Iran Effective Ceasefire by September 11? | No | 0.330 | $13.41 | 2026-09-11T23:59:07.954478+00:00 |
 | Will the price of Bitcoin be above $76,000 on Septem | No | 0.200 | $18.56 | 2026-09-11T16:00:07.650945+00:00 |
+| Will Bitcoin dip to $74,000 September 7-13? | Yes | 0.230 | $20.42 | 2026-09-14T04:00:08.083283+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on September 10? | LOST | -16.68 |
 | Map Handicap: AST (-1.5) vs 5star (+1.5) | WON | +46.08 |
 | Map Handicap: TYLOO (-1.5) vs Alliance (+1.5) | LOST | -16.68 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -17.92 |
@@ -108,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $82,500 in August? | WON | +37.71 |
 | Bitcoin Up or Down on August 25? | LOST | -14.59 |
 | Will the total domestic gross for The Odyssey be at  | LOST | -21.03 |
-| Will the total domestic gross for Spider-Man: Brand  | LOST | -11.32 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,5 +132,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 65 | 15% | +11% |
 | 0.20–0.25 | 61 | 25% | +0% |
-| 0.25–0.30 | 58 | 22% | -14% |
+| 0.25–0.30 | 59 | 22% | -15% |
 | 0.30–0.33 | 45 | 36% | +8% |
