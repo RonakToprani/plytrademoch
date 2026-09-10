@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-09T22:51:59.625918+00:00
+# Poly underdog paper state — 2026-09-10T01:59:35.036852+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($93.45)  ·  settled **244** (54W / 190L)
+- open **7** ($111.37)  ·  settled **244** (54W / 190L)
 - realized P&L **$-88.26**  ·  ROI **-2.7%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-09T22:29:09.710895+00:00
+- last scan: 2026-09-10T01:30:01.450280+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,6 +43,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
 | Map Handicap: TYLOO (-1.5) vs Alliance (+1.5) | TYLOO | 0.290 | $16.68 | 2026-09-10T09:00:08.064029+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
+| Map Handicap: AST (-1.5) vs 5star (+1.5) | 5star | 0.280 | $17.92 | 2026-09-10T12:00:07.259798+00:00 |
 
 ## Settled
 | market | result | P&L |
