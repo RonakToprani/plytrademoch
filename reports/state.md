@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-10T08:11:40.192620+00:00
+# Poly underdog paper state — 2026-09-10T11:18:12.963611+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($111.37)  ·  settled **245** (54W / 191L)
-- realized P&L **$-104.94**  ·  ROI **-3.2%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-10T08:02:16.930514+00:00
+- open **7** ($106.86)  ·  settled **246** (55W / 191L)
+- realized P&L **$-58.86**  ·  ROI **-1.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-10T11:03:12.359125+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,12 +42,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
 | Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
-| Map Handicap: AST (-1.5) vs 5star (+1.5) | 5star | 0.280 | $17.92 | 2026-09-10T12:00:07.259798+00:00 |
 | Bitcoin Up or Down on September 10? | Up | 0.290 | $16.68 | 2026-09-10T16:00:08.097877+00:00 |
+| US x Iran Effective Ceasefire by September 11? | No | 0.330 | $13.41 | 2026-09-11T23:59:07.954478+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: AST (-1.5) vs 5star (+1.5) | WON | +46.08 |
 | Map Handicap: TYLOO (-1.5) vs Alliance (+1.5) | LOST | -16.68 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -17.92 |
 | Map Handicap: 9z (-1.5) vs MIBR (+1.5) | LOST | -16.47 |
@@ -107,7 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 25? | LOST | -14.59 |
 | Will the total domestic gross for The Odyssey be at  | LOST | -21.03 |
 | Will the total domestic gross for Spider-Man: Brand  | LOST | -11.32 |
-| Will Fulham FC vs. Chelsea FC end in a draw? | LOST | -18.61 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,5 +131,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 65 | 15% | +11% |
 | 0.20–0.25 | 61 | 25% | +0% |
-| 0.25–0.30 | 57 | 21% | -19% |
+| 0.25–0.30 | 58 | 22% | -14% |
 | 0.30–0.33 | 45 | 36% | +8% |
