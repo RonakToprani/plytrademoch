@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-10T20:36:46.672403+00:00
+# Poly underdog paper state — 2026-09-10T23:42:44.169545+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($129.16)  ·  settled **247** (55W / 192L)
-- realized P&L **$-75.54**  ·  ROI **-2.3%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-10T20:06:03.060934+00:00
+- open **7** ($110.21)  ·  settled **248** (55W / 193L)
+- realized P&L **$-94.49**  ·  ROI **-2.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-10T23:06:57.347300+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
-| Israel military action against Lebanon on September  | No | 0.319 | $18.95 | 2026-09-09T23:59:07.486863+00:00 |
 | Will the Bank of Russia make no change to the key ra | No | 0.320 | $16.41 | 2026-09-11T23:59:07.373794+00:00 |
 | Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
@@ -62,6 +61,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -18.47 |
 | Will AfD win between 42% and 45% of all valid second | LOST | -21.08 |
 | Will Kimi Antonelli win the 2026 F1 Italian Grand Pr | LOST | -16.47 |
+| Israel military action against Lebanon on September  | LOST | -18.95 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -15.89 |
 | Bitcoin Up or Down on September 5? | LOST | -13.41 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.26 |
@@ -108,7 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Solana reach $120 in August? | LOST | -19.04 |
 | Will Bitcoin reach $82,500 in August? | WON | +37.71 |
 | Bitcoin Up or Down on August 25? | LOST | -14.59 |
-| Will the total domestic gross for The Odyssey be at  | LOST | -21.03 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,4 +132,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 65 | 15% | +11% |
 | 0.20–0.25 | 61 | 25% | +0% |
 | 0.25–0.30 | 59 | 22% | -15% |
-| 0.30–0.33 | 45 | 36% | +8% |
+| 0.30–0.33 | 46 | 35% | +5% |
