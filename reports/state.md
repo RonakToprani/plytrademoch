@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-11T15:15:50.283054+00:00
+# Poly underdog paper state — 2026-09-11T18:22:03.169530+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($130.90)  ·  settled **249** (55W / 194L)
-- realized P&L **$-110.90**  ·  ROI **-3.3%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-11T14:41:23.498349+00:00
+- open **8** ($128.23)  ·  settled **250** (55W / 195L)
+- realized P&L **$-129.46**  ·  ROI **-3.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-11T18:12:28.693672+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,14 +41,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
 | US x Iran Effective Ceasefire by September 11? | No | 0.330 | $13.41 | 2026-09-11T23:59:07.954478+00:00 |
-| Will the price of Bitcoin be above $76,000 on Septem | No | 0.200 | $18.56 | 2026-09-11T16:00:07.650945+00:00 |
 | Will Bitcoin dip to $74,000 September 7-13? | Yes | 0.230 | $20.42 | 2026-09-14T04:00:08.083283+00:00 |
 | S&P 500 (SPX) Up or Down on September 11? | Down | 0.300 | $16.68 | 2026-09-11T20:00:06.784328+00:00 |
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
+| Will the price of Bitcoin be above $78,000 on Septem | Yes | 0.320 | $15.89 | 2026-09-12T16:00:08.198422+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $76,000 on Septem | LOST | -18.56 |
 | Bitcoin Up or Down on September 10? | LOST | -16.68 |
 | Map Handicap: AST (-1.5) vs 5star (+1.5) | WON | +46.08 |
 | Map Handicap: TYLOO (-1.5) vs Alliance (+1.5) | LOST | -16.68 |
@@ -108,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum reach $2,800 in August? | LOST | -19.34 |
 | Will XRP reach $1.80 in August? | LOST | -17.87 |
 | Will Solana reach $120 in August? | LOST | -19.04 |
-| Will Bitcoin reach $82,500 in August? | WON | +37.71 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,6 +131,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 65 | 15% | +11% |
-| 0.20–0.25 | 61 | 25% | +0% |
+| 0.20–0.25 | 62 | 24% | -2% |
 | 0.25–0.30 | 59 | 22% | -15% |
 | 0.30–0.33 | 47 | 34% | +3% |
