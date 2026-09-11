@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-11T18:22:03.169530+00:00
+# Poly underdog paper state — 2026-09-11T21:28:56.509685+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($128.23)  ·  settled **250** (55W / 195L)
+- open **10** ($162.85)  ·  settled **250** (55W / 195L)
 - realized P&L **$-129.46**  ·  ROI **-3.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-11T18:12:28.693672+00:00
+- last scan: 2026-09-11T21:13:26.166354+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | S&P 500 (SPX) Up or Down on September 11? | Down | 0.300 | $16.68 | 2026-09-11T20:00:06.784328+00:00 |
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | Will the price of Bitcoin be above $78,000 on Septem | Yes | 0.320 | $15.89 | 2026-09-12T16:00:08.198422+00:00 |
+| Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | Khachanov | 0.235 | $13.54 | 2026-09-18T19:00:07.279145+00:00 |
+| Iran-Oman Hormuz Agreement by September 14? | Yes | 0.239 | $21.08 | 2026-09-14T23:59:07.907591+00:00 |
 
 ## Settled
 | market | result | P&L |
