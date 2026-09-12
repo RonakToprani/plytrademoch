@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-12T09:56:28.643911+00:00
+# Poly underdog paper state — 2026-09-12T13:02:47.246913+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($132.63)  ·  settled **253** (56W / 197L)
+- open **10** ($156.97)  ·  settled **253** (56W / 197L)
 - realized P&L **$-118.82**  ·  ROI **-3.5%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-12T09:47:21.121883+00:00
+- last scan: 2026-09-12T12:48:17.287864+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | Will the price of Bitcoin be above $78,000 on Septem | Yes | 0.320 | $15.89 | 2026-09-12T16:00:08.198422+00:00 |
 | Iran-Oman Hormuz Agreement by September 14? | Yes | 0.239 | $21.08 | 2026-09-14T23:59:07.907591+00:00 |
+| US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
+| Spread: Arsenal FC (-1.5) | Arsenal FC | 0.330 | $13.41 | 2026-09-12T19:00:07.906999+00:00 |
 
 ## Settled
 | market | result | P&L |
