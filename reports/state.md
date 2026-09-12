@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-12T19:19:01.102583+00:00
+# Poly underdog paper state — 2026-09-12T22:25:35.797027+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($141.08)  ·  settled **254** (56W / 198L)
-- realized P&L **$-134.71**  ·  ROI **-3.9%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-12T18:50:04.808660+00:00
+- open **8** ($127.67)  ·  settled **255** (57W / 198L)
+- realized P&L **$-107.48**  ·  ROI **-3.1%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-09-12T21:51:00.339258+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,11 +45,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | Iran-Oman Hormuz Agreement by September 14? | Yes | 0.239 | $21.08 | 2026-09-14T23:59:07.907591+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
-| Spread: Arsenal FC (-1.5) | Arsenal FC | 0.330 | $13.41 | 2026-09-12T19:00:07.906999+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Spread: Arsenal FC (-1.5) | WON | +27.23 |
 | Game Spread: Shelton (-4.5) vs Tiafoe (+4.5) | LOST | -16.63 |
 | Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | WON | +43.95 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -15.89 |
@@ -109,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Maxx Crosby play for Dallas Cowboys next? | LOST | -17.33 |
 | Next Mythos-Class Model released by August 31, 2026? | LOST | -17.22 |
 | Iran-Oman Hormuz Agreement by August 31? | LOST | -12.23 |
-| Will the price of Bitcoin be above $78,000 on August | LOST | -20.38 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,4 +133,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 65 | 15% | +11% |
 | 0.20–0.25 | 63 | 25% | +3% |
 | 0.25–0.30 | 60 | 22% | -16% |
-| 0.30–0.33 | 49 | 33% | -2% |
+| 0.30–0.33 | 50 | 34% | +2% |
