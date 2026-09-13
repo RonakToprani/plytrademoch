@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-13T04:40:17.060185+00:00
+# Poly underdog paper state — 2026-09-13T07:49:08.946123+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($127.67)  ·  settled **255** (57W / 198L)
+- open **9** ($144.14)  ·  settled **255** (57W / 198L)
 - realized P&L **$-107.48**  ·  ROI **-3.1%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-13T04:22:54.495814+00:00
+- last scan: 2026-09-13T07:23:46.292559+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | Iran-Oman Hormuz Agreement by September 14? | Yes | 0.239 | $21.08 | 2026-09-14T23:59:07.907591+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
+| Map Handicap: LGC (-1.5) vs G2 (+1.5) | Legacy | 0.310 | $16.47 | 2026-09-13T15:00:07.577212+00:00 |
 
 ## Settled
 | market | result | P&L |
