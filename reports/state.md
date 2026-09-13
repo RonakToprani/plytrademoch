@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-13T07:49:08.946123+00:00
+# Poly underdog paper state — 2026-09-13T16:58:17.732664+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($144.14)  ·  settled **255** (57W / 198L)
-- realized P&L **$-107.48**  ·  ROI **-3.1%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-09-13T07:23:46.292559+00:00
+- open **10** ($164.32)  ·  settled **256** (58W / 198L)
+- realized P&L **$-70.82**  ·  ROI **-2.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-13T16:26:36.915264+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,11 +45,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | Iran-Oman Hormuz Agreement by September 14? | Yes | 0.239 | $21.08 | 2026-09-14T23:59:07.907591+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
-| Map Handicap: LGC (-1.5) vs G2 (+1.5) | Legacy | 0.310 | $16.47 | 2026-09-13T15:00:07.577212+00:00 |
+| Will “The Late Show With Stephen Colbert” win Emmys  | No | 0.260 | $17.22 | 2026-09-14T20:00:07.500053+00:00 |
+| Will Kimi Antonelli win the 2026 F1 Spanish Grand Pr | Yes | 0.210 | $19.43 | 2026-09-20T13:00:07.709935+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: LGC (-1.5) vs G2 (+1.5) | WON | +36.66 |
 | Spread: Arsenal FC (-1.5) | WON | +27.23 |
 | Game Spread: Shelton (-4.5) vs Tiafoe (+4.5) | LOST | -16.63 |
 | Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | WON | +43.95 |
@@ -109,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Julian Alvarez stay at Atletico Madrid? | LOST | -16.57 |
 | Will Maxx Crosby play for Dallas Cowboys next? | LOST | -17.33 |
 | Next Mythos-Class Model released by August 31, 2026? | LOST | -17.22 |
-| Iran-Oman Hormuz Agreement by August 31? | LOST | -12.23 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,4 +135,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 65 | 15% | +11% |
 | 0.20–0.25 | 63 | 25% | +3% |
 | 0.25–0.30 | 60 | 22% | -16% |
-| 0.30–0.33 | 50 | 34% | +2% |
+| 0.30–0.33 | 51 | 35% | +6% |
