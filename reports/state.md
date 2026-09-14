@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-14T02:23:11.865156+00:00
+# Poly underdog paper state — 2026-09-14T05:31:26.790830+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($144.89)  ·  settled **257** (59W / 198L)
-- realized P&L **$2.27**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-14T01:59:20.696899+00:00
+- open **9** ($137.88)  ·  settled **258** (59W / 199L)
+- realized P&L **$-18.15**  ·  ROI **-0.5%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-14T05:00:17.290394+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,11 +41,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
 | US x Iran Effective Ceasefire by September 11? | No | 0.330 | $13.41 | 2026-09-11T23:59:07.954478+00:00 |
-| Will Bitcoin dip to $74,000 September 7-13? | Yes | 0.230 | $20.42 | 2026-09-14T04:00:08.083283+00:00 |
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | Iran-Oman Hormuz Agreement by September 14? | Yes | 0.239 | $21.08 | 2026-09-14T23:59:07.907591+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Will “The Late Show With Stephen Colbert” win Emmys  | No | 0.260 | $17.22 | 2026-09-14T20:00:07.500053+00:00 |
+| Will the price of Bitcoin be above $78,000 on Septem | Yes | 0.330 | $13.41 | 2026-09-14T16:00:07.831810+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -57,6 +57,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | WON | +43.95 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -15.89 |
 | S&P 500 (SPX) Up or Down on September 11? | LOST | -16.68 |
+| Will Bitcoin dip to $74,000 September 7-13? | LOST | -20.42 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -18.56 |
 | Bitcoin Up or Down on September 10? | LOST | -16.68 |
 | Map Handicap: AST (-1.5) vs 5star (+1.5) | WON | +46.08 |
@@ -109,7 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Enzo Fernandez stay at Chelsea? | LOST | -14.59 |
 | Bitcoin Up or Down on August 26? | LOST | -19.43 |
 | Will Julian Alvarez stay at Atletico Madrid? | LOST | -16.57 |
-| Will Maxx Crosby play for Dallas Cowboys next? | LOST | -17.33 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,6 +132,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 65 | 15% | +11% |
-| 0.20–0.25 | 64 | 27% | +11% |
+| 0.20–0.25 | 65 | 26% | +9% |
 | 0.25–0.30 | 60 | 22% | -16% |
 | 0.30–0.33 | 51 | 35% | +6% |
