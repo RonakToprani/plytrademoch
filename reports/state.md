@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-14T14:55:02.958334+00:00
+# Poly underdog paper state — 2026-09-14T18:00:52.188630+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($158.96)  ·  settled **258** (59W / 199L)
-- realized P&L **$-18.15**  ·  ROI **-0.5%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-14T14:33:07.355926+00:00
+- open **8** ($124.47)  ·  settled **260** (60W / 200L)
+- realized P&L **$-12.00**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-14T17:34:04.568733+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,12 +45,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by September 14? | Yes | 0.239 | $21.08 | 2026-09-14T23:59:07.907591+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Will “The Late Show With Stephen Colbert” win Emmys  | No | 0.260 | $17.22 | 2026-09-14T20:00:07.500053+00:00 |
-| Will the price of Bitcoin be above $78,000 on Septem | Yes | 0.330 | $13.41 | 2026-09-14T16:00:07.831810+00:00 |
-| Bitcoin Up or Down on September 14? | Down | 0.160 | $21.08 | 2026-09-14T16:00:07.896408+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on September 14? | LOST | -21.08 |
+| Will the price of Bitcoin be above $78,000 on Septem | WON | +27.23 |
 | Will Kimi Antonelli win the 2026 F1 Spanish Grand Pr | WON | +73.09 |
 | Map Handicap: LGC (-1.5) vs G2 (+1.5) | WON | +36.66 |
 | Spread: Arsenal FC (-1.5) | WON | +27.23 |
@@ -109,8 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: FAL (-1.5) vs Lynn Vision (+1.5) | WON | +27.23 |
 | Another GTA VI trailer released by August 31? | LOST | -15.89 |
 | Will Enzo Fernandez stay at Chelsea? | LOST | -14.59 |
-| Bitcoin Up or Down on August 26? | LOST | -19.43 |
-| Will Julian Alvarez stay at Atletico Madrid? | LOST | -16.57 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,7 +130,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 65 | 15% | +11% |
+| 0.15–0.20 | 66 | 15% | +7% |
 | 0.20–0.25 | 65 | 26% | +9% |
 | 0.25–0.30 | 60 | 22% | -16% |
-| 0.30–0.33 | 51 | 35% | +6% |
+| 0.30–0.33 | 52 | 37% | +9% |
