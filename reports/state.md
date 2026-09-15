@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-15T09:35:58.206935+00:00
+# Poly underdog paper state — 2026-09-15T12:42:23.261257+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($123.77)  ·  settled **261** (60W / 201L)
-- realized P&L **$-29.22**  ·  ROI **-0.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-15T09:08:44.609689+00:00
+- open **7** ($102.69)  ·  settled **262** (60W / 202L)
+- realized P&L **$-50.30**  ·  ROI **-1.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-15T12:09:38.656536+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,7 +42,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
 | US x Iran Effective Ceasefire by September 11? | No | 0.330 | $13.41 | 2026-09-11T23:59:07.954478+00:00 |
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
-| Iran-Oman Hormuz Agreement by September 14? | Yes | 0.239 | $21.08 | 2026-09-14T23:59:07.907591+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Will the price of Bitcoin be above $78,000 on Septem | Yes | 0.290 | $16.52 | 2026-09-15T16:00:06.996802+00:00 |
 
@@ -56,6 +55,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: LGC (-1.5) vs G2 (+1.5) | WON | +36.66 |
 | Spread: Arsenal FC (-1.5) | WON | +27.23 |
 | Game Spread: Shelton (-4.5) vs Tiafoe (+4.5) | LOST | -16.63 |
+| Iran-Oman Hormuz Agreement by September 14? | LOST | -21.08 |
 | Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | WON | +43.95 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -15.89 |
 | S&P 500 (SPX) Up or Down on September 11? | LOST | -16.68 |
@@ -108,7 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on August | LOST | -21.08 |
 | Israel x Lebanon diplomatic meeting by August 31, 20 | LOST | -17.33 |
 | Map Handicap: FAL (-1.5) vs Lynn Vision (+1.5) | WON | +27.23 |
-| Another GTA VI trailer released by August 31? | LOST | -15.89 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,6 +130,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 66 | 15% | +7% |
-| 0.20–0.25 | 65 | 26% | +9% |
+| 0.20–0.25 | 66 | 26% | +6% |
 | 0.25–0.30 | 61 | 21% | -18% |
 | 0.30–0.33 | 52 | 37% | +9% |
