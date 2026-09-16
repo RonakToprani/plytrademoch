@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-16T19:59:07.459272+00:00
+# Poly underdog paper state — 2026-09-16T23:06:55.828433+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,16 +30,16 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **3** ($47.24)  ·  settled **268** (61W / 207L)
-- realized P&L **$-68.98**  ·  ROI **-1.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-16T19:49:33.361407+00:00
+- open **3** ($39.05)  ·  settled **269** (61W / 208L)
+- realized P&L **$-89.40**  ·  ROI **-2.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-16T22:50:26.542782+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
-| Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
+| Will Bitcoin reach $80,000 September 14-20? | Yes | 0.199 | $12.23 | 2026-09-21T04:00:08.345591+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -57,6 +57,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by September 14? | LOST | -21.08 |
 | Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | WON | +43.95 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -15.89 |
+| Will the Fed decide differently in the next three de | LOST | -20.42 |
 | S&P 500 (SPX) Up or Down on September 11? | LOST | -16.68 |
 | Will Bitcoin dip to $74,000 September 7-13? | LOST | -20.42 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -18.56 |
@@ -103,7 +104,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Grand Theft Auto VI Extended Look get less than | WON | +36.90 |
 | Bitcoin Up or Down on August 30? | LOST | -15.89 |
 | Google Maps renames Lake Ontario to "Lake America" b | WON | +26.96 |
-| Will the price of Bitcoin be above $78,000 on August | LOST | -20.26 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -126,6 +126,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 68 | 15% | +3% |
-| 0.20–0.25 | 68 | 26% | +10% |
+| 0.20–0.25 | 69 | 26% | +8% |
 | 0.25–0.30 | 62 | 21% | -19% |
 | 0.30–0.33 | 53 | 36% | +8% |
