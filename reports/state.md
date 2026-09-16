@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-15T22:04:10.601607+00:00
+# Poly underdog paper state — 2026-09-16T01:11:41.465365+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($72.76)  ·  settled **264** (60W / 204L)
+- open **6** ($88.97)  ·  settled **264** (60W / 204L)
 - realized P&L **$-80.23**  ·  ROI **-2.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-15T21:42:51.813833+00:00
+- last scan: 2026-09-16T00:43:45.098613+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
+| Will the price of Bitcoin be above $74,000 on Septem | No | 0.179 | $16.21 | 2026-09-16T16:00:07.574310+00:00 |
 
 ## Settled
 | market | result | P&L |
