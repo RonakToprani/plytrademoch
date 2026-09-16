@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-16T04:19:31.357666+00:00
+# Poly underdog paper state — 2026-09-16T07:25:56.874313+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,16 +30,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($88.97)  ·  settled **264** (60W / 204L)
-- realized P&L **$-80.23**  ·  ROI **-2.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-16T03:44:37.849512+00:00
+- open **4** ($63.45)  ·  settled **266** (61W / 205L)
+- realized P&L **$-34.30**  ·  ROI **-0.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-16T07:15:51.323377+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
-| Israel x Lebanon diplomatic meeting by September 15, | Yes | 0.204 | $14.59 | 2026-09-16T03:59:07.628342+00:00 |
-| Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.180 | $10.93 | 2026-09-16T03:59:08.913715+00:00 |
 | Will the Fed decide differently in the next three de | No | 0.229 | $20.42 | 2026-09-16T00:00:08.035204+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Will the price of Bitcoin be above $74,000 on Septem | No | 0.179 | $16.21 | 2026-09-16T16:00:07.574310+00:00 |
@@ -64,7 +62,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US x Iran Effective Ceasefire by September 11? | LOST | -13.41 |
 | Bitcoin Up or Down on September 10? | LOST | -16.68 |
 | Map Handicap: AST (-1.5) vs 5star (+1.5) | WON | +46.08 |
+| Will Russia and Ukraine hold any diplomatic meeting  | LOST | -10.93 |
 | Map Handicap: TYLOO (-1.5) vs Alliance (+1.5) | LOST | -16.68 |
+| Israel x Lebanon diplomatic meeting by September 15, | WON | +56.86 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -17.92 |
 | Map Handicap: 9z (-1.5) vs MIBR (+1.5) | LOST | -16.47 |
 | Map Handicap: G2.A (-1.5) vs Azuolas (+1.5) | LOST | -21.08 |
@@ -105,8 +105,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $78,000 on August | LOST | -20.26 |
 | Spread: Coventry City FC (-1.5) | LOST | -16.47 |
 | Will Bitcoin reach $82,000 August 24-30? | LOST | -16.58 |
-| Bitcoin Up or Down on August 28? | LOST | -13.41 |
-| Will the price of Bitcoin be above $82,000 on August | LOST | -21.08 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,7 +126,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 66 | 15% | +7% |
-| 0.20–0.25 | 66 | 26% | +6% |
+| 0.15–0.20 | 67 | 15% | +6% |
+| 0.20–0.25 | 67 | 27% | +12% |
 | 0.25–0.30 | 62 | 21% | -19% |
 | 0.30–0.33 | 53 | 36% | +8% |
