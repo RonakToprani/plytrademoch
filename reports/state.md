@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-17T14:41:21.146255+00:00
+# Poly underdog paper state — 2026-09-17T17:47:58.352272+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($75.78)  ·  settled **269** (61W / 208L)
-- realized P&L **$-89.40**  ·  ROI **-2.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-17T14:24:47.645229+00:00
+- open **3** ($39.05)  ·  settled **271** (61W / 210L)
+- realized P&L **$-126.13**  ·  ROI **-3.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-17T17:25:39.244512+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,12 +40,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Will Bitcoin reach $80,000 September 14-20? | Yes | 0.199 | $12.23 | 2026-09-21T04:00:08.345591+00:00 |
-| Bitcoin Up or Down on September 17? | Down | 0.250 | $20.26 | 2026-09-17T16:00:07.735580+00:00 |
-| Map Handicap: VIT (-1.5) vs magic (+1.5) | magic | 0.310 | $16.47 | 2026-09-17T18:30:07.299964+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: VIT (-1.5) vs magic (+1.5) | LOST | -16.47 |
+| Bitcoin Up or Down on September 17? | LOST | -20.26 |
 | Bitcoin Up or Down on September 16? | LOST | -18.47 |
 | Will the price of Bitcoin be above $74,000 on Septem | LOST | -16.21 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -16.52 |
@@ -104,8 +104,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on August 31? | LOST | -19.93 |
 | Will the price of Bitcoin be above $76,000 on August | LOST | -12.23 |
 | Will Grand Theft Auto VI Extended Look get less than | WON | +36.90 |
-| Bitcoin Up or Down on August 30? | LOST | -15.89 |
-| Google Maps renames Lake Ontario to "Lake America" b | WON | +26.96 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,5 +127,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 68 | 15% | +3% |
 | 0.20–0.25 | 69 | 26% | +8% |
-| 0.25–0.30 | 62 | 21% | -19% |
-| 0.30–0.33 | 53 | 36% | +8% |
+| 0.25–0.30 | 63 | 21% | -21% |
+| 0.30–0.33 | 54 | 35% | +6% |
