@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-17T05:21:47.543018+00:00
+# Poly underdog paper state — 2026-09-17T08:29:10.026933+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($59.31)  ·  settled **269** (61W / 208L)
+- open **5** ($75.78)  ·  settled **269** (61W / 208L)
 - realized P&L **$-89.40**  ·  ROI **-2.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-17T04:52:09.349773+00:00
+- last scan: 2026-09-17T07:53:00.135021+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,6 +41,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Will Bitcoin reach $80,000 September 14-20? | Yes | 0.199 | $12.23 | 2026-09-21T04:00:08.345591+00:00 |
 | Bitcoin Up or Down on September 17? | Down | 0.250 | $20.26 | 2026-09-17T16:00:07.735580+00:00 |
+| Map Handicap: VIT (-1.5) vs magic (+1.5) | magic | 0.310 | $16.47 | 2026-09-17T18:30:07.299964+00:00 |
 
 ## Settled
 | market | result | P&L |
