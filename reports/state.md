@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-18T03:07:54.750331+00:00
+# Poly underdog paper state — 2026-09-18T06:14:15.986765+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **3** ($39.05)  ·  settled **271** (61W / 210L)
+- open **6** ($89.99)  ·  settled **271** (61W / 210L)
 - realized P&L **$-126.13**  ·  ROI **-3.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-18T02:58:17.408883+00:00
+- last scan: 2026-09-18T05:59:35.537557+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,6 +40,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Will Bitcoin reach $80,000 September 14-20? | Yes | 0.199 | $12.23 | 2026-09-21T04:00:08.345591+00:00 |
+| Will the price of Bitcoin be above $78,000 on Septem | Yes | 0.300 | $19.21 | 2026-09-18T16:00:07.735745+00:00 |
+| Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.269 | $20.67 | 2026-09-23T03:59:13.503586+00:00 |
+| Will MrBeast Gaming's next video get between 40 and  | Yes | 0.183 | $11.06 | 2026-09-20T23:59:07.786644+00:00 |
 
 ## Settled
 | market | result | P&L |
