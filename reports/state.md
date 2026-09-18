@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-18T15:34:41.959475+00:00
+# Poly underdog paper state — 2026-09-18T18:43:21.567908+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,16 +30,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($96.97)  ·  settled **272** (62W / 210L)
-- realized P&L **$-76.81**  ·  ROI **-2.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-18T15:02:12.449453+00:00
+- open **5** ($77.76)  ·  settled **273** (63W / 210L)
+- realized P&L **$-31.94**  ·  ROI **-0.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-18T18:33:16.662261+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
-| Will the price of Bitcoin be above $78,000 on Septem | Yes | 0.300 | $19.21 | 2026-09-18T16:00:07.735745+00:00 |
 | Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.269 | $20.67 | 2026-09-23T03:59:13.503586+00:00 |
 | Will MrBeast Gaming's next video get between 40 and  | Yes | 0.183 | $11.06 | 2026-09-20T23:59:07.786644+00:00 |
 | Will the price of Bitcoin be above $80,000 on Septem | No | 0.234 | $19.21 | 2026-09-19T16:00:07.832900+00:00 |
@@ -47,6 +46,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $78,000 on Septem | WON | +44.87 |
 | Map Handicap: VIT (-1.5) vs magic (+1.5) | LOST | -16.47 |
 | Bitcoin Up or Down on September 17? | LOST | -20.26 |
 | Will Bitcoin reach $80,000 September 14-20? | WON | +49.32 |
@@ -106,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: FAL (-1.5) vs MOUZ (+1.5) | LOST | -17.22 |
 | Will Iran target Qatar by August 31, 2026? | LOST | -16.69 |
 | Bitcoin Up or Down on August 31? | LOST | -19.93 |
-| Will the price of Bitcoin be above $76,000 on August | LOST | -12.23 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,5 +129,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 69 | 16% | +10% |
 | 0.20–0.25 | 69 | 26% | +8% |
-| 0.25–0.30 | 63 | 21% | -21% |
+| 0.25–0.30 | 64 | 22% | -16% |
 | 0.30–0.33 | 54 | 35% | +6% |
