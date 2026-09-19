@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-19T13:25:19.363565+00:00
+# Poly underdog paper state — 2026-09-19T16:32:40.145531+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($189.18)  ·  settled **273** (63W / 210L)
-- realized P&L **$-31.94**  ·  ROI **-0.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-19T13:09:07.308232+00:00
+- open **10** ($171.96)  ·  settled **274** (64W / 210L)
+- realized P&L **$12.34**  ·  ROI **+0.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-19T16:10:03.139171+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,7 +42,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.269 | $20.67 | 2026-09-23T03:59:13.503586+00:00 |
 | Will MrBeast Gaming's next video get between 40 and  | Yes | 0.183 | $11.06 | 2026-09-20T23:59:07.786644+00:00 |
 | Will the price of Bitcoin be above $80,000 on Septem | No | 0.234 | $19.21 | 2026-09-19T16:00:07.832900+00:00 |
-| Will Bologna FC 1909 vs. Torino FC end in a draw? | Yes | 0.280 | $17.22 | 2026-09-19T13:00:08.079432+00:00 |
 | Will Bitcoin reach $82,000 September 14-20? | No | 0.285 | $14.91 | 2026-09-21T04:00:07.883501+00:00 |
 | Spread: West Virginia (-0.5) | West Virginia | 0.240 | $20.26 | 2026-09-19T23:30:08.583218+00:00 |
 | Bitcoin Up or Down on September 19? | Down | 0.210 | $20.42 | 2026-09-19T16:00:08.236086+00:00 |
@@ -52,6 +51,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Bologna FC 1909 vs. Torino FC end in a draw? | WON | +44.28 |
 | Will the price of Bitcoin be above $78,000 on Septem | WON | +44.87 |
 | Map Handicap: VIT (-1.5) vs magic (+1.5) | LOST | -16.47 |
 | Bitcoin Up or Down on September 17? | LOST | -20.26 |
@@ -111,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: GEN (-1.5) vs KT Rolster (+1.5) | LOST | -16.47 |
 | Map Handicap: FAL (-1.5) vs MOUZ (+1.5) | LOST | -17.22 |
 | Will Iran target Qatar by August 31, 2026? | LOST | -16.69 |
-| Bitcoin Up or Down on August 31? | LOST | -19.93 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -135,5 +134,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 69 | 16% | +10% |
 | 0.20–0.25 | 69 | 26% | +8% |
-| 0.25–0.30 | 64 | 22% | -16% |
+| 0.25–0.30 | 65 | 23% | -12% |
 | 0.30–0.33 | 54 | 35% | +6% |
