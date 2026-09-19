@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-18T21:50:46.148954+00:00
+# Poly underdog paper state — 2026-09-19T00:58:59.953610+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($77.76)  ·  settled **273** (63W / 210L)
+- open **6** ($94.98)  ·  settled **273** (63W / 210L)
 - realized P&L **$-31.94**  ·  ROI **-0.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-18T21:34:09.325027+00:00
+- last scan: 2026-09-19T00:35:02.660738+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.269 | $20.67 | 2026-09-23T03:59:13.503586+00:00 |
 | Will MrBeast Gaming's next video get between 40 and  | Yes | 0.183 | $11.06 | 2026-09-20T23:59:07.786644+00:00 |
 | Will the price of Bitcoin be above $80,000 on Septem | No | 0.234 | $19.21 | 2026-09-19T16:00:07.832900+00:00 |
+| Will Bologna FC 1909 vs. Torino FC end in a draw? | Yes | 0.280 | $17.22 | 2026-09-19T13:00:08.079432+00:00 |
 
 ## Settled
 | market | result | P&L |
