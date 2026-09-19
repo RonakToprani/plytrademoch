@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-19T07:11:49.120012+00:00
+# Poly underdog paper state — 2026-09-19T10:17:41.886839+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($171.65)  ·  settled **273** (63W / 210L)
+- open **11** ($189.18)  ·  settled **273** (63W / 210L)
 - realized P&L **$-31.94**  ·  ROI **-0.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-19T06:37:13.212669+00:00
+- last scan: 2026-09-19T10:08:14.144993+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,6 +47,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: West Virginia (-0.5) | West Virginia | 0.240 | $20.26 | 2026-09-19T23:30:08.583218+00:00 |
 | Bitcoin Up or Down on September 19? | Down | 0.210 | $20.42 | 2026-09-19T16:00:08.236086+00:00 |
 | Will Ethereum reach $2,700 September 14-20? | Yes | 0.225 | $21.08 | 2026-09-21T04:00:08.085587+00:00 |
+| Will Xi Jinping visit US by September 23? | No | 0.154 | $17.53 | 2026-09-23T23:59:07.280333+00:00 |
 
 ## Settled
 | market | result | P&L |
