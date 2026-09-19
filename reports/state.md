@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-19T00:58:59.953610+00:00
+# Poly underdog paper state — 2026-09-19T04:06:49.550221+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($94.98)  ·  settled **273** (63W / 210L)
+- open **10** ($171.65)  ·  settled **273** (63W / 210L)
 - realized P&L **$-31.94**  ·  ROI **-0.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-19T00:35:02.660738+00:00
+- last scan: 2026-09-19T03:36:21.642281+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,6 +43,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will MrBeast Gaming's next video get between 40 and  | Yes | 0.183 | $11.06 | 2026-09-20T23:59:07.786644+00:00 |
 | Will the price of Bitcoin be above $80,000 on Septem | No | 0.234 | $19.21 | 2026-09-19T16:00:07.832900+00:00 |
 | Will Bologna FC 1909 vs. Torino FC end in a draw? | Yes | 0.280 | $17.22 | 2026-09-19T13:00:08.079432+00:00 |
+| Will Bitcoin reach $82,000 September 14-20? | No | 0.285 | $14.91 | 2026-09-21T04:00:07.883501+00:00 |
+| Spread: West Virginia (-0.5) | West Virginia | 0.240 | $20.26 | 2026-09-19T23:30:08.583218+00:00 |
+| Bitcoin Up or Down on September 19? | Down | 0.210 | $20.42 | 2026-09-19T16:00:08.236086+00:00 |
+| Will Ethereum reach $2,700 September 14-20? | Yes | 0.225 | $21.08 | 2026-09-21T04:00:08.085587+00:00 |
 
 ## Settled
 | market | result | P&L |
