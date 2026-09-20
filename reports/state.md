@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-20T14:25:26.892031+00:00
+# Poly underdog paper state — 2026-09-20T17:34:06.259007+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($156.55)  ·  settled **278** (65W / 213L)
-- realized P&L **$25.81**  ·  ROI **+0.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-20T14:16:35.165118+00:00
+- open **9** ($152.89)  ·  settled **279** (65W / 214L)
+- realized P&L **$5.63**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-20T17:17:30.823825+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,11 +45,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Xi Jinping visit US by September 23? | No | 0.154 | $17.53 | 2026-09-23T23:59:07.280333+00:00 |
 | Trump x Greenland deal signed by September 23? | No | 0.320 | $16.41 | 2026-09-24T03:59:08.487785+00:00 |
 | US x Iran ceasefire continues through September 25? | No | 0.169 | $18.95 | 2026-09-25T23:59:07.243161+00:00 |
-| Will the price of Bitcoin be above $80,000 on Septem | No | 0.260 | $20.18 | 2026-09-20T16:00:07.723015+00:00 |
+| Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.18 |
 | Bitcoin Up or Down on September 19? | LOST | -20.42 |
 | Spread: West Virginia (-0.5) | WON | +64.16 |
 | Will Bologna FC 1909 vs. Torino FC end in a draw? | WON | +44.28 |
@@ -109,7 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -17.20 |
 | Next Mythos-Class Model released by September 1, 202 | WON | +33.45 |
 | Seattle Mariners vs. Boston Red Sox: O/U 8.5 | WON | +33.59 |
-| Bitcoin Up or Down on September 1? | WON | +40.84 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,5 +133,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 70 | 16% | +8% |
 | 0.20–0.25 | 72 | 26% | +10% |
-| 0.25–0.30 | 65 | 23% | -12% |
+| 0.25–0.30 | 66 | 23% | -13% |
 | 0.30–0.33 | 54 | 35% | +6% |
