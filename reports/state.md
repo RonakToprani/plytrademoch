@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-20T23:51:30.724581+00:00
+# Poly underdog paper state — 2026-09-21T02:58:15.542179+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($152.89)  ·  settled **279** (65W / 214L)
-- realized P&L **$5.63**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-20T23:19:13.912377+00:00
+- open **8** ($133.15)  ·  settled **281** (66W / 215L)
+- realized P&L **$63.37**  ·  ROI **+1.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-21T02:50:19.301642+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,19 +40,20 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.269 | $20.67 | 2026-09-23T03:59:13.503586+00:00 |
-| Will Bitcoin reach $82,000 September 14-20? | No | 0.285 | $14.91 | 2026-09-21T04:00:07.883501+00:00 |
-| Will Ethereum reach $2,700 September 14-20? | Yes | 0.225 | $21.08 | 2026-09-21T04:00:08.085587+00:00 |
 | Will Xi Jinping visit US by September 23? | No | 0.154 | $17.53 | 2026-09-23T23:59:07.280333+00:00 |
 | Trump x Greenland deal signed by September 23? | No | 0.320 | $16.41 | 2026-09-24T03:59:08.487785+00:00 |
 | US x Iran ceasefire continues through September 25? | No | 0.169 | $18.95 | 2026-09-25T23:59:07.243161+00:00 |
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
+| Will the price of Bitcoin be above $82,000 on Septem | Yes | 0.286 | $16.25 | 2026-09-21T16:00:07.745972+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.18 |
+| Will Ethereum reach $2,700 September 14-20? | WON | +72.65 |
 | Bitcoin Up or Down on September 19? | LOST | -20.42 |
 | Spread: West Virginia (-0.5) | WON | +64.16 |
+| Will Bitcoin reach $82,000 September 14-20? | LOST | -14.91 |
 | Will Bologna FC 1909 vs. Torino FC end in a draw? | WON | +44.28 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -19.21 |
 | Will MrBeast Gaming's next video get between 40 and  | LOST | -11.06 |
@@ -108,8 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $74,000 August 31-September 6? | LOST | -15.89 |
 | Bitcoin Up or Down on September 2? | LOST | -16.47 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -17.20 |
-| Next Mythos-Class Model released by September 1, 202 | WON | +33.45 |
-| Seattle Mariners vs. Boston Red Sox: O/U 8.5 | WON | +33.59 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,6 +131,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 70 | 16% | +8% |
-| 0.20–0.25 | 72 | 26% | +10% |
-| 0.25–0.30 | 66 | 23% | -13% |
+| 0.20–0.25 | 73 | 27% | +16% |
+| 0.25–0.30 | 67 | 22% | -15% |
 | 0.30–0.33 | 54 | 35% | +6% |
