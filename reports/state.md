@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-21T15:26:33.389938+00:00
+# Poly underdog paper state — 2026-09-21T18:34:16.266256+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($153.53)  ·  settled **281** (66W / 215L)
-- realized P&L **$63.37**  ·  ROI **+1.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-21T14:53:46.252797+00:00
+- open **8** ($137.28)  ·  settled **282** (67W / 215L)
+- realized P&L **$103.94**  ·  ROI **+2.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-21T18:24:53.998394+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,12 +44,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Trump x Greenland deal signed by September 23? | No | 0.320 | $16.41 | 2026-09-24T03:59:08.487785+00:00 |
 | US x Iran ceasefire continues through September 25? | No | 0.169 | $18.95 | 2026-09-25T23:59:07.243161+00:00 |
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
-| Will the price of Bitcoin be above $82,000 on Septem | Yes | 0.286 | $16.25 | 2026-09-21T16:00:07.745972+00:00 |
 | Will the price of Bitcoin be above $86,000 on Septem | Yes | 0.221 | $20.38 | 2026-09-22T16:00:07.517905+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $82,000 on Septem | WON | +40.57 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.18 |
 | Will Ethereum reach $2,700 September 14-20? | WON | +72.65 |
 | Bitcoin Up or Down on September 19? | LOST | -20.42 |
@@ -109,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -12.23 |
 | Will Bitcoin dip to $74,000 August 31-September 6? | LOST | -15.89 |
 | Bitcoin Up or Down on September 2? | LOST | -16.47 |
-| Will the price of Bitcoin be above $76,000 on Septem | LOST | -17.20 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,5 +132,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 70 | 16% | +8% |
 | 0.20–0.25 | 73 | 27% | +16% |
-| 0.25–0.30 | 67 | 22% | -15% |
+| 0.25–0.30 | 68 | 24% | -11% |
 | 0.30–0.33 | 54 | 35% | +6% |
