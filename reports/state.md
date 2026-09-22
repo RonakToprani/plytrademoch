@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-22T13:13:02.965265+00:00
+# Poly underdog paper state — 2026-09-22T16:20:21.647697+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($140.94)  ·  settled **283** (67W / 216L)
+- open **9** ($160.87)  ·  settled **283** (67W / 216L)
 - realized P&L **$93.01**  ·  ROI **+2.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-22T13:00:17.958043+00:00
+- last scan: 2026-09-22T16:01:13.168047+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,6 +45,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Will the price of Bitcoin be above $86,000 on Septem | Yes | 0.221 | $20.38 | 2026-09-22T16:00:07.517905+00:00 |
 | US announces end of Iranian blockade by September 30 | Yes | 0.160 | $14.59 | 2026-10-01T03:59:07.348144+00:00 |
+| Will the next Claude Opus model be released on Septe | No | 0.199 | $19.93 | 2026-09-23T03:59:08.036666+00:00 |
 
 ## Settled
 | market | result | P&L |
