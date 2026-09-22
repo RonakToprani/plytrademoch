@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-22T03:51:54.885272+00:00
+# Poly underdog paper state — 2026-09-22T06:59:14.176579+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($137.28)  ·  settled **282** (67W / 215L)
-- realized P&L **$103.94**  ·  ROI **+2.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-22T03:27:30.708599+00:00
+- open **7** ($126.35)  ·  settled **283** (67W / 216L)
+- realized P&L **$93.01**  ·  ROI **+2.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-22T06:28:23.185759+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
-| US announces end of Iranian blockade by September 21 | Yes | 0.160 | $10.93 | 2026-09-22T03:59:08.096737+00:00 |
 | Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.269 | $20.67 | 2026-09-23T03:59:13.503586+00:00 |
 | Will Xi Jinping visit US by September 23? | No | 0.154 | $17.53 | 2026-09-23T23:59:07.280333+00:00 |
 | Trump x Greenland deal signed by September 23? | No | 0.320 | $16.41 | 2026-09-24T03:59:08.487785+00:00 |
@@ -71,6 +70,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will “The Late Show With Stephen Colbert” win Emmys  | LOST | -17.22 |
 | Map Handicap: LGC (-1.5) vs G2 (+1.5) | WON | +36.66 |
 | Spread: Arsenal FC (-1.5) | WON | +27.23 |
+| US announces end of Iranian blockade by September 21 | LOST | -10.93 |
 | Game Spread: Shelton (-4.5) vs Tiafoe (+4.5) | LOST | -16.63 |
 | Iran-Oman Hormuz Agreement by September 14? | LOST | -21.08 |
 | Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | WON | +43.95 |
@@ -108,7 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 1st Half Spread: Real Sociedad de Fútbol (-1.5) | LOST | -19.85 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -12.23 |
 | Will Bitcoin dip to $74,000 August 31-September 6? | LOST | -15.89 |
-| Bitcoin Up or Down on September 2? | LOST | -16.47 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,7 +129,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 70 | 16% | +8% |
+| 0.15–0.20 | 71 | 15% | +7% |
 | 0.20–0.25 | 73 | 27% | +16% |
 | 0.25–0.30 | 68 | 24% | -11% |
 | 0.30–0.33 | 54 | 35% | +6% |
