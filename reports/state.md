@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-22T16:20:21.647697+00:00
+# Poly underdog paper state — 2026-09-22T19:27:53.460557+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,28 +30,28 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($160.87)  ·  settled **283** (67W / 216L)
-- realized P&L **$93.01**  ·  ROI **+2.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-22T16:01:13.168047+00:00
+- open **6** ($101.67)  ·  settled **287** (68W / 219L)
+- realized P&L **$112.62**  ·  ROI **+2.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-22T19:02:23.681520+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Icelandic European Union membership negotiations ref | Yes | 0.320 | $15.89 | 2026-08-30T03:59:07.639285+00:00 |
 | Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.269 | $20.67 | 2026-09-23T03:59:13.503586+00:00 |
 | Will Xi Jinping visit US by September 23? | No | 0.154 | $17.53 | 2026-09-23T23:59:07.280333+00:00 |
-| Trump x Greenland deal signed by September 23? | No | 0.320 | $16.41 | 2026-09-24T03:59:08.487785+00:00 |
 | US x Iran ceasefire continues through September 25? | No | 0.169 | $18.95 | 2026-09-25T23:59:07.243161+00:00 |
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
-| Will the price of Bitcoin be above $86,000 on Septem | Yes | 0.221 | $20.38 | 2026-09-22T16:00:07.517905+00:00 |
 | US announces end of Iranian blockade by September 30 | Yes | 0.160 | $14.59 | 2026-10-01T03:59:07.348144+00:00 |
-| Will the next Claude Opus model be released on Septe | No | 0.199 | $19.93 | 2026-09-23T03:59:08.036666+00:00 |
+| Will Bitcoin reach $88,000 September 21-27? | No | 0.320 | $13.41 | 2026-09-28T04:00:08.387678+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the next Claude Opus model be released on Septe | LOST | -19.93 |
+| Will the price of Bitcoin be above $86,000 on Septem | WON | +71.84 |
 | Will the price of Bitcoin be above $82,000 on Septem | WON | +40.57 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.18 |
+| Trump x Greenland deal signed by September 23? | LOST | -16.41 |
 | Will Ethereum reach $2,700 September 14-20? | WON | +72.65 |
 | Bitcoin Up or Down on September 19? | LOST | -20.42 |
 | Spread: West Virginia (-0.5) | WON | +64.16 |
@@ -107,9 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -17.92 |
 | Will OpenAI’s Astra model be released by September 3 | WON | +70.66 |
 | 1st Half Spread: Lille OSC (-1.5) | LOST | -17.22 |
-| 1st Half Spread: Real Sociedad de Fútbol (-1.5) | LOST | -19.85 |
-| Will the price of Bitcoin be above $76,000 on Septem | LOST | -12.23 |
-| Will Bitcoin dip to $74,000 August 31-September 6? | LOST | -15.89 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,7 +128,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 71 | 15% | +7% |
-| 0.20–0.25 | 73 | 27% | +16% |
+| 0.15–0.20 | 72 | 15% | +4% |
+| 0.20–0.25 | 74 | 28% | +22% |
 | 0.25–0.30 | 68 | 24% | -11% |
-| 0.30–0.33 | 54 | 35% | +6% |
+| 0.30–0.33 | 56 | 34% | +2% |
