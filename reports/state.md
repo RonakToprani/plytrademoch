@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-23T04:50:24.649005+00:00
+# Poly underdog paper state — 2026-09-23T11:02:28.259151+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,14 +30,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($101.67)  ·  settled **287** (68W / 219L)
-- realized P&L **$112.62**  ·  ROI **+2.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-23T04:35:09.342518+00:00
+- open **5** ($81.00)  ·  settled **288** (68W / 220L)
+- realized P&L **$91.95**  ·  ROI **+2.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-23T10:36:55.022950+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.269 | $20.67 | 2026-09-23T03:59:13.503586+00:00 |
 | Will Xi Jinping visit US by September 23? | No | 0.154 | $17.53 | 2026-09-23T23:59:07.280333+00:00 |
 | US x Iran ceasefire continues through September 25? | No | 0.169 | $18.95 | 2026-09-25T23:59:07.243161+00:00 |
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
@@ -59,6 +58,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bologna FC 1909 vs. Torino FC end in a draw? | WON | +44.28 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -19.21 |
 | Will MrBeast Gaming's next video get between 40 and  | LOST | -11.06 |
+| Saudi Oil Pipeline (East-West) restarts by September | LOST | -20.67 |
 | Will the price of Bitcoin be above $78,000 on Septem | WON | +44.87 |
 | Map Handicap: VIT (-1.5) vs magic (+1.5) | LOST | -16.47 |
 | Bitcoin Up or Down on September 17? | LOST | -20.26 |
@@ -106,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will OpenAI’s Astra model be released by September 4 | WON | +69.83 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -17.92 |
 | Will OpenAI’s Astra model be released by September 3 | WON | +70.66 |
-| 1st Half Spread: Lille OSC (-1.5) | LOST | -17.22 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,5 +129,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 72 | 15% | +4% |
 | 0.20–0.25 | 74 | 28% | +22% |
-| 0.25–0.30 | 68 | 24% | -11% |
+| 0.25–0.30 | 69 | 23% | -12% |
 | 0.30–0.33 | 56 | 34% | +2% |
