@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-24T15:09:12.444082+00:00
+# Poly underdog paper state — 2026-09-24T18:17:27.328695+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($234.56)  ·  settled **290** (68W / 222L)
-- realized P&L **$62.19**  ·  ROI **+1.5%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-24T14:45:50.538428+00:00
+- open **12** ($196.39)  ·  settled **292** (70W / 222L)
+- realized P&L **$190.87**  ·  ROI **+4.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-24T17:46:50.252730+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,14 +47,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Trump renames AI by September 30? | Yes | 0.270 | $17.92 | 2026-10-01T03:59:09.095486+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.208 | $17.87 | 2026-10-01T03:59:19.832229+00:00 |
 | Will Solana reach $130 in September? | Yes | 0.188 | $10.93 | 2026-10-01T04:00:20.511319+00:00 |
-| Will the price of Bitcoin be above $84,000 on Septem | Yes | 0.228 | $18.74 | 2026-09-24T16:00:07.756678+00:00 |
-| Bitcoin Up or Down on September 24? | Up | 0.230 | $19.43 | 2026-09-24T16:00:18.720292+00:00 |
 | Will the price of Bitcoin be above $82,000 on Septem | No | 0.264 | $19.51 | 2026-09-25T16:00:07.500072+00:00 |
 | Russia-Ukraine peace talks by September 30, 2026? | Yes | 0.209 | $19.24 | 2026-10-01T03:59:06.717925+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on September 24? | WON | +65.05 |
+| Will the price of Bitcoin be above $84,000 on Septem | WON | +63.63 |
 | CNN, Politico, or MS NOW unbanned from White House b | LOST | -12.23 |
 | Will the next Claude Opus model be released on Septe | LOST | -19.93 |
 | Will the price of Bitcoin be above $86,000 on Septem | WON | +71.84 |
@@ -113,8 +113,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -15.89 |
 | Bitcoin Up or Down on September 5? | LOST | -13.41 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.26 |
-| Map Handicap: FAL (-1.5) vs G2 (+1.5) | WON | +33.77 |
-| Will OpenAI’s Astra model be released by September 4 | WON | +69.83 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,6 +135,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 74 | 15% | +0% |
-| 0.20–0.25 | 74 | 28% | +22% |
+| 0.20–0.25 | 76 | 30% | +33% |
 | 0.25–0.30 | 69 | 23% | -12% |
 | 0.30–0.33 | 56 | 34% | +2% |
