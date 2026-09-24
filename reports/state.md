@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-24T02:38:33.523704+00:00
+# Poly underdog paper state — 2026-09-24T05:46:38.532600+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($63.47)  ·  settled **289** (68W / 221L)
+- open **11** ($169.87)  ·  settled **289** (68W / 221L)
 - realized P&L **$74.42**  ·  ROI **+1.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-24T02:11:27.372322+00:00
+- last scan: 2026-09-24T05:12:46.345200+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,6 +41,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | US announces end of Iranian blockade by September 30 | Yes | 0.160 | $14.59 | 2026-10-01T03:59:07.348144+00:00 |
 | Will Bitcoin reach $88,000 September 21-27? | No | 0.320 | $13.41 | 2026-09-28T04:00:08.387678+00:00 |
+| Will Anthropic have the best Code Arena | WebDev AI  | No | 0.200 | $15.88 | 2026-09-30T16:00:07.723560+00:00 |
+| Will Bitcoin reach $90,000 in September? | Yes | 0.156 | $12.62 | 2026-10-01T04:00:07.584059+00:00 |
+| Will Ethereum reach $2,900 in September? | Yes | 0.210 | $18.95 | 2026-10-01T04:00:08.368131+00:00 |
+| Trump renames AI by September 30? | Yes | 0.270 | $17.92 | 2026-10-01T03:59:09.095486+00:00 |
+| Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.208 | $17.87 | 2026-10-01T03:59:19.832229+00:00 |
+| Will Solana reach $130 in September? | Yes | 0.188 | $10.93 | 2026-10-01T04:00:20.511319+00:00 |
+| CNN, Politico, or MS NOW unbanned from White House b | No | 0.167 | $12.23 | 2026-10-01T03:59:31.343370+00:00 |
 
 ## Settled
 | market | result | P&L |
