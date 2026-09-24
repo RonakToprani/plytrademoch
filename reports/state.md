@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-24T08:53:08.419084+00:00
+# Poly underdog paper state — 2026-09-24T12:03:00.987081+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($157.64)  ·  settled **290** (68W / 222L)
+- open **13** ($215.32)  ·  settled **290** (68W / 222L)
 - realized P&L **$62.19**  ·  ROI **+1.5%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-24T08:43:47.107167+00:00
+- last scan: 2026-09-24T11:44:53.291823+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,6 +47,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Trump renames AI by September 30? | Yes | 0.270 | $17.92 | 2026-10-01T03:59:09.095486+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.208 | $17.87 | 2026-10-01T03:59:19.832229+00:00 |
 | Will Solana reach $130 in September? | Yes | 0.188 | $10.93 | 2026-10-01T04:00:20.511319+00:00 |
+| Will the price of Bitcoin be above $84,000 on Septem | Yes | 0.228 | $18.74 | 2026-09-24T16:00:07.756678+00:00 |
+| Bitcoin Up or Down on September 24? | Up | 0.230 | $19.43 | 2026-09-24T16:00:18.720292+00:00 |
+| Will the price of Bitcoin be above $82,000 on Septem | No | 0.264 | $19.51 | 2026-09-25T16:00:07.500072+00:00 |
 
 ## Settled
 | market | result | P&L |
