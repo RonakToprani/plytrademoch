@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-23T23:31:58.296190+00:00
+# Poly underdog paper state — 2026-09-24T02:38:33.523704+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,14 +30,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($81.00)  ·  settled **288** (68W / 220L)
-- realized P&L **$91.95**  ·  ROI **+2.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-23T23:10:33.666004+00:00
+- open **4** ($63.47)  ·  settled **289** (68W / 221L)
+- realized P&L **$74.42**  ·  ROI **+1.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-24T02:11:27.372322+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| Will Xi Jinping visit US by September 23? | No | 0.154 | $17.53 | 2026-09-23T23:59:07.280333+00:00 |
 | US x Iran ceasefire continues through September 25? | No | 0.169 | $18.95 | 2026-09-25T23:59:07.243161+00:00 |
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | US announces end of Iranian blockade by September 30 | Yes | 0.160 | $14.59 | 2026-10-01T03:59:07.348144+00:00 |
@@ -51,6 +50,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Septem | WON | +40.57 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.18 |
 | Trump x Greenland deal signed by September 23? | LOST | -16.41 |
+| Will Xi Jinping visit US by September 23? | LOST | -17.53 |
 | Will Ethereum reach $2,700 September 14-20? | WON | +72.65 |
 | Bitcoin Up or Down on September 19? | LOST | -20.42 |
 | Spread: West Virginia (-0.5) | WON | +64.16 |
@@ -105,7 +105,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: FAL (-1.5) vs G2 (+1.5) | WON | +33.77 |
 | Will OpenAI’s Astra model be released by September 4 | WON | +69.83 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -17.92 |
-| Will OpenAI’s Astra model be released by September 3 | WON | +70.66 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -127,7 +126,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 72 | 15% | +4% |
+| 0.15–0.20 | 73 | 15% | +2% |
 | 0.20–0.25 | 74 | 28% | +22% |
 | 0.25–0.30 | 69 | 23% | -12% |
 | 0.30–0.33 | 56 | 34% | +2% |
