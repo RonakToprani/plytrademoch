@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-25T16:08:09.560304+00:00
+# Poly underdog paper state — 2026-09-25T19:15:51.199725+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($254.45)  ·  settled **293** (70W / 223L)
-- realized P&L **$173.30**  ·  ROI **+4.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-25T15:53:42.750089+00:00
+- open **16** ($249.10)  ·  settled **295** (71W / 224L)
+- realized P&L **$188.66**  ·  ROI **+4.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-25T18:54:41.302544+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,17 +47,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Trump renames AI by September 30? | Yes | 0.270 | $17.92 | 2026-10-01T03:59:09.095486+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.208 | $17.87 | 2026-10-01T03:59:19.832229+00:00 |
 | Will Solana reach $130 in September? | Yes | 0.188 | $10.93 | 2026-10-01T04:00:20.511319+00:00 |
-| Will the price of Bitcoin be above $82,000 on Septem | No | 0.264 | $19.51 | 2026-09-25T16:00:07.500072+00:00 |
 | Russia-Ukraine peace talks by September 30, 2026? | Yes | 0.209 | $19.24 | 2026-10-01T03:59:06.717925+00:00 |
 | Will XRP reach $1.80 in September? | Yes | 0.174 | $12.36 | 2026-10-01T04:00:07.264410+00:00 |
 | Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.330 | $13.41 | 2026-10-01T03:59:07.341440+00:00 |
-| Bitcoin Up or Down on September 25? | Down | 0.320 | $16.41 | 2026-09-25T16:00:07.349107+00:00 |
 | Will Russia capture all of Chasiv Yar by September 3 | Yes | 0.210 | $15.88 | 2026-10-01T03:59:07.310100+00:00 |
+| US-Iran Hormuz Agreement by September 30? | Yes | 0.176 | $13.94 | 2026-10-01T03:59:07.735123+00:00 |
+| Will MrBeast's next video get between 70 and 80 mill | No | 0.250 | $16.63 | 2026-09-26T23:59:07.738084+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Map Handicap: KC (-1.5) vs XLG Gaming (+1.5) | LOST | -17.57 |
+| Bitcoin Up or Down on September 25? | WON | +34.87 |
+| Will the price of Bitcoin be above $82,000 on Septem | LOST | -19.51 |
 | Bitcoin Up or Down on September 24? | WON | +65.05 |
 | Will the price of Bitcoin be above $84,000 on Septem | WON | +63.63 |
 | CNN, Politico, or MS NOW unbanned from White House b | LOST | -12.23 |
@@ -115,8 +117,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will AfD win between 42% and 45% of all valid second | LOST | -21.08 |
 | Will Kimi Antonelli win the 2026 F1 Italian Grand Pr | LOST | -16.47 |
 | Israel military action against Lebanon on September  | LOST | -18.95 |
-| Will the price of Bitcoin be above $80,000 on Septem | LOST | -15.89 |
-| Bitcoin Up or Down on September 5? | LOST | -13.41 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -140,5 +140,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 74 | 15% | +0% |
 | 0.20–0.25 | 76 | 30% | +33% |
-| 0.25–0.30 | 70 | 23% | -14% |
-| 0.30–0.33 | 56 | 34% | +2% |
+| 0.25–0.30 | 71 | 23% | -15% |
+| 0.30–0.33 | 57 | 35% | +6% |
