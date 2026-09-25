@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-25T06:47:23.689709+00:00
+# Poly underdog paper state — 2026-09-25T09:54:44.338404+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($208.75)  ·  settled **292** (70W / 222L)
+- open **14** ($222.16)  ·  settled **292** (70W / 222L)
 - realized P&L **$190.87**  ·  ROI **+4.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-25T06:20:33.368474+00:00
+- last scan: 2026-09-25T09:21:30.563733+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,6 +50,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Septem | No | 0.264 | $19.51 | 2026-09-25T16:00:07.500072+00:00 |
 | Russia-Ukraine peace talks by September 30, 2026? | Yes | 0.209 | $19.24 | 2026-10-01T03:59:06.717925+00:00 |
 | Will XRP reach $1.80 in September? | Yes | 0.174 | $12.36 | 2026-10-01T04:00:07.264410+00:00 |
+| Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.330 | $13.41 | 2026-10-01T03:59:07.341440+00:00 |
 
 ## Settled
 | market | result | P&L |
