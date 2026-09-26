@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-26T20:10:44.245986+00:00
+# Poly underdog paper state — 2026-09-26T23:17:46.892790+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **23** ($367.32)  ·  settled **300** (72W / 228L)
-- realized P&L **$158.34**  ·  ROI **+3.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-26T20:03:29.864257+00:00
+- open **22** ($350.10)  ·  settled **301** (72W / 229L)
+- realized P&L **$141.12**  ·  ROI **+3.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-26T23:04:28.658920+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -57,7 +57,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Broncos (-3.5) | Broncos | 0.320 | $15.89 | 2026-09-28T00:20:06.998435+00:00 |
 | Spread: Colts (-3.5) | Colts | 0.330 | $13.41 | 2026-09-27T17:00:06.961271+00:00 |
 | Spread: Steelers (-3.5) | Steelers | 0.280 | $17.22 | 2026-09-27T17:00:07.519319+00:00 |
-| Will England vs. Spain end in a draw? | Yes | 0.280 | $17.22 | 2026-09-26T18:45:06.999762+00:00 |
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | Will “Hate That I Made You Love Me” by Ariana Grande | Yes | 0.330 | $15.89 | 2026-09-28T03:59:07.573518+00:00 |
 
@@ -66,6 +65,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|
 | Map Handicap: paiN (-1.5) vs Galorys (+1.5) | WON | +44.28 |
 | Will George Russell win the 2026 F1 Azerbaijan Grand | LOST | -20.42 |
+| Will England vs. Spain end in a draw? | LOST | -17.22 |
 | Will the price of Bitcoin be above $84,000 on Septem | LOST | -21.08 |
 | Bitcoin Up or Down on September 26? | LOST | -16.47 |
 | Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
@@ -123,7 +123,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -14.59 |
 | Map Handicap: MGLZ (-1.5) vs MIBR (+1.5) | LOST | -17.92 |
 | Map Handicap: 9z (-1.5) vs 5star (+1.5) | LOST | -18.61 |
-| Bitcoin Up or Down on September 7? | LOST | -18.27 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -147,5 +146,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 75 | 15% | -2% |
 | 0.20–0.25 | 77 | 30% | +30% |
-| 0.25–0.30 | 74 | 23% | -14% |
+| 0.25–0.30 | 75 | 23% | -15% |
 | 0.30–0.33 | 57 | 35% | +6% |
