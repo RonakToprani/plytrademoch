@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-26T01:30:39.390215+00:00
+# Poly underdog paper state — 2026-09-26T04:36:47.716537+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($249.10)  ·  settled **295** (71W / 224L)
+- open **20** ($316.99)  ·  settled **295** (71W / 224L)
 - realized P&L **$188.66**  ·  ROI **+4.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-26T00:56:31.268641+00:00
+- last scan: 2026-09-26T04:27:39.413145+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -53,6 +53,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia capture all of Chasiv Yar by September 3 | Yes | 0.210 | $15.88 | 2026-10-01T03:59:07.310100+00:00 |
 | US-Iran Hormuz Agreement by September 30? | Yes | 0.176 | $13.94 | 2026-10-01T03:59:07.735123+00:00 |
 | Will MrBeast's next video get between 70 and 80 mill | No | 0.250 | $16.63 | 2026-09-26T23:59:07.738084+00:00 |
+| Will Xiaomi have the best Chinese AI model at the en | No | 0.260 | $19.98 | 2026-09-30T16:00:07.887662+00:00 |
+| Spread: Cowboys (-3.5) | Cowboys | 0.260 | $18.61 | 2026-09-27T20:25:07.613596+00:00 |
+| Spread: Broncos (-3.5) | Broncos | 0.320 | $15.89 | 2026-09-28T00:20:06.998435+00:00 |
+| Spread: Colts (-3.5) | Colts | 0.330 | $13.41 | 2026-09-27T17:00:06.961271+00:00 |
 
 ## Settled
 | market | result | P&L |
