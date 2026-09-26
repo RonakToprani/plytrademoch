@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-26T04:36:47.716537+00:00
+# Poly underdog paper state — 2026-09-26T07:44:41.853098+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **20** ($316.99)  ·  settled **295** (71W / 224L)
+- open **21** ($334.21)  ·  settled **295** (71W / 224L)
 - realized P&L **$188.66**  ·  ROI **+4.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-26T04:27:39.413145+00:00
+- last scan: 2026-09-26T07:28:49.131747+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -57,6 +57,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Cowboys (-3.5) | Cowboys | 0.260 | $18.61 | 2026-09-27T20:25:07.613596+00:00 |
 | Spread: Broncos (-3.5) | Broncos | 0.320 | $15.89 | 2026-09-28T00:20:06.998435+00:00 |
 | Spread: Colts (-3.5) | Colts | 0.330 | $13.41 | 2026-09-27T17:00:06.961271+00:00 |
+| Spread: Steelers (-3.5) | Steelers | 0.280 | $17.22 | 2026-09-27T17:00:07.519319+00:00 |
 
 ## Settled
 | market | result | P&L |
