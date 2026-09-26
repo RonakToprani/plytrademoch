@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-26T07:44:41.853098+00:00
+# Poly underdog paper state — 2026-09-26T10:51:08.745500+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **21** ($334.21)  ·  settled **295** (71W / 224L)
+- open **24** ($388.98)  ·  settled **295** (71W / 224L)
 - realized P&L **$188.66**  ·  ROI **+4.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-26T07:28:49.131747+00:00
+- last scan: 2026-09-26T10:29:58.870630+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -58,6 +58,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Broncos (-3.5) | Broncos | 0.320 | $15.89 | 2026-09-28T00:20:06.998435+00:00 |
 | Spread: Colts (-3.5) | Colts | 0.330 | $13.41 | 2026-09-27T17:00:06.961271+00:00 |
 | Spread: Steelers (-3.5) | Steelers | 0.280 | $17.22 | 2026-09-27T17:00:07.519319+00:00 |
+| Bitcoin Up or Down on September 26? | Down | 0.280 | $16.47 | 2026-09-26T16:00:07.422990+00:00 |
+| Will the price of Bitcoin be above $84,000 on Septem | No | 0.239 | $21.08 | 2026-09-26T16:00:07.356726+00:00 |
+| Will England vs. Spain end in a draw? | Yes | 0.280 | $17.22 | 2026-09-26T18:45:06.999762+00:00 |
 
 ## Settled
 | market | result | P&L |
