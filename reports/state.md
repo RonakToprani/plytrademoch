@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-26T17:03:47.465899+00:00
+# Poly underdog paper state — 2026-09-26T20:10:44.245986+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **27** ($443.25)  ·  settled **295** (71W / 224L)
-- realized P&L **$188.66**  ·  ROI **+4.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-26T16:32:10.307995+00:00
+- open **23** ($367.32)  ·  settled **300** (72W / 228L)
+- realized P&L **$158.34**  ·  ROI **+3.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-26T20:03:29.864257+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -52,22 +52,23 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.330 | $13.41 | 2026-10-01T03:59:07.341440+00:00 |
 | Will Russia capture all of Chasiv Yar by September 3 | Yes | 0.210 | $15.88 | 2026-10-01T03:59:07.310100+00:00 |
 | US-Iran Hormuz Agreement by September 30? | Yes | 0.176 | $13.94 | 2026-10-01T03:59:07.735123+00:00 |
-| Will MrBeast's next video get between 70 and 80 mill | No | 0.250 | $16.63 | 2026-09-26T23:59:07.738084+00:00 |
 | Will Xiaomi have the best Chinese AI model at the en | No | 0.260 | $19.98 | 2026-09-30T16:00:07.887662+00:00 |
 | Spread: Cowboys (-3.5) | Cowboys | 0.260 | $18.61 | 2026-09-27T20:25:07.613596+00:00 |
 | Spread: Broncos (-3.5) | Broncos | 0.320 | $15.89 | 2026-09-28T00:20:06.998435+00:00 |
 | Spread: Colts (-3.5) | Colts | 0.330 | $13.41 | 2026-09-27T17:00:06.961271+00:00 |
 | Spread: Steelers (-3.5) | Steelers | 0.280 | $17.22 | 2026-09-27T17:00:07.519319+00:00 |
-| Bitcoin Up or Down on September 26? | Down | 0.280 | $16.47 | 2026-09-26T16:00:07.422990+00:00 |
-| Will the price of Bitcoin be above $84,000 on Septem | No | 0.239 | $21.08 | 2026-09-26T16:00:07.356726+00:00 |
 | Will England vs. Spain end in a draw? | Yes | 0.280 | $17.22 | 2026-09-26T18:45:06.999762+00:00 |
-| Will George Russell win the 2026 F1 Azerbaijan Grand | No | 0.180 | $20.42 | 2026-10-03T11:00:07.523826+00:00 |
-| Map Handicap: paiN (-1.5) vs Galorys (+1.5) | paiN | 0.280 | $17.22 | 2026-09-26T22:30:07.220077+00:00 |
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
+| Will “Hate That I Made You Love Me” by Ariana Grande | Yes | 0.330 | $15.89 | 2026-09-28T03:59:07.573518+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: paiN (-1.5) vs Galorys (+1.5) | WON | +44.28 |
+| Will George Russell win the 2026 F1 Azerbaijan Grand | LOST | -20.42 |
+| Will the price of Bitcoin be above $84,000 on Septem | LOST | -21.08 |
+| Bitcoin Up or Down on September 26? | LOST | -16.47 |
+| Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
 | Map Handicap: KC (-1.5) vs XLG Gaming (+1.5) | LOST | -17.57 |
 | Bitcoin Up or Down on September 25? | WON | +34.87 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -19.51 |
@@ -123,11 +124,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: MGLZ (-1.5) vs MIBR (+1.5) | LOST | -17.92 |
 | Map Handicap: 9z (-1.5) vs 5star (+1.5) | LOST | -18.61 |
 | Bitcoin Up or Down on September 7? | LOST | -18.27 |
-| Will the price of Bitcoin be above $80,000 on Septem | LOST | -18.47 |
-| Will the Bank of Russia make no change to the key ra | LOST | -16.41 |
-| Will AfD win between 42% and 45% of all valid second | LOST | -21.08 |
-| Will Kimi Antonelli win the 2026 F1 Italian Grand Pr | LOST | -16.47 |
-| Israel military action against Lebanon on September  | LOST | -18.95 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -149,7 +145,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 74 | 15% | +0% |
-| 0.20–0.25 | 76 | 30% | +33% |
-| 0.25–0.30 | 71 | 23% | -15% |
+| 0.15–0.20 | 75 | 15% | -2% |
+| 0.20–0.25 | 77 | 30% | +30% |
+| 0.25–0.30 | 74 | 23% | -14% |
 | 0.30–0.33 | 57 | 35% | +6% |
