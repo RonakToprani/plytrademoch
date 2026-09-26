@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-26T13:57:53.070527+00:00
+# Poly underdog paper state — 2026-09-26T17:03:47.465899+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **26** ($426.62)  ·  settled **295** (71W / 224L)
+- open **27** ($443.25)  ·  settled **295** (71W / 224L)
 - realized P&L **$188.66**  ·  ROI **+4.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-26T13:31:09.296848+00:00
+- last scan: 2026-09-26T16:32:10.307995+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -63,6 +63,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will England vs. Spain end in a draw? | Yes | 0.280 | $17.22 | 2026-09-26T18:45:06.999762+00:00 |
 | Will George Russell win the 2026 F1 Azerbaijan Grand | No | 0.180 | $20.42 | 2026-10-03T11:00:07.523826+00:00 |
 | Map Handicap: paiN (-1.5) vs Galorys (+1.5) | paiN | 0.280 | $17.22 | 2026-09-26T22:30:07.220077+00:00 |
+| Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 
 ## Settled
 | market | result | P&L |
