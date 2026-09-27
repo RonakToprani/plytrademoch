@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-27T14:53:56.794063+00:00
+# Poly underdog paper state — 2026-09-27T18:01:02.566854+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **29** ($471.26)  ·  settled **302** (72W / 230L)
-- realized P&L **$122.17**  ·  ROI **+2.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-27T14:39:49.308790+00:00
+- open **28** ($455.38)  ·  settled **303** (72W / 231L)
+- realized P&L **$106.29**  ·  ROI **+2.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-27T17:40:51.219412+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -64,12 +64,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Bills (-14.5) | Bills | 0.280 | $17.22 | 2026-09-27T17:00:07.394371+00:00 |
 | Spread: 49ers (-14.5) | 49ers | 0.300 | $16.58 | 2026-09-27T20:05:08.127705+00:00 |
 | Spread: Lions (-14.5) | Lions | 0.260 | $18.61 | 2026-09-27T17:00:08.844851+00:00 |
-| Will the price of Bitcoin be above $84,000 on Septem | No | 0.180 | $15.88 | 2026-09-27T16:00:09.571837+00:00 |
 | Spread: Vikings (-7.5) | Vikings | 0.270 | $17.92 | 2026-09-27T20:05:07.559291+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $84,000 on Septem | LOST | -15.88 |
 | Map Handicap: paiN (-1.5) vs Galorys (+1.5) | WON | +44.28 |
 | Will George Russell win the 2026 F1 Azerbaijan Grand | LOST | -20.42 |
 | Will England vs. Spain end in a draw? | LOST | -17.22 |
@@ -129,7 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: 9z (-1.5) vs MIBR (+1.5) | LOST | -16.47 |
 | Map Handicap: G2.A (-1.5) vs Azuolas (+1.5) | LOST | -21.08 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -14.59 |
-| Map Handicap: MGLZ (-1.5) vs MIBR (+1.5) | LOST | -17.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -151,7 +150,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 76 | 14% | -4% |
+| 0.15–0.20 | 77 | 14% | -6% |
 | 0.20–0.25 | 77 | 30% | +30% |
 | 0.25–0.30 | 75 | 23% | -15% |
 | 0.30–0.33 | 57 | 35% | +6% |
