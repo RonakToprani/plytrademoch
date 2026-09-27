@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-27T05:30:55.251599+00:00
+# Poly underdog paper state — 2026-09-27T08:39:25.745333+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,14 +30,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **30** ($490.21)  ·  settled **301** (72W / 229L)
-- realized P&L **$141.12**  ·  ROI **+3.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-27T05:06:33.945993+00:00
+- open **29** ($471.26)  ·  settled **302** (72W / 230L)
+- realized P&L **$122.17**  ·  ROI **+2.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-27T08:07:45.083922+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
-| US x Iran ceasefire continues through September 25? | No | 0.169 | $18.95 | 2026-09-25T23:59:07.243161+00:00 |
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | US announces end of Iranian blockade by September 30 | Yes | 0.160 | $14.59 | 2026-10-01T03:59:07.348144+00:00 |
 | Will Bitcoin reach $88,000 September 21-27? | No | 0.320 | $13.41 | 2026-09-28T04:00:08.387678+00:00 |
@@ -87,6 +86,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $86,000 on Septem | WON | +71.84 |
 | Will the price of Bitcoin be above $82,000 on Septem | WON | +40.57 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.18 |
+| US x Iran ceasefire continues through September 25? | LOST | -18.95 |
 | Trump x Greenland deal signed by September 23? | LOST | -16.41 |
 | Will Xi Jinping visit US by September 23? | LOST | -17.53 |
 | Will Ethereum reach $2,700 September 14-20? | WON | +72.65 |
@@ -130,7 +130,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: G2.A (-1.5) vs Azuolas (+1.5) | LOST | -21.08 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -14.59 |
 | Map Handicap: MGLZ (-1.5) vs MIBR (+1.5) | LOST | -17.92 |
-| Map Handicap: 9z (-1.5) vs 5star (+1.5) | LOST | -18.61 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -152,7 +151,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 75 | 15% | -2% |
+| 0.15–0.20 | 76 | 14% | -4% |
 | 0.20–0.25 | 77 | 30% | +30% |
 | 0.25–0.30 | 75 | 23% | -15% |
 | 0.30–0.33 | 57 | 35% | +6% |
