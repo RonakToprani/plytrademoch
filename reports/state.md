@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-26T23:17:46.892790+00:00
+# Poly underdog paper state — 2026-09-27T02:23:29.402364+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **22** ($350.10)  ·  settled **301** (72W / 229L)
+- open **24** ($387.32)  ·  settled **301** (72W / 229L)
 - realized P&L **$141.12**  ·  ROI **+3.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-26T23:04:28.658920+00:00
+- last scan: 2026-09-27T02:05:29.160422+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -59,6 +59,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Steelers (-3.5) | Steelers | 0.280 | $17.22 | 2026-09-27T17:00:07.519319+00:00 |
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | Will “Hate That I Made You Love Me” by Ariana Grande | Yes | 0.330 | $15.89 | 2026-09-28T03:59:07.573518+00:00 |
+| Spread: Chiefs (-3.5) | Dolphins | 0.260 | $18.61 | 2026-09-27T17:00:07.427086+00:00 |
+| Spread: Raiders (-3.5) | Raiders | 0.260 | $18.61 | 2026-09-27T20:25:07.508638+00:00 |
 
 ## Settled
 | market | result | P&L |
