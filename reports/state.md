@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-27T02:23:29.402364+00:00
+# Poly underdog paper state — 2026-09-27T05:30:55.251599+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **24** ($387.32)  ·  settled **301** (72W / 229L)
+- open **30** ($490.21)  ·  settled **301** (72W / 229L)
 - realized P&L **$141.12**  ·  ROI **+3.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-27T02:05:29.160422+00:00
+- last scan: 2026-09-27T05:06:33.945993+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -61,6 +61,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will “Hate That I Made You Love Me” by Ariana Grande | Yes | 0.330 | $15.89 | 2026-09-28T03:59:07.573518+00:00 |
 | Spread: Chiefs (-3.5) | Dolphins | 0.260 | $18.61 | 2026-09-27T17:00:07.427086+00:00 |
 | Spread: Raiders (-3.5) | Raiders | 0.260 | $18.61 | 2026-09-27T20:25:07.508638+00:00 |
+| Spread: Giants (-7.5) | Giants | 0.290 | $16.68 | 2026-09-27T17:00:07.390508+00:00 |
+| Spread: Bills (-14.5) | Bills | 0.280 | $17.22 | 2026-09-27T17:00:07.394371+00:00 |
+| Spread: 49ers (-14.5) | 49ers | 0.300 | $16.58 | 2026-09-27T20:05:08.127705+00:00 |
+| Spread: Lions (-14.5) | Lions | 0.260 | $18.61 | 2026-09-27T17:00:08.844851+00:00 |
+| Will the price of Bitcoin be above $84,000 on Septem | No | 0.180 | $15.88 | 2026-09-27T16:00:09.571837+00:00 |
+| Spread: Vikings (-7.5) | Vikings | 0.270 | $17.92 | 2026-09-27T20:05:07.559291+00:00 |
 
 ## Settled
 | market | result | P&L |
