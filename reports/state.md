@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-28T09:40:03.474099+00:00
+# Poly underdog paper state — 2026-09-28T12:46:54.963762+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **17** ($272.53)  ·  settled **316** (75W / 241L)
+- open **18** ($290.40)  ·  settled **316** (75W / 241L)
 - realized P&L **$50.78**  ·  ROI **+1.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-28T09:16:48.153548+00:00
+- last scan: 2026-09-28T12:17:44.097090+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -54,6 +54,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | Spread: Bears (-3.5) | Bears | 0.240 | $20.26 | 2026-09-29T00:15:07.899976+00:00 |
 | Will the price of Bitcoin be above $82,000 on Septem | No | 0.151 | $15.55 | 2026-09-28T16:00:07.289049+00:00 |
+| Will Bitcoin dip to $81,000 on September 28? | Yes | 0.190 | $17.87 | 2026-09-29T04:00:07.246654+00:00 |
 
 ## Settled
 | market | result | P&L |
