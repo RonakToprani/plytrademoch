@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-28T15:54:04.207343+00:00
+# Poly underdog paper state — 2026-09-28T19:02:18.811743+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **19** ($308.87)  ·  settled **316** (75W / 241L)
-- realized P&L **$50.78**  ·  ROI **+1.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-28T15:18:42.270720+00:00
+- open **18** ($293.32)  ·  settled **317** (75W / 242L)
+- realized P&L **$35.23**  ·  ROI **+0.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-28T18:49:50.890185+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -53,13 +53,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Xiaomi have the best Chinese AI model at the en | No | 0.260 | $19.98 | 2026-09-30T16:00:07.887662+00:00 |
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | Spread: Bears (-3.5) | Bears | 0.240 | $20.26 | 2026-09-29T00:15:07.899976+00:00 |
-| Will the price of Bitcoin be above $82,000 on Septem | No | 0.151 | $15.55 | 2026-09-28T16:00:07.289049+00:00 |
 | Will Bitcoin dip to $81,000 on September 28? | Yes | 0.190 | $17.87 | 2026-09-29T04:00:07.246654+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $82,000 on Septem | LOST | -15.55 |
 | Spread: Vikings (-7.5) | LOST | -17.92 |
 | Will the price of Bitcoin be above $84,000 on Septem | LOST | -15.88 |
 | Spread: Lions (-14.5) | LOST | -18.61 |
@@ -119,7 +119,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran-Oman Hormuz Agreement by September 14? | LOST | -21.08 |
 | Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | WON | +43.95 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -15.89 |
-| Will the Fed decide differently in the next three de | LOST | -20.42 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -141,7 +140,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 77 | 14% | -6% |
+| 0.15–0.20 | 78 | 14% | -8% |
 | 0.20–0.25 | 77 | 30% | +30% |
 | 0.25–0.30 | 83 | 22% | -18% |
 | 0.30–0.33 | 62 | 35% | +7% |
