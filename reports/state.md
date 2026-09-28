@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-28T03:26:11.354269+00:00
+# Poly underdog paper state — 2026-09-28T06:34:17.324903+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,16 +30,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **18** ($281.91)  ·  settled **313** (73W / 240L)
-- realized P&L **$4.40**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-28T03:14:32.438249+00:00
+- open **17** ($272.53)  ·  settled **316** (75W / 241L)
+- realized P&L **$50.78**  ·  ROI **+1.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-28T06:15:53.048497+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | US announces end of Iranian blockade by September 30 | Yes | 0.160 | $14.59 | 2026-10-01T03:59:07.348144+00:00 |
-| Will Bitcoin reach $88,000 September 21-27? | No | 0.320 | $13.41 | 2026-09-28T04:00:08.387678+00:00 |
 | Will Anthropic have the best Code Arena | WebDev AI  | No | 0.200 | $15.88 | 2026-09-30T16:00:07.723560+00:00 |
 | Will Bitcoin reach $90,000 in September? | Yes | 0.156 | $12.62 | 2026-10-01T04:00:07.584059+00:00 |
 | Will Ethereum reach $2,900 in September? | Yes | 0.210 | $18.95 | 2026-10-01T04:00:08.368131+00:00 |
@@ -52,9 +51,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia capture all of Chasiv Yar by September 3 | Yes | 0.210 | $15.88 | 2026-10-01T03:59:07.310100+00:00 |
 | US-Iran Hormuz Agreement by September 30? | Yes | 0.176 | $13.94 | 2026-10-01T03:59:07.735123+00:00 |
 | Will Xiaomi have the best Chinese AI model at the en | No | 0.260 | $19.98 | 2026-09-30T16:00:07.887662+00:00 |
-| Spread: Broncos (-3.5) | Broncos | 0.320 | $15.89 | 2026-09-28T00:20:06.998435+00:00 |
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
-| Will “Hate That I Made You Love Me” by Ariana Grande | Yes | 0.330 | $15.89 | 2026-09-28T03:59:07.573518+00:00 |
+| Spread: Bears (-3.5) | Bears | 0.240 | $20.26 | 2026-09-29T00:15:07.899976+00:00 |
+| Will the price of Bitcoin be above $82,000 on Septem | No | 0.151 | $15.55 | 2026-09-28T16:00:07.289049+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -67,6 +66,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Giants (-7.5) | LOST | -16.68 |
 | Spread: Raiders (-3.5) | WON | +52.97 |
 | Spread: Chiefs (-3.5) | LOST | -18.61 |
+| Will “Hate That I Made You Love Me” by Ariana Grande | LOST | -15.89 |
 | Map Handicap: paiN (-1.5) vs Galorys (+1.5) | WON | +44.28 |
 | Will George Russell win the 2026 F1 Azerbaijan Grand | LOST | -20.42 |
 | Will England vs. Spain end in a draw? | LOST | -17.22 |
@@ -74,6 +74,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on September 26? | LOST | -16.47 |
 | Spread: Steelers (-3.5) | LOST | -17.22 |
 | Spread: Colts (-3.5) | LOST | -13.41 |
+| Spread: Broncos (-3.5) | WON | +33.77 |
 | Spread: Cowboys (-3.5) | LOST | -18.61 |
 | Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
 | Map Handicap: KC (-1.5) vs XLG Gaming (+1.5) | LOST | -17.57 |
@@ -82,6 +83,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on September 24? | WON | +65.05 |
 | Will the price of Bitcoin be above $84,000 on Septem | WON | +63.63 |
 | CNN, Politico, or MS NOW unbanned from White House b | LOST | -12.23 |
+| Will Bitcoin reach $88,000 September 21-27? | WON | +28.50 |
 | Will the next Claude Opus model be released on Septe | LOST | -19.93 |
 | Will the price of Bitcoin be above $86,000 on Septem | WON | +71.84 |
 | Will the price of Bitcoin be above $82,000 on Septem | WON | +40.57 |
@@ -116,9 +118,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Spread: Zverev (-5.5) vs Khachanov (+5.5) | WON | +43.95 |
 | Will the price of Bitcoin be above $78,000 on Septem | LOST | -15.89 |
 | Will the Fed decide differently in the next three de | LOST | -20.42 |
-| S&P 500 (SPX) Up or Down on September 11? | LOST | -16.68 |
-| Will Bitcoin dip to $74,000 September 7-13? | LOST | -20.42 |
-| Will the price of Bitcoin be above $76,000 on Septem | LOST | -18.56 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -143,4 +142,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 77 | 14% | -6% |
 | 0.20–0.25 | 77 | 30% | +30% |
 | 0.25–0.30 | 83 | 22% | -18% |
-| 0.30–0.33 | 59 | 34% | +2% |
+| 0.30–0.33 | 62 | 35% | +7% |
