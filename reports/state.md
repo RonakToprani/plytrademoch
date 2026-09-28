@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-28T00:16:42.230087+00:00
+# Poly underdog paper state — 2026-09-28T03:26:11.354269+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **22** ($353.63)  ·  settled **309** (72W / 237L)
-- realized P&L **$4.54**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-09-27T23:43:00.311734+00:00
+- open **18** ($281.91)  ·  settled **313** (73W / 240L)
+- realized P&L **$4.40**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-09-28T03:14:32.438249+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -52,21 +52,20 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia capture all of Chasiv Yar by September 3 | Yes | 0.210 | $15.88 | 2026-10-01T03:59:07.310100+00:00 |
 | US-Iran Hormuz Agreement by September 30? | Yes | 0.176 | $13.94 | 2026-10-01T03:59:07.735123+00:00 |
 | Will Xiaomi have the best Chinese AI model at the en | No | 0.260 | $19.98 | 2026-09-30T16:00:07.887662+00:00 |
-| Spread: Cowboys (-3.5) | Cowboys | 0.260 | $18.61 | 2026-09-27T20:25:07.613596+00:00 |
 | Spread: Broncos (-3.5) | Broncos | 0.320 | $15.89 | 2026-09-28T00:20:06.998435+00:00 |
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | Will “Hate That I Made You Love Me” by Ariana Grande | Yes | 0.330 | $15.89 | 2026-09-28T03:59:07.573518+00:00 |
-| Spread: Raiders (-3.5) | Raiders | 0.260 | $18.61 | 2026-09-27T20:25:07.508638+00:00 |
-| Spread: 49ers (-14.5) | 49ers | 0.300 | $16.58 | 2026-09-27T20:05:08.127705+00:00 |
-| Spread: Vikings (-7.5) | Vikings | 0.270 | $17.92 | 2026-09-27T20:05:07.559291+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Spread: Vikings (-7.5) | LOST | -17.92 |
 | Will the price of Bitcoin be above $84,000 on Septem | LOST | -15.88 |
 | Spread: Lions (-14.5) | LOST | -18.61 |
+| Spread: 49ers (-14.5) | LOST | -16.58 |
 | Spread: Bills (-14.5) | LOST | -17.22 |
 | Spread: Giants (-7.5) | LOST | -16.68 |
+| Spread: Raiders (-3.5) | WON | +52.97 |
 | Spread: Chiefs (-3.5) | LOST | -18.61 |
 | Map Handicap: paiN (-1.5) vs Galorys (+1.5) | WON | +44.28 |
 | Will George Russell win the 2026 F1 Azerbaijan Grand | LOST | -20.42 |
@@ -75,6 +74,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on September 26? | LOST | -16.47 |
 | Spread: Steelers (-3.5) | LOST | -17.22 |
 | Spread: Colts (-3.5) | LOST | -13.41 |
+| Spread: Cowboys (-3.5) | LOST | -18.61 |
 | Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
 | Map Handicap: KC (-1.5) vs XLG Gaming (+1.5) | LOST | -17.57 |
 | Bitcoin Up or Down on September 25? | WON | +34.87 |
@@ -119,10 +119,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | S&P 500 (SPX) Up or Down on September 11? | LOST | -16.68 |
 | Will Bitcoin dip to $74,000 September 7-13? | LOST | -20.42 |
 | Will the price of Bitcoin be above $76,000 on Septem | LOST | -18.56 |
-| US x Iran Effective Ceasefire by September 11? | LOST | -13.41 |
-| Bitcoin Up or Down on September 10? | LOST | -16.68 |
-| Map Handicap: AST (-1.5) vs 5star (+1.5) | WON | +46.08 |
-| Will Russia and Ukraine hold any diplomatic meeting  | LOST | -10.93 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -146,5 +142,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 77 | 14% | -6% |
 | 0.20–0.25 | 77 | 30% | +30% |
-| 0.25–0.30 | 80 | 21% | -20% |
-| 0.30–0.33 | 58 | 34% | +4% |
+| 0.25–0.30 | 83 | 22% | -18% |
+| 0.30–0.33 | 59 | 34% | +2% |
