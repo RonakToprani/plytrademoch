@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-28T19:02:18.811743+00:00
+# Poly underdog paper state — 2026-09-28T22:09:49.661010+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **18** ($293.32)  ·  settled **317** (75W / 242L)
+- open **19** ($310.54)  ·  settled **317** (75W / 242L)
 - realized P&L **$35.23**  ·  ROI **+0.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-28T18:49:50.890185+00:00
+- last scan: 2026-09-28T21:50:50.200105+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -55,6 +55,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Bears (-3.5) | Bears | 0.240 | $20.26 | 2026-09-29T00:15:07.899976+00:00 |
 | Will Bitcoin dip to $81,000 on September 28? | Yes | 0.190 | $17.87 | 2026-09-29T04:00:07.246654+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
+| Next US-Iran senior diplomatic meeting by September  | Yes | 0.323 | $17.22 | 2026-09-30T23:59:07.739044+00:00 |
 
 ## Settled
 | market | result | P&L |
