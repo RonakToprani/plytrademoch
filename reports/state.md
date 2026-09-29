@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-29T20:03:29.801512+00:00
+# Poly underdog paper state — 2026-09-29T23:11:09.569982+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **18** ($284.51)  ·  settled **319** (76W / 243L)
-- realized P&L **$81.52**  ·  ROI **+1.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-29T19:27:29.341500+00:00
+- open **19** ($297.39)  ·  settled **320** (77W / 243L)
+- realized P&L **$133.18**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-29T22:58:39.817699+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -55,10 +55,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 | Next US-Iran senior diplomatic meeting by September  | Yes | 0.323 | $17.22 | 2026-09-30T23:59:07.739044+00:00 |
 | Iran charges Hormuz fees by September 30? | Yes | 0.167 | $12.10 | 2026-10-01T03:59:07.684360+00:00 |
+| Gemini 4.0 released by September 30, 2026? | Yes | 0.182 | $12.88 | 2026-10-01T03:59:07.404560+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Philadelphia Phillies vs. Atlanta Braves: O/U 6.5 | WON | +51.66 |
 | Will Bitcoin dip to $81,000 on September 28? | LOST | -17.87 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -15.55 |
 | Spread: Bears (-3.5) | WON | +64.16 |
@@ -118,7 +120,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Arsenal FC (-1.5) | WON | +27.23 |
 | US announces end of Iranian blockade by September 21 | LOST | -10.93 |
 | Game Spread: Shelton (-4.5) vs Tiafoe (+4.5) | LOST | -16.63 |
-| Iran-Oman Hormuz Agreement by September 14? | LOST | -21.08 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -142,5 +143,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 79 | 14% | -10% |
 | 0.20–0.25 | 78 | 31% | +35% |
-| 0.25–0.30 | 83 | 22% | -18% |
+| 0.25–0.30 | 84 | 23% | -15% |
 | 0.30–0.33 | 62 | 35% | +7% |
