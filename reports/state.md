@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-29T16:56:48.211436+00:00
+# Poly underdog paper state — 2026-09-29T20:03:29.801512+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **17** ($272.41)  ·  settled **319** (76W / 243L)
+- open **18** ($284.51)  ·  settled **319** (76W / 243L)
 - realized P&L **$81.52**  ·  ROI **+1.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-29T16:26:30.325627+00:00
+- last scan: 2026-09-29T19:27:29.341500+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -54,6 +54,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 | Next US-Iran senior diplomatic meeting by September  | Yes | 0.323 | $17.22 | 2026-09-30T23:59:07.739044+00:00 |
+| Iran charges Hormuz fees by September 30? | Yes | 0.167 | $12.10 | 2026-10-01T03:59:07.684360+00:00 |
 
 ## Settled
 | market | result | P&L |
