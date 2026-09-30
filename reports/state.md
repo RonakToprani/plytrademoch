@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-30T08:32:08.032665+00:00
+# Poly underdog paper state — 2026-09-30T14:47:24.213524+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **20** ($304.71)  ·  settled **322** (78W / 244L)
+- open **22** ($335.77)  ·  settled **322** (78W / 244L)
 - realized P&L **$170.70**  ·  ROI **+3.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-30T08:01:33.085536+00:00
+- last scan: 2026-09-30T14:33:51.757633+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -57,6 +57,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Gemini 4.0 released by September 30, 2026? | Yes | 0.182 | $12.88 | 2026-10-01T03:59:07.404560+00:00 |
 | Will the next Google Gemini Pro model be released by | Yes | 0.187 | $12.36 | 2026-10-01T03:59:07.618854+00:00 |
 | Will there be no next Google Gemini Pro model releas | No | 0.193 | $12.88 | 2026-10-01T03:59:08.516419+00:00 |
+| Will Bitcoin reach $86,000 September 28-October 4? | No | 0.250 | $16.53 | 2026-10-05T04:00:08.011494+00:00 |
+| Will Trump meet with Javier Milei in September 2026? | No | 0.180 | $14.53 | 2026-10-01T03:59:08.157770+00:00 |
 
 ## Settled
 | market | result | P&L |
