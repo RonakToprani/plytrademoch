@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-09-29T23:11:09.569982+00:00
+# Poly underdog paper state — 2026-09-30T02:16:35.610085+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **19** ($297.39)  ·  settled **320** (77W / 243L)
-- realized P&L **$133.18**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-29T22:58:39.817699+00:00
+- open **18** ($279.47)  ·  settled **322** (78W / 244L)
+- realized P&L **$170.70**  ·  ROI **+3.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-09-30T01:59:41.259028+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,7 +42,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Anthropic have the best Code Arena | WebDev AI  | No | 0.200 | $15.88 | 2026-09-30T16:00:07.723560+00:00 |
 | Will Bitcoin reach $90,000 in September? | Yes | 0.156 | $12.62 | 2026-10-01T04:00:07.584059+00:00 |
 | Will Ethereum reach $2,900 in September? | Yes | 0.210 | $18.95 | 2026-10-01T04:00:08.368131+00:00 |
-| Trump renames AI by September 30? | Yes | 0.270 | $17.92 | 2026-10-01T03:59:09.095486+00:00 |
 | Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.208 | $17.87 | 2026-10-01T03:59:19.832229+00:00 |
 | Will Solana reach $130 in September? | Yes | 0.188 | $10.93 | 2026-10-01T04:00:20.511319+00:00 |
 | Russia-Ukraine peace talks by September 30, 2026? | Yes | 0.209 | $19.24 | 2026-10-01T03:59:06.717925+00:00 |
@@ -60,6 +59,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Chicago White Sox vs. Houston Astros: O/U 8.5 | LOST | -10.93 |
 | Philadelphia Phillies vs. Atlanta Braves: O/U 6.5 | WON | +51.66 |
 | Will Bitcoin dip to $81,000 on September 28? | LOST | -17.87 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -15.55 |
@@ -89,6 +89,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on September 24? | WON | +65.05 |
 | Will the price of Bitcoin be above $84,000 on Septem | WON | +63.63 |
 | CNN, Politico, or MS NOW unbanned from White House b | LOST | -12.23 |
+| Trump renames AI by September 30? | WON | +48.45 |
 | Will Bitcoin reach $88,000 September 21-27? | WON | +28.50 |
 | Will the next Claude Opus model be released on Septe | LOST | -19.93 |
 | Will the price of Bitcoin be above $86,000 on Septem | WON | +71.84 |
@@ -118,8 +119,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will “The Late Show With Stephen Colbert” win Emmys  | LOST | -17.22 |
 | Map Handicap: LGC (-1.5) vs G2 (+1.5) | WON | +36.66 |
 | Spread: Arsenal FC (-1.5) | WON | +27.23 |
-| US announces end of Iranian blockade by September 21 | LOST | -10.93 |
-| Game Spread: Shelton (-4.5) vs Tiafoe (+4.5) | LOST | -16.63 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -143,5 +142,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 79 | 14% | -10% |
 | 0.20–0.25 | 78 | 31% | +35% |
-| 0.25–0.30 | 84 | 23% | -15% |
+| 0.25–0.30 | 86 | 23% | -12% |
 | 0.30–0.33 | 62 | 35% | +7% |
