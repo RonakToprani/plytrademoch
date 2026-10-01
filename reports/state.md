@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-01T12:34:12.854364+00:00
+# Poly underdog paper state — 2026-10-01T15:39:36.321373+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($171.81)  ·  settled **339** (78W / 261L)
+- open **11** ($192.23)  ·  settled **339** (78W / 261L)
 - realized P&L **$-82.39**  ·  ROI **-1.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-01T12:12:13.557332+00:00
+- last scan: 2026-10-01T15:13:08.678183+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,6 +47,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | FaZe | 0.310 | $16.47 | 2026-10-01T23:30:08.990706+00:00 |
 | Bitcoin Up or Down on October 1? | Up | 0.220 | $21.08 | 2026-10-01T16:00:07.174934+00:00 |
 | Will the price of Bitcoin be above $82,000 on Octobe | No | 0.180 | $16.53 | 2026-10-02T16:00:07.393850+00:00 |
+| Will Russia target Kyiv on October 4, 2026? | No | 0.228 | $20.42 | 2026-10-05T03:59:08.076246+00:00 |
 
 ## Settled
 | market | result | P&L |
