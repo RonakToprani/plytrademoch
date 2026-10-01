@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-01T06:20:05.968775+00:00
+# Poly underdog paper state — 2026-10-01T09:27:23.365772+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,37 +30,34 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **18** ($280.10)  ·  settled **328** (78W / 250L)
-- realized P&L **$79.98**  ·  ROI **+1.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-01T06:09:26.383249+00:00
+- open **10** ($169.22)  ·  settled **338** (78W / 260L)
+- realized P&L **$-68.45**  ·  ROI **-1.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-01T09:11:04.875962+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
-| US announces end of Iranian blockade by September 30 | Yes | 0.160 | $14.59 | 2026-10-01T03:59:07.348144+00:00 |
-| Will Russia and Ukraine hold any diplomatic meeting  | Yes | 0.208 | $17.87 | 2026-10-01T03:59:19.832229+00:00 |
-| Russia-Ukraine peace talks by September 30, 2026? | Yes | 0.209 | $19.24 | 2026-10-01T03:59:06.717925+00:00 |
-| Saudi Oil Pipeline (East-West) restarts by September | Yes | 0.330 | $13.41 | 2026-10-01T03:59:07.341440+00:00 |
-| Will Russia capture all of Chasiv Yar by September 3 | Yes | 0.210 | $15.88 | 2026-10-01T03:59:07.310100+00:00 |
 | US-Iran Hormuz Agreement by September 30? | Yes | 0.176 | $13.94 | 2026-10-01T03:59:07.735123+00:00 |
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
-| Next US-Iran senior diplomatic meeting by September  | Yes | 0.323 | $17.22 | 2026-09-30T23:59:07.739044+00:00 |
-| Iran charges Hormuz fees by September 30? | Yes | 0.167 | $12.10 | 2026-10-01T03:59:07.684360+00:00 |
-| Gemini 4.0 released by September 30, 2026? | Yes | 0.182 | $12.88 | 2026-10-01T03:59:07.404560+00:00 |
-| Will the next Google Gemini Pro model be released by | Yes | 0.187 | $12.36 | 2026-10-01T03:59:07.618854+00:00 |
-| Will there be no next Google Gemini Pro model releas | No | 0.193 | $12.88 | 2026-10-01T03:59:08.516419+00:00 |
 | Will Bitcoin reach $86,000 September 28-October 4? | No | 0.250 | $16.53 | 2026-10-05T04:00:08.011494+00:00 |
 | Will Trump meet with Javier Milei in September 2026? | No | 0.180 | $14.53 | 2026-10-01T03:59:08.157770+00:00 |
 | Spread: Browns (-3.5) | Browns | 0.300 | $16.58 | 2026-10-02T00:15:07.466801+00:00 |
 | Will Wales vs. Norway end in a draw? | Yes | 0.200 | $18.47 | 2026-10-01T18:45:07.751832+00:00 |
+| Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | FaZe | 0.310 | $16.47 | 2026-10-01T23:30:08.990706+00:00 |
+| Bitcoin Up or Down on October 1? | Up | 0.220 | $21.08 | 2026-10-01T16:00:07.174934+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will there be no next Google Gemini Pro model releas | LOST | -12.88 |
+| Will the next Google Gemini Pro model be released by | LOST | -12.36 |
 | Chicago White Sox vs. Houston Astros: O/U 8.5 | LOST | -10.93 |
+| Gemini 4.0 released by September 30, 2026? | LOST | -12.88 |
 | Philadelphia Phillies vs. Atlanta Braves: O/U 6.5 | WON | +51.66 |
+| Iran charges Hormuz fees by September 30? | LOST | -12.10 |
+| Next US-Iran senior diplomatic meeting by September  | LOST | -17.22 |
 | Will Bitcoin dip to $81,000 on September 28? | LOST | -17.87 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -15.55 |
 | Spread: Bears (-3.5) | WON | +64.16 |
@@ -84,20 +81,25 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Cowboys (-3.5) | LOST | -18.61 |
 | Will Xiaomi have the best Chinese AI model at the en | LOST | -19.98 |
 | Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
+| Will Russia capture all of Chasiv Yar by September 3 | LOST | -15.88 |
 | Map Handicap: KC (-1.5) vs XLG Gaming (+1.5) | LOST | -17.57 |
 | Bitcoin Up or Down on September 25? | WON | +34.87 |
+| Saudi Oil Pipeline (East-West) restarts by September | LOST | -13.41 |
 | Will XRP reach $1.80 in September? | LOST | -12.36 |
+| Russia-Ukraine peace talks by September 30, 2026? | LOST | -19.24 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -19.51 |
 | Bitcoin Up or Down on September 24? | WON | +65.05 |
 | Will the price of Bitcoin be above $84,000 on Septem | WON | +63.63 |
 | CNN, Politico, or MS NOW unbanned from White House b | LOST | -12.23 |
 | Will Solana reach $130 in September? | LOST | -10.93 |
+| Will Russia and Ukraine hold any diplomatic meeting  | LOST | -17.87 |
 | Trump renames AI by September 30? | WON | +48.45 |
 | Will Ethereum reach $2,900 in September? | LOST | -18.95 |
 | Will Bitcoin reach $90,000 in September? | LOST | -12.62 |
 | Will Anthropic have the best Code Arena | WebDev AI  | LOST | -15.88 |
 | Will Bitcoin reach $88,000 September 21-27? | WON | +28.50 |
 | Will the next Claude Opus model be released on Septe | LOST | -19.93 |
+| US announces end of Iranian blockade by September 30 | LOST | -14.59 |
 | Will the price of Bitcoin be above $86,000 on Septem | WON | +71.84 |
 | Will the price of Bitcoin be above $82,000 on Septem | WON | +40.57 |
 | Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.18 |
@@ -109,16 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: West Virginia (-0.5) | WON | +64.16 |
 | Will Bitcoin reach $82,000 September 14-20? | LOST | -14.91 |
 | Will Bologna FC 1909 vs. Torino FC end in a draw? | WON | +44.28 |
-| Will the price of Bitcoin be above $80,000 on Septem | LOST | -19.21 |
-| Will MrBeast Gaming's next video get between 40 and  | LOST | -11.06 |
-| Saudi Oil Pipeline (East-West) restarts by September | LOST | -20.67 |
-| Will the price of Bitcoin be above $78,000 on Septem | WON | +44.87 |
-| Map Handicap: VIT (-1.5) vs magic (+1.5) | LOST | -16.47 |
-| Bitcoin Up or Down on September 17? | LOST | -20.26 |
-| Will Bitcoin reach $80,000 September 14-20? | WON | +49.32 |
-| Bitcoin Up or Down on September 16? | LOST | -18.47 |
-| Will the price of Bitcoin be above $74,000 on Septem | LOST | -16.21 |
-| Will the price of Bitcoin be above $78,000 on Septem | LOST | -16.52 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -140,7 +132,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 82 | 13% | -13% |
-| 0.20–0.25 | 80 | 30% | +31% |
+| 0.15–0.20 | 87 | 13% | -19% |
+| 0.20–0.25 | 83 | 29% | +26% |
 | 0.25–0.30 | 87 | 23% | -13% |
-| 0.30–0.33 | 62 | 35% | +7% |
+| 0.30–0.33 | 64 | 34% | +4% |
