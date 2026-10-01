@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-01T00:03:59.144414+00:00
+# Poly underdog paper state — 2026-10-01T03:11:40.796593+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **20** ($299.91)  ·  settled **324** (78W / 246L)
+- open **21** ($316.49)  ·  settled **324** (78W / 246L)
 - realized P&L **$134.84**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-09-30T23:36:51.162125+00:00
+- last scan: 2026-10-01T02:37:50.076149+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -57,6 +57,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will there be no next Google Gemini Pro model releas | No | 0.193 | $12.88 | 2026-10-01T03:59:08.516419+00:00 |
 | Will Bitcoin reach $86,000 September 28-October 4? | No | 0.250 | $16.53 | 2026-10-05T04:00:08.011494+00:00 |
 | Will Trump meet with Javier Milei in September 2026? | No | 0.180 | $14.53 | 2026-10-01T03:59:08.157770+00:00 |
+| Spread: Browns (-3.5) | Browns | 0.300 | $16.58 | 2026-10-02T00:15:07.466801+00:00 |
 
 ## Settled
 | market | result | P&L |
