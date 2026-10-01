@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-01T09:27:23.365772+00:00
+# Poly underdog paper state — 2026-10-01T12:34:12.854364+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($169.22)  ·  settled **338** (78W / 260L)
-- realized P&L **$-68.45**  ·  ROI **-1.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-01T09:11:04.875962+00:00
+- open **10** ($171.81)  ·  settled **339** (78W / 261L)
+- realized P&L **$-82.39**  ·  ROI **-1.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-01T12:12:13.557332+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
-| US-Iran Hormuz Agreement by September 30? | Yes | 0.176 | $13.94 | 2026-10-01T03:59:07.735123+00:00 |
 | Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 | Will Bitcoin reach $86,000 September 28-October 4? | No | 0.250 | $16.53 | 2026-10-05T04:00:08.011494+00:00 |
@@ -47,6 +46,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Wales vs. Norway end in a draw? | Yes | 0.200 | $18.47 | 2026-10-01T18:45:07.751832+00:00 |
 | Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | FaZe | 0.310 | $16.47 | 2026-10-01T23:30:08.990706+00:00 |
 | Bitcoin Up or Down on October 1? | Up | 0.220 | $21.08 | 2026-10-01T16:00:07.174934+00:00 |
+| Will the price of Bitcoin be above $82,000 on Octobe | No | 0.180 | $16.53 | 2026-10-02T16:00:07.393850+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -81,6 +81,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Cowboys (-3.5) | LOST | -18.61 |
 | Will Xiaomi have the best Chinese AI model at the en | LOST | -19.98 |
 | Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
+| US-Iran Hormuz Agreement by September 30? | LOST | -13.94 |
 | Will Russia capture all of Chasiv Yar by September 3 | LOST | -15.88 |
 | Map Handicap: KC (-1.5) vs XLG Gaming (+1.5) | LOST | -17.57 |
 | Bitcoin Up or Down on September 25? | WON | +34.87 |
@@ -110,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on September 19? | LOST | -20.42 |
 | Spread: West Virginia (-0.5) | WON | +64.16 |
 | Will Bitcoin reach $82,000 September 14-20? | LOST | -14.91 |
-| Will Bologna FC 1909 vs. Torino FC end in a draw? | WON | +44.28 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,7 +132,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 87 | 13% | -19% |
+| 0.15–0.20 | 88 | 12% | -20% |
 | 0.20–0.25 | 83 | 29% | +26% |
 | 0.25–0.30 | 87 | 23% | -13% |
 | 0.30–0.33 | 64 | 34% | +4% |
