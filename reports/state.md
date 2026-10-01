@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-01T15:39:36.321373+00:00
+# Poly underdog paper state — 2026-10-01T18:48:12.797948+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($192.23)  ·  settled **339** (78W / 261L)
-- realized P&L **$-82.39**  ·  ROI **-1.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-01T15:13:08.678183+00:00
+- open **10** ($171.15)  ·  settled **340** (79W / 261L)
+- realized P&L **$-7.65**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-01T18:14:05.116179+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,13 +45,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Browns (-3.5) | Browns | 0.300 | $16.58 | 2026-10-02T00:15:07.466801+00:00 |
 | Will Wales vs. Norway end in a draw? | Yes | 0.200 | $18.47 | 2026-10-01T18:45:07.751832+00:00 |
 | Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | FaZe | 0.310 | $16.47 | 2026-10-01T23:30:08.990706+00:00 |
-| Bitcoin Up or Down on October 1? | Up | 0.220 | $21.08 | 2026-10-01T16:00:07.174934+00:00 |
 | Will the price of Bitcoin be above $82,000 on Octobe | No | 0.180 | $16.53 | 2026-10-02T16:00:07.393850+00:00 |
 | Will Russia target Kyiv on October 4, 2026? | No | 0.228 | $20.42 | 2026-10-05T03:59:08.076246+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on October 1? | WON | +74.74 |
 | Will there be no next Google Gemini Pro model releas | LOST | -12.88 |
 | Will the next Google Gemini Pro model be released by | LOST | -12.36 |
 | Chicago White Sox vs. Houston Astros: O/U 8.5 | LOST | -10.93 |
@@ -111,7 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum reach $2,700 September 14-20? | WON | +72.65 |
 | Bitcoin Up or Down on September 19? | LOST | -20.42 |
 | Spread: West Virginia (-0.5) | WON | +64.16 |
-| Will Bitcoin reach $82,000 September 14-20? | LOST | -14.91 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,6 +133,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 88 | 12% | -20% |
-| 0.20–0.25 | 83 | 29% | +26% |
+| 0.20–0.25 | 84 | 30% | +31% |
 | 0.25–0.30 | 87 | 23% | -13% |
 | 0.30–0.33 | 64 | 34% | +4% |
