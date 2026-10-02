@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-02T16:41:05.041039+00:00
+# Poly underdog paper state — 2026-10-02T19:49:09.806051+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **10** ($168.64)  ·  settled **345** (80W / 265L)
-- realized P&L **$-38.35**  ·  ROI **-0.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-02T16:21:11.025880+00:00
+- open **9** ($151.04)  ·  settled **348** (80W / 268L)
+- realized P&L **$-91.82**  ·  ROI **-1.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-02T19:22:22.185875+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,17 +40,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 | Will Trump meet with Javier Milei in September 2026? | No | 0.180 | $14.53 | 2026-10-01T03:59:08.157770+00:00 |
-| Will the price of Bitcoin be above $82,000 on Octobe | No | 0.180 | $16.53 | 2026-10-02T16:00:07.393850+00:00 |
 | Will Russia target Kyiv on October 4, 2026? | No | 0.228 | $20.42 | 2026-10-05T03:59:08.076246+00:00 |
 | Will MrBeast Gaming's next video get between 30 and  | No | 0.191 | $15.88 | 2026-10-03T23:59:07.235740+00:00 |
-| Bitcoin Up or Down on October 2? | Down | 0.260 | $18.61 | 2026-10-02T16:00:07.688852+00:00 |
 | Will Bitcoin reach $90,000 September 28-October 4? | Yes | 0.180 | $16.47 | 2026-10-05T04:00:07.566966+00:00 |
-| Will the price of Ethereum be above $2,800 on Octobe | Yes | 0.195 | $18.33 | 2026-10-02T16:00:07.392436+00:00 |
 | Flávio Bolsonaro participates in debate before first | Yes | 0.285 | $12.88 | 2026-10-04T02:59:07.476162+00:00 |
+| Will the price of Bitcoin be above $84,000 on Octobe | No | 0.178 | $19.43 | 2026-10-03T16:00:07.801105+00:00 |
+| Will Ethereum dip to $2,600 September 28-October 4? | Yes | 0.245 | $16.44 | 2026-10-05T04:00:08.350905+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Ethereum be above $2,800 on Octobe | LOST | -18.33 |
+| Bitcoin Up or Down on October 2? | LOST | -18.61 |
+| Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.53 |
 | Bitcoin Up or Down on October 1? | WON | +74.74 |
 | Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | LOST | -16.47 |
 | Will Wales vs. Norway end in a draw? | LOST | -18.47 |
@@ -108,9 +110,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the next Claude Opus model be released on Septe | LOST | -19.93 |
 | US announces end of Iranian blockade by September 30 | LOST | -14.59 |
 | Will the price of Bitcoin be above $86,000 on Septem | WON | +71.84 |
-| Will the price of Bitcoin be above $82,000 on Septem | WON | +40.57 |
-| Will the price of Bitcoin be above $80,000 on Septem | LOST | -20.18 |
-| US x Iran ceasefire continues through September 25? | LOST | -18.95 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -132,7 +131,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 88 | 12% | -20% |
+| 0.15–0.20 | 90 | 12% | -22% |
 | 0.20–0.25 | 85 | 29% | +30% |
-| 0.25–0.30 | 88 | 23% | -14% |
+| 0.25–0.30 | 89 | 22% | -15% |
 | 0.30–0.33 | 67 | 34% | +4% |
