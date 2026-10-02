@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-02T19:49:09.806051+00:00
+# Poly underdog paper state — 2026-10-02T22:58:08.836297+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($151.04)  ·  settled **348** (80W / 268L)
+- open **12** ($190.88)  ·  settled **348** (80W / 268L)
 - realized P&L **$-91.82**  ·  ROI **-1.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-02T19:22:22.185875+00:00
+- last scan: 2026-10-02T22:23:22.887480+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,6 +46,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Flávio Bolsonaro participates in debate before first | Yes | 0.285 | $12.88 | 2026-10-04T02:59:07.476162+00:00 |
 | Will the price of Bitcoin be above $84,000 on Octobe | No | 0.178 | $19.43 | 2026-10-03T16:00:07.801105+00:00 |
 | Will Ethereum dip to $2,600 September 28-October 4? | Yes | 0.245 | $16.44 | 2026-10-05T04:00:08.350905+00:00 |
+| Spread: Burkina Faso (-5.5) | Burkina Faso | 0.298 | $11.84 | 2026-10-03T20:00:08.272477+00:00 |
+| Will Argentina vs. Burkina Faso end in a draw? | Yes | 0.170 | $14.59 | 2026-10-03T20:00:07.967662+00:00 |
+| Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | Grêmio Esports | 0.330 | $13.41 | 2026-10-03T04:00:08.006024+00:00 |
 
 ## Settled
 | market | result | P&L |
