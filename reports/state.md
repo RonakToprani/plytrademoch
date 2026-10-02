@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-02T13:33:46.329112+00:00
+# Poly underdog paper state — 2026-10-02T16:41:05.041039+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($155.76)  ·  settled **345** (80W / 265L)
+- open **10** ($168.64)  ·  settled **345** (80W / 265L)
 - realized P&L **$-38.35**  ·  ROI **-0.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-02T13:20:13.934469+00:00
+- last scan: 2026-10-02T16:21:11.025880+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,6 +46,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on October 2? | Down | 0.260 | $18.61 | 2026-10-02T16:00:07.688852+00:00 |
 | Will Bitcoin reach $90,000 September 28-October 4? | Yes | 0.180 | $16.47 | 2026-10-05T04:00:07.566966+00:00 |
 | Will the price of Ethereum be above $2,800 on Octobe | Yes | 0.195 | $18.33 | 2026-10-02T16:00:07.392436+00:00 |
+| Flávio Bolsonaro participates in debate before first | Yes | 0.285 | $12.88 | 2026-10-04T02:59:07.476162+00:00 |
 
 ## Settled
 | market | result | P&L |
