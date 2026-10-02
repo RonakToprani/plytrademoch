@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-01T21:56:30.609589+00:00
+# Poly underdog paper state — 2026-10-02T01:03:37.209899+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,21 +30,18 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($187.03)  ·  settled **340** (79W / 261L)
-- realized P&L **$-7.65**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-01T21:45:09.779122+00:00
+- open **8** ($135.46)  ·  settled **343** (80W / 263L)
+- realized P&L **$-5.24**  ·  ROI **-0.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-02T00:46:15.442062+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
-| Will Russia enter Mykolaivka by September 30, 2026? | Yes | 0.308 | $16.63 | 2026-10-01T03:59:07.673339+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 | Will Bitcoin reach $86,000 September 28-October 4? | No | 0.250 | $16.53 | 2026-10-05T04:00:08.011494+00:00 |
 | Will Trump meet with Javier Milei in September 2026? | No | 0.180 | $14.53 | 2026-10-01T03:59:08.157770+00:00 |
 | Spread: Browns (-3.5) | Browns | 0.300 | $16.58 | 2026-10-02T00:15:07.466801+00:00 |
-| Will Wales vs. Norway end in a draw? | Yes | 0.200 | $18.47 | 2026-10-01T18:45:07.751832+00:00 |
-| Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | FaZe | 0.310 | $16.47 | 2026-10-01T23:30:08.990706+00:00 |
 | Will the price of Bitcoin be above $82,000 on Octobe | No | 0.180 | $16.53 | 2026-10-02T16:00:07.393850+00:00 |
 | Will Russia target Kyiv on October 4, 2026? | No | 0.228 | $20.42 | 2026-10-05T03:59:08.076246+00:00 |
 | Will MrBeast Gaming's next video get between 30 and  | No | 0.191 | $15.88 | 2026-10-03T23:59:07.235740+00:00 |
@@ -53,6 +50,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | market | result | P&L |
 |---|---|---|
 | Bitcoin Up or Down on October 1? | WON | +74.74 |
+| Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | LOST | -16.47 |
+| Will Wales vs. Norway end in a draw? | LOST | -18.47 |
 | Will there be no next Google Gemini Pro model releas | LOST | -12.88 |
 | Will the next Google Gemini Pro model be released by | LOST | -12.36 |
 | Chicago White Sox vs. Houston Astros: O/U 8.5 | LOST | -10.93 |
@@ -72,6 +71,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Raiders (-3.5) | WON | +52.97 |
 | Spread: Chiefs (-3.5) | LOST | -18.61 |
 | Will “Hate That I Made You Love Me” by Ariana Grande | LOST | -15.89 |
+| Will Russia enter Mykolaivka by September 30, 2026? | WON | +37.35 |
 | Map Handicap: paiN (-1.5) vs Galorys (+1.5) | WON | +44.28 |
 | Will George Russell win the 2026 F1 Azerbaijan Grand | LOST | -20.42 |
 | Will England vs. Spain end in a draw? | LOST | -17.22 |
@@ -109,9 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US x Iran ceasefire continues through September 25? | LOST | -18.95 |
 | Trump x Greenland deal signed by September 23? | LOST | -16.41 |
 | Will Xi Jinping visit US by September 23? | LOST | -17.53 |
-| Will Ethereum reach $2,700 September 14-20? | WON | +72.65 |
-| Bitcoin Up or Down on September 19? | LOST | -20.42 |
-| Spread: West Virginia (-0.5) | WON | +64.16 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -134,6 +131,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 88 | 12% | -20% |
-| 0.20–0.25 | 84 | 30% | +31% |
+| 0.20–0.25 | 85 | 29% | +30% |
 | 0.25–0.30 | 87 | 23% | -13% |
-| 0.30–0.33 | 64 | 34% | +4% |
+| 0.30–0.33 | 66 | 35% | +6% |
