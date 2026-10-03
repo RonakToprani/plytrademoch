@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-02T22:58:08.836297+00:00
+# Poly underdog paper state — 2026-10-03T02:05:50.406723+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($190.88)  ·  settled **348** (80W / 268L)
-- realized P&L **$-91.82**  ·  ROI **-1.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-02T22:23:22.887480+00:00
+- open **11** ($177.47)  ·  settled **349** (80W / 269L)
+- realized P&L **$-105.23**  ·  ROI **-2.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-03T01:54:29.532510+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,11 +48,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,600 September 28-October 4? | Yes | 0.245 | $16.44 | 2026-10-05T04:00:08.350905+00:00 |
 | Spread: Burkina Faso (-5.5) | Burkina Faso | 0.298 | $11.84 | 2026-10-03T20:00:08.272477+00:00 |
 | Will Argentina vs. Burkina Faso end in a draw? | Yes | 0.170 | $14.59 | 2026-10-03T20:00:07.967662+00:00 |
-| Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | Grêmio Esports | 0.330 | $13.41 | 2026-10-03T04:00:08.006024+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | LOST | -13.41 |
 | Will the price of Ethereum be above $2,800 on Octobe | LOST | -18.33 |
 | Bitcoin Up or Down on October 2? | LOST | -18.61 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.53 |
@@ -112,7 +112,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $88,000 September 21-27? | WON | +28.50 |
 | Will the next Claude Opus model be released on Septe | LOST | -19.93 |
 | US announces end of Iranian blockade by September 30 | LOST | -14.59 |
-| Will the price of Bitcoin be above $86,000 on Septem | WON | +71.84 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,4 +136,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 90 | 12% | -22% |
 | 0.20–0.25 | 85 | 29% | +30% |
 | 0.25–0.30 | 89 | 22% | -15% |
-| 0.30–0.33 | 67 | 34% | +4% |
+| 0.30–0.33 | 68 | 34% | +3% |
