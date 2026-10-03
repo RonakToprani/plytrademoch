@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-03T02:05:50.406723+00:00
+# Poly underdog paper state — 2026-10-03T05:13:31.265266+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($177.47)  ·  settled **349** (80W / 269L)
+- open **12** ($192.06)  ·  settled **349** (80W / 269L)
 - realized P&L **$-105.23**  ·  ROI **-2.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-03T01:54:29.532510+00:00
+- last scan: 2026-10-03T04:55:28.271689+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,6 +48,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,600 September 28-October 4? | Yes | 0.245 | $16.44 | 2026-10-05T04:00:08.350905+00:00 |
 | Spread: Burkina Faso (-5.5) | Burkina Faso | 0.298 | $11.84 | 2026-10-03T20:00:08.272477+00:00 |
 | Will Argentina vs. Burkina Faso end in a draw? | Yes | 0.170 | $14.59 | 2026-10-03T20:00:07.967662+00:00 |
+| Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 
 ## Settled
 | market | result | P&L |
