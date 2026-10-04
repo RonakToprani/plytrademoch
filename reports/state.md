@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-04T03:07:32.635991+00:00
+# Poly underdog paper state — 2026-10-04T06:14:51.511467+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($270.63)  ·  settled **352** (80W / 272L)
-- realized P&L **$-155.07**  ·  ROI **-3.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-04T02:32:08.794502+00:00
+- open **13** ($229.51)  ·  settled **356** (81W / 275L)
+- realized P&L **$-136.26**  ·  ROI **-2.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-04T06:03:28.215594+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,24 +41,25 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 | Will Russia target Kyiv on October 4, 2026? | No | 0.228 | $20.42 | 2026-10-05T03:59:08.076246+00:00 |
 | Will Bitcoin reach $90,000 September 28-October 4? | Yes | 0.180 | $16.47 | 2026-10-05T04:00:07.566966+00:00 |
-| Flávio Bolsonaro participates in debate before first | Yes | 0.285 | $12.88 | 2026-10-04T02:59:07.476162+00:00 |
 | Will Ethereum dip to $2,600 September 28-October 4? | Yes | 0.245 | $16.44 | 2026-10-05T04:00:08.350905+00:00 |
-| Spread: Burkina Faso (-5.5) | Burkina Faso | 0.298 | $11.84 | 2026-10-03T20:00:08.272477+00:00 |
-| Will Argentina vs. Burkina Faso end in a draw? | Yes | 0.170 | $14.59 | 2026-10-03T20:00:07.967662+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Spread: Vikings (-3.5) | Dolphins | 0.270 | $17.92 | 2026-10-04T20:05:07.192219+00:00 |
-| San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | Under | 0.260 | $20.42 | 2026-10-11T00:30:07.657891+00:00 |
 | Patriots vs. Bills: O/U 57.5 | Over | 0.300 | $16.58 | 2026-10-04T17:00:08.058249+00:00 |
 | Spread: Panthers (-3.5) | Panthers | 0.240 | $20.26 | 2026-10-05T00:20:08.829130+00:00 |
 | Spread: Colts (-10.5) | Colts | 0.300 | $16.58 | 2026-10-04T13:30:09.605801+00:00 |
 | Spread: Buccaneers (-3.5) | Buccaneers | 0.280 | $17.22 | 2026-10-04T17:00:10.311479+00:00 |
 | Spread: Raiders (-3.5) | Raiders | 0.210 | $19.43 | 2026-10-04T20:25:10.979122+00:00 |
+| Spread: Ravens (-3.5) | Titans | 0.260 | $18.61 | 2026-10-04T17:00:07.391822+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | WON | +58.12 |
 | Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | LOST | -13.41 |
+| Will Argentina vs. Burkina Faso end in a draw? | LOST | -14.59 |
+| Spread: Burkina Faso (-5.5) | LOST | -11.84 |
 | Will the price of Bitcoin be above $84,000 on Octobe | LOST | -19.43 |
+| Flávio Bolsonaro participates in debate before first | LOST | -12.88 |
 | Will the price of Ethereum be above $2,800 on Octobe | LOST | -18.33 |
 | Bitcoin Up or Down on October 2? | LOST | -18.61 |
 | Will MrBeast Gaming's next video get between 30 and  | LOST | -15.88 |
@@ -113,10 +114,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | CNN, Politico, or MS NOW unbanned from White House b | LOST | -12.23 |
 | Will Solana reach $130 in September? | LOST | -10.93 |
 | Will Russia and Ukraine hold any diplomatic meeting  | LOST | -17.87 |
-| Trump renames AI by September 30? | WON | +48.45 |
-| Will Ethereum reach $2,900 in September? | LOST | -18.95 |
-| Will Bitcoin reach $90,000 in September? | LOST | -12.62 |
-| Will Anthropic have the best Code Arena | WebDev AI  | LOST | -15.88 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -138,7 +135,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 93 | 12% | -26% |
+| 0.15–0.20 | 94 | 12% | -27% |
 | 0.20–0.25 | 85 | 29% | +30% |
-| 0.25–0.30 | 89 | 22% | -15% |
+| 0.25–0.30 | 92 | 23% | -12% |
 | 0.30–0.33 | 68 | 34% | +3% |
