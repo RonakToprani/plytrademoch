@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-04T06:14:51.511467+00:00
+# Poly underdog paper state — 2026-10-04T09:22:59.400036+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($229.51)  ·  settled **356** (81W / 275L)
+- open **15** ($260.21)  ·  settled **356** (81W / 275L)
 - realized P&L **$-136.26**  ·  ROI **-2.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-04T06:03:28.215594+00:00
+- last scan: 2026-10-04T09:04:24.720192+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,6 +50,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Buccaneers (-3.5) | Buccaneers | 0.280 | $17.22 | 2026-10-04T17:00:10.311479+00:00 |
 | Spread: Raiders (-3.5) | Raiders | 0.210 | $19.43 | 2026-10-04T20:25:10.979122+00:00 |
 | Spread: Ravens (-3.5) | Titans | 0.260 | $18.61 | 2026-10-04T17:00:07.391822+00:00 |
+| Game Handicap: KT (-1.5) vs RED Canids (+1.5) | RED Canids | 0.200 | $18.47 | 2026-10-04T15:00:07.489632+00:00 |
+| Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 
 ## Settled
 | market | result | P&L |
