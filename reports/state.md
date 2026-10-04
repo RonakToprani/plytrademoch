@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-04T00:00:02.064777+00:00
+# Poly underdog paper state — 2026-10-04T03:07:32.635991+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,16 +30,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($174.67)  ·  settled **351** (80W / 271L)
-- realized P&L **$-140.54**  ·  ROI **-2.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-03T23:31:07.081844+00:00
+- open **16** ($270.63)  ·  settled **352** (80W / 272L)
+- realized P&L **$-155.07**  ·  ROI **-3.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-04T02:32:08.794502+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
-| Will Trump meet with Javier Milei in September 2026? | No | 0.180 | $14.53 | 2026-10-01T03:59:08.157770+00:00 |
 | Will Russia target Kyiv on October 4, 2026? | No | 0.228 | $20.42 | 2026-10-05T03:59:08.076246+00:00 |
 | Will Bitcoin reach $90,000 September 28-October 4? | Yes | 0.180 | $16.47 | 2026-10-05T04:00:07.566966+00:00 |
 | Flávio Bolsonaro participates in debate before first | Yes | 0.285 | $12.88 | 2026-10-04T02:59:07.476162+00:00 |
@@ -48,6 +47,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Argentina vs. Burkina Faso end in a draw? | Yes | 0.170 | $14.59 | 2026-10-03T20:00:07.967662+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Spread: Vikings (-3.5) | Dolphins | 0.270 | $17.92 | 2026-10-04T20:05:07.192219+00:00 |
+| San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | Under | 0.260 | $20.42 | 2026-10-11T00:30:07.657891+00:00 |
+| Patriots vs. Bills: O/U 57.5 | Over | 0.300 | $16.58 | 2026-10-04T17:00:08.058249+00:00 |
+| Spread: Panthers (-3.5) | Panthers | 0.240 | $20.26 | 2026-10-05T00:20:08.829130+00:00 |
+| Spread: Colts (-10.5) | Colts | 0.300 | $16.58 | 2026-10-04T13:30:09.605801+00:00 |
+| Spread: Buccaneers (-3.5) | Buccaneers | 0.280 | $17.22 | 2026-10-04T17:00:10.311479+00:00 |
+| Spread: Raiders (-3.5) | Raiders | 0.210 | $19.43 | 2026-10-04T20:25:10.979122+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -62,6 +67,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | LOST | -16.47 |
 | Will Wales vs. Norway end in a draw? | LOST | -18.47 |
 | Spread: Browns (-3.5) | LOST | -16.58 |
+| Will Trump meet with Javier Milei in September 2026? | LOST | -14.53 |
 | Will Bitcoin reach $86,000 September 28-October 4? | LOST | -16.53 |
 | Will there be no next Google Gemini Pro model releas | LOST | -12.88 |
 | Will the next Google Gemini Pro model be released by | LOST | -12.36 |
@@ -111,7 +117,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum reach $2,900 in September? | LOST | -18.95 |
 | Will Bitcoin reach $90,000 in September? | LOST | -12.62 |
 | Will Anthropic have the best Code Arena | WebDev AI  | LOST | -15.88 |
-| Will Bitcoin reach $88,000 September 21-27? | WON | +28.50 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,7 +138,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 92 | 12% | -25% |
+| 0.15–0.20 | 93 | 12% | -26% |
 | 0.20–0.25 | 85 | 29% | +30% |
 | 0.25–0.30 | 89 | 22% | -15% |
 | 0.30–0.33 | 68 | 34% | +3% |
