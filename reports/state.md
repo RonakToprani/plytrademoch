@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-04T18:44:23.867129+00:00
+# Poly underdog paper state — 2026-10-04T21:51:47.300451+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($204.74)  ·  settled **359** (82W / 277L)
-- realized P&L **$-136.46**  ·  ROI **-2.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-04T18:07:10.310995+00:00
+- open **10** ($168.91)  ·  settled **361** (82W / 279L)
+- realized P&L **$-172.29**  ·  ROI **-3.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-04T21:38:23.280625+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -45,15 +45,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Vikings (-3.5) | Dolphins | 0.270 | $17.92 | 2026-10-04T20:05:07.192219+00:00 |
 | Patriots vs. Bills: O/U 57.5 | Over | 0.300 | $16.58 | 2026-10-04T17:00:08.058249+00:00 |
 | Spread: Panthers (-3.5) | Panthers | 0.240 | $20.26 | 2026-10-05T00:20:08.829130+00:00 |
-| Spread: Buccaneers (-3.5) | Buccaneers | 0.280 | $17.22 | 2026-10-04T17:00:10.311479+00:00 |
 | Spread: Raiders (-3.5) | Raiders | 0.210 | $19.43 | 2026-10-04T20:25:10.979122+00:00 |
-| Spread: Ravens (-3.5) | Titans | 0.260 | $18.61 | 2026-10-04T17:00:07.391822+00:00 |
 | Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Game Handicap: KT (-1.5) vs RED Canids (+1.5) | LOST | -18.47 |
+| Spread: Ravens (-3.5) | LOST | -18.61 |
+| Spread: Buccaneers (-3.5) | LOST | -17.22 |
 | Spread: Colts (-10.5) | WON | +38.69 |
 | San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | WON | +58.12 |
 | Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | LOST | -13.41 |
@@ -111,8 +111,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will XRP reach $1.80 in September? | LOST | -12.36 |
 | Russia-Ukraine peace talks by September 30, 2026? | LOST | -19.24 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -19.51 |
-| Bitcoin Up or Down on September 24? | WON | +65.05 |
-| Will the price of Bitcoin be above $84,000 on Septem | WON | +63.63 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,5 +134,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 94 | 12% | -27% |
 | 0.20–0.25 | 87 | 29% | +26% |
-| 0.25–0.30 | 92 | 23% | -12% |
+| 0.25–0.30 | 94 | 22% | -14% |
 | 0.30–0.33 | 69 | 35% | +6% |
