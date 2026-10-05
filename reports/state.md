@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-05T04:07:27.771066+00:00
+# Poly underdog paper state — 2026-10-05T07:13:50.383295+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,19 +30,16 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($130.28)  ·  settled **364** (82W / 282L)
-- realized P&L **$-226.22**  ·  ROI **-4.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-05T03:40:14.476461+00:00
+- open **5** ($77.11)  ·  settled **367** (83W / 284L)
+- realized P&L **$-194.97**  ·  ROI **-3.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-05T06:41:08.397256+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
-| Will Bitcoin reach $90,000 September 28-October 4? | Yes | 0.180 | $16.47 | 2026-10-05T04:00:07.566966+00:00 |
-| Will Ethereum dip to $2,600 September 28-October 4? | Yes | 0.245 | $16.44 | 2026-10-05T04:00:08.350905+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| Spread: Panthers (-3.5) | Panthers | 0.240 | $20.26 | 2026-10-05T00:20:08.829130+00:00 |
 | Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 | Will the price of Bitcoin be above $88,000 on Octobe | Yes | 0.161 | $15.30 | 2026-10-05T16:00:07.245769+00:00 |
 
@@ -54,15 +51,18 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Raiders (-3.5) | LOST | -19.43 |
 | Spread: Buccaneers (-3.5) | LOST | -17.22 |
 | Spread: Colts (-10.5) | WON | +38.69 |
+| Spread: Panthers (-3.5) | WON | +64.16 |
 | Patriots vs. Bills: O/U 57.5 | LOST | -16.58 |
 | San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | WON | +58.12 |
 | Spread: Vikings (-3.5) | LOST | -17.92 |
 | Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | LOST | -13.41 |
 | Will Argentina vs. Burkina Faso end in a draw? | LOST | -14.59 |
 | Spread: Burkina Faso (-5.5) | LOST | -11.84 |
+| Will Ethereum dip to $2,600 September 28-October 4? | LOST | -16.44 |
 | Will the price of Bitcoin be above $84,000 on Octobe | LOST | -19.43 |
 | Flávio Bolsonaro participates in debate before first | LOST | -12.88 |
 | Will the price of Ethereum be above $2,800 on Octobe | LOST | -18.33 |
+| Will Bitcoin reach $90,000 September 28-October 4? | LOST | -16.47 |
 | Bitcoin Up or Down on October 2? | LOST | -18.61 |
 | Will MrBeast Gaming's next video get between 30 and  | LOST | -15.88 |
 | Will Russia target Kyiv on October 4, 2026? | LOST | -20.42 |
@@ -106,9 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
 | US-Iran Hormuz Agreement by September 30? | LOST | -13.94 |
 | Will Russia capture all of Chasiv Yar by September 3 | LOST | -15.88 |
-| Map Handicap: KC (-1.5) vs XLG Gaming (+1.5) | LOST | -17.57 |
-| Bitcoin Up or Down on September 25? | WON | +34.87 |
-| Saudi Oil Pipeline (East-West) restarts by September | LOST | -13.41 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,7 +127,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 94 | 12% | -27% |
-| 0.20–0.25 | 88 | 28% | +24% |
+| 0.15–0.20 | 95 | 12% | -28% |
+| 0.20–0.25 | 90 | 29% | +27% |
 | 0.25–0.30 | 95 | 22% | -15% |
 | 0.30–0.33 | 70 | 34% | +4% |
