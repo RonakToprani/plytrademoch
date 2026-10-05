@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-05T16:35:35.567756+00:00
+# Poly underdog paper state — 2026-10-05T19:43:00.726549+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($110.17)  ·  settled **367** (83W / 284L)
-- realized P&L **$-194.97**  ·  ROI **-3.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-05T16:14:08.892175+00:00
+- open **6** ($94.87)  ·  settled **368** (83W / 285L)
+- realized P&L **$-210.27**  ·  ROI **-3.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-05T19:15:04.226646+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,13 +41,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
-| Will the price of Bitcoin be above $88,000 on Octobe | Yes | 0.161 | $15.30 | 2026-10-05T16:00:07.245769+00:00 |
 | Bitcoin Up or Down on October 5? | Down | 0.170 | $14.59 | 2026-10-05T16:00:07.566538+00:00 |
 | Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $88,000 on Octobe | LOST | -15.30 |
 | Game Handicap: KT (-1.5) vs RED Canids (+1.5) | LOST | -18.47 |
 | Spread: Ravens (-3.5) | LOST | -18.61 |
 | Spread: Raiders (-3.5) | LOST | -19.43 |
@@ -107,7 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Xiaomi have the best Chinese AI model at the en | LOST | -19.98 |
 | Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
 | US-Iran Hormuz Agreement by September 30? | LOST | -13.94 |
-| Will Russia capture all of Chasiv Yar by September 3 | LOST | -15.88 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,7 +128,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 95 | 12% | -28% |
+| 0.15–0.20 | 96 | 11% | -29% |
 | 0.20–0.25 | 90 | 29% | +27% |
 | 0.25–0.30 | 95 | 22% | -15% |
 | 0.30–0.33 | 70 | 34% | +4% |
