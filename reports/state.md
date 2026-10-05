@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-05T00:59:34.063232+00:00
+# Poly underdog paper state — 2026-10-05T04:07:27.771066+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($148.20)  ·  settled **363** (82W / 281L)
-- realized P&L **$-208.30**  ·  ROI **-3.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-05T00:39:20.717621+00:00
+- open **8** ($130.28)  ·  settled **364** (82W / 282L)
+- realized P&L **$-226.22**  ·  ROI **-4.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-05T03:40:14.476461+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,7 +42,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $90,000 September 28-October 4? | Yes | 0.180 | $16.47 | 2026-10-05T04:00:07.566966+00:00 |
 | Will Ethereum dip to $2,600 September 28-October 4? | Yes | 0.245 | $16.44 | 2026-10-05T04:00:08.350905+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| Spread: Vikings (-3.5) | Dolphins | 0.270 | $17.92 | 2026-10-04T20:05:07.192219+00:00 |
 | Spread: Panthers (-3.5) | Panthers | 0.240 | $20.26 | 2026-10-05T00:20:08.829130+00:00 |
 | Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 | Will the price of Bitcoin be above $88,000 on Octobe | Yes | 0.161 | $15.30 | 2026-10-05T16:00:07.245769+00:00 |
@@ -57,6 +56,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Colts (-10.5) | WON | +38.69 |
 | Patriots vs. Bills: O/U 57.5 | LOST | -16.58 |
 | San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | WON | +58.12 |
+| Spread: Vikings (-3.5) | LOST | -17.92 |
 | Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | LOST | -13.41 |
 | Will Argentina vs. Burkina Faso end in a draw? | LOST | -14.59 |
 | Spread: Burkina Faso (-5.5) | LOST | -11.84 |
@@ -109,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: KC (-1.5) vs XLG Gaming (+1.5) | LOST | -17.57 |
 | Bitcoin Up or Down on September 25? | WON | +34.87 |
 | Saudi Oil Pipeline (East-West) restarts by September | LOST | -13.41 |
-| Will XRP reach $1.80 in September? | LOST | -12.36 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,5 +132,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 94 | 12% | -27% |
 | 0.20–0.25 | 88 | 28% | +24% |
-| 0.25–0.30 | 94 | 22% | -14% |
+| 0.25–0.30 | 95 | 22% | -15% |
 | 0.30–0.33 | 70 | 34% | +4% |
