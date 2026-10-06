@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-06T14:25:13.841400+00:00
+# Poly underdog paper state — 2026-10-06T17:33:07.541919+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($110.76)  ·  settled **368** (83W / 285L)
-- realized P&L **$-210.27**  ·  ROI **-3.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-06T13:51:22.035078+00:00
+- open **6** ($92.29)  ·  settled **369** (83W / 286L)
+- realized P&L **$-228.74**  ·  ROI **-4.2%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-10-06T17:22:30.733217+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
-| 0 ships transit Hormuz on any date by September 30? | Yes | 0.248 | $18.47 | 2026-10-01T03:59:08.177054+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 | Bitcoin Up or Down on October 5? | Down | 0.170 | $14.59 | 2026-10-05T16:00:07.566538+00:00 |
@@ -83,6 +82,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Philadelphia Phillies vs. Atlanta Braves: O/U 6.5 | WON | +51.66 |
 | Iran charges Hormuz fees by September 30? | LOST | -12.10 |
 | Next US-Iran senior diplomatic meeting by September  | LOST | -17.22 |
+| 0 ships transit Hormuz on any date by September 30? | LOST | -18.47 |
 | Will Bitcoin dip to $81,000 on September 28? | LOST | -17.87 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -15.55 |
 | Spread: Bears (-3.5) | WON | +64.16 |
@@ -107,7 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Cowboys (-3.5) | LOST | -18.61 |
 | Will Xiaomi have the best Chinese AI model at the en | LOST | -19.98 |
 | Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
-| US-Iran Hormuz Agreement by September 30? | LOST | -13.94 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,6 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 96 | 11% | -29% |
-| 0.20–0.25 | 90 | 29% | +27% |
+| 0.20–0.25 | 91 | 29% | +25% |
 | 0.25–0.30 | 95 | 22% | -15% |
 | 0.30–0.33 | 70 | 34% | +4% |
