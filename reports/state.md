@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-06T08:10:51.171177+00:00
+# Poly underdog paper state — 2026-10-06T11:19:22.803074+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($94.87)  ·  settled **368** (83W / 285L)
+- open **7** ($110.76)  ·  settled **368** (83W / 285L)
 - realized P&L **$-210.27**  ·  ROI **-3.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-06T07:49:23.848226+00:00
+- last scan: 2026-10-06T10:50:17.418988+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,6 +43,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 | Bitcoin Up or Down on October 5? | Down | 0.170 | $14.59 | 2026-10-05T16:00:07.566538+00:00 |
 | Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
+| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | Team Falcons | 0.320 | $15.89 | 2026-10-06T23:00:07.593356+00:00 |
 
 ## Settled
 | market | result | P&L |
