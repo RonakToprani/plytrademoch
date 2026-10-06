@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-06T20:41:01.544421+00:00
+# Poly underdog paper state — 2026-10-06T23:48:39.992274+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($92.29)  ·  settled **369** (83W / 286L)
-- realized P&L **$-228.74**  ·  ROI **-4.2%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-10-06T20:23:23.307465+00:00
+- open **5** ($76.40)  ·  settled **370** (83W / 287L)
+- realized P&L **$-244.63**  ·  ROI **-4.5%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
+- last scan: 2026-10-06T23:24:13.431799+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,11 +42,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 | Bitcoin Up or Down on October 5? | Down | 0.170 | $14.59 | 2026-10-05T16:00:07.566538+00:00 |
 | Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
-| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | Team Falcons | 0.320 | $15.89 | 2026-10-06T23:00:07.593356+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -15.89 |
 | Will the price of Bitcoin be above $88,000 on Octobe | LOST | -15.30 |
 | Game Handicap: KT (-1.5) vs RED Canids (+1.5) | LOST | -18.47 |
 | Spread: Ravens (-3.5) | LOST | -18.61 |
@@ -106,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Broncos (-3.5) | WON | +33.77 |
 | Spread: Cowboys (-3.5) | LOST | -18.61 |
 | Will Xiaomi have the best Chinese AI model at the en | LOST | -19.98 |
-| Will MrBeast's next video get between 70 and 80 mill | LOST | -16.63 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,4 +130,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 96 | 11% | -29% |
 | 0.20–0.25 | 91 | 29% | +25% |
 | 0.25–0.30 | 95 | 22% | -15% |
-| 0.30–0.33 | 70 | 34% | +4% |
+| 0.30–0.33 | 71 | 34% | +3% |
