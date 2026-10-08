@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-08T16:23:07.401747+00:00
+# Poly underdog paper state — 2026-10-08T19:30:02.580965+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($129.77)  ·  settled **371** (83W / 288L)
-- realized P&L **$-259.22**  ·  ROI **-4.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-10-08T16:06:15.977160+00:00
+- open **6** ($100.10)  ·  settled **373** (85W / 288L)
+- realized P&L **$-144.06**  ·  ROI **-2.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-08T19:07:14.259862+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,14 +41,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 | Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
-| Will Ethereum dip to $2,500 October 5-11? | Yes | 0.260 | $18.61 | 2026-10-12T04:00:07.889853+00:00 |
-| Will the price of Bitcoin be above $82,000 on Octobe | No | 0.151 | $11.06 | 2026-10-08T16:00:08.323716+00:00 |
 | Will Jynxzi, Ron and Los beat the Minecraft challeng | Yes | 0.324 | $17.92 | 2026-10-09T03:59:07.181089+00:00 |
 | Will the price of Bitcoin be above $80,000 on Octobe | No | 0.277 | $20.37 | 2026-10-09T16:00:08.066419+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $82,000 on Octobe | WON | +62.19 |
+| Will Ethereum dip to $2,500 October 5-11? | WON | +52.97 |
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -15.89 |
 | Bitcoin Up or Down on October 5? | LOST | -14.59 |
 | Will the price of Bitcoin be above $88,000 on Octobe | LOST | -15.30 |
@@ -107,8 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on September 26? | LOST | -16.47 |
 | Spread: Steelers (-3.5) | LOST | -17.22 |
 | Spread: Colts (-3.5) | LOST | -13.41 |
-| Spread: Broncos (-3.5) | WON | +33.77 |
-| Spread: Cowboys (-3.5) | LOST | -18.61 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,7 +128,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 97 | 11% | -30% |
+| 0.15–0.20 | 98 | 12% | -24% |
 | 0.20–0.25 | 91 | 29% | +25% |
-| 0.25–0.30 | 95 | 22% | -15% |
+| 0.25–0.30 | 96 | 23% | -12% |
 | 0.30–0.33 | 71 | 34% | +3% |
