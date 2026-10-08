@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-08T13:15:09.898908+00:00
+# Poly underdog paper state — 2026-10-08T16:23:07.401747+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($109.40)  ·  settled **371** (83W / 288L)
+- open **8** ($129.77)  ·  settled **371** (83W / 288L)
 - realized P&L **$-259.22**  ·  ROI **-4.8%** (backtest exp ~+20.3%)  ·  win **22%** (exp ~29.6%)
-- last scan: 2026-10-08T13:05:19.936885+00:00
+- last scan: 2026-10-08T16:06:15.977160+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,6 +44,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,500 October 5-11? | Yes | 0.260 | $18.61 | 2026-10-12T04:00:07.889853+00:00 |
 | Will the price of Bitcoin be above $82,000 on Octobe | No | 0.151 | $11.06 | 2026-10-08T16:00:08.323716+00:00 |
 | Will Jynxzi, Ron and Los beat the Minecraft challeng | Yes | 0.324 | $17.92 | 2026-10-09T03:59:07.181089+00:00 |
+| Will the price of Bitcoin be above $80,000 on Octobe | No | 0.277 | $20.37 | 2026-10-09T16:00:08.066419+00:00 |
 
 ## Settled
 | market | result | P&L |
