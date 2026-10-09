@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-09T17:30:20.441332+00:00
+# Poly underdog paper state — 2026-10-09T20:38:04.279976+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($97.08)  ·  settled **377** (87W / 290L)
-- realized P&L **$-105.55**  ·  ROI **-1.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-09T17:13:44.990467+00:00
+- open **5** ($81.19)  ·  settled **378** (88W / 290L)
+- realized P&L **$-71.78**  ·  ROI **-1.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-09T20:14:40.751077+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,13 +41,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
 | Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
-| Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | Spirit | 0.320 | $15.89 | 2026-10-09T22:00:07.346588+00:00 |
 | Will Ethereum dip to $2,400 October 5-11? | Yes | 0.237 | $20.68 | 2026-10-12T04:00:08.347222+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Map Handicap: MOUZ (-1.5) vs FURIA (+1.5) | WON | +33.77 |
+| Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | WON | +33.77 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -20.37 |
 | Will Jynxzi, Ron and Los beat the Minecraft challeng | WON | +37.34 |
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +62.19 |
@@ -106,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Russia enter Mykolaivka by September 30, 2026? | WON | +37.35 |
 | Map Handicap: paiN (-1.5) vs Galorys (+1.5) | WON | +44.28 |
 | Will George Russell win the 2026 F1 Azerbaijan Grand | LOST | -20.42 |
-| Will England vs. Spain end in a draw? | LOST | -17.22 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,4 +130,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 99 | 12% | -25% |
 | 0.20–0.25 | 91 | 29% | +25% |
 | 0.25–0.30 | 97 | 23% | -13% |
-| 0.30–0.33 | 73 | 36% | +9% |
+| 0.30–0.33 | 74 | 36% | +12% |
