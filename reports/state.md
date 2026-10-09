@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-09T11:13:40.870727+00:00
+# Poly underdog paper state — 2026-10-09T14:21:23.283894+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,19 +30,21 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($93.11)  ·  settled **374** (86W / 288L)
-- realized P&L **$-106.72**  ·  ROI **-2.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-09T10:41:38.904594+00:00
+- open **8** ($133.34)  ·  settled **375** (86W / 289L)
+- realized P&L **$-118.95**  ·  ROI **-2.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-09T14:12:46.106019+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| Will Sudan's Emergency Response Rooms win the Nobel  | Yes | 0.159 | $12.23 | 2026-10-10T00:00:08.170635+00:00 |
 | Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
 | Will the price of Bitcoin be above $80,000 on Octobe | No | 0.277 | $20.37 | 2026-10-09T16:00:08.066419+00:00 |
 | Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
+| Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | Spirit | 0.320 | $15.89 | 2026-10-09T22:00:07.346588+00:00 |
+| Map Handicap: MOUZ (-1.5) vs FURIA (+1.5) | MOUZ | 0.320 | $15.89 | 2026-10-09T19:30:08.065359+00:00 |
+| Will Ethereum dip to $2,400 October 5-11? | Yes | 0.237 | $20.68 | 2026-10-12T04:00:08.347222+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -53,6 +55,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -15.89 |
 | Bitcoin Up or Down on October 5? | LOST | -14.59 |
 | Will the price of Bitcoin be above $88,000 on Octobe | LOST | -15.30 |
+| Will Sudan's Emergency Response Rooms win the Nobel  | LOST | -12.23 |
 | Game Handicap: KT (-1.5) vs RED Canids (+1.5) | LOST | -18.47 |
 | Spread: Ravens (-3.5) | LOST | -18.61 |
 | Spread: Raiders (-3.5) | LOST | -19.43 |
@@ -106,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will England vs. Spain end in a draw? | LOST | -17.22 |
 | Will the price of Bitcoin be above $84,000 on Septem | LOST | -21.08 |
 | Bitcoin Up or Down on September 26? | LOST | -16.47 |
-| Spread: Steelers (-3.5) | LOST | -17.22 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,7 +130,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 98 | 12% | -24% |
+| 0.15–0.20 | 99 | 12% | -25% |
 | 0.20–0.25 | 91 | 29% | +25% |
 | 0.25–0.30 | 96 | 23% | -12% |
 | 0.30–0.33 | 72 | 35% | +6% |
