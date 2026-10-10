@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-10T09:10:12.337055+00:00
+# Poly underdog paper state — 2026-10-10T12:17:37.245410+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($81.19)  ·  settled **378** (88W / 290L)
+- open **6** ($98.41)  ·  settled **378** (88W / 290L)
 - realized P&L **$-71.78**  ·  ROI **-1.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-10T08:48:19.903983+00:00
+- last scan: 2026-10-10T11:49:13.989965+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,6 +42,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
 | Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
 | Will Ethereum dip to $2,400 October 5-11? | Yes | 0.237 | $20.68 | 2026-10-12T04:00:08.347222+00:00 |
+| Spread: 49ers (-3.5) | 49ers | 0.280 | $17.22 | 2026-10-11T20:25:07.796498+00:00 |
 
 ## Settled
 | market | result | P&L |
