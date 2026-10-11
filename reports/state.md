@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-11T06:51:11.233207+00:00
+# Poly underdog paper state — 2026-10-11T09:56:32.619722+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($115.63)  ·  settled **378** (88W / 290L)
+- open **8** ($132.21)  ·  settled **378** (88W / 290L)
 - realized P&L **$-71.78**  ·  ROI **-1.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-11T06:39:52.932919+00:00
+- last scan: 2026-10-11T09:40:43.121788+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,6 +44,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,400 October 5-11? | Yes | 0.237 | $20.68 | 2026-10-12T04:00:08.347222+00:00 |
 | Spread: 49ers (-3.5) | 49ers | 0.280 | $17.22 | 2026-10-11T20:25:07.796498+00:00 |
 | Spread: Ravens (-3.5) | Ravens | 0.280 | $17.22 | 2026-10-12T00:20:05.788391+00:00 |
+| Spread: Steelers (-7.5) | Steelers | 0.300 | $16.58 | 2026-10-11T17:00:07.502715+00:00 |
 
 ## Settled
 | market | result | P&L |
