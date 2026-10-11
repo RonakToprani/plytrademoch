@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-11T13:00:49.537531+00:00
+# Poly underdog paper state — 2026-10-11T16:08:05.186367+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($186.72)  ·  settled **378** (88W / 290L)
+- open **12** ($206.15)  ·  settled **378** (88W / 290L)
 - realized P&L **$-71.78**  ·  ROI **-1.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-11T12:41:39.728098+00:00
+- last scan: 2026-10-11T15:42:37.555405+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,6 +48,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Chargers (-3.5) | Chargers | 0.260 | $18.61 | 2026-10-11T20:05:07.154785+00:00 |
 | Spread: Cardinals (-3.5) | Cardinals | 0.210 | $19.43 | 2026-10-11T20:25:07.887520+00:00 |
 | Will Max Verstappen win the 2026 F1 Singapore Grand  | No | 0.310 | $16.47 | 2026-10-18T12:00:08.138682+00:00 |
+| Map Handicap: VIT (-2.5) vs MOUZ (+2.5) | Vitality | 0.210 | $19.43 | 2026-10-11T21:00:08.130219+00:00 |
 
 ## Settled
 | market | result | P&L |
