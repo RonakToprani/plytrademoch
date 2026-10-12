@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-12T04:38:45.248360+00:00
+# Poly underdog paper state — 2026-10-12T07:44:23.578757+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,18 +30,16 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($97.87)  ·  settled **386** (91W / 295L)
-- realized P&L **$-2.04**  ·  ROI **-0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-12T04:16:55.052298+00:00
+- open **4** ($58.72)  ·  settled **388** (91W / 297L)
+- realized P&L **$-41.19**  ·  ROI **-0.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-12T07:17:50.544168+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
 | Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
-| Will Ethereum dip to $2,400 October 5-11? | Yes | 0.237 | $20.68 | 2026-10-12T04:00:08.347222+00:00 |
 | Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | Team Vitality | 0.290 | $16.68 | 2026-10-12T12:00:07.799070+00:00 |
 
 ## Settled
@@ -55,6 +53,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Steelers (-7.5) | WON | +38.69 |
 | Spread: Ravens (-3.5) | WON | +44.28 |
 | Spread: 49ers (-3.5) | LOST | -17.22 |
+| Will Ethereum dip to $2,400 October 5-11? | LOST | -20.68 |
 | Map Handicap: MOUZ (-1.5) vs FURIA (+1.5) | WON | +33.77 |
 | Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | WON | +33.77 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -20.37 |
@@ -62,6 +61,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +62.19 |
 | Will Ethereum dip to $2,500 October 5-11? | WON | +52.97 |
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -15.89 |
+| Will Bitcoin reach $92,000 October 5-11? | LOST | -18.47 |
 | Bitcoin Up or Down on October 5? | LOST | -14.59 |
 | Will the price of Bitcoin be above $88,000 on Octobe | LOST | -15.30 |
 | Will Sudan's Emergency Response Rooms win the Nobel  | LOST | -12.23 |
@@ -105,8 +105,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Bears (-3.5) | WON | +64.16 |
 | Spread: Vikings (-7.5) | LOST | -17.92 |
 | Will the price of Bitcoin be above $84,000 on Septem | LOST | -15.88 |
-| Spread: Lions (-14.5) | LOST | -18.61 |
-| Spread: 49ers (-14.5) | LOST | -16.58 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,6 +127,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 100 | 12% | -26% |
-| 0.20–0.25 | 93 | 29% | +28% |
+| 0.20–0.25 | 95 | 28% | +25% |
 | 0.25–0.30 | 100 | 23% | -12% |
 | 0.30–0.33 | 76 | 37% | +13% |
