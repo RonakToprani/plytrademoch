@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-12T10:51:52.689319+00:00
+# Poly underdog paper state — 2026-10-12T13:58:51.146435+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($58.72)  ·  settled **388** (91W / 297L)
-- realized P&L **$-41.19**  ·  ROI **-0.7%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-12T10:18:42.057770+00:00
+- open **5** ($77.18)  ·  settled **389** (92W / 297L)
+- realized P&L **$-0.35**  ·  ROI **-0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-12T13:49:54.992033+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,12 +40,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
-| Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | Team Vitality | 0.290 | $16.68 | 2026-10-12T12:00:07.799070+00:00 |
+| Will Coventry City FC vs. Newcastle United FC end in | Yes | 0.270 | $17.92 | 2026-10-12T19:00:07.784250+00:00 |
+| Spread: Bills (-3.5) | Bills | 0.280 | $17.22 | 2026-10-13T00:15:07.736824+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Los Angeles Dodgers vs. Milwaukee Brewers: O/U 6.5 | LOST | -14.59 |
+| Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | WON | +40.84 |
 | Map Handicap: VIT (-2.5) vs MOUZ (+2.5) | WON | +73.09 |
 | Will Max Verstappen win the 2026 F1 Singapore Grand  | LOST | -16.47 |
 | Spread: Cardinals (-3.5) | LOST | -19.43 |
@@ -104,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -15.55 |
 | Spread: Bears (-3.5) | WON | +64.16 |
 | Spread: Vikings (-7.5) | LOST | -17.92 |
-| Will the price of Bitcoin be above $84,000 on Septem | LOST | -15.88 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,5 +129,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 100 | 12% | -26% |
 | 0.20–0.25 | 95 | 28% | +25% |
-| 0.25–0.30 | 100 | 23% | -12% |
+| 0.25–0.30 | 101 | 24% | -10% |
 | 0.30–0.33 | 76 | 37% | +13% |
