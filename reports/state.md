@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-12T17:07:33.176562+00:00
+# Poly underdog paper state — 2026-10-12T20:14:26.828080+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($93.76)  ·  settled **389** (92W / 297L)
+- open **7** ($109.65)  ·  settled **389** (92W / 297L)
 - realized P&L **$-0.35**  ·  ROI **-0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-12T16:50:49.310618+00:00
+- last scan: 2026-10-12T19:51:43.190757+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,6 +43,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Coventry City FC vs. Newcastle United FC end in | Yes | 0.270 | $17.92 | 2026-10-12T19:00:07.784250+00:00 |
 | Spread: Bills (-3.5) | Bills | 0.280 | $17.22 | 2026-10-13T00:15:07.736824+00:00 |
 | Gemini 4.0 released by October 15, 2026? | No | 0.302 | $16.58 | 2026-10-16T03:59:07.615455+00:00 |
+| Will the price of Bitcoin be above $82,000 on Octobe | No | 0.330 | $15.89 | 2026-10-13T16:00:07.851260+00:00 |
 
 ## Settled
 | market | result | P&L |
