@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-12T20:14:26.828080+00:00
+# Poly underdog paper state — 2026-10-12T23:20:33.443475+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($109.65)  ·  settled **389** (92W / 297L)
-- realized P&L **$-0.35**  ·  ROI **-0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-12T19:51:43.190757+00:00
+- open **6** ($91.73)  ·  settled **390** (92W / 298L)
+- realized P&L **$-18.27**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-12T22:52:47.014482+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,7 +40,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
-| Will Coventry City FC vs. Newcastle United FC end in | Yes | 0.270 | $17.92 | 2026-10-12T19:00:07.784250+00:00 |
 | Spread: Bills (-3.5) | Bills | 0.280 | $17.22 | 2026-10-13T00:15:07.736824+00:00 |
 | Gemini 4.0 released by October 15, 2026? | No | 0.302 | $16.58 | 2026-10-16T03:59:07.615455+00:00 |
 | Will the price of Bitcoin be above $82,000 on Octobe | No | 0.330 | $15.89 | 2026-10-13T16:00:07.851260+00:00 |
@@ -48,6 +47,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Coventry City FC vs. Newcastle United FC end in | LOST | -17.92 |
 | Los Angeles Dodgers vs. Milwaukee Brewers: O/U 6.5 | LOST | -14.59 |
 | Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | WON | +40.84 |
 | Map Handicap: VIT (-2.5) vs MOUZ (+2.5) | WON | +73.09 |
@@ -107,7 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $81,000 on September 28? | LOST | -17.87 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -15.55 |
 | Spread: Bears (-3.5) | WON | +64.16 |
-| Spread: Vikings (-7.5) | LOST | -17.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -131,5 +130,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 100 | 12% | -26% |
 | 0.20–0.25 | 95 | 28% | +25% |
-| 0.25–0.30 | 101 | 24% | -10% |
+| 0.25–0.30 | 102 | 24% | -10% |
 | 0.30–0.33 | 76 | 37% | +13% |
