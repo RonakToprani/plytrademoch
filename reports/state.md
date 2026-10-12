@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-12T01:29:47.238744+00:00
+# Poly underdog paper state — 2026-10-12T04:38:45.248360+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($115.09)  ·  settled **384** (90W / 294L)
-- realized P&L **$-31.73**  ·  ROI **-0.6%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-12T01:15:57.373343+00:00
+- open **6** ($97.87)  ·  settled **386** (91W / 295L)
+- realized P&L **$-2.04**  ·  ROI **-0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-12T04:16:55.052298+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,17 +42,18 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $92,000 October 5-11? | Yes | 0.200 | $18.47 | 2026-10-12T04:00:07.941268+00:00 |
 | Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
 | Will Ethereum dip to $2,400 October 5-11? | Yes | 0.237 | $20.68 | 2026-10-12T04:00:08.347222+00:00 |
-| Spread: Ravens (-3.5) | Ravens | 0.280 | $17.22 | 2026-10-12T00:20:05.788391+00:00 |
 | Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | Team Vitality | 0.290 | $16.68 | 2026-10-12T12:00:07.799070+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Los Angeles Dodgers vs. Milwaukee Brewers: O/U 6.5 | LOST | -14.59 |
 | Map Handicap: VIT (-2.5) vs MOUZ (+2.5) | WON | +73.09 |
 | Will Max Verstappen win the 2026 F1 Singapore Grand  | LOST | -16.47 |
 | Spread: Cardinals (-3.5) | LOST | -19.43 |
 | Spread: Chargers (-3.5) | LOST | -18.61 |
 | Spread: Steelers (-7.5) | WON | +38.69 |
+| Spread: Ravens (-3.5) | WON | +44.28 |
 | Spread: 49ers (-3.5) | LOST | -17.22 |
 | Map Handicap: MOUZ (-1.5) vs FURIA (+1.5) | WON | +33.77 |
 | Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | WON | +33.77 |
@@ -106,8 +107,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $84,000 on Septem | LOST | -15.88 |
 | Spread: Lions (-14.5) | LOST | -18.61 |
 | Spread: 49ers (-14.5) | LOST | -16.58 |
-| Spread: Bills (-14.5) | LOST | -17.22 |
-| Spread: Giants (-7.5) | LOST | -16.68 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,7 +128,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 99 | 12% | -25% |
+| 0.15–0.20 | 100 | 12% | -26% |
 | 0.20–0.25 | 93 | 29% | +28% |
-| 0.25–0.30 | 99 | 22% | -15% |
+| 0.25–0.30 | 100 | 23% | -12% |
 | 0.30–0.33 | 76 | 37% | +13% |
