@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-13T02:26:54.755958+00:00
+# Poly underdog paper state — 2026-10-13T05:30:56.634531+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **6** ($91.73)  ·  settled **390** (92W / 298L)
-- realized P&L **$-18.27**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-13T01:53:40.246063+00:00
+- open **5** ($74.51)  ·  settled **391** (92W / 299L)
+- realized P&L **$-35.49**  ·  ROI **-0.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-13T05:24:53.700039+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,13 +40,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
-| Spread: Bills (-3.5) | Bills | 0.280 | $17.22 | 2026-10-13T00:15:07.736824+00:00 |
 | Gemini 4.0 released by October 15, 2026? | No | 0.302 | $16.58 | 2026-10-16T03:59:07.615455+00:00 |
 | Will the price of Bitcoin be above $82,000 on Octobe | No | 0.330 | $15.89 | 2026-10-13T16:00:07.851260+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Spread: Bills (-3.5) | LOST | -17.22 |
 | Will Coventry City FC vs. Newcastle United FC end in | LOST | -17.92 |
 | Los Angeles Dodgers vs. Milwaukee Brewers: O/U 6.5 | LOST | -14.59 |
 | Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | WON | +40.84 |
@@ -106,7 +106,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0 ships transit Hormuz on any date by September 30? | LOST | -18.47 |
 | Will Bitcoin dip to $81,000 on September 28? | LOST | -17.87 |
 | Will the price of Bitcoin be above $82,000 on Septem | LOST | -15.55 |
-| Spread: Bears (-3.5) | WON | +64.16 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,5 +129,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 100 | 12% | -26% |
 | 0.20–0.25 | 95 | 28% | +25% |
-| 0.25–0.30 | 102 | 24% | -10% |
+| 0.25–0.30 | 103 | 23% | -11% |
 | 0.30–0.33 | 76 | 37% | +13% |
