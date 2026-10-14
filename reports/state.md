@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-14T18:54:41.740666+00:00
+# Poly underdog paper state — 2026-10-14T22:01:34.915411+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -32,7 +32,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Book
 - open **4** ($57.66)  ·  settled **393** (92W / 301L)
 - realized P&L **$-67.96**  ·  ROI **-1.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-14T18:35:50.803979+00:00
+- last scan: 2026-10-14T21:36:42.099750+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
