@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-15T16:43:47.710541+00:00
+# Poly underdog paper state — 2026-10-15T19:49:52.541052+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,22 +30,23 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($68.54)  ·  settled **396** (92W / 304L)
-- realized P&L **$-113.46**  ·  ROI **-1.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-15T16:12:14.613394+00:00
+- open **3** ($43.21)  ·  settled **398** (93W / 305L)
+- realized P&L **$-67.17**  ·  ROI **-1.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-15T19:43:18.331845+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| Will the price of Bitcoin be above $80,000 on Octobe | No | 0.202 | $16.50 | 2026-10-15T16:00:07.512633+00:00 |
-| Bitcoin Up or Down on October 15? | Up | 0.250 | $20.93 | 2026-10-15T16:00:07.015772+00:00 |
+| Will the price of Bitcoin be above $84,000 on Octobe | Yes | 0.181 | $12.10 | 2026-10-16T16:00:07.786922+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -18.95 |
+| Bitcoin Up or Down on October 15? | WON | +62.79 |
+| Will the price of Bitcoin be above $80,000 on Octobe | LOST | -16.50 |
 | Will Bitcoin dip to $80,000 on October 14? | LOST | -15.62 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -15.89 |
 | Gemini 4.0 released by October 15, 2026? | LOST | -16.58 |
@@ -103,8 +104,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will there be no next Google Gemini Pro model releas | LOST | -12.88 |
 | Will the next Google Gemini Pro model be released by | LOST | -12.36 |
 | Chicago White Sox vs. Houston Astros: O/U 8.5 | LOST | -10.93 |
-| Gemini 4.0 released by September 30, 2026? | LOST | -12.88 |
-| Philadelphia Phillies vs. Atlanta Braves: O/U 6.5 | WON | +51.66 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -127,6 +126,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 101 | 12% | -27% |
-| 0.20–0.25 | 97 | 28% | +22% |
-| 0.25–0.30 | 103 | 23% | -11% |
+| 0.20–0.25 | 98 | 28% | +21% |
+| 0.25–0.30 | 104 | 24% | -8% |
 | 0.30–0.33 | 78 | 36% | +10% |
