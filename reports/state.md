@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-15T13:35:52.589455+00:00
+# Poly underdog paper state — 2026-10-15T16:43:47.710541+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,22 +30,22 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **5** ($79.47)  ·  settled **394** (92W / 302L)
-- realized P&L **$-83.58**  ·  ROI **-1.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-15T13:11:16.981835+00:00
+- open **4** ($68.54)  ·  settled **396** (92W / 304L)
+- realized P&L **$-113.46**  ·  ROI **-1.9%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-15T16:12:14.613394+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| Israel military action against Lebanon on October 15 | No | 0.200 | $10.93 | 2026-10-16T03:59:07.326697+00:00 |
 | Will the price of Bitcoin be above $80,000 on Octobe | No | 0.202 | $16.50 | 2026-10-15T16:00:07.512633+00:00 |
 | Bitcoin Up or Down on October 15? | Up | 0.250 | $20.93 | 2026-10-15T16:00:07.015772+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Bitcoin dip to $80,000 October 12-18? | LOST | -18.95 |
 | Will Bitcoin dip to $80,000 on October 14? | LOST | -15.62 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -15.89 |
 | Gemini 4.0 released by October 15, 2026? | LOST | -16.58 |
@@ -63,6 +63,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,400 October 5-11? | LOST | -20.68 |
 | Map Handicap: MOUZ (-1.5) vs FURIA (+1.5) | WON | +33.77 |
 | Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | WON | +33.77 |
+| Israel military action against Lebanon on October 15 | LOST | -10.93 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -20.37 |
 | Will Jynxzi, Ron and Los beat the Minecraft challeng | WON | +37.34 |
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +62.19 |
@@ -104,8 +105,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Chicago White Sox vs. Houston Astros: O/U 8.5 | LOST | -10.93 |
 | Gemini 4.0 released by September 30, 2026? | LOST | -12.88 |
 | Philadelphia Phillies vs. Atlanta Braves: O/U 6.5 | WON | +51.66 |
-| Iran charges Hormuz fees by September 30? | LOST | -12.10 |
-| Next US-Iran senior diplomatic meeting by September  | LOST | -17.22 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,6 +127,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 101 | 12% | -27% |
-| 0.20–0.25 | 95 | 28% | +25% |
+| 0.20–0.25 | 97 | 28% | +22% |
 | 0.25–0.30 | 103 | 23% | -11% |
 | 0.30–0.33 | 78 | 36% | +10% |
