@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-16T20:43:27.585829+00:00
+# Poly underdog paper state — 2026-10-16T23:52:59.123542+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,22 +30,22 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($61.10)  ·  settled **400** (94W / 306L)
-- realized P&L **$3.26**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-16T20:20:23.585791+00:00
+- open **3** ($44.52)  ·  settled **401** (94W / 307L)
+- realized P&L **$-13.32**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-16T23:21:16.650478+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | MVK Esports | 0.300 | $16.58 | 2026-10-17T00:00:07.499922+00:00 |
 | Game Handicap: C9 (-1.5) vs FURIA Esports (+1.5) | FURIA Esports | 0.330 | $13.41 | 2026-10-17T05:00:07.989636+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will Bitcoin dip to $81,000 on October 16? | WON | +82.53 |
+| Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -16.58 |
 | Will the price of Bitcoin be above $84,000 on Octobe | LOST | -12.10 |
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -18.95 |
 | Bitcoin Up or Down on October 15? | WON | +62.79 |
@@ -104,7 +104,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Browns (-3.5) | LOST | -16.58 |
 | Will Trump meet with Javier Milei in September 2026? | LOST | -14.53 |
 | Will Bitcoin reach $86,000 September 28-October 4? | LOST | -16.53 |
-| Will there be no next Google Gemini Pro model releas | LOST | -12.88 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -129,4 +128,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 103 | 13% | -20% |
 | 0.20–0.25 | 98 | 28% | +21% |
 | 0.25–0.30 | 104 | 24% | -8% |
-| 0.30–0.33 | 78 | 36% | +10% |
+| 0.30–0.33 | 79 | 35% | +9% |
