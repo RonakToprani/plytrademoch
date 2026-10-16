@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-16T11:19:41.275716+00:00
+# Poly underdog paper state — 2026-10-16T14:26:54.166847+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **3** ($43.21)  ·  settled **398** (93W / 305L)
+- open **5** ($80.05)  ·  settled **398** (93W / 305L)
 - realized P&L **$-67.17**  ·  ROI **-1.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-16T10:47:32.612672+00:00
+- last scan: 2026-10-16T14:18:35.179696+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,6 +40,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Will the price of Bitcoin be above $84,000 on Octobe | Yes | 0.181 | $12.10 | 2026-10-16T16:00:07.786922+00:00 |
+| Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | MVK Esports | 0.300 | $16.58 | 2026-10-17T00:00:07.499922+00:00 |
+| Will Bitcoin dip to $81,000 on October 16? | Yes | 0.197 | $20.26 | 2026-10-17T04:00:08.074274+00:00 |
 
 ## Settled
 | market | result | P&L |
