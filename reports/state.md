@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-17T03:00:22.116548+00:00
+# Poly underdog paper state — 2026-10-17T06:09:46.409977+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **4** ($61.00)  ·  settled **402** (95W / 307L)
+- open **5** ($78.20)  ·  settled **402** (95W / 307L)
 - realized P&L **$13.91**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-17T02:52:18.067945+00:00
+- last scan: 2026-10-17T05:53:08.235229+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,6 +41,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | US x Iran ceasefire continues through October 22? | No | 0.180 | $15.23 | 2026-10-23T03:59:07.623067+00:00 |
 | Bitcoin Up or Down on October 17? | Down | 0.320 | $14.66 | 2026-10-17T16:00:07.219396+00:00 |
+| Will the price of Bitcoin be above $82,000 on Octobe | Yes | 0.180 | $17.20 | 2026-10-17T16:00:07.118202+00:00 |
 
 ## Settled
 | market | result | P&L |
