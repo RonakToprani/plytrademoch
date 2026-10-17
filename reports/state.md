@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-16T23:52:59.123542+00:00
+# Poly underdog paper state — 2026-10-17T03:00:22.116548+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,20 +30,22 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **3** ($44.52)  ·  settled **401** (94W / 307L)
-- realized P&L **$-13.32**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-16T23:21:16.650478+00:00
+- open **4** ($61.00)  ·  settled **402** (95W / 307L)
+- realized P&L **$13.91**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-17T02:52:18.067945+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| Game Handicap: C9 (-1.5) vs FURIA Esports (+1.5) | FURIA Esports | 0.330 | $13.41 | 2026-10-17T05:00:07.989636+00:00 |
+| US x Iran ceasefire continues through October 22? | No | 0.180 | $15.23 | 2026-10-23T03:59:07.623067+00:00 |
+| Bitcoin Up or Down on October 17? | Down | 0.320 | $14.66 | 2026-10-17T16:00:07.219396+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Game Handicap: C9 (-1.5) vs FURIA Esports (+1.5) | WON | +27.23 |
 | Will Bitcoin dip to $81,000 on October 16? | WON | +82.53 |
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -16.58 |
 | Will the price of Bitcoin be above $84,000 on Octobe | LOST | -12.10 |
@@ -103,7 +105,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Wales vs. Norway end in a draw? | LOST | -18.47 |
 | Spread: Browns (-3.5) | LOST | -16.58 |
 | Will Trump meet with Javier Milei in September 2026? | LOST | -14.53 |
-| Will Bitcoin reach $86,000 September 28-October 4? | LOST | -16.53 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -128,4 +129,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 103 | 13% | -20% |
 | 0.20–0.25 | 98 | 28% | +21% |
 | 0.25–0.30 | 104 | 24% | -8% |
-| 0.30–0.33 | 79 | 35% | +9% |
+| 0.30–0.33 | 80 | 36% | +11% |
