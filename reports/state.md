@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-18T04:04:27.924279+00:00
+# Poly underdog paper state — 2026-10-18T07:11:58.187127+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($159.20)  ·  settled **404** (95W / 309L)
+- open **10** ($172.61)  ·  settled **404** (95W / 309L)
 - realized P&L **$-17.95**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-18T03:29:17.006878+00:00
+- last scan: 2026-10-18T07:00:19.505848+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,6 +46,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Spread: Rams (-21.5) | Rams | 0.220 | $20.42 | 2026-10-18T20:05:07.402844+00:00 |
 | Spread: Chiefs (-3.5) | Chargers | 0.330 | $13.41 | 2026-10-18T20:25:08.031688+00:00 |
+| Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
 
 ## Settled
 | market | result | P&L |
