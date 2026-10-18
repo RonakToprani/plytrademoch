@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-17T21:50:27.550156+00:00
+# Poly underdog paper state — 2026-10-18T00:58:36.690511+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **3** ($46.34)  ·  settled **404** (95W / 309L)
+- open **7** ($125.37)  ·  settled **404** (95W / 309L)
 - realized P&L **$-17.95**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-17T21:27:25.603720+00:00
+- last scan: 2026-10-18T00:28:21.432422+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,6 +40,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | US x Iran ceasefire continues through October 22? | No | 0.180 | $15.23 | 2026-10-23T03:59:07.623067+00:00 |
+| Will Ethereum dip to $2,300 October 12-18? | Yes | 0.253 | $20.73 | 2026-10-19T04:00:07.525099+00:00 |
+| Spread: Eagles (-3.5) | Eagles | 0.260 | $18.61 | 2026-10-18T17:00:07.672108+00:00 |
+| Spread: Browns (-3.5) | Browns | 0.260 | $18.61 | 2026-10-18T17:00:08.363888+00:00 |
+| Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 
 ## Settled
 | market | result | P&L |
