@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-18T13:24:12.579795+00:00
+# Poly underdog paper state — 2026-10-18T16:32:05.158710+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($189.13)  ·  settled **404** (95W / 309L)
+- open **13** ($223.98)  ·  settled **404** (95W / 309L)
 - realized P&L **$-17.95**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-18T13:02:04.634891+00:00
+- last scan: 2026-10-18T16:03:00.445855+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,6 +48,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Chiefs (-3.5) | Chargers | 0.330 | $13.41 | 2026-10-18T20:25:08.031688+00:00 |
 | Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
 | Will "Grand Theft Auto VI Launch Trailer" get betwee | Yes | 0.309 | $16.52 | 2026-10-23T03:59:06.680639+00:00 |
+| Will Bitcoin dip to $80,000 October 12-18? | Yes | 0.198 | $14.59 | 2026-10-19T04:00:07.800712+00:00 |
+| Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | MVK Esports | 0.240 | $20.26 | 2026-10-19T00:00:06.967033+00:00 |
 
 ## Settled
 | market | result | P&L |
