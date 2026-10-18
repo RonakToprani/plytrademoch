@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-18T19:38:40.929514+00:00
+# Poly underdog paper state — 2026-10-18T22:47:36.019945+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($223.98)  ·  settled **404** (95W / 309L)
-- realized P&L **$-17.95**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-18T19:03:59.866488+00:00
+- open **11** ($184.14)  ·  settled **407** (95W / 312L)
+- realized P&L **$-75.43**  ·  ROI **-1.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-18T22:35:07.837686+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,19 +41,20 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | US x Iran ceasefire continues through October 22? | No | 0.180 | $15.23 | 2026-10-23T03:59:07.623067+00:00 |
 | Will Ethereum dip to $2,300 October 12-18? | Yes | 0.253 | $20.73 | 2026-10-19T04:00:07.525099+00:00 |
-| Spread: Eagles (-3.5) | Eagles | 0.260 | $18.61 | 2026-10-18T17:00:07.672108+00:00 |
-| Spread: Browns (-3.5) | Browns | 0.260 | $18.61 | 2026-10-18T17:00:08.363888+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Spread: Rams (-21.5) | Rams | 0.220 | $20.42 | 2026-10-18T20:05:07.402844+00:00 |
 | Spread: Chiefs (-3.5) | Chargers | 0.330 | $13.41 | 2026-10-18T20:25:08.031688+00:00 |
 | Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
 | Will "Grand Theft Auto VI Launch Trailer" get betwee | Yes | 0.309 | $16.52 | 2026-10-23T03:59:06.680639+00:00 |
 | Will Bitcoin dip to $80,000 October 12-18? | Yes | 0.198 | $14.59 | 2026-10-19T04:00:07.800712+00:00 |
-| Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | MVK Esports | 0.240 | $20.26 | 2026-10-19T00:00:06.967033+00:00 |
+| Next Astra Model (6.1+) released by October 23, 2026 | Yes | 0.295 | $17.64 | 2026-10-23T23:59:07.219060+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
+| Spread: Browns (-3.5) | LOST | -18.61 |
+| Spread: Eagles (-3.5) | LOST | -18.61 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -17.20 |
 | Bitcoin Up or Down on October 17? | LOST | -14.66 |
 | Game Handicap: C9 (-1.5) vs FURIA Esports (+1.5) | WON | +27.23 |
@@ -111,9 +112,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will MrBeast Gaming's next video get between 30 and  | LOST | -15.88 |
 | Will Russia target Kyiv on October 4, 2026? | LOST | -20.42 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.53 |
-| Bitcoin Up or Down on October 1? | WON | +74.74 |
-| Map Handicap: FaZe (-1.5) vs Nemiga (+1.5) | LOST | -16.47 |
-| Will Wales vs. Norway end in a draw? | LOST | -18.47 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,6 +134,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 104 | 12% | -22% |
-| 0.20–0.25 | 98 | 28% | +21% |
-| 0.25–0.30 | 104 | 24% | -8% |
+| 0.20–0.25 | 99 | 27% | +19% |
+| 0.25–0.30 | 106 | 24% | -10% |
 | 0.30–0.33 | 81 | 36% | +10% |
