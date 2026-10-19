@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-19T05:02:09.177936+00:00
+# Poly underdog paper state — 2026-10-19T08:09:53.999812+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **8** ($129.58)  ·  settled **410** (95W / 315L)
-- realized P&L **$-129.99**  ·  ROI **-2.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-19T04:36:59.665668+00:00
+- open **7** ($114.99)  ·  settled **411** (95W / 316L)
+- realized P&L **$-144.58**  ·  ROI **-2.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-19T07:37:52.442330+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,13 +43,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
 | Will "Grand Theft Auto VI Launch Trailer" get betwee | Yes | 0.309 | $16.52 | 2026-10-23T03:59:06.680639+00:00 |
-| Will Bitcoin dip to $80,000 October 12-18? | Yes | 0.198 | $14.59 | 2026-10-19T04:00:07.800712+00:00 |
 | Next Astra Model (6.1+) released by October 23, 2026 | Yes | 0.295 | $17.64 | 2026-10-23T23:59:07.219060+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
+| Will Bitcoin dip to $80,000 October 12-18? | LOST | -14.59 |
 | Spread: Chiefs (-3.5) | LOST | -13.41 |
 | Spread: Rams (-21.5) | LOST | -20.42 |
 | Spread: Browns (-3.5) | LOST | -18.61 |
@@ -108,7 +108,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Flávio Bolsonaro participates in debate before first | LOST | -12.88 |
 | Will the price of Ethereum be above $2,800 on Octobe | LOST | -18.33 |
 | Will Bitcoin reach $90,000 September 28-October 4? | LOST | -16.47 |
-| Bitcoin Up or Down on October 2? | LOST | -18.61 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -130,7 +129,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 104 | 12% | -22% |
+| 0.15–0.20 | 105 | 12% | -22% |
 | 0.20–0.25 | 100 | 27% | +18% |
 | 0.25–0.30 | 107 | 23% | -11% |
 | 0.30–0.33 | 82 | 35% | +9% |
