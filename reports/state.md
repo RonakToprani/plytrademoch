@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-19T01:55:12.578574+00:00
+# Poly underdog paper state — 2026-10-19T05:02:09.177936+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **9** ($150.31)  ·  settled **409** (95W / 314L)
-- realized P&L **$-109.26**  ·  ROI **-1.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-19T01:36:05.045487+00:00
+- open **8** ($129.58)  ·  settled **410** (95W / 315L)
+- realized P&L **$-129.99**  ·  ROI **-2.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-19T04:36:59.665668+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,7 +40,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | US x Iran ceasefire continues through October 22? | No | 0.180 | $15.23 | 2026-10-23T03:59:07.623067+00:00 |
-| Will Ethereum dip to $2,300 October 12-18? | Yes | 0.253 | $20.73 | 2026-10-19T04:00:07.525099+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
 | Will "Grand Theft Auto VI Launch Trailer" get betwee | Yes | 0.309 | $16.52 | 2026-10-23T03:59:06.680639+00:00 |
@@ -55,6 +54,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Rams (-21.5) | LOST | -20.42 |
 | Spread: Browns (-3.5) | LOST | -18.61 |
 | Spread: Eagles (-3.5) | LOST | -18.61 |
+| Will Ethereum dip to $2,300 October 12-18? | LOST | -20.73 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -17.20 |
 | Bitcoin Up or Down on October 17? | LOST | -14.66 |
 | Game Handicap: C9 (-1.5) vs FURIA Esports (+1.5) | WON | +27.23 |
@@ -109,7 +109,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Ethereum be above $2,800 on Octobe | LOST | -18.33 |
 | Will Bitcoin reach $90,000 September 28-October 4? | LOST | -16.47 |
 | Bitcoin Up or Down on October 2? | LOST | -18.61 |
-| Will MrBeast Gaming's next video get between 30 and  | LOST | -15.88 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,5 +132,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 104 | 12% | -22% |
 | 0.20–0.25 | 100 | 27% | +18% |
-| 0.25–0.30 | 106 | 24% | -10% |
+| 0.25–0.30 | 107 | 23% | -11% |
 | 0.30–0.33 | 82 | 35% | +9% |
