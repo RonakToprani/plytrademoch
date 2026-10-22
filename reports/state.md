@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-21T23:26:19.395664+00:00
+# Poly underdog paper state — 2026-10-22T02:29:44.351692+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **7** ($114.99)  ·  settled **411** (95W / 316L)
+- open **10** ($165.32)  ·  settled **411** (95W / 316L)
 - realized P&L **$-144.58**  ·  ROI **-2.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-19T13:09:25.961376+00:00
+- last scan: 2026-10-22T02:20:02.963019+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,6 +44,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
 | Will "Grand Theft Auto VI Launch Trailer" get betwee | Yes | 0.309 | $16.52 | 2026-10-23T03:59:06.680639+00:00 |
 | Next Astra Model (6.1+) released by October 23, 2026 | Yes | 0.295 | $17.64 | 2026-10-23T23:59:07.219060+00:00 |
+| Israel x Iran ceasefire continues through October 31 | No | 0.200 | $18.47 | 2026-10-31T20:29:06.034190+00:00 |
+| Will the Bank of Canada make no change to the target | Yes | 0.167 | $10.93 | 2026-10-28T00:00:06.926713+00:00 |
+| Will the Bank of Russia decrease the key rate after  | Yes | 0.245 | $20.93 | 2026-10-24T03:59:07.591448+00:00 |
 
 ## Settled
 | market | result | P&L |
