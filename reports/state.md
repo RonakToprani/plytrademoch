@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-22T14:54:46.096063+00:00
+# Poly underdog paper state — 2026-10-22T18:12:16.172717+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($225.24)  ·  settled **411** (95W / 316L)
-- realized P&L **$-144.58**  ·  ROI **-2.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-22T14:24:38.741085+00:00
+- open **12** ($191.59)  ·  settled **413** (96W / 317L)
+- realized P&L **$-89.47**  ·  ROI **-1.5%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-22T17:26:00.176307+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,21 +42,21 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US x Iran ceasefire continues through October 22? | No | 0.180 | $15.23 | 2026-10-23T03:59:07.623067+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
-| Will "Grand Theft Auto VI Launch Trailer" get betwee | Yes | 0.309 | $16.52 | 2026-10-23T03:59:06.680639+00:00 |
 | Next Astra Model (6.1+) released by October 23, 2026 | Yes | 0.295 | $17.64 | 2026-10-23T23:59:07.219060+00:00 |
 | Israel x Iran ceasefire continues through October 31 | No | 0.200 | $18.47 | 2026-10-31T20:29:06.034190+00:00 |
 | Will the Bank of Canada make no change to the target | Yes | 0.167 | $10.93 | 2026-10-28T00:00:06.926713+00:00 |
 | Will the Bank of Russia decrease the key rate after  | Yes | 0.245 | $20.93 | 2026-10-24T03:59:07.591448+00:00 |
 | Will Bitcoin dip to $80,000 October 19-25? | Yes | 0.230 | $20.93 | 2026-10-26T04:00:07.159605+00:00 |
-| Will the price of Bitcoin be above $82,000 on Octobe | No | 0.193 | $17.13 | 2026-10-22T16:00:11.896805+00:00 |
 | Will the price of Bitcoin be above $80,000 on Octobe | No | 0.155 | $10.93 | 2026-10-23T16:00:11.683859+00:00 |
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -14.59 |
+| Will "Grand Theft Auto VI Launch Trailer" get betwee | LOST | -16.52 |
 | Spread: Chiefs (-3.5) | LOST | -13.41 |
 | Spread: Rams (-21.5) | LOST | -20.42 |
 | Spread: Browns (-3.5) | LOST | -18.61 |
@@ -113,8 +113,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,600 September 28-October 4? | LOST | -16.44 |
 | Will the price of Bitcoin be above $84,000 on Octobe | LOST | -19.43 |
 | Flávio Bolsonaro participates in debate before first | LOST | -12.88 |
-| Will the price of Ethereum be above $2,800 on Octobe | LOST | -18.33 |
-| Will Bitcoin reach $90,000 September 28-October 4? | LOST | -16.47 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,7 +134,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 105 | 12% | -22% |
+| 0.15–0.20 | 106 | 13% | -17% |
 | 0.20–0.25 | 100 | 27% | +18% |
 | 0.25–0.30 | 107 | 23% | -11% |
-| 0.30–0.33 | 82 | 35% | +9% |
+| 0.30–0.33 | 83 | 35% | +7% |
