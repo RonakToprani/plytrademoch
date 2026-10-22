@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-22T11:49:22.352192+00:00
+# Poly underdog paper state — 2026-10-22T14:54:46.096063+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($203.38)  ·  settled **411** (95W / 316L)
+- open **14** ($225.24)  ·  settled **411** (95W / 316L)
 - realized P&L **$-144.58**  ·  ROI **-2.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-22T11:23:23.470003+00:00
+- last scan: 2026-10-22T14:24:38.741085+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -49,6 +49,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the Bank of Russia decrease the key rate after  | Yes | 0.245 | $20.93 | 2026-10-24T03:59:07.591448+00:00 |
 | Will Bitcoin dip to $80,000 October 19-25? | Yes | 0.230 | $20.93 | 2026-10-26T04:00:07.159605+00:00 |
 | Will the price of Bitcoin be above $82,000 on Octobe | No | 0.193 | $17.13 | 2026-10-22T16:00:11.896805+00:00 |
+| Will the price of Bitcoin be above $80,000 on Octobe | No | 0.155 | $10.93 | 2026-10-23T16:00:11.683859+00:00 |
+| NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
 
 ## Settled
 | market | result | P&L |
