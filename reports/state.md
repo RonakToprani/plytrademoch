@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-23T15:52:28.568659+00:00
+# Poly underdog paper state — 2026-10-23T18:57:13.843965+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **11** ($170.66)  ·  settled **414** (96W / 318L)
-- realized P&L **$-110.40**  ·  ROI **-1.8%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-23T15:33:56.633062+00:00
+- open **12** ($185.25)  ·  settled **415** (96W / 319L)
+- realized P&L **$-121.33**  ·  ROI **-2.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-23T18:35:16.798105+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -46,12 +46,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel x Iran ceasefire continues through October 31 | No | 0.200 | $18.47 | 2026-10-31T20:29:06.034190+00:00 |
 | Will the Bank of Canada make no change to the target | Yes | 0.167 | $10.93 | 2026-10-28T00:00:06.926713+00:00 |
 | Will Bitcoin dip to $80,000 October 19-25? | Yes | 0.230 | $20.93 | 2026-10-26T04:00:07.159605+00:00 |
-| Will the price of Bitcoin be above $80,000 on Octobe | No | 0.155 | $10.93 | 2026-10-23T16:00:11.683859+00:00 |
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
+| Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
+| Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
 | Will the Bank of Russia decrease the key rate after  | LOST | -20.93 |
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
@@ -111,7 +113,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Argentina vs. Burkina Faso end in a draw? | LOST | -14.59 |
 | Spread: Burkina Faso (-5.5) | LOST | -11.84 |
 | Will Ethereum dip to $2,600 September 28-October 4? | LOST | -16.44 |
-| Will the price of Bitcoin be above $84,000 on Octobe | LOST | -19.43 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -133,7 +134,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 106 | 13% | -17% |
+| 0.15–0.20 | 107 | 13% | -17% |
 | 0.20–0.25 | 101 | 27% | +16% |
 | 0.25–0.30 | 107 | 23% | -11% |
 | 0.30–0.33 | 83 | 35% | +7% |
