@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-23T18:57:13.843965+00:00
+# Poly underdog paper state — 2026-10-23T22:02:28.121882+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($185.25)  ·  settled **415** (96W / 319L)
+- open **13** ($201.13)  ·  settled **415** (96W / 319L)
 - realized P&L **$-121.33**  ·  ROI **-2.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-23T18:35:16.798105+00:00
+- last scan: 2026-10-23T21:36:24.772170+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -49,6 +49,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
 | Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
 | Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
+| Spread: Club Atlético de Madrid (-3.5) | Club Atlético de Madrid | 0.180 | $15.88 | 2026-10-24T19:00:08.513881+00:00 |
 
 ## Settled
 | market | result | P&L |
