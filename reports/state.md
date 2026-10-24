@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-24T13:34:45.536001+00:00
+# Poly underdog paper state — 2026-10-24T16:39:35.660265+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($197.95)  ·  settled **416** (96W / 320L)
-- realized P&L **$-138.97**  ·  ROI **-2.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-24T13:12:19.454047+00:00
+- open **15** ($226.13)  ·  settled **417** (97W / 320L)
+- realized P&L **$-68.90**  ·  ROI **-1.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-24T16:13:23.018320+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,18 +44,21 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
 | Israel x Iran ceasefire continues through October 31 | No | 0.200 | $18.47 | 2026-10-31T20:29:06.034190+00:00 |
 | Will the Bank of Canada make no change to the target | Yes | 0.167 | $10.93 | 2026-10-28T00:00:06.926713+00:00 |
-| Will Bitcoin dip to $80,000 October 19-25? | Yes | 0.230 | $20.93 | 2026-10-26T04:00:07.159605+00:00 |
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
 | Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
 | Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
 | Spread: Club Atlético de Madrid (-3.5) | Club Atlético de Madrid | 0.180 | $15.88 | 2026-10-24T19:00:08.513881+00:00 |
 | Will the price of Bitcoin be above $80,000 on Octobe | No | 0.161 | $14.46 | 2026-10-24T16:00:10.564257+00:00 |
+| Will Bitcoin dip to $78,000 October 19-25? | Yes | 0.325 | $16.45 | 2026-10-26T04:00:10.735250+00:00 |
+| Will FC Barcelona vs. Real Madrid CF end in a draw? | Yes | 0.160 | $12.23 | 2026-10-25T20:00:11.533637+00:00 |
+| Will Ethereum dip to $2,200 October 19-25? | Yes | 0.221 | $20.43 | 2026-10-26T04:00:07.179907+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
+| Will Bitcoin dip to $80,000 October 19-25? | WON | +70.07 |
 | Will the Bank of Russia decrease the key rate after  | LOST | -20.93 |
 | Next Astra Model (6.1+) released by October 23, 2026 | LOST | -17.64 |
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
@@ -113,7 +116,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Vikings (-3.5) | LOST | -17.92 |
 | Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | LOST | -13.41 |
 | Will Argentina vs. Burkina Faso end in a draw? | LOST | -14.59 |
-| Spread: Burkina Faso (-5.5) | LOST | -11.84 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,6 +138,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 107 | 13% | -17% |
-| 0.20–0.25 | 101 | 27% | +16% |
+| 0.20–0.25 | 102 | 27% | +20% |
 | 0.25–0.30 | 108 | 23% | -11% |
 | 0.30–0.33 | 83 | 35% | +7% |
