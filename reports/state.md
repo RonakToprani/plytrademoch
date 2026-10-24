@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-24T19:46:36.680542+00:00
+# Poly underdog paper state — 2026-10-24T22:51:19.860493+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($211.67)  ·  settled **418** (98W / 320L)
-- realized P&L **$6.45**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-24T19:14:38.989290+00:00
+- open **15** ($231.08)  ·  settled **419** (98W / 321L)
+- realized P&L **$-9.43**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-24T22:45:59.341492+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,15 +47,17 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
 | Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
 | Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
-| Spread: Club Atlético de Madrid (-3.5) | Club Atlético de Madrid | 0.180 | $15.88 | 2026-10-24T19:00:08.513881+00:00 |
 | Will Bitcoin dip to $78,000 October 19-25? | Yes | 0.325 | $16.45 | 2026-10-26T04:00:10.735250+00:00 |
 | Will FC Barcelona vs. Real Madrid CF end in a draw? | Yes | 0.160 | $12.23 | 2026-10-25T20:00:11.533637+00:00 |
 | Will Ethereum dip to $2,200 October 19-25? | Yes | 0.221 | $20.43 | 2026-10-26T04:00:07.179907+00:00 |
+| Spread: Lions (-10.5) | Lions | 0.260 | $18.61 | 2026-10-25T20:25:06.416065+00:00 |
+| Spread: Panthers (-7.5) | Panthers | 0.290 | $16.68 | 2026-10-25T17:00:07.082806+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will the price of Bitcoin be above $80,000 on Octobe | WON | +75.35 |
+| Spread: Club Atlético de Madrid (-3.5) | LOST | -15.88 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
 | Will Bitcoin dip to $80,000 October 19-25? | WON | +70.07 |
@@ -114,7 +116,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Patriots vs. Bills: O/U 57.5 | LOST | -16.58 |
 | San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | WON | +58.12 |
 | Spread: Vikings (-3.5) | LOST | -17.92 |
-| Map Handicap: GLS (-1.5) vs Grêmio Esports (+1.5) | LOST | -13.41 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,7 +137,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 108 | 14% | -11% |
+| 0.15–0.20 | 109 | 14% | -13% |
 | 0.20–0.25 | 102 | 27% | +20% |
 | 0.25–0.30 | 108 | 23% | -11% |
 | 0.30–0.33 | 83 | 35% | +7% |
