@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-24T01:11:08.835783+00:00
+# Poly underdog paper state — 2026-10-24T04:17:27.478173+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($201.13)  ·  settled **415** (96W / 319L)
+- open **14** ($215.59)  ·  settled **415** (96W / 319L)
 - realized P&L **$-121.33**  ·  ROI **-2.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-24T00:37:31.800201+00:00
+- last scan: 2026-10-24T04:09:05.807046+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,6 +50,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
 | Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
 | Spread: Club Atlético de Madrid (-3.5) | Club Atlético de Madrid | 0.180 | $15.88 | 2026-10-24T19:00:08.513881+00:00 |
+| Will the price of Bitcoin be above $80,000 on Octobe | No | 0.161 | $14.46 | 2026-10-24T16:00:10.564257+00:00 |
 
 ## Settled
 | market | result | P&L |
