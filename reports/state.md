@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-25T01:56:04.328751+00:00
+# Poly underdog paper state — 2026-10-25T05:01:58.660244+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **18** ($284.63)  ·  settled **419** (98W / 321L)
+- open **22** ($352.23)  ·  settled **419** (98W / 321L)
 - realized P&L **$-9.43**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-25T01:47:09.052080+00:00
+- last scan: 2026-10-25T04:48:44.272985+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -55,6 +55,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Ravens (-3.5) | Ravens | 0.300 | $16.58 | 2026-10-25T17:00:09.744045+00:00 |
 | Will the Rhine River return to normal levels between | No | 0.270 | $21.08 | 2026-10-31T23:59:07.233784+00:00 |
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
+| Will Bitcoin reach $85,000 in October? | Yes | 0.310 | $16.52 | 2026-11-01T04:00:09.392544+00:00 |
+| Will Ethereum dip to $2,200 in October? | Yes | 0.300 | $16.58 | 2026-11-01T04:00:10.157815+00:00 |
+| Spread: Seahawks (-7.5) | Seahawks | 0.270 | $17.92 | 2026-10-26T00:20:21.078523+00:00 |
+| Spread: Saints (-3.5) | Saints | 0.300 | $16.58 | 2026-10-25T13:30:31.821320+00:00 |
 
 ## Settled
 | market | result | P&L |
