@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-25T05:01:58.660244+00:00
+# Poly underdog paper state — 2026-10-25T08:06:31.997942+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **22** ($352.23)  ·  settled **419** (98W / 321L)
-- realized P&L **$-9.43**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-25T04:48:44.272985+00:00
+- open **23** ($374.14)  ·  settled **420** (99W / 321L)
+- realized P&L **$17.80**  ·  ROI **+0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-25T07:50:02.863207+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,7 +41,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | US x Iran ceasefire continues through October 22? | No | 0.180 | $15.23 | 2026-10-23T03:59:07.623067+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
-| Next Fable Model (5.2+) released by October 24, 2026 | No | 0.330 | $13.41 | 2026-10-25T03:59:06.905616+00:00 |
 | Israel x Iran ceasefire continues through October 31 | No | 0.200 | $18.47 | 2026-10-31T20:29:06.034190+00:00 |
 | Will the Bank of Canada make no change to the target | Yes | 0.167 | $10.93 | 2026-10-28T00:00:06.926713+00:00 |
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
@@ -59,6 +58,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,200 in October? | Yes | 0.300 | $16.58 | 2026-11-01T04:00:10.157815+00:00 |
 | Spread: Seahawks (-7.5) | Seahawks | 0.270 | $17.92 | 2026-10-26T00:20:21.078523+00:00 |
 | Spread: Saints (-3.5) | Saints | 0.300 | $16.58 | 2026-10-25T13:30:31.821320+00:00 |
+| US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
+| Game Handicap: GEN (-1.5) vs LYON (+1.5) | LYON | 0.320 | $15.89 | 2026-10-26T01:00:11.162239+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -73,6 +74,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -14.59 |
 | Will "Grand Theft Auto VI Launch Trailer" get betwee | LOST | -16.52 |
+| Next Fable Model (5.2+) released by October 24, 2026 | WON | +27.23 |
 | Spread: Chiefs (-3.5) | LOST | -13.41 |
 | Spread: Rams (-21.5) | LOST | -20.42 |
 | Spread: Browns (-3.5) | LOST | -18.61 |
@@ -122,7 +124,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Panthers (-3.5) | WON | +64.16 |
 | Patriots vs. Bills: O/U 57.5 | LOST | -16.58 |
 | San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | WON | +58.12 |
-| Spread: Vikings (-3.5) | LOST | -17.92 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -147,4 +148,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 109 | 14% | -13% |
 | 0.20–0.25 | 102 | 27% | +20% |
 | 0.25–0.30 | 108 | 23% | -11% |
-| 0.30–0.33 | 83 | 35% | +7% |
+| 0.30–0.33 | 84 | 36% | +9% |
