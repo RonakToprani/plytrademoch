@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-25T20:27:57.270500+00:00
+# Poly underdog paper state — 2026-10-25T23:33:59.002112+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **26** ($422.31)  ·  settled **423** (100W / 323L)
-- realized P&L **$63.14**  ·  ROI **+1.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-25T19:55:19.882068+00:00
+- open **24** ($386.73)  ·  settled **427** (100W / 327L)
+- realized P&L **$-0.96**  ·  ROI **-0.0%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-25T23:27:03.554792+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,11 +47,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
 | Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
 | Will Bitcoin dip to $78,000 October 19-25? | Yes | 0.325 | $16.45 | 2026-10-26T04:00:10.735250+00:00 |
-| Will FC Barcelona vs. Real Madrid CF end in a draw? | Yes | 0.160 | $12.23 | 2026-10-25T20:00:11.533637+00:00 |
 | Will Ethereum dip to $2,200 October 19-25? | Yes | 0.221 | $20.43 | 2026-10-26T04:00:07.179907+00:00 |
 | Spread: Lions (-10.5) | Lions | 0.260 | $18.61 | 2026-10-25T20:25:06.416065+00:00 |
-| Spread: Panthers (-7.5) | Panthers | 0.290 | $16.68 | 2026-10-25T17:00:07.082806+00:00 |
-| Spread: Ravens (-3.5) | Ravens | 0.300 | $16.58 | 2026-10-25T17:00:09.744045+00:00 |
 | Will the Rhine River return to normal levels between | No | 0.270 | $21.08 | 2026-10-31T23:59:07.233784+00:00 |
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
 | Will Bitcoin reach $85,000 in October? | Yes | 0.310 | $16.52 | 2026-11-01T04:00:09.392544+00:00 |
@@ -59,17 +56,22 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Seahawks (-7.5) | Seahawks | 0.270 | $17.92 | 2026-10-26T00:20:21.078523+00:00 |
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | Game Handicap: GEN (-1.5) vs LYON (+1.5) | LYON | 0.320 | $15.89 | 2026-10-26T01:00:11.162239+00:00 |
-| FC Barcelona vs. Real Madrid CF: Both Teams to Score | No | 0.260 | $18.61 | 2026-10-25T20:00:07.176659+00:00 |
 | Next Fable Model (5.2+) released by October 31, 2026 | Yes | 0.330 | $14.66 | 2026-10-31T23:59:06.452530+00:00 |
 | Will there be no next Fable model (5.2+) release by  | No | 0.328 | $14.16 | 2026-11-01T03:59:11.717122+00:00 |
 | Will NVIDIA be the largest company in the world by m | No | 0.275 | $17.32 | 2026-11-01T03:59:13.180275+00:00 |
+| Will Kimi Antonelli win the 2026 F1 United States Gr | No | 0.160 | $17.20 | 2026-11-01T20:00:07.569555+00:00 |
+| Will Google have the best AI model at the end of Oct | No | 0.162 | $11.32 | 2026-10-31T16:00:11.681580+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will María Corina Machado enter Venezuela by October | WON | +80.92 |
 | Bitcoin Up or Down on October 25? | LOST | -19.00 |
+| FC Barcelona vs. Real Madrid CF: Both Teams to Score | LOST | -18.61 |
 | Spread: Saints (-3.5) | LOST | -16.58 |
+| Spread: Ravens (-3.5) | LOST | -16.58 |
+| Spread: Panthers (-7.5) | LOST | -16.68 |
+| Will FC Barcelona vs. Real Madrid CF end in a draw? | LOST | -12.23 |
 | Will the price of Bitcoin be above $80,000 on Octobe | WON | +75.35 |
 | Spread: Club Atlético de Madrid (-3.5) | LOST | -15.88 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
@@ -123,10 +125,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $88,000 on Octobe | LOST | -15.30 |
 | Will Sudan's Emergency Response Rooms win the Nobel  | LOST | -12.23 |
 | Game Handicap: KT (-1.5) vs RED Canids (+1.5) | LOST | -18.47 |
-| Spread: Ravens (-3.5) | LOST | -18.61 |
-| Spread: Raiders (-3.5) | LOST | -19.43 |
-| Spread: Buccaneers (-3.5) | LOST | -17.22 |
-| Spread: Colts (-10.5) | WON | +38.69 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -148,7 +146,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 110 | 15% | -6% |
+| 0.15–0.20 | 111 | 14% | -7% |
 | 0.20–0.25 | 103 | 27% | +19% |
-| 0.25–0.30 | 108 | 23% | -11% |
-| 0.30–0.33 | 85 | 35% | +8% |
+| 0.25–0.30 | 110 | 23% | -13% |
+| 0.30–0.33 | 86 | 35% | +7% |
