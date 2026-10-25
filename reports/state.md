@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-25T17:23:14.722772+00:00
+# Poly underdog paper state — 2026-10-25T20:27:57.270500+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **28** ($458.28)  ·  settled **421** (99W / 322L)
-- realized P&L **$-1.20**  ·  ROI **-0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-25T16:53:51.625460+00:00
+- open **26** ($422.31)  ·  settled **423** (100W / 323L)
+- realized P&L **$63.14**  ·  ROI **+1.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-25T19:55:19.882068+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -57,19 +57,19 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $85,000 in October? | Yes | 0.310 | $16.52 | 2026-11-01T04:00:09.392544+00:00 |
 | Will Ethereum dip to $2,200 in October? | Yes | 0.300 | $16.58 | 2026-11-01T04:00:10.157815+00:00 |
 | Spread: Seahawks (-7.5) | Seahawks | 0.270 | $17.92 | 2026-10-26T00:20:21.078523+00:00 |
-| Spread: Saints (-3.5) | Saints | 0.300 | $16.58 | 2026-10-25T13:30:31.821320+00:00 |
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | Game Handicap: GEN (-1.5) vs LYON (+1.5) | LYON | 0.320 | $15.89 | 2026-10-26T01:00:11.162239+00:00 |
 | FC Barcelona vs. Real Madrid CF: Both Teams to Score | No | 0.260 | $18.61 | 2026-10-25T20:00:07.176659+00:00 |
 | Next Fable Model (5.2+) released by October 31, 2026 | Yes | 0.330 | $14.66 | 2026-10-31T23:59:06.452530+00:00 |
 | Will there be no next Fable model (5.2+) release by  | No | 0.328 | $14.16 | 2026-11-01T03:59:11.717122+00:00 |
-| Will María Corina Machado enter Venezuela by October | Yes | 0.193 | $19.39 | 2026-11-01T03:59:09.229633+00:00 |
 | Will NVIDIA be the largest company in the world by m | No | 0.275 | $17.32 | 2026-11-01T03:59:13.180275+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will María Corina Machado enter Venezuela by October | WON | +80.92 |
 | Bitcoin Up or Down on October 25? | LOST | -19.00 |
+| Spread: Saints (-3.5) | LOST | -16.58 |
 | Will the price of Bitcoin be above $80,000 on Octobe | WON | +75.35 |
 | Spread: Club Atlético de Madrid (-3.5) | LOST | -15.88 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
@@ -127,8 +127,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Raiders (-3.5) | LOST | -19.43 |
 | Spread: Buccaneers (-3.5) | LOST | -17.22 |
 | Spread: Colts (-10.5) | WON | +38.69 |
-| Spread: Panthers (-3.5) | WON | +64.16 |
-| Patriots vs. Bills: O/U 57.5 | LOST | -16.58 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -150,7 +148,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 109 | 14% | -13% |
+| 0.15–0.20 | 110 | 15% | -6% |
 | 0.20–0.25 | 103 | 27% | +19% |
 | 0.25–0.30 | 108 | 23% | -11% |
-| 0.30–0.33 | 84 | 36% | +9% |
+| 0.30–0.33 | 85 | 35% | +8% |
