@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-25T14:18:46.704920+00:00
+# Poly underdog paper state — 2026-10-25T17:23:14.722772+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **27** ($440.57)  ·  settled **420** (99W / 321L)
-- realized P&L **$17.80**  ·  ROI **+0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-25T13:52:30.177858+00:00
+- open **28** ($458.28)  ·  settled **421** (99W / 322L)
+- realized P&L **$-1.20**  ·  ROI **-0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-25T16:53:51.625460+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -61,13 +61,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | Game Handicap: GEN (-1.5) vs LYON (+1.5) | LYON | 0.320 | $15.89 | 2026-10-26T01:00:11.162239+00:00 |
 | FC Barcelona vs. Real Madrid CF: Both Teams to Score | No | 0.260 | $18.61 | 2026-10-25T20:00:07.176659+00:00 |
-| Bitcoin Up or Down on October 25? | Down | 0.240 | $19.00 | 2026-10-25T16:00:07.225613+00:00 |
 | Next Fable Model (5.2+) released by October 31, 2026 | Yes | 0.330 | $14.66 | 2026-10-31T23:59:06.452530+00:00 |
 | Will there be no next Fable model (5.2+) release by  | No | 0.328 | $14.16 | 2026-11-01T03:59:11.717122+00:00 |
+| Will María Corina Machado enter Venezuela by October | Yes | 0.193 | $19.39 | 2026-11-01T03:59:09.229633+00:00 |
+| Will NVIDIA be the largest company in the world by m | No | 0.275 | $17.32 | 2026-11-01T03:59:13.180275+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Bitcoin Up or Down on October 25? | LOST | -19.00 |
 | Will the price of Bitcoin be above $80,000 on Octobe | WON | +75.35 |
 | Spread: Club Atlético de Madrid (-3.5) | LOST | -15.88 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
@@ -127,7 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Colts (-10.5) | WON | +38.69 |
 | Spread: Panthers (-3.5) | WON | +64.16 |
 | Patriots vs. Bills: O/U 57.5 | LOST | -16.58 |
-| San Diego Padres vs. Milwaukee Brewers: O/U 6.5 | WON | +58.12 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -150,6 +151,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 109 | 14% | -13% |
-| 0.20–0.25 | 102 | 27% | +20% |
+| 0.20–0.25 | 103 | 27% | +19% |
 | 0.25–0.30 | 108 | 23% | -11% |
 | 0.30–0.33 | 84 | 36% | +9% |
