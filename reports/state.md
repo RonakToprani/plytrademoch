@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-25T08:06:31.997942+00:00
+# Poly underdog paper state — 2026-10-25T11:12:29.707957+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **23** ($374.14)  ·  settled **420** (99W / 321L)
+- open **26** ($426.41)  ·  settled **420** (99W / 321L)
 - realized P&L **$17.80**  ·  ROI **+0.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-25T07:50:02.863207+00:00
+- last scan: 2026-10-25T10:51:07.652555+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -60,6 +60,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Saints (-3.5) | Saints | 0.300 | $16.58 | 2026-10-25T13:30:31.821320+00:00 |
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | Game Handicap: GEN (-1.5) vs LYON (+1.5) | LYON | 0.320 | $15.89 | 2026-10-26T01:00:11.162239+00:00 |
+| FC Barcelona vs. Real Madrid CF: Both Teams to Score | No | 0.260 | $18.61 | 2026-10-25T20:00:07.176659+00:00 |
+| Bitcoin Up or Down on October 25? | Down | 0.240 | $19.00 | 2026-10-25T16:00:07.225613+00:00 |
+| Next Fable Model (5.2+) released by October 31, 2026 | Yes | 0.330 | $14.66 | 2026-10-31T23:59:06.452530+00:00 |
 
 ## Settled
 | market | result | P&L |
