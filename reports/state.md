@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-26T02:40:06.885059+00:00
+# Poly underdog paper state — 2026-10-26T05:44:44.339046+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,49 +30,50 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **23** ($364.46)  ·  settled **429** (101W / 328L)
-- realized P&L **$14.20**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-26T02:28:20.106767+00:00
+- open **20** ($308.29)  ·  settled **434** (102W / 332L)
+- realized P&L **$-6.66**  ·  ROI **-0.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-26T05:29:56.361549+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
-| US x Iran ceasefire continues through October 22? | No | 0.180 | $15.23 | 2026-10-23T03:59:07.623067+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Israel x Iran ceasefire continues through October 31 | No | 0.200 | $18.47 | 2026-10-31T20:29:06.034190+00:00 |
 | Will the Bank of Canada make no change to the target | Yes | 0.167 | $10.93 | 2026-10-28T00:00:06.926713+00:00 |
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
 | Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
 | Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
-| Will Bitcoin dip to $78,000 October 19-25? | Yes | 0.325 | $16.45 | 2026-10-26T04:00:10.735250+00:00 |
-| Will Ethereum dip to $2,200 October 19-25? | Yes | 0.221 | $20.43 | 2026-10-26T04:00:07.179907+00:00 |
 | Will the Rhine River return to normal levels between | No | 0.270 | $21.08 | 2026-10-31T23:59:07.233784+00:00 |
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
 | Will Bitcoin reach $85,000 in October? | Yes | 0.310 | $16.52 | 2026-11-01T04:00:09.392544+00:00 |
 | Will Ethereum dip to $2,200 in October? | Yes | 0.300 | $16.58 | 2026-11-01T04:00:10.157815+00:00 |
-| Spread: Seahawks (-7.5) | Seahawks | 0.270 | $17.92 | 2026-10-26T00:20:21.078523+00:00 |
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | Next Fable Model (5.2+) released by October 31, 2026 | Yes | 0.330 | $14.66 | 2026-10-31T23:59:06.452530+00:00 |
 | Will there be no next Fable model (5.2+) release by  | No | 0.328 | $14.16 | 2026-11-01T03:59:11.717122+00:00 |
 | Will NVIDIA be the largest company in the world by m | No | 0.275 | $17.32 | 2026-11-01T03:59:13.180275+00:00 |
-| Will Kimi Antonelli win the 2026 F1 United States Gr | No | 0.160 | $17.20 | 2026-11-01T20:00:07.569555+00:00 |
 | Will Google have the best AI model at the end of Oct | No | 0.162 | $11.32 | 2026-10-31T16:00:11.681580+00:00 |
 | Next Astra Model (6.1+) released by October 31, 2026 | Yes | 0.166 | $12.23 | 2026-10-31T23:59:09.211806+00:00 |
+| US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
+| Spread: Cowboys (-10.5) | Cowboys | 0.310 | $16.47 | 2026-10-27T00:15:10.614456+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Kimi Antonelli win the 2026 F1 United States Gr | LOST | -17.20 |
 | Will María Corina Machado enter Venezuela by October | WON | +80.92 |
 | Bitcoin Up or Down on October 25? | LOST | -19.00 |
 | FC Barcelona vs. Real Madrid CF: Both Teams to Score | LOST | -18.61 |
 | Game Handicap: GEN (-1.5) vs LYON (+1.5) | WON | +33.77 |
 | Spread: Saints (-3.5) | LOST | -16.58 |
+| Spread: Seahawks (-7.5) | WON | +48.45 |
 | Spread: Ravens (-3.5) | LOST | -16.58 |
 | Spread: Panthers (-7.5) | LOST | -16.68 |
 | Spread: Lions (-10.5) | LOST | -18.61 |
+| Will Ethereum dip to $2,200 October 19-25? | LOST | -20.43 |
 | Will FC Barcelona vs. Real Madrid CF end in a draw? | LOST | -12.23 |
+| Will Bitcoin dip to $78,000 October 19-25? | LOST | -16.45 |
 | Will the price of Bitcoin be above $80,000 on Octobe | WON | +75.35 |
 | Spread: Club Atlético de Madrid (-3.5) | LOST | -15.88 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
@@ -91,6 +92,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,300 October 12-18? | LOST | -20.73 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -17.20 |
 | Bitcoin Up or Down on October 17? | LOST | -14.66 |
+| US x Iran ceasefire continues through October 22? | LOST | -15.23 |
 | Game Handicap: C9 (-1.5) vs FURIA Esports (+1.5) | WON | +27.23 |
 | Will Bitcoin dip to $81,000 on October 16? | WON | +82.53 |
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -16.58 |
@@ -119,11 +121,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -20.37 |
 | Will Jynxzi, Ron and Los beat the Minecraft challeng | WON | +37.34 |
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +62.19 |
-| Will Ethereum dip to $2,500 October 5-11? | WON | +52.97 |
-| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -15.89 |
-| Will Bitcoin reach $92,000 October 5-11? | LOST | -18.47 |
-| Bitcoin Up or Down on October 5? | LOST | -14.59 |
-| Will the price of Bitcoin be above $88,000 on Octobe | LOST | -15.30 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -145,7 +142,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 111 | 14% | -7% |
-| 0.20–0.25 | 103 | 27% | +19% |
-| 0.25–0.30 | 111 | 23% | -14% |
-| 0.30–0.33 | 87 | 36% | +9% |
+| 0.15–0.20 | 113 | 14% | -9% |
+| 0.20–0.25 | 104 | 27% | +18% |
+| 0.25–0.30 | 112 | 23% | -11% |
+| 0.30–0.33 | 88 | 35% | +8% |
