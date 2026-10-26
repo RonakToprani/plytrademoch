@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-26T08:48:58.243703+00:00
+# Poly underdog paper state — 2026-10-26T11:56:09.256150+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **20** ($308.29)  ·  settled **434** (102W / 332L)
+- open **22** ($338.43)  ·  settled **434** (102W / 332L)
 - realized P&L **$-6.66**  ·  ROI **-0.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-26T08:31:12.659880+00:00
+- last scan: 2026-10-26T11:32:28.981414+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -57,6 +57,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Next Astra Model (6.1+) released by October 31, 2026 | Yes | 0.166 | $12.23 | 2026-10-31T23:59:09.211806+00:00 |
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
 | Spread: Cowboys (-10.5) | Cowboys | 0.310 | $16.47 | 2026-10-27T00:15:10.614456+00:00 |
+| Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
+| Will Paris Saint-Germain FC vs. Olympique Lyonnais e | Yes | 0.170 | $14.59 | 2026-10-26T19:30:10.525833+00:00 |
 
 ## Settled
 | market | result | P&L |
