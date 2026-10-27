@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-27T00:16:23.135325+00:00
+# Poly underdog paper state — 2026-10-27T03:20:30.326904+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **21** ($323.84)  ·  settled **435** (102W / 333L)
+- open **22** ($340.37)  ·  settled **435** (102W / 333L)
 - realized P&L **$-21.25**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-27T00:06:55.978078+00:00
+- last scan: 2026-10-27T03:08:18.819058+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -58,6 +58,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
 | Spread: Cowboys (-10.5) | Cowboys | 0.310 | $16.47 | 2026-10-27T00:15:10.614456+00:00 |
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
+| Will Moonshot have the best Chinese AI model at the  | Yes | 0.229 | $16.53 | 2026-10-31T16:00:10.422572+00:00 |
 
 ## Settled
 | market | result | P&L |
