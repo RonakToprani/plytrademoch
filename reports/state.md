@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-27T03:20:30.326904+00:00
+# Poly underdog paper state — 2026-10-27T06:24:29.835010+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **22** ($340.37)  ·  settled **435** (102W / 333L)
-- realized P&L **$-21.25**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-27T03:08:18.819058+00:00
+- open **22** ($344.16)  ·  settled **436** (103W / 333L)
+- realized P&L **$15.41**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-27T06:09:40.570537+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -56,14 +56,15 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Google have the best AI model at the end of Oct | No | 0.162 | $11.32 | 2026-10-31T16:00:11.681580+00:00 |
 | Next Astra Model (6.1+) released by October 31, 2026 | Yes | 0.166 | $12.23 | 2026-10-31T23:59:09.211806+00:00 |
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
-| Spread: Cowboys (-10.5) | Cowboys | 0.310 | $16.47 | 2026-10-27T00:15:10.614456+00:00 |
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
 | Will Moonshot have the best Chinese AI model at the  | Yes | 0.229 | $16.53 | 2026-10-31T16:00:10.422572+00:00 |
+| Will commitments to the 1W public sale exceed $60M? | Yes | 0.241 | $20.26 | 2026-11-03T04:59:11.110709+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will Paris Saint-Germain FC vs. Olympique Lyonnais e | LOST | -14.59 |
+| Spread: Cowboys (-10.5) | WON | +36.66 |
 | Will Kimi Antonelli win the 2026 F1 United States Gr | LOST | -17.20 |
 | Will María Corina Machado enter Venezuela by October | WON | +80.92 |
 | Bitcoin Up or Down on October 25? | LOST | -19.00 |
@@ -122,7 +123,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | WON | +33.77 |
 | Israel military action against Lebanon on October 15 | LOST | -10.93 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -20.37 |
-| Will Jynxzi, Ron and Los beat the Minecraft challeng | WON | +37.34 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -147,4 +147,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 114 | 14% | -10% |
 | 0.20–0.25 | 104 | 27% | +18% |
 | 0.25–0.30 | 112 | 23% | -11% |
-| 0.30–0.33 | 88 | 35% | +8% |
+| 0.30–0.33 | 89 | 36% | +10% |
