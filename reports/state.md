@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-26T21:12:42.730502+00:00
+# Poly underdog paper state — 2026-10-27T00:16:23.135325+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **22** ($338.43)  ·  settled **434** (102W / 332L)
-- realized P&L **$-6.66**  ·  ROI **-0.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-26T21:05:54.692659+00:00
+- open **21** ($323.84)  ·  settled **435** (102W / 333L)
+- realized P&L **$-21.25**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-27T00:06:55.978078+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -58,11 +58,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
 | Spread: Cowboys (-10.5) | Cowboys | 0.310 | $16.47 | 2026-10-27T00:15:10.614456+00:00 |
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
-| Will Paris Saint-Germain FC vs. Olympique Lyonnais e | Yes | 0.170 | $14.59 | 2026-10-26T19:30:10.525833+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Paris Saint-Germain FC vs. Olympique Lyonnais e | LOST | -14.59 |
 | Will Kimi Antonelli win the 2026 F1 United States Gr | LOST | -17.20 |
 | Will María Corina Machado enter Venezuela by October | WON | +80.92 |
 | Bitcoin Up or Down on October 25? | LOST | -19.00 |
@@ -122,7 +122,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel military action against Lebanon on October 15 | LOST | -10.93 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -20.37 |
 | Will Jynxzi, Ron and Los beat the Minecraft challeng | WON | +37.34 |
-| Will the price of Bitcoin be above $82,000 on Octobe | WON | +62.19 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -144,7 +143,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 113 | 14% | -9% |
+| 0.15–0.20 | 114 | 14% | -10% |
 | 0.20–0.25 | 104 | 27% | +18% |
 | 0.25–0.30 | 112 | 23% | -11% |
 | 0.30–0.33 | 88 | 35% | +8% |
