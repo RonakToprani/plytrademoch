@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-28T16:25:00.045275+00:00
+# Poly underdog paper state — 2026-10-28T19:34:11.769917+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **26** ($411.29)  ·  settled **437** (103W / 334L)
-- realized P&L **$4.48**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-28T15:53:03.168430+00:00
+- open **24** ($377.57)  ·  settled **439** (103W / 336L)
+- realized P&L **$-29.24**  ·  ROI **-0.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-10-28T19:24:26.687905+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -61,12 +61,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Trump endorse John Cornyn for TX-Sen by Nov 2 2 | Yes | 0.295 | $15.49 | 2026-11-04T00:00:07.300725+00:00 |
 | 2026 Balance of Power: R Senate, D House | Yes | 0.270 | $17.92 | 2026-11-04T04:59:10.141943+00:00 |
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
-| Will the price of Ethereum be above $2,400 on Octobe | Yes | 0.190 | $17.20 | 2026-10-28T16:00:08.995033+00:00 |
-| Will the price of Bitcoin be above $82,000 on Octobe | Yes | 0.310 | $16.52 | 2026-10-28T16:00:11.006701+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.52 |
+| Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
 | Will Paris Saint-Germain FC vs. Olympique Lyonnais e | LOST | -14.59 |
 | Spread: Cowboys (-10.5) | WON | +36.66 |
 | Will Kimi Antonelli win the 2026 F1 United States Gr | LOST | -17.20 |
@@ -125,8 +125,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: 49ers (-3.5) | LOST | -17.22 |
 | Will Ethereum dip to $2,400 October 5-11? | LOST | -20.68 |
 | Map Handicap: MOUZ (-1.5) vs FURIA (+1.5) | WON | +33.77 |
-| Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | WON | +33.77 |
-| Israel military action against Lebanon on October 15 | LOST | -10.93 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -148,7 +146,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 115 | 14% | -11% |
+| 0.15–0.20 | 116 | 14% | -12% |
 | 0.20–0.25 | 104 | 27% | +18% |
 | 0.25–0.30 | 112 | 23% | -11% |
-| 0.30–0.33 | 89 | 36% | +10% |
+| 0.30–0.33 | 90 | 36% | +9% |
