@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-27T21:51:12.212636+00:00
+# Poly underdog paper state — 2026-10-28T00:59:19.326760+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **22** ($344.16)  ·  settled **436** (103W / 333L)
+- open **23** ($359.65)  ·  settled **436** (103W / 333L)
 - realized P&L **$15.41**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-27T21:45:54.190371+00:00
+- last scan: 2026-10-28T00:46:57.174800+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -59,6 +59,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
 | Will Moonshot have the best Chinese AI model at the  | Yes | 0.229 | $16.53 | 2026-10-31T16:00:10.422572+00:00 |
 | Will commitments to the 1W public sale exceed $60M? | Yes | 0.241 | $20.26 | 2026-11-03T04:59:11.110709+00:00 |
+| Will Trump endorse John Cornyn for TX-Sen by Nov 2 2 | Yes | 0.295 | $15.49 | 2026-11-04T00:00:07.300725+00:00 |
 
 ## Settled
 | market | result | P&L |
