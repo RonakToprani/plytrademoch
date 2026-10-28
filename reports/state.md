@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-28T07:08:20.979664+00:00
+# Poly underdog paper state — 2026-10-28T10:13:49.615990+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **25** ($388.50)  ·  settled **436** (103W / 333L)
+- open **27** ($422.22)  ·  settled **436** (103W / 333L)
 - realized P&L **$15.41**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-28T06:49:19.203646+00:00
+- last scan: 2026-10-28T09:50:36.405182+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -62,6 +62,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Trump endorse John Cornyn for TX-Sen by Nov 2 2 | Yes | 0.295 | $15.49 | 2026-11-04T00:00:07.300725+00:00 |
 | 2026 Balance of Power: R Senate, D House | Yes | 0.270 | $17.92 | 2026-11-04T04:59:10.141943+00:00 |
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
+| Will the price of Ethereum be above $2,400 on Octobe | Yes | 0.190 | $17.20 | 2026-10-28T16:00:08.995033+00:00 |
+| Will the price of Bitcoin be above $82,000 on Octobe | Yes | 0.310 | $16.52 | 2026-10-28T16:00:11.006701+00:00 |
 
 ## Settled
 | market | result | P&L |
