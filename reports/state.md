@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-28T13:20:39.790313+00:00
+# Poly underdog paper state — 2026-10-28T16:25:00.045275+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **27** ($422.22)  ·  settled **436** (103W / 333L)
-- realized P&L **$15.41**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-28T12:51:46.331108+00:00
+- open **26** ($411.29)  ·  settled **437** (103W / 334L)
+- realized P&L **$4.48**  ·  ROI **+0.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-28T15:53:03.168430+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -41,7 +41,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Israel x Iran ceasefire continues through October 31 | No | 0.200 | $18.47 | 2026-10-31T20:29:06.034190+00:00 |
-| Will the Bank of Canada make no change to the target | Yes | 0.167 | $10.93 | 2026-10-28T00:00:06.926713+00:00 |
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
 | Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
 | Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
@@ -89,6 +88,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
 | Will Bitcoin dip to $80,000 October 19-25? | WON | +70.07 |
 | Will the Bank of Russia decrease the key rate after  | LOST | -20.93 |
+| Will the Bank of Canada make no change to the target | LOST | -10.93 |
 | Next Astra Model (6.1+) released by October 23, 2026 | LOST | -17.64 |
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -14.59 |
@@ -127,7 +127,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: MOUZ (-1.5) vs FURIA (+1.5) | WON | +33.77 |
 | Map Handicap: TS (-1.5) vs Team Falcons (+1.5) | WON | +33.77 |
 | Israel military action against Lebanon on October 15 | LOST | -10.93 |
-| Will the price of Bitcoin be above $80,000 on Octobe | LOST | -20.37 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -149,7 +148,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 114 | 14% | -10% |
+| 0.15–0.20 | 115 | 14% | -11% |
 | 0.20–0.25 | 104 | 27% | +18% |
 | 0.25–0.30 | 112 | 23% | -11% |
 | 0.30–0.33 | 89 | 36% | +10% |
