@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-29T11:03:21.734765+00:00
+# Poly underdog paper state — 2026-10-29T14:10:36.784759+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **25** ($394.25)  ·  settled **439** (103W / 336L)
+- open **26** ($415.33)  ·  settled **439** (103W / 336L)
 - realized P&L **$-29.24**  ·  ROI **-0.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-29T10:30:36.845734+00:00
+- last scan: 2026-10-29T14:01:59.410077+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -62,6 +62,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 2026 Balance of Power: R Senate, D House | Yes | 0.270 | $17.92 | 2026-11-04T04:59:10.141943+00:00 |
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
 | Will Bitcoin dip to $78,000 October 26-November 1? | Yes | 0.310 | $16.68 | 2026-11-02T05:00:07.033511+00:00 |
+| Will Vitality Win the PGL Masters Bucharest 2026? | Yes | 0.250 | $21.08 | 2026-11-02T04:59:06.733933+00:00 |
 
 ## Settled
 | market | result | P&L |
