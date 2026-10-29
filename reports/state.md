@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-29T14:10:36.784759+00:00
+# Poly underdog paper state — 2026-10-29T17:19:11.463621+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **26** ($415.33)  ·  settled **439** (103W / 336L)
+- open **27** ($432.53)  ·  settled **439** (103W / 336L)
 - realized P&L **$-29.24**  ·  ROI **-0.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-29T14:01:59.410077+00:00
+- last scan: 2026-10-29T17:03:12.472215+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -63,6 +63,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
 | Will Bitcoin dip to $78,000 October 26-November 1? | Yes | 0.310 | $16.68 | 2026-11-02T05:00:07.033511+00:00 |
 | Will Vitality Win the PGL Masters Bucharest 2026? | Yes | 0.250 | $21.08 | 2026-11-02T04:59:06.733933+00:00 |
+| Will the price of Ethereum be above $2,400 on Octobe | Yes | 0.200 | $17.20 | 2026-10-30T16:00:09.539817+00:00 |
 
 ## Settled
 | market | result | P&L |
