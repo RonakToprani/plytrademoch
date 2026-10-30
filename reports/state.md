@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-29T17:19:11.463621+00:00
+# Poly underdog paper state — 2026-10-30T17:28:46.204947+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **27** ($432.53)  ·  settled **439** (103W / 336L)
-- realized P&L **$-29.24**  ·  ROI **-0.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-10-29T17:03:12.472215+00:00
+- open **29** ($467.99)  ·  settled **445** (107W / 338L)
+- realized P&L **$130.63**  ·  ROI **+2.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-30T17:13:30.049982+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,7 +47,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the Rhine River return to normal levels between | No | 0.270 | $21.08 | 2026-10-31T23:59:07.233784+00:00 |
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
 | Will Bitcoin reach $85,000 in October? | Yes | 0.310 | $16.52 | 2026-11-01T04:00:09.392544+00:00 |
-| Will Ethereum dip to $2,200 in October? | Yes | 0.300 | $16.58 | 2026-11-01T04:00:10.157815+00:00 |
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | Next Fable Model (5.2+) released by October 31, 2026 | Yes | 0.330 | $14.66 | 2026-10-31T23:59:06.452530+00:00 |
 | Will there be no next Fable model (5.2+) release by  | No | 0.328 | $14.16 | 2026-11-01T03:59:11.717122+00:00 |
@@ -61,13 +60,21 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Trump endorse John Cornyn for TX-Sen by Nov 2 2 | Yes | 0.295 | $15.49 | 2026-11-04T00:00:07.300725+00:00 |
 | 2026 Balance of Power: R Senate, D House | Yes | 0.270 | $17.92 | 2026-11-04T04:59:10.141943+00:00 |
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
-| Will Bitcoin dip to $78,000 October 26-November 1? | Yes | 0.310 | $16.68 | 2026-11-02T05:00:07.033511+00:00 |
-| Will Vitality Win the PGL Masters Bucharest 2026? | Yes | 0.250 | $21.08 | 2026-11-02T04:59:06.733933+00:00 |
-| Will the price of Ethereum be above $2,400 on Octobe | Yes | 0.200 | $17.20 | 2026-10-30T16:00:09.539817+00:00 |
+| Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
+| Will Solana dip to $90 in October? | Yes | 0.250 | $18.47 | 2026-11-01T04:00:07.237412+00:00 |
+| Will Vivek Ramaswamy pull the Amy Acton mother ad? | Yes | 0.248 | $18.47 | 2026-11-01T03:59:10.230278+00:00 |
+| Will Bitcoin reach $82,000 October 26-November 1? | Yes | 0.215 | $20.42 | 2026-11-02T05:00:08.850241+00:00 |
+| Will Ethereum dip to $2,000 in October? | Yes | 0.157 | $10.93 | 2026-11-01T04:00:09.768086+00:00 |
+| Will Ethereum dip to $2,100 October 26-November 1? | Yes | 0.256 | $20.10 | 2026-11-02T05:00:11.259220+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Bitcoin dip to $78,000 on October 29? | WON | +47.35 |
+| Will the price of Bitcoin be above $78,000 on Octobe | WON | +74.98 |
+| Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
+| Will Vitality Win the PGL Masters Bucharest 2026? | LOST | -21.08 |
+| Will Bitcoin dip to $78,000 October 26-November 1? | WON | +37.13 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.52 |
 | Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
 | Will Paris Saint-Germain FC vs. Olympique Lyonnais e | LOST | -14.59 |
@@ -79,6 +86,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: GEN (-1.5) vs LYON (+1.5) | WON | +33.77 |
 | Spread: Saints (-3.5) | LOST | -16.58 |
 | Spread: Seahawks (-7.5) | WON | +48.45 |
+| Will Ethereum dip to $2,200 in October? | WON | +38.69 |
 | Spread: Ravens (-3.5) | LOST | -16.58 |
 | Spread: Panthers (-7.5) | LOST | -16.68 |
 | Spread: Lions (-10.5) | LOST | -18.61 |
@@ -122,12 +130,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: VIT (-2.5) vs MOUZ (+2.5) | WON | +73.09 |
 | Will Max Verstappen win the 2026 F1 Singapore Grand  | LOST | -16.47 |
 | Spread: Cardinals (-3.5) | LOST | -19.43 |
-| Spread: Chargers (-3.5) | LOST | -18.61 |
-| Spread: Steelers (-7.5) | WON | +38.69 |
-| Spread: Ravens (-3.5) | WON | +44.28 |
-| Spread: 49ers (-3.5) | LOST | -17.22 |
-| Will Ethereum dip to $2,400 October 5-11? | LOST | -20.68 |
-| Map Handicap: MOUZ (-1.5) vs FURIA (+1.5) | WON | +33.77 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -150,6 +152,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 116 | 14% | -12% |
-| 0.20–0.25 | 104 | 27% | +18% |
-| 0.25–0.30 | 112 | 23% | -11% |
-| 0.30–0.33 | 90 | 36% | +9% |
+| 0.20–0.25 | 106 | 27% | +21% |
+| 0.25–0.30 | 114 | 24% | -10% |
+| 0.30–0.33 | 92 | 37% | +14% |
