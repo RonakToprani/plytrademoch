@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-30T17:28:46.204947+00:00
+# Poly underdog paper state — 2026-10-30T20:35:23.955158+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **29** ($467.99)  ·  settled **445** (107W / 338L)
-- realized P&L **$130.63**  ·  ROI **+2.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-30T17:13:30.049982+00:00
+- open **29** ($466.17)  ·  settled **446** (108W / 338L)
+- realized P&L **$194.40**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-30T20:14:48.191011+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -56,7 +56,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
 | Will Moonshot have the best Chinese AI model at the  | Yes | 0.229 | $16.53 | 2026-10-31T16:00:10.422572+00:00 |
-| Will commitments to the 1W public sale exceed $60M? | Yes | 0.241 | $20.26 | 2026-11-03T04:59:11.110709+00:00 |
 | Will Trump endorse John Cornyn for TX-Sen by Nov 2 2 | Yes | 0.295 | $15.49 | 2026-11-04T00:00:07.300725+00:00 |
 | 2026 Balance of Power: R Senate, D House | Yes | 0.270 | $17.92 | 2026-11-04T04:59:10.141943+00:00 |
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
@@ -66,6 +65,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $82,000 October 26-November 1? | Yes | 0.215 | $20.42 | 2026-11-02T05:00:08.850241+00:00 |
 | Will Ethereum dip to $2,000 in October? | Yes | 0.157 | $10.93 | 2026-11-01T04:00:09.768086+00:00 |
 | Will Ethereum dip to $2,100 October 26-November 1? | Yes | 0.256 | $20.10 | 2026-11-02T05:00:11.259220+00:00 |
+| Will the price of Bitcoin be above $76,000 on Octobe | No | 0.260 | $18.44 | 2026-10-31T16:00:11.136441+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -77,6 +77,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $78,000 October 26-November 1? | WON | +37.13 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.52 |
 | Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
+| Will commitments to the 1W public sale exceed $60M? | WON | +63.77 |
 | Will Paris Saint-Germain FC vs. Olympique Lyonnais e | LOST | -14.59 |
 | Spread: Cowboys (-10.5) | WON | +36.66 |
 | Will Kimi Antonelli win the 2026 F1 United States Gr | LOST | -17.20 |
@@ -129,7 +130,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | WON | +40.84 |
 | Map Handicap: VIT (-2.5) vs MOUZ (+2.5) | WON | +73.09 |
 | Will Max Verstappen win the 2026 F1 Singapore Grand  | LOST | -16.47 |
-| Spread: Cardinals (-3.5) | LOST | -19.43 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -152,6 +152,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 116 | 14% | -12% |
-| 0.20–0.25 | 106 | 27% | +21% |
+| 0.20–0.25 | 107 | 28% | +24% |
 | 0.25–0.30 | 114 | 24% | -10% |
 | 0.30–0.33 | 92 | 37% | +14% |
