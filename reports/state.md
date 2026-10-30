@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-30T20:35:23.955158+00:00
+# Poly underdog paper state — 2026-10-30T23:41:20.756596+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **29** ($466.17)  ·  settled **446** (108W / 338L)
+- open **30** ($482.05)  ·  settled **446** (108W / 338L)
 - realized P&L **$194.40**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-30T20:14:48.191011+00:00
+- last scan: 2026-10-30T23:16:02.205891+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -66,6 +66,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,000 in October? | Yes | 0.157 | $10.93 | 2026-11-01T04:00:09.768086+00:00 |
 | Will Ethereum dip to $2,100 October 26-November 1? | Yes | 0.256 | $20.10 | 2026-11-02T05:00:11.259220+00:00 |
 | Will the price of Bitcoin be above $76,000 on Octobe | No | 0.260 | $18.44 | 2026-10-31T16:00:11.136441+00:00 |
+| Will Bitcoin dip to $76,000 on October 30? | Yes | 0.173 | $15.88 | 2026-10-31T04:00:07.245133+00:00 |
 
 ## Settled
 | market | result | P&L |
