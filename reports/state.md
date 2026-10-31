@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-31T18:15:50.661201+00:00
+# Poly underdog paper state — 2026-10-31T21:22:48.791136+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **27** ($430.41)  ·  settled **449** (109W / 340L)
-- realized P&L **$205.86**  ·  ROI **+3.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-31T17:52:52.771154+00:00
+- open **25** ($402.56)  ·  settled **451** (109W / 342L)
+- realized P&L **$178.01**  ·  ROI **+2.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-31T20:54:03.484581+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,11 +50,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | Next Fable Model (5.2+) released by October 31, 2026 | Yes | 0.330 | $14.66 | 2026-10-31T23:59:06.452530+00:00 |
 | Will there be no next Fable model (5.2+) release by  | No | 0.328 | $14.16 | 2026-11-01T03:59:11.717122+00:00 |
-| Will Google have the best AI model at the end of Oct | No | 0.162 | $11.32 | 2026-10-31T16:00:11.681580+00:00 |
 | Next Astra Model (6.1+) released by October 31, 2026 | Yes | 0.166 | $12.23 | 2026-10-31T23:59:09.211806+00:00 |
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
-| Will Moonshot have the best Chinese AI model at the  | Yes | 0.229 | $16.53 | 2026-10-31T16:00:10.422572+00:00 |
 | Will Trump endorse John Cornyn for TX-Sen by Nov 2 2 | Yes | 0.295 | $15.49 | 2026-11-04T00:00:07.300725+00:00 |
 | 2026 Balance of Power: R Senate, D House | Yes | 0.270 | $17.92 | 2026-11-04T04:59:10.141943+00:00 |
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
@@ -78,8 +76,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.52 |
 | Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
 | Will commitments to the 1W public sale exceed $60M? | WON | +63.77 |
+| Will Moonshot have the best Chinese AI model at the  | LOST | -16.53 |
 | Will Paris Saint-Germain FC vs. Olympique Lyonnais e | LOST | -14.59 |
 | Spread: Cowboys (-10.5) | WON | +36.66 |
+| Will Google have the best AI model at the end of Oct | LOST | -11.32 |
 | Will Kimi Antonelli win the 2026 F1 United States Gr | LOST | -17.20 |
 | Will NVIDIA be the largest company in the world by m | WON | +45.78 |
 | Will María Corina Machado enter Venezuela by October | WON | +80.92 |
@@ -126,8 +126,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -15.89 |
 | Gemini 4.0 released by October 15, 2026? | LOST | -16.58 |
 | Spread: Bills (-3.5) | LOST | -17.22 |
-| Will Coventry City FC vs. Newcastle United FC end in | LOST | -17.92 |
-| Los Angeles Dodgers vs. Milwaukee Brewers: O/U 6.5 | LOST | -14.59 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -149,7 +147,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 117 | 14% | -13% |
-| 0.20–0.25 | 107 | 28% | +24% |
+| 0.15–0.20 | 118 | 14% | -14% |
+| 0.20–0.25 | 108 | 28% | +23% |
 | 0.25–0.30 | 116 | 24% | -8% |
 | 0.30–0.33 | 92 | 37% | +14% |
