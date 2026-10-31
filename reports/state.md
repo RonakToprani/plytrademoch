@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-31T15:12:16.276424+00:00
+# Poly underdog paper state — 2026-10-31T18:15:50.661201+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **28** ($448.85)  ·  settled **448** (109W / 339L)
-- realized P&L **$224.30**  ·  ROI **+3.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-31T14:51:47.828397+00:00
+- open **27** ($430.41)  ·  settled **449** (109W / 340L)
+- realized P&L **$205.86**  ·  ROI **+3.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-31T17:52:52.771154+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -64,12 +64,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $82,000 October 26-November 1? | Yes | 0.215 | $20.42 | 2026-11-02T05:00:08.850241+00:00 |
 | Will Ethereum dip to $2,000 in October? | Yes | 0.157 | $10.93 | 2026-11-01T04:00:09.768086+00:00 |
 | Will Ethereum dip to $2,100 October 26-November 1? | Yes | 0.256 | $20.10 | 2026-11-02T05:00:11.259220+00:00 |
-| Will the price of Bitcoin be above $76,000 on Octobe | No | 0.260 | $18.44 | 2026-10-31T16:00:11.136441+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will Bitcoin dip to $76,000 on October 30? | LOST | -15.88 |
+| Will the price of Bitcoin be above $76,000 on Octobe | LOST | -18.44 |
 | Will Bitcoin dip to $78,000 on October 29? | WON | +47.35 |
 | Will the price of Bitcoin be above $78,000 on Octobe | WON | +74.98 |
 | Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
@@ -128,7 +128,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Bills (-3.5) | LOST | -17.22 |
 | Will Coventry City FC vs. Newcastle United FC end in | LOST | -17.92 |
 | Los Angeles Dodgers vs. Milwaukee Brewers: O/U 6.5 | LOST | -14.59 |
-| Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | WON | +40.84 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -152,5 +151,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 117 | 14% | -13% |
 | 0.20–0.25 | 107 | 28% | +24% |
-| 0.25–0.30 | 115 | 24% | -7% |
+| 0.25–0.30 | 116 | 24% | -8% |
 | 0.30–0.33 | 92 | 37% | +14% |
