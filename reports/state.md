@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-10-31T02:47:38.785952+00:00
+# Poly underdog paper state — 2026-10-31T05:53:49.882930+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **30** ($482.05)  ·  settled **446** (108W / 338L)
-- realized P&L **$194.40**  ·  ROI **+2.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-31T02:17:07.606664+00:00
+- open **28** ($448.85)  ·  settled **448** (109W / 339L)
+- realized P&L **$224.30**  ·  ROI **+3.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-10-31T05:18:11.241666+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,7 +50,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | Next Fable Model (5.2+) released by October 31, 2026 | Yes | 0.330 | $14.66 | 2026-10-31T23:59:06.452530+00:00 |
 | Will there be no next Fable model (5.2+) release by  | No | 0.328 | $14.16 | 2026-11-01T03:59:11.717122+00:00 |
-| Will NVIDIA be the largest company in the world by m | No | 0.275 | $17.32 | 2026-11-01T03:59:13.180275+00:00 |
 | Will Google have the best AI model at the end of Oct | No | 0.162 | $11.32 | 2026-10-31T16:00:11.681580+00:00 |
 | Next Astra Model (6.1+) released by October 31, 2026 | Yes | 0.166 | $12.23 | 2026-10-31T23:59:09.211806+00:00 |
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
@@ -66,11 +65,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,000 in October? | Yes | 0.157 | $10.93 | 2026-11-01T04:00:09.768086+00:00 |
 | Will Ethereum dip to $2,100 October 26-November 1? | Yes | 0.256 | $20.10 | 2026-11-02T05:00:11.259220+00:00 |
 | Will the price of Bitcoin be above $76,000 on Octobe | No | 0.260 | $18.44 | 2026-10-31T16:00:11.136441+00:00 |
-| Will Bitcoin dip to $76,000 on October 30? | Yes | 0.173 | $15.88 | 2026-10-31T04:00:07.245133+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Bitcoin dip to $76,000 on October 30? | LOST | -15.88 |
 | Will Bitcoin dip to $78,000 on October 29? | WON | +47.35 |
 | Will the price of Bitcoin be above $78,000 on Octobe | WON | +74.98 |
 | Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
@@ -82,6 +81,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Paris Saint-Germain FC vs. Olympique Lyonnais e | LOST | -14.59 |
 | Spread: Cowboys (-10.5) | WON | +36.66 |
 | Will Kimi Antonelli win the 2026 F1 United States Gr | LOST | -17.20 |
+| Will NVIDIA be the largest company in the world by m | WON | +45.78 |
 | Will María Corina Machado enter Venezuela by October | WON | +80.92 |
 | Bitcoin Up or Down on October 25? | LOST | -19.00 |
 | FC Barcelona vs. Real Madrid CF: Both Teams to Score | LOST | -18.61 |
@@ -129,8 +129,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Coventry City FC vs. Newcastle United FC end in | LOST | -17.92 |
 | Los Angeles Dodgers vs. Milwaukee Brewers: O/U 6.5 | LOST | -14.59 |
 | Game Handicap: KT (-1.5) vs Team Vitality (+1.5) | WON | +40.84 |
-| Map Handicap: VIT (-2.5) vs MOUZ (+2.5) | WON | +73.09 |
-| Will Max Verstappen win the 2026 F1 Singapore Grand  | LOST | -16.47 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -152,7 +150,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 116 | 14% | -12% |
+| 0.15–0.20 | 117 | 14% | -13% |
 | 0.20–0.25 | 107 | 28% | +24% |
-| 0.25–0.30 | 114 | 24% | -10% |
+| 0.25–0.30 | 115 | 24% | -7% |
 | 0.30–0.33 | 92 | 37% | +14% |
