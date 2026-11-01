@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-01T19:06:37.627204+00:00
+# Poly underdog paper state — 2026-11-01T22:12:52.493079+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **17** ($290.78)  ·  settled **465** (110W / 355L)
+- open **18** ($309.78)  ·  settled **465** (110W / 355L)
 - realized P&L **$44.29**  ·  ROI **+0.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-01T18:32:45.073488+00:00
+- last scan: 2026-11-01T22:04:02.135970+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -54,6 +54,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Rams (-14.5) | Rams | 0.250 | $19.43 | 2026-11-01T21:05:09.915170+00:00 |
 | Spread: Commanders (-17.5) | Commanders | 0.180 | $15.88 | 2026-11-02T01:20:09.436317+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
+| Will Charles Leclerc win the 2026 F1 Mexican Grand P | Yes | 0.260 | $19.00 | 2026-11-08T20:00:07.011697+00:00 |
 
 ## Settled
 | market | result | P&L |
