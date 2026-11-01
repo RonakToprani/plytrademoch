@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-01T12:54:29.647182+00:00
+# Poly underdog paper state — 2026-11-01T16:00:00.308617+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **20** ($342.19)  ·  settled **461** (110W / 351L)
-- realized P&L **$111.58**  ·  ROI **+1.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-01T12:30:17.833276+00:00
+- open **20** ($339.60)  ·  settled **462** (110W / 352L)
+- realized P&L **$93.11**  ·  ROI **+1.3%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-01T15:31:35.936912+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,7 +40,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
-| Israel x Iran ceasefire continues through October 31 | No | 0.200 | $18.47 | 2026-10-31T20:29:06.034190+00:00 |
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
@@ -57,6 +56,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Ethereum be above $2,300 on Novemb | Yes | 0.170 | $12.62 | 2026-11-01T17:00:09.523402+00:00 |
 | Ethereum Up or Down on November 1? | Down | 0.190 | $17.20 | 2026-11-01T17:00:09.268804+00:00 |
 | Bitcoin Up or Down on November 1? | Down | 0.260 | $19.00 | 2026-11-01T17:00:10.891742+00:00 |
+| Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -107,6 +107,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $80,000 October 19-25? | WON | +70.07 |
 | Will the Bank of Russia decrease the key rate after  | LOST | -20.93 |
 | Will the Bank of Canada make no change to the target | LOST | -10.93 |
+| Israel x Iran ceasefire continues through October 31 | LOST | -18.47 |
 | Next Astra Model (6.1+) released by October 23, 2026 | LOST | -17.64 |
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -14.59 |
@@ -120,7 +121,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -17.20 |
 | Bitcoin Up or Down on October 17? | LOST | -14.66 |
 | US x Iran ceasefire continues through October 22? | LOST | -15.23 |
-| Game Handicap: C9 (-1.5) vs FURIA Esports (+1.5) | WON | +27.23 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -143,6 +143,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 123 | 13% | -17% |
-| 0.20–0.25 | 109 | 28% | +22% |
+| 0.20–0.25 | 110 | 27% | +20% |
 | 0.25–0.30 | 117 | 25% | -5% |
 | 0.30–0.33 | 95 | 36% | +10% |
