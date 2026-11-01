@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-01T00:30:14.110018+00:00
+# Poly underdog paper state — 2026-11-01T03:36:51.622919+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **25** ($402.56)  ·  settled **451** (109W / 342L)
-- realized P&L **$178.01**  ·  ROI **+2.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-10-31T23:55:17.020961+00:00
+- open **24** ($381.48)  ·  settled **452** (110W / 342L)
+- realized P&L **$235.00**  ·  ROI **+3.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-01T03:26:38.726298+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -44,7 +44,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | NATO x Russia military clash by October 31, 2026? | Yes | 0.160 | $10.93 | 2026-11-01T03:59:11.157267+00:00 |
 | Iran full airspace closure by October 31, 2026? | Yes | 0.196 | $10.93 | 2026-11-01T03:59:10.963744+00:00 |
 | Israeli airspace closed by October 31, 2026? | Yes | 0.181 | $14.59 | 2026-11-01T03:59:10.544839+00:00 |
-| Will the Rhine River return to normal levels between | No | 0.270 | $21.08 | 2026-10-31T23:59:07.233784+00:00 |
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
 | Will Bitcoin reach $85,000 in October? | Yes | 0.310 | $16.52 | 2026-11-01T04:00:09.392544+00:00 |
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
@@ -89,6 +88,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Saints (-3.5) | LOST | -16.58 |
 | Spread: Seahawks (-7.5) | WON | +48.45 |
 | Will Ethereum dip to $2,200 in October? | WON | +38.69 |
+| Will the Rhine River return to normal levels between | WON | +56.99 |
 | Spread: Ravens (-3.5) | LOST | -16.58 |
 | Spread: Panthers (-7.5) | LOST | -16.68 |
 | Spread: Lions (-10.5) | LOST | -18.61 |
@@ -125,7 +125,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $80,000 on October 14? | LOST | -15.62 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -15.89 |
 | Gemini 4.0 released by October 15, 2026? | LOST | -16.58 |
-| Spread: Bills (-3.5) | LOST | -17.22 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -149,5 +148,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 118 | 14% | -14% |
 | 0.20–0.25 | 108 | 28% | +23% |
-| 0.25–0.30 | 116 | 24% | -8% |
+| 0.25–0.30 | 117 | 25% | -5% |
 | 0.30–0.33 | 92 | 37% | +14% |
