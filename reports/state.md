@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-01T06:43:36.424171+00:00
+# Poly underdog paper state — 2026-11-01T09:48:59.333501+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **19** ($315.23)  ·  settled **459** (110W / 349L)
+- open **22** ($364.05)  ·  settled **459** (110W / 349L)
 - realized P&L **$133.44**  ·  ROI **+1.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-01T06:27:57.132633+00:00
+- last scan: 2026-11-01T09:29:11.785931+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -56,6 +56,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,100 October 26-November 1? | Yes | 0.256 | $20.10 | 2026-11-02T05:00:11.259220+00:00 |
 | Spread: Rams (-14.5) | Rams | 0.250 | $19.43 | 2026-11-01T21:05:09.915170+00:00 |
 | Spread: Commanders (-17.5) | Commanders | 0.180 | $15.88 | 2026-11-02T01:20:09.436317+00:00 |
+| Will the price of Ethereum be above $2,300 on Novemb | Yes | 0.170 | $12.62 | 2026-11-01T17:00:09.523402+00:00 |
+| Ethereum Up or Down on November 1? | Down | 0.190 | $17.20 | 2026-11-01T17:00:09.268804+00:00 |
+| Bitcoin Up or Down on November 1? | Down | 0.260 | $19.00 | 2026-11-01T17:00:10.891742+00:00 |
 
 ## Settled
 | market | result | P&L |
