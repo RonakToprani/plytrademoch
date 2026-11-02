@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-01T22:12:52.493079+00:00
+# Poly underdog paper state — 2026-11-02T01:17:57.042914+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **18** ($309.78)  ·  settled **465** (110W / 355L)
-- realized P&L **$44.29**  ·  ROI **+0.6%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-01T22:04:02.135970+00:00
+- open **18** ($311.43)  ·  settled **466** (111W / 355L)
+- realized P&L **$102.58**  ·  ROI **+1.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-02T01:05:06.877350+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -51,10 +51,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Vivek Ramaswamy pull the Amy Acton mother ad? | Yes | 0.248 | $18.47 | 2026-11-01T03:59:10.230278+00:00 |
 | Will Bitcoin reach $82,000 October 26-November 1? | Yes | 0.215 | $20.42 | 2026-11-02T05:00:08.850241+00:00 |
 | Will Ethereum dip to $2,100 October 26-November 1? | Yes | 0.256 | $20.10 | 2026-11-02T05:00:11.259220+00:00 |
-| Spread: Rams (-14.5) | Rams | 0.250 | $19.43 | 2026-11-01T21:05:09.915170+00:00 |
 | Spread: Commanders (-17.5) | Commanders | 0.180 | $15.88 | 2026-11-02T01:20:09.436317+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
 | Will Charles Leclerc win the 2026 F1 Mexican Grand P | Yes | 0.260 | $19.00 | 2026-11-08T20:00:07.011697+00:00 |
+| Will the price of Ethereum be above $2,300 on Novemb | Yes | 0.238 | $21.08 | 2026-11-02T17:00:08.882534+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -62,6 +62,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on November 1? | LOST | -19.00 |
 | Ethereum Up or Down on November 1? | LOST | -17.20 |
 | Will the price of Ethereum be above $2,300 on Novemb | LOST | -12.62 |
+| Spread: Rams (-14.5) | WON | +58.29 |
 | Will Bitcoin dip to $76,000 on October 30? | LOST | -15.88 |
 | Will the price of Bitcoin be above $76,000 on Octobe | LOST | -18.44 |
 | Will Ethereum dip to $2,000 in October? | LOST | -10.93 |
@@ -118,7 +119,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Rams (-21.5) | LOST | -20.42 |
 | Spread: Browns (-3.5) | LOST | -18.61 |
 | Spread: Eagles (-3.5) | LOST | -18.61 |
-| Will Ethereum dip to $2,300 October 12-18? | LOST | -20.73 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -142,5 +142,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 125 | 13% | -19% |
 | 0.20–0.25 | 110 | 27% | +20% |
-| 0.25–0.30 | 118 | 25% | -6% |
+| 0.25–0.30 | 119 | 25% | -3% |
 | 0.30–0.33 | 95 | 36% | +10% |
