@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-02T13:33:52.706261+00:00
+# Poly underdog paper state — 2026-11-02T16:38:29.829520+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,15 +30,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($271.50)  ·  settled **470** (111W / 359L)
-- realized P&L **$27.18**  ·  ROI **+0.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-02T13:10:03.176372+00:00
+- open **14** ($240.39)  ·  settled **472** (111W / 361L)
+- realized P&L **$-3.93**  ·  ROI **-0.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-02T16:11:22.758461+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
 |---|---|---|---|---|
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
-| Saudi Arabia military action against Yemen on Octobe | No | 0.284 | $14.59 | 2026-10-09T03:59:07.205108+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
 | US-Iran ceasefire continues through the midterms? | No | 0.210 | $19.43 | 2026-11-04T04:59:06.574561+00:00 |
@@ -52,11 +51,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
 | Will the price of Ethereum be above $2,300 on Novemb | Yes | 0.238 | $21.08 | 2026-11-02T17:00:08.882534+00:00 |
 | Will the price of Ethereum be above $2,400 on Novemb | Yes | 0.225 | $18.95 | 2026-11-03T17:00:10.441074+00:00 |
-| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | Team Falcons | 0.310 | $16.52 | 2026-11-02T15:30:10.376744+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -16.52 |
 | Will Charles Leclerc win the 2026 F1 Mexican Grand P | LOST | -19.00 |
 | Bitcoin Up or Down on November 1? | LOST | -19.00 |
 | Ethereum Up or Down on November 1? | LOST | -17.20 |
@@ -116,7 +115,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -14.59 |
 | Will "Grand Theft Auto VI Launch Trailer" get betwee | LOST | -16.52 |
-| Next Fable Model (5.2+) released by October 24, 2026 | WON | +27.23 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -140,5 +138,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 126 | 13% | -19% |
 | 0.20–0.25 | 111 | 27% | +19% |
-| 0.25–0.30 | 121 | 25% | -5% |
-| 0.30–0.33 | 95 | 36% | +10% |
+| 0.25–0.30 | 122 | 25% | -6% |
+| 0.30–0.33 | 96 | 35% | +9% |
