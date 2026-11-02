@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-02T16:38:29.829520+00:00
+# Poly underdog paper state — 2026-11-02T19:43:33.841968+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($240.39)  ·  settled **472** (111W / 361L)
-- realized P&L **$-3.93**  ·  ROI **-0.1%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-02T16:11:22.758461+00:00
+- open **13** ($219.31)  ·  settled **473** (111W / 362L)
+- realized P&L **$-25.01**  ·  ROI **-0.4%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-11-02T19:12:30.623649+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -49,13 +49,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
 | Will Vivek Ramaswamy pull the Amy Acton mother ad? | Yes | 0.248 | $18.47 | 2026-11-01T03:59:10.230278+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
-| Will the price of Ethereum be above $2,300 on Novemb | Yes | 0.238 | $21.08 | 2026-11-02T17:00:08.882534+00:00 |
 | Will the price of Ethereum be above $2,400 on Novemb | Yes | 0.225 | $18.95 | 2026-11-03T17:00:10.441074+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -16.52 |
+| Will the price of Ethereum be above $2,300 on Novemb | LOST | -21.08 |
 | Will Charles Leclerc win the 2026 F1 Mexican Grand P | LOST | -19.00 |
 | Bitcoin Up or Down on November 1? | LOST | -19.00 |
 | Ethereum Up or Down on November 1? | LOST | -17.20 |
@@ -114,7 +114,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Next Astra Model (6.1+) released by October 23, 2026 | LOST | -17.64 |
 | Game Handicap: KC (-1.5) vs MVK Esports (+1.5) | LOST | -20.26 |
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -14.59 |
-| Will "Grand Theft Auto VI Launch Trailer" get betwee | LOST | -16.52 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,6 +136,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 126 | 13% | -19% |
-| 0.20–0.25 | 111 | 27% | +19% |
+| 0.20–0.25 | 112 | 27% | +18% |
 | 0.25–0.30 | 122 | 25% | -6% |
 | 0.30–0.33 | 96 | 35% | +9% |
