@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-02T04:21:40.337893+00:00
+# Poly underdog paper state — 2026-11-02T07:23:37.896094+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **17** ($292.43)  ·  settled **467** (111W / 356L)
-- realized P&L **$83.58**  ·  ROI **+1.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-02T04:06:12.984153+00:00
+- open **16** ($271.50)  ·  settled **470** (111W / 359L)
+- realized P&L **$27.18**  ·  ROI **+0.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-02T07:07:46.026327+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -49,11 +49,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
 | Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
 | Will Vivek Ramaswamy pull the Amy Acton mother ad? | Yes | 0.248 | $18.47 | 2026-11-01T03:59:10.230278+00:00 |
-| Will Bitcoin reach $82,000 October 26-November 1? | Yes | 0.215 | $20.42 | 2026-11-02T05:00:08.850241+00:00 |
-| Will Ethereum dip to $2,100 October 26-November 1? | Yes | 0.256 | $20.10 | 2026-11-02T05:00:11.259220+00:00 |
-| Spread: Commanders (-17.5) | Commanders | 0.180 | $15.88 | 2026-11-02T01:20:09.436317+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
 | Will the price of Ethereum be above $2,300 on Novemb | Yes | 0.238 | $21.08 | 2026-11-02T17:00:08.882534+00:00 |
+| Will the price of Ethereum be above $2,400 on Novemb | Yes | 0.225 | $18.95 | 2026-11-03T17:00:10.441074+00:00 |
+| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | Team Falcons | 0.310 | $16.52 | 2026-11-02T15:30:10.376744+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -62,10 +61,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Bitcoin Up or Down on November 1? | LOST | -19.00 |
 | Ethereum Up or Down on November 1? | LOST | -17.20 |
 | Will the price of Ethereum be above $2,300 on Novemb | LOST | -12.62 |
+| Spread: Commanders (-17.5) | LOST | -15.88 |
 | Spread: Rams (-14.5) | WON | +58.29 |
 | Will Bitcoin dip to $76,000 on October 30? | LOST | -15.88 |
 | Will the price of Bitcoin be above $76,000 on Octobe | LOST | -18.44 |
+| Will Ethereum dip to $2,100 October 26-November 1? | LOST | -20.10 |
 | Will Ethereum dip to $2,000 in October? | LOST | -10.93 |
+| Will Bitcoin reach $82,000 October 26-November 1? | LOST | -20.42 |
 | Will Bitcoin dip to $78,000 on October 29? | WON | +47.35 |
 | Will the price of Bitcoin be above $78,000 on Octobe | WON | +74.98 |
 | Will Solana dip to $90 in October? | LOST | -18.47 |
@@ -115,9 +117,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $80,000 October 12-18? | LOST | -14.59 |
 | Will "Grand Theft Auto VI Launch Trailer" get betwee | LOST | -16.52 |
 | Next Fable Model (5.2+) released by October 24, 2026 | WON | +27.23 |
-| Spread: Chiefs (-3.5) | LOST | -13.41 |
-| Spread: Rams (-21.5) | LOST | -20.42 |
-| Spread: Browns (-3.5) | LOST | -18.61 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -139,7 +138,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 125 | 13% | -19% |
-| 0.20–0.25 | 110 | 27% | +20% |
-| 0.25–0.30 | 120 | 25% | -4% |
+| 0.15–0.20 | 126 | 13% | -19% |
+| 0.20–0.25 | 111 | 27% | +19% |
+| 0.25–0.30 | 121 | 25% | -5% |
 | 0.30–0.33 | 95 | 36% | +10% |
