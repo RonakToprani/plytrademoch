@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-03T17:25:57.282282+00:00
+# Poly underdog paper state — 2026-11-03T20:33:32.516129+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **17** ($289.35)  ·  settled **476** (112W / 364L)
-- realized P&L **$14.12**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-03T16:51:25.745815+00:00
+- open **15** ($250.97)  ·  settled **478** (112W / 366L)
+- realized P&L **$-24.26**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
+- last scan: 2026-11-03T20:22:51.887166+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -47,8 +47,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
 | Will Vivek Ramaswamy pull the Amy Acton mother ad? | Yes | 0.248 | $18.47 | 2026-11-01T03:59:10.230278+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
-| Will the price of Ethereum be above $2,400 on Novemb | Yes | 0.225 | $18.95 | 2026-11-03T17:00:10.441074+00:00 |
-| Will the price of Bitcoin be above $76,000 on Novemb | No | 0.205 | $19.43 | 2026-11-03T17:00:09.208118+00:00 |
 | Game Handicap: T1 (-2.5) vs Karmine Corp (+2.5) | T1 | 0.310 | $16.47 | 2026-11-07T04:00:09.982302+00:00 |
 | Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | No | 0.313 | $19.00 | 2026-11-05T17:30:10.933265+00:00 |
 | Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
@@ -58,8 +56,10 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will the price of Bitcoin be above $76,000 on Novemb | LOST | -19.43 |
 | Will Bitcoin dip to $76,000 on November 2? | LOST | -18.47 |
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -16.52 |
+| Will the price of Ethereum be above $2,400 on Novemb | LOST | -18.95 |
 | Will the price of Ethereum be above $2,300 on Novemb | LOST | -21.08 |
 | Will Charles Leclerc win the 2026 F1 Mexican Grand P | LOST | -19.00 |
 | Bitcoin Up or Down on November 1? | LOST | -19.00 |
@@ -116,8 +116,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
 | Will Bitcoin dip to $80,000 October 19-25? | WON | +70.07 |
 | Will the Bank of Russia decrease the key rate after  | LOST | -20.93 |
-| Will the Bank of Canada make no change to the target | LOST | -10.93 |
-| Israel x Iran ceasefire continues through October 31 | LOST | -18.47 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -140,6 +138,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 127 | 13% | -20% |
-| 0.20–0.25 | 113 | 27% | +21% |
+| 0.20–0.25 | 115 | 27% | +19% |
 | 0.25–0.30 | 123 | 24% | -6% |
 | 0.30–0.33 | 96 | 35% | +9% |
