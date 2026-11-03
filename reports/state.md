@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-03T20:33:32.516129+00:00
+# Poly underdog paper state — 2026-11-03T23:39:34.071899+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **15** ($250.97)  ·  settled **478** (112W / 366L)
-- realized P&L **$-24.26**  ·  ROI **-0.3%** (backtest exp ~+20.3%)  ·  win **23%** (exp ~29.6%)
-- last scan: 2026-11-03T20:22:51.887166+00:00
+- open **14** ($237.56)  ·  settled **479** (113W / 366L)
+- realized P&L **$2.97**  ·  ROI **+0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-03T23:24:10.526868+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -51,11 +51,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | No | 0.313 | $19.00 | 2026-11-05T17:30:10.933265+00:00 |
 | Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
-| Spread: Paris Saint-Germain FC (-1.5) | Paris Saint-Germain FC | 0.330 | $13.41 | 2026-11-03T20:00:09.725239+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Spread: Paris Saint-Germain FC (-1.5) | WON | +27.23 |
 | Will the price of Bitcoin be above $76,000 on Novemb | LOST | -19.43 |
 | Will Bitcoin dip to $76,000 on November 2? | LOST | -18.47 |
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -16.52 |
@@ -115,7 +115,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
 | Will Bitcoin dip to $80,000 October 19-25? | WON | +70.07 |
-| Will the Bank of Russia decrease the key rate after  | LOST | -20.93 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -140,4 +139,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 127 | 13% | -20% |
 | 0.20–0.25 | 115 | 27% | +19% |
 | 0.25–0.30 | 123 | 24% | -6% |
-| 0.30–0.33 | 96 | 35% | +9% |
+| 0.30–0.33 | 97 | 36% | +11% |
