@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-03T11:12:45.957351+00:00
+# Poly underdog paper state — 2026-11-03T14:19:47.606976+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($275.94)  ·  settled **476** (112W / 364L)
+- open **17** ($289.35)  ·  settled **476** (112W / 364L)
 - realized P&L **$14.12**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-03T10:48:44.301672+00:00
+- last scan: 2026-11-03T13:50:14.778635+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -53,6 +53,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | No | 0.313 | $19.00 | 2026-11-05T17:30:10.933265+00:00 |
 | Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
+| Spread: Paris Saint-Germain FC (-1.5) | Paris Saint-Germain FC | 0.330 | $13.41 | 2026-11-03T20:00:09.725239+00:00 |
 
 ## Settled
 | market | result | P&L |
