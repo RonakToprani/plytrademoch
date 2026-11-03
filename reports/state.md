@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-03T08:06:44.900350+00:00
+# Poly underdog paper state — 2026-11-03T11:12:45.957351+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($220.29)  ·  settled **476** (112W / 364L)
+- open **16** ($275.94)  ·  settled **476** (112W / 364L)
 - realized P&L **$14.12**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-03T07:47:25.515790+00:00
+- last scan: 2026-11-03T10:48:44.301672+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,6 +50,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Ethereum be above $2,400 on Novemb | Yes | 0.225 | $18.95 | 2026-11-03T17:00:10.441074+00:00 |
 | Will the price of Bitcoin be above $76,000 on Novemb | No | 0.205 | $19.43 | 2026-11-03T17:00:09.208118+00:00 |
 | Game Handicap: T1 (-2.5) vs Karmine Corp (+2.5) | T1 | 0.310 | $16.47 | 2026-11-07T04:00:09.982302+00:00 |
+| Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | No | 0.313 | $19.00 | 2026-11-05T17:30:10.933265+00:00 |
+| Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
+| Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
 
 ## Settled
 | market | result | P&L |
