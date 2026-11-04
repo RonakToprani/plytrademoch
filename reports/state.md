@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-04T12:02:16.376386+00:00
+# Poly underdog paper state — 2026-11-04T15:08:40.751633+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($267.01)  ·  settled **479** (113W / 366L)
-- realized P&L **$2.97**  ·  ROI **+0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-04T11:28:20.692061+00:00
+- open **15** ($249.79)  ·  settled **480** (113W / 367L)
+- realized P&L **$-14.25**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-04T14:59:41.966082+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -52,11 +52,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
 | Will the price of Bitcoin be above $78,000 on Novemb | Yes | 0.170 | $12.23 | 2026-11-04T17:00:07.081498+00:00 |
-| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | Team Falcons | 0.280 | $17.22 | 2026-11-04T16:15:10.064066+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -17.22 |
 | Spread: Paris Saint-Germain FC (-1.5) | WON | +27.23 |
 | Will the price of Bitcoin be above $76,000 on Novemb | LOST | -19.43 |
 | Will Bitcoin dip to $76,000 on November 2? | LOST | -18.47 |
@@ -116,7 +116,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | NATO x Russia military clash by October 31, 2026? | LOST | -10.93 |
 | Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
 | Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
-| Will Bitcoin dip to $80,000 October 19-25? | WON | +70.07 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -140,5 +139,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 127 | 13% | -20% |
 | 0.20–0.25 | 115 | 27% | +19% |
-| 0.25–0.30 | 123 | 24% | -6% |
+| 0.25–0.30 | 124 | 24% | -7% |
 | 0.30–0.33 | 97 | 36% | +11% |
