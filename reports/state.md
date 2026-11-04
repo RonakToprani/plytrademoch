@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-04T02:44:25.152492+00:00
+# Poly underdog paper state — 2026-11-04T05:50:07.411922+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($237.56)  ·  settled **479** (113W / 366L)
+- open **15** ($249.79)  ·  settled **479** (113W / 366L)
 - realized P&L **$2.97**  ·  ROI **+0.0%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-04T02:25:15.404079+00:00
+- last scan: 2026-11-04T05:26:19.149337+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -51,6 +51,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | No | 0.313 | $19.00 | 2026-11-05T17:30:10.933265+00:00 |
 | Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
+| Will the price of Bitcoin be above $78,000 on Novemb | Yes | 0.170 | $12.23 | 2026-11-04T17:00:07.081498+00:00 |
 
 ## Settled
 | market | result | P&L |
