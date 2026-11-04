@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-04T15:08:40.751633+00:00
+# Poly underdog paper state — 2026-11-04T18:18:46.057113+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **15** ($249.79)  ·  settled **480** (113W / 367L)
-- realized P&L **$-14.25**  ·  ROI **-0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-04T14:59:41.966082+00:00
+- open **15** ($257.51)  ·  settled **482** (114W / 368L)
+- realized P&L **$27.54**  ·  ROI **+0.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-04T18:01:02.043299+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,7 +42,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
-| 2026 Balance of Power: R Senate, D House | Yes | 0.270 | $17.92 | 2026-11-04T04:59:10.141943+00:00 |
 | Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
 | Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
 | Will Vivek Ramaswamy pull the Amy Acton mother ad? | Yes | 0.248 | $18.47 | 2026-11-01T03:59:10.230278+00:00 |
@@ -51,12 +50,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | No | 0.313 | $19.00 | 2026-11-05T17:30:10.933265+00:00 |
 | Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
-| Will the price of Bitcoin be above $78,000 on Novemb | Yes | 0.170 | $12.23 | 2026-11-04T17:00:07.081498+00:00 |
+| Will the price of Ethereum be above $2,400 on Novemb | No | 0.275 | $17.04 | 2026-11-05T17:00:11.069367+00:00 |
+| Will Ethereum reach $2,600 November 2-8? | Yes | 0.246 | $20.83 | 2026-11-09T05:00:11.929148+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -17.22 |
+| Will the price of Bitcoin be above $78,000 on Novemb | WON | +59.71 |
 | Spread: Paris Saint-Germain FC (-1.5) | WON | +27.23 |
 | Will the price of Bitcoin be above $76,000 on Novemb | LOST | -19.43 |
 | Will Bitcoin dip to $76,000 on November 2? | LOST | -18.47 |
@@ -82,6 +83,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $78,000 October 26-November 1? | WON | +37.13 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.52 |
 | Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
+| 2026 Balance of Power: R Senate, D House | LOST | -17.92 |
 | Will Trump endorse John Cornyn for TX-Sen by Nov 2 2 | LOST | -15.49 |
 | Will commitments to the 1W public sale exceed $60M? | WON | +63.77 |
 | Will Moonshot have the best Chinese AI model at the  | LOST | -16.53 |
@@ -114,8 +116,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israeli airspace closed by October 31, 2026? | LOST | -14.59 |
 | Iran full airspace closure by October 31, 2026? | LOST | -10.93 |
 | NATO x Russia military clash by October 31, 2026? | LOST | -10.93 |
-| Will the price of Bitcoin be above $80,000 on Octobe | LOST | -10.93 |
-| Will the price of Bitcoin be above $82,000 on Octobe | WON | +71.63 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,7 +137,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 127 | 13% | -20% |
+| 0.15–0.20 | 128 | 13% | -16% |
 | 0.20–0.25 | 115 | 27% | +19% |
-| 0.25–0.30 | 124 | 24% | -7% |
+| 0.25–0.30 | 125 | 24% | -8% |
 | 0.30–0.33 | 97 | 36% | +11% |
