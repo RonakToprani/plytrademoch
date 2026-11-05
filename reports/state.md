@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-04T21:28:37.066881+00:00
+# Poly underdog paper state — 2026-11-05T00:38:28.748739+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **15** ($257.51)  ·  settled **482** (114W / 368L)
-- realized P&L **$27.54**  ·  ROI **+0.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-04T21:02:09.185007+00:00
+- open **15** ($265.32)  ·  settled **483** (114W / 369L)
+- realized P&L **$16.61**  ·  ROI **+0.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-05T00:03:27.796910+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -42,7 +42,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
 | US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
-| Will Trump speak to Ahmed al-Sharaa by October 31? | Yes | 0.233 | $10.93 | 2026-11-01T03:59:09.010687+00:00 |
 | Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
 | Will Vivek Ramaswamy pull the Amy Acton mother ad? | Yes | 0.248 | $18.47 | 2026-11-01T03:59:10.230278+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
@@ -52,6 +51,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
 | Will the price of Ethereum be above $2,400 on Novemb | No | 0.275 | $17.04 | 2026-11-05T17:00:11.069367+00:00 |
 | Will Ethereum reach $2,600 November 2-8? | Yes | 0.246 | $20.83 | 2026-11-09T05:00:11.929148+00:00 |
+| Will Bitcoin reach $84,000 November 2-8? | Yes | 0.252 | $18.74 | 2026-11-09T05:00:10.500092+00:00 |
 
 ## Settled
 | market | result | P&L |
@@ -83,6 +83,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin dip to $78,000 October 26-November 1? | WON | +37.13 |
 | Will the price of Bitcoin be above $82,000 on Octobe | LOST | -16.52 |
 | Will the price of Ethereum be above $2,400 on Octobe | LOST | -17.20 |
+| Will Trump speak to Ahmed al-Sharaa by October 31? | LOST | -10.93 |
 | 2026 Balance of Power: R Senate, D House | LOST | -17.92 |
 | Will Trump endorse John Cornyn for TX-Sen by Nov 2 2 | LOST | -15.49 |
 | Will commitments to the 1W public sale exceed $60M? | WON | +63.77 |
@@ -115,7 +116,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Club Atlético de Madrid (-3.5) | LOST | -15.88 |
 | Israeli airspace closed by October 31, 2026? | LOST | -14.59 |
 | Iran full airspace closure by October 31, 2026? | LOST | -10.93 |
-| NATO x Russia military clash by October 31, 2026? | LOST | -10.93 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -138,6 +138,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 128 | 13% | -16% |
-| 0.20–0.25 | 115 | 27% | +19% |
+| 0.20–0.25 | 116 | 27% | +18% |
 | 0.25–0.30 | 125 | 24% | -8% |
 | 0.30–0.33 | 97 | 36% | +11% |
