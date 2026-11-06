@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-06T01:42:44.530581+00:00
+# Poly underdog paper state — 2026-11-06T04:49:46.999836+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **17** ($301.60)  ·  settled **486** (116W / 370L)
-- realized P&L **$106.33**  ·  ROI **+1.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-06T01:13:33.911092+00:00
+- open **17** ($293.92)  ·  settled **487** (116W / 371L)
+- realized P&L **$87.72**  ·  ROI **+1.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-06T04:14:50.216380+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -51,13 +51,14 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum reach $2,600 November 2-8? | Yes | 0.246 | $20.83 | 2026-11-09T05:00:11.929148+00:00 |
 | Will Bitcoin reach $84,000 November 2-8? | Yes | 0.252 | $18.74 | 2026-11-09T05:00:10.500092+00:00 |
 | US x Iran effective ceasefire continues through Nove | No | 0.190 | $16.53 | 2026-11-09T04:59:11.884677+00:00 |
-| Game Handicap: DK (-1.5) vs Bilibili Gaming (+1.5) | Dplus KIA | 0.260 | $18.61 | 2026-11-06T04:00:10.653873+00:00 |
 | Will the price of Bitcoin be above $78,000 on Novemb | Yes | 0.250 | $17.22 | 2026-11-06T17:00:11.470679+00:00 |
 | Will the price of Ethereum be above $2,300 on Novemb | Yes | 0.220 | $19.43 | 2026-11-06T17:00:11.047863+00:00 |
+| Exact Score: Any Other Score? | Yes | 0.297 | $10.93 | 2026-11-07T15:00:07.086058+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Game Handicap: DK (-1.5) vs Bilibili Gaming (+1.5) | LOST | -18.61 |
 | Will the price of Bitcoin be above $82,000 on Novemb | LOST | -11.06 |
 | Will the price of Ethereum be above $2,400 on Novemb | WON | +44.92 |
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -17.22 |
@@ -117,7 +118,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum dip to $2,200 October 19-25? | LOST | -20.43 |
 | Will FC Barcelona vs. Real Madrid CF end in a draw? | LOST | -12.23 |
 | Will Bitcoin dip to $78,000 October 19-25? | LOST | -16.45 |
-| Will the price of Bitcoin be above $80,000 on Octobe | WON | +75.35 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -141,5 +141,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 129 | 13% | -17% |
 | 0.20–0.25 | 117 | 27% | +21% |
-| 0.25–0.30 | 126 | 25% | -6% |
+| 0.25–0.30 | 127 | 24% | -7% |
 | 0.30–0.33 | 97 | 36% | +11% |
