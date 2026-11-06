@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-05T22:34:15.203854+00:00
+# Poly underdog paper state — 2026-11-06T01:42:44.530581+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($282.17)  ·  settled **486** (116W / 370L)
+- open **17** ($301.60)  ·  settled **486** (116W / 370L)
 - realized P&L **$106.33**  ·  ROI **+1.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-05T22:12:19.140969+00:00
+- last scan: 2026-11-06T01:13:33.911092+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -53,6 +53,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | US x Iran effective ceasefire continues through Nove | No | 0.190 | $16.53 | 2026-11-09T04:59:11.884677+00:00 |
 | Game Handicap: DK (-1.5) vs Bilibili Gaming (+1.5) | Dplus KIA | 0.260 | $18.61 | 2026-11-06T04:00:10.653873+00:00 |
 | Will the price of Bitcoin be above $78,000 on Novemb | Yes | 0.250 | $17.22 | 2026-11-06T17:00:11.470679+00:00 |
+| Will the price of Ethereum be above $2,300 on Novemb | Yes | 0.220 | $19.43 | 2026-11-06T17:00:11.047863+00:00 |
 
 ## Settled
 | market | result | P&L |
