@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-07T08:56:39.289386+00:00
+# Poly underdog paper state — 2026-11-07T12:04:14.007413+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **12** ($209.68)  ·  settled **492** (117W / 375L)
+- open **13** ($226.79)  ·  settled **492** (117W / 375L)
 - realized P&L **$90.48**  ·  ROI **+1.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-07T08:25:32.145715+00:00
+- last scan: 2026-11-07T11:26:37.442829+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -49,6 +49,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum reach $2,600 November 2-8? | Yes | 0.246 | $20.83 | 2026-11-09T05:00:11.929148+00:00 |
 | Will Bitcoin reach $84,000 November 2-8? | Yes | 0.252 | $18.74 | 2026-11-09T05:00:10.500092+00:00 |
 | Exact Score: Any Other Score? | Yes | 0.297 | $10.93 | 2026-11-07T15:00:07.086058+00:00 |
+| Will the price of Bitcoin be above $76,000 on Novemb | No | 0.280 | $17.11 | 2026-11-07T17:00:09.665597+00:00 |
 
 ## Settled
 | market | result | P&L |
