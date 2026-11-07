@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-07T02:40:47.564779+00:00
+# Poly underdog paper state — 2026-11-07T05:49:24.944783+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($242.68)  ·  settled **490** (116W / 374L)
-- realized P&L **$36.48**  ·  ROI **+0.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-07T02:23:12.905418+00:00
+- open **12** ($209.68)  ·  settled **492** (117W / 375L)
+- realized P&L **$90.48**  ·  ROI **+1.2%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-07T05:24:26.754792+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,13 +43,11 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
 | Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
-| Game Handicap: T1 (-2.5) vs Karmine Corp (+2.5) | T1 | 0.310 | $16.47 | 2026-11-07T04:00:09.982302+00:00 |
 | Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | No | 0.313 | $19.00 | 2026-11-05T17:30:10.933265+00:00 |
 | Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
 | Will Ethereum reach $2,600 November 2-8? | Yes | 0.246 | $20.83 | 2026-11-09T05:00:11.929148+00:00 |
 | Will Bitcoin reach $84,000 November 2-8? | Yes | 0.252 | $18.74 | 2026-11-09T05:00:10.500092+00:00 |
-| US x Iran effective ceasefire continues through Nove | No | 0.190 | $16.53 | 2026-11-09T04:59:11.884677+00:00 |
 | Exact Score: Any Other Score? | Yes | 0.297 | $10.93 | 2026-11-07T15:00:07.086058+00:00 |
 
 ## Settled
@@ -58,11 +56,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will the price of Ethereum be above $2,300 on Novemb | LOST | -19.43 |
 | Will the price of Bitcoin be above $78,000 on Novemb | LOST | -17.22 |
 | Game Handicap: DK (-1.5) vs Bilibili Gaming (+1.5) | LOST | -18.61 |
+| US x Iran effective ceasefire continues through Nove | WON | +70.47 |
 | Will the price of Bitcoin be above $82,000 on Novemb | LOST | -11.06 |
 | Will the price of Ethereum be above $2,400 on Novemb | WON | +44.92 |
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -17.22 |
 | Will the price of Bitcoin be above $78,000 on Novemb | WON | +59.71 |
 | Spread: Paris Saint-Germain FC (-1.5) | WON | +27.23 |
+| Game Handicap: T1 (-2.5) vs Karmine Corp (+2.5) | LOST | -16.47 |
 | Will the price of Bitcoin be above $76,000 on Novemb | LOST | -19.43 |
 | Will Bitcoin dip to $76,000 on November 2? | LOST | -18.47 |
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -16.52 |
@@ -113,8 +113,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $85,000 in October? | LOST | -16.52 |
 | Will the Rhine River return to normal levels between | WON | +56.99 |
 | Spread: Ravens (-3.5) | LOST | -16.58 |
-| Spread: Panthers (-7.5) | LOST | -16.68 |
-| Spread: Lions (-10.5) | LOST | -18.61 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -136,7 +134,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 130 | 13% | -18% |
+| 0.15–0.20 | 131 | 14% | -13% |
 | 0.20–0.25 | 118 | 27% | +20% |
 | 0.25–0.30 | 128 | 24% | -7% |
-| 0.30–0.33 | 97 | 36% | +11% |
+| 0.30–0.33 | 98 | 36% | +10% |
