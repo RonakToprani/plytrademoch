@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-06T23:35:03.775064+00:00
+# Poly underdog paper state — 2026-11-07T02:40:47.564779+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **15** ($257.27)  ·  settled **489** (116W / 373L)
-- realized P&L **$51.07**  ·  ROI **+0.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-06T23:22:06.459384+00:00
+- open **14** ($242.68)  ·  settled **490** (116W / 374L)
+- realized P&L **$36.48**  ·  ROI **+0.5%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-07T02:23:12.905418+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -40,7 +40,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Elif Eralp be the next Governing Mayor of Berli | No | 0.304 | $16.52 | 2026-09-20T23:59:07.655567+00:00 |
 | Will David Eby be the next Premier of British Columb | Yes | 0.230 | $21.08 | 2026-10-24T23:59:08.008167+00:00 |
 | Military action against Saudi Oil Pipeline (East-Wes | Yes | 0.330 | $15.89 | 2026-10-31T20:59:06.774849+00:00 |
-| US x Iran ceasefire continues through October 31? | No | 0.160 | $14.59 | 2026-10-31T23:59:10.580635+00:00 |
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
 | Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
@@ -96,6 +95,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Moonshot have the best Chinese AI model at the  | LOST | -16.53 |
 | Will Paris Saint-Germain FC vs. Olympique Lyonnais e | LOST | -14.59 |
 | Spread: Cowboys (-10.5) | WON | +36.66 |
+| US x Iran ceasefire continues through October 31? | LOST | -14.59 |
 | Next Astra Model (6.1+) released by October 31, 2026 | LOST | -12.23 |
 | Will Google have the best AI model at the end of Oct | LOST | -11.32 |
 | Will Kimi Antonelli win the 2026 F1 United States Gr | LOST | -17.20 |
@@ -115,7 +115,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Ravens (-3.5) | LOST | -16.58 |
 | Spread: Panthers (-7.5) | LOST | -16.68 |
 | Spread: Lions (-10.5) | LOST | -18.61 |
-| Will Ethereum dip to $2,200 October 19-25? | LOST | -20.43 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,7 +136,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | bucket | n | win% | ROI |
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
-| 0.15–0.20 | 129 | 13% | -17% |
+| 0.15–0.20 | 130 | 13% | -18% |
 | 0.20–0.25 | 118 | 27% | +20% |
 | 0.25–0.30 | 128 | 24% | -7% |
 | 0.30–0.33 | 97 | 36% | +11% |
