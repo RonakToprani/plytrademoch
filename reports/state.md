@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-07T18:17:45.420778+00:00
+# Poly underdog paper state — 2026-11-07T21:25:56.042023+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($224.27)  ·  settled **493** (118W / 375L)
-- realized P&L **$134.48**  ·  ROI **+1.8%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-07T17:58:59.771615+00:00
+- open **12** ($213.34)  ·  settled **494** (118W / 376L)
+- realized P&L **$123.55**  ·  ROI **+1.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-07T21:00:13.319655+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,13 +48,13 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
 | Will Ethereum reach $2,600 November 2-8? | Yes | 0.246 | $20.83 | 2026-11-09T05:00:11.929148+00:00 |
 | Will Bitcoin reach $84,000 November 2-8? | Yes | 0.252 | $18.74 | 2026-11-09T05:00:10.500092+00:00 |
-| Exact Score: Any Other Score? | Yes | 0.297 | $10.93 | 2026-11-07T15:00:07.086058+00:00 |
 | Will Kai Cenat finish his GTA marathon by November 1 | Yes | 0.170 | $14.59 | 2026-11-11T04:59:09.258779+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
 | Will the price of Bitcoin be above $76,000 on Novemb | WON | +44.00 |
+| Exact Score: Any Other Score? | LOST | -10.93 |
 | Will the price of Ethereum be above $2,300 on Novemb | LOST | -19.43 |
 | Will the price of Bitcoin be above $78,000 on Novemb | LOST | -17.22 |
 | Game Handicap: DK (-1.5) vs Bilibili Gaming (+1.5) | LOST | -18.61 |
@@ -113,7 +113,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Seahawks (-7.5) | WON | +48.45 |
 | Will Ethereum dip to $2,200 in October? | WON | +38.69 |
 | Will Bitcoin reach $85,000 in October? | LOST | -16.52 |
-| Will the Rhine River return to normal levels between | WON | +56.99 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,5 +136,5 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 131 | 14% | -13% |
 | 0.20–0.25 | 118 | 27% | +20% |
-| 0.25–0.30 | 129 | 25% | -5% |
+| 0.25–0.30 | 130 | 25% | -6% |
 | 0.30–0.33 | 98 | 36% | +10% |
