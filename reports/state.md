@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-08T16:08:42.154682+00:00
+# Poly underdog paper state — 2026-11-08T19:18:53.976411+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($251.43)  ·  settled **495** (118W / 377L)
+- open **16** ($283.22)  ·  settled **495** (118W / 377L)
 - realized P&L **$104.55**  ·  ROI **+1.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-08T15:37:32.964881+00:00
+- last scan: 2026-11-08T18:38:44.236678+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -51,6 +51,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Colts (-3.5) | Colts | 0.210 | $19.43 | 2026-11-08T18:00:07.306987+00:00 |
 | Spread: Chiefs (-3.5) | Jets | 0.300 | $16.58 | 2026-11-08T18:00:08.964443+00:00 |
 | Spread: Bears (-14.5) | Bears | 0.230 | $21.08 | 2026-11-09T01:20:10.011501+00:00 |
+| Will Max Verstappen win the 2026 F1 Brazilian Grand  | Yes | 0.210 | $17.20 | 2026-11-15T17:00:09.108825+00:00 |
+| Game Handicap: BLG (-2.5) vs T1 (+2.5) | Bilibili Gaming | 0.160 | $14.59 | 2026-11-09T04:00:10.049102+00:00 |
 
 ## Settled
 | market | result | P&L |
