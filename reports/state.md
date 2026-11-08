@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-08T03:39:53.323374+00:00
+# Poly underdog paper state — 2026-11-08T06:47:01.035801+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **13** ($232.77)  ·  settled **494** (118W / 376L)
+- open **15** ($270.43)  ·  settled **494** (118W / 376L)
 - realized P&L **$123.55**  ·  ROI **+1.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-08T03:02:27.743720+00:00
+- last scan: 2026-11-08T06:33:51.827081+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -50,6 +50,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $84,000 November 2-8? | Yes | 0.252 | $18.74 | 2026-11-09T05:00:10.500092+00:00 |
 | Will Kai Cenat finish his GTA marathon by November 1 | Yes | 0.170 | $14.59 | 2026-11-11T04:59:09.258779+00:00 |
 | Spread: Colts (-3.5) | Colts | 0.210 | $19.43 | 2026-11-08T18:00:07.306987+00:00 |
+| Spread: Chiefs (-3.5) | Jets | 0.300 | $16.58 | 2026-11-08T18:00:08.964443+00:00 |
+| Spread: Bears (-14.5) | Bears | 0.230 | $21.08 | 2026-11-09T01:20:10.011501+00:00 |
 
 ## Settled
 | market | result | P&L |
