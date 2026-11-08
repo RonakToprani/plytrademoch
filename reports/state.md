@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-08T06:47:01.035801+00:00
+# Poly underdog paper state — 2026-11-08T09:55:13.579014+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **15** ($270.43)  ·  settled **494** (118W / 376L)
-- realized P&L **$123.55**  ·  ROI **+1.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-08T06:33:51.827081+00:00
+- open **14** ($251.43)  ·  settled **495** (118W / 377L)
+- realized P&L **$104.55**  ·  ROI **+1.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-08T09:35:04.088972+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -43,7 +43,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Israel military action against Syria by October 31,  | Yes | 0.284 | $15.55 | 2026-10-31T20:59:09.925765+00:00 |
 | Will Republicans lose the Alaska, Iowa, Kansas, Main | Yes | 0.260 | $18.61 | 2026-11-03T23:59:09.836803+00:00 |
 | Israel x Iran ceasefire continues through November 7 | No | 0.180 | $15.88 | 2026-11-08T04:59:07.582186+00:00 |
-| Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | No | 0.313 | $19.00 | 2026-11-05T17:30:10.933265+00:00 |
 | Will Al Ettifaq Saudi Club vs. Al Hilal Saudi Club e | No | 0.300 | $17.22 | 2026-11-07T14:30:11.751533+00:00 |
 | Will Al Ahli Saudi Club vs. Al Taawoun Saudi Club en | No | 0.299 | $19.43 | 2026-11-07T17:30:10.331228+00:00 |
 | Will Ethereum reach $2,600 November 2-8? | Yes | 0.246 | $20.83 | 2026-11-09T05:00:11.929148+00:00 |
@@ -67,6 +66,7 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Map Handicap: FAL (-1.5) vs Natus Vincere (+1.5) | LOST | -17.22 |
 | Will the price of Bitcoin be above $78,000 on Novemb | WON | +59.71 |
 | Spread: Paris Saint-Germain FC (-1.5) | WON | +27.23 |
+| Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club | LOST | -19.00 |
 | Game Handicap: T1 (-2.5) vs Karmine Corp (+2.5) | LOST | -16.47 |
 | Will the price of Bitcoin be above $76,000 on Novemb | LOST | -19.43 |
 | Will Bitcoin dip to $76,000 on November 2? | LOST | -18.47 |
@@ -115,7 +115,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Spread: Saints (-3.5) | LOST | -16.58 |
 | Spread: Seahawks (-7.5) | WON | +48.45 |
 | Will Ethereum dip to $2,200 in October? | WON | +38.69 |
-| Will Bitcoin reach $85,000 in October? | LOST | -16.52 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -140,4 +139,4 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | 0.15–0.20 | 131 | 14% | -13% |
 | 0.20–0.25 | 118 | 27% | +20% |
 | 0.25–0.30 | 130 | 25% | -6% |
-| 0.30–0.33 | 98 | 36% | +10% |
+| 0.30–0.33 | 99 | 35% | +8% |
