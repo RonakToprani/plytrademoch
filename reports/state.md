@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-08T19:18:53.976411+00:00
+# Poly underdog paper state — 2026-11-08T22:28:37.026149+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **16** ($283.22)  ·  settled **495** (118W / 377L)
-- realized P&L **$104.55**  ·  ROI **+1.4%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-08T18:38:44.236678+00:00
+- open **14** ($247.21)  ·  settled **497** (118W / 379L)
+- realized P&L **$68.54**  ·  ROI **+0.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-08T22:10:11.471186+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -48,8 +48,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Ethereum reach $2,600 November 2-8? | Yes | 0.246 | $20.83 | 2026-11-09T05:00:11.929148+00:00 |
 | Will Bitcoin reach $84,000 November 2-8? | Yes | 0.252 | $18.74 | 2026-11-09T05:00:10.500092+00:00 |
 | Will Kai Cenat finish his GTA marathon by November 1 | Yes | 0.170 | $14.59 | 2026-11-11T04:59:09.258779+00:00 |
-| Spread: Colts (-3.5) | Colts | 0.210 | $19.43 | 2026-11-08T18:00:07.306987+00:00 |
-| Spread: Chiefs (-3.5) | Jets | 0.300 | $16.58 | 2026-11-08T18:00:08.964443+00:00 |
 | Spread: Bears (-14.5) | Bears | 0.230 | $21.08 | 2026-11-09T01:20:10.011501+00:00 |
 | Will Max Verstappen win the 2026 F1 Brazilian Grand  | Yes | 0.210 | $17.20 | 2026-11-15T17:00:09.108825+00:00 |
 | Game Handicap: BLG (-2.5) vs T1 (+2.5) | Bilibili Gaming | 0.160 | $14.59 | 2026-11-09T04:00:10.049102+00:00 |
@@ -57,6 +55,8 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Spread: Chiefs (-3.5) | LOST | -16.58 |
+| Spread: Colts (-3.5) | LOST | -19.43 |
 | Will the price of Bitcoin be above $76,000 on Novemb | WON | +44.00 |
 | Exact Score: Any Other Score? | LOST | -10.93 |
 | Will the price of Ethereum be above $2,300 on Novemb | LOST | -19.43 |
@@ -115,8 +115,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Game Handicap: GEN (-1.5) vs LYON (+1.5) | WON | +33.77 |
 | US-Iran ceasefire continues through the midterms? | WON | +73.09 |
 | Spread: Saints (-3.5) | LOST | -16.58 |
-| Spread: Seahawks (-7.5) | WON | +48.45 |
-| Will Ethereum dip to $2,200 in October? | WON | +38.69 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -139,6 +137,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 131 | 14% | -13% |
-| 0.20–0.25 | 118 | 27% | +20% |
+| 0.20–0.25 | 119 | 27% | +19% |
 | 0.25–0.30 | 130 | 25% | -6% |
-| 0.30–0.33 | 99 | 35% | +8% |
+| 0.30–0.33 | 100 | 35% | +7% |
