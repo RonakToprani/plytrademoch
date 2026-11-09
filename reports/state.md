@@ -1,4 +1,4 @@
-# Poly underdog paper state — 2026-11-08T22:28:37.026149+00:00
+# Poly underdog paper state — 2026-11-09T01:41:25.298323+00:00
 
 **Strategy:** buy the underdog outcome token priced **0.15–0.33** on liquid
 Polymarket markets resolving in **6–168h**; hold to resolution. Fractional-
@@ -30,9 +30,9 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
   sub-floor fills plus a stale resolution cache, both fixed 2026-08-03.)
 
 ## Book
-- open **14** ($247.21)  ·  settled **497** (118W / 379L)
-- realized P&L **$68.54**  ·  ROI **+0.9%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
-- last scan: 2026-11-08T22:10:11.471186+00:00
+- open **13** ($230.01)  ·  settled **498** (118W / 380L)
+- realized P&L **$51.34**  ·  ROI **+0.7%** (backtest exp ~+20.3%)  ·  win **24%** (exp ~29.6%)
+- last scan: 2026-11-09T01:11:24.310464+00:00
 
 ## Open positions
 | market | side | entry | stake | resolves |
@@ -49,12 +49,12 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | Will Bitcoin reach $84,000 November 2-8? | Yes | 0.252 | $18.74 | 2026-11-09T05:00:10.500092+00:00 |
 | Will Kai Cenat finish his GTA marathon by November 1 | Yes | 0.170 | $14.59 | 2026-11-11T04:59:09.258779+00:00 |
 | Spread: Bears (-14.5) | Bears | 0.230 | $21.08 | 2026-11-09T01:20:10.011501+00:00 |
-| Will Max Verstappen win the 2026 F1 Brazilian Grand  | Yes | 0.210 | $17.20 | 2026-11-15T17:00:09.108825+00:00 |
 | Game Handicap: BLG (-2.5) vs T1 (+2.5) | Bilibili Gaming | 0.160 | $14.59 | 2026-11-09T04:00:10.049102+00:00 |
 
 ## Settled
 | market | result | P&L |
 |---|---|---|
+| Will Max Verstappen win the 2026 F1 Brazilian Grand  | LOST | -17.20 |
 | Spread: Chiefs (-3.5) | LOST | -16.58 |
 | Spread: Colts (-3.5) | LOST | -19.43 |
 | Will the price of Bitcoin be above $76,000 on Novemb | WON | +44.00 |
@@ -114,7 +114,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 | FC Barcelona vs. Real Madrid CF: Both Teams to Score | LOST | -18.61 |
 | Game Handicap: GEN (-1.5) vs LYON (+1.5) | WON | +33.77 |
 | US-Iran ceasefire continues through the midterms? | WON | +73.09 |
-| Spread: Saints (-3.5) | LOST | -16.58 |
 
 ## Edge by price band (out-of-sample, cached universe, 48h horizon)
 | band | n | win% | mean px | buy ROI |
@@ -137,6 +136,6 @@ source of truth for what 'working' looks like, recalibrated 2026-08-05 on
 |---|---|---|---|
 | <0.15 | 17 | 6% | -54% |
 | 0.15–0.20 | 131 | 14% | -13% |
-| 0.20–0.25 | 119 | 27% | +19% |
+| 0.20–0.25 | 120 | 27% | +18% |
 | 0.25–0.30 | 130 | 25% | -6% |
 | 0.30–0.33 | 100 | 35% | +7% |
